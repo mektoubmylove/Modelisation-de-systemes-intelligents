@@ -32,3 +32,4 @@ weighted avg       0.89      0.89      0.89       285
 
 
  ![exemple](confusion_matrix.png)
+
