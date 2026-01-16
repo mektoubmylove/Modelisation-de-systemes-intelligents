@@ -1,0 +1,5 @@
+filename: (DUPUY)(Marie-Bernadette)(le moulin du loup)(2)(2007)(1952)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 244
+first_name: mariebernadette
+last_name: dupuy
+true_label: femme

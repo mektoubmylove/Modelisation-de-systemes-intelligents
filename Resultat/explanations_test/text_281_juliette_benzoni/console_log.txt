@@ -1,0 +1,386 @@
+texte analysé: il avait avoué son crime , tout cela enveloppait le coeur et l esprit de la jeune femme d un carcan glacé . elle se sentait éteinte comme si l on avait soufflé son âme telle une chandelle . en rentran...
+prédiction: FEMME (confiance: 57.4%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.2623
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      etienne                        +0.000226       0.3343
+   2      abbaye                         +0.000107       0.2584
+   3      abbé                           +0.000102       0.1064
+   4      absorption                     +0.000085       0.1507
+   5      fit                            +0.000082       0.1032
+   6      aisé                           +0.000073       0.1030
+   7      abandonnés                     +0.000068       0.0822
+   8      constata                       +0.000067       0.0830
+   9      affola                         +0.000063       0.1357
+   10     sainte                         +0.000060       0.0605
+   11     brave                          +0.000060       0.0637
+   12     déverser                       +0.000059       0.1163
+   13     misérable                      +0.000058       0.0673
+   14     bonhomme                       +0.000056       0.0684
+   15     chauffe                        +0.000053       0.1024
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      carcan                         -0.000245       0.1428
+   2      récupérait                     -0.000159       0.1449
+   3      agneau                         -0.000115       0.1051
+   4      pétrifiée                      -0.000114       0.1064
+   5      affronter                      -0.000100       0.0651
+   6      glacée                         -0.000094       0.0686
+   7      bénie                          -0.000091       0.1235
+   8      radicale                       -0.000075       0.1352
+   9      pâmer                          -0.000065       0.1663
+   10     glacées                        -0.000064       0.1020
+   11     cachée                         -0.000058       0.1329
+   12     manquer                        -0.000058       0.0588
+   13     regardez                       -0.000054       0.0589
+   14     glissaient                     -0.000046       0.0973
+   15     blanches                       -0.000043       0.0517
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      etienne                        +0.000226       0.3343
+   2      abbaye                         +0.000107       0.2584
+   3      abbé                           +0.000102       0.1064
+   4      absorption                     +0.000085       0.1507
+   5      fit                            +0.000082       0.1032
+   6      aisé                           +0.000073       0.1030
+   7      abandonnés                     +0.000068       0.0822
+   8      constata                       +0.000067       0.0830
+   9      affola                         +0.000063       0.1357
+   10     sainte                         +0.000060       0.0605
+   11     brave                          +0.000060       0.0637
+   12     déverser                       +0.000059       0.1163
+   13     misérable                      +0.000058       0.0673
+   14     bonhomme                       +0.000056       0.0684
+   15     chauffe                        +0.000053       0.1024
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      carcan                         -0.000245       0.1428
+   2      récupérait                     -0.000159       0.1449
+   3      agneau                         -0.000115       0.1051
+   4      pétrifiée                      -0.000114       0.1064
+   5      affronter                      -0.000100       0.0651
+   6      glacée                         -0.000094       0.0686
+   7      bénie                          -0.000091       0.1235
+   8      radicale                       -0.000075       0.1352
+   9      pâmer                          -0.000065       0.1663
+   10     glacées                        -0.000064       0.1020
+   11     cachée                         -0.000058       0.1329
+   12     manquer                        -0.000058       0.0588
+   13     regardez                       -0.000054       0.0589
+   14     glissaient                     -0.000046       0.0973
+   15     blanches                       -0.000043       0.0517
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marjolaine                     +0.005679       0.3920
+   2      carcan                         +0.003009       0.1428
+   3      pétrifiée                      +0.002276       0.1064
+   4      cachée                         +0.002233       0.1329
+   5      affronter                      +0.001765       0.0651
+   6      parlera                        +0.001487       0.0971
+   7      agneau                         +0.001433       0.1051
+   8      devrait                        +0.001310       0.0511
+   9      passée                         +0.001296       0.0504
+   10     glacées                        +0.001257       0.1020
+   11     bénie                          +0.001207       0.1235
+   12     herbes                         +0.001017       0.0692
+   13     bol                            +0.000996       0.0707
+   14     glissaient                     +0.000911       0.0973
+   15     blanches                       +0.000873       0.0517
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      etienne                        -0.003205       0.3343
+   2      abbaye                         -0.002841       0.2584
+   3      faillirent                     -0.002443       0.1597
+   4      vendant                        -0.002126       0.1292
+   5      fit                            -0.001722       0.1032
+   6      pâmer                          -0.001701       0.1663
+   7      abbé                           -0.001636       0.1064
+   8      machination                    -0.001598       0.1352
+   9      pareille                       -0.001470       0.0539
+   10     brave                          -0.001296       0.0637
+   11     bonhomme                       -0.001281       0.0684
+   12     eut                            -0.001280       0.0506
+   13     courut                         -0.001246       0.0721
+   14     paraissait                     -0.001169       0.0522
+   15     chauffe                        -0.001165       0.1024
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marjolaine                     +0.324712       0.3920
+   2      carcan                         +0.130587       0.1428
+   3      pétrifiée                      +0.123177       0.1064
+   4      cachée                         +0.115623       0.1329
+   5      affronter                      +0.085604       0.0651
+   6      parlera                        +0.083730       0.0971
+   7      agneau                         +0.071358       0.1051
+   8      devrait                        +0.069760       0.0511
+   9      glacées                        +0.063723       0.1020
+   10     passée                         +0.061163       0.0504
+   11     bénie                          +0.055397       0.1235
+   12     neige                          +0.052897       0.0589
+   13     herbes                         +0.050020       0.0692
+   14     bol                            +0.046529       0.0707
+   15     blanches                       +0.044636       0.0517
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      etienne                        -0.185464       0.3343
+   2      abbaye                         -0.173292       0.2584
+   3      faillirent                     -0.113125       0.1597
+   4      vendant                        -0.105989       0.1292
+   5      abbé                           -0.086166       0.1064
+   6      fit                            -0.085933       0.1032
+   7      machination                    -0.084073       0.1352
+   8      pareille                       -0.079779       0.0539
+   9      pâmer                          -0.079117       0.1663
+   10     courut                         -0.073168       0.0721
+   11     eut                            -0.069417       0.0506
+   12     bonhomme                       -0.064054       0.0684
+   13     brave                          -0.061502       0.0637
+   14     paraissait                     -0.061193       0.0522
+   15     revint                         -0.058225       0.0593
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+etienne                   +0.000000     +0.000226     +0.000226     0.3343
+abbaye                    +0.000000     +0.000107     +0.000107     0.2584
+abbé                      +0.000000     +0.000102     +0.000102     0.1064
+absorption                +0.000000     +0.000085     +0.000085     0.1507
+fit                       +0.000000     +0.000082     +0.000082     0.1032
+aisé                      +0.000000     +0.000073     +0.000073     0.1030
+abandonnés                +0.000005     +0.000068     +0.000068     0.0822
+constata                  +0.000000     +0.000067     +0.000067     0.0830
+affola                    +0.000454     +0.000063     +0.000063     0.1357
+sainte                    +0.000130     +0.000060     +0.000060     0.0605
+brave                     +0.000000     +0.000060     +0.000060     0.0637
+déverser                  +0.000000     +0.000059     +0.000059     0.1163
+misérable                 +0.000000     +0.000058     +0.000058     0.0673
+bonhomme                  +0.000000     +0.000056     +0.000056     0.0684
+chauffe                   +0.000000     +0.000053     +0.000053     0.1024
+vendant                   +0.000000     +0.000048     +0.000048     0.1292
+vilain                    +0.000000     +0.000045     +0.000045     0.0848
+parlera                   +0.001487     +0.000043     +0.000043     0.0971
+enveloppait               +0.000000     +0.000043     +0.000043     0.0900
+payée                     +0.000371     +0.000035     +0.000035     0.0995
+logit final pour 'femme': 0.2623
+# analyse pour la classe: HOMME
+# logit: -0.0356
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      etienne                        +0.000406       0.3343
+   2      affola                         +0.000093       0.1357
+   3      absorption                     +0.000091       0.1507
+   4      abbé                           +0.000064       0.1064
+   5      constata                       +0.000056       0.0830
+   6      aisé                           +0.000047       0.1030
+   7      abandonnés                     +0.000042       0.0822
+   8      chauffe                        +0.000039       0.1024
+   9      sainte                         +0.000036       0.0605
+   10     bonhomme                       +0.000035       0.0684
+   11     brave                          +0.000028       0.0637
+   12     parlera                        +0.000028       0.0971
+   13     enveloppait                    +0.000027       0.0900
+   14     gage                           +0.000025       0.1012
+   15     glacé                          +0.000023       0.0669
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      récupérait                     -0.000145       0.1449
+   2      pétrifiée                      -0.000100       0.1064
+   3      carcan                         -0.000100       0.1428
+   4      affronter                      -0.000081       0.0651
+   5      radicale                       -0.000078       0.1352
+   6      abbaye                         -0.000073       0.2584
+   7      glacée                         -0.000073       0.0686
+   8      chandelle                      -0.000061       0.1004
+   9      glacées                        -0.000049       0.1020
+   10     agneau                         -0.000048       0.1051
+   11     bénie                          -0.000045       0.1235
+   12     vin                            -0.000037       0.1021
+   13     prétend                        -0.000035       0.0743
+   14     blanches                       -0.000027       0.0517
+   15     vertigineuse                   -0.000026       0.1146
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      etienne                        +0.000406       0.3343
+   2      affola                         +0.000093       0.1357
+   3      absorption                     +0.000091       0.1507
+   4      abbé                           +0.000064       0.1064
+   5      constata                       +0.000056       0.0830
+   6      aisé                           +0.000047       0.1030
+   7      abandonnés                     +0.000042       0.0822
+   8      chauffe                        +0.000039       0.1024
+   9      sainte                         +0.000036       0.0605
+   10     bonhomme                       +0.000035       0.0684
+   11     brave                          +0.000028       0.0637
+   12     parlera                        +0.000028       0.0971
+   13     enveloppait                    +0.000027       0.0900
+   14     gage                           +0.000025       0.1012
+   15     glacé                          +0.000023       0.0669
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      récupérait                     -0.000145       0.1449
+   2      pétrifiée                      -0.000100       0.1064
+   3      carcan                         -0.000100       0.1428
+   4      affronter                      -0.000081       0.0651
+   5      radicale                       -0.000078       0.1352
+   6      abbaye                         -0.000073       0.2584
+   7      glacée                         -0.000073       0.0686
+   8      chandelle                      -0.000061       0.1004
+   9      glacées                        -0.000049       0.1020
+   10     agneau                         -0.000048       0.1051
+   11     bénie                          -0.000045       0.1235
+   12     vin                            -0.000037       0.1021
+   13     prétend                        -0.000035       0.0743
+   14     blanches                       -0.000027       0.0517
+   15     vertigineuse                   -0.000026       0.1146
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      etienne                        +0.003879       0.3343
+   2      abbaye                         +0.002416       0.2584
+   3      faillirent                     +0.002275       0.1597
+   4      vendant                        +0.001606       0.1292
+   5      fit                            +0.001582       0.1032
+   6      pareille                       +0.001395       0.0539
+   7      pâmer                          +0.001357       0.1663
+   8      machination                    +0.001316       0.1352
+   9      abbé                           +0.001312       0.1064
+   10     courut                         +0.001282       0.0721
+   11     eut                            +0.001208       0.0506
+   12     paraissait                     +0.001145       0.0522
+   13     brave                          +0.001129       0.0637
+   14     bonhomme                       +0.001122       0.0684
+   15     crime                          +0.000941       0.0589
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marjolaine                     -0.003570       0.3920
+   2      carcan                         -0.002097       0.1428
+   3      pétrifiée                      -0.002005       0.1064
+   4      cachée                         -0.001986       0.1329
+   5      affronter                      -0.001425       0.0651
+   6      parlera                        -0.001293       0.0971
+   7      agneau                         -0.001174       0.1051
+   8      passée                         -0.001159       0.0504
+   9      glacées                        -0.001061       0.1020
+   10     devrait                        -0.001060       0.0511
+   11     glissaient                     -0.000975       0.0973
+   12     herbes                         -0.000924       0.0692
+   13     neige                          -0.000907       0.0589
+   14     bol                            -0.000895       0.0707
+   15     bénie                          -0.000711       0.1235
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      etienne                        +0.196857       0.3343
+   2      abbaye                         +0.144455       0.2584
+   3      faillirent                     +0.104403       0.1597
+   4      vendant                        +0.096217       0.1292
+   5      fit                            +0.081801       0.1032
+   6      courut                         +0.075336       0.0721
+   7      pareille                       +0.073547       0.0539
+   8      abbé                           +0.071648       0.1064
+   9      eut                            +0.065609       0.0506
+   10     machination                    +0.064727       0.1352
+   11     pâmer                          +0.064098       0.1663
+   12     paraissait                     +0.060725       0.0522
+   13     bonhomme                       +0.059173       0.0684
+   14     enveloppait                    +0.054846       0.0900
+   15     brave                          +0.054181       0.0637
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marjolaine                     -0.263882       0.3920
+   2      pétrifiée                      -0.117245       0.1064
+   3      cachée                         -0.103343       0.1329
+   4      carcan                         -0.091852       0.1428
+   5      parlera                        -0.077696       0.0971
+   6      affronter                      -0.074849       0.0651
+   7      passée                         -0.056908       0.0504
+   8      devrait                        -0.056339       0.0511
+   9      agneau                         -0.055977       0.1051
+   10     glacées                        -0.054957       0.1020
+   11     herbes                         -0.050407       0.0692
+   12     neige                          -0.049969       0.0589
+   13     bénie                          -0.047720       0.1235
+   14     glissaient                     -0.045081       0.0973
+   15     bol                            -0.040213       0.0707
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+etienne                   +0.003879     +0.000406     +0.000406     0.3343
+affola                    +0.000000     +0.000093     +0.000093     0.1357
+absorption                +0.000626     +0.000091     +0.000091     0.1507
+abbé                      +0.001312     +0.000064     +0.000064     0.1064
+constata                  +0.000300     +0.000056     +0.000056     0.0830
+aisé                      +0.000864     +0.000047     +0.000047     0.1030
+abandonnés                +0.000000     +0.000042     +0.000042     0.0822
+chauffe                   +0.000898     +0.000039     +0.000039     0.1024
+sainte                    +0.000000     +0.000036     +0.000036     0.0605
+bonhomme                  +0.001122     +0.000035     +0.000035     0.0684
+brave                     +0.001129     +0.000028     +0.000028     0.0637
+parlera                   +0.000000     +0.000028     +0.000028     0.0971
+enveloppait               +0.000883     +0.000027     +0.000027     0.0900
+gage                      +0.000000     +0.000025     +0.000025     0.1012
+glacé                     +0.000000     +0.000023     +0.000023     0.0669
+misérable                 +0.000549     +0.000018     +0.000018     0.0673
+fit                       +0.001582     +0.000016     +0.000016     0.1032
+économies                 +0.000436     +0.000015     +0.000015     0.0888
+crut                      +0.000740     +0.000013     +0.000013     0.0667
+glissaient                +0.000000     +0.000013     +0.000013     0.0973
+logit final pour 'homme': -0.0356

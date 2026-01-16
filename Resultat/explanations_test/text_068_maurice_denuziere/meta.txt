@@ -1,0 +1,5 @@
+filename: (DENUZIERE)(Maurice)(le pont de buena vista)(1)(2003)(1926)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 68
+first_name: maurice
+last_name: denuziere
+true_label: homme

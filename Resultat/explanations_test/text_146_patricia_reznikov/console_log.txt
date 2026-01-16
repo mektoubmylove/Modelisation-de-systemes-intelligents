@@ -1,0 +1,386 @@
+texte analysé: parvenus . puis ce sont les familles paysannes du westerwald , matrices de sa typologie universelle . ensuite , il n y a plus qu à contempler les photos de son grand oeuvre , qu à se laisser happer pa...
+prédiction: FEMME (confiance: 85.9%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.0480
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      épingle                        +0.000106       0.1958
+   2      balayait                       +0.000085       0.1128
+   3      happer                         +0.000074       0.1471
+   4      secrète                        +0.000065       0.0655
+   5      éveillé                        +0.000055       0.0849
+   6      répare                         +0.000055       0.1388
+   7      vitreux                        +0.000052       0.1326
+   8      clé                            +0.000042       0.1543
+   9      proposer                       +0.000039       0.0665
+   10     organisation                   +0.000027       0.0800
+   11     évidence                       +0.000024       0.0576
+   12     toxique                        +0.000021       0.1466
+   13     parts                          +0.000020       0.0796
+   14     planté                         +0.000020       0.0675
+   15     cuir                           +0.000018       0.0543
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      secte                          -0.000296       0.2725
+   2      enroulait                      -0.000143       0.1477
+   3      mobylette                      -0.000128       0.1647
+   4      malentendus                    -0.000128       0.1517
+   5      fus                            -0.000116       0.0890
+   6      structure                      -0.000097       0.1081
+   7      phalanges                      -0.000082       0.1145
+   8      familiale                      -0.000081       0.0813
+   9      palestinien                    -0.000081       0.2139
+   10     cirée                          -0.000078       0.1128
+   11     parquet                        -0.000078       0.0760
+   12     antique                        -0.000077       0.0844
+   13     guettais                       -0.000075       0.1482
+   14     retenait                       -0.000072       0.0731
+   15     braguette                      -0.000071       0.1402
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      épingle                        +0.000106       0.1958
+   2      balayait                       +0.000085       0.1128
+   3      happer                         +0.000074       0.1471
+   4      secrète                        +0.000065       0.0655
+   5      éveillé                        +0.000055       0.0849
+   6      répare                         +0.000055       0.1388
+   7      vitreux                        +0.000052       0.1326
+   8      clé                            +0.000042       0.1543
+   9      proposer                       +0.000039       0.0665
+   10     organisation                   +0.000027       0.0800
+   11     évidence                       +0.000024       0.0576
+   12     toxique                        +0.000021       0.1466
+   13     parts                          +0.000020       0.0796
+   14     planté                         +0.000020       0.0675
+   15     cuir                           +0.000018       0.0543
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      secte                          -0.000296       0.2725
+   2      enroulait                      -0.000143       0.1477
+   3      mobylette                      -0.000128       0.1647
+   4      malentendus                    -0.000128       0.1517
+   5      fus                            -0.000116       0.0890
+   6      structure                      -0.000097       0.1081
+   7      phalanges                      -0.000082       0.1145
+   8      familiale                      -0.000081       0.0813
+   9      palestinien                    -0.000081       0.2139
+   10     cirée                          -0.000078       0.1128
+   11     parquet                        -0.000078       0.0760
+   12     antique                        -0.000077       0.0844
+   13     guettais                       -0.000075       0.1482
+   14     retenait                       -0.000072       0.0731
+   15     braguette                      -0.000071       0.1402
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      paysannes                      +0.003228       0.1466
+   2      arborant                       +0.002406       0.1307
+   3      nourrice                       +0.002365       0.1043
+   4      enroulait                      +0.002294       0.1477
+   5      délaissée                      +0.001999       0.1350
+   6      familiale                      +0.001919       0.0813
+   7      familial                       +0.001899       0.0824
+   8      tissu                          +0.001815       0.0653
+   9      tissé                          +0.001698       0.1252
+   10     lobe                           +0.001322       0.1450
+   11     fac                            +0.001315       0.1315
+   12     terminale                      +0.001248       0.1560
+   13     structure                      +0.001090       0.1081
+   14     dangers                        +0.000935       0.0853
+   15     essaie                         +0.000931       0.0615
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      épingle                        -0.003398       0.1958
+   2      universelle                    -0.002194       0.1043
+   3      parvenus                       -0.001996       0.0975
+   4      moteur                         -0.001156       0.0705
+   5      déclic                         -0.001107       0.1101
+   6      parts                          -0.001089       0.0796
+   7      rasé                           -0.001074       0.0793
+   8      vitreux                        -0.001034       0.1326
+   9      éveillé                        -0.001011       0.0849
+   10     mobylette                      -0.000986       0.1647
+   11     tatoué                         -0.000961       0.1456
+   12     serrure                        -0.000793       0.0734
+   13     toile                          -0.000707       0.0559
+   14     apercevait                     -0.000685       0.0721
+   15     balayait                       -0.000620       0.1128
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      paysannes                      +0.114907       0.1466
+   2      arborant                       +0.097592       0.1307
+   3      délaissée                      +0.076506       0.1350
+   4      nourrice                       +0.074977       0.1043
+   5      tissé                          +0.071510       0.1252
+   6      tissu                          +0.069142       0.0653
+   7      familial                       +0.066918       0.0824
+   8      enroulait                      +0.062808       0.1477
+   9      familiale                      +0.061180       0.0813
+   10     terminale                      +0.054998       0.1560
+   11     lobe                           +0.049515       0.1450
+   12     fac                            +0.045857       0.1315
+   13     structure                      +0.030230       0.1081
+   14     parlent                        +0.029349       0.0653
+   15     céder                          +0.029093       0.0655
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      épingle                        -0.138662       0.1958
+   2      universelle                    -0.085483       0.1043
+   3      parvenus                       -0.079634       0.0975
+   4      secte                          -0.070892       0.2725
+   5      mobylette                      -0.057065       0.1647
+   6      rasé                           -0.052729       0.0793
+   7      déclic                         -0.050364       0.1101
+   8      tatoué                         -0.045719       0.1456
+   9      serrure                        -0.043451       0.0734
+   10     moteur                         -0.042209       0.0705
+   11     guettais                       -0.038912       0.1482
+   12     éveillé                        -0.036852       0.0849
+   13     parts                          -0.036694       0.0796
+   14     toile                          -0.036419       0.0559
+   15     toxique                        -0.030064       0.1466
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+épingle                   +0.000000     +0.000106     +0.000106     0.1958
+balayait                  +0.000000     +0.000085     +0.000085     0.1128
+happer                    +0.000000     +0.000074     +0.000074     0.1471
+secrète                   +0.000000     +0.000065     +0.000065     0.0655
+éveillé                   +0.000000     +0.000055     +0.000055     0.0849
+répare                    +0.000167     +0.000055     +0.000055     0.1388
+vitreux                   +0.000000     +0.000052     +0.000052     0.1326
+clé                       +0.000034     +0.000042     +0.000042     0.1543
+proposer                  +0.000147     +0.000039     +0.000039     0.0665
+organisation              +0.000000     +0.000027     +0.000027     0.0800
+évidence                  +0.000195     +0.000024     +0.000024     0.0576
+toxique                   +0.000000     +0.000021     +0.000021     0.1466
+parts                     +0.000000     +0.000020     +0.000020     0.0796
+planté                    +0.000000     +0.000020     +0.000020     0.0675
+cuir                      +0.000000     +0.000018     +0.000018     0.0543
+parvenus                  +0.000000     +0.000015     +0.000015     0.0975
+tatoué                    +0.000000     +0.000010     +0.000010     0.1456
+déclic                    +0.000000     +0.000010     +0.000010     0.1101
+appartement               +0.000281     +0.000009     +0.000009     0.0563
+apercevait                +0.000000     +0.000006     +0.000006     0.0721
+logit final pour 'femme': 1.0480
+# analyse pour la classe: HOMME
+# logit: -0.7551
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      épingle                        +0.000048       0.1958
+   2      happer                         +0.000045       0.1471
+   3      répare                         +0.000043       0.1388
+   4      éveillé                        +0.000036       0.0849
+   5      secrète                        +0.000029       0.0655
+   6      balayait                       +0.000024       0.1128
+   7      planté                         +0.000021       0.0675
+   8      fermais                        +0.000019       0.1461
+   9      séparaient                     +0.000017       0.0928
+   10     arborant                       +0.000016       0.1307
+   11     eus                            +0.000016       0.0775
+   12     parts                          +0.000016       0.0796
+   13     proposer                       +0.000015       0.0665
+   14     vieilli                        +0.000013       0.0886
+   15     cuir                           +0.000012       0.0543
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      secte                          -0.000205       0.2725
+   2      mobylette                      -0.000081       0.1647
+   3      malentendus                    -0.000079       0.1517
+   4      fus                            -0.000077       0.0890
+   5      enroulait                      -0.000071       0.1477
+   6      guettais                       -0.000053       0.1482
+   7      universelle                    -0.000052       0.1043
+   8      structure                      -0.000052       0.1081
+   9      antique                        -0.000051       0.0844
+   10     phalanges                      -0.000048       0.1145
+   11     familiale                      -0.000048       0.0813
+   12     alimenter                      -0.000047       0.1111
+   13     retenait                       -0.000045       0.0731
+   14     parquet                        -0.000040       0.0760
+   15     rasé                           -0.000036       0.0793
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      épingle                        +0.000048       0.1958
+   2      happer                         +0.000045       0.1471
+   3      répare                         +0.000043       0.1388
+   4      éveillé                        +0.000036       0.0849
+   5      secrète                        +0.000029       0.0655
+   6      balayait                       +0.000024       0.1128
+   7      planté                         +0.000021       0.0675
+   8      fermais                        +0.000019       0.1461
+   9      séparaient                     +0.000017       0.0928
+   10     arborant                       +0.000016       0.1307
+   11     eus                            +0.000016       0.0775
+   12     parts                          +0.000016       0.0796
+   13     proposer                       +0.000015       0.0665
+   14     vieilli                        +0.000013       0.0886
+   15     cuir                           +0.000012       0.0543
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      secte                          -0.000205       0.2725
+   2      mobylette                      -0.000081       0.1647
+   3      malentendus                    -0.000079       0.1517
+   4      fus                            -0.000077       0.0890
+   5      enroulait                      -0.000071       0.1477
+   6      guettais                       -0.000053       0.1482
+   7      universelle                    -0.000052       0.1043
+   8      structure                      -0.000052       0.1081
+   9      antique                        -0.000051       0.0844
+   10     phalanges                      -0.000048       0.1145
+   11     familiale                      -0.000048       0.0813
+   12     alimenter                      -0.000047       0.1111
+   13     retenait                       -0.000045       0.0731
+   14     parquet                        -0.000040       0.0760
+   15     rasé                           -0.000036       0.0793
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      épingle                        +0.002056       0.1958
+   2      universelle                    +0.001549       0.1043
+   3      parvenus                       +0.001343       0.0975
+   4      déclic                         +0.000951       0.1101
+   5      mobylette                      +0.000820       0.1647
+   6      rasé                           +0.000772       0.0793
+   7      moteur                         +0.000758       0.0705
+   8      vitreux                        +0.000716       0.1326
+   9      tatoué                         +0.000688       0.1456
+   10     balayait                       +0.000638       0.1128
+   11     parts                          +0.000625       0.0796
+   12     éveillé                        +0.000589       0.0849
+   13     serrure                        +0.000542       0.0734
+   14     toile                          +0.000518       0.0559
+   15     raisons                        +0.000473       0.0512
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      paysannes                      -0.002379       0.1466
+   2      enroulait                      -0.001611       0.1477
+   3      nourrice                       -0.001497       0.1043
+   4      arborant                       -0.001453       0.1307
+   5      familial                       -0.001308       0.0824
+   6      délaissée                      -0.001254       0.1350
+   7      familiale                      -0.001185       0.0813
+   8      tissu                          -0.001179       0.0653
+   9      tissé                          -0.001082       0.1252
+   10     lobe                           -0.001033       0.1450
+   11     fac                            -0.000844       0.1315
+   12     structure                      -0.000809       0.1081
+   13     cirée                          -0.000750       0.1128
+   14     terminale                      -0.000734       0.1560
+   15     dangers                        -0.000675       0.0853
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      épingle                        +0.078165       0.1958
+   2      universelle                    +0.063505       0.1043
+   3      secte                          +0.060863       0.2725
+   4      parvenus                       +0.050576       0.0975
+   5      mobylette                      +0.046183       0.1647
+   6      déclic                         +0.046107       0.1101
+   7      tatoué                         +0.041580       0.1456
+   8      rasé                           +0.039069       0.0793
+   9      serrure                        +0.028318       0.0734
+   10     guettais                       +0.026717       0.1482
+   11     moteur                         +0.025899       0.0705
+   12     toile                          +0.023834       0.0559
+   13     cédait                         +0.023448       0.1066
+   14     toxique                        +0.022943       0.1466
+   15     fus                            +0.021104       0.0890
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      paysannes                      -0.088523       0.1466
+   2      arborant                       -0.061752       0.1307
+   3      familial                       -0.046086       0.0824
+   4      tissé                          -0.045117       0.1252
+   5      nourrice                       -0.045045       0.1043
+   6      délaissée                      -0.044348       0.1350
+   7      tissu                          -0.042943       0.0653
+   8      enroulait                      -0.039475       0.1477
+   9      familiale                      -0.035748       0.0813
+   10     lobe                           -0.032745       0.1450
+   11     terminale                      -0.025698       0.1560
+   12     structure                      -0.024586       0.1081
+   13     fac                            -0.023860       0.1315
+   14     cirée                          -0.022445       0.1128
+   15     parlent                        -0.018232       0.0653
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+épingle                   +0.002056     +0.000048     +0.000048     0.1958
+happer                    +0.000285     +0.000045     +0.000045     0.1471
+répare                    +0.000000     +0.000043     +0.000043     0.1388
+éveillé                   +0.000589     +0.000036     +0.000036     0.0849
+secrète                   +0.000305     +0.000029     +0.000029     0.0655
+balayait                  +0.000638     +0.000024     +0.000024     0.1128
+planté                    +0.000003     +0.000021     +0.000021     0.0675
+fermais                   +0.000000     +0.000019     +0.000019     0.1461
+séparaient                +0.000079     +0.000017     +0.000017     0.0928
+arborant                  +0.000000     +0.000016     +0.000016     0.1307
+eus                       +0.000252     +0.000016     +0.000016     0.0775
+parts                     +0.000625     +0.000016     +0.000016     0.0796
+proposer                  +0.000129     +0.000015     +0.000015     0.0665
+vieilli                   +0.000294     +0.000013     +0.000013     0.0886
+cuir                      +0.000000     +0.000012     +0.000012     0.0543
+organisation              +0.000174     +0.000012     +0.000012     0.0800
+clé                       +0.000000     +0.000011     +0.000011     0.1543
+appartement               +0.000000     +0.000010     +0.000010     0.0563
+taisait                   +0.000073     +0.000008     +0.000008     0.0943
+apercevait                +0.000433     +0.000008     +0.000008     0.0721
+logit final pour 'homme': -0.7551

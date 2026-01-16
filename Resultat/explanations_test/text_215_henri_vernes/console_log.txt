@@ -1,0 +1,386 @@
+texte analysé: est toujours gardé par plusieurs sentinelles comme le poste émetteur récepteur ! coupa bill . pourquoi nous entêter là dessus , commandant ? non seulement cet appareil n est pas assez puissant pour no...
+prédiction: HOMME (confiance: 88.3%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -1.1901
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      automatiques                   +0.000108       0.1678
+   2      restaurée                      +0.000063       0.1139
+   3      siffla                         +0.000046       0.0642
+   4      endurées                       +0.000043       0.1080
+   5      fastes                         +0.000042       0.0885
+   6      civilisé                       +0.000041       0.0857
+   7      récepteur                      +0.000033       0.0783
+   8      marquait                       +0.000027       0.0533
+   9      gagné                          +0.000026       0.0348
+   10     surveiller                     +0.000024       0.0380
+   11     nage                           +0.000023       0.1136
+   12     appareil                       +0.000023       0.0793
+   13     bob                            +0.000022       0.2595
+   14     demeurera                      +0.000022       0.1012
+   15     commandant                     +0.000020       0.1153
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      morane                         -0.000104       0.4307
+   2      bill                           -0.000071       0.1879
+   3      pirogue                        -0.000068       0.2292
+   4      requins                        -0.000056       0.0879
+   5      avion                          -0.000053       0.1900
+   6      bienfaits                      -0.000051       0.0712
+   7      assurément                     -0.000050       0.0647
+   8      voisine                        -0.000046       0.1400
+   9      paternel                       -0.000038       0.0636
+   10     sentinelles                    -0.000038       0.0771
+   11     civilisation                   -0.000037       0.0595
+   12     rome                           -0.000036       0.0585
+   13     perle                          -0.000035       0.1078
+   14     gardé                          -0.000033       0.0330
+   15     emploie                        -0.000033       0.0605
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      automatiques                   +0.000108       0.1678
+   2      restaurée                      +0.000063       0.1139
+   3      siffla                         +0.000046       0.0642
+   4      endurées                       +0.000043       0.1080
+   5      fastes                         +0.000042       0.0885
+   6      civilisé                       +0.000041       0.0857
+   7      récepteur                      +0.000033       0.0783
+   8      marquait                       +0.000027       0.0533
+   9      gagné                          +0.000026       0.0348
+   10     surveiller                     +0.000024       0.0380
+   11     nage                           +0.000023       0.1136
+   12     appareil                       +0.000023       0.0793
+   13     bob                            +0.000022       0.2595
+   14     demeurera                      +0.000022       0.1012
+   15     commandant                     +0.000020       0.1153
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      morane                         -0.000104       0.4307
+   2      bill                           -0.000071       0.1879
+   3      pirogue                        -0.000068       0.2292
+   4      requins                        -0.000056       0.0879
+   5      avion                          -0.000053       0.1900
+   6      bienfaits                      -0.000051       0.0712
+   7      assurément                     -0.000050       0.0647
+   8      voisine                        -0.000046       0.1400
+   9      paternel                       -0.000038       0.0636
+   10     sentinelles                    -0.000038       0.0771
+   11     civilisation                   -0.000037       0.0595
+   12     rome                           -0.000036       0.0585
+   13     perle                          -0.000035       0.1078
+   14     gardé                          -0.000033       0.0330
+   15     emploie                        -0.000033       0.0605
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      perle                          +0.000900       0.1078
+   2      coupa                          +0.000516       0.0471
+   3      espiègle                       +0.000469       0.0758
+   4      plages                         +0.000446       0.0652
+   5      pourraient                     +0.000440       0.0374
+   6      recréer                        +0.000435       0.0906
+   7      échappa                        +0.000390       0.0559
+   8      gardé                          +0.000366       0.0330
+   9      possédez                       +0.000359       0.0873
+   10     demeurera                      +0.000304       0.1012
+   11     mener                          +0.000303       0.0373
+   12     corrigea                       +0.000302       0.0760
+   13     servent                        +0.000299       0.0493
+   14     restaurée                      +0.000296       0.1139
+   15     précédentes                    +0.000278       0.0585
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      morane                         -0.005162       0.4307
+   2      bob                            -0.002957       0.2595
+   3      ballantine                     -0.002416       0.3075
+   4      pirogue                        -0.002231       0.2292
+   5      bill                           -0.001598       0.1879
+   6      île                            -0.001506       0.1814
+   7      émetteur                       -0.001482       0.0969
+   8      automatiques                   -0.001282       0.1678
+   9      fuyards                        -0.001148       0.0897
+   10     signalée                       -0.001107       0.0882
+   11     récepteur                      -0.000985       0.0783
+   12     commandant                     -0.000950       0.1153
+   13     emparer                        -0.000857       0.1630
+   14     fusils                         -0.000839       0.0661
+   15     requins                        -0.000825       0.0879
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      perle                          +0.037831       0.1078
+   2      bienfaits                      +0.020294       0.0712
+   3      pourraient                     +0.019738       0.0374
+   4      gardé                          +0.019379       0.0330
+   5      espiègle                       +0.018947       0.0758
+   6      coupa                          +0.017231       0.0471
+   7      possédez                       +0.016459       0.0873
+   8      échappa                        +0.015700       0.0559
+   9      préparer                       +0.013900       0.0325
+   10     précédentes                    +0.012447       0.0585
+   11     plages                         +0.011632       0.0652
+   12     recréer                        +0.010520       0.0906
+   13     rome                           +0.010285       0.0585
+   14     désire                         +0.010204       0.0470
+   15     charme                         +0.009997       0.0350
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      morane                         -0.134713       0.4307
+   2      bob                            -0.092119       0.2595
+   3      ballantine                     -0.065388       0.3075
+   4      automatiques                   -0.056144       0.1678
+   5      émetteur                       -0.055354       0.0969
+   6      île                            -0.048343       0.1814
+   7      pirogue                        -0.047441       0.2292
+   8      signalée                       -0.044260       0.0882
+   9      récepteur                      -0.043401       0.0783
+   10     bill                           -0.040709       0.1879
+   11     commandant                     -0.037336       0.1153
+   12     fuyards                        -0.031607       0.0897
+   13     appareil                       -0.029970       0.0793
+   14     dessein                        -0.029323       0.0629
+   15     fusils                         -0.027435       0.0661
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+automatiques              +0.000000     +0.000108     +0.000108     0.1678
+restaurée                 +0.000296     +0.000063     +0.000063     0.1139
+siffla                    +0.000000     +0.000046     +0.000046     0.0642
+endurées                  +0.000000     +0.000043     +0.000043     0.1080
+fastes                    +0.000191     +0.000042     +0.000042     0.0885
+civilisé                  +0.000000     +0.000041     +0.000041     0.0857
+récepteur                 +0.000000     +0.000033     +0.000033     0.0783
+marquait                  +0.000000     +0.000027     +0.000027     0.0533
+gagné                     +0.000000     +0.000026     +0.000026     0.0348
+surveiller                +0.000000     +0.000024     +0.000024     0.0380
+nage                      +0.000000     +0.000023     +0.000023     0.1136
+appareil                  +0.000000     +0.000023     +0.000023     0.0793
+bob                       +0.000000     +0.000022     +0.000022     0.2595
+demeurera                 +0.000304     +0.000022     +0.000022     0.1012
+commandant                +0.000000     +0.000020     +0.000020     0.1153
+rigueur                   +0.000000     +0.000018     +0.000018     0.0449
+île                       +0.000000     +0.000018     +0.000018     0.1814
+échappa                   +0.000390     +0.000015     +0.000015     0.0559
+émetteur                  +0.000000     +0.000015     +0.000015     0.0969
+armes                     +0.000068     +0.000015     +0.000015     0.1093
+logit final pour 'femme': -1.1901
+# analyse pour la classe: HOMME  prédite
+# logit: 0.8289
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      automatiques                   +0.000067       0.1678
+   2      restaurée                      +0.000061       0.1139
+   3      endurées                       +0.000030       0.1080
+   4      civilisé                       +0.000022       0.0857
+   5      émetteur                       +0.000021       0.0969
+   6      commandant                     +0.000019       0.1153
+   7      récepteur                      +0.000019       0.0783
+   8      échappa                        +0.000015       0.0559
+   9      surveiller                     +0.000014       0.0380
+   10     moderne                        +0.000013       0.0437
+   11     marquait                       +0.000013       0.0533
+   12     siffla                         +0.000011       0.0642
+   13     fastes                         +0.000009       0.0885
+   14     précieux                       +0.000009       0.0366
+   15     nage                           +0.000009       0.1136
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pirogue                        -0.000116       0.2292
+   2      ballantine                     -0.000080       0.3075
+   3      emparer                        -0.000063       0.1630
+   4      morane                         -0.000056       0.4307
+   5      bill                           -0.000056       0.1879
+   6      île                            -0.000042       0.1814
+   7      assurément                     -0.000040       0.0647
+   8      avion                          -0.000033       0.1900
+   9      évasion                        -0.000030       0.0621
+   10     bienfaits                      -0.000030       0.0712
+   11     pearl                          -0.000029       0.2446
+   12     civilisation                   -0.000025       0.0595
+   13     déclencher                     -0.000023       0.0632
+   14     accompagnera                   -0.000022       0.0929
+   15     serrées                        -0.000022       0.0429
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      automatiques                   +0.000067       0.1678
+   2      restaurée                      +0.000061       0.1139
+   3      endurées                       +0.000030       0.1080
+   4      civilisé                       +0.000022       0.0857
+   5      émetteur                       +0.000021       0.0969
+   6      commandant                     +0.000019       0.1153
+   7      récepteur                      +0.000019       0.0783
+   8      échappa                        +0.000015       0.0559
+   9      surveiller                     +0.000014       0.0380
+   10     moderne                        +0.000013       0.0437
+   11     marquait                       +0.000013       0.0533
+   12     siffla                         +0.000011       0.0642
+   13     fastes                         +0.000009       0.0885
+   14     précieux                       +0.000009       0.0366
+   15     nage                           +0.000009       0.1136
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pirogue                        -0.000116       0.2292
+   2      ballantine                     -0.000080       0.3075
+   3      emparer                        -0.000063       0.1630
+   4      morane                         -0.000056       0.4307
+   5      bill                           -0.000056       0.1879
+   6      île                            -0.000042       0.1814
+   7      assurément                     -0.000040       0.0647
+   8      avion                          -0.000033       0.1900
+   9      évasion                        -0.000030       0.0621
+   10     bienfaits                      -0.000030       0.0712
+   11     pearl                          -0.000029       0.2446
+   12     civilisation                   -0.000025       0.0595
+   13     déclencher                     -0.000023       0.0632
+   14     accompagnera                   -0.000022       0.0929
+   15     serrées                        -0.000022       0.0429
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      morane                         +0.003632       0.4307
+   2      bob                            +0.002000       0.2595
+   3      ballantine                     +0.001560       0.3075
+   4      bill                           +0.001474       0.1879
+   5      émetteur                       +0.001425       0.0969
+   6      pirogue                        +0.001308       0.2292
+   7      île                            +0.001297       0.1814
+   8      fuyards                        +0.001143       0.0897
+   9      commandant                     +0.001059       0.1153
+   10     automatiques                   +0.000979       0.1678
+   11     fusils                         +0.000829       0.0661
+   12     avion                          +0.000804       0.1900
+   13     signalée                       +0.000795       0.0882
+   14     récepteur                      +0.000784       0.0783
+   15     requins                        +0.000679       0.0879
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      perle                          -0.000579       0.1078
+   2      coupa                          -0.000480       0.0471
+   3      restaurée                      -0.000451       0.1139
+   4      pourraient                     -0.000382       0.0374
+   5      gardé                          -0.000380       0.0330
+   6      espiègle                       -0.000357       0.0758
+   7      précédentes                    -0.000338       0.0585
+   8      accompagnera                   -0.000338       0.0929
+   9      échappa                        -0.000302       0.0559
+   10     demeurera                      -0.000280       0.1012
+   11     plages                         -0.000279       0.0652
+   12     recréer                        -0.000275       0.0906
+   13     fastes                         -0.000230       0.0885
+   14     possédez                       -0.000229       0.0873
+   15     précieux                       -0.000229       0.0366
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      morane                         +0.129238       0.4307
+   2      bob                            +0.055814       0.2595
+   3      émetteur                       +0.052102       0.0969
+   4      automatiques                   +0.049094       0.1678
+   5      bill                           +0.044994       0.1879
+   6      ballantine                     +0.042529       0.3075
+   7      récepteur                      +0.037920       0.0783
+   8      commandant                     +0.034647       0.1153
+   9      fuyards                        +0.032734       0.0897
+   10     île                            +0.031345       0.1814
+   11     signalée                       +0.029635       0.0882
+   12     fusils                         +0.027124       0.0661
+   13     appareil                       +0.024178       0.0793
+   14     dessein                        +0.022736       0.0629
+   15     avion                          +0.018836       0.1900
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      perle                          -0.026740       0.1078
+   2      espiègle                       -0.017673       0.0758
+   3      coupa                          -0.017539       0.0471
+   4      pourraient                     -0.017300       0.0374
+   5      gardé                          -0.016980       0.0330
+   6      bienfaits                      -0.016126       0.0712
+   7      armes                          -0.015360       0.1093
+   8      accompagnera                   -0.013750       0.0929
+   9      précédentes                    -0.013717       0.0585
+   10     échappa                        -0.012577       0.0559
+   11     préparer                       -0.011298       0.0325
+   12     paternel                       -0.010944       0.0636
+   13     possédez                       -0.010506       0.0873
+   14     recréer                        -0.008715       0.0906
+   15     charme                         -0.008624       0.0350
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+automatiques              +0.000979     +0.000067     +0.000067     0.1678
+restaurée                 +0.000000     +0.000061     +0.000061     0.1139
+endurées                  +0.000248     +0.000030     +0.000030     0.1080
+civilisé                  +0.000000     +0.000022     +0.000022     0.0857
+émetteur                  +0.001425     +0.000021     +0.000021     0.0969
+commandant                +0.001059     +0.000019     +0.000019     0.1153
+récepteur                 +0.000784     +0.000019     +0.000019     0.0783
+échappa                   +0.000000     +0.000015     +0.000015     0.0559
+surveiller                +0.000221     +0.000014     +0.000014     0.0380
+moderne                   +0.000000     +0.000013     +0.000013     0.0437
+marquait                  +0.000325     +0.000013     +0.000013     0.0533
+siffla                    +0.000172     +0.000011     +0.000011     0.0642
+fastes                    +0.000000     +0.000009     +0.000009     0.0885
+précieux                  +0.000000     +0.000009     +0.000009     0.0366
+nage                      +0.000092     +0.000009     +0.000009     0.1136
+gagné                     +0.000365     +0.000009     +0.000009     0.0348
+remarqua                  +0.000018     +0.000009     +0.000009     0.0452
+précieuse                 +0.000000     +0.000008     +0.000008     0.0469
+dessein                   +0.000600     +0.000007     +0.000007     0.0629
+interroger                +0.000197     +0.000007     +0.000007     0.0405
+logit final pour 'homme': 0.8289

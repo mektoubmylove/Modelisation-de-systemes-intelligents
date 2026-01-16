@@ -1,0 +1,386 @@
+texte analysé: collier de force . je suis devenue une cliente . j étais contente de connaître ce magasin . de temps en temps il me prenait goût de la parer , je courais acheter une nouvelle laisse . une évidence m e...
+prédiction: FEMME (confiance: 76.1%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.6568
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      autobus                        +0.000149       0.1333
+   2      jaillissaient                  +0.000116       0.1506
+   3      dormirait                      +0.000105       0.1808
+   4      turbulente                     +0.000088       0.1995
+   5      dépassaient                    +0.000085       0.1322
+   6      genou                          +0.000078       0.0818
+   7      constituait                    +0.000076       0.1128
+   8      aplomb                         +0.000072       0.0993
+   9      courais                        +0.000066       0.1446
+   10     pointes                        +0.000055       0.1035
+   11     conservait                     +0.000052       0.1105
+   12     provisions                     +0.000047       0.1004
+   13     mobilité                       +0.000042       0.1687
+   14     irréductible                   +0.000041       0.1741
+   15     violente                       +0.000035       0.0776
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      voltigeaient                   -0.000141       0.2006
+   2      frénétique                     -0.000137       0.1366
+   3      cliente                        -0.000115       0.1261
+   4      claquant                       -0.000109       0.1055
+   5      jacques                        -0.000101       0.0962
+   6      contente                       -0.000101       0.0666
+   7      devinais                       -0.000097       0.1544
+   8      loup                           -0.000074       0.0800
+   9      acheter                        -0.000069       0.0619
+   10     exister                        -0.000065       0.0865
+   11     accepta                        -0.000063       0.0950
+   12     précoce                        -0.000062       0.1229
+   13     verticales                     -0.000061       0.1735
+   14     turbulence                     -0.000061       0.1975
+   15     prendrais                      -0.000060       0.1305
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      autobus                        +0.000149       0.1333
+   2      jaillissaient                  +0.000116       0.1506
+   3      dormirait                      +0.000105       0.1808
+   4      turbulente                     +0.000088       0.1995
+   5      dépassaient                    +0.000085       0.1322
+   6      genou                          +0.000078       0.0818
+   7      constituait                    +0.000076       0.1128
+   8      aplomb                         +0.000072       0.0993
+   9      courais                        +0.000066       0.1446
+   10     pointes                        +0.000055       0.1035
+   11     conservait                     +0.000052       0.1105
+   12     provisions                     +0.000047       0.1004
+   13     mobilité                       +0.000042       0.1687
+   14     irréductible                   +0.000041       0.1741
+   15     violente                       +0.000035       0.0776
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      voltigeaient                   -0.000141       0.2006
+   2      frénétique                     -0.000137       0.1366
+   3      cliente                        -0.000115       0.1261
+   4      claquant                       -0.000109       0.1055
+   5      jacques                        -0.000101       0.0962
+   6      contente                       -0.000101       0.0666
+   7      devinais                       -0.000097       0.1544
+   8      loup                           -0.000074       0.0800
+   9      acheter                        -0.000069       0.0619
+   10     exister                        -0.000065       0.0865
+   11     accepta                        -0.000063       0.0950
+   12     précoce                        -0.000062       0.1229
+   13     verticales                     -0.000061       0.1735
+   14     turbulence                     -0.000061       0.1975
+   15     prendrais                      -0.000060       0.1305
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      voltigeaient                   +0.002698       0.2006
+   2      grandissait                    +0.002664       0.1222
+   3      appelée                        +0.002092       0.0859
+   4      dormirait                      +0.001976       0.1808
+   5      cliente                        +0.001829       0.1261
+   6      contente                       +0.001740       0.0666
+   7      plaisait                       +0.001687       0.1579
+   8      accepta                        +0.001570       0.0950
+   9      frénétique                     +0.001513       0.1366
+   10     irréductible                   +0.001314       0.1741
+   11     emportée                       +0.001144       0.1034
+   12     néanmoins                      +0.001072       0.0757
+   13     parer                          +0.001047       0.1173
+   14     resterait                      +0.000972       0.0881
+   15     claquant                       +0.000747       0.1055
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      verticales                     -0.002778       0.1735
+   2      antérieur                      -0.002295       0.2016
+   3      devinais                       -0.002058       0.1544
+   4      museau                         -0.001871       0.2170
+   5      autobus                        -0.001637       0.1333
+   6      coiffé                         -0.001515       0.1066
+   7      eut                            -0.001482       0.0617
+   8      dresser                        -0.001433       0.0870
+   9      jaillissaient                  -0.001347       0.1506
+   10     mobilité                       -0.001109       0.1687
+   11     quatrième                      -0.001081       0.0726
+   12     définitive                     -0.001043       0.0950
+   13     provisions                     -0.000968       0.1004
+   14     patte                          -0.000867       0.0950
+   15     courais                        -0.000852       0.1446
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      grandissait                    +0.142823       0.1222
+   2      voltigeaient                   +0.141046       0.2006
+   3      plaisait                       +0.107824       0.1579
+   4      dormirait                      +0.096557       0.1808
+   5      cliente                        +0.088163       0.1261
+   6      accepta                        +0.087762       0.0950
+   7      appelée                        +0.085075       0.0859
+   8      contente                       +0.084423       0.0666
+   9      irréductible                   +0.064673       0.1741
+   10     emportée                       +0.061540       0.1034
+   11     resterait                      +0.058046       0.0881
+   12     frénétique                     +0.054838       0.1366
+   13     claquant                       +0.044535       0.1055
+   14     néanmoins                      +0.044189       0.0757
+   15     parer                          +0.039177       0.1173
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      verticales                     -0.134720       0.1735
+   2      devinais                       -0.100882       0.1544
+   3      museau                         -0.096571       0.2170
+   4      antérieur                      -0.095677       0.2016
+   5      autobus                        -0.085194       0.1333
+   6      jaillissaient                  -0.080917       0.1506
+   7      coiffé                         -0.080118       0.1066
+   8      dresser                        -0.067668       0.0870
+   9      eut                            -0.066883       0.0617
+   10     turbulente                     -0.060863       0.1995
+   11     définitive                     -0.060554       0.0950
+   12     quatrième                      -0.059584       0.0726
+   13     mobilité                       -0.056682       0.1687
+   14     courais                        -0.041076       0.1446
+   15     violente                       -0.039306       0.0776
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+autobus                   +0.000000     +0.000149     +0.000149     0.1333
+jaillissaient             +0.000000     +0.000116     +0.000116     0.1506
+dormirait                 +0.001976     +0.000105     +0.000105     0.1808
+turbulente                +0.000000     +0.000088     +0.000088     0.1995
+dépassaient               +0.000256     +0.000085     +0.000085     0.1322
+genou                     +0.000000     +0.000078     +0.000078     0.0818
+constituait               +0.000432     +0.000076     +0.000076     0.1128
+aplomb                    +0.000573     +0.000072     +0.000072     0.0993
+courais                   +0.000000     +0.000066     +0.000066     0.1446
+pointes                   +0.000000     +0.000055     +0.000055     0.1035
+conservait                +0.000443     +0.000052     +0.000052     0.1105
+provisions                +0.000000     +0.000047     +0.000047     0.1004
+mobilité                  +0.000000     +0.000042     +0.000042     0.1687
+irréductible              +0.001314     +0.000041     +0.000041     0.1741
+violente                  +0.000000     +0.000035     +0.000035     0.0776
+évidence                  +0.000191     +0.000029     +0.000029     0.0685
+avions                    +0.000212     +0.000029     +0.000029     0.0634
+emportée                  +0.001144     +0.000026     +0.000026     0.1034
+déjouer                   +0.000208     +0.000025     +0.000025     0.1446
+resterait                 +0.000972     +0.000024     +0.000024     0.0881
+logit final pour 'femme': 0.6568
+# analyse pour la classe: HOMME
+# logit: -0.5004
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      courais                        +0.000070       0.1446
+   2      autobus                        +0.000061       0.1333
+   3      turbulente                     +0.000044       0.1995
+   4      irréductible                   +0.000042       0.1741
+   5      genou                          +0.000040       0.0818
+   6      jaillissaient                  +0.000036       0.1506
+   7      constituait                    +0.000036       0.1128
+   8      provisions                     +0.000035       0.1004
+   9      dormirait                      +0.000031       0.1808
+   10     aplomb                         +0.000030       0.0993
+   11     mobilité                       +0.000030       0.1687
+   12     museau                         +0.000028       0.2170
+   13     animal                         +0.000026       0.0658
+   14     déjouer                        +0.000024       0.1446
+   15     refusé                         +0.000021       0.0663
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      frénétique                     -0.000083       0.1366
+   2      devinais                       -0.000080       0.1544
+   3      cliente                        -0.000075       0.1261
+   4      voltigeaient                   -0.000067       0.2006
+   5      verticales                     -0.000061       0.1735
+   6      collier                        -0.000054       0.0912
+   7      claquant                       -0.000052       0.1055
+   8      jacques                        -0.000046       0.0962
+   9      contente                       -0.000046       0.0666
+   10     grandissait                    -0.000041       0.1222
+   11     appelée                        -0.000040       0.0859
+   12     quatrième                      -0.000035       0.0726
+   13     acheter                        -0.000034       0.0619
+   14     exister                        -0.000033       0.0865
+   15     loup                           -0.000030       0.0800
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      courais                        +0.000070       0.1446
+   2      autobus                        +0.000061       0.1333
+   3      turbulente                     +0.000044       0.1995
+   4      irréductible                   +0.000042       0.1741
+   5      genou                          +0.000040       0.0818
+   6      jaillissaient                  +0.000036       0.1506
+   7      constituait                    +0.000036       0.1128
+   8      provisions                     +0.000035       0.1004
+   9      dormirait                      +0.000031       0.1808
+   10     aplomb                         +0.000030       0.0993
+   11     mobilité                       +0.000030       0.1687
+   12     museau                         +0.000028       0.2170
+   13     animal                         +0.000026       0.0658
+   14     déjouer                        +0.000024       0.1446
+   15     refusé                         +0.000021       0.0663
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      frénétique                     -0.000083       0.1366
+   2      devinais                       -0.000080       0.1544
+   3      cliente                        -0.000075       0.1261
+   4      voltigeaient                   -0.000067       0.2006
+   5      verticales                     -0.000061       0.1735
+   6      collier                        -0.000054       0.0912
+   7      claquant                       -0.000052       0.1055
+   8      jacques                        -0.000046       0.0962
+   9      contente                       -0.000046       0.0666
+   10     grandissait                    -0.000041       0.1222
+   11     appelée                        -0.000040       0.0859
+   12     quatrième                      -0.000035       0.0726
+   13     acheter                        -0.000034       0.0619
+   14     exister                        -0.000033       0.0865
+   15     loup                           -0.000030       0.0800
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      verticales                     +0.002039       0.1735
+   2      antérieur                      +0.001538       0.2016
+   3      museau                         +0.001218       0.2170
+   4      eut                            +0.001155       0.0617
+   5      autobus                        +0.001124       0.1333
+   6      jaillissaient                  +0.001083       0.1506
+   7      coiffé                         +0.001073       0.1066
+   8      devinais                       +0.001028       0.1544
+   9      dresser                        +0.000948       0.0870
+   10     turbulente                     +0.000825       0.1995
+   11     quatrième                      +0.000770       0.0726
+   12     courais                        +0.000762       0.1446
+   13     définitive                     +0.000734       0.0950
+   14     violente                       +0.000599       0.0776
+   15     répondait                      +0.000559       0.0696
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      grandissait                    -0.001940       0.1222
+   2      voltigeaient                   -0.001858       0.2006
+   3      dormirait                      -0.001462       0.1808
+   4      cliente                        -0.001448       0.1261
+   5      appelée                        -0.001362       0.0859
+   6      contente                       -0.001298       0.0666
+   7      plaisait                       -0.001182       0.1579
+   8      frénétique                     -0.000868       0.1366
+   9      accepta                        -0.000810       0.0950
+   10     irréductible                   -0.000809       0.1741
+   11     parer                          -0.000726       0.1173
+   12     claquant                       -0.000711       0.1055
+   13     emportée                       -0.000670       0.1034
+   14     néanmoins                      -0.000634       0.0757
+   15     resterait                      -0.000610       0.0881
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      verticales                     +0.095387       0.1735
+   2      antérieur                      +0.075261       0.2016
+   3      autobus                        +0.064702       0.1333
+   4      museau                         +0.063846       0.2170
+   5      devinais                       +0.059896       0.1544
+   6      jaillissaient                  +0.059571       0.1506
+   7      coiffé                         +0.057213       0.1066
+   8      eut                            +0.051698       0.0617
+   9      dresser                        +0.051357       0.0870
+   10     turbulente                     +0.048597       0.1995
+   11     quatrième                      +0.042705       0.0726
+   12     définitive                     +0.040877       0.0950
+   13     courais                        +0.038052       0.1446
+   14     violente                       +0.032899       0.0776
+   15     apparue                        +0.032296       0.1087
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      grandissait                    -0.101750       0.1222
+   2      voltigeaient                   -0.086702       0.2006
+   3      plaisait                       -0.081037       0.1579
+   4      dormirait                      -0.068308       0.1808
+   5      contente                       -0.067545       0.0666
+   6      cliente                        -0.064583       0.1261
+   7      appelée                        -0.062357       0.0859
+   8      accepta                        -0.053003       0.0950
+   9      irréductible                   -0.040637       0.1741
+   10     emportée                       -0.039932       0.1034
+   11     frénétique                     -0.038262       0.1366
+   12     claquant                       -0.038063       0.1055
+   13     resterait                      -0.037790       0.0881
+   14     donnée                         -0.031227       0.0737
+   15     néanmoins                      -0.026883       0.0757
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+courais                   +0.000762     +0.000070     +0.000070     0.1446
+autobus                   +0.001124     +0.000061     +0.000061     0.1333
+turbulente                +0.000825     +0.000044     +0.000044     0.1995
+irréductible              +0.000000     +0.000042     +0.000042     0.1741
+genou                     +0.000382     +0.000040     +0.000040     0.0818
+jaillissaient             +0.001083     +0.000036     +0.000036     0.1506
+constituait               +0.000000     +0.000036     +0.000036     0.1128
+provisions                +0.000505     +0.000035     +0.000035     0.1004
+dormirait                 +0.000000     +0.000031     +0.000031     0.1808
+aplomb                    +0.000000     +0.000030     +0.000030     0.0993
+mobilité                  +0.000364     +0.000030     +0.000030     0.1687
+museau                    +0.001218     +0.000028     +0.000028     0.2170
+animal                    +0.000106     +0.000026     +0.000026     0.0658
+déjouer                   +0.000000     +0.000024     +0.000024     0.1446
+refusé                    +0.000000     +0.000021     +0.000021     0.0663
+violente                  +0.000599     +0.000017     +0.000017     0.0776
+pointes                   +0.000069     +0.000014     +0.000014     0.1035
+dresser                   +0.000948     +0.000011     +0.000011     0.0870
+pattes                    +0.000366     +0.000010     +0.000010     0.0685
+eut                       +0.001155     +0.000010     +0.000010     0.0617
+logit final pour 'homme': -0.5004

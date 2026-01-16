@@ -1,0 +1,5 @@
+filename: (SARR)(Mohamed Mbougar)(la plus secrète mémoire des hommes)(1)(2021)(1990)(v)(fr)(z)(z)(V)(R)(T) (1).txt
+index: 270
+first_name: mohamed_mbougar
+last_name: sarr
+true_label: homme

@@ -1,0 +1,386 @@
+texte analysé: des portes condamnées les regardèrent passer , sans intérêt : elle ne constituait plus une proie facile avec son escorte . ils s absorbèrent dans la contemplation des tags qui couvraient les briques ....
+prédiction: FEMME (confiance: 76.4%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.6830
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      constituaient                  +0.000083       0.0803
+   2      explosait                      +0.000068       0.1074
+   3      conduite                       +0.000067       0.0415
+   4      cervicales                     +0.000065       0.1225
+   5      entrouvrit                     +0.000053       0.0854
+   6      constituait                    +0.000047       0.0696
+   7      détacha                        +0.000041       0.0709
+   8      frappa                         +0.000040       0.0519
+   9      idiot                          +0.000037       0.0504
+   10     grillagée                      +0.000033       0.1213
+   11     entendit                       +0.000032       0.0474
+   12     remontait                      +0.000031       0.0550
+   13     maintenait                     +0.000030       0.0689
+   14     installa                       +0.000027       0.0544
+   15     gloussant                      +0.000026       0.1237
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      buick                          -0.000420       0.4422
+   2      sarah                          -0.000281       0.4068
+   3      beacon                         -0.000166       0.1828
+   4      adrian                         -0.000144       0.1790
+   5      continuels                     -0.000141       0.1318
+   6      rita                           -0.000133       0.2826
+   7      accidents                      -0.000081       0.0727
+   8      tee                            -0.000062       0.0835
+   9      hésitez                        -0.000058       0.0887
+   10     planètes                       -0.000054       0.1011
+   11     criée                          -0.000053       0.1294
+   12     rejoignit                      -0.000050       0.0567
+   13     couru                          -0.000044       0.0529
+   14     base                           -0.000042       0.0477
+   15     naissait                       -0.000042       0.0896
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      constituaient                  +0.000083       0.0803
+   2      explosait                      +0.000068       0.1074
+   3      conduite                       +0.000067       0.0415
+   4      cervicales                     +0.000065       0.1225
+   5      entrouvrit                     +0.000053       0.0854
+   6      constituait                    +0.000047       0.0696
+   7      détacha                        +0.000041       0.0709
+   8      frappa                         +0.000040       0.0519
+   9      idiot                          +0.000037       0.0504
+   10     grillagée                      +0.000033       0.1213
+   11     entendit                       +0.000032       0.0474
+   12     remontait                      +0.000031       0.0550
+   13     maintenait                     +0.000030       0.0689
+   14     installa                       +0.000027       0.0544
+   15     gloussant                      +0.000026       0.1237
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      buick                          -0.000420       0.4422
+   2      sarah                          -0.000281       0.4068
+   3      beacon                         -0.000166       0.1828
+   4      adrian                         -0.000144       0.1790
+   5      continuels                     -0.000141       0.1318
+   6      rita                           -0.000133       0.2826
+   7      accidents                      -0.000081       0.0727
+   8      tee                            -0.000062       0.0835
+   9      hésitez                        -0.000058       0.0887
+   10     planètes                       -0.000054       0.1011
+   11     criée                          -0.000053       0.1294
+   12     rejoignit                      -0.000050       0.0567
+   13     couru                          -0.000044       0.0529
+   14     base                           -0.000042       0.0477
+   15     naissait                       -0.000042       0.0896
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sarah                          +0.003226       0.4068
+   2      rita                           +0.002226       0.2826
+   3      beacon                         +0.002018       0.1828
+   4      criée                          +0.001851       0.1294
+   5      rejoignit                      +0.001351       0.0567
+   6      pelée                          +0.001073       0.1219
+   7      tee                            +0.001022       0.0835
+   8      amusé                          +0.000908       0.0517
+   9      poubelle                       +0.000869       0.0668
+   10     shirt                          +0.000855       0.0751
+   11     hésitez                        +0.000775       0.0887
+   12     contemplation                  +0.000737       0.0616
+   13     adrian                         +0.000727       0.1790
+   14     installa                       +0.000722       0.0544
+   15     gloussant                      +0.000695       0.1237
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      buick                          -0.004937       0.4422
+   2      square                         -0.001130       0.0800
+   3      capot                          -0.001128       0.0819
+   4      pouce                          -0.000999       0.0478
+   5      volant                         -0.000961       0.0471
+   6      entrouvrit                     -0.000943       0.0854
+   7      briques                        -0.000943       0.0639
+   8      reconnut                       -0.000909       0.0505
+   9      couvraient                     -0.000840       0.0758
+   10     moteur                         -0.000840       0.0517
+   11     grillagée                      -0.000839       0.1213
+   12     idiot                          -0.000781       0.0504
+   13     proie                          -0.000738       0.0446
+   14     condamnées                     -0.000709       0.1086
+   15     explosait                      -0.000704       0.1074
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sarah                          +0.177612       0.4068
+   2      criée                          +0.094092       0.1294
+   3      beacon                         +0.093046       0.1828
+   4      rita                           +0.079039       0.2826
+   5      rejoignit                      +0.056686       0.0567
+   6      pelée                          +0.054514       0.1219
+   7      tee                            +0.051897       0.0835
+   8      shirt                          +0.043994       0.0751
+   9      adrian                         +0.043867       0.1790
+   10     amusé                          +0.043376       0.0517
+   11     poubelle                       +0.043285       0.0668
+   12     installa                       +0.035589       0.0544
+   13     hésitez                        +0.034911       0.0887
+   14     contemplation                  +0.033938       0.0616
+   15     gloussant                      +0.033035       0.1237
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      buick                          -0.276086       0.4422
+   2      capot                          -0.054780       0.0819
+   3      pouce                          -0.052087       0.0478
+   4      reconnut                       -0.049327       0.0505
+   5      square                         -0.049197       0.0800
+   6      volant                         -0.047399       0.0471
+   7      idiot                          -0.043993       0.0504
+   8      entrouvrit                     -0.041957       0.0854
+   9      flics                          -0.038700       0.0721
+   10     cervicales                     -0.038682       0.1225
+   11     briques                        -0.038177       0.0639
+   12     moteur                         -0.037527       0.0517
+   13     couvraient                     -0.037202       0.0758
+   14     désigna                        -0.034992       0.0637
+   15     proie                          -0.031470       0.0446
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+constituaient             +0.000000     +0.000083     +0.000083     0.0803
+explosait                 +0.000000     +0.000068     +0.000068     0.1074
+conduite                  +0.000000     +0.000067     +0.000067     0.0415
+cervicales                +0.000000     +0.000065     +0.000065     0.1225
+entrouvrit                +0.000000     +0.000053     +0.000053     0.0854
+constituait               +0.000228     +0.000047     +0.000047     0.0696
+détacha                   +0.000022     +0.000041     +0.000041     0.0709
+frappa                    +0.000000     +0.000040     +0.000040     0.0519
+idiot                     +0.000000     +0.000037     +0.000037     0.0504
+grillagée                 +0.000000     +0.000033     +0.000033     0.1213
+entendit                  +0.000000     +0.000032     +0.000032     0.0474
+remontait                 +0.000243     +0.000031     +0.000031     0.0550
+maintenait                +0.000000     +0.000030     +0.000030     0.0689
+installa                  +0.000722     +0.000027     +0.000027     0.0544
+gloussant                 +0.000695     +0.000026     +0.000026     0.1237
+sueur                     +0.000000     +0.000024     +0.000024     0.0407
+aspect                    +0.000000     +0.000021     +0.000021     0.0442
+parvenir                  +0.000121     +0.000019     +0.000019     0.0450
+collait                   +0.000360     +0.000018     +0.000018     0.0697
+jaune                     +0.000000     +0.000017     +0.000017     0.0381
+logit final pour 'femme': 0.6830
+# analyse pour la classe: HOMME
+# logit: -0.4911
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      constituaient                  +0.000042       0.0803
+   2      idiot                          +0.000041       0.0504
+   3      conduite                       +0.000038       0.0415
+   4      grillagée                      +0.000037       0.1213
+   5      détacha                        +0.000027       0.0709
+   6      maintenait                     +0.000026       0.0689
+   7      constituait                    +0.000023       0.0696
+   8      installa                       +0.000022       0.0544
+   9      gloussant                      +0.000020       0.1237
+   10     entendit                       +0.000019       0.0474
+   11     explosait                      +0.000019       0.1074
+   12     condamnées                     +0.000018       0.1086
+   13     moites                         +0.000015       0.0828
+   14     parvenir                       +0.000014       0.0450
+   15     remontait                      +0.000014       0.0550
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sarah                          -0.000210       0.4068
+   2      buick                          -0.000150       0.4422
+   3      rita                           -0.000129       0.2826
+   4      beacon                         -0.000097       0.1828
+   5      continuels                     -0.000092       0.1318
+   6      adrian                         -0.000069       0.1790
+   7      rejoignit                      -0.000035       0.0567
+   8      gara                           -0.000032       0.0934
+   9      street                         -0.000028       0.0919
+   10     abandonnent                    -0.000025       0.0924
+   11     battants                       -0.000025       0.0785
+   12     couru                          -0.000023       0.0529
+   13     shirt                          -0.000022       0.0751
+   14     accidents                      -0.000022       0.0727
+   15     déborde                        -0.000021       0.0826
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      constituaient                  +0.000042       0.0803
+   2      idiot                          +0.000041       0.0504
+   3      conduite                       +0.000038       0.0415
+   4      grillagée                      +0.000037       0.1213
+   5      détacha                        +0.000027       0.0709
+   6      maintenait                     +0.000026       0.0689
+   7      constituait                    +0.000023       0.0696
+   8      installa                       +0.000022       0.0544
+   9      gloussant                      +0.000020       0.1237
+   10     entendit                       +0.000019       0.0474
+   11     explosait                      +0.000019       0.1074
+   12     condamnées                     +0.000018       0.1086
+   13     moites                         +0.000015       0.0828
+   14     parvenir                       +0.000014       0.0450
+   15     remontait                      +0.000014       0.0550
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sarah                          -0.000210       0.4068
+   2      buick                          -0.000150       0.4422
+   3      rita                           -0.000129       0.2826
+   4      beacon                         -0.000097       0.1828
+   5      continuels                     -0.000092       0.1318
+   6      adrian                         -0.000069       0.1790
+   7      rejoignit                      -0.000035       0.0567
+   8      gara                           -0.000032       0.0934
+   9      street                         -0.000028       0.0919
+   10     abandonnent                    -0.000025       0.0924
+   11     battants                       -0.000025       0.0785
+   12     couru                          -0.000023       0.0529
+   13     shirt                          -0.000022       0.0751
+   14     accidents                      -0.000022       0.0727
+   15     déborde                        -0.000021       0.0826
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      buick                          +0.003421       0.4422
+   2      entrouvrit                     +0.000801       0.0854
+   3      square                         +0.000783       0.0800
+   4      reconnut                       +0.000739       0.0505
+   5      grillagée                      +0.000712       0.1213
+   6      capot                          +0.000709       0.0819
+   7      pouce                          +0.000704       0.0478
+   8      briques                        +0.000675       0.0639
+   9      volant                         +0.000638       0.0471
+   10     moteur                         +0.000568       0.0517
+   11     cervicales                     +0.000556       0.1225
+   12     idiot                          +0.000547       0.0504
+   13     planètes                       +0.000467       0.1011
+   14     combat                         +0.000459       0.0442
+   15     proie                          +0.000452       0.0446
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rita                           -0.001812       0.2826
+   2      beacon                         -0.001662       0.1828
+   3      criée                          -0.001286       0.1294
+   4      sarah                          -0.001059       0.4068
+   5      rejoignit                      -0.000956       0.0567
+   6      tee                            -0.000823       0.0835
+   7      pelée                          -0.000808       0.1219
+   8      amusé                          -0.000695       0.0517
+   9      poubelle                       -0.000673       0.0668
+   10     fixa                           -0.000589       0.0622
+   11     shirt                          -0.000577       0.0751
+   12     contemplation                  -0.000563       0.0616
+   13     hésitez                        -0.000524       0.0887
+   14     installa                       -0.000520       0.0544
+   15     gloussant                      -0.000498       0.1237
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      buick                          +0.218622       0.4422
+   2      reconnut                       +0.040610       0.0505
+   3      entrouvrit                     +0.037855       0.0854
+   4      pouce                          +0.037766       0.0478
+   5      cervicales                     +0.033980       0.1225
+   6      square                         +0.030991       0.0800
+   7      volant                         +0.030025       0.0471
+   8      capot                          +0.029598       0.0819
+   9      idiot                          +0.029371       0.0504
+   10     briques                        +0.029011       0.0639
+   11     moteur                         +0.024907       0.0517
+   12     flics                          +0.023675       0.0721
+   13     désigna                        +0.022531       0.0637
+   14     index                          +0.021710       0.0496
+   15     grillagée                      +0.021686       0.1213
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      beacon                         -0.069275       0.1828
+   2      criée                          -0.068808       0.1294
+   3      rita                           -0.065481       0.2826
+   4      sarah                          -0.047975       0.4068
+   5      pelée                          -0.043478       0.1219
+   6      tee                            -0.042902       0.0835
+   7      rejoignit                      -0.040258       0.0567
+   8      poubelle                       -0.035073       0.0668
+   9      amusé                          -0.034756       0.0517
+   10     adrian                         -0.032205       0.1790
+   11     installa                       -0.027449       0.0544
+   12     fixa                           -0.027344       0.0622
+   13     contemplation                  -0.027306       0.0616
+   14     shirt                          -0.026158       0.0751
+   15     hésitez                        -0.025172       0.0887
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+constituaient             +0.000395     +0.000042     +0.000042     0.0803
+idiot                     +0.000547     +0.000041     +0.000041     0.0504
+conduite                  +0.000399     +0.000038     +0.000038     0.0415
+grillagée                 +0.000712     +0.000037     +0.000037     0.1213
+détacha                   +0.000000     +0.000027     +0.000027     0.0709
+maintenait                +0.000253     +0.000026     +0.000026     0.0689
+constituait               +0.000000     +0.000023     +0.000023     0.0696
+installa                  +0.000000     +0.000022     +0.000022     0.0544
+gloussant                 +0.000000     +0.000020     +0.000020     0.1237
+entendit                  +0.000279     +0.000019     +0.000019     0.0474
+explosait                 +0.000304     +0.000019     +0.000019     0.1074
+condamnées                +0.000452     +0.000018     +0.000018     0.1086
+moites                    +0.000000     +0.000015     +0.000015     0.0828
+parvenir                  +0.000000     +0.000014     +0.000014     0.0450
+remontait                 +0.000000     +0.000014     +0.000014     0.0550
+entrouvrit                +0.000801     +0.000013     +0.000013     0.0854
+proie                     +0.000452     +0.000012     +0.000012     0.0446
+blouson                   +0.000006     +0.000012     +0.000012     0.0798
+sueur                     +0.000312     +0.000011     +0.000011     0.0407
+tempes                    +0.000016     +0.000011     +0.000011     0.0494
+logit final pour 'homme': -0.4911

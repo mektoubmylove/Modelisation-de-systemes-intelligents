@@ -1,0 +1,5 @@
+filename: (ARNAUD)(G.J.)(soleil blême)(1)(1989)(1928)(2020)(fr)(z)(z)(V)(R)(T).txt
+index: 258
+first_name: gj
+last_name: arnaud
+true_label: homme

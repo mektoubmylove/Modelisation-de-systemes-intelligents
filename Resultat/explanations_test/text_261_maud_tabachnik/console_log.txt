@@ -1,0 +1,386 @@
+texte analysé: elle vivait avec une femme . sam reposa doucement la fiche sur la table . la photo représentait une fille âgée d une petite trentaine , rieuse , le visage piqueté de taches de rousseur et pourvue d im...
+prédiction: FEMME (confiance: 93.8%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.5863
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      joan                           +0.000106       0.3395
+   2      platanes                       +0.000060       0.1139
+   3      fumet                          +0.000058       0.1123
+   4      vitrines                       +0.000055       0.0798
+   5      policier                       +0.000049       0.2225
+   6      boston                         +0.000045       0.1273
+   7      confectionner                  +0.000044       0.0977
+   8      éternel                        +0.000041       0.0619
+   9      échappait                      +0.000036       0.0607
+   10     neuvième                       +0.000035       0.1001
+   11     prit                           +0.000028       0.0480
+   12     trentaine                      +0.000027       0.0595
+   13     rousseur                       +0.000023       0.0981
+   14     arrêté                         +0.000022       0.0446
+   15     dépendait                      +0.000022       0.0814
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      goodman                        -0.000237       0.2193
+   2      mordoré                        -0.000098       0.1375
+   3      piqueté                        -0.000085       0.1458
+   4      rieuse                         -0.000080       0.1013
+   5      ravie                          -0.000077       0.0683
+   6      bâillant                       -0.000076       0.1058
+   7      désolé                         -0.000073       0.0569
+   8      craquant                       -0.000067       0.1357
+   9      bus                            -0.000065       0.0814
+   10     occupe                         -0.000064       0.0458
+   11     loyer                          -0.000064       0.0917
+   12     lieutenant                     -0.000060       0.1669
+   13     immenses                       -0.000056       0.0590
+   14     âgée                           -0.000049       0.0678
+   15     sirop                          -0.000047       0.1879
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      joan                           +0.000106       0.3395
+   2      platanes                       +0.000060       0.1139
+   3      fumet                          +0.000058       0.1123
+   4      vitrines                       +0.000055       0.0798
+   5      policier                       +0.000049       0.2225
+   6      boston                         +0.000045       0.1273
+   7      confectionner                  +0.000044       0.0977
+   8      éternel                        +0.000041       0.0619
+   9      échappait                      +0.000036       0.0607
+   10     neuvième                       +0.000035       0.1001
+   11     prit                           +0.000028       0.0480
+   12     trentaine                      +0.000027       0.0595
+   13     rousseur                       +0.000023       0.0981
+   14     arrêté                         +0.000022       0.0446
+   15     dépendait                      +0.000022       0.0814
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      goodman                        -0.000237       0.2193
+   2      mordoré                        -0.000098       0.1375
+   3      piqueté                        -0.000085       0.1458
+   4      rieuse                         -0.000080       0.1013
+   5      ravie                          -0.000077       0.0683
+   6      bâillant                       -0.000076       0.1058
+   7      désolé                         -0.000073       0.0569
+   8      craquant                       -0.000067       0.1357
+   9      bus                            -0.000065       0.0814
+   10     occupe                         -0.000064       0.0458
+   11     loyer                          -0.000064       0.0917
+   12     lieutenant                     -0.000060       0.1669
+   13     immenses                       -0.000056       0.0590
+   14     âgée                           -0.000049       0.0678
+   15     sirop                          -0.000047       0.1879
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      goodman                        +0.003735       0.2193
+   2      joan                           +0.003693       0.3395
+   3      boston                         +0.002390       0.1273
+   4      transformaient                 +0.001839       0.1263
+   5      mordoré                        +0.001747       0.1375
+   6      craquant                       +0.001657       0.1357
+   7      âgée                           +0.001605       0.0678
+   8      ravie                          +0.001533       0.0683
+   9      confectionner                  +0.001337       0.0977
+   10     rieuse                         +0.001149       0.1013
+   11     sirop                          +0.001018       0.1879
+   12     bâillant                       +0.001007       0.1058
+   13     concernant                     +0.000935       0.0674
+   14     nausée                         +0.000905       0.0743
+   15     bus                            +0.000826       0.0814
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      policier                       -0.002116       0.2225
+   2      platanes                       -0.001377       0.1139
+   3      administrait                   -0.001206       0.1450
+   4      érables                        -0.001117       0.1450
+   5      sergent                        -0.001077       0.0990
+   6      éternel                        -0.001029       0.0619
+   7      entré                          -0.000992       0.0493
+   8      trentaine                      -0.000961       0.0595
+   9      vivait                         -0.000815       0.0933
+   10     revint                         -0.000765       0.0523
+   11     rechercher                     -0.000655       0.0731
+   12     taches                         -0.000626       0.0538
+   13     gars                           -0.000600       0.0632
+   14     arrêté                         -0.000497       0.0446
+   15     vivaient                       -0.000487       0.0625
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      joan                           +0.172131       0.3395
+   2      boston                         +0.086670       0.1273
+   3      goodman                        +0.077929       0.2193
+   4      transformaient                 +0.065626       0.1263
+   5      confectionner                  +0.057804       0.0977
+   6      craquant                       +0.051579       0.1357
+   7      âgée                           +0.051163       0.0678
+   8      mordoré                        +0.047005       0.1375
+   9      ravie                          +0.042765       0.0683
+   10     nausée                         +0.036541       0.0743
+   11     ragaillardi                    +0.029295       0.1273
+   12     sirop                          +0.028924       0.1879
+   13     rieuse                         +0.028487       0.1013
+   14     songeur                        +0.027306       0.0840
+   15     concernant                     +0.026817       0.0674
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      policier                       -0.071380       0.2225
+   2      sergent                        -0.043360       0.0990
+   3      entré                          -0.038756       0.0493
+   4      administrait                   -0.038114       0.1450
+   5      platanes                       -0.035480       0.1139
+   6      vivait                         -0.034419       0.0933
+   7      lieutenant                     -0.030307       0.1669
+   8      trentaine                      -0.029561       0.0595
+   9      éternel                        -0.029151       0.0619
+   10     revint                         -0.027501       0.0523
+   11     taches                         -0.026487       0.0538
+   12     rechercher                     -0.026396       0.0731
+   13     fiche                          -0.024903       0.1251
+   14     vivaient                       -0.023053       0.0625
+   15     érables                        -0.022953       0.1450
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+joan                      +0.003693     +0.000106     +0.000106     0.3395
+platanes                  +0.000000     +0.000060     +0.000060     0.1139
+fumet                     +0.000111     +0.000058     +0.000058     0.1123
+vitrines                  +0.000209     +0.000055     +0.000055     0.0798
+policier                  +0.000000     +0.000049     +0.000049     0.2225
+boston                    +0.002390     +0.000045     +0.000045     0.1273
+confectionner             +0.001337     +0.000044     +0.000044     0.0977
+éternel                   +0.000000     +0.000041     +0.000041     0.0619
+échappait                 +0.000074     +0.000036     +0.000036     0.0607
+neuvième                  +0.000232     +0.000035     +0.000035     0.1001
+prit                      +0.000000     +0.000028     +0.000028     0.0480
+trentaine                 +0.000000     +0.000027     +0.000027     0.0595
+rousseur                  +0.000040     +0.000023     +0.000023     0.0981
+arrêté                    +0.000000     +0.000022     +0.000022     0.0446
+dépendait                 +0.000053     +0.000022     +0.000022     0.0814
+nausée                    +0.000905     +0.000022     +0.000022     0.0743
+reprit                    +0.000000     +0.000021     +0.000021     0.0521
+retraite                  +0.000000     +0.000020     +0.000020     0.0496
+congé                     +0.000000     +0.000019     +0.000019     0.0551
+songeur                   +0.000675     +0.000019     +0.000019     0.0840
+logit final pour 'femme': 1.5863
+# analyse pour la classe: HOMME
+# logit: -1.1316
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      joan                           +0.000127       0.3395
+   2      policier                       +0.000051       0.2225
+   3      confectionner                  +0.000039       0.0977
+   4      vitrines                       +0.000036       0.0798
+   5      trentaine                      +0.000027       0.0595
+   6      boston                         +0.000026       0.1273
+   7      platanes                       +0.000025       0.1139
+   8      dépendait                      +0.000023       0.0814
+   9      veste                          +0.000021       0.0524
+   10     congé                          +0.000018       0.0551
+   11     reprit                         +0.000017       0.0521
+   12     température                    +0.000014       0.0660
+   13     adjoint                        +0.000014       0.0964
+   14     fumet                          +0.000013       0.1123
+   15     rousseur                       +0.000011       0.0981
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      goodman                        -0.000091       0.2193
+   2      mordoré                        -0.000059       0.1375
+   3      sam                            -0.000054       0.2584
+   4      rieuse                         -0.000042       0.1013
+   5      désolé                         -0.000042       0.0569
+   6      lieutenant                     -0.000040       0.1669
+   7      craquant                       -0.000037       0.1357
+   8      bâillant                       -0.000036       0.1058
+   9      samuel                         -0.000036       0.1245
+   10     dépression                     -0.000034       0.0840
+   11     ouvertes                       -0.000033       0.0539
+   12     allô                           -0.000032       0.0859
+   13     fiche                          -0.000030       0.1251
+   14     loyer                          -0.000030       0.0917
+   15     âgée                           -0.000029       0.0678
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      joan                           +0.000127       0.3395
+   2      policier                       +0.000051       0.2225
+   3      confectionner                  +0.000039       0.0977
+   4      vitrines                       +0.000036       0.0798
+   5      trentaine                      +0.000027       0.0595
+   6      boston                         +0.000026       0.1273
+   7      platanes                       +0.000025       0.1139
+   8      dépendait                      +0.000023       0.0814
+   9      veste                          +0.000021       0.0524
+   10     congé                          +0.000018       0.0551
+   11     reprit                         +0.000017       0.0521
+   12     température                    +0.000014       0.0660
+   13     adjoint                        +0.000014       0.0964
+   14     fumet                          +0.000013       0.1123
+   15     rousseur                       +0.000011       0.0981
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      goodman                        -0.000091       0.2193
+   2      mordoré                        -0.000059       0.1375
+   3      sam                            -0.000054       0.2584
+   4      rieuse                         -0.000042       0.1013
+   5      désolé                         -0.000042       0.0569
+   6      lieutenant                     -0.000040       0.1669
+   7      craquant                       -0.000037       0.1357
+   8      bâillant                       -0.000036       0.1058
+   9      samuel                         -0.000036       0.1245
+   10     dépression                     -0.000034       0.0840
+   11     ouvertes                       -0.000033       0.0539
+   12     allô                           -0.000032       0.0859
+   13     fiche                          -0.000030       0.1251
+   14     loyer                          -0.000030       0.0917
+   15     âgée                           -0.000029       0.0678
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      érables                        +0.001117       0.1450
+   2      policier                       +0.001091       0.2225
+   3      platanes                       +0.000904       0.1139
+   4      administrait                   +0.000754       0.1450
+   5      éternel                        +0.000734       0.0619
+   6      sergent                        +0.000692       0.0990
+   7      vivait                         +0.000649       0.0933
+   8      entré                          +0.000632       0.0493
+   9      trentaine                      +0.000580       0.0595
+   10     revint                         +0.000551       0.0523
+   11     taches                         +0.000474       0.0538
+   12     samuel                         +0.000462       0.1245
+   13     rechercher                     +0.000430       0.0731
+   14     lieutenant                     +0.000427       0.1669
+   15     quelles                        +0.000375       0.0480
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      goodman                        -0.002639       0.2193
+   2      joan                           -0.002547       0.3395
+   3      craquant                       -0.001632       0.1357
+   4      boston                         -0.001515       0.1273
+   5      transformaient                 -0.001318       0.1263
+   6      ravie                          -0.001197       0.0683
+   7      confectionner                  -0.001029       0.0977
+   8      âgée                           -0.001004       0.0678
+   9      mordoré                        -0.000948       0.1375
+   10     bâillant                       -0.000861       0.1058
+   11     rieuse                         -0.000782       0.1013
+   12     reposa                         -0.000677       0.0821
+   13     concernant                     -0.000600       0.0674
+   14     étira                          -0.000599       0.0864
+   15     partageaient                   -0.000571       0.0856
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      policier                       +0.033589       0.2225
+   2      érables                        +0.031845       0.1450
+   3      lieutenant                     +0.030054       0.1669
+   4      vivait                         +0.027128       0.0933
+   5      sergent                        +0.025296       0.0990
+   6      platanes                       +0.025000       0.1139
+   7      samuel                         +0.024445       0.1245
+   8      sam                            +0.024160       0.2584
+   9      entré                          +0.023687       0.0493
+   10     éternel                        +0.023314       0.0619
+   11     administrait                   +0.022077       0.1450
+   12     rechercher                     +0.019789       0.0731
+   13     taches                         +0.018906       0.0538
+   14     fiche                          +0.018612       0.1251
+   15     revint                         +0.017357       0.0523
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      joan                           -0.123927       0.3395
+   2      goodman                        -0.058712       0.2193
+   3      boston                         -0.055008       0.1273
+   4      transformaient                 -0.051750       0.1263
+   5      craquant                       -0.049857       0.1357
+   6      confectionner                  -0.043325       0.0977
+   7      ravie                          -0.040238       0.0683
+   8      âgée                           -0.029839       0.0678
+   9      automne                        -0.022454       0.0564
+   10     ragaillardi                    -0.021711       0.1273
+   11     rieuse                         -0.021446       0.1013
+   12     étira                          -0.021145       0.0864
+   13     bâillant                       -0.021063       0.1058
+   14     reposa                         -0.020473       0.0821
+   15     bus                            -0.018966       0.0814
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+joan                      +0.000000     +0.000127     +0.000127     0.3395
+policier                  +0.001091     +0.000051     +0.000051     0.2225
+confectionner             +0.000000     +0.000039     +0.000039     0.0977
+vitrines                  +0.000000     +0.000036     +0.000036     0.0798
+trentaine                 +0.000580     +0.000027     +0.000027     0.0595
+boston                    +0.000000     +0.000026     +0.000026     0.1273
+platanes                  +0.000904     +0.000025     +0.000025     0.1139
+dépendait                 +0.000000     +0.000023     +0.000023     0.0814
+veste                     +0.000000     +0.000021     +0.000021     0.0524
+congé                     +0.000171     +0.000018     +0.000018     0.0551
+reprit                    +0.000190     +0.000017     +0.000017     0.0521
+température               +0.000043     +0.000014     +0.000014     0.0660
+adjoint                   +0.000097     +0.000014     +0.000014     0.0964
+fumet                     +0.000000     +0.000013     +0.000013     0.1123
+rousseur                  +0.000000     +0.000011     +0.000011     0.0981
+ragaillardi               +0.000000     +0.000010     +0.000010     0.1273
+automne                   +0.000000     +0.000010     +0.000010     0.0564
+éternel                   +0.000734     +0.000009     +0.000009     0.0619
+foi                       +0.000202     +0.000009     +0.000009     0.0456
+appartement               +0.000000     +0.000009     +0.000009     0.0484
+logit final pour 'homme': -1.1316

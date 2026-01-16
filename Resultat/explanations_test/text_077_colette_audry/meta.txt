@@ -1,0 +1,5 @@
+filename: (AUDRY)(Colette)(derrière la baignoire)(2)(1962)(1906)(1990)(fr)(z)(z)(V)(R)(T).txt
+index: 77
+first_name: colette
+last_name: audry
+true_label: femme

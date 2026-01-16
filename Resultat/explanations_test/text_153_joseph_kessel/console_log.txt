@@ -1,0 +1,386 @@
+texte analysé: . le soldat s . s . entra chez lui comme un fou et hurla : debout , docteur , debout ! il y a eu un attentat épouvantable . mais le führer est vivant . mal réveillé et sans rien comprendre à ces cris ...
+prédiction: HOMME (confiance: 66.4%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.3094
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      attentat                       +0.000202       0.2262
+   2      feuilleter                     +0.000055       0.0596
+   3      appareil                       +0.000045       0.0659
+   4      bombe                          +0.000043       0.0451
+   5      épouvantable                   +0.000040       0.0871
+   6      pulvériser                     +0.000038       0.0866
+   7      détacha                        +0.000038       0.0507
+   8      officiers                      +0.000037       0.0959
+   9      écria                          +0.000036       0.0791
+   10     hitler                         +0.000035       0.0692
+   11     dirigea                        +0.000030       0.0371
+   12     auteur                         +0.000030       0.0353
+   13     papiers                        +0.000027       0.0595
+   14     dossiers                       +0.000026       0.0432
+   15     stockholm                      +0.000026       0.0972
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      himmler                        -0.000472       0.7832
+   2      führer                         -0.000144       0.3187
+   3      taisez                         -0.000055       0.0522
+   4      demanda                        -0.000042       0.0886
+   5      baraquement                    -0.000041       0.0879
+   6      réveillé                       -0.000038       0.0354
+   7      dissoudre                      -0.000035       0.0613
+   8      espoirs                        -0.000031       0.0418
+   9      bâilla                         -0.000030       0.0664
+   10     chaussures                     -0.000029       0.0319
+   11     usage                          -0.000027       0.0299
+   12     métalliques                    -0.000026       0.0499
+   13     déchiqueter                    -0.000025       0.0830
+   14     fébrilement                    -0.000025       0.0553
+   15     pareilles                      -0.000025       0.0392
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      attentat                       +0.000202       0.2262
+   2      feuilleter                     +0.000055       0.0596
+   3      appareil                       +0.000045       0.0659
+   4      bombe                          +0.000043       0.0451
+   5      épouvantable                   +0.000040       0.0871
+   6      pulvériser                     +0.000038       0.0866
+   7      détacha                        +0.000038       0.0507
+   8      officiers                      +0.000037       0.0959
+   9      écria                          +0.000036       0.0791
+   10     hitler                         +0.000035       0.0692
+   11     dirigea                        +0.000030       0.0371
+   12     auteur                         +0.000030       0.0353
+   13     papiers                        +0.000027       0.0595
+   14     dossiers                       +0.000026       0.0432
+   15     stockholm                      +0.000026       0.0972
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      himmler                        -0.000472       0.7832
+   2      führer                         -0.000144       0.3187
+   3      taisez                         -0.000055       0.0522
+   4      demanda                        -0.000042       0.0886
+   5      baraquement                    -0.000041       0.0879
+   6      réveillé                       -0.000038       0.0354
+   7      dissoudre                      -0.000035       0.0613
+   8      espoirs                        -0.000031       0.0418
+   9      bâilla                         -0.000030       0.0664
+   10     chaussures                     -0.000029       0.0319
+   11     usage                          -0.000027       0.0299
+   12     métalliques                    -0.000026       0.0499
+   13     déchiqueter                    -0.000025       0.0830
+   14     fébrilement                    -0.000025       0.0553
+   15     pareilles                      -0.000025       0.0392
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      führer                         +0.001373       0.3187
+   2      trier                          +0.000759       0.0623
+   3      superflus                      +0.000728       0.0853
+   4      demanda                        +0.000679       0.0886
+   5      chaussures                     +0.000637       0.0319
+   6      dissoudre                      +0.000559       0.0613
+   7      fébrilement                    +0.000547       0.0553
+   8      soldat                         +0.000518       0.0394
+   9      documents                      +0.000516       0.0849
+   10     stockholm                      +0.000462       0.0972
+   11     dossiers                       +0.000429       0.0432
+   12     desserrer                      +0.000406       0.0638
+   13     pensa                          +0.000368       0.0364
+   14     fidèle                         +0.000328       0.0315
+   15     destinée                       +0.000246       0.0357
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      himmler                        -0.002704       0.7832
+   2      défends                        -0.001380       0.0551
+   3      attentat                       -0.001187       0.2262
+   4      appareil                       -0.000905       0.0659
+   5      docteur                        -0.000896       0.1008
+   6      colonel                        -0.000841       0.0560
+   7      liasse                         -0.000828       0.0530
+   8      réduits                        -0.000767       0.0551
+   9      bombe                          -0.000722       0.0451
+   10     réveillé                       -0.000705       0.0354
+   11     épouvantable                   -0.000681       0.0871
+   12     pareilles                      -0.000657       0.0392
+   13     continuait                     -0.000608       0.0300
+   14     néant                          -0.000584       0.0415
+   15     officiers                      -0.000579       0.0959
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      führer                         +0.081189       0.3187
+   2      trier                          +0.040374       0.0623
+   3      demanda                        +0.036789       0.0886
+   4      chaussures                     +0.036512       0.0319
+   5      superflus                      +0.033966       0.0853
+   6      dissoudre                      +0.030912       0.0613
+   7      documents                      +0.025421       0.0849
+   8      fébrilement                    +0.023577       0.0553
+   9      dossiers                       +0.022746       0.0432
+   10     desserrer                      +0.021573       0.0638
+   11     soldat                         +0.021463       0.0394
+   12     fidèle                         +0.016957       0.0315
+   13     stockholm                      +0.015108       0.0972
+   14     égarement                      +0.013927       0.0637
+   15     pensa                          +0.012416       0.0364
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      himmler                        -0.199439       0.7832
+   2      défends                        -0.075994       0.0551
+   3      attentat                       -0.068665       0.2262
+   4      docteur                        -0.057461       0.1008
+   5      appareil                       -0.050434       0.0659
+   6      colonel                        -0.045328       0.0560
+   7      pareilles                      -0.039118       0.0392
+   8      liasse                         -0.037742       0.0530
+   9      réduits                        -0.036826       0.0551
+   10     bombe                          -0.036470       0.0451
+   11     épouvantable                   -0.036276       0.0871
+   12     officiers                      -0.033289       0.0959
+   13     mit                            -0.032888       0.0588
+   14     réveillé                       -0.031778       0.0354
+   15     continuait                     -0.030799       0.0300
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+attentat                  +0.000000     +0.000202     +0.000202     0.2262
+feuilleter                +0.000019     +0.000055     +0.000055     0.0596
+appareil                  +0.000000     +0.000045     +0.000045     0.0659
+bombe                     +0.000000     +0.000043     +0.000043     0.0451
+épouvantable              +0.000000     +0.000040     +0.000040     0.0871
+pulvériser                +0.000000     +0.000038     +0.000038     0.0866
+détacha                   +0.000058     +0.000038     +0.000038     0.0507
+officiers                 +0.000000     +0.000037     +0.000037     0.0959
+écria                     +0.000000     +0.000036     +0.000036     0.0791
+hitler                    +0.000000     +0.000035     +0.000035     0.0692
+dirigea                   +0.000000     +0.000030     +0.000030     0.0371
+auteur                    +0.000000     +0.000030     +0.000030     0.0353
+papiers                   +0.000000     +0.000027     +0.000027     0.0595
+dossiers                  +0.000429     +0.000026     +0.000026     0.0432
+stockholm                 +0.000462     +0.000026     +0.000026     0.0972
+hurla                     +0.000000     +0.000023     +0.000023     0.0415
+pommettes                 +0.000000     +0.000020     +0.000020     0.0449
+égarement                 +0.000242     +0.000020     +0.000020     0.0637
+pressa                    +0.000180     +0.000018     +0.000018     0.0470
+correspondance            +0.000000     +0.000017     +0.000017     0.0448
+logit final pour 'femme': -0.3094
+# analyse pour la classe: HOMME  prédite
+# logit: 0.3726
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      officiers                      +0.000028       0.0959
+   2      pulvériser                     +0.000026       0.0866
+   3      formel                         +0.000024       0.0614
+   4      feuilleter                     +0.000023       0.0596
+   5      fiches                         +0.000023       0.0542
+   6      hitler                         +0.000022       0.0692
+   7      docteur                        +0.000021       0.1008
+   8      attentat                       +0.000019       0.2262
+   9      stockholm                      +0.000019       0.0972
+   10     dossiers                       +0.000016       0.0432
+   11     coupables                      +0.000016       0.0442
+   12     bombe                          +0.000015       0.0451
+   13     dossier                        +0.000014       0.0322
+   14     égarement                      +0.000014       0.0637
+   15     détacha                        +0.000013       0.0507
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      himmler                        -0.000127       0.7832
+   2      déchiqueter                    -0.000042       0.0830
+   3      fébrilement                    -0.000027       0.0553
+   4      métalliques                    -0.000025       0.0499
+   5      baraquement                    -0.000023       0.0879
+   6      documents                      -0.000023       0.0849
+   7      kilomètres                     -0.000022       0.0316
+   8      mit                            -0.000022       0.0588
+   9      führer                         -0.000022       0.3187
+   10     espoirs                        -0.000021       0.0418
+   11     dissoudre                      -0.000019       0.0613
+   12     réveillé                       -0.000018       0.0354
+   13     desserrer                      -0.000018       0.0638
+   14     succès                         -0.000016       0.0288
+   15     pareilles                      -0.000015       0.0392
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      officiers                      +0.000028       0.0959
+   2      pulvériser                     +0.000026       0.0866
+   3      formel                         +0.000024       0.0614
+   4      feuilleter                     +0.000023       0.0596
+   5      fiches                         +0.000023       0.0542
+   6      hitler                         +0.000022       0.0692
+   7      docteur                        +0.000021       0.1008
+   8      attentat                       +0.000019       0.2262
+   9      stockholm                      +0.000019       0.0972
+   10     dossiers                       +0.000016       0.0432
+   11     coupables                      +0.000016       0.0442
+   12     bombe                          +0.000015       0.0451
+   13     dossier                        +0.000014       0.0322
+   14     égarement                      +0.000014       0.0637
+   15     détacha                        +0.000013       0.0507
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      himmler                        -0.000127       0.7832
+   2      déchiqueter                    -0.000042       0.0830
+   3      fébrilement                    -0.000027       0.0553
+   4      métalliques                    -0.000025       0.0499
+   5      baraquement                    -0.000023       0.0879
+   6      documents                      -0.000023       0.0849
+   7      kilomètres                     -0.000022       0.0316
+   8      mit                            -0.000022       0.0588
+   9      führer                         -0.000022       0.3187
+   10     espoirs                        -0.000021       0.0418
+   11     dissoudre                      -0.000019       0.0613
+   12     réveillé                       -0.000018       0.0354
+   13     desserrer                      -0.000018       0.0638
+   14     succès                         -0.000016       0.0288
+   15     pareilles                      -0.000015       0.0392
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      himmler                        +0.003212       0.7832
+   2      attentat                       +0.001316       0.2262
+   3      défends                        +0.000877       0.0551
+   4      appareil                       +0.000710       0.0659
+   5      colonel                        +0.000655       0.0560
+   6      épouvantable                   +0.000655       0.0871
+   7      officiers                      +0.000646       0.0959
+   8      liasse                         +0.000626       0.0530
+   9      réduits                        +0.000623       0.0551
+   10     docteur                        +0.000609       0.1008
+   11     pareilles                      +0.000520       0.0392
+   12     bombe                          +0.000488       0.0451
+   13     mit                            +0.000488       0.0588
+   14     réveillé                       +0.000482       0.0354
+   15     continuait                     +0.000440       0.0300
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      führer                         -0.000843       0.3187
+   2      superflus                      -0.000691       0.0853
+   3      stockholm                      -0.000579       0.0972
+   4      chaussures                     -0.000477       0.0319
+   5      trier                          -0.000400       0.0623
+   6      dossiers                       -0.000311       0.0432
+   7      documents                      -0.000303       0.0849
+   8      soldat                         -0.000293       0.0394
+   9      demanda                        -0.000271       0.0886
+   10     pensa                          -0.000260       0.0364
+   11     fébrilement                    -0.000245       0.0553
+   12     taisez                         -0.000236       0.0522
+   13     dissoudre                      -0.000219       0.0613
+   14     fidèle                         -0.000188       0.0315
+   15     dossier                        -0.000141       0.0322
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      himmler                        +0.182016       0.7832
+   2      attentat                       +0.076569       0.2262
+   3      défends                        +0.045817       0.0551
+   4      docteur                        +0.039246       0.1008
+   5      appareil                       +0.038068       0.0659
+   6      officiers                      +0.035337       0.0959
+   7      réduits                        +0.032004       0.0551
+   8      épouvantable                   +0.030325       0.0871
+   9      colonel                        +0.029493       0.0560
+   10     liasse                         +0.026631       0.0530
+   11     pareilles                      +0.025569       0.0392
+   12     bombe                          +0.024794       0.0451
+   13     fiches                         +0.024506       0.0542
+   14     mit                            +0.024389       0.0588
+   15     réveillé                       +0.021086       0.0354
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      führer                         -0.050151       0.3187
+   2      superflus                      -0.030864       0.0853
+   3      chaussures                     -0.025310       0.0319
+   4      stockholm                      -0.022074       0.0972
+   5      trier                          -0.021567       0.0623
+   6      demanda                        -0.019892       0.0886
+   7      documents                      -0.015467       0.0849
+   8      dossiers                       -0.015306       0.0432
+   9      taisez                         -0.012788       0.0522
+   10     soldat                         -0.012752       0.0394
+   11     égarement                      -0.012157       0.0637
+   12     dissoudre                      -0.011888       0.0613
+   13     fidèle                         -0.011295       0.0315
+   14     pensa                          -0.009154       0.0364
+   15     fébrilement                    -0.009104       0.0553
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+officiers                 +0.000646     +0.000028     +0.000028     0.0959
+pulvériser                +0.000172     +0.000026     +0.000026     0.0866
+formel                    +0.000209     +0.000024     +0.000024     0.0614
+feuilleter                +0.000103     +0.000023     +0.000023     0.0596
+fiches                    +0.000413     +0.000023     +0.000023     0.0542
+hitler                    +0.000165     +0.000022     +0.000022     0.0692
+docteur                   +0.000609     +0.000021     +0.000021     0.1008
+attentat                  +0.001316     +0.000019     +0.000019     0.2262
+stockholm                 +0.000000     +0.000019     +0.000019     0.0972
+dossiers                  +0.000000     +0.000016     +0.000016     0.0432
+coupables                 +0.000111     +0.000016     +0.000016     0.0442
+bombe                     +0.000488     +0.000015     +0.000015     0.0451
+dossier                   +0.000000     +0.000014     +0.000014     0.0322
+égarement                 +0.000000     +0.000014     +0.000014     0.0637
+détacha                   +0.000000     +0.000013     +0.000013     0.0507
+exterminer                +0.000350     +0.000013     +0.000013     0.0759
+écria                     +0.000177     +0.000012     +0.000012     0.0791
+superflus                 +0.000000     +0.000009     +0.000009     0.0853
+interroger                +0.000186     +0.000008     +0.000008     0.0336
+hurla                     +0.000174     +0.000008     +0.000008     0.0415
+logit final pour 'homme': 0.3726

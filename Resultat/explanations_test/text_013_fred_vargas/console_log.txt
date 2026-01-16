@@ -1,0 +1,386 @@
+texte analysé: semi veille paisible et conciliante , à se demander si son métier même captait son attention . au contraire , les yeux de leur jeune adjoint , collés contre la vitre , s agrandissaient sur londres . d...
+prédiction: FEMME (confiance: 92.1%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.4154
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      multipliant                    +0.000070       0.0985
+   2      trompait                       +0.000045       0.0579
+   3      engourdi                       +0.000040       0.0866
+   4      hôtel                          +0.000040       0.0366
+   5      expédition                     +0.000039       0.0541
+   6      finissent                      +0.000033       0.0573
+   7      indicateurs                    +0.000032       0.1116
+   8      froisser                       +0.000032       0.0792
+   9      confirmer                      +0.000032       0.0617
+   10     vision                         +0.000030       0.0401
+   11     définitif                      +0.000030       0.0614
+   12     provoqué                       +0.000026       0.0554
+   13     revue                          +0.000025       0.0472
+   14     réflexion                      +0.000024       0.0406
+   15     prétextes                      +0.000023       0.0785
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      danglard                       -0.000740       0.7177
+   2      clyde                          -0.000191       0.1447
+   3      colloque                       -0.000098       0.2021
+   4      classait                       -0.000090       0.1162
+   5      estalère                       -0.000086       0.1849
+   6      fiabilité                      -0.000073       0.1238
+   7      vérifier                       -0.000067       0.0851
+   8      fragiles                       -0.000060       0.0585
+   9      semi                           -0.000059       0.0697
+   10     déplacer                       -0.000050       0.0497
+   11     évaluait                       -0.000044       0.1208
+   12     renoncement                    -0.000038       0.0794
+   13     captait                        -0.000036       0.1281
+   14     supplémentaires                -0.000032       0.0628
+   15     redressa                       -0.000031       0.0515
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      multipliant                    +0.000070       0.0985
+   2      trompait                       +0.000045       0.0579
+   3      engourdi                       +0.000040       0.0866
+   4      hôtel                          +0.000040       0.0366
+   5      expédition                     +0.000039       0.0541
+   6      finissent                      +0.000033       0.0573
+   7      indicateurs                    +0.000032       0.1116
+   8      froisser                       +0.000032       0.0792
+   9      confirmer                      +0.000032       0.0617
+   10     vision                         +0.000030       0.0401
+   11     définitif                      +0.000030       0.0614
+   12     provoqué                       +0.000026       0.0554
+   13     revue                          +0.000025       0.0472
+   14     réflexion                      +0.000024       0.0406
+   15     prétextes                      +0.000023       0.0785
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      danglard                       -0.000740       0.7177
+   2      clyde                          -0.000191       0.1447
+   3      colloque                       -0.000098       0.2021
+   4      classait                       -0.000090       0.1162
+   5      estalère                       -0.000086       0.1849
+   6      fiabilité                      -0.000073       0.1238
+   7      vérifier                       -0.000067       0.0851
+   8      fragiles                       -0.000060       0.0585
+   9      semi                           -0.000059       0.0697
+   10     déplacer                       -0.000050       0.0497
+   11     évaluait                       -0.000044       0.1208
+   12     renoncement                    -0.000038       0.0794
+   13     captait                        -0.000036       0.1281
+   14     supplémentaires                -0.000032       0.0628
+   15     redressa                       -0.000031       0.0515
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      danglard                       +0.010599       0.7177
+   2      estalère                       +0.002569       0.1849
+   3      contrariée                     +0.002152       0.0749
+   4      conciliante                    +0.001151       0.1010
+   5      fataliste                      +0.001111       0.0918
+   6      redressa                       +0.001090       0.0515
+   7      croiser                        +0.001036       0.0520
+   8      clyde                          +0.000999       0.1447
+   9      vérifier                       +0.000962       0.0851
+   10     partager                       +0.000949       0.0402
+   11     fragiles                       +0.000910       0.0585
+   12     renoncement                    +0.000861       0.0794
+   13     froisser                       +0.000732       0.0792
+   14     fox                            +0.000650       0.1096
+   15     colloque                       +0.000617       0.2021
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      évaluait                       -0.001181       0.1208
+   2      eût                            -0.001047       0.0393
+   3      interrogeait                   -0.001041       0.0632
+   4      expédition                     -0.000973       0.0541
+   5      tâte                           -0.000873       0.0966
+   6      estimait                       -0.000806       0.0631
+   7      obligé                         -0.000739       0.0379
+   8      substance                      -0.000714       0.0650
+   9      indicateurs                    -0.000686       0.1116
+   10     confirmer                      -0.000585       0.0617
+   11     demeurait                      -0.000527       0.0494
+   12     anglais                        -0.000526       0.0407
+   13     étonnait                       -0.000496       0.0554
+   14     pouvant                        -0.000474       0.0520
+   15     crétin                         -0.000466       0.0760
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      danglard                       +0.297546       0.7177
+   2      estalère                       +0.091167       0.1849
+   3      contrariée                     +0.080854       0.0749
+   4      fataliste                      +0.037545       0.0918
+   5      partager                       +0.033878       0.0402
+   6      surintendant                   +0.032238       0.1432
+   7      redressa                       +0.030946       0.0515
+   8      conciliante                    +0.030206       0.1010
+   9      croiser                        +0.030005       0.0520
+   10     vérifier                       +0.028818       0.0851
+   11     renoncement                    +0.026611       0.0794
+   12     froisser                       +0.024185       0.0792
+   13     fragiles                       +0.021924       0.0585
+   14     multipliant                    +0.019996       0.0985
+   15     relâche                        +0.019317       0.0585
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      évaluait                       -0.057456       0.1208
+   2      tâte                           -0.050560       0.0966
+   3      expédition                     -0.038047       0.0541
+   4      interrogeait                   -0.036805       0.0632
+   5      eût                            -0.034588       0.0393
+   6      estimait                       -0.028253       0.0631
+   7      substance                      -0.028197       0.0650
+   8      fiabilité                      -0.022369       0.1238
+   9      anglais                        -0.021520       0.0407
+   10     confirmer                      -0.020685       0.0617
+   11     obligé                         -0.020628       0.0379
+   12     voulut                         -0.019901       0.0439
+   13     indicateurs                    -0.019135       0.1116
+   14     étonnait                       -0.019057       0.0554
+   15     demeurait                      -0.018238       0.0494
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+multipliant               +0.000343     +0.000070     +0.000070     0.0985
+trompait                  +0.000199     +0.000045     +0.000045     0.0579
+engourdi                  +0.000000     +0.000040     +0.000040     0.0866
+hôtel                     +0.000000     +0.000040     +0.000040     0.0366
+expédition                +0.000000     +0.000039     +0.000039     0.0541
+finissent                 +0.000000     +0.000033     +0.000033     0.0573
+indicateurs               +0.000000     +0.000032     +0.000032     0.1116
+froisser                  +0.000732     +0.000032     +0.000032     0.0792
+confirmer                 +0.000000     +0.000032     +0.000032     0.0617
+vision                    +0.000118     +0.000030     +0.000030     0.0401
+définitif                 +0.000000     +0.000030     +0.000030     0.0614
+provoqué                  +0.000000     +0.000026     +0.000026     0.0554
+revue                     +0.000000     +0.000025     +0.000025     0.0472
+réflexion                 +0.000000     +0.000024     +0.000024     0.0406
+prétextes                 +0.000000     +0.000023     +0.000023     0.0785
+eût                       +0.000000     +0.000023     +0.000023     0.0393
+bar                       +0.000071     +0.000020     +0.000020     0.0480
+obligé                    +0.000000     +0.000018     +0.000018     0.0379
+empêché                   +0.000000     +0.000016     +0.000016     0.0555
+estimait                  +0.000000     +0.000016     +0.000016     0.0631
+logit final pour 'femme': 1.4154
+# analyse pour la classe: HOMME
+# logit: -1.0378
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      multipliant                    +0.000053       0.0985
+   2      oeuf                           +0.000034       0.0553
+   3      froisser                       +0.000026       0.0792
+   4      trompait                       +0.000026       0.0579
+   5      finissent                      +0.000025       0.0573
+   6      eût                            +0.000023       0.0393
+   7      revue                          +0.000021       0.0472
+   8      surintendant                   +0.000021       0.1432
+   9      âpre                           +0.000019       0.0683
+   10     définitif                      +0.000019       0.0614
+   11     interrogeait                   +0.000019       0.0632
+   12     hôtel                          +0.000019       0.0366
+   13     captait                        +0.000015       0.1281
+   14     réflexion                      +0.000015       0.0406
+   15     confirmer                      +0.000014       0.0617
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      danglard                       -0.000365       0.7177
+   2      clyde                          -0.000126       0.1447
+   3      estalère                       -0.000054       0.1849
+   4      fiabilité                      -0.000046       0.1238
+   5      classait                       -0.000041       0.1162
+   6      semi                           -0.000039       0.0697
+   7      vérifier                       -0.000028       0.0851
+   8      évaluait                       -0.000028       0.1208
+   9      déplacer                       -0.000027       0.0497
+   10     londres                        -0.000025       0.0557
+   11     fragiles                       -0.000023       0.0585
+   12     renoncement                    -0.000021       0.0794
+   13     collés                         -0.000021       0.0613
+   14     supplémentaires                -0.000020       0.0628
+   15     intensité                      -0.000019       0.0527
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      multipliant                    +0.000053       0.0985
+   2      oeuf                           +0.000034       0.0553
+   3      froisser                       +0.000026       0.0792
+   4      trompait                       +0.000026       0.0579
+   5      finissent                      +0.000025       0.0573
+   6      eût                            +0.000023       0.0393
+   7      revue                          +0.000021       0.0472
+   8      surintendant                   +0.000021       0.1432
+   9      âpre                           +0.000019       0.0683
+   10     définitif                      +0.000019       0.0614
+   11     interrogeait                   +0.000019       0.0632
+   12     hôtel                          +0.000019       0.0366
+   13     captait                        +0.000015       0.1281
+   14     réflexion                      +0.000015       0.0406
+   15     confirmer                      +0.000014       0.0617
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      danglard                       -0.000365       0.7177
+   2      clyde                          -0.000126       0.1447
+   3      estalère                       -0.000054       0.1849
+   4      fiabilité                      -0.000046       0.1238
+   5      classait                       -0.000041       0.1162
+   6      semi                           -0.000039       0.0697
+   7      vérifier                       -0.000028       0.0851
+   8      évaluait                       -0.000028       0.1208
+   9      déplacer                       -0.000027       0.0497
+   10     londres                        -0.000025       0.0557
+   11     fragiles                       -0.000023       0.0585
+   12     renoncement                    -0.000021       0.0794
+   13     collés                         -0.000021       0.0613
+   14     supplémentaires                -0.000020       0.0628
+   15     intensité                      -0.000019       0.0527
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      évaluait                       +0.000799       0.1208
+   2      expédition                     +0.000790       0.0541
+   3      eût                            +0.000712       0.0393
+   4      interrogeait                   +0.000707       0.0632
+   5      indicateurs                    +0.000551       0.1116
+   6      obligé                         +0.000532       0.0379
+   7      tâte                           +0.000519       0.0966
+   8      estimait                       +0.000500       0.0631
+   9      confirmer                      +0.000490       0.0617
+   10     substance                      +0.000486       0.0650
+   11     pouvant                        +0.000402       0.0520
+   12     lord                           +0.000373       0.0892
+   13     anglais                        +0.000345       0.0407
+   14     arrêta                         +0.000342       0.0422
+   15     voulut                         +0.000338       0.0439
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      danglard                       -0.007530       0.7177
+   2      estalère                       -0.001864       0.1849
+   3      contrariée                     -0.001458       0.0749
+   4      fataliste                      -0.000820       0.0918
+   5      redressa                       -0.000770       0.0515
+   6      croiser                        -0.000686       0.0520
+   7      fragiles                       -0.000665       0.0585
+   8      vérifier                       -0.000628       0.0851
+   9      partager                       -0.000620       0.0402
+   10     renoncement                    -0.000618       0.0794
+   11     froisser                       -0.000580       0.0792
+   12     clyde                          -0.000527       0.1447
+   13     colloque                       -0.000526       0.2021
+   14     conciliante                    -0.000505       0.1010
+   15     espérait                       -0.000411       0.0449
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      évaluait                       +0.045840       0.1208
+   2      tâte                           +0.031648       0.0966
+   3      expédition                     +0.030404       0.0541
+   4      substance                      +0.026222       0.0650
+   5      interrogeait                   +0.023858       0.0632
+   6      eût                            +0.021162       0.0393
+   7      estimait                       +0.018528       0.0631
+   8      voulut                         +0.016211       0.0439
+   9      anglais                        +0.016048       0.0407
+   10     confirmer                      +0.015692       0.0617
+   11     obligé                         +0.015367       0.0379
+   12     fiabilité                      +0.015163       0.1238
+   13     arrêta                         +0.012901       0.0422
+   14     étiez                          +0.012016       0.0393
+   15     étonnerait                     +0.011492       0.0643
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      danglard                       -0.200147       0.7177
+   2      estalère                       -0.063415       0.1849
+   3      contrariée                     -0.054242       0.0749
+   4      colloque                       -0.028644       0.2021
+   5      fataliste                      -0.025346       0.0918
+   6      froisser                       -0.024609       0.0792
+   7      redressa                       -0.021990       0.0515
+   8      croiser                        -0.021195       0.0520
+   9      partager                       -0.020652       0.0402
+   10     fragiles                       -0.020491       0.0585
+   11     vérifier                       -0.018291       0.0851
+   12     renoncement                    -0.017968       0.0794
+   13     multipliant                    -0.015995       0.0985
+   14     relâche                        -0.015346       0.0585
+   15     espérait                       -0.012561       0.0449
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+multipliant               +0.000000     +0.000053     +0.000053     0.0985
+oeuf                      +0.000148     +0.000034     +0.000034     0.0553
+froisser                  +0.000000     +0.000026     +0.000026     0.0792
+trompait                  +0.000000     +0.000026     +0.000026     0.0579
+finissent                 +0.000064     +0.000025     +0.000025     0.0573
+eût                       +0.000712     +0.000023     +0.000023     0.0393
+revue                     +0.000219     +0.000021     +0.000021     0.0472
+surintendant              +0.000000     +0.000021     +0.000021     0.1432
+âpre                      +0.000000     +0.000019     +0.000019     0.0683
+définitif                 +0.000233     +0.000019     +0.000019     0.0614
+interrogeait              +0.000707     +0.000019     +0.000019     0.0632
+hôtel                     +0.000136     +0.000019     +0.000019     0.0366
+captait                   +0.000000     +0.000015     +0.000015     0.1281
+réflexion                 +0.000256     +0.000015     +0.000015     0.0406
+confirmer                 +0.000490     +0.000014     +0.000014     0.0617
+estimait                  +0.000500     +0.000013     +0.000013     0.0631
+crétin                    +0.000284     +0.000012     +0.000012     0.0760
+vision                    +0.000000     +0.000012     +0.000012     0.0401
+éprouvait                 +0.000022     +0.000012     +0.000012     0.0490
+adjoint                   +0.000078     +0.000011     +0.000011     0.0768
+logit final pour 'homme': -1.0378

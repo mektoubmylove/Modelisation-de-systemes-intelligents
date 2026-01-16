@@ -1,0 +1,5 @@
+filename: (GIRAUD)(Brigitte)(vivre vite)(2)(2022)(1960)(v)(fr)(z)(z)(V)(R)(T) (1).txt
+index: 5
+first_name: brigitte
+last_name: giraud
+true_label: femme

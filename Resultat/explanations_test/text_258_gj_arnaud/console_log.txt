@@ -1,0 +1,387 @@
+texte analysé: cas je n ai relevé aucune trace apparente d anthropomorphisme sur cette bête à quatre pattes aux gigots très dodus . vous pouvez admirer la carcasse dans la chambre froide . préférant s abstenir , gus...
+prédiction: FEMME (confiance: 69.3%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.4565
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      satellite                      +0.000134       0.2690
+   2      estima                         +0.000129       0.1018
+   3      rôder                          +0.000121       0.0941
+   4      étreignant                     +0.000098       0.1210
+   5      ennuyé                         +0.000094       0.0849
+   6      intransigeant                  +0.000092       0.1218
+   7      obligez                        +0.000091       0.1578
+   8      débauche                       +0.000088       0.0937
+   9      étouffait                      +0.000086       0.0793
+   10     ébahis                         +0.000086       0.1218
+   11     vissé                          +0.000071       0.1231
+   12     hisser                         +0.000070       0.0823
+   13     décida                         +0.000067       0.0560
+   14     injurier                       +0.000063       0.1218
+   15     culpabilité                    +0.000060       0.0692
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      accouchée                      -0.000178       0.1408
+   2      niveaux                        -0.000146       0.1158
+   3      nourrice                       -0.000141       0.1783
+   4      secte                          -0.000135       0.1165
+   5      offense                        -0.000135       0.0966
+   6      exclama                        -0.000118       0.0691
+   7      renvoyer                       -0.000091       0.1445
+   8      contrôles                      -0.000086       0.1161
+   9      admirer                        -0.000084       0.0593
+   10     disputes                       -0.000084       0.0932
+   11     vécut                          -0.000083       0.1054
+   12     nourriture                     -0.000082       0.1047
+   13     troupeaux                      -0.000077       0.0936
+   14     libère                         -0.000071       0.0906
+   15     bébé                           -0.000058       0.0553
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      satellite                      +0.000134       0.2690
+   2      estima                         +0.000129       0.1018
+   3      rôder                          +0.000121       0.0941
+   4      étreignant                     +0.000098       0.1210
+   5      ennuyé                         +0.000094       0.0849
+   6      intransigeant                  +0.000092       0.1218
+   7      obligez                        +0.000091       0.1578
+   8      débauche                       +0.000088       0.0937
+   9      étouffait                      +0.000086       0.0793
+   10     ébahis                         +0.000086       0.1218
+   11     vissé                          +0.000071       0.1231
+   12     hisser                         +0.000070       0.0823
+   13     décida                         +0.000067       0.0560
+   14     injurier                       +0.000063       0.1218
+   15     culpabilité                    +0.000060       0.0692
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      accouchée                      -0.000178       0.1408
+   2      niveaux                        -0.000146       0.1158
+   3      nourrice                       -0.000141       0.1783
+   4      secte                          -0.000135       0.1165
+   5      offense                        -0.000135       0.0966
+   6      exclama                        -0.000118       0.0691
+   7      renvoyer                       -0.000091       0.1445
+   8      contrôles                      -0.000086       0.1161
+   9      admirer                        -0.000084       0.0593
+   10     disputes                       -0.000084       0.0932
+   11     vécut                          -0.000083       0.1054
+   12     nourriture                     -0.000082       0.1047
+   13     troupeaux                      -0.000077       0.0936
+   14     libère                         -0.000071       0.0906
+   15     bébé                           -0.000058       0.0553
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      nourrice                       +0.005085       0.1783
+   2      exclama                        +0.003678       0.0691
+   3      accouchée                      +0.003398       0.1408
+   4      chuchota                       +0.003396       0.0766
+   5      bébé                           +0.002064       0.0553
+   6      austère                        +0.001991       0.0808
+   7      prendra                        +0.001626       0.0644
+   8      extraire                       +0.001531       0.0752
+   9      obligée                        +0.001420       0.0571
+   10     plaisaient                     +0.001392       0.1041
+   11     préférant                      +0.001320       0.0915
+   12     regrets                        +0.001293       0.0661
+   13     nourriture                     +0.001189       0.1047
+   14     vécut                          +0.001043       0.1054
+   15     cédé                           +0.000957       0.0650
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gus                            -0.007622       0.4309
+   2      satellite                      -0.005832       0.2690
+   3      estima                         -0.003189       0.1018
+   4      turpitudes                     -0.002172       0.1317
+   5      déraisonnable                  -0.002004       0.1158
+   6      ennuyé                         -0.001898       0.0849
+   7      cabine                         -0.001803       0.0638
+   8      pénétra                        -0.001679       0.0690
+   9      rôder                          -0.001530       0.0941
+   10     frapper                        -0.001439       0.0468
+   11     abstenir                       -0.001323       0.1073
+   12     débarrassé                     -0.001153       0.0756
+   13     docteur                        -0.001117       0.1098
+   14     apprit                         -0.001045       0.0624
+   15     hisser                         -0.000921       0.0823
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      nourrice                       +0.271073       0.1783
+   2      accouchée                      +0.188397       0.1408
+   3      exclama                        +0.179470       0.0691
+   4      chuchota                       +0.167469       0.0766
+   5      bébé                           +0.104059       0.0553
+   6      austère                        +0.103609       0.0808
+   7      prendra                        +0.094528       0.0644
+   8      extraire                       +0.091296       0.0752
+   9      préférant                      +0.076277       0.0915
+   10     obligée                        +0.073589       0.0571
+   11     plaisaient                     +0.068500       0.1041
+   12     nourriture                     +0.068466       0.1047
+   13     regrets                        +0.066562       0.0661
+   14     vécut                          +0.062079       0.1054
+   15     servit                         +0.055724       0.0685
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gus                            -0.408554       0.4309
+   2      satellite                      -0.323465       0.2690
+   3      estima                         -0.170891       0.1018
+   4      turpitudes                     -0.123338       0.1317
+   5      déraisonnable                  -0.113306       0.1158
+   6      pénétra                        -0.095430       0.0690
+   7      ennuyé                         -0.088285       0.0849
+   8      frapper                        -0.082756       0.0468
+   9      cabine                         -0.081204       0.0638
+   10     rôder                          -0.080394       0.0941
+   11     abstenir                       -0.065778       0.1073
+   12     docteur                        -0.064470       0.1098
+   13     débarrassé                     -0.062421       0.0756
+   14     apprit                         -0.058961       0.0624
+   15     capturé                        -0.049920       0.1151
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+satellite                 +0.000000     +0.000134     +0.000134     0.2690
+estima                    +0.000000     +0.000129     +0.000129     0.1018
+rôder                     +0.000000     +0.000121     +0.000121     0.0941
+étreignant                +0.000000     +0.000098     +0.000098     0.1210
+ennuyé                    +0.000000     +0.000094     +0.000094     0.0849
+intransigeant             +0.000000     +0.000092     +0.000092     0.1218
+obligez                   +0.000319     +0.000091     +0.000091     0.1578
+débauche                  +0.000113     +0.000088     +0.000088     0.0937
+étouffait                 +0.000000     +0.000086     +0.000086     0.0793
+ébahis                    +0.000698     +0.000086     +0.000086     0.1218
+vissé                     +0.000000     +0.000071     +0.000071     0.1231
+hisser                    +0.000000     +0.000070     +0.000070     0.0823
+décida                    +0.000731     +0.000067     +0.000067     0.0560
+injurier                  +0.000000     +0.000063     +0.000063     0.1218
+culpabilité               +0.000358     +0.000060     +0.000060     0.0692
+couchette                 +0.000000     +0.000057     +0.000057     0.1035
+commença                  +0.000000     +0.000043     +0.000043     0.0531
+existait                  +0.000000     +0.000043     +0.000043     0.0499
+cramponnait               +0.000775     +0.000043     +0.000043     0.1210
+apparente                 +0.000000     +0.000040     +0.000040     0.0688
+logit final pour 'femme': 0.4565
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.3597
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      satellite                      +0.000166       0.2690
+   2      estima                         +0.000073       0.1018
+   3      ennuyé                         +0.000046       0.0849
+   4      étouffait                      +0.000043       0.0793
+   5      étreignant                     +0.000043       0.1210
+   6      injurier                       +0.000038       0.1218
+   7      débauche                       +0.000034       0.0937
+   8      décida                         +0.000031       0.0560
+   9      obligez                        +0.000028       0.1578
+   10     couchette                      +0.000023       0.1035
+   11     nid                            +0.000021       0.0659
+   12     intransigeant                  +0.000018       0.1218
+   13     hisser                         +0.000018       0.0823
+   14     turpitudes                     +0.000018       0.1317
+   15     éprouvait                      +0.000017       0.0612
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      accouchée                      -0.000124       0.1408
+   2      secte                          -0.000100       0.1165
+   3      gus                            -0.000094       0.4309
+   4      offense                        -0.000058       0.0966
+   5      nourrice                       -0.000057       0.1783
+   6      niveaux                        -0.000052       0.1158
+   7      exclama                        -0.000047       0.0691
+   8      libère                         -0.000046       0.0906
+   9      admirer                        -0.000040       0.0593
+   10     emparer                        -0.000039       0.0738
+   11     bébé                           -0.000034       0.0553
+   12     commandes                      -0.000030       0.0812
+   13     santé                          -0.000030       0.0444
+   14     nourriture                     -0.000030       0.1047
+   15     égard                          -0.000029       0.0535
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      satellite                      +0.000166       0.2690
+   2      estima                         +0.000073       0.1018
+   3      ennuyé                         +0.000046       0.0849
+   4      étouffait                      +0.000043       0.0793
+   5      étreignant                     +0.000043       0.1210
+   6      injurier                       +0.000038       0.1218
+   7      débauche                       +0.000034       0.0937
+   8      décida                         +0.000031       0.0560
+   9      obligez                        +0.000028       0.1578
+   10     couchette                      +0.000023       0.1035
+   11     nid                            +0.000021       0.0659
+   12     intransigeant                  +0.000018       0.1218
+   13     hisser                         +0.000018       0.0823
+   14     turpitudes                     +0.000018       0.1317
+   15     éprouvait                      +0.000017       0.0612
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      accouchée                      -0.000124       0.1408
+   2      secte                          -0.000100       0.1165
+   3      gus                            -0.000094       0.4309
+   4      offense                        -0.000058       0.0966
+   5      nourrice                       -0.000057       0.1783
+   6      niveaux                        -0.000052       0.1158
+   7      exclama                        -0.000047       0.0691
+   8      libère                         -0.000046       0.0906
+   9      admirer                        -0.000040       0.0593
+   10     emparer                        -0.000039       0.0738
+   11     bébé                           -0.000034       0.0553
+   12     commandes                      -0.000030       0.0812
+   13     santé                          -0.000030       0.0444
+   14     nourriture                     -0.000030       0.1047
+   15     égard                          -0.000029       0.0535
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gus                            +0.005401       0.4309
+   2      satellite                      +0.003143       0.2690
+   3      estima                         +0.002026       0.1018
+   4      turpitudes                     +0.001325       0.1317
+   5      déraisonnable                  +0.001279       0.1158
+   6      pénétra                        +0.001227       0.0690
+   7      rôder                          +0.001217       0.0941
+   8      ennuyé                         +0.001200       0.0849
+   9      cabine                         +0.001034       0.0638
+   10     abstenir                       +0.000996       0.1073
+   11     frapper                        +0.000859       0.0468
+   12     débarrassé                     +0.000771       0.0756
+   13     hisser                         +0.000706       0.0823
+   14     gigot                          +0.000648       0.1102
+   15     docteur                        +0.000613       0.1098
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      nourrice                       -0.002966       0.1783
+   2      exclama                        -0.002224       0.0691
+   3      chuchota                       -0.002037       0.0766
+   4      accouchée                      -0.001930       0.1408
+   5      bébé                           -0.001209       0.0553
+   6      austère                        -0.001155       0.0808
+   7      prendra                        -0.000978       0.0644
+   8      obligée                        -0.000943       0.0571
+   9      extraire                       -0.000888       0.0752
+   10     préférant                      -0.000868       0.0915
+   11     vécut                          -0.000858       0.1054
+   12     regrets                        -0.000732       0.0661
+   13     plaisaient                     -0.000683       0.1041
+   14     nourriture                     -0.000678       0.1047
+   15     servit                         -0.000559       0.0685
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gus                            +0.281607       0.4309
+   2      satellite                      +0.175207       0.2690
+   3      estima                         +0.109494       0.1018
+   4      turpitudes                     +0.074958       0.1317
+   5      déraisonnable                  +0.072785       0.1158
+   6      pénétra                        +0.066550       0.0690
+   7      rôder                          +0.063343       0.0941
+   8      frapper                        +0.053046       0.0468
+   9      ennuyé                         +0.052887       0.0849
+   10     abstenir                       +0.048555       0.1073
+   11     cabine                         +0.046987       0.0638
+   12     débarrassé                     +0.039518       0.0756
+   13     docteur                        +0.038385       0.1098
+   14     hisser                         +0.034247       0.0823
+   15     apprit                         +0.033197       0.0624
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      nourrice                       -0.155912       0.1783
+   2      accouchée                      -0.111937       0.1408
+   3      exclama                        -0.110080       0.0691
+   4      chuchota                       -0.099246       0.0766
+   5      austère                        -0.064494       0.0808
+   6      bébé                           -0.058022       0.0553
+   7      prendra                        -0.057211       0.0644
+   8      extraire                       -0.052484       0.0752
+   9      vécut                          -0.047315       0.1054
+   10     préférant                      -0.047087       0.0915
+   11     obligée                        -0.045133       0.0571
+   12     niveaux                        -0.042325       0.1158
+   13     regrets                        -0.041170       0.0661
+   14     nourriture                     -0.037460       0.1047
+   15     servit                         -0.036279       0.0685
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+satellite                 +0.003143     +0.000166     +0.000166     0.2690
+estima                    +0.002026     +0.000073     +0.000073     0.1018
+ennuyé                    +0.001200     +0.000046     +0.000046     0.0849
+étouffait                 +0.000116     +0.000043     +0.000043     0.0793
+étreignant                +0.000266     +0.000043     +0.000043     0.1210
+injurier                  +0.000143     +0.000038     +0.000038     0.1218
+débauche                  +0.000000     +0.000034     +0.000034     0.0937
+décida                    +0.000000     +0.000031     +0.000031     0.0560
+obligez                   +0.000000     +0.000028     +0.000028     0.1578
+couchette                 +0.000030     +0.000023     +0.000023     0.1035
+nid                       +0.000073     +0.000021     +0.000021     0.0659
+intransigeant             +0.000137     +0.000018     +0.000018     0.1218
+hisser                    +0.000706     +0.000018     +0.000018     0.0823
+turpitudes                +0.001325     +0.000018     +0.000018     0.1317
+éprouvait                 +0.000060     +0.000017     +0.000017     0.0612
+obligée                   +0.000000     +0.000014     +0.000014     0.0571
+considérés                +0.000585     +0.000014     +0.000014     0.1108
+débarrassé                +0.000771     +0.000014     +0.000014     0.0756
+honteuse                  +0.000000     +0.000012     +0.000012     0.0773
+culpabilité               +0.000000     +0.000011     +0.000011     0.0692
+logit final pour 'homme': -0.3597

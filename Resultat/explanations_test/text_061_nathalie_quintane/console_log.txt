@@ -1,0 +1,386 @@
+texte analysé: à trottinette qui trace un sillon . une poignée de skateurs évitent les passants en sautant et chopant leur planche au vol . peu de monde là , mais c est dense par où j entre , en remontant côté dal ....
+prédiction: FEMME (confiance: 65.9%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.4167
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      kafka                          +0.000406       0.3682
+   2      infirmerie                     +0.000189       0.2446
+   3      commission                     +0.000102       0.2877
+   4      interrompu                     +0.000097       0.0840
+   5      crucial                        +0.000085       0.1376
+   6      remontant                      +0.000082       0.0800
+   7      intelligence                   +0.000074       0.0598
+   8      changeant                      +0.000071       0.0966
+   9      explication                    +0.000064       0.0572
+   10     poignée                        +0.000061       0.0581
+   11     rédaction                      +0.000059       0.1120
+   12     débattait                      +0.000057       0.0981
+   13     semblable                      +0.000054       0.0626
+   14     sautant                        +0.000036       0.0920
+   15     trentaine                      +0.000034       0.0692
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sono                           -0.000242       0.3522
+   2      évitent                        -0.000233       0.1441
+   3      texte                          -0.000167       0.2788
+   4      accueil                        -0.000121       0.1358
+   5      progressive                    -0.000116       0.1612
+   6      lente                          -0.000109       0.0690
+   7      manqué                         -0.000109       0.0592
+   8      modalités                      -0.000098       0.1597
+   9      prenaient                      -0.000096       0.0623
+   10     déprimée                       -0.000093       0.1484
+   11     souviens                       -0.000090       0.0519
+   12     fragments                      -0.000090       0.1015
+   13     passants                       -0.000082       0.0714
+   14     adresser                       -0.000070       0.0627
+   15     tente                          -0.000069       0.0613
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      kafka                          +0.000406       0.3682
+   2      infirmerie                     +0.000189       0.2446
+   3      commission                     +0.000102       0.2877
+   4      interrompu                     +0.000097       0.0840
+   5      crucial                        +0.000085       0.1376
+   6      remontant                      +0.000082       0.0800
+   7      intelligence                   +0.000074       0.0598
+   8      changeant                      +0.000071       0.0966
+   9      explication                    +0.000064       0.0572
+   10     poignée                        +0.000061       0.0581
+   11     rédaction                      +0.000059       0.1120
+   12     débattait                      +0.000057       0.0981
+   13     semblable                      +0.000054       0.0626
+   14     sautant                        +0.000036       0.0920
+   15     trentaine                      +0.000034       0.0692
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sono                           -0.000242       0.3522
+   2      évitent                        -0.000233       0.1441
+   3      texte                          -0.000167       0.2788
+   4      accueil                        -0.000121       0.1358
+   5      progressive                    -0.000116       0.1612
+   6      lente                          -0.000109       0.0690
+   7      manqué                         -0.000109       0.0592
+   8      modalités                      -0.000098       0.1597
+   9      prenaient                      -0.000096       0.0623
+   10     déprimée                       -0.000093       0.1484
+   11     souviens                       -0.000090       0.0519
+   12     fragments                      -0.000090       0.1015
+   13     passants                       -0.000082       0.0714
+   14     adresser                       -0.000070       0.0627
+   15     tente                          -0.000069       0.0613
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      déprimée                       +0.004608       0.1484
+   2      sono                           +0.004349       0.3522
+   3      accueil                        +0.003316       0.1358
+   4      texte                          +0.002698       0.2788
+   5      ajoutant                       +0.002322       0.0917
+   6      sillon                         +0.001433       0.1122
+   7      débrouiller                    +0.001214       0.0829
+   8      revenue                        +0.001114       0.0591
+   9      extraite                       +0.001087       0.1619
+   10     évitent                        +0.001081       0.1441
+   11     crucial                        +0.001059       0.1376
+   12     entend                         +0.000980       0.1133
+   13     manqué                         +0.000915       0.0592
+   14     trace                          +0.000867       0.0517
+   15     souviens                       +0.000771       0.0519
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      commission                     -0.006793       0.2877
+   2      progressive                    -0.003956       0.1612
+   3      kafka                          -0.002761       0.3682
+   4      mètres                         -0.002497       0.0525
+   5      rédaction                      -0.002376       0.1120
+   6      interrompu                     -0.002014       0.0840
+   7      trentaine                      -0.001578       0.0692
+   8      viii                           -0.001499       0.0922
+   9      marseille                      -0.001267       0.1001
+   10     vote                           -0.001257       0.1199
+   11     planche                        -0.001223       0.0839
+   12     vol                            -0.001175       0.0572
+   13     changeant                      -0.001162       0.0966
+   14     sautant                        -0.000956       0.0920
+   15     débat                          -0.000890       0.0826
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      déprimée                       +0.270779       0.1484
+   2      sono                           +0.223652       0.3522
+   3      accueil                        +0.176842       0.1358
+   4      ajoutant                       +0.123836       0.0917
+   5      texte                          +0.119519       0.2788
+   6      crucial                        +0.074249       0.1376
+   7      sillon                         +0.067194       0.1122
+   8      revenue                        +0.062227       0.0591
+   9      débrouiller                    +0.057842       0.0829
+   10     manqué                         +0.053290       0.0592
+   11     remontant                      +0.046385       0.0800
+   12     évitent                        +0.043782       0.1441
+   13     entend                         +0.042875       0.1133
+   14     fragments                      +0.042220       0.1015
+   15     souviens                       +0.041002       0.0519
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      commission                     -0.419346       0.2877
+   2      progressive                    -0.187385       0.1612
+   3      kafka                          -0.161512       0.3682
+   4      mètres                         -0.126839       0.0525
+   5      rédaction                      -0.110458       0.1120
+   6      interrompu                     -0.103170       0.0840
+   7      viii                           -0.094121       0.0922
+   8      marseille                      -0.074828       0.1001
+   9      changeant                      -0.072313       0.0966
+   10     trentaine                      -0.066283       0.0692
+   11     vol                            -0.063775       0.0572
+   12     planche                        -0.054249       0.0839
+   13     vote                           -0.050938       0.1199
+   14     toile                          -0.049634       0.0557
+   15     sautant                        -0.047363       0.0920
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+kafka                     +0.000000     +0.000406     +0.000406     0.3682
+infirmerie                +0.000538     +0.000189     +0.000189     0.2446
+commission                +0.000000     +0.000102     +0.000102     0.2877
+interrompu                +0.000000     +0.000097     +0.000097     0.0840
+crucial                   +0.001059     +0.000085     +0.000085     0.1376
+remontant                 +0.000664     +0.000082     +0.000082     0.0800
+intelligence              +0.000000     +0.000074     +0.000074     0.0598
+changeant                 +0.000000     +0.000071     +0.000071     0.0966
+explication               +0.000000     +0.000064     +0.000064     0.0572
+poignée                   +0.000000     +0.000061     +0.000061     0.0581
+rédaction                 +0.000000     +0.000059     +0.000059     0.1120
+débattait                 +0.000000     +0.000057     +0.000057     0.0981
+semblable                 +0.000000     +0.000054     +0.000054     0.0626
+sautant                   +0.000000     +0.000036     +0.000036     0.0920
+trentaine                 +0.000000     +0.000034     +0.000034     0.0692
+impliquait                +0.000235     +0.000030     +0.000030     0.1311
+naturelle                 +0.000000     +0.000029     +0.000029     0.0615
+vote                      +0.000000     +0.000028     +0.000028     0.1199
+mètres                    +0.000000     +0.000016     +0.000016     0.0525
+construire                +0.000000     +0.000015     +0.000015     0.0699
+logit final pour 'femme': 0.4167
+# analyse pour la classe: HOMME
+# logit: -0.2415
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      kafka                          +0.000180       0.3682
+   2      infirmerie                     +0.000140       0.2446
+   3      interrompu                     +0.000067       0.0840
+   4      crucial                        +0.000051       0.1376
+   5      entend                         +0.000047       0.1133
+   6      vote                           +0.000042       0.1199
+   7      débattait                      +0.000036       0.0981
+   8      remontant                      +0.000035       0.0800
+   9      poignée                        +0.000028       0.0581
+   10     intelligence                   +0.000026       0.0598
+   11     trentaine                      +0.000025       0.0692
+   12     impliquait                     +0.000025       0.1311
+   13     planche                        +0.000024       0.0839
+   14     sautant                        +0.000023       0.0920
+   15     semblable                      +0.000020       0.0626
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sono                           -0.000177       0.3522
+   2      texte                          -0.000147       0.2788
+   3      évitent                        -0.000108       0.1441
+   4      accueil                        -0.000082       0.1358
+   5      manqué                         -0.000071       0.0592
+   6      fragments                      -0.000068       0.1015
+   7      déprimée                       -0.000067       0.1484
+   8      adresser                       -0.000060       0.0627
+   9      débat                          -0.000050       0.0826
+   10     progressive                    -0.000049       0.1612
+   11     marseille                      -0.000047       0.1001
+   12     lente                          -0.000046       0.0690
+   13     vol                            -0.000040       0.0572
+   14     modalités                      -0.000039       0.1597
+   15     viii                           -0.000038       0.0922
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      kafka                          +0.000180       0.3682
+   2      infirmerie                     +0.000140       0.2446
+   3      interrompu                     +0.000067       0.0840
+   4      crucial                        +0.000051       0.1376
+   5      entend                         +0.000047       0.1133
+   6      vote                           +0.000042       0.1199
+   7      débattait                      +0.000036       0.0981
+   8      remontant                      +0.000035       0.0800
+   9      poignée                        +0.000028       0.0581
+   10     intelligence                   +0.000026       0.0598
+   11     trentaine                      +0.000025       0.0692
+   12     impliquait                     +0.000025       0.1311
+   13     planche                        +0.000024       0.0839
+   14     sautant                        +0.000023       0.0920
+   15     semblable                      +0.000020       0.0626
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sono                           -0.000177       0.3522
+   2      texte                          -0.000147       0.2788
+   3      évitent                        -0.000108       0.1441
+   4      accueil                        -0.000082       0.1358
+   5      manqué                         -0.000071       0.0592
+   6      fragments                      -0.000068       0.1015
+   7      déprimée                       -0.000067       0.1484
+   8      adresser                       -0.000060       0.0627
+   9      débat                          -0.000050       0.0826
+   10     progressive                    -0.000049       0.1612
+   11     marseille                      -0.000047       0.1001
+   12     lente                          -0.000046       0.0690
+   13     vol                            -0.000040       0.0572
+   14     modalités                      -0.000039       0.1597
+   15     viii                           -0.000038       0.0922
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      commission                     +0.004853       0.2877
+   2      kafka                          +0.003142       0.3682
+   3      progressive                    +0.002463       0.1612
+   4      rédaction                      +0.001626       0.1120
+   5      mètres                         +0.001597       0.0525
+   6      viii                           +0.001212       0.0922
+   7      marseille                      +0.001177       0.1001
+   8      interrompu                     +0.001158       0.0840
+   9      trentaine                      +0.001067       0.0692
+   10     vote                           +0.000898       0.1199
+   11     changeant                      +0.000802       0.0966
+   12     planche                        +0.000729       0.0839
+   13     toile                          +0.000703       0.0557
+   14     vol                            +0.000654       0.0572
+   15     intelligence                   +0.000625       0.0598
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      déprimée                       -0.003207       0.1484
+   2      accueil                        -0.001972       0.1358
+   3      sono                           -0.001968       0.3522
+   4      texte                          -0.001763       0.2788
+   5      ajoutant                       -0.001738       0.0917
+   6      sillon                         -0.001010       0.1122
+   7      évitent                        -0.000854       0.1441
+   8      crucial                        -0.000764       0.1376
+   9      revenue                        -0.000703       0.0591
+   10     extraite                       -0.000698       0.1619
+   11     débrouiller                    -0.000686       0.0829
+   12     entend                         -0.000628       0.1133
+   13     souviens                       -0.000616       0.0519
+   14     ben                            -0.000554       0.0739
+   15     fragments                      -0.000517       0.1015
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      commission                     +0.278851       0.2877
+   2      kafka                          +0.142110       0.3682
+   3      progressive                    +0.117145       0.1612
+   4      mètres                         +0.080501       0.0525
+   5      rédaction                      +0.075703       0.1120
+   6      viii                           +0.062458       0.0922
+   7      marseille                      +0.061042       0.1001
+   8      interrompu                     +0.059692       0.0840
+   9      changeant                      +0.053388       0.0966
+   10     trentaine                      +0.046312       0.0692
+   11     vote                           +0.042650       0.1199
+   12     toile                          +0.036636       0.0557
+   13     vol                            +0.033969       0.0572
+   14     planche                        +0.032449       0.0839
+   15     naturelle                      +0.032218       0.0615
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      déprimée                       -0.166870       0.1484
+   2      sono                           -0.105230       0.3522
+   3      accueil                        -0.097492       0.1358
+   4      ajoutant                       -0.093858       0.0917
+   5      texte                          -0.078575       0.2788
+   6      crucial                        -0.055260       0.1376
+   7      sillon                         -0.054241       0.1122
+   8      revenue                        -0.040091       0.0591
+   9      évitent                        -0.033933       0.1441
+   10     souviens                       -0.033130       0.0519
+   11     manqué                         -0.032393       0.0592
+   12     remontant                      -0.030780       0.0800
+   13     dense                          -0.029609       0.0847
+   14     débrouiller                    -0.028417       0.0829
+   15     entend                         -0.028292       0.1133
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+kafka                     +0.003142     +0.000180     +0.000180     0.3682
+infirmerie                +0.000077     +0.000140     +0.000140     0.2446
+interrompu                +0.001158     +0.000067     +0.000067     0.0840
+crucial                   +0.000000     +0.000051     +0.000051     0.1376
+entend                    +0.000000     +0.000047     +0.000047     0.1133
+vote                      +0.000898     +0.000042     +0.000042     0.1199
+débattait                 +0.000000     +0.000036     +0.000036     0.0981
+remontant                 +0.000000     +0.000035     +0.000035     0.0800
+poignée                   +0.000204     +0.000028     +0.000028     0.0581
+intelligence              +0.000625     +0.000026     +0.000026     0.0598
+trentaine                 +0.001067     +0.000025     +0.000025     0.0692
+impliquait                +0.000089     +0.000025     +0.000025     0.1311
+planche                   +0.000729     +0.000024     +0.000024     0.0839
+sautant                   +0.000551     +0.000023     +0.000023     0.0920
+semblable                 +0.000431     +0.000020     +0.000020     0.0626
+sillon                    +0.000000     +0.000016     +0.000016     0.1122
+naturelle                 +0.000592     +0.000015     +0.000015     0.0615
+rédaction                 +0.001626     +0.000015     +0.000015     0.1120
+explication               +0.000468     +0.000012     +0.000012     0.0572
+ben                       +0.000000     +0.000010     +0.000010     0.0739
+logit final pour 'homme': -0.2415

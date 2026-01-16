@@ -1,0 +1,387 @@
+texte analysé: elles avaient pourtant commencé de façon idyllique . sa mère s ennuyait à marseille . jusqu à ce que son chemin croise celui d anne sophie , qui préparait une thèse sur les communautés de l immigratio...
+prédiction: FEMME (confiance: 92.3%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.4118
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pope                           +0.000116       0.1094
+   2      char                           +0.000035       0.0642
+   3      invitait                       +0.000034       0.0518
+   4      chapitre                       +0.000030       0.0401
+   5      jeudi                          +0.000028       0.0462
+   6      marquer                        +0.000022       0.0439
+   7      durant                         +0.000021       0.0311
+   8      rendue                         +0.000016       0.0392
+   9      sûres                          +0.000014       0.0716
+   10     spontanée                      +0.000014       0.0646
+   11     sachant                        +0.000012       0.0313
+   12     impressionné                   +0.000012       0.0494
+   13     immigration                    +0.000011       0.0902
+   14     suisses                        +0.000011       0.0716
+   15     exilés                         +0.000010       0.0812
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sophie                         -0.000601       0.6605
+   2      anne                           -0.000367       0.4953
+   3      anastasia                      -0.000160       0.1338
+   4      princesse                      -0.000153       0.0875
+   5      exil                           -0.000072       0.0505
+   6      charmer                        -0.000067       0.0783
+   7      thèse                          -0.000065       0.1190
+   8      ravie                          -0.000050       0.0444
+   9      vitalité                       -0.000044       0.0620
+   10     présentée                      -0.000041       0.0516
+   11     orthodoxe                      -0.000040       0.0857
+   12     admiratif                      -0.000040       0.0607
+   13     frénésie                       -0.000040       0.0513
+   14     tremblement                    -0.000039       0.0433
+   15     ressortie                      -0.000037       0.0807
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pope                           +0.000116       0.1094
+   2      char                           +0.000035       0.0642
+   3      invitait                       +0.000034       0.0518
+   4      chapitre                       +0.000030       0.0401
+   5      jeudi                          +0.000028       0.0462
+   6      marquer                        +0.000022       0.0439
+   7      durant                         +0.000021       0.0311
+   8      rendue                         +0.000016       0.0392
+   9      sûres                          +0.000014       0.0716
+   10     spontanée                      +0.000014       0.0646
+   11     sachant                        +0.000012       0.0313
+   12     impressionné                   +0.000012       0.0494
+   13     immigration                    +0.000011       0.0902
+   14     suisses                        +0.000011       0.0716
+   15     exilés                         +0.000010       0.0812
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sophie                         -0.000601       0.6605
+   2      anne                           -0.000367       0.4953
+   3      anastasia                      -0.000160       0.1338
+   4      princesse                      -0.000153       0.0875
+   5      exil                           -0.000072       0.0505
+   6      charmer                        -0.000067       0.0783
+   7      thèse                          -0.000065       0.1190
+   8      ravie                          -0.000050       0.0444
+   9      vitalité                       -0.000044       0.0620
+   10     présentée                      -0.000041       0.0516
+   11     orthodoxe                      -0.000040       0.0857
+   12     admiratif                      -0.000040       0.0607
+   13     frénésie                       -0.000040       0.0513
+   14     tremblement                    -0.000039       0.0433
+   15     ressortie                      -0.000037       0.0807
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      anne                           +0.007555       0.4953
+   2      sophie                         +0.002806       0.6605
+   3      admiratif                      +0.001224       0.0607
+   4      mante                          +0.001178       0.0902
+   5      ravie                          +0.000997       0.0444
+   6      présentée                      +0.000958       0.0516
+   7      idyllique                      +0.000958       0.0864
+   8      rendue                         +0.000953       0.0392
+   9      changera                       +0.000932       0.0519
+   10     blondes                        +0.000875       0.0501
+   11     orthodoxe                      +0.000797       0.0857
+   12     princesse                      +0.000793       0.0875
+   13     recherche                      +0.000737       0.0287
+   14     vouait                         +0.000685       0.0701
+   15     anastasia                      +0.000564       0.1338
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marseille                      -0.001140       0.1121
+   2      pope                           -0.000917       0.1094
+   3      interrogeait                   -0.000849       0.0516
+   4      peintres                       -0.000773       0.0603
+   5      chapitre                       -0.000693       0.0401
+   6      désemparé                      -0.000690       0.0569
+   7      communautés                    -0.000586       0.0815
+   8      impressionné                   -0.000566       0.0494
+   9      suisses                        -0.000548       0.0716
+   10     franco                         -0.000543       0.0692
+   11     marquer                        -0.000533       0.0439
+   12     authentique                    -0.000437       0.0525
+   13     conseillé                      -0.000436       0.0451
+   14     troublé                        -0.000429       0.0410
+   15     mme                            -0.000413       0.0425
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      anne                           +0.243348       0.4953
+   2      mante                          +0.042727       0.0902
+   3      admiratif                      +0.037969       0.0607
+   4      changera                       +0.037955       0.0519
+   5      rendue                         +0.037623       0.0392
+   6      blondes                        +0.036291       0.0501
+   7      idyllique                      +0.035122       0.0864
+   8      ravie                          +0.033230       0.0444
+   9      présentée                      +0.032219       0.0516
+   10     orthodoxe                      +0.028924       0.0857
+   11     recherche                      +0.026460       0.0287
+   12     passée                         +0.024032       0.0289
+   13     exquises                       +0.021141       0.0796
+   14     thé                            +0.019071       0.0354
+   15     vouait                         +0.018277       0.0701
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marseille                      -0.060697       0.1121
+   2      interrogeait                   -0.037038       0.0516
+   3      peintres                       -0.029009       0.0603
+   4      mme                            -0.025111       0.0425
+   5      suisses                        -0.024362       0.0716
+   6      communautés                    -0.023938       0.0815
+   7      impressionné                   -0.023392       0.0494
+   8      chapitre                       -0.022778       0.0401
+   9      désemparé                      -0.021992       0.0569
+   10     authentique                    -0.019614       0.0525
+   11     pope                           -0.018063       0.1094
+   12     franco                         -0.017789       0.0692
+   13     conseillé                      -0.016511       0.0451
+   14     troublé                        -0.014329       0.0410
+   15     marquer                        -0.014196       0.0439
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+pope                      +0.000000     +0.000116     +0.000116     0.1094
+char                      +0.000000     +0.000035     +0.000035     0.0642
+invitait                  +0.000000     +0.000034     +0.000034     0.0518
+chapitre                  +0.000000     +0.000030     +0.000030     0.0401
+jeudi                     +0.000000     +0.000028     +0.000028     0.0462
+marquer                   +0.000000     +0.000022     +0.000022     0.0439
+durant                    +0.000000     +0.000021     +0.000021     0.0311
+rendue                    +0.000953     +0.000016     +0.000016     0.0392
+sûres                     +0.000319     +0.000014     +0.000014     0.0716
+spontanée                 +0.000132     +0.000014     +0.000014     0.0646
+sachant                   +0.000238     +0.000012     +0.000012     0.0313
+impressionné              +0.000000     +0.000012     +0.000012     0.0494
+immigration               +0.000052     +0.000011     +0.000011     0.0902
+suisses                   +0.000000     +0.000011     +0.000011     0.0716
+exilés                    +0.000000     +0.000010     +0.000010     0.0812
+demandant                 +0.000000     +0.000010     +0.000010     0.0333
+franco                    +0.000000     +0.000010     +0.000010     0.0692
+interrogeait              +0.000000     +0.000009     +0.000009     0.0516
+lancé                     +0.000000     +0.000008     +0.000008     0.0335
+détestaient               +0.000000     +0.000008     +0.000008     0.0801
+logit final pour 'femme': 1.4118
+# analyse pour la classe: HOMME  vraie classe
+# logit: -1.0668
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pope                           +0.000053       0.1094
+   2      jeudi                          +0.000018       0.0462
+   3      spontanée                      +0.000018       0.0646
+   4      immigration                    +0.000016       0.0902
+   5      chapitre                       +0.000016       0.0401
+   6      suisses                        +0.000016       0.0716
+   7      interrogeait                   +0.000015       0.0516
+   8      char                           +0.000014       0.0642
+   9      marquer                        +0.000013       0.0439
+   10     invitait                       +0.000012       0.0518
+   11     durant                         +0.000010       0.0311
+   12     blondes                        +0.000009       0.0501
+   13     demandant                      +0.000009       0.0333
+   14     franco                         +0.000009       0.0692
+   15     prises                         +0.000008       0.0339
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sophie                         -0.000226       0.6605
+   2      princesse                      -0.000079       0.0875
+   3      anastasia                      -0.000075       0.1338
+   4      anne                           -0.000069       0.4953
+   5      marseille                      -0.000053       0.1121
+   6      exil                           -0.000034       0.0505
+   7      charmer                        -0.000034       0.0783
+   8      admiratif                      -0.000029       0.0607
+   9      ressortie                      -0.000028       0.0807
+   10     vitalité                       -0.000026       0.0620
+   11     présentée                      -0.000023       0.0516
+   12     thèse                          -0.000022       0.1190
+   13     intitulé                       -0.000022       0.0649
+   14     racines                        -0.000019       0.0423
+   15     occupés                        -0.000019       0.0439
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pope                           +0.000053       0.1094
+   2      jeudi                          +0.000018       0.0462
+   3      spontanée                      +0.000018       0.0646
+   4      immigration                    +0.000016       0.0902
+   5      chapitre                       +0.000016       0.0401
+   6      suisses                        +0.000016       0.0716
+   7      interrogeait                   +0.000015       0.0516
+   8      char                           +0.000014       0.0642
+   9      marquer                        +0.000013       0.0439
+   10     invitait                       +0.000012       0.0518
+   11     durant                         +0.000010       0.0311
+   12     blondes                        +0.000009       0.0501
+   13     demandant                      +0.000009       0.0333
+   14     franco                         +0.000009       0.0692
+   15     prises                         +0.000008       0.0339
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sophie                         -0.000226       0.6605
+   2      princesse                      -0.000079       0.0875
+   3      anastasia                      -0.000075       0.1338
+   4      anne                           -0.000069       0.4953
+   5      marseille                      -0.000053       0.1121
+   6      exil                           -0.000034       0.0505
+   7      charmer                        -0.000034       0.0783
+   8      admiratif                      -0.000029       0.0607
+   9      ressortie                      -0.000028       0.0807
+   10     vitalité                       -0.000026       0.0620
+   11     présentée                      -0.000023       0.0516
+   12     thèse                          -0.000022       0.1190
+   13     intitulé                       -0.000022       0.0649
+   14     racines                        -0.000019       0.0423
+   15     occupés                        -0.000019       0.0439
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marseille                      +0.001075       0.1121
+   2      pope                           +0.000691       0.1094
+   3      interrogeait                   +0.000577       0.0516
+   4      désemparé                      +0.000546       0.0569
+   5      peintres                       +0.000503       0.0603
+   6      chapitre                       +0.000462       0.0401
+   7      communautés                    +0.000456       0.0815
+   8      suisses                        +0.000420       0.0716
+   9      impressionné                   +0.000371       0.0494
+   10     authentique                    +0.000338       0.0525
+   11     char                           +0.000329       0.0642
+   12     conseillé                      +0.000320       0.0451
+   13     mme                            +0.000301       0.0425
+   14     marquer                        +0.000298       0.0439
+   15     nice                           +0.000281       0.0663
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      anne                           -0.005667       0.4953
+   2      sophie                         -0.002140       0.6605
+   3      admiratif                      -0.000958       0.0607
+   4      mante                          -0.000924       0.0902
+   5      ravie                          -0.000778       0.0444
+   6      idyllique                      -0.000687       0.0864
+   7      rendue                         -0.000671       0.0392
+   8      anastasia                      -0.000636       0.1338
+   9      changera                       -0.000624       0.0519
+   10     blondes                        -0.000623       0.0501
+   11     orthodoxe                      -0.000590       0.0857
+   12     présentée                      -0.000585       0.0516
+   13     recherche                      -0.000465       0.0287
+   14     princesse                      -0.000458       0.0875
+   15     vouait                         -0.000432       0.0701
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marseille                      +0.053854       0.1121
+   2      interrogeait                   +0.021333       0.0516
+   3      peintres                       +0.019485       0.0603
+   4      communautés                    +0.019293       0.0815
+   5      désemparé                      +0.016907       0.0569
+   6      suisses                        +0.016722       0.0716
+   7      pope                           +0.015656       0.1094
+   8      authentique                    +0.015569       0.0525
+   9      impressionné                   +0.015392       0.0494
+   10     mme                            +0.015352       0.0425
+   11     chapitre                       +0.014525       0.0401
+   12     conseillé                      +0.012815       0.0451
+   13     ébloui                         +0.011042       0.0549
+   14     détestaient                    +0.008902       0.0801
+   15     troublé                        +0.008620       0.0410
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      anne                           -0.169723       0.4953
+   2      admiratif                      -0.029411       0.0607
+   3      ravie                          -0.028794       0.0444
+   4      mante                          -0.028196       0.0902
+   5      idyllique                      -0.027505       0.0864
+   6      rendue                         -0.026325       0.0392
+   7      blondes                        -0.026069       0.0501
+   8      changera                       -0.022459       0.0519
+   9      orthodoxe                      -0.021668       0.0857
+   10     sophie                         -0.020467       0.6605
+   11     présentée                      -0.019660       0.0516
+   12     passée                         -0.016061       0.0289
+   13     recherche                      -0.014051       0.0287
+   14     thé                            -0.014006       0.0354
+   15     immigration                    -0.013926       0.0902
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+pope                      +0.000691     +0.000053     +0.000053     0.1094
+jeudi                     +0.000113     +0.000018     +0.000018     0.0462
+spontanée                 +0.000000     +0.000018     +0.000018     0.0646
+immigration               +0.000000     +0.000016     +0.000016     0.0902
+chapitre                  +0.000462     +0.000016     +0.000016     0.0401
+suisses                   +0.000420     +0.000016     +0.000016     0.0716
+interrogeait              +0.000577     +0.000015     +0.000015     0.0516
+char                      +0.000329     +0.000014     +0.000014     0.0642
+marquer                   +0.000298     +0.000013     +0.000013     0.0439
+invitait                  +0.000180     +0.000012     +0.000012     0.0518
+durant                    +0.000114     +0.000010     +0.000010     0.0311
+blondes                   +0.000000     +0.000009     +0.000009     0.0501
+demandant                 +0.000017     +0.000009     +0.000009     0.0333
+franco                    +0.000194     +0.000009     +0.000009     0.0692
+prises                    +0.000000     +0.000008     +0.000008     0.0339
+désemparé                 +0.000546     +0.000007     +0.000007     0.0569
+flattée                   +0.000000     +0.000006     +0.000006     0.0659
+exilés                    +0.000000     +0.000006     +0.000006     0.0812
+manières                  +0.000017     +0.000005     +0.000005     0.0376
+impressionné              +0.000371     +0.000004     +0.000004     0.0494
+logit final pour 'homme': -1.0668

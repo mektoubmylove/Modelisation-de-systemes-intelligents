@@ -1,0 +1,387 @@
+texte analysé: . mais enfin , maëlle est à un âge où l on a des tas de copains sans que cela porte à conséquences . et mon frère est à un âge où l on a envie de s engager . je suis navré pour lui et vous ? quoi , mo...
+prédiction: HOMME (confiance: 74.2%)
+vérité terrain: FEMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  vraie classe
+# logit: -0.5588
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      flegme                         +0.000132       0.1455
+   2      débité                         +0.000092       0.1600
+   3      stoppa                         +0.000087       0.1413
+   4      jean                           +0.000081       0.1881
+   5      diables                        +0.000075       0.1184
+   6      supposez                       +0.000070       0.1683
+   7      qualificatif                   +0.000060       0.1896
+   8      arrivions                      +0.000060       0.1506
+   9      bac                            +0.000053       0.1039
+   10     admirais                       +0.000051       0.1489
+   11     carapace                       +0.000051       0.1269
+   12     provoqué                       +0.000044       0.0908
+   13     descendit                      +0.000035       0.0779
+   14     coins                          +0.000035       0.0734
+   15     facilement                     +0.000030       0.0610
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      niaiseries                     -0.000152       0.1766
+   2      maudire                        -0.000137       0.1420
+   3      copains                        -0.000088       0.1886
+   4      remous                         -0.000079       0.1041
+   5      bicyclette                     -0.000077       0.1192
+   6      ressentir                      -0.000075       0.0871
+   7      maîtrise                       -0.000072       0.0936
+   8      conséquences                   -0.000064       0.0795
+   9      dépend                         -0.000060       0.0826
+   10     tripote                        -0.000049       0.1858
+   11     surprenante                    -0.000042       0.1093
+   12     haïr                           -0.000041       0.1093
+   13     jalousie                       -0.000038       0.0727
+   14     affres                         -0.000038       0.1432
+   15     proposition                    -0.000037       0.0794
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      flegme                         +0.000132       0.1455
+   2      débité                         +0.000092       0.1600
+   3      stoppa                         +0.000087       0.1413
+   4      jean                           +0.000081       0.1881
+   5      diables                        +0.000075       0.1184
+   6      supposez                       +0.000070       0.1683
+   7      qualificatif                   +0.000060       0.1896
+   8      arrivions                      +0.000060       0.1506
+   9      bac                            +0.000053       0.1039
+   10     admirais                       +0.000051       0.1489
+   11     carapace                       +0.000051       0.1269
+   12     provoqué                       +0.000044       0.0908
+   13     descendit                      +0.000035       0.0779
+   14     coins                          +0.000035       0.0734
+   15     facilement                     +0.000030       0.0610
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      niaiseries                     -0.000152       0.1766
+   2      maudire                        -0.000137       0.1420
+   3      copains                        -0.000088       0.1886
+   4      remous                         -0.000079       0.1041
+   5      bicyclette                     -0.000077       0.1192
+   6      ressentir                      -0.000075       0.0871
+   7      maîtrise                       -0.000072       0.0936
+   8      conséquences                   -0.000064       0.0795
+   9      dépend                         -0.000060       0.0826
+   10     tripote                        -0.000049       0.1858
+   11     surprenante                    -0.000042       0.1093
+   12     haïr                           -0.000041       0.1093
+   13     jalousie                       -0.000038       0.0727
+   14     affres                         -0.000038       0.1432
+   15     proposition                    -0.000037       0.0794
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      emmener                        +0.001319       0.0666
+   2      hardiesse                      +0.001305       0.1370
+   3      goûts                          +0.001202       0.0859
+   4      bac                            +0.001135       0.1039
+   5      gémir                          +0.000980       0.1019
+   6      baissé                         +0.000923       0.0840
+   7      maîtrise                       +0.000915       0.0936
+   8      respirer                       +0.000891       0.0616
+   9      battements                     +0.000774       0.1954
+   10     humour                         +0.000710       0.0911
+   11     riposte                        +0.000690       0.1343
+   12     jalousie                       +0.000607       0.0727
+   13     haïr                           +0.000531       0.1093
+   14     panser                         +0.000470       0.1579
+   15     navré                          +0.000467       0.1039
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      stoppa                         -0.002136       0.1413
+   2      supposez                       -0.002094       0.1683
+   3      embrassez                      -0.001828       0.1730
+   4      loisirs                        -0.001701       0.1283
+   5      insensibilité                  -0.001573       0.1790
+   6      arrivions                      -0.001527       0.1506
+   7      jean                           -0.001411       0.1881
+   8      averti                         -0.001408       0.0968
+   9      copains                        -0.001400       0.1886
+   10     diables                        -0.001279       0.1184
+   11     remous                         -0.001269       0.1041
+   12     achille                        -0.001192       0.1595
+   13     réellement                     -0.001070       0.0721
+   14     flegme                         -0.000970       0.1455
+   15     maudire                        -0.000967       0.1420
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      emmener                        +0.065240       0.0666
+   2      goûts                          +0.061687       0.0859
+   3      bac                            +0.058921       0.1039
+   4      hardiesse                      +0.054467       0.1370
+   5      baissé                         +0.050606       0.0840
+   6      gémir                          +0.048593       0.1019
+   7      respirer                       +0.044334       0.0616
+   8      humour                         +0.040182       0.0911
+   9      maîtrise                       +0.039188       0.0936
+   10     haïr                           +0.038893       0.1093
+   11     navré                          +0.034961       0.1039
+   12     panser                         +0.032021       0.1579
+   13     jalousie                       +0.031208       0.0727
+   14     battements                     +0.031029       0.1954
+   15     riposte                        +0.030414       0.1343
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      embrassez                      -0.110047       0.1730
+   2      supposez                       -0.107658       0.1683
+   3      insensibilité                  -0.090404       0.1790
+   4      jean                           -0.086368       0.1881
+   5      loisirs                        -0.083637       0.1283
+   6      stoppa                         -0.082701       0.1413
+   7      diables                        -0.082557       0.1184
+   8      remous                         -0.065169       0.1041
+   9      arrivions                      -0.062409       0.1506
+   10     averti                         -0.061709       0.0968
+   11     achille                        -0.054709       0.1595
+   12     réellement                     -0.053141       0.0721
+   13     flegme                         -0.048456       0.1455
+   14     talon                          -0.044421       0.0963
+   15     engager                        -0.044275       0.0726
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+flegme                    +0.000000     +0.000132     +0.000132     0.1455
+débité                    +0.000000     +0.000092     +0.000092     0.1600
+stoppa                    +0.000000     +0.000087     +0.000087     0.1413
+jean                      +0.000000     +0.000081     +0.000081     0.1881
+diables                   +0.000000     +0.000075     +0.000075     0.1184
+supposez                  +0.000000     +0.000070     +0.000070     0.1683
+qualificatif              +0.000000     +0.000060     +0.000060     0.1896
+arrivions                 +0.000000     +0.000060     +0.000060     0.1506
+bac                       +0.001135     +0.000053     +0.000053     0.1039
+admirais                  +0.000000     +0.000051     +0.000051     0.1489
+carapace                  +0.000000     +0.000051     +0.000051     0.1269
+provoqué                  +0.000000     +0.000044     +0.000044     0.0908
+descendit                 +0.000000     +0.000035     +0.000035     0.0779
+coins                     +0.000000     +0.000035     +0.000035     0.0734
+facilement                +0.000000     +0.000030     +0.000030     0.0610
+réellement                +0.000000     +0.000027     +0.000027     0.0721
+traversa                  +0.000000     +0.000024     +0.000024     0.0814
+vouer                     +0.000000     +0.000022     +0.000022     0.1525
+riposte                   +0.000690     +0.000021     +0.000021     0.1343
+achille                   +0.000000     +0.000021     +0.000021     0.1595
+logit final pour 'femme': -0.5588
+# analyse pour la classe: HOMME  prédite
+# logit: 0.4952
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jean                           +0.000085       0.1881
+   2      insensibilité                  +0.000074       0.1790
+   3      coins                          +0.000054       0.0734
+   4      flegme                         +0.000051       0.1455
+   5      diables                        +0.000038       0.1184
+   6      mettez                         +0.000033       0.0849
+   7      carapace                       +0.000033       0.1269
+   8      appellation                    +0.000033       0.1380
+   9      arrivions                      +0.000031       0.1506
+   10     navré                          +0.000030       0.1039
+   11     descendit                      +0.000026       0.0779
+   12     achille                        +0.000023       0.1595
+   13     provoqué                       +0.000022       0.0908
+   14     emmener                        +0.000021       0.0666
+   15     réellement                     +0.000020       0.0721
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      battements                     -0.000108       0.1954
+   2      maudire                        -0.000097       0.1420
+   3      copains                        -0.000090       0.1886
+   4      niaiseries                     -0.000086       0.1766
+   5      remous                         -0.000082       0.1041
+   6      affres                         -0.000080       0.1432
+   7      haïr                           -0.000053       0.1093
+   8      panser                         -0.000050       0.1579
+   9      coffre                         -0.000047       0.0762
+   10     dépend                         -0.000045       0.0826
+   11     hardiesse                      -0.000045       0.1370
+   12     engager                        -0.000042       0.0726
+   13     bicyclette                     -0.000042       0.1192
+   14     tripote                        -0.000042       0.1858
+   15     surprenante                    -0.000038       0.1093
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jean                           +0.000085       0.1881
+   2      insensibilité                  +0.000074       0.1790
+   3      coins                          +0.000054       0.0734
+   4      flegme                         +0.000051       0.1455
+   5      diables                        +0.000038       0.1184
+   6      mettez                         +0.000033       0.0849
+   7      carapace                       +0.000033       0.1269
+   8      appellation                    +0.000033       0.1380
+   9      arrivions                      +0.000031       0.1506
+   10     navré                          +0.000030       0.1039
+   11     descendit                      +0.000026       0.0779
+   12     achille                        +0.000023       0.1595
+   13     provoqué                       +0.000022       0.0908
+   14     emmener                        +0.000021       0.0666
+   15     réellement                     +0.000020       0.0721
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      battements                     -0.000108       0.1954
+   2      maudire                        -0.000097       0.1420
+   3      copains                        -0.000090       0.1886
+   4      niaiseries                     -0.000086       0.1766
+   5      remous                         -0.000082       0.1041
+   6      affres                         -0.000080       0.1432
+   7      haïr                           -0.000053       0.1093
+   8      panser                         -0.000050       0.1579
+   9      coffre                         -0.000047       0.0762
+   10     dépend                         -0.000045       0.0826
+   11     hardiesse                      -0.000045       0.1370
+   12     engager                        -0.000042       0.0726
+   13     bicyclette                     -0.000042       0.1192
+   14     tripote                        -0.000042       0.1858
+   15     surprenante                    -0.000038       0.1093
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      supposez                       +0.002270       0.1683
+   2      embrassez                      +0.001716       0.1730
+   3      insensibilité                  +0.001659       0.1790
+   4      loisirs                        +0.001630       0.1283
+   5      diables                        +0.001422       0.1184
+   6      stoppa                         +0.001406       0.1413
+   7      arrivions                      +0.001373       0.1506
+   8      copains                        +0.001365       0.1886
+   9      averti                         +0.001283       0.0968
+   10     réellement                     +0.001112       0.0721
+   11     flegme                         +0.001014       0.1455
+   12     talon                          +0.001010       0.0963
+   13     remous                         +0.000942       0.1041
+   14     carapace                       +0.000926       0.1269
+   15     jean                           +0.000917       0.1881
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hardiesse                      -0.001209       0.1370
+   2      goûts                          -0.001193       0.0859
+   3      emmener                        -0.001098       0.0666
+   4      riposte                        -0.000988       0.1343
+   5      bac                            -0.000939       0.1039
+   6      respirer                       -0.000845       0.0616
+   7      gémir                          -0.000809       0.1019
+   8      baissé                         -0.000809       0.0840
+   9      maîtrise                       -0.000638       0.0936
+   10     panser                         -0.000636       0.1579
+   11     battements                     -0.000615       0.1954
+   12     humour                         -0.000587       0.0911
+   13     jalousie                       -0.000332       0.0727
+   14     navré                          -0.000298       0.1039
+   15     dépend                         -0.000264       0.0826
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      embrassez                      +0.106981       0.1730
+   2      supposez                       +0.103846       0.1683
+   3      insensibilité                  +0.095081       0.1790
+   4      diables                        +0.085290       0.1184
+   5      jean                           +0.070102       0.1881
+   6      loisirs                        +0.066255       0.1283
+   7      arrivions                      +0.059381       0.1506
+   8      averti                         +0.055481       0.0968
+   9      réellement                     +0.054318       0.0721
+   10     remous                         +0.048836       0.1041
+   11     talon                          +0.046209       0.0963
+   12     stoppa                         +0.045345       0.1413
+   13     achille                        +0.041318       0.1595
+   14     traversa                       +0.039596       0.0814
+   15     engager                        +0.039148       0.0726
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hardiesse                      -0.056764       0.1370
+   2      goûts                          -0.055940       0.0859
+   3      emmener                        -0.052654       0.0666
+   4      gémir                          -0.047528       0.1019
+   5      riposte                        -0.047365       0.1343
+   6      panser                         -0.047058       0.1579
+   7      bac                            -0.043902       0.1039
+   8      baissé                         -0.040281       0.0840
+   9      respirer                       -0.038931       0.0616
+   10     humour                         -0.036112       0.0911
+   11     battements                     -0.035188       0.1954
+   12     navré                          -0.025912       0.1039
+   13     haïr                           -0.022717       0.1093
+   14     maîtrise                       -0.022577       0.0936
+   15     dépend                         -0.019489       0.0826
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+jean                      +0.000917     +0.000085     +0.000085     0.1881
+insensibilité             +0.001659     +0.000074     +0.000074     0.1790
+coins                     +0.000000     +0.000054     +0.000054     0.0734
+flegme                    +0.001014     +0.000051     +0.000051     0.1455
+diables                   +0.001422     +0.000038     +0.000038     0.1184
+mettez                    +0.000140     +0.000033     +0.000033     0.0849
+carapace                  +0.000926     +0.000033     +0.000033     0.1269
+appellation               +0.000169     +0.000033     +0.000033     0.1380
+arrivions                 +0.001373     +0.000031     +0.000031     0.1506
+navré                     +0.000000     +0.000030     +0.000030     0.1039
+descendit                 +0.000628     +0.000026     +0.000026     0.0779
+achille                   +0.000898     +0.000023     +0.000023     0.1595
+provoqué                  +0.000000     +0.000022     +0.000022     0.0908
+emmener                   +0.000000     +0.000021     +0.000021     0.0666
+réellement                +0.001112     +0.000020     +0.000020     0.0721
+débité                    +0.000617     +0.000019     +0.000019     0.1600
+bac                       +0.000000     +0.000018     +0.000018     0.1039
+loisirs                   +0.001630     +0.000018     +0.000018     0.1283
+goûts                     +0.000000     +0.000015     +0.000015     0.0859
+absolument                +0.000000     +0.000015     +0.000015     0.0593
+logit final pour 'homme': 0.4952

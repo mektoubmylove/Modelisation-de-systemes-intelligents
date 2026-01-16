@@ -1,0 +1,386 @@
+texte analysé: . tu as une belle chemise , lui dit elle . la foule devenait suffocante , collante , gluante , une de ces foules où l homme exhale la bête puante , dans la goutte de sueur qui gicle du pore dilaté com...
+prédiction: HOMME (confiance: 62.4%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.2368
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gin                            +0.000157       0.1641
+   2      din                            +0.000118       0.2657
+   3      chauffés                       +0.000113       0.0959
+   4      sports                         +0.000100       0.0757
+   5      bou                            +0.000091       0.2274
+   6      colt                           +0.000086       0.1011
+   7      tira                           +0.000070       0.0392
+   8      brûla                          +0.000063       0.0772
+   9      collante                       +0.000053       0.0839
+   10     fermaient                      +0.000050       0.0668
+   11     replaça                        +0.000048       0.0865
+   12     repéra                         +0.000044       0.0742
+   13     tripes                         +0.000043       0.0630
+   14     casa                           +0.000042       0.1022
+   15     foules                         +0.000037       0.0641
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      manu                           -0.000196       0.6233
+   2      gicle                          -0.000092       0.0942
+   3      bousculade                     -0.000081       0.0776
+   4      englouti                       -0.000071       0.0690
+   5      rapprochant                    -0.000070       0.0676
+   6      légionnaires                   -0.000070       0.1155
+   7      suffocante                     -0.000068       0.0862
+   8      robots                         -0.000067       0.1027
+   9      exhale                         -0.000056       0.0911
+   10     indifférents                   -0.000047       0.0610
+   11     accompagnement                 -0.000046       0.0826
+   12     épancher                       -0.000040       0.0859
+   13     charcuterie                    -0.000039       0.0816
+   14     demanda                        -0.000034       0.0676
+   15     soudainement                   -0.000033       0.0567
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gin                            +0.000157       0.1641
+   2      din                            +0.000118       0.2657
+   3      chauffés                       +0.000113       0.0959
+   4      sports                         +0.000100       0.0757
+   5      bou                            +0.000091       0.2274
+   6      colt                           +0.000086       0.1011
+   7      tira                           +0.000070       0.0392
+   8      brûla                          +0.000063       0.0772
+   9      collante                       +0.000053       0.0839
+   10     fermaient                      +0.000050       0.0668
+   11     replaça                        +0.000048       0.0865
+   12     repéra                         +0.000044       0.0742
+   13     tripes                         +0.000043       0.0630
+   14     casa                           +0.000042       0.1022
+   15     foules                         +0.000037       0.0641
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      manu                           -0.000196       0.6233
+   2      gicle                          -0.000092       0.0942
+   3      bousculade                     -0.000081       0.0776
+   4      englouti                       -0.000071       0.0690
+   5      rapprochant                    -0.000070       0.0676
+   6      légionnaires                   -0.000070       0.1155
+   7      suffocante                     -0.000068       0.0862
+   8      robots                         -0.000067       0.1027
+   9      exhale                         -0.000056       0.0911
+   10     indifférents                   -0.000047       0.0610
+   11     accompagnement                 -0.000046       0.0826
+   12     épancher                       -0.000040       0.0859
+   13     charcuterie                    -0.000039       0.0816
+   14     demanda                        -0.000034       0.0676
+   15     soudainement                   -0.000033       0.0567
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      manu                           +0.005831       0.6233
+   2      englouti                       +0.000909       0.0690
+   3      souffla                        +0.000751       0.0470
+   4      violé                          +0.000731       0.0792
+   5      collante                       +0.000722       0.0839
+   6      correctement                   +0.000712       0.0531
+   7      calmer                         +0.000690       0.0356
+   8      épancher                       +0.000620       0.0859
+   9      soulevés                       +0.000614       0.0919
+   10     menaçants                      +0.000597       0.0757
+   11     repéra                         +0.000571       0.0742
+   12     accompagner                    +0.000476       0.0327
+   13     casa                           +0.000473       0.1022
+   14     intense                        +0.000427       0.0382
+   15     soudainement                   +0.000425       0.0567
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      colt                           -0.003863       0.1011
+   2      salauds                        -0.003161       0.1321
+   3      prolongeaient                  -0.001872       0.0959
+   4      automatique                    -0.001833       0.0569
+   5      légionnaires                   -0.001729       0.1155
+   6      matraques                      -0.001694       0.1098
+   7      puante                         -0.001335       0.0848
+   8      eût                            -0.000989       0.0344
+   9      fermaient                      -0.000894       0.0668
+   10     tira                           -0.000881       0.0392
+   11     gagnait                        -0.000808       0.0447
+   12     jaillit                        -0.000795       0.0484
+   13     police                         -0.000729       0.0352
+   14     gin                            -0.000669       0.1641
+   15     joua                           -0.000627       0.0614
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      manu                           +0.482614       0.6233
+   2      englouti                       +0.048446       0.0690
+   3      collante                       +0.043367       0.0839
+   4      violé                          +0.043094       0.0792
+   5      correctement                   +0.040308       0.0531
+   6      souffla                        +0.035043       0.0470
+   7      calmer                         +0.032783       0.0356
+   8      épancher                       +0.032071       0.0859
+   9      anormalement                   +0.031969       0.0856
+   10     menaçants                      +0.029154       0.0757
+   11     demanda                        +0.028245       0.0676
+   12     repéra                         +0.027628       0.0742
+   13     soulevés                       +0.022592       0.0919
+   14     accompagner                    +0.022500       0.0327
+   15     charcuterie                    +0.021567       0.0816
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      colt                           -0.212273       0.1011
+   2      salauds                        -0.147761       0.1321
+   3      automatique                    -0.095105       0.0569
+   4      matraques                      -0.082298       0.1098
+   5      légionnaires                   -0.081633       0.1155
+   6      prolongeaient                  -0.080280       0.0959
+   7      puante                         -0.073550       0.0848
+   8      eût                            -0.049998       0.0344
+   9      tira                           -0.048426       0.0392
+   10     jaillit                        -0.047656       0.0484
+   11     fermaient                      -0.046222       0.0668
+   12     chauffés                       -0.044328       0.0959
+   13     gagnait                        -0.042604       0.0447
+   14     bousculé                       -0.032798       0.0690
+   15     police                         -0.032147       0.0352
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+gin                       +0.000000     +0.000157     +0.000157     0.1641
+din                       +0.000113     +0.000118     +0.000118     0.2657
+chauffés                  +0.000000     +0.000113     +0.000113     0.0959
+sports                    +0.000000     +0.000100     +0.000100     0.0757
+bou                       +0.000000     +0.000091     +0.000091     0.2274
+colt                      +0.000000     +0.000086     +0.000086     0.1011
+tira                      +0.000000     +0.000070     +0.000070     0.0392
+brûla                     +0.000000     +0.000063     +0.000063     0.0772
+collante                  +0.000722     +0.000053     +0.000053     0.0839
+fermaient                 +0.000000     +0.000050     +0.000050     0.0668
+replaça                   +0.000000     +0.000048     +0.000048     0.0865
+repéra                    +0.000571     +0.000044     +0.000044     0.0742
+tripes                    +0.000213     +0.000043     +0.000043     0.0630
+casa                      +0.000473     +0.000042     +0.000042     0.1022
+foules                    +0.000000     +0.000037     +0.000037     0.0641
+jaillit                   +0.000000     +0.000028     +0.000028     0.0484
+rigoles                   +0.000062     +0.000027     +0.000027     0.0723
+perdit                    +0.000000     +0.000027     +0.000027     0.0470
+bouffées                  +0.000000     +0.000027     +0.000027     0.0549
+anormalement              +0.000399     +0.000025     +0.000025     0.0856
+logit final pour 'femme': -0.2368
+# analyse pour la classe: HOMME  prédite
+# logit: 0.2699
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gin                            +0.000144       0.1641
+   2      bou                            +0.000088       0.2274
+   3      chauffés                       +0.000057       0.0959
+   4      collante                       +0.000051       0.0839
+   5      repéra                         +0.000049       0.0742
+   6      anormalement                   +0.000047       0.0856
+   7      brûla                          +0.000045       0.0772
+   8      sports                         +0.000045       0.0757
+   9      din                            +0.000042       0.2657
+   10     tira                           +0.000037       0.0392
+   11     brutales                       +0.000035       0.0759
+   12     replaça                        +0.000031       0.0865
+   13     casa                           +0.000028       0.1022
+   14     eût                            +0.000022       0.0344
+   15     fermaient                      +0.000019       0.0668
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      manu                           -0.000121       0.6233
+   2      suffocante                     -0.000065       0.0862
+   3      bousculade                     -0.000065       0.0776
+   4      gicle                          -0.000054       0.0942
+   5      salauds                        -0.000054       0.1321
+   6      rapprochant                    -0.000043       0.0676
+   7      accompagnement                 -0.000040       0.0826
+   8      englouti                       -0.000036       0.0690
+   9      puante                         -0.000033       0.0848
+   10     éloignaient                    -0.000033       0.0678
+   11     légionnaires                   -0.000032       0.1155
+   12     prolongeaient                  -0.000032       0.0959
+   13     indifférents                   -0.000027       0.0610
+   14     européenne                     -0.000026       0.0671
+   15     matraques                      -0.000021       0.1098
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gin                            +0.000144       0.1641
+   2      bou                            +0.000088       0.2274
+   3      chauffés                       +0.000057       0.0959
+   4      collante                       +0.000051       0.0839
+   5      repéra                         +0.000049       0.0742
+   6      anormalement                   +0.000047       0.0856
+   7      brûla                          +0.000045       0.0772
+   8      sports                         +0.000045       0.0757
+   9      din                            +0.000042       0.2657
+   10     tira                           +0.000037       0.0392
+   11     brutales                       +0.000035       0.0759
+   12     replaça                        +0.000031       0.0865
+   13     casa                           +0.000028       0.1022
+   14     eût                            +0.000022       0.0344
+   15     fermaient                      +0.000019       0.0668
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      manu                           -0.000121       0.6233
+   2      suffocante                     -0.000065       0.0862
+   3      bousculade                     -0.000065       0.0776
+   4      gicle                          -0.000054       0.0942
+   5      salauds                        -0.000054       0.1321
+   6      rapprochant                    -0.000043       0.0676
+   7      accompagnement                 -0.000040       0.0826
+   8      englouti                       -0.000036       0.0690
+   9      puante                         -0.000033       0.0848
+   10     éloignaient                    -0.000033       0.0678
+   11     légionnaires                   -0.000032       0.1155
+   12     prolongeaient                  -0.000032       0.0959
+   13     indifférents                   -0.000027       0.0610
+   14     européenne                     -0.000026       0.0671
+   15     matraques                      -0.000021       0.1098
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      colt                           +0.003318       0.1011
+   2      salauds                        +0.002980       0.1321
+   3      prolongeaient                  +0.001904       0.0959
+   4      matraques                      +0.001634       0.1098
+   5      automatique                    +0.001538       0.0569
+   6      légionnaires                   +0.001470       0.1155
+   7      puante                         +0.001143       0.0848
+   8      eût                            +0.000836       0.0344
+   9      gagnait                        +0.000764       0.0447
+   10     gin                            +0.000724       0.1641
+   11     tira                           +0.000704       0.0392
+   12     fermaient                      +0.000701       0.0668
+   13     jaillit                        +0.000673       0.0484
+   14     police                         +0.000628       0.0352
+   15     exhale                         +0.000606       0.0911
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      manu                           -0.004067       0.6233
+   2      englouti                       -0.000918       0.0690
+   3      soulevés                       -0.000767       0.0919
+   4      correctement                   -0.000682       0.0531
+   5      calmer                         -0.000616       0.0356
+   6      repéra                         -0.000598       0.0742
+   7      violé                          -0.000570       0.0792
+   8      épancher                       -0.000549       0.0859
+   9      collante                       -0.000549       0.0839
+   10     din                            -0.000540       0.2657
+   11     souffla                        -0.000531       0.0470
+   12     menaçants                      -0.000505       0.0757
+   13     casa                           -0.000445       0.1022
+   14     anormalement                   -0.000427       0.0856
+   15     rythme                         -0.000360       0.0343
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      colt                           +0.166704       0.1011
+   2      salauds                        +0.127521       0.1321
+   3      prolongeaient                  +0.086149       0.0959
+   4      matraques                      +0.079476       0.1098
+   5      automatique                    +0.076441       0.0569
+   6      légionnaires                   +0.063710       0.1155
+   7      puante                         +0.059231       0.0848
+   8      jaillit                        +0.041830       0.0484
+   9      eût                            +0.041501       0.0344
+   10     gagnait                        +0.039007       0.0447
+   11     tira                           +0.036979       0.0392
+   12     fermaient                      +0.036900       0.0668
+   13     chauffés                       +0.036415       0.0959
+   14     robots                         +0.029946       0.1027
+   15     joua                           +0.029349       0.0614
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      manu                           -0.329492       0.6233
+   2      englouti                       -0.045961       0.0690
+   3      anormalement                   -0.038417       0.0856
+   4      correctement                   -0.036790       0.0531
+   5      soulevés                       -0.033674       0.0919
+   6      collante                       -0.032298       0.0839
+   7      repéra                         -0.030393       0.0742
+   8      violé                          -0.030063       0.0792
+   9      épancher                       -0.028755       0.0859
+   10     calmer                         -0.028066       0.0356
+   11     din                            -0.026106       0.2657
+   12     souffla                        -0.024817       0.0470
+   13     charcuterie                    -0.019923       0.0816
+   14     menaçants                      -0.019879       0.0757
+   15     demanda                        -0.018596       0.0676
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+gin                       +0.000724     +0.000144     +0.000144     0.1641
+bou                       +0.000015     +0.000088     +0.000088     0.2274
+chauffés                  +0.000376     +0.000057     +0.000057     0.0959
+collante                  +0.000000     +0.000051     +0.000051     0.0839
+repéra                    +0.000000     +0.000049     +0.000049     0.0742
+anormalement              +0.000000     +0.000047     +0.000047     0.0856
+brûla                     +0.000381     +0.000045     +0.000045     0.0772
+sports                    +0.000337     +0.000045     +0.000045     0.0757
+din                       +0.000000     +0.000042     +0.000042     0.2657
+tira                      +0.000704     +0.000037     +0.000037     0.0392
+brutales                  +0.000000     +0.000035     +0.000035     0.0759
+replaça                   +0.000432     +0.000031     +0.000031     0.0865
+casa                      +0.000000     +0.000028     +0.000028     0.1022
+eût                       +0.000836     +0.000022     +0.000022     0.0344
+fermaient                 +0.000701     +0.000019     +0.000019     0.0668
+réflexion                 +0.000332     +0.000017     +0.000017     0.0355
+menaçants                 +0.000000     +0.000017     +0.000017     0.0757
+quittés                   +0.000000     +0.000017     +0.000017     0.0542
+accompagner               +0.000000     +0.000017     +0.000017     0.0327
+rigoles                   +0.000000     +0.000016     +0.000016     0.0723
+logit final pour 'homme': 0.2699

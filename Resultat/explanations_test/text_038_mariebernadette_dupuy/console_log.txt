@@ -1,0 +1,386 @@
+texte analysé: passionnait . et désormais , à la faveur des confidences de sa protégée , elle désignait son idole par le doux surnom de sissi . c est étrange , observa alors amélia . j ai passé presque trois ans au ...
+prédiction: FEMME (confiance: 96.0%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.9247
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      amélia                         +0.000149       0.4759
+   2      comte                          +0.000054       0.1857
+   3      approuva                       +0.000043       0.0560
+   4      interrogée                     +0.000042       0.0721
+   5      idole                          +0.000040       0.0650
+   6      personnages                    +0.000040       0.0410
+   7      rêveur                         +0.000039       0.0565
+   8      passionnait                    +0.000037       0.0781
+   9      prétendu                       +0.000036       0.1133
+   10     cérémonial                     +0.000031       0.0779
+   11     abandonna                      +0.000029       0.0530
+   12     durant                         +0.000023       0.0346
+   13     portrait                       +0.000023       0.0394
+   14     prit                           +0.000020       0.0347
+   15     blessé                         +0.000019       0.0385
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      élisabeth                      -0.000276       0.1789
+   2      sissi                          -0.000264       0.5197
+   3      sophie                         -0.000223       0.2449
+   4      impératrice                    -0.000101       0.0826
+   5      observa                        -0.000088       0.0530
+   6      princesse                      -0.000085       0.0487
+   7      rodolphe                       -0.000084       0.1117
+   8      diminutif                      -0.000078       0.0945
+   9      hongrois                       -0.000058       0.0920
+   10     proches                        -0.000055       0.0387
+   11     désormais                      -0.000054       0.0656
+   12     forment                        -0.000054       0.0567
+   13     archiduc                       -0.000053       0.1180
+   14     séduisant                      -0.000052       0.0569
+   15     malveillants                   -0.000052       0.1043
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      amélia                         +0.000149       0.4759
+   2      comte                          +0.000054       0.1857
+   3      approuva                       +0.000043       0.0560
+   4      interrogée                     +0.000042       0.0721
+   5      idole                          +0.000040       0.0650
+   6      personnages                    +0.000040       0.0410
+   7      rêveur                         +0.000039       0.0565
+   8      passionnait                    +0.000037       0.0781
+   9      prétendu                       +0.000036       0.1133
+   10     cérémonial                     +0.000031       0.0779
+   11     abandonna                      +0.000029       0.0530
+   12     durant                         +0.000023       0.0346
+   13     portrait                       +0.000023       0.0394
+   14     prit                           +0.000020       0.0347
+   15     blessé                         +0.000019       0.0385
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      élisabeth                      -0.000276       0.1789
+   2      sissi                          -0.000264       0.5197
+   3      sophie                         -0.000223       0.2449
+   4      impératrice                    -0.000101       0.0826
+   5      observa                        -0.000088       0.0530
+   6      princesse                      -0.000085       0.0487
+   7      rodolphe                       -0.000084       0.1117
+   8      diminutif                      -0.000078       0.0945
+   9      hongrois                       -0.000058       0.0920
+   10     proches                        -0.000055       0.0387
+   11     désormais                      -0.000054       0.0656
+   12     forment                        -0.000054       0.0567
+   13     archiduc                       -0.000053       0.1180
+   14     séduisant                      -0.000052       0.0569
+   15     malveillants                   -0.000052       0.1043
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sissi                          +0.007401       0.5197
+   2      amélia                         +0.004329       0.4759
+   3      élisabeth                      +0.001709       0.1789
+   4      séduisant                      +0.001475       0.0569
+   5      stéphanie                      +0.001333       0.1139
+   6      protégée                       +0.001280       0.0495
+   7      coudre                         +0.001279       0.0632
+   8      marie                          +0.001228       0.0769
+   9      soupira                        +0.001228       0.0437
+   10     contraintes                    +0.001142       0.0699
+   11     impératrice                    +0.001049       0.0826
+   12     sophie                         +0.001041       0.2449
+   13     valérie                        +0.001008       0.2293
+   14     archiduc                       +0.000891       0.1180
+   15     sereine                        +0.000876       0.0560
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      illustres                      -0.001189       0.0769
+   2      comte                          -0.001122       0.1857
+   3      personnages                    -0.001031       0.0410
+   4      majesté                        -0.000671       0.0550
+   5      idole                          -0.000535       0.0650
+   6      désignait                      -0.000453       0.0539
+   7      abandonna                      -0.000451       0.0530
+   8      connaissez                     -0.000426       0.0364
+   9      progrès                        -0.000404       0.0446
+   10     uni                            -0.000380       0.0651
+   11     malveillants                   -0.000345       0.1043
+   12     protocole                      -0.000343       0.0726
+   13     patrie                         -0.000328       0.0559
+   14     cérémonial                     -0.000310       0.0779
+   15     prit                           -0.000282       0.0347
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sissi                          +0.166051       0.5197
+   2      amélia                         +0.159054       0.4759
+   3      stéphanie                      +0.048401       0.1139
+   4      séduisant                      +0.046636       0.0569
+   5      soupira                        +0.042634       0.0437
+   6      protégée                       +0.040674       0.0495
+   7      marie                          +0.039436       0.0769
+   8      coudre                         +0.036470       0.0632
+   9      valérie                        +0.036237       0.2293
+   10     contraintes                    +0.035939       0.0699
+   11     sereine                        +0.034788       0.0560
+   12     quotidien                      +0.031871       0.0423
+   13     déçus                          +0.029142       0.0711
+   14     impératrice                    +0.025814       0.0826
+   15     archiduc                       +0.023757       0.1180
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      illustres                      -0.039750       0.0769
+   2      comte                          -0.034388       0.1857
+   3      personnages                    -0.033559       0.0410
+   4      majesté                        -0.023963       0.0550
+   5      malveillants                   -0.017757       0.1043
+   6      protocole                      -0.017613       0.0726
+   7      progrès                        -0.015778       0.0446
+   8      abandonna                      -0.015506       0.0530
+   9      désignait                      -0.015029       0.0539
+   10     connaissez                     -0.014456       0.0364
+   11     forment                        -0.012804       0.0567
+   12     correspond                     -0.012676       0.0659
+   13     employer                       -0.012279       0.0490
+   14     confidences                    -0.011694       0.0449
+   15     lointaine                      -0.011662       0.0412
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+amélia                    +0.004329     +0.000149     +0.000149     0.4759
+comte                     +0.000000     +0.000054     +0.000054     0.1857
+approuva                  +0.000000     +0.000043     +0.000043     0.0560
+interrogée                +0.000311     +0.000042     +0.000042     0.0721
+idole                     +0.000000     +0.000040     +0.000040     0.0650
+personnages               +0.000000     +0.000040     +0.000040     0.0410
+rêveur                    +0.000383     +0.000039     +0.000039     0.0565
+passionnait               +0.000000     +0.000037     +0.000037     0.0781
+prétendu                  +0.000000     +0.000036     +0.000036     0.1133
+cérémonial                +0.000000     +0.000031     +0.000031     0.0779
+abandonna                 +0.000000     +0.000029     +0.000029     0.0530
+durant                    +0.000000     +0.000023     +0.000023     0.0346
+portrait                  +0.000000     +0.000023     +0.000023     0.0394
+prit                      +0.000000     +0.000020     +0.000020     0.0347
+blessé                    +0.000088     +0.000019     +0.000019     0.0385
+connaissez                +0.000000     +0.000019     +0.000019     0.0364
+lecture                   +0.000442     +0.000019     +0.000019     0.0353
+précisément               +0.000000     +0.000019     +0.000019     0.0390
+uni                       +0.000000     +0.000016     +0.000016     0.0651
+château                   +0.000000     +0.000015     +0.000015     0.0412
+logit final pour 'femme': 1.9247
+# analyse pour la classe: HOMME
+# logit: -1.2611
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      amélia                         +0.000072       0.4759
+   2      passionnait                    +0.000025       0.0781
+   3      interrogée                     +0.000024       0.0721
+   4      approuva                       +0.000018       0.0560
+   5      rêveur                         +0.000017       0.0565
+   6      chère                          +0.000015       0.0359
+   7      personnages                    +0.000015       0.0410
+   8      bals                           +0.000013       0.0777
+   9      précisément                    +0.000013       0.0390
+   10     lecture                        +0.000012       0.0353
+   11     éprouvait                      +0.000011       0.0445
+   12     durant                         +0.000011       0.0346
+   13     idole                          +0.000010       0.0650
+   14     souveraine                     +0.000010       0.0655
+   15     abandonna                      +0.000009       0.0530
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      élisabeth                      -0.000166       0.1789
+   2      sissi                          -0.000132       0.5197
+   3      sophie                         -0.000084       0.2449
+   4      rodolphe                       -0.000056       0.1117
+   5      impératrice                    -0.000053       0.0826
+   6      princesse                      -0.000044       0.0487
+   7      malveillants                   -0.000040       0.1043
+   8      observa                        -0.000039       0.0530
+   9      hongrois                       -0.000036       0.0920
+   10     désormais                      -0.000034       0.0656
+   11     forment                        -0.000028       0.0567
+   12     diminutif                      -0.000027       0.0945
+   13     séduisant                      -0.000025       0.0569
+   14     admirer                        -0.000025       0.0431
+   15     protégée                       -0.000024       0.0495
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      amélia                         +0.000072       0.4759
+   2      passionnait                    +0.000025       0.0781
+   3      interrogée                     +0.000024       0.0721
+   4      approuva                       +0.000018       0.0560
+   5      rêveur                         +0.000017       0.0565
+   6      chère                          +0.000015       0.0359
+   7      personnages                    +0.000015       0.0410
+   8      bals                           +0.000013       0.0777
+   9      précisément                    +0.000013       0.0390
+   10     lecture                        +0.000012       0.0353
+   11     éprouvait                      +0.000011       0.0445
+   12     durant                         +0.000011       0.0346
+   13     idole                          +0.000010       0.0650
+   14     souveraine                     +0.000010       0.0655
+   15     abandonna                      +0.000009       0.0530
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      élisabeth                      -0.000166       0.1789
+   2      sissi                          -0.000132       0.5197
+   3      sophie                         -0.000084       0.2449
+   4      rodolphe                       -0.000056       0.1117
+   5      impératrice                    -0.000053       0.0826
+   6      princesse                      -0.000044       0.0487
+   7      malveillants                   -0.000040       0.1043
+   8      observa                        -0.000039       0.0530
+   9      hongrois                       -0.000036       0.0920
+   10     désormais                      -0.000034       0.0656
+   11     forment                        -0.000028       0.0567
+   12     diminutif                      -0.000027       0.0945
+   13     séduisant                      -0.000025       0.0569
+   14     admirer                        -0.000025       0.0431
+   15     protégée                       -0.000024       0.0495
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      comte                          +0.000872       0.1857
+   2      illustres                      +0.000854       0.0769
+   3      personnages                    +0.000733       0.0410
+   4      majesté                        +0.000453       0.0550
+   5      malveillants                   +0.000438       0.1043
+   6      idole                          +0.000385       0.0650
+   7      désignait                      +0.000372       0.0539
+   8      uni                            +0.000354       0.0651
+   9      prétendu                       +0.000298       0.1133
+   10     connaissez                     +0.000275       0.0364
+   11     patrie                         +0.000268       0.0559
+   12     abandonna                      +0.000267       0.0530
+   13     progrès                        +0.000256       0.0446
+   14     cérémonial                     +0.000229       0.0779
+   15     protocole                      +0.000221       0.0726
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sissi                          -0.004441       0.5197
+   2      amélia                         -0.002139       0.4759
+   3      élisabeth                      -0.001242       0.1789
+   4      marie                          -0.001025       0.0769
+   5      séduisant                      -0.001012       0.0569
+   6      soupira                        -0.000903       0.0437
+   7      protégée                       -0.000890       0.0495
+   8      coudre                         -0.000854       0.0632
+   9      sophie                         -0.000794       0.2449
+   10     valérie                        -0.000736       0.2293
+   11     stéphanie                      -0.000684       0.1139
+   12     impératrice                    -0.000668       0.0826
+   13     contraintes                    -0.000648       0.0699
+   14     déçus                          -0.000569       0.0711
+   15     belgique                       -0.000551       0.0763
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      comte                          +0.040962       0.1857
+   2      illustres                      +0.031314       0.0769
+   3      prétendu                       +0.024408       0.1133
+   4      personnages                    +0.023380       0.0410
+   5      malveillants                   +0.020305       0.1043
+   6      majesté                        +0.017057       0.0550
+   7      désignait                      +0.014226       0.0539
+   8      uni                            +0.013630       0.0651
+   9      protocole                      +0.013304       0.0726
+   10     idole                          +0.012103       0.0650
+   11     abandonna                      +0.011146       0.0530
+   12     rodolphe                       +0.010968       0.1117
+   13     connaissez                     +0.010567       0.0364
+   14     forment                        +0.009935       0.0567
+   15     progrès                        +0.009292       0.0446
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sissi                          -0.084938       0.5197
+   2      amélia                         -0.084466       0.4759
+   3      marie                          -0.035333       0.0769
+   4      séduisant                      -0.033740       0.0569
+   5      soupira                        -0.031896       0.0437
+   6      protégée                       -0.030464       0.0495
+   7      coudre                         -0.025797       0.0632
+   8      stéphanie                      -0.025721       0.1139
+   9      gais                           -0.024410       0.0738
+   10     déçus                          -0.023305       0.0711
+   11     quotidien                      -0.020169       0.0423
+   12     belgique                       -0.020053       0.0763
+   13     valérie                        -0.019583       0.2293
+   14     contraintes                    -0.019329       0.0699
+   15     croisé                         -0.018668       0.0446
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+amélia                    +0.000000     +0.000072     +0.000072     0.4759
+passionnait               +0.000000     +0.000025     +0.000025     0.0781
+interrogée                +0.000000     +0.000024     +0.000024     0.0721
+approuva                  +0.000068     +0.000018     +0.000018     0.0560
+rêveur                    +0.000000     +0.000017     +0.000017     0.0565
+chère                     +0.000000     +0.000015     +0.000015     0.0359
+personnages               +0.000733     +0.000015     +0.000015     0.0410
+bals                      +0.000000     +0.000013     +0.000013     0.0777
+précisément               +0.000208     +0.000013     +0.000013     0.0390
+lecture                   +0.000000     +0.000012     +0.000012     0.0353
+éprouvait                 +0.000020     +0.000011     +0.000011     0.0445
+durant                    +0.000127     +0.000011     +0.000011     0.0346
+idole                     +0.000385     +0.000010     +0.000010     0.0650
+souveraine                +0.000000     +0.000010     +0.000010     0.0655
+abandonna                 +0.000267     +0.000009     +0.000009     0.0530
+héritier                  +0.000000     +0.000008     +0.000008     0.0578
+gais                      +0.000000     +0.000008     +0.000008     0.0738
+profondément              +0.000000     +0.000008     +0.000008     0.0330
+demanda                   +0.000000     +0.000007     +0.000007     0.0351
+ouvrage                   +0.000000     +0.000006     +0.000006     0.0411
+logit final pour 'homme': -1.2611

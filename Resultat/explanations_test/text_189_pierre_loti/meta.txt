@@ -1,0 +1,5 @@
+filename: (LOTI)(Pierre)(La mort de Philæ)(1)(1909)(1850)(1923)(fr)(z)(z)(V)(R)(T).txt
+index: 189
+first_name: pierre
+last_name: loti
+true_label: homme

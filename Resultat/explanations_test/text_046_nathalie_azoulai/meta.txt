@@ -1,0 +1,5 @@
+filename: (Azoulai)(Nathalie)(Titus n_aimait pas Bérénice)(2)(2015)(1966)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 46
+first_name: nathalie
+last_name: azoulai
+true_label: femme

@@ -1,0 +1,386 @@
+texte analysé: très bien , le félicita amecareth . sage continua de se sustenter sans répondre . je vais bientôt retourner au pays où combat narvath , l informa l empereur . je finirai par la trouver . emmenez moi a...
+prédiction: FEMME (confiance: 88.6%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.0413
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      risquait                       +0.000073       0.0501
+   2      révélations                    +0.000064       0.0695
+   3      vaincu                         +0.000058       0.0601
+   4      diamant                        +0.000050       0.1491
+   5      évita                          +0.000045       0.0770
+   6      répéta                         +0.000036       0.0479
+   7      réciter                        +0.000031       0.0694
+   8      étendue                        +0.000029       0.0440
+   9      assaut                         +0.000027       0.0517
+   10     gagnait                        +0.000023       0.0535
+   11     empêchent                      +0.000021       0.0822
+   12     bataille                       +0.000020       0.0436
+   13     courut                         +0.000020       0.0530
+   14     commençaient                   +0.000018       0.0516
+   15     grimpa                         +0.000018       0.0730
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      amecareth                      -0.000310       0.3872
+   2      hadrian                        -0.000244       0.1878
+   3      enkidiev                       -0.000172       0.1936
+   4      kira                           -0.000153       0.1936
+   5      wellan                         -0.000149       0.1936
+   6      onyx                           -0.000146       0.1257
+   7      incantations                   -0.000116       0.1082
+   8      finirai                        -0.000109       0.0921
+   9      énerva                         -0.000104       0.0956
+   10     larves                         -0.000101       0.1039
+   11     labouré                        -0.000098       0.1204
+   12     humains                        -0.000094       0.0959
+   13     sage                           -0.000094       0.1246
+   14     hybride                        -0.000093       0.2337
+   15     concentra                      -0.000082       0.0887
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      risquait                       +0.000073       0.0501
+   2      révélations                    +0.000064       0.0695
+   3      vaincu                         +0.000058       0.0601
+   4      diamant                        +0.000050       0.1491
+   5      évita                          +0.000045       0.0770
+   6      répéta                         +0.000036       0.0479
+   7      réciter                        +0.000031       0.0694
+   8      étendue                        +0.000029       0.0440
+   9      assaut                         +0.000027       0.0517
+   10     gagnait                        +0.000023       0.0535
+   11     empêchent                      +0.000021       0.0822
+   12     bataille                       +0.000020       0.0436
+   13     courut                         +0.000020       0.0530
+   14     commençaient                   +0.000018       0.0516
+   15     grimpa                         +0.000018       0.0730
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      amecareth                      -0.000310       0.3872
+   2      hadrian                        -0.000244       0.1878
+   3      enkidiev                       -0.000172       0.1936
+   4      kira                           -0.000153       0.1936
+   5      wellan                         -0.000149       0.1936
+   6      onyx                           -0.000146       0.1257
+   7      incantations                   -0.000116       0.1082
+   8      finirai                        -0.000109       0.0921
+   9      énerva                         -0.000104       0.0956
+   10     larves                         -0.000101       0.1039
+   11     labouré                        -0.000098       0.1204
+   12     humains                        -0.000094       0.0959
+   13     sage                           -0.000094       0.1246
+   14     hybride                        -0.000093       0.2337
+   15     concentra                      -0.000082       0.0887
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hadrian                        +0.002245       0.1878
+   2      énerva                         +0.001980       0.0956
+   3      concentra                      +0.001899       0.0887
+   4      amecareth                      +0.001509       0.3872
+   5      diamant                        +0.001390       0.1491
+   6      labouré                        +0.001277       0.1204
+   7      incantations                   +0.001260       0.1082
+   8      wellan                         +0.001077       0.1936
+   9      refusait                       +0.001030       0.0474
+   10     apport                         +0.001006       0.1082
+   11     concentrer                     +0.000950       0.0591
+   12     sage                           +0.000928       0.1246
+   13     émeraude                       +0.000888       0.2352
+   14     caressa                        +0.000858       0.0621
+   15     kira                           +0.000828       0.1936
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vaincu                         -0.001197       0.0601
+   2      descente                       -0.001184       0.0552
+   3      empire                         -0.001123       0.0541
+   4      demeurés                       -0.000972       0.0906
+   5      hybride                        -0.000778       0.2337
+   6      gagnait                        -0.000770       0.0535
+   7      sauta                          -0.000733       0.0551
+   8      courut                         -0.000679       0.0530
+   9      bataille                       -0.000659       0.0436
+   10     empêchent                      -0.000657       0.0822
+   11     combat                         -0.000605       0.0433
+   12     sud                            -0.000594       0.0430
+   13     informa                        -0.000578       0.0826
+   14     éclairs                        -0.000575       0.0587
+   15     jure                           -0.000573       0.0442
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      diamant                        +0.054320       0.1491
+   2      émeraude                       +0.050576       0.2352
+   3      concentra                      +0.041258       0.0887
+   4      énerva                         +0.033946       0.0956
+   5      labouré                        +0.032477       0.1204
+   6      refusait                       +0.026863       0.0474
+   7      incantations                   +0.025022       0.1082
+   8      amecareth                      +0.022726       0.3872
+   9      caressa                        +0.021441       0.0621
+   10     concentrer                     +0.020047       0.0591
+   11     royaumes                       +0.019724       0.1046
+   12     protesta                       +0.019340       0.0603
+   13     accepté                        +0.018338       0.0392
+   14     hadrian                        +0.017203       0.1878
+   15     dragon                         +0.016934       0.0781
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      descente                       -0.032268       0.0552
+   2      empire                         -0.028945       0.0541
+   3      demeurés                       -0.028664       0.0906
+   4      attristé                       -0.025528       0.0947
+   5      nord                           -0.024230       0.0405
+   6      sauta                          -0.022380       0.0551
+   7      éclairs                        -0.021391       0.0587
+   8      vaincu                         -0.021118       0.0601
+   9      informa                        -0.018810       0.0826
+   10     jure                           -0.017455       0.0442
+   11     sud                            -0.016911       0.0430
+   12     hybride                        -0.016472       0.2337
+   13     onyx                           -0.016271       0.1257
+   14     mit                            -0.016165       0.0402
+   15     combats                        -0.015166       0.1281
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+risquait                  +0.000000     +0.000073     +0.000073     0.0501
+révélations               +0.000000     +0.000064     +0.000064     0.0695
+vaincu                    +0.000000     +0.000058     +0.000058     0.0601
+diamant                   +0.001390     +0.000050     +0.000050     0.1491
+évita                     +0.000071     +0.000045     +0.000045     0.0770
+répéta                    +0.000474     +0.000036     +0.000036     0.0479
+réciter                   +0.000123     +0.000031     +0.000031     0.0694
+étendue                   +0.000000     +0.000029     +0.000029     0.0440
+assaut                    +0.000000     +0.000027     +0.000027     0.0517
+gagnait                   +0.000000     +0.000023     +0.000023     0.0535
+empêchent                 +0.000000     +0.000021     +0.000021     0.0822
+bataille                  +0.000000     +0.000020     +0.000020     0.0436
+courut                    +0.000000     +0.000020     +0.000020     0.0530
+commençaient              +0.000000     +0.000018     +0.000018     0.0516
+grimpa                    +0.000371     +0.000018     +0.000018     0.0730
+dieux                     +0.000000     +0.000017     +0.000017     0.0565
+posait                    +0.000122     +0.000014     +0.000014     0.0446
+resterait                 +0.000529     +0.000013     +0.000013     0.0531
+informa                   +0.000000     +0.000011     +0.000011     0.0826
+sauta                     +0.000000     +0.000011     +0.000011     0.0551
+logit final pour 'femme': 1.0413
+# analyse pour la classe: HOMME
+# logit: -1.0105
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      risquait                       +0.000043       0.0501
+   2      réciter                        +0.000024       0.0694
+   3      informa                        +0.000021       0.0826
+   4      diamant                        +0.000020       0.1491
+   5      vaincu                         +0.000019       0.0601
+   6      émeraude                       +0.000017       0.2352
+   7      révélations                    +0.000016       0.0695
+   8      assaut                         +0.000015       0.0517
+   9      répéta                         +0.000015       0.0479
+   10     félicita                       +0.000014       0.0806
+   11     étendue                        +0.000014       0.0440
+   12     gagnait                        +0.000013       0.0535
+   13     empêchent                      +0.000013       0.0822
+   14     demanda                        +0.000008       0.0404
+   15     bataille                       +0.000007       0.0436
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      amecareth                      -0.000144       0.3872
+   2      hadrian                        -0.000113       0.1878
+   3      kira                           -0.000077       0.1936
+   4      enkidiev                       -0.000074       0.1936
+   5      wellan                         -0.000073       0.1936
+   6      onyx                           -0.000072       0.1257
+   7      incantations                   -0.000064       0.1082
+   8      larves                         -0.000060       0.1039
+   9      galopa                         -0.000049       0.1351
+   10     frontière                      -0.000046       0.0553
+   11     énerva                         -0.000046       0.0956
+   12     concentra                      -0.000042       0.0887
+   13     détestes                       -0.000042       0.1113
+   14     humains                        -0.000041       0.0959
+   15     chevaliers                     -0.000038       0.0855
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      risquait                       +0.000043       0.0501
+   2      réciter                        +0.000024       0.0694
+   3      informa                        +0.000021       0.0826
+   4      diamant                        +0.000020       0.1491
+   5      vaincu                         +0.000019       0.0601
+   6      émeraude                       +0.000017       0.2352
+   7      révélations                    +0.000016       0.0695
+   8      assaut                         +0.000015       0.0517
+   9      répéta                         +0.000015       0.0479
+   10     félicita                       +0.000014       0.0806
+   11     étendue                        +0.000014       0.0440
+   12     gagnait                        +0.000013       0.0535
+   13     empêchent                      +0.000013       0.0822
+   14     demanda                        +0.000008       0.0404
+   15     bataille                       +0.000007       0.0436
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      amecareth                      -0.000144       0.3872
+   2      hadrian                        -0.000113       0.1878
+   3      kira                           -0.000077       0.1936
+   4      enkidiev                       -0.000074       0.1936
+   5      wellan                         -0.000073       0.1936
+   6      onyx                           -0.000072       0.1257
+   7      incantations                   -0.000064       0.1082
+   8      larves                         -0.000060       0.1039
+   9      galopa                         -0.000049       0.1351
+   10     frontière                      -0.000046       0.0553
+   11     énerva                         -0.000046       0.0956
+   12     concentra                      -0.000042       0.0887
+   13     détestes                       -0.000042       0.1113
+   14     humains                        -0.000041       0.0959
+   15     chevaliers                     -0.000038       0.0855
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vaincu                         +0.000897       0.0601
+   2      demeurés                       +0.000809       0.0906
+   3      descente                       +0.000732       0.0552
+   4      empire                         +0.000695       0.0541
+   5      gagnait                        +0.000563       0.0535
+   6      courut                         +0.000547       0.0530
+   7      empêchent                      +0.000534       0.0822
+   8      sauta                          +0.000467       0.0551
+   9      attristé                       +0.000459       0.0947
+   10     informa                        +0.000445       0.0826
+   11     combat                         +0.000439       0.0433
+   12     bataille                       +0.000392       0.0436
+   13     jure                           +0.000382       0.0442
+   14     hybride                        +0.000381       0.2337
+   15     nord                           +0.000364       0.0405
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      amecareth                      -0.002028       0.3872
+   2      hadrian                        -0.001835       0.1878
+   3      énerva                         -0.001482       0.0956
+   4      diamant                        -0.001290       0.1491
+   5      concentra                      -0.001282       0.0887
+   6      wellan                         -0.001189       0.1936
+   7      kira                           -0.001114       0.1936
+   8      labouré                        -0.001059       0.1204
+   9      enkidiev                       -0.001052       0.1936
+   10     apport                         -0.000924       0.1082
+   11     émeraude                       -0.000918       0.2352
+   12     swan                           -0.000878       0.1660
+   13     sage                           -0.000724       0.1246
+   14     incantations                   -0.000714       0.1082
+   15     refusait                       -0.000672       0.0474
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      demeurés                       +0.029860       0.0906
+   2      attristé                       +0.023044       0.0947
+   3      descente                       +0.022660       0.0552
+   4      vaincu                         +0.021658       0.0601
+   5      empire                         +0.019422       0.0541
+   6      sauta                          +0.019009       0.0551
+   7      nord                           +0.018123       0.0405
+   8      larves                         +0.015853       0.1039
+   9      courut                         +0.015126       0.0530
+   10     onyx                           +0.013198       0.1257
+   11     jure                           +0.012600       0.0442
+   12     combats                        +0.012276       0.1281
+   13     combat                         +0.011885       0.0433
+   14     mit                            +0.011879       0.0402
+   15     éclairs                        +0.011870       0.0587
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      diamant                        -0.048374       0.1491
+   2      émeraude                       -0.044735       0.2352
+   3      amecareth                      -0.040903       0.3872
+   4      énerva                         -0.033177       0.0956
+   5      hadrian                        -0.030854       0.1878
+   6      labouré                        -0.027478       0.1204
+   7      concentra                      -0.027168       0.0887
+   8      swan                           -0.024978       0.1660
+   9      refusait                       -0.020593       0.0474
+   10     kira                           -0.019462       0.1936
+   11     wellan                         -0.019001       0.1936
+   12     enkidiev                       -0.018823       0.1936
+   13     apport                         -0.018713       0.1082
+   14     sage                           -0.017971       0.1246
+   15     emmenez                        -0.017794       0.0835
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+risquait                  +0.000223     +0.000043     +0.000043     0.0501
+réciter                   +0.000011     +0.000024     +0.000024     0.0694
+informa                   +0.000445     +0.000021     +0.000021     0.0826
+diamant                   +0.000000     +0.000020     +0.000020     0.1491
+vaincu                    +0.000897     +0.000019     +0.000019     0.0601
+émeraude                  +0.000000     +0.000017     +0.000017     0.2352
+révélations               +0.000025     +0.000016     +0.000016     0.0695
+assaut                    +0.000091     +0.000015     +0.000015     0.0517
+répéta                    +0.000000     +0.000015     +0.000015     0.0479
+félicita                  +0.000000     +0.000014     +0.000014     0.0806
+étendue                   +0.000270     +0.000014     +0.000014     0.0440
+gagnait                   +0.000563     +0.000013     +0.000013     0.0535
+empêchent                 +0.000534     +0.000013     +0.000013     0.0822
+demanda                   +0.000000     +0.000008     +0.000008     0.0404
+bataille                  +0.000392     +0.000007     +0.000007     0.0436
+ouvriers                  +0.000000     +0.000006     +0.000006     0.0547
+blessures                 +0.000000     +0.000006     +0.000006     0.0526
+courut                    +0.000547     +0.000006     +0.000006     0.0530
+massif                    +0.000127     +0.000005     +0.000005     0.0546
+leva                      +0.000019     +0.000005     +0.000005     0.0429
+logit final pour 'homme': -1.0105

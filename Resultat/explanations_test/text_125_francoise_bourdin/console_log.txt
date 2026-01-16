@@ -1,0 +1,386 @@
+texte analysé: , assise au bord du lit , l air hagard . george m a donné un tranquillisant , annonça t elle . je ne savais pas qu il en prenait tu devrais t allonger , maman . non , je n y arrive pas . je crois que ...
+prédiction: FEMME (confiance: 78.3%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.7545
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      angus                          +0.000128       0.4290
+   2      complique                      +0.000087       0.1318
+   3      redoutais                      +0.000072       0.1229
+   4      divorcée                       +0.000068       0.1383
+   5      persuadé                       +0.000058       0.0666
+   6      dr                             +0.000056       0.1174
+   7      accablé                        +0.000048       0.0830
+   8      sûrement                       +0.000043       0.0506
+   9      george                         +0.000041       0.1094
+   10     john                           +0.000040       0.1014
+   11     centres                        +0.000039       0.1114
+   12     fit                            +0.000030       0.0498
+   13     allonger                       +0.000029       0.0749
+   14     forcément                      +0.000029       0.0633
+   15     scott                          +0.000027       0.2997
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clubs                          -0.000171       0.1358
+   2      amélie                         -0.000133       0.2874
+   3      compact                        -0.000111       0.1236
+   4      maman                          -0.000097       0.1116
+   5      désespère                      -0.000095       0.1192
+   6      chariot                        -0.000086       0.0984
+   7      indulgences                    -0.000085       0.1650
+   8      dormirai                       -0.000082       0.1358
+   9      chassa                         -0.000074       0.0988
+   10     kate                           -0.000066       0.1858
+   11     sinistre                       -0.000059       0.0623
+   12     téléphonerai                   -0.000058       0.1467
+   13     convaincue                     -0.000054       0.0812
+   14     défense                        -0.000051       0.0551
+   15     songea                         -0.000046       0.0761
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      angus                          +0.000128       0.4290
+   2      complique                      +0.000087       0.1318
+   3      redoutais                      +0.000072       0.1229
+   4      divorcée                       +0.000068       0.1383
+   5      persuadé                       +0.000058       0.0666
+   6      dr                             +0.000056       0.1174
+   7      accablé                        +0.000048       0.0830
+   8      sûrement                       +0.000043       0.0506
+   9      george                         +0.000041       0.1094
+   10     john                           +0.000040       0.1014
+   11     centres                        +0.000039       0.1114
+   12     fit                            +0.000030       0.0498
+   13     allonger                       +0.000029       0.0749
+   14     forcément                      +0.000029       0.0633
+   15     scott                          +0.000027       0.2997
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clubs                          -0.000171       0.1358
+   2      amélie                         -0.000133       0.2874
+   3      compact                        -0.000111       0.1236
+   4      maman                          -0.000097       0.1116
+   5      désespère                      -0.000095       0.1192
+   6      chariot                        -0.000086       0.0984
+   7      indulgences                    -0.000085       0.1650
+   8      dormirai                       -0.000082       0.1358
+   9      chassa                         -0.000074       0.0988
+   10     kate                           -0.000066       0.1858
+   11     sinistre                       -0.000059       0.0623
+   12     téléphonerai                   -0.000058       0.1467
+   13     convaincue                     -0.000054       0.0812
+   14     défense                        -0.000051       0.0551
+   15     songea                         -0.000046       0.0761
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      contrariait                    +0.003424       0.1368
+   2      convaincue                     +0.002207       0.0812
+   3      dormirai                       +0.002178       0.1358
+   4      époux                          +0.001791       0.0660
+   5      compassion                     +0.001588       0.0710
+   6      mmm                            +0.001406       0.1891
+   7      divorcée                       +0.001330       0.1383
+   8      chagrin                        +0.001100       0.0529
+   9      clubs                          +0.001010       0.1358
+   10     traite                         +0.001005       0.0684
+   11     maman                          +0.000946       0.1116
+   12     morfondre                      +0.000934       0.1414
+   13     rarement                       +0.000877       0.0533
+   14     offert                         +0.000820       0.0533
+   15     entourer                       +0.000740       0.0920
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      angus                          -0.004477       0.4290
+   2      grant                          -0.002597       0.1858
+   3      entendiez                      -0.002082       0.1548
+   4      complique                      -0.002011       0.1318
+   5      persuadé                       -0.001769       0.0666
+   6      sympathie                      -0.001093       0.0665
+   7      scott                          -0.001058       0.2997
+   8      centres                        -0.000968       0.1114
+   9      indulgences                    -0.000865       0.1650
+   10     égard                          -0.000722       0.0589
+   11     redoutais                      -0.000722       0.1229
+   12     fit                            -0.000686       0.0498
+   13     accablé                        -0.000663       0.0830
+   14     réserve                        -0.000556       0.0548
+   15     jouait                         -0.000527       0.0517
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      contrariait                    +0.153757       0.1368
+   2      dormirai                       +0.096727       0.1358
+   3      convaincue                     +0.093379       0.0812
+   4      époux                          +0.082524       0.0660
+   5      mmm                            +0.070007       0.1891
+   6      divorcée                       +0.068991       0.1383
+   7      compassion                     +0.065162       0.0710
+   8      morfondre                      +0.053000       0.1414
+   9      traite                         +0.046768       0.0684
+   10     chagrin                        +0.046321       0.0529
+   11     rarement                       +0.038348       0.0533
+   12     maman                          +0.037670       0.1116
+   13     clubs                          +0.035873       0.1358
+   14     offert                         +0.033965       0.0533
+   15     dr                             +0.032661       0.1174
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      angus                          -0.300736       0.4290
+   2      entendiez                      -0.098801       0.1548
+   3      grant                          -0.093974       0.1858
+   4      complique                      -0.082880       0.1318
+   5      persuadé                       -0.069632       0.0666
+   6      sympathie                      -0.056552       0.0665
+   7      indulgences                    -0.051944       0.1650
+   8      amélie                         -0.045643       0.2874
+   9      centres                        -0.043436       0.1114
+   10     égard                          -0.040256       0.0589
+   11     accablé                        -0.036716       0.0830
+   12     kate                           -0.035256       0.1858
+   13     redoutais                      -0.034048       0.1229
+   14     téléphonerai                   -0.032663       0.1467
+   15     fit                            -0.027128       0.0498
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+angus                     +0.000000     +0.000128     +0.000128     0.4290
+complique                 +0.000000     +0.000087     +0.000087     0.1318
+redoutais                 +0.000000     +0.000072     +0.000072     0.1229
+divorcée                  +0.001330     +0.000068     +0.000068     0.1383
+persuadé                  +0.000000     +0.000058     +0.000058     0.0666
+dr                        +0.000658     +0.000056     +0.000056     0.1174
+accablé                   +0.000000     +0.000048     +0.000048     0.0830
+sûrement                  +0.000399     +0.000043     +0.000043     0.0506
+george                    +0.000235     +0.000041     +0.000041     0.1094
+john                      +0.000000     +0.000040     +0.000040     0.1014
+centres                   +0.000000     +0.000039     +0.000039     0.1114
+fit                       +0.000000     +0.000030     +0.000030     0.0498
+allonger                  +0.000261     +0.000029     +0.000029     0.0749
+forcément                 +0.000313     +0.000029     +0.000029     0.0633
+scott                     +0.000000     +0.000027     +0.000027     0.2997
+hagard                    +0.000000     +0.000024     +0.000024     0.0962
+transporter               +0.000000     +0.000023     +0.000023     0.0731
+mmm                       +0.001406     +0.000022     +0.000022     0.1891
+contrariait               +0.003424     +0.000015     +0.000015     0.1368
+entendiez                 +0.000000     +0.000015     +0.000015     0.1548
+logit final pour 'femme': 0.7545
+# analyse pour la classe: HOMME
+# logit: -0.5316
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      divorcée                       +0.000061       0.1383
+   2      contrariait                    +0.000052       0.1368
+   3      dr                             +0.000045       0.1174
+   4      john                           +0.000038       0.1014
+   5      morfondre                      +0.000037       0.1414
+   6      redoutais                      +0.000035       0.1229
+   7      centres                        +0.000033       0.1114
+   8      éprouve                        +0.000032       0.0703
+   9      allonger                       +0.000030       0.0749
+   10     sûrement                       +0.000028       0.0506
+   11     persuadé                       +0.000025       0.0666
+   12     hagard                         +0.000023       0.0962
+   13     traite                         +0.000021       0.0684
+   14     complique                      +0.000020       0.1318
+   15     accablé                        +0.000015       0.0830
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clubs                          -0.000117       0.1358
+   2      amélie                         -0.000070       0.2874
+   3      dormirai                       -0.000064       0.1358
+   4      chariot                        -0.000063       0.0984
+   5      désespère                      -0.000061       0.1192
+   6      compact                        -0.000047       0.1236
+   7      auras                          -0.000045       0.0581
+   8      refaire                        -0.000039       0.0642
+   9      scott                          -0.000037       0.2997
+   10     songea                         -0.000035       0.0761
+   11     égard                          -0.000033       0.0589
+   12     sinistre                       -0.000030       0.0623
+   13     odieux                         -0.000030       0.0825
+   14     veuve                          -0.000028       0.0673
+   15     rarement                       -0.000026       0.0533
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      divorcée                       +0.000061       0.1383
+   2      contrariait                    +0.000052       0.1368
+   3      dr                             +0.000045       0.1174
+   4      john                           +0.000038       0.1014
+   5      morfondre                      +0.000037       0.1414
+   6      redoutais                      +0.000035       0.1229
+   7      centres                        +0.000033       0.1114
+   8      éprouve                        +0.000032       0.0703
+   9      allonger                       +0.000030       0.0749
+   10     sûrement                       +0.000028       0.0506
+   11     persuadé                       +0.000025       0.0666
+   12     hagard                         +0.000023       0.0962
+   13     traite                         +0.000021       0.0684
+   14     complique                      +0.000020       0.1318
+   15     accablé                        +0.000015       0.0830
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clubs                          -0.000117       0.1358
+   2      amélie                         -0.000070       0.2874
+   3      dormirai                       -0.000064       0.1358
+   4      chariot                        -0.000063       0.0984
+   5      désespère                      -0.000061       0.1192
+   6      compact                        -0.000047       0.1236
+   7      auras                          -0.000045       0.0581
+   8      refaire                        -0.000039       0.0642
+   9      scott                          -0.000037       0.2997
+   10     songea                         -0.000035       0.0761
+   11     égard                          -0.000033       0.0589
+   12     sinistre                       -0.000030       0.0623
+   13     odieux                         -0.000030       0.0825
+   14     veuve                          -0.000028       0.0673
+   15     rarement                       -0.000026       0.0533
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      angus                          +0.004398       0.4290
+   2      grant                          +0.002242       0.1858
+   3      complique                      +0.001798       0.1318
+   4      entendiez                      +0.001590       0.1548
+   5      persuadé                       +0.001552       0.0666
+   6      sympathie                      +0.000869       0.0665
+   7      centres                        +0.000810       0.1114
+   8      redoutais                      +0.000795       0.1229
+   9      téléphonerai                   +0.000787       0.1467
+   10     accablé                        +0.000699       0.0830
+   11     amélie                         +0.000679       0.2874
+   12     égard                          +0.000624       0.0589
+   13     fit                            +0.000614       0.0498
+   14     scott                          +0.000551       0.2997
+   15     jouait                         +0.000473       0.0517
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      contrariait                    -0.002581       0.1368
+   2      dormirai                       -0.002215       0.1358
+   3      convaincue                     -0.001618       0.0812
+   4      époux                          -0.001354       0.0660
+   5      compassion                     -0.001258       0.0710
+   6      morfondre                      -0.001068       0.1414
+   7      mmm                            -0.001035       0.1891
+   8      clubs                          -0.001027       0.1358
+   9      divorcée                       -0.000944       0.1383
+   10     chagrin                        -0.000928       0.0529
+   11     traite                         -0.000868       0.0684
+   12     maman                          -0.000823       0.1116
+   13     offert                         -0.000726       0.0533
+   14     entourer                       -0.000660       0.0920
+   15     rarement                       -0.000641       0.0533
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      angus                          +0.302383       0.4290
+   2      complique                      +0.084866       0.1318
+   3      grant                          +0.076756       0.1858
+   4      entendiez                      +0.074644       0.1548
+   5      persuadé                       +0.066268       0.0666
+   6      amélie                         +0.063125       0.2874
+   7      téléphonerai                   +0.048526       0.1467
+   8      sympathie                      +0.044336       0.0665
+   9      centres                        +0.043817       0.1114
+   10     accablé                        +0.036682       0.0830
+   11     égard                          +0.035181       0.0589
+   12     redoutais                      +0.034271       0.1229
+   13     kate                           +0.033353       0.1858
+   14     indulgences                    +0.029456       0.1650
+   15     fit                            +0.027329       0.0498
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      contrariait                    -0.122657       0.1368
+   2      dormirai                       -0.102468       0.1358
+   3      convaincue                     -0.071308       0.0812
+   4      morfondre                      -0.062873       0.1414
+   5      époux                          -0.062533       0.0660
+   6      mmm                            -0.057039       0.1891
+   7      compassion                     -0.056035       0.0710
+   8      divorcée                       -0.051611       0.1383
+   9      traite                         -0.042147       0.0684
+   10     clubs                          -0.040976       0.1358
+   11     chagrin                        -0.040857       0.0529
+   12     maman                          -0.034885       0.1116
+   13     neige                          -0.032582       0.0568
+   14     offert                         -0.032208       0.0533
+   15     rarement                       -0.027323       0.0533
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+divorcée                  +0.000000     +0.000061     +0.000061     0.1383
+contrariait               +0.000000     +0.000052     +0.000052     0.1368
+dr                        +0.000000     +0.000045     +0.000045     0.1174
+john                      +0.000330     +0.000038     +0.000038     0.1014
+morfondre                 +0.000000     +0.000037     +0.000037     0.1414
+redoutais                 +0.000795     +0.000035     +0.000035     0.1229
+centres                   +0.000810     +0.000033     +0.000033     0.1114
+éprouve                   +0.000000     +0.000032     +0.000032     0.0703
+allonger                  +0.000000     +0.000030     +0.000030     0.0749
+sûrement                  +0.000000     +0.000028     +0.000028     0.0506
+persuadé                  +0.001552     +0.000025     +0.000025     0.0666
+hagard                    +0.000239     +0.000023     +0.000023     0.0962
+traite                    +0.000000     +0.000021     +0.000021     0.0684
+complique                 +0.001798     +0.000020     +0.000020     0.1318
+accablé                   +0.000699     +0.000015     +0.000015     0.0830
+compassion                +0.000000     +0.000013     +0.000013     0.0710
+forcément                 +0.000000     +0.000013     +0.000013     0.0633
+poussa                    +0.000274     +0.000012     +0.000012     0.0605
+sympathie                 +0.000869     +0.000011     +0.000011     0.0665
+neige                     +0.000000     +0.000010     +0.000010     0.0568
+logit final pour 'homme': -0.5316

@@ -1,0 +1,5 @@
+filename: (PEYRAMAURE)(Michel)(Jeanne d_Arc - dieu donnera la victoire)(1)(1999)(1922)(2023)(fr)(z)(z)(V)(R)(T).txt
+index: 55
+first_name: michel
+last_name: peyramaure
+true_label: homme

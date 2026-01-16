@@ -1,0 +1,387 @@
+texte analysé: ici à la barbe du papa ? ma foi , nous en verrions de belles ! il est une heure et demie , conclut il en tirant sa montre ; je m en vas atteler bob , et te mener grand train jusqu au chemin des gardes...
+prédiction: FEMME (confiance: 60.0%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.2110
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      airain                         +0.000119       0.1801
+   2      bombe                          +0.000116       0.0943
+   3      diables                        +0.000093       0.1154
+   4      corbeaux                       +0.000090       0.1331
+   5      advienne                       +0.000067       0.1543
+   6      blonde                         +0.000066       0.0653
+   7      pleure                         +0.000066       0.1441
+   8      chouette                       +0.000060       0.1021
+   9      essaya                         +0.000052       0.0835
+   10     commença                       +0.000048       0.0679
+   11     mousse                         +0.000046       0.0789
+   12     perdit                         +0.000046       0.0860
+   13     fit                            +0.000041       0.0579
+   14     croyant                        +0.000036       0.0769
+   15     aviserons                      +0.000032       0.1887
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      em                             -0.000350       0.2110
+   2      confesse                       -0.000184       0.1463
+   3      livrés                         -0.000152       0.1220
+   4      papa                           -0.000131       0.2097
+   5      autrui                         -0.000122       0.1021
+   6      apitoyer                       -0.000119       0.1446
+   7      obstinée                       -0.000114       0.1261
+   8      canton                         -0.000111       0.1486
+   9      débrouille                     -0.000108       0.1156
+   10     liés                           -0.000108       0.0922
+   11     reproche                       -0.000094       0.0679
+   12     scandale                       -0.000077       0.0788
+   13     haïr                           -0.000075       0.1065
+   14     alouettes                      -0.000073       0.1898
+   15     ouste                          -0.000067       0.1678
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      airain                         +0.000119       0.1801
+   2      bombe                          +0.000116       0.0943
+   3      diables                        +0.000093       0.1154
+   4      corbeaux                       +0.000090       0.1331
+   5      advienne                       +0.000067       0.1543
+   6      blonde                         +0.000066       0.0653
+   7      pleure                         +0.000066       0.1441
+   8      chouette                       +0.000060       0.1021
+   9      essaya                         +0.000052       0.0835
+   10     commença                       +0.000048       0.0679
+   11     mousse                         +0.000046       0.0789
+   12     perdit                         +0.000046       0.0860
+   13     fit                            +0.000041       0.0579
+   14     croyant                        +0.000036       0.0769
+   15     aviserons                      +0.000032       0.1887
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      em                             -0.000350       0.2110
+   2      confesse                       -0.000184       0.1463
+   3      livrés                         -0.000152       0.1220
+   4      papa                           -0.000131       0.2097
+   5      autrui                         -0.000122       0.1021
+   6      apitoyer                       -0.000119       0.1446
+   7      obstinée                       -0.000114       0.1261
+   8      canton                         -0.000111       0.1486
+   9      débrouille                     -0.000108       0.1156
+   10     liés                           -0.000108       0.0922
+   11     reproche                       -0.000094       0.0679
+   12     scandale                       -0.000077       0.0788
+   13     haïr                           -0.000075       0.1065
+   14     alouettes                      -0.000073       0.1898
+   15     ouste                          -0.000067       0.1678
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      papa                           +0.003583       0.2097
+   2      entêtée                        +0.003373       0.3442
+   3      convaincue                     +0.002948       0.0945
+   4      obstinée                       +0.002378       0.1261
+   5      pleure                         +0.001985       0.1441
+   6      battue                         +0.001452       0.0908
+   7      souffrance                     +0.001327       0.1267
+   8      apitoyer                       +0.001262       0.1446
+   9      rentrée                        +0.001118       0.0663
+   10     autrui                         +0.000976       0.1021
+   11     vendue                         +0.000945       0.1312
+   12     rassembler                     +0.000875       0.0913
+   13     blonde                         +0.000846       0.0653
+   14     malheureuse                    +0.000798       0.0727
+   15     mener                          +0.000719       0.0649
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gendarme                       -0.003157       0.1233
+   2      bob                            -0.003010       0.1504
+   3      jurer                          -0.002478       0.0954
+   4      vainement                      -0.002076       0.1004
+   5      bombe                          -0.002005       0.0943
+   6      corbeaux                       -0.001949       0.1331
+   7      diables                        -0.001899       0.1154
+   8      aviserons                      -0.001755       0.1887
+   9      canton                         -0.001712       0.1486
+   10     croyant                        -0.001707       0.0769
+   11     ouste                          -0.001406       0.1678
+   12     grince                         -0.001262       0.1384
+   13     airain                         -0.001203       0.1801
+   14     naturel                        -0.001186       0.0594
+   15     perdit                         -0.001176       0.0860
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      papa                           +0.172211       0.2097
+   2      convaincue                     +0.132435       0.0945
+   3      obstinée                       +0.127132       0.1261
+   4      entêtée                        +0.112355       0.3442
+   5      pleure                         +0.110141       0.1441
+   6      battue                         +0.073778       0.0908
+   7      apitoyer                       +0.066239       0.1446
+   8      souffrance                     +0.065944       0.1267
+   9      retournerai                    +0.057296       0.1463
+   10     autrui                         +0.054957       0.1021
+   11     malheureuse                    +0.051469       0.0727
+   12     blonde                         +0.048363       0.0653
+   13     haïr                           +0.048030       0.1065
+   14     rentrée                        +0.046247       0.0663
+   15     vendue                         +0.045756       0.1312
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gendarme                       -0.176032       0.1233
+   2      bob                            -0.142787       0.1504
+   3      jurer                          -0.129474       0.0954
+   4      vainement                      -0.105809       0.1004
+   5      ouste                          -0.096436       0.1678
+   6      aviserons                      -0.092979       0.1887
+   7      corbeaux                       -0.092339       0.1331
+   8      bombe                          -0.089914       0.0943
+   9      croyant                        -0.077000       0.0769
+   10     canton                         -0.074941       0.1486
+   11     diables                        -0.071469       0.1154
+   12     airain                         -0.060890       0.1801
+   13     naturel                        -0.058806       0.0594
+   14     fit                            -0.055887       0.0579
+   15     grince                         -0.053325       0.1384
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+airain                    +0.000000     +0.000119     +0.000119     0.1801
+bombe                     +0.000000     +0.000116     +0.000116     0.0943
+diables                   +0.000000     +0.000093     +0.000093     0.1154
+corbeaux                  +0.000000     +0.000090     +0.000090     0.1331
+advienne                  +0.000515     +0.000067     +0.000067     0.1543
+blonde                    +0.000846     +0.000066     +0.000066     0.0653
+pleure                    +0.001985     +0.000066     +0.000066     0.1441
+chouette                  +0.000043     +0.000060     +0.000060     0.1021
+essaya                    +0.000000     +0.000052     +0.000052     0.0835
+commença                  +0.000000     +0.000048     +0.000048     0.0679
+mousse                    +0.000000     +0.000046     +0.000046     0.0789
+perdit                    +0.000000     +0.000046     +0.000046     0.0860
+fit                       +0.000000     +0.000041     +0.000041     0.0579
+croyant                   +0.000000     +0.000036     +0.000036     0.0769
+aviserons                 +0.000000     +0.000032     +0.000032     0.1887
+boîte                     +0.000000     +0.000032     +0.000032     0.0575
+conclut                   +0.000000     +0.000032     +0.000032     0.0733
+rassembler                +0.000875     +0.000031     +0.000031     0.0913
+bob                       +0.000000     +0.000030     +0.000030     0.1504
+retournerai               +0.000574     +0.000030     +0.000030     0.1463
+logit final pour 'femme': 0.2110
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.1924
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      blonde                         +0.000080       0.0653
+   2      diables                        +0.000076       0.1154
+   3      airain                         +0.000058       0.1801
+   4      bombe                          +0.000057       0.0943
+   5      atteler                        +0.000053       0.1450
+   6      corbeaux                       +0.000052       0.1331
+   7      entêtée                        +0.000051       0.3442
+   8      advienne                       +0.000043       0.1543
+   9      conclut                        +0.000043       0.0733
+   10     général                        +0.000042       0.0575
+   11     vainement                      +0.000042       0.1004
+   12     pleure                         +0.000035       0.1441
+   13     essaya                         +0.000033       0.0835
+   14     pensais                        +0.000031       0.0575
+   15     boîte                          +0.000026       0.0575
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      em                             -0.000242       0.2110
+   2      confesse                       -0.000120       0.1463
+   3      débrouille                     -0.000104       0.1156
+   4      livrés                         -0.000102       0.1220
+   5      canton                         -0.000099       0.1486
+   6      obstinée                       -0.000097       0.1261
+   7      apitoyer                       -0.000085       0.1446
+   8      haïr                           -0.000084       0.1065
+   9      alouettes                      -0.000077       0.1898
+   10     reproche                       -0.000073       0.0679
+   11     scandale                       -0.000064       0.0788
+   12     autrui                         -0.000063       0.1021
+   13     grince                         -0.000053       0.1384
+   14     gendarme                       -0.000052       0.1233
+   15     grogne                         -0.000051       0.1376
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      blonde                         +0.000080       0.0653
+   2      diables                        +0.000076       0.1154
+   3      airain                         +0.000058       0.1801
+   4      bombe                          +0.000057       0.0943
+   5      atteler                        +0.000053       0.1450
+   6      corbeaux                       +0.000052       0.1331
+   7      entêtée                        +0.000051       0.3442
+   8      advienne                       +0.000043       0.1543
+   9      conclut                        +0.000043       0.0733
+   10     général                        +0.000042       0.0575
+   11     vainement                      +0.000042       0.1004
+   12     pleure                         +0.000035       0.1441
+   13     essaya                         +0.000033       0.0835
+   14     pensais                        +0.000031       0.0575
+   15     boîte                          +0.000026       0.0575
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      em                             -0.000242       0.2110
+   2      confesse                       -0.000120       0.1463
+   3      débrouille                     -0.000104       0.1156
+   4      livrés                         -0.000102       0.1220
+   5      canton                         -0.000099       0.1486
+   6      obstinée                       -0.000097       0.1261
+   7      apitoyer                       -0.000085       0.1446
+   8      haïr                           -0.000084       0.1065
+   9      alouettes                      -0.000077       0.1898
+   10     reproche                       -0.000073       0.0679
+   11     scandale                       -0.000064       0.0788
+   12     autrui                         -0.000063       0.1021
+   13     grince                         -0.000053       0.1384
+   14     gendarme                       -0.000052       0.1233
+   15     grogne                         -0.000051       0.1376
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gendarme                       +0.002756       0.1233
+   2      jurer                          +0.002490       0.0954
+   3      bob                            +0.002281       0.1504
+   4      aviserons                      +0.001900       0.1887
+   5      diables                        +0.001804       0.1154
+   6      vainement                      +0.001791       0.1004
+   7      corbeaux                       +0.001781       0.1331
+   8      canton                         +0.001657       0.1486
+   9      bombe                          +0.001546       0.0943
+   10     croyant                        +0.001354       0.0769
+   11     livrés                         +0.001140       0.1220
+   12     ouste                          +0.001115       0.1678
+   13     demie                          +0.001062       0.0790
+   14     airain                         +0.000999       0.1801
+   15     naturel                        +0.000986       0.0594
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      entêtée                        -0.003348       0.3442
+   2      papa                           -0.003298       0.2097
+   3      convaincue                     -0.002424       0.0945
+   4      obstinée                       -0.002321       0.1261
+   5      pleure                         -0.001600       0.1441
+   6      battue                         -0.001134       0.0908
+   7      blonde                         -0.000972       0.0653
+   8      rentrée                        -0.000970       0.0663
+   9      apitoyer                       -0.000928       0.1446
+   10     souffrance                     -0.000820       0.1267
+   11     débrouille                     -0.000782       0.1156
+   12     rassembler                     -0.000722       0.0913
+   13     advienne                       -0.000719       0.1543
+   14     mener                          -0.000708       0.0649
+   15     malheureuse                    -0.000681       0.0727
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gendarme                       +0.159316       0.1233
+   2      jurer                          +0.126021       0.0954
+   3      aviserons                      +0.098967       0.1887
+   4      bob                            +0.098280       0.1504
+   5      ouste                          +0.088611       0.1678
+   6      vainement                      +0.084981       0.1004
+   7      corbeaux                       +0.078057       0.1331
+   8      bombe                          +0.077268       0.0943
+   9      diables                        +0.074173       0.1154
+   10     croyant                        +0.061245       0.0769
+   11     canton                         +0.060786       0.1486
+   12     airain                         +0.052606       0.1801
+   13     livrés                         +0.049316       0.1220
+   14     naturel                        +0.047903       0.0594
+   15     demie                          +0.047727       0.0790
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      papa                           -0.156601       0.2097
+   2      obstinée                       -0.117247       0.1261
+   3      convaincue                     -0.110343       0.0945
+   4      entêtée                        -0.108275       0.3442
+   5      pleure                         -0.081281       0.1441
+   6      apitoyer                       -0.064947       0.1446
+   7      battue                         -0.057943       0.0908
+   8      advienne                       -0.057398       0.1543
+   9      blonde                         -0.054418       0.0653
+   10     retournerai                    -0.050550       0.1463
+   11     autrui                         -0.043903       0.1021
+   12     malheureuse                    -0.042448       0.0727
+   13     débrouille                     -0.040700       0.1156
+   14     rentrée                        -0.036087       0.0663
+   15     souffrance                     -0.035152       0.1267
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+blonde                    +0.000000     +0.000080     +0.000080     0.0653
+diables                   +0.001804     +0.000076     +0.000076     0.1154
+airain                    +0.000999     +0.000058     +0.000058     0.1801
+bombe                     +0.001546     +0.000057     +0.000057     0.0943
+atteler                   +0.000000     +0.000053     +0.000053     0.1450
+corbeaux                  +0.001781     +0.000052     +0.000052     0.1331
+entêtée                   +0.000000     +0.000051     +0.000051     0.3442
+advienne                  +0.000000     +0.000043     +0.000043     0.1543
+conclut                   +0.000271     +0.000043     +0.000043     0.0733
+général                   +0.000430     +0.000042     +0.000042     0.0575
+vainement                 +0.001791     +0.000042     +0.000042     0.1004
+pleure                    +0.000000     +0.000035     +0.000035     0.1441
+essaya                    +0.000837     +0.000033     +0.000033     0.0835
+pensais                   +0.000000     +0.000031     +0.000031     0.0575
+boîte                     +0.000582     +0.000026     +0.000026     0.0575
+mousse                    +0.000621     +0.000025     +0.000025     0.0789
+bref                      +0.000574     +0.000023     +0.000023     0.0568
+foi                       +0.000484     +0.000020     +0.000020     0.0581
+rassembler                +0.000000     +0.000020     +0.000020     0.0913
+aviserons                 +0.001900     +0.000020     +0.000020     0.1887
+logit final pour 'homme': -0.1924

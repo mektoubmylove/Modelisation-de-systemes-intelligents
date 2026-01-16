@@ -1,0 +1,386 @@
+texte analysé: forêt impénétrable , elle passe sur la prairie avec la voix des cloches et le vent la porte qui peigne la moisson . famille canadienne aux moeurs patriarcales qui a su résister à la folie des siècles ...
+prédiction: HOMME (confiance: 62.5%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.2600
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      canadienne                     +0.000197       0.2302
+   2      mitre                          +0.000158       0.1530
+   3      mgr                            +0.000143       0.4149
+   4      eglise                         +0.000090       0.1281
+   5      léguée                         +0.000084       0.1343
+   6      rayonnant                      +0.000079       0.0882
+   7      zèle                           +0.000061       0.0707
+   8      abandonnées                    +0.000061       0.0807
+   9      prairie                        +0.000050       0.0880
+   10     humilié                        +0.000039       0.0781
+   11     bourreaux                      +0.000038       0.0888
+   12     cloches                        +0.000037       0.0714
+   13     offrent                        +0.000037       0.0850
+   14     conserver                      +0.000033       0.0530
+   15     missionnaire                   +0.000031       0.1183
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      nord                           -0.000142       0.1312
+   2      persécution                    -0.000133       0.1151
+   3      arctique                       -0.000120       0.1409
+   4      annonçaient                    -0.000085       0.0872
+   5      normands                       -0.000081       0.1262
+   6      per                            -0.000077       0.1173
+   7      étable                         -0.000063       0.0894
+   8      impénétrable                   -0.000060       0.0818
+   9      révélateur                     -0.000059       0.1088
+   10     pastorale                      -0.000059       0.1358
+   11     gardé                          -0.000058       0.0406
+   12     glacée                         -0.000057       0.0545
+   13     ad                             -0.000056       0.1014
+   14     ancêtres                       -0.000054       0.0638
+   15     marquée                        -0.000050       0.0655
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      canadienne                     +0.000197       0.2302
+   2      mitre                          +0.000158       0.1530
+   3      mgr                            +0.000143       0.4149
+   4      eglise                         +0.000090       0.1281
+   5      léguée                         +0.000084       0.1343
+   6      rayonnant                      +0.000079       0.0882
+   7      zèle                           +0.000061       0.0707
+   8      abandonnées                    +0.000061       0.0807
+   9      prairie                        +0.000050       0.0880
+   10     humilié                        +0.000039       0.0781
+   11     bourreaux                      +0.000038       0.0888
+   12     cloches                        +0.000037       0.0714
+   13     offrent                        +0.000037       0.0850
+   14     conserver                      +0.000033       0.0530
+   15     missionnaire                   +0.000031       0.1183
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      nord                           -0.000142       0.1312
+   2      persécution                    -0.000133       0.1151
+   3      arctique                       -0.000120       0.1409
+   4      annonçaient                    -0.000085       0.0872
+   5      normands                       -0.000081       0.1262
+   6      per                            -0.000077       0.1173
+   7      étable                         -0.000063       0.0894
+   8      impénétrable                   -0.000060       0.0818
+   9      révélateur                     -0.000059       0.1088
+   10     pastorale                      -0.000059       0.1358
+   11     gardé                          -0.000058       0.0406
+   12     glacée                         -0.000057       0.0545
+   13     ad                             -0.000056       0.1014
+   14     ancêtres                       -0.000054       0.0638
+   15     marquée                        -0.000050       0.0655
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      née                            +0.001541       0.0474
+   2      étouffer                       +0.001082       0.0542
+   3      sereine                        +0.000997       0.0698
+   4      martyr                         +0.000970       0.0971
+   5      élevée                         +0.000953       0.0549
+   6      sacrifice                      +0.000914       0.0625
+   7      triomphante                    +0.000805       0.0849
+   8      magnifique                     +0.000794       0.0447
+   9      ceint                          +0.000780       0.1057
+   10     passés                         +0.000765       0.0452
+   11     marie                          +0.000740       0.0479
+   12     pleuré                         +0.000673       0.0559
+   13     usée                           +0.000664       0.0807
+   14     jésus                          +0.000662       0.0649
+   15     per                            +0.000616       0.1173
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mgr                            -0.004386       0.4149
+   2      canadienne                     -0.003634       0.2302
+   3      crosse                         -0.001973       0.0802
+   4      pastorale                      -0.001423       0.1358
+   5      mitre                          -0.001399       0.1530
+   6      nord                           -0.001264       0.1312
+   7      guidé                          -0.001258       0.0871
+   8      missionnaire                   -0.001203       0.1183
+   9      humilié                        -0.001187       0.0781
+   10     cloches                        -0.001155       0.0714
+   11     cloué                          -0.001104       0.0810
+   12     épouvante                      -0.001093       0.0647
+   13     étable                         -0.001086       0.0894
+   14     inlassable                     -0.001022       0.1164
+   15     diocèse                        -0.000868       0.1428
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      née                            +0.072133       0.0474
+   2      triomphante                    +0.049860       0.0849
+   3      élevée                         +0.047027       0.0549
+   4      per                            +0.045810       0.1173
+   5      étouffer                       +0.045585       0.0542
+   6      martyr                         +0.041032       0.0971
+   7      sereine                        +0.040548       0.0698
+   8      usée                           +0.039757       0.0807
+   9      sacrifice                      +0.039683       0.0625
+   10     ceint                          +0.039107       0.1057
+   11     magnifique                     +0.039015       0.0447
+   12     eglise                         +0.038634       0.1281
+   13     passés                         +0.036493       0.0452
+   14     ancêtres                       +0.033425       0.0638
+   15     gardé                          +0.033323       0.0406
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      canadienne                     -0.205103       0.2302
+   2      mgr                            -0.177903       0.4149
+   3      crosse                         -0.094785       0.0802
+   4      mitre                          -0.083266       0.1530
+   5      pastorale                      -0.070286       0.1358
+   6      humilié                        -0.064997       0.0781
+   7      guidé                          -0.062994       0.0871
+   8      missionnaire                   -0.060805       0.1183
+   9      cloches                        -0.053596       0.0714
+   10     nord                           -0.049687       0.1312
+   11     épouvante                      -0.048146       0.0647
+   12     cloué                          -0.045314       0.0810
+   13     étable                         -0.044988       0.0894
+   14     diocèse                        -0.042550       0.1428
+   15     inlassable                     -0.036912       0.1164
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+canadienne                +0.000000     +0.000197     +0.000197     0.2302
+mitre                     +0.000000     +0.000158     +0.000158     0.1530
+mgr                       +0.000000     +0.000143     +0.000143     0.4149
+eglise                    +0.000539     +0.000090     +0.000090     0.1281
+léguée                    +0.000611     +0.000084     +0.000084     0.1343
+rayonnant                 +0.000000     +0.000079     +0.000079     0.0882
+zèle                      +0.000000     +0.000061     +0.000061     0.0707
+abandonnées               +0.000463     +0.000061     +0.000061     0.0807
+prairie                   +0.000000     +0.000050     +0.000050     0.0880
+humilié                   +0.000000     +0.000039     +0.000039     0.0781
+bourreaux                 +0.000000     +0.000038     +0.000038     0.0888
+cloches                   +0.000000     +0.000037     +0.000037     0.0714
+offrent                   +0.000000     +0.000037     +0.000037     0.0850
+conserver                 +0.000056     +0.000033     +0.000033     0.0530
+missionnaire              +0.000000     +0.000031     +0.000031     0.1183
+ajoutait                  +0.000000     +0.000027     +0.000027     0.0616
+inlassable                +0.000000     +0.000027     +0.000027     0.1164
+accomplit                 +0.000000     +0.000027     +0.000027     0.0924
+chemins                   +0.000000     +0.000023     +0.000023     0.0485
+révolus                   +0.000000     +0.000022     +0.000022     0.1321
+logit final pour 'femme': -0.2600
+# analyse pour la classe: HOMME  prédite
+# logit: 0.2493
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      canadienne                     +0.000213       0.2302
+   2      mitre                          +0.000120       0.1530
+   3      léguée                         +0.000099       0.1343
+   4      eglise                         +0.000048       0.1281
+   5      rayonnant                      +0.000047       0.0882
+   6      missionnaire                   +0.000045       0.1183
+   7      mariam                         +0.000036       0.2167
+   8      prairie                        +0.000036       0.0880
+   9      humilié                        +0.000033       0.0781
+   10     conserver                      +0.000029       0.0530
+   11     modèle                         +0.000025       0.0484
+   12     portez                         +0.000024       0.0816
+   13     bourreaux                      +0.000024       0.0888
+   14     provincial                     +0.000024       0.1103
+   15     abandonnées                    +0.000023       0.0807
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      persécution                    -0.000105       0.1151
+   2      annonçaient                    -0.000094       0.0872
+   3      nord                           -0.000093       0.1312
+   4      normands                       -0.000092       0.1262
+   5      arctique                       -0.000073       0.1409
+   6      per                            -0.000073       0.1173
+   7      verge                          -0.000067       0.1274
+   8      ancêtres                       -0.000066       0.0638
+   9      pastorale                      -0.000065       0.1358
+   10     populace                       -0.000063       0.1147
+   11     convoitises                    -0.000055       0.1173
+   12     glacée                         -0.000052       0.0545
+   13     manifestation                  -0.000051       0.0716
+   14     étable                         -0.000046       0.0894
+   15     marquée                        -0.000046       0.0655
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      canadienne                     +0.000213       0.2302
+   2      mitre                          +0.000120       0.1530
+   3      léguée                         +0.000099       0.1343
+   4      eglise                         +0.000048       0.1281
+   5      rayonnant                      +0.000047       0.0882
+   6      missionnaire                   +0.000045       0.1183
+   7      mariam                         +0.000036       0.2167
+   8      prairie                        +0.000036       0.0880
+   9      humilié                        +0.000033       0.0781
+   10     conserver                      +0.000029       0.0530
+   11     modèle                         +0.000025       0.0484
+   12     portez                         +0.000024       0.0816
+   13     bourreaux                      +0.000024       0.0888
+   14     provincial                     +0.000024       0.1103
+   15     abandonnées                    +0.000023       0.0807
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      persécution                    -0.000105       0.1151
+   2      annonçaient                    -0.000094       0.0872
+   3      nord                           -0.000093       0.1312
+   4      normands                       -0.000092       0.1262
+   5      arctique                       -0.000073       0.1409
+   6      per                            -0.000073       0.1173
+   7      verge                          -0.000067       0.1274
+   8      ancêtres                       -0.000066       0.0638
+   9      pastorale                      -0.000065       0.1358
+   10     populace                       -0.000063       0.1147
+   11     convoitises                    -0.000055       0.1173
+   12     glacée                         -0.000052       0.0545
+   13     manifestation                  -0.000051       0.0716
+   14     étable                         -0.000046       0.0894
+   15     marquée                        -0.000046       0.0655
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mgr                            +0.003837       0.4149
+   2      canadienne                     +0.003573       0.2302
+   3      crosse                         +0.001992       0.0802
+   4      pastorale                      +0.001696       0.1358
+   5      humilié                        +0.001305       0.0781
+   6      mitre                          +0.001215       0.1530
+   7      cloches                        +0.001184       0.0714
+   8      nord                           +0.001182       0.1312
+   9      guidé                          +0.001158       0.0871
+   10     cloué                          +0.001100       0.0810
+   11     missionnaire                   +0.001021       0.1183
+   12     étable                         +0.000997       0.0894
+   13     épouvante                      +0.000990       0.0647
+   14     moeurs                         +0.000982       0.0613
+   15     inlassable                     +0.000859       0.1164
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      née                            -0.001492       0.0474
+   2      sereine                        -0.001037       0.0698
+   3      étouffer                       -0.001024       0.0542
+   4      élevée                         -0.000959       0.0549
+   5      marie                          -0.000937       0.0479
+   6      ceint                          -0.000898       0.1057
+   7      sacrifice                      -0.000880       0.0625
+   8      usée                           -0.000848       0.0807
+   9      triomphante                    -0.000839       0.0849
+   10     martyr                         -0.000754       0.0971
+   11     per                            -0.000735       0.1173
+   12     magnifique                     -0.000732       0.0447
+   13     passés                         -0.000730       0.0452
+   14     gardé                          -0.000683       0.0406
+   15     eglise                         -0.000608       0.1281
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      canadienne                     +0.199405       0.2302
+   2      mgr                            +0.154055       0.4149
+   3      crosse                         +0.084947       0.0802
+   4      pastorale                      +0.065539       0.1358
+   5      mitre                          +0.060943       0.1530
+   6      humilié                        +0.059024       0.0781
+   7      guidé                          +0.056567       0.0871
+   8      missionnaire                   +0.051694       0.1183
+   9      cloches                        +0.051662       0.0714
+   10     nord                           +0.048101       0.1312
+   11     cloué                          +0.047491       0.0810
+   12     diocèse                        +0.041103       0.1428
+   13     épouvante                      +0.040776       0.0647
+   14     étable                         +0.037189       0.0894
+   15     moeurs                         +0.035271       0.0613
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      née                            -0.066283       0.0474
+   2      ceint                          -0.049030       0.1057
+   3      per                            -0.046931       0.1173
+   4      triomphante                    -0.046320       0.0849
+   5      sereine                        -0.042925       0.0698
+   6      élevée                         -0.042638       0.0549
+   7      étouffer                       -0.042203       0.0542
+   8      usée                           -0.038149       0.0807
+   9      eglise                         -0.037197       0.1281
+   10     sacrifice                      -0.033214       0.0625
+   11     magnifique                     -0.033113       0.0447
+   12     passés                         -0.032372       0.0452
+   13     gardé                          -0.032217       0.0406
+   14     marie                          -0.030938       0.0479
+   15     ancêtres                       -0.030928       0.0638
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+canadienne                +0.003573     +0.000213     +0.000213     0.2302
+mitre                     +0.001215     +0.000120     +0.000120     0.1530
+léguée                    +0.000000     +0.000099     +0.000099     0.1343
+eglise                    +0.000000     +0.000048     +0.000048     0.1281
+rayonnant                 +0.000323     +0.000047     +0.000047     0.0882
+missionnaire              +0.001021     +0.000045     +0.000045     0.1183
+mariam                    +0.000718     +0.000036     +0.000036     0.2167
+prairie                   +0.000577     +0.000036     +0.000036     0.0880
+humilié                   +0.001305     +0.000033     +0.000033     0.0781
+conserver                 +0.000000     +0.000029     +0.000029     0.0530
+modèle                    +0.000000     +0.000025     +0.000025     0.0484
+portez                    +0.000237     +0.000024     +0.000024     0.0816
+bourreaux                 +0.000000     +0.000024     +0.000024     0.0888
+provincial                +0.000000     +0.000024     +0.000024     0.1103
+abandonnées               +0.000000     +0.000023     +0.000023     0.0807
+offrent                   +0.000392     +0.000021     +0.000021     0.0850
+zèle                      +0.000634     +0.000018     +0.000018     0.0707
+calvaire                  +0.000000     +0.000017     +0.000017     0.0756
+chemins                   +0.000224     +0.000017     +0.000017     0.0485
+ajoutait                  +0.000170     +0.000016     +0.000016     0.0616
+logit final pour 'homme': 0.2493

@@ -1,0 +1,386 @@
+texte analysé: l appareil récepteur ! et il accourait ! il allait la sauver ! la débarrasser de son tyran ! ah ! il ne s agissait plus d amour propre d auteur ! il maudissait une fois de plus son génie qui n avait a...
+prédiction: HOMME (confiance: 50.8%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.0025
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hésiterait                     +0.000115       0.1263
+   2      imprudent                      +0.000101       0.0964
+   3      voyageurs                      +0.000098       0.1277
+   4      autocar                        +0.000093       0.1413
+   5      mythologique                   +0.000087       0.1474
+   6      vaincu                         +0.000081       0.0712
+   7      tragédie                       +0.000078       0.0779
+   8      flanc                          +0.000065       0.0598
+   9      brave                          +0.000063       0.0555
+   10     evidemment                     +0.000061       0.1223
+   11     récepteur                      +0.000059       0.1058
+   12     funèbre                        +0.000059       0.0798
+   13     auteur                         +0.000058       0.0574
+   14     oiseau                         +0.000057       0.0509
+   15     touristes                      +0.000056       0.0726
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jacques                        -0.000440       0.3441
+   2      gouffre                        -0.000164       0.1502
+   3      paillon                        -0.000147       0.2120
+   4      christine                      -0.000123       0.2758
+   5      menacer                        -0.000092       0.0845
+   6      ascension                      -0.000086       0.0794
+   7      granit                         -0.000086       0.0943
+   8      étincelle                      -0.000070       0.0848
+   9      accourait                      -0.000067       0.1049
+   10     monts                          -0.000066       0.0997
+   11     anéantir                       -0.000064       0.0918
+   12     lauriers                       -0.000063       0.1014
+   13     ouvre                          -0.000063       0.0439
+   14     humaine                        -0.000061       0.0485
+   15     génie                          -0.000060       0.1158
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hésiterait                     +0.000115       0.1263
+   2      imprudent                      +0.000101       0.0964
+   3      voyageurs                      +0.000098       0.1277
+   4      autocar                        +0.000093       0.1413
+   5      mythologique                   +0.000087       0.1474
+   6      vaincu                         +0.000081       0.0712
+   7      tragédie                       +0.000078       0.0779
+   8      flanc                          +0.000065       0.0598
+   9      brave                          +0.000063       0.0555
+   10     evidemment                     +0.000061       0.1223
+   11     récepteur                      +0.000059       0.1058
+   12     funèbre                        +0.000059       0.0798
+   13     auteur                         +0.000058       0.0574
+   14     oiseau                         +0.000057       0.0509
+   15     touristes                      +0.000056       0.0726
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jacques                        -0.000440       0.3441
+   2      gouffre                        -0.000164       0.1502
+   3      paillon                        -0.000147       0.2120
+   4      christine                      -0.000123       0.2758
+   5      menacer                        -0.000092       0.0845
+   6      ascension                      -0.000086       0.0794
+   7      granit                         -0.000086       0.0943
+   8      étincelle                      -0.000070       0.0848
+   9      accourait                      -0.000067       0.1049
+   10     monts                          -0.000066       0.0997
+   11     anéantir                       -0.000064       0.0918
+   12     lauriers                       -0.000063       0.1014
+   13     ouvre                          -0.000063       0.0439
+   14     humaine                        -0.000061       0.0485
+   15     génie                          -0.000060       0.1158
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tresse                         +0.002141       0.1136
+   2      ardue                          +0.002029       0.1342
+   3      jacques                        +0.002002       0.3441
+   4      hésiterait                     +0.001490       0.1263
+   5      recherche                      +0.001440       0.0436
+   6      attendrissante                 +0.001433       0.1434
+   7      sien                           +0.001279       0.0452
+   8      ascension                      +0.001200       0.0794
+   9      donnons                        +0.001006       0.1101
+   10     amoureux                       +0.000943       0.0461
+   11     visiter                        +0.000934       0.0519
+   12     vertus                         +0.000857       0.0775
+   13     touchante                      +0.000849       0.0937
+   14     étincelle                      +0.000839       0.0848
+   15     antiquaire                     +0.000808       0.1263
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      récepteur                      -0.002292       0.1058
+   2      autocar                        -0.002088       0.1413
+   3      vaincu                         -0.002003       0.0712
+   4      renseigné                      -0.001970       0.0845
+   5      voyageurs                      -0.001894       0.1277
+   6      paillon                        -0.001750       0.2120
+   7      génie                          -0.001727       0.1158
+   8      penché                         -0.001474       0.0550
+   9      messieurs                      -0.001331       0.0577
+   10     brave                          -0.001179       0.0555
+   11     funèbre                        -0.001093       0.0798
+   12     vautour                        -0.001090       0.1309
+   13     souffler                       -0.001036       0.0650
+   14     sein                           -0.001005       0.0511
+   15     curé                           -0.000968       0.0744
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jacques                        +0.170200       0.3441
+   2      tresse                         +0.128979       0.1136
+   3      ardue                          +0.117296       0.1342
+   4      attendrissante                 +0.099435       0.1434
+   5      hésiterait                     +0.090320       0.1263
+   6      recherche                      +0.074973       0.0436
+   7      ascension                      +0.071763       0.0794
+   8      sien                           +0.070728       0.0452
+   9      donnons                        +0.055937       0.1101
+   10     vertus                         +0.050349       0.0775
+   11     antiquaire                     +0.049845       0.1263
+   12     amoureux                       +0.048513       0.0461
+   13     tyran                          +0.047169       0.1011
+   14     visiter                        +0.046367       0.0519
+   15     monts                          +0.041728       0.0997
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      récepteur                      -0.128558       0.1058
+   2      vaincu                         -0.109805       0.0712
+   3      autocar                        -0.108165       0.1413
+   4      renseigné                      -0.106695       0.0845
+   5      génie                          -0.104959       0.1158
+   6      voyageurs                      -0.104045       0.1277
+   7      penché                         -0.073207       0.0550
+   8      messieurs                      -0.068370       0.0577
+   9      brave                          -0.063137       0.0555
+   10     malheur                        -0.061043       0.0889
+   11     primitifs                      -0.059931       0.1227
+   12     paillon                        -0.057383       0.2120
+   13     funèbre                        -0.057350       0.0798
+   14     curé                           -0.054929       0.0744
+   15     vautour                        -0.049317       0.1309
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+hésiterait                +0.001490     +0.000115     +0.000115     0.1263
+imprudent                 +0.000216     +0.000101     +0.000101     0.0964
+voyageurs                 +0.000000     +0.000098     +0.000098     0.1277
+autocar                   +0.000000     +0.000093     +0.000093     0.1413
+mythologique              +0.000000     +0.000087     +0.000087     0.1474
+vaincu                    +0.000000     +0.000081     +0.000081     0.0712
+tragédie                  +0.000000     +0.000078     +0.000078     0.0779
+flanc                     +0.000000     +0.000065     +0.000065     0.0598
+brave                     +0.000000     +0.000063     +0.000063     0.0555
+evidemment                +0.000201     +0.000061     +0.000061     0.1223
+récepteur                 +0.000000     +0.000059     +0.000059     0.1058
+funèbre                   +0.000000     +0.000059     +0.000059     0.0798
+auteur                    +0.000000     +0.000058     +0.000058     0.0574
+oiseau                    +0.000000     +0.000057     +0.000057     0.0509
+touristes                 +0.000085     +0.000056     +0.000056     0.0726
+penché                    +0.000000     +0.000047     +0.000047     0.0550
+renseigné                 +0.000000     +0.000047     +0.000047     0.0845
+remontait                 +0.000341     +0.000046     +0.000046     0.0638
+colonie                   +0.000000     +0.000045     +0.000045     0.0866
+héros                     +0.000000     +0.000043     +0.000043     0.0539
+logit final pour 'femme': -0.0025
+# analyse pour la classe: HOMME  prédite
+# logit: 0.0297
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hésiterait                     +0.000109       0.1263
+   2      voyageurs                      +0.000074       0.1277
+   3      tragédie                       +0.000065       0.0779
+   4      colonie                        +0.000059       0.0866
+   5      evidemment                     +0.000049       0.1223
+   6      mythologique                   +0.000049       0.1474
+   7      imprudent                      +0.000046       0.0964
+   8      neiges                         +0.000040       0.1021
+   9      héros                          +0.000039       0.0539
+   10     attendrissante                 +0.000039       0.1434
+   11     luce                           +0.000037       0.1651
+   12     ardue                          +0.000037       0.1342
+   13     oiseau                         +0.000037       0.0509
+   14     flanc                          +0.000036       0.0598
+   15     récepteur                      +0.000036       0.1058
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jacques                        -0.000260       0.3441
+   2      gouffre                        -0.000106       0.1502
+   3      menacer                        -0.000080       0.0845
+   4      génie                          -0.000077       0.1158
+   5      monts                          -0.000061       0.0997
+   6      tyran                          -0.000057       0.1011
+   7      ascension                      -0.000055       0.0794
+   8      romaine                        -0.000051       0.0993
+   9      lauriers                       -0.000050       0.1014
+   10     paillon                        -0.000049       0.2120
+   11     humaine                        -0.000046       0.0485
+   12     christine                      -0.000043       0.2758
+   13     serrer                         -0.000042       0.0510
+   14     donnons                        -0.000038       0.1101
+   15     permettre                      -0.000037       0.0481
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hésiterait                     +0.000109       0.1263
+   2      voyageurs                      +0.000074       0.1277
+   3      tragédie                       +0.000065       0.0779
+   4      colonie                        +0.000059       0.0866
+   5      evidemment                     +0.000049       0.1223
+   6      mythologique                   +0.000049       0.1474
+   7      imprudent                      +0.000046       0.0964
+   8      neiges                         +0.000040       0.1021
+   9      héros                          +0.000039       0.0539
+   10     attendrissante                 +0.000039       0.1434
+   11     luce                           +0.000037       0.1651
+   12     ardue                          +0.000037       0.1342
+   13     oiseau                         +0.000037       0.0509
+   14     flanc                          +0.000036       0.0598
+   15     récepteur                      +0.000036       0.1058
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jacques                        -0.000260       0.3441
+   2      gouffre                        -0.000106       0.1502
+   3      menacer                        -0.000080       0.0845
+   4      génie                          -0.000077       0.1158
+   5      monts                          -0.000061       0.0997
+   6      tyran                          -0.000057       0.1011
+   7      ascension                      -0.000055       0.0794
+   8      romaine                        -0.000051       0.0993
+   9      lauriers                       -0.000050       0.1014
+   10     paillon                        -0.000049       0.2120
+   11     humaine                        -0.000046       0.0485
+   12     christine                      -0.000043       0.2758
+   13     serrer                         -0.000042       0.0510
+   14     donnons                        -0.000038       0.1101
+   15     permettre                      -0.000037       0.0481
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      autocar                        +0.002077       0.1413
+   2      récepteur                      +0.001958       0.1058
+   3      vaincu                         +0.001934       0.0712
+   4      paillon                        +0.001912       0.2120
+   5      renseigné                      +0.001856       0.0845
+   6      génie                          +0.001745       0.1158
+   7      voyageurs                      +0.001668       0.1277
+   8      penché                         +0.001377       0.0550
+   9      messieurs                      +0.001356       0.0577
+   10     funèbre                        +0.001218       0.0798
+   11     primitifs                      +0.001216       0.1227
+   12     brave                          +0.001068       0.0555
+   13     vautour                        +0.001010       0.1309
+   14     malheur                        +0.000981       0.0889
+   15     souffler                       +0.000954       0.0650
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ardue                          -0.001718       0.1342
+   2      tresse                         -0.001517       0.1136
+   3      hésiterait                     -0.001356       0.1263
+   4      recherche                      -0.001327       0.0436
+   5      ascension                      -0.001222       0.0794
+   6      sien                           -0.001055       0.0452
+   7      visiter                        -0.000921       0.0519
+   8      étincelle                      -0.000919       0.0848
+   9      donnons                        -0.000906       0.1101
+   10     attendrissante                 -0.000872       0.1434
+   11     touchante                      -0.000859       0.0937
+   12     amoureux                       -0.000785       0.0461
+   13     vertus                         -0.000769       0.0775
+   14     antiquaire                     -0.000730       0.1263
+   15     tyran                          -0.000712       0.1011
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      récepteur                      +0.103586       0.1058
+   2      autocar                        +0.102771       0.1413
+   3      génie                          +0.102358       0.1158
+   4      vaincu                         +0.099884       0.0712
+   5      renseigné                      +0.094816       0.0845
+   6      voyageurs                      +0.081721       0.1277
+   7      primitifs                      +0.065368       0.1227
+   8      penché                         +0.063537       0.0550
+   9      malheur                        +0.063066       0.0889
+   10     messieurs                      +0.060740       0.0577
+   11     funèbre                        +0.059997       0.0798
+   12     paillon                        +0.059661       0.2120
+   13     brave                          +0.053302       0.0555
+   14     voici                          +0.045884       0.0469
+   15     curé                           +0.042046       0.0744
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jacques                        -0.099790       0.3441
+   2      ardue                          -0.092297       0.1342
+   3      tresse                         -0.089952       0.1136
+   4      hésiterait                     -0.088302       0.1263
+   5      attendrissante                 -0.075163       0.1434
+   6      ascension                      -0.072158       0.0794
+   7      recherche                      -0.064037       0.0436
+   8      sien                           -0.056462       0.0452
+   9      vertus                         -0.045322       0.0775
+   10     tyran                          -0.044487       0.1011
+   11     monts                          -0.042850       0.0997
+   12     donnons                        -0.042319       0.1101
+   13     visiter                        -0.041162       0.0519
+   14     étincelle                      -0.038494       0.0848
+   15     antiquaire                     -0.038408       0.1263
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+hésiterait                +0.000000     +0.000109     +0.000109     0.1263
+voyageurs                 +0.001668     +0.000074     +0.000074     0.1277
+tragédie                  +0.000395     +0.000065     +0.000065     0.0779
+colonie                   +0.000143     +0.000059     +0.000059     0.0866
+evidemment                +0.000000     +0.000049     +0.000049     0.1223
+mythologique              +0.000749     +0.000049     +0.000049     0.1474
+imprudent                 +0.000000     +0.000046     +0.000046     0.0964
+neiges                    +0.000253     +0.000040     +0.000040     0.1021
+héros                     +0.000336     +0.000039     +0.000039     0.0539
+attendrissante            +0.000000     +0.000039     +0.000039     0.1434
+luce                      +0.000000     +0.000037     +0.000037     0.1651
+ardue                     +0.000000     +0.000037     +0.000037     0.1342
+oiseau                    +0.000298     +0.000037     +0.000037     0.0509
+flanc                     +0.000533     +0.000036     +0.000036     0.0598
+récepteur                 +0.001958     +0.000036     +0.000036     0.1058
+remontait                 +0.000000     +0.000036     +0.000036     0.0638
+funèbre                   +0.001218     +0.000033     +0.000033     0.0798
+antiquaire                +0.000000     +0.000033     +0.000033     0.1263
+auteur                    +0.000512     +0.000031     +0.000031     0.0574
+penché                    +0.001377     +0.000029     +0.000029     0.0550
+logit final pour 'homme': 0.0297

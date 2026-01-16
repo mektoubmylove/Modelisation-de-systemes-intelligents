@@ -1,0 +1,387 @@
+texte analysé: château se serait montré bien moins volontaire si les aspirations de tanios ne coïncidaient pas avec celles du cheikh , et s il avait dû se heurter à ce dernier . c est négliger le changement d âme qu...
+prédiction: FEMME (confiance: 59.3%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.1974
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      contrarié                      +0.000061       0.0649
+   2      château                        +0.000061       0.1321
+   3      sursauté                       +0.000055       0.0893
+   4      franchissait                   +0.000053       0.0831
+   5      donnerait                      +0.000045       0.0470
+   6      opérait                        +0.000044       0.0896
+   7      échecs                         +0.000035       0.0629
+   8      répéter                        +0.000035       0.0756
+   9      commençait                     +0.000032       0.0345
+   10     remettra                       +0.000030       0.0785
+   11     obstine                        +0.000027       0.0842
+   12     dévoué                         +0.000026       0.0680
+   13     appétit                        +0.000022       0.0437
+   14     nue                            +0.000020       0.0402
+   15     approuver                      +0.000020       0.0742
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cheikh                         -0.000406       0.8249
+   2      retrouvèrent                   -0.000068       0.0627
+   3      promise                        -0.000058       0.0639
+   4      épris                          -0.000057       0.0690
+   5      amplifiait                     -0.000054       0.1036
+   6      res                            -0.000053       0.1234
+   7      mariage                        -0.000052       0.0362
+   8      égrenait                       -0.000051       0.0980
+   9      serviteur                      -0.000051       0.0636
+   10     sauvetage                      -0.000041       0.1472
+   11     décoiffée                      -0.000041       0.1036
+   12     aspirations                    -0.000037       0.0808
+   13     comprend                       -0.000037       0.0798
+   14     changement                     -0.000034       0.0399
+   15     aille                          -0.000033       0.0370
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      contrarié                      +0.000061       0.0649
+   2      château                        +0.000061       0.1321
+   3      sursauté                       +0.000055       0.0893
+   4      franchissait                   +0.000053       0.0831
+   5      donnerait                      +0.000045       0.0470
+   6      opérait                        +0.000044       0.0896
+   7      échecs                         +0.000035       0.0629
+   8      répéter                        +0.000035       0.0756
+   9      commençait                     +0.000032       0.0345
+   10     remettra                       +0.000030       0.0785
+   11     obstine                        +0.000027       0.0842
+   12     dévoué                         +0.000026       0.0680
+   13     appétit                        +0.000022       0.0437
+   14     nue                            +0.000020       0.0402
+   15     approuver                      +0.000020       0.0742
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cheikh                         -0.000406       0.8249
+   2      retrouvèrent                   -0.000068       0.0627
+   3      promise                        -0.000058       0.0639
+   4      épris                          -0.000057       0.0690
+   5      amplifiait                     -0.000054       0.1036
+   6      res                            -0.000053       0.1234
+   7      mariage                        -0.000052       0.0362
+   8      égrenait                       -0.000051       0.0980
+   9      serviteur                      -0.000051       0.0636
+   10     sauvetage                      -0.000041       0.1472
+   11     décoiffée                      -0.000041       0.1036
+   12     aspirations                    -0.000037       0.0808
+   13     comprend                       -0.000037       0.0798
+   14     changement                     -0.000034       0.0399
+   15     aille                          -0.000033       0.0370
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      res                            +0.001599       0.1234
+   2      bafouée                        +0.001301       0.1015
+   3      aspirations                    +0.001188       0.0808
+   4      décoiffée                      +0.001080       0.1036
+   5      comprend                       +0.000991       0.0798
+   6      mariage                        +0.000877       0.0362
+   7      volontaire                     +0.000858       0.0529
+   8      planter                        +0.000808       0.0516
+   9      intendant                      +0.000669       0.0928
+   10     automne                        +0.000649       0.0436
+   11     parles                         +0.000512       0.0418
+   12     changement                     +0.000512       0.0399
+   13     retrouvèrent                   +0.000442       0.0627
+   14     égrenait                       +0.000388       0.0980
+   15     contrarié                      +0.000369       0.0649
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cheikh                         -0.002885       0.8249
+   2      approuver                      -0.001616       0.0742
+   3      fussent                        -0.001515       0.0529
+   4      négliger                       -0.000837       0.0722
+   5      préoccupé                      -0.000831       0.0566
+   6      successifs                     -0.000815       0.0808
+   7      opérait                        -0.000739       0.0896
+   8      heurter                        -0.000729       0.0615
+   9      sursauté                       -0.000722       0.0893
+   10     obstine                        -0.000680       0.0842
+   11     rendit                         -0.000673       0.0437
+   12     lampe                          -0.000664       0.0383
+   13     intrigué                       -0.000630       0.0574
+   14     ordinaire                      -0.000611       0.0372
+   15     engagé                         -0.000591       0.0474
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      res                            +0.094601       0.1234
+   2      décoiffée                      +0.057494       0.1036
+   3      bafouée                        +0.051938       0.1015
+   4      aspirations                    +0.051335       0.0808
+   5      comprend                       +0.049502       0.0798
+   6      mariage                        +0.038647       0.0362
+   7      volontaire                     +0.037782       0.0529
+   8      planter                        +0.036508       0.0516
+   9      parles                         +0.032270       0.0418
+   10     intendant                      +0.030329       0.0928
+   11     contrarié                      +0.028354       0.0649
+   12     automne                        +0.027507       0.0436
+   13     terminées                      +0.025382       0.0780
+   14     changement                     +0.021049       0.0399
+   15     promise                        +0.021049       0.0639
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cheikh                         -0.143743       0.8249
+   2      approuver                      -0.080725       0.0742
+   3      fussent                        -0.076768       0.0529
+   4      négliger                       -0.051837       0.0722
+   5      opérait                        -0.048912       0.0896
+   6      heurter                        -0.041217       0.0615
+   7      successifs                     -0.040380       0.0808
+   8      intrigué                       -0.039063       0.0574
+   9      rendit                         -0.037186       0.0437
+   10     préoccupé                      -0.035709       0.0566
+   11     amplifiait                     -0.032854       0.1036
+   12     sursauté                       -0.032715       0.0893
+   13     obstine                        -0.032523       0.0842
+   14     ordinaire                      -0.029816       0.0372
+   15     sauvetage                      -0.028623       0.1472
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+contrarié                 +0.000369     +0.000061     +0.000061     0.0649
+château                   +0.000068     +0.000061     +0.000061     0.1321
+sursauté                  +0.000000     +0.000055     +0.000055     0.0893
+franchissait              +0.000348     +0.000053     +0.000053     0.0831
+donnerait                 +0.000020     +0.000045     +0.000045     0.0470
+opérait                   +0.000000     +0.000044     +0.000044     0.0896
+échecs                    +0.000000     +0.000035     +0.000035     0.0629
+répéter                   +0.000000     +0.000035     +0.000035     0.0756
+commençait                +0.000000     +0.000032     +0.000032     0.0345
+remettra                  +0.000345     +0.000030     +0.000030     0.0785
+obstine                   +0.000000     +0.000027     +0.000027     0.0842
+dévoué                    +0.000000     +0.000026     +0.000026     0.0680
+appétit                   +0.000000     +0.000022     +0.000022     0.0437
+nue                       +0.000000     +0.000020     +0.000020     0.0402
+approuver                 +0.000000     +0.000020     +0.000020     0.0742
+successifs                +0.000000     +0.000020     +0.000020     0.0808
+lampe                     +0.000000     +0.000016     +0.000016     0.0383
+rendit                    +0.000000     +0.000016     +0.000016     0.0437
+reprit                    +0.000000     +0.000015     +0.000015     0.0403
+phrases                   +0.000030     +0.000014     +0.000014     0.0365
+logit final pour 'femme': 0.1974
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.1800
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sursauté                       +0.000035       0.0893
+   2      contrarié                      +0.000032       0.0649
+   3      sauvetage                      +0.000031       0.1472
+   4      bafouée                        +0.000031       0.1015
+   5      donnerait                      +0.000024       0.0470
+   6      échecs                         +0.000017       0.0629
+   7      préoccupé                      +0.000016       0.0566
+   8      res                            +0.000015       0.1234
+   9      rendit                         +0.000014       0.0437
+   10     heurter                        +0.000012       0.0615
+   11     décoiffée                      +0.000011       0.1036
+   12     dévoué                         +0.000011       0.0680
+   13     répéter                        +0.000010       0.0756
+   14     également                      +0.000010       0.0362
+   15     reprit                         +0.000009       0.0403
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cheikh                         -0.000203       0.8249
+   2      serviteur                      -0.000041       0.0636
+   3      promise                        -0.000038       0.0639
+   4      amplifiait                     -0.000034       0.1036
+   5      épris                          -0.000032       0.0690
+   6      retrouvèrent                   -0.000027       0.0627
+   7      intendant                      -0.000027       0.0928
+   8      château                        -0.000027       0.1321
+   9      égrenait                       -0.000026       0.0980
+   10     aille                          -0.000024       0.0370
+   11     observer                       -0.000020       0.0385
+   12     mariage                        -0.000019       0.0362
+   13     aspirations                    -0.000018       0.0808
+   14     successifs                     -0.000018       0.0808
+   15     fussent                        -0.000017       0.0529
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sursauté                       +0.000035       0.0893
+   2      contrarié                      +0.000032       0.0649
+   3      sauvetage                      +0.000031       0.1472
+   4      bafouée                        +0.000031       0.1015
+   5      donnerait                      +0.000024       0.0470
+   6      échecs                         +0.000017       0.0629
+   7      préoccupé                      +0.000016       0.0566
+   8      res                            +0.000015       0.1234
+   9      rendit                         +0.000014       0.0437
+   10     heurter                        +0.000012       0.0615
+   11     décoiffée                      +0.000011       0.1036
+   12     dévoué                         +0.000011       0.0680
+   13     répéter                        +0.000010       0.0756
+   14     également                      +0.000010       0.0362
+   15     reprit                         +0.000009       0.0403
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cheikh                         -0.000203       0.8249
+   2      serviteur                      -0.000041       0.0636
+   3      promise                        -0.000038       0.0639
+   4      amplifiait                     -0.000034       0.1036
+   5      épris                          -0.000032       0.0690
+   6      retrouvèrent                   -0.000027       0.0627
+   7      intendant                      -0.000027       0.0928
+   8      château                        -0.000027       0.1321
+   9      égrenait                       -0.000026       0.0980
+   10     aille                          -0.000024       0.0370
+   11     observer                       -0.000020       0.0385
+   12     mariage                        -0.000019       0.0362
+   13     aspirations                    -0.000018       0.0808
+   14     successifs                     -0.000018       0.0808
+   15     fussent                        -0.000017       0.0529
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cheikh                         +0.002870       0.8249
+   2      approuver                      +0.001302       0.0742
+   3      fussent                        +0.001216       0.0529
+   4      opérait                        +0.000604       0.0896
+   5      négliger                       +0.000600       0.0722
+   6      engagé                         +0.000576       0.0474
+   7      intrigué                       +0.000574       0.0574
+   8      préoccupé                      +0.000550       0.0566
+   9      ordinaire                      +0.000550       0.0372
+   10     successifs                     +0.000537       0.0808
+   11     obstine                        +0.000531       0.0842
+   12     amplifiait                     +0.000530       0.1036
+   13     rendit                         +0.000517       0.0437
+   14     lampe                          +0.000499       0.0383
+   15     sursauté                       +0.000490       0.0893
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      res                            -0.001388       0.1234
+   2      bafouée                        -0.000910       0.1015
+   3      décoiffée                      -0.000850       0.1036
+   4      comprend                       -0.000836       0.0798
+   5      aspirations                    -0.000816       0.0808
+   6      planter                        -0.000708       0.0516
+   7      mariage                        -0.000687       0.0362
+   8      volontaire                     -0.000682       0.0529
+   9      automne                        -0.000555       0.0436
+   10     contrarié                      -0.000450       0.0649
+   11     changement                     -0.000402       0.0399
+   12     parles                         -0.000386       0.0418
+   13     terminées                      -0.000336       0.0780
+   14     serviteur                      -0.000293       0.0636
+   15     retrouvèrent                   -0.000289       0.0627
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      approuver                      +0.065050       0.0742
+   2      cheikh                         +0.061022       0.8249
+   3      fussent                        +0.060439       0.0529
+   4      négliger                       +0.044085       0.0722
+   5      intrigué                       +0.036522       0.0574
+   6      opérait                        +0.036232       0.0896
+   7      heurter                        +0.032735       0.0615
+   8      amplifiait                     +0.029714       0.1036
+   9      sauvetage                      +0.028590       0.1472
+   10     sursauté                       +0.028121       0.0893
+   11     rendit                         +0.028004       0.0437
+   12     successifs                     +0.027162       0.0808
+   13     engagé                         +0.027131       0.0474
+   14     ordinaire                      +0.026949       0.0372
+   15     obstine                        +0.024013       0.0842
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      res                            -0.087650       0.1234
+   2      décoiffée                      -0.044173       0.1036
+   3      bafouée                        -0.039771       0.1015
+   4      comprend                       -0.038785       0.0798
+   5      aspirations                    -0.036679       0.0808
+   6      volontaire                     -0.036348       0.0529
+   7      mariage                        -0.033575       0.0362
+   8      planter                        -0.032018       0.0516
+   9      parles                         -0.027542       0.0418
+   10     automne                        -0.024721       0.0436
+   11     terminées                      -0.024397       0.0780
+   12     contrarié                      -0.022408       0.0649
+   13     changement                     -0.017872       0.0399
+   14     promise                        -0.017105       0.0639
+   15     retrouvèrent                   -0.014193       0.0627
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+sursauté                  +0.000490     +0.000035     +0.000035     0.0893
+contrarié                 +0.000000     +0.000032     +0.000032     0.0649
+sauvetage                 +0.000281     +0.000031     +0.000031     0.1472
+bafouée                   +0.000000     +0.000031     +0.000031     0.1015
+donnerait                 +0.000000     +0.000024     +0.000024     0.0470
+échecs                    +0.000309     +0.000017     +0.000017     0.0629
+préoccupé                 +0.000550     +0.000016     +0.000016     0.0566
+res                       +0.000000     +0.000015     +0.000015     0.1234
+rendit                    +0.000517     +0.000014     +0.000014     0.0437
+heurter                   +0.000458     +0.000012     +0.000012     0.0615
+décoiffée                 +0.000000     +0.000011     +0.000011     0.1036
+dévoué                    +0.000188     +0.000011     +0.000011     0.0680
+répéter                   +0.000399     +0.000010     +0.000010     0.0756
+également                 +0.000479     +0.000010     +0.000010     0.0362
+reprit                    +0.000239     +0.000009     +0.000009     0.0403
+automne                   +0.000000     +0.000009     +0.000009     0.0436
+appétit                   +0.000066     +0.000009     +0.000009     0.0437
+franchissait              +0.000000     +0.000008     +0.000008     0.0831
+phrases                   +0.000026     +0.000008     +0.000008     0.0365
+retrouvera                +0.000399     +0.000008     +0.000008     0.0680
+logit final pour 'homme': -0.1800

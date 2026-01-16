@@ -1,0 +1,5 @@
+filename: (CHAUSSEAU)(Alexandra)(un geste de trop)(2)(2015)(1976)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 16
+first_name: alexandra
+last_name: chausseau
+true_label: femme

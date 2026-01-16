@@ -1,0 +1,387 @@
+texte analysé: de toilette , constate la disparition de la bouteille de mitsouko , de guerlain . étrange . la chambre semble avoir été épargnée par le visiteur . elle revient dans le living , évacue le verre qui tra...
+prédiction: HOMME (confiance: 67.7%)
+vérité terrain: FEMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  vraie classe
+# logit: -0.3630
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      éventé                         +0.000088       0.1492
+   2      invasion                       +0.000086       0.0963
+   3      bombe                          +0.000073       0.0789
+   4      mental                         +0.000069       0.0939
+   5      rappel                         +0.000064       0.0913
+   6      hôtel                          +0.000053       0.0490
+   7      surprend                       +0.000050       0.0847
+   8      milan                          +0.000048       0.3847
+   9      verrai                         +0.000047       0.0749
+   10     contexte                       +0.000043       0.1095
+   11     cognac                         +0.000033       0.1025
+   12     organisation                   +0.000032       0.0731
+   13     permanente                     +0.000030       0.0923
+   14     agriculture                    +0.000028       0.1266
+   15     living                         +0.000028       0.1553
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      agences                        -0.000128       0.1341
+   2      arrestations                   -0.000111       0.1392
+   3      militant                       -0.000093       0.1433
+   4      sociaux                        -0.000086       0.1047
+   5      casernes                       -0.000083       0.1415
+   6      revient                        -0.000068       0.0988
+   7      séduire                        -0.000068       0.0735
+   8      ordonné                        -0.000064       0.0722
+   9      conneries                      -0.000064       0.0954
+   10     repoussé                       -0.000058       0.0784
+   11     circonstance                   -0.000057       0.0709
+   12     menace                         -0.000057       0.1595
+   13     fresque                        -0.000055       0.1286
+   14     évacue                         -0.000053       0.1529
+   15     vivrai                         -0.000051       0.1242
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      éventé                         +0.000088       0.1492
+   2      invasion                       +0.000086       0.0963
+   3      bombe                          +0.000073       0.0789
+   4      mental                         +0.000069       0.0939
+   5      rappel                         +0.000064       0.0913
+   6      hôtel                          +0.000053       0.0490
+   7      surprend                       +0.000050       0.0847
+   8      milan                          +0.000048       0.3847
+   9      verrai                         +0.000047       0.0749
+   10     contexte                       +0.000043       0.1095
+   11     cognac                         +0.000033       0.1025
+   12     organisation                   +0.000032       0.0731
+   13     permanente                     +0.000030       0.0923
+   14     agriculture                    +0.000028       0.1266
+   15     living                         +0.000028       0.1553
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      agences                        -0.000128       0.1341
+   2      arrestations                   -0.000111       0.1392
+   3      militant                       -0.000093       0.1433
+   4      sociaux                        -0.000086       0.1047
+   5      casernes                       -0.000083       0.1415
+   6      revient                        -0.000068       0.0988
+   7      séduire                        -0.000068       0.0735
+   8      ordonné                        -0.000064       0.0722
+   9      conneries                      -0.000064       0.0954
+   10     repoussé                       -0.000058       0.0784
+   11     circonstance                   -0.000057       0.0709
+   12     menace                         -0.000057       0.1595
+   13     fresque                        -0.000055       0.1286
+   14     évacue                         -0.000053       0.1529
+   15     vivrai                         -0.000051       0.1242
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      soulagée                       +0.003070       0.0767
+   2      regardera                      +0.001710       0.1376
+   3      efficace                       +0.001635       0.0661
+   4      gâchis                         +0.001555       0.1003
+   5      intacte                        +0.001467       0.0797
+   6      humiliation                    +0.001377       0.0748
+   7      séduire                        +0.001307       0.0735
+   8      guerrière                      +0.001222       0.1095
+   9      revient                        +0.001170       0.0988
+   10     tueur                          +0.001095       0.0991
+   11     siennes                        +0.001062       0.0679
+   12     posée                          +0.001013       0.0988
+   13     surprend                       +0.000997       0.0847
+   14     éventé                         +0.000889       0.1492
+   15     ordonné                        +0.000633       0.0722
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      milan                          -0.007839       0.3847
+   2      living                         -0.001759       0.1553
+   3      invasion                       -0.001640       0.0963
+   4      commissaire                    -0.001619       0.0858
+   5      menace                         -0.001422       0.1595
+   6      cloison                        -0.001380       0.0851
+   7      visiteur                       -0.001378       0.0764
+   8      bombe                          -0.001286       0.0789
+   9      carabiniers                    -0.001191       0.1840
+   10     évacue                         -0.001173       0.1529
+   11     agences                        -0.001162       0.1341
+   12     tuant                          -0.001107       0.1102
+   13     entré                          -0.001098       0.0525
+   14     bouteille                      -0.001070       0.1061
+   15     troubles                       -0.000950       0.0767
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      soulagée                       +0.134463       0.0767
+   2      regardera                      +0.080518       0.1376
+   3      efficace                       +0.070938       0.0661
+   4      humiliation                    +0.066294       0.0748
+   5      séduire                        +0.065268       0.0735
+   6      gâchis                         +0.063142       0.1003
+   7      guerrière                      +0.061153       0.1095
+   8      intacte                        +0.058050       0.0797
+   9      tueur                          +0.057994       0.0991
+   10     posée                          +0.055678       0.0988
+   11     siennes                        +0.052667       0.0679
+   12     revient                        +0.046030       0.0988
+   13     surprend                       +0.043985       0.0847
+   14     brûlure                        +0.030416       0.0900
+   15     éventé                         +0.028566       0.1492
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      milan                          -0.317431       0.3847
+   2      invasion                       -0.086659       0.0963
+   3      living                         -0.077783       0.1553
+   4      commissaire                    -0.069503       0.0858
+   5      menace                         -0.063385       0.1595
+   6      cloison                        -0.061233       0.0851
+   7      bouteille                      -0.058824       0.1061
+   8      bombe                          -0.058581       0.0789
+   9      carabiniers                    -0.055181       0.1840
+   10     visiteur                       -0.054056       0.0764
+   11     tuant                          -0.050196       0.1102
+   12     militant                       -0.047728       0.1433
+   13     entré                          -0.046404       0.0525
+   14     troubles                       -0.045619       0.0767
+   15     diverses                       -0.042082       0.0651
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+éventé                    +0.000889     +0.000088     +0.000088     0.1492
+invasion                  +0.000000     +0.000086     +0.000086     0.0963
+bombe                     +0.000000     +0.000073     +0.000073     0.0789
+mental                    +0.000035     +0.000069     +0.000069     0.0939
+rappel                    +0.000000     +0.000064     +0.000064     0.0913
+hôtel                     +0.000000     +0.000053     +0.000053     0.0490
+surprend                  +0.000997     +0.000050     +0.000050     0.0847
+milan                     +0.000000     +0.000048     +0.000048     0.3847
+verrai                    +0.000000     +0.000047     +0.000047     0.0749
+contexte                  +0.000000     +0.000043     +0.000043     0.1095
+cognac                    +0.000000     +0.000033     +0.000033     0.1025
+organisation              +0.000000     +0.000032     +0.000032     0.0731
+permanente                +0.000000     +0.000030     +0.000030     0.0923
+agriculture               +0.000000     +0.000028     +0.000028     0.1266
+living                    +0.000000     +0.000028     +0.000028     0.1553
+disparition               +0.000000     +0.000024     +0.000024     0.0574
+agression                 +0.000000     +0.000024     +0.000024     0.0936
+soulagée                  +0.003070     +0.000021     +0.000021     0.0767
+parvenir                  +0.000133     +0.000020     +0.000020     0.0562
+exécuté                   +0.000000     +0.000020     +0.000020     0.0905
+logit final pour 'femme': -0.3630
+# analyse pour la classe: HOMME  prédite
+# logit: 0.3758
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mental                         +0.000053       0.0939
+   2      invasion                       +0.000048       0.0963
+   3      soulagée                       +0.000045       0.0767
+   4      hôtel                          +0.000030       0.0490
+   5      tueur                          +0.000029       0.0991
+   6      bombe                          +0.000027       0.0789
+   7      rappel                         +0.000027       0.0913
+   8      verrai                         +0.000026       0.0749
+   9      certitude                      +0.000026       0.1038
+   10     organisation                   +0.000020       0.0731
+   11     brûlure                        +0.000020       0.0900
+   12     cognac                         +0.000018       0.1025
+   13     passera                        +0.000017       0.0653
+   14     giorgio                        +0.000017       0.1979
+   15     surprend                       +0.000016       0.0847
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      milan                          -0.000183       0.3847
+   2      vivrai                         -0.000085       0.1242
+   3      militant                       -0.000083       0.1433
+   4      casernes                       -0.000081       0.1415
+   5      arrestations                   -0.000078       0.1392
+   6      conneries                      -0.000066       0.0954
+   7      séduire                        -0.000047       0.0735
+   8      agences                        -0.000045       0.1341
+   9      troubles                       -0.000042       0.0767
+   10     sociaux                        -0.000041       0.1047
+   11     italienne                      -0.000040       0.0894
+   12     fresque                        -0.000039       0.1286
+   13     diverses                       -0.000038       0.0651
+   14     évacue                         -0.000037       0.1529
+   15     décembre                       -0.000031       0.0703
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mental                         +0.000053       0.0939
+   2      invasion                       +0.000048       0.0963
+   3      soulagée                       +0.000045       0.0767
+   4      hôtel                          +0.000030       0.0490
+   5      tueur                          +0.000029       0.0991
+   6      bombe                          +0.000027       0.0789
+   7      rappel                         +0.000027       0.0913
+   8      verrai                         +0.000026       0.0749
+   9      certitude                      +0.000026       0.1038
+   10     organisation                   +0.000020       0.0731
+   11     brûlure                        +0.000020       0.0900
+   12     cognac                         +0.000018       0.1025
+   13     passera                        +0.000017       0.0653
+   14     giorgio                        +0.000017       0.1979
+   15     surprend                       +0.000016       0.0847
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      milan                          -0.000183       0.3847
+   2      vivrai                         -0.000085       0.1242
+   3      militant                       -0.000083       0.1433
+   4      casernes                       -0.000081       0.1415
+   5      arrestations                   -0.000078       0.1392
+   6      conneries                      -0.000066       0.0954
+   7      séduire                        -0.000047       0.0735
+   8      agences                        -0.000045       0.1341
+   9      troubles                       -0.000042       0.0767
+   10     sociaux                        -0.000041       0.1047
+   11     italienne                      -0.000040       0.0894
+   12     fresque                        -0.000039       0.1286
+   13     diverses                       -0.000038       0.0651
+   14     évacue                         -0.000037       0.1529
+   15     décembre                       -0.000031       0.0703
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      milan                          +0.006668       0.3847
+   2      living                         +0.001621       0.1553
+   3      carabiniers                    +0.001391       0.1840
+   4      cloison                        +0.001301       0.0851
+   5      visiteur                       +0.001249       0.0764
+   6      invasion                       +0.001209       0.0963
+   7      commissaire                    +0.001149       0.0858
+   8      menace                         +0.001128       0.1595
+   9      agences                        +0.001106       0.1341
+   10     évacue                         +0.001061       0.1529
+   11     casernes                       +0.000964       0.1415
+   12     entré                          +0.000925       0.0525
+   13     bombe                          +0.000895       0.0789
+   14     bouteille                      +0.000843       0.1061
+   15     diverses                       +0.000749       0.0651
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      soulagée                       -0.002320       0.0767
+   2      efficace                       -0.001200       0.0661
+   3      gâchis                         -0.001179       0.1003
+   4      regardera                      -0.001173       0.1376
+   5      revient                        -0.001111       0.0988
+   6      humiliation                    -0.001050       0.0748
+   7      intacte                        -0.001021       0.0797
+   8      séduire                        -0.000989       0.0735
+   9      guerrière                      -0.000954       0.1095
+   10     tueur                          -0.000879       0.0991
+   11     éventé                         -0.000861       0.1492
+   12     posée                          -0.000805       0.0988
+   13     surprend                       -0.000800       0.0847
+   14     siennes                        -0.000597       0.0679
+   15     lève                           -0.000539       0.0539
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      milan                          +0.233454       0.3847
+   2      invasion                       +0.059275       0.0963
+   3      living                         +0.052181       0.1553
+   4      carabiniers                    +0.051308       0.1840
+   5      cloison                        +0.049948       0.0851
+   6      bouteille                      +0.045697       0.1061
+   7      visiteur                       +0.045173       0.0764
+   8      bombe                          +0.038884       0.0789
+   9      menace                         +0.037188       0.1595
+   10     commissaire                    +0.034417       0.0858
+   11     entré                          +0.034071       0.0525
+   12     diverses                       +0.032209       0.0651
+   13     tuant                          +0.031638       0.1102
+   14     militant                       +0.030302       0.1433
+   15     certitude                      +0.025998       0.1038
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      soulagée                       -0.089670       0.0767
+   2      humiliation                    -0.051760       0.0748
+   3      efficace                       -0.049435       0.0661
+   4      regardera                      -0.044751       0.1376
+   5      séduire                        -0.044630       0.0735
+   6      gâchis                         -0.043369       0.1003
+   7      tueur                          -0.041772       0.0991
+   8      guerrière                      -0.041539       0.1095
+   9      posée                          -0.037781       0.0988
+   10     intacte                        -0.037043       0.0797
+   11     revient                        -0.035501       0.0988
+   12     siennes                        -0.031779       0.0679
+   13     surprend                       -0.031470       0.0847
+   14     éventé                         -0.023237       0.1492
+   15     épargnée                       -0.021617       0.1139
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+mental                    +0.000000     +0.000053     +0.000053     0.0939
+invasion                  +0.001209     +0.000048     +0.000048     0.0963
+soulagée                  +0.000000     +0.000045     +0.000045     0.0767
+hôtel                     +0.000322     +0.000030     +0.000030     0.0490
+tueur                     +0.000000     +0.000029     +0.000029     0.0991
+bombe                     +0.000895     +0.000027     +0.000027     0.0789
+rappel                    +0.000521     +0.000027     +0.000027     0.0913
+verrai                    +0.000000     +0.000026     +0.000026     0.0749
+certitude                 +0.000576     +0.000026     +0.000026     0.1038
+organisation              +0.000225     +0.000020     +0.000020     0.0731
+brûlure                   +0.000000     +0.000020     +0.000020     0.0900
+cognac                    +0.000140     +0.000018     +0.000018     0.1025
+passera                   +0.000000     +0.000017     +0.000017     0.0653
+giorgio                   +0.000000     +0.000017     +0.000017     0.1979
+surprend                  +0.000000     +0.000016     +0.000016     0.0847
+dépêche                   +0.000238     +0.000014     +0.000014     0.0778
+posée                     +0.000000     +0.000014     +0.000014     0.0988
+regardera                 +0.000000     +0.000013     +0.000013     0.1376
+intacte                   +0.000000     +0.000013     +0.000013     0.0797
+disparition               +0.000193     +0.000012     +0.000012     0.0574
+logit final pour 'homme': 0.3758

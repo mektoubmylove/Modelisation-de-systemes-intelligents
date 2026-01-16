@@ -1,0 +1,5 @@
+filename: (SIGNOL)(Christian)(les menthes sauvages)(1)(1985)(1947)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 130
+first_name: christian
+last_name: signol
+true_label: homme

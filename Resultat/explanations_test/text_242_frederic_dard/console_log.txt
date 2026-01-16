@@ -1,0 +1,386 @@
+texte analysé: tiens bon . pinaud , ça va y être ! . . . de trépied dont le sommet est coupé d une petite barre transversale , celle qui permet de s atteler au rouleau à gazon . je m agenouille sur la planche et je ...
+prédiction: HOMME (confiance: 80.6%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.8090
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      damnation                      +0.000051       0.1212
+   2      roulement                      +0.000048       0.0783
+   3      instable                       +0.000048       0.0836
+   4      athlète                        +0.000043       0.0959
+   5      constituent                    +0.000040       0.0882
+   6      saut                           +0.000038       0.0643
+   7      please                         +0.000036       0.1223
+   8      blêmes                         +0.000036       0.0970
+   9      fouet                          +0.000033       0.0591
+   10     basculer                       +0.000032       0.0657
+   11     planche                        +0.000031       0.1883
+   12     touriste                       +0.000029       0.0876
+   13     photographique                 +0.000028       0.1053
+   14     transversale                   +0.000028       0.1184
+   15     eiffel                         +0.000024       0.0959
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pinaud                         -0.000156       0.4636
+   2      funambule                      -0.000110       0.1302
+   3      pinuche                        -0.000073       0.3230
+   4      verriez                        -0.000070       0.1136
+   5      agrippant                      -0.000052       0.1007
+   6      agenouille                     -0.000049       0.0998
+   7      attelage                       -0.000044       0.0942
+   8      universelle                    -0.000044       0.0778
+   9      dominer                        -0.000039       0.0665
+   10     dictateur                      -0.000038       0.1164
+   11     périlleux                      -0.000034       0.0851
+   12     pythagore                      -0.000032       0.1530
+   13     décontraction                  -0.000032       0.1229
+   14     pi                             -0.000032       0.1428
+   15     seriez                         -0.000030       0.0588
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      damnation                      +0.000051       0.1212
+   2      roulement                      +0.000048       0.0783
+   3      instable                       +0.000048       0.0836
+   4      athlète                        +0.000043       0.0959
+   5      constituent                    +0.000040       0.0882
+   6      saut                           +0.000038       0.0643
+   7      please                         +0.000036       0.1223
+   8      blêmes                         +0.000036       0.0970
+   9      fouet                          +0.000033       0.0591
+   10     basculer                       +0.000032       0.0657
+   11     planche                        +0.000031       0.1883
+   12     touriste                       +0.000029       0.0876
+   13     photographique                 +0.000028       0.1053
+   14     transversale                   +0.000028       0.1184
+   15     eiffel                         +0.000024       0.0959
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pinaud                         -0.000156       0.4636
+   2      funambule                      -0.000110       0.1302
+   3      pinuche                        -0.000073       0.3230
+   4      verriez                        -0.000070       0.1136
+   5      agrippant                      -0.000052       0.1007
+   6      agenouille                     -0.000049       0.0998
+   7      attelage                       -0.000044       0.0942
+   8      universelle                    -0.000044       0.0778
+   9      dominer                        -0.000039       0.0665
+   10     dictateur                      -0.000038       0.1164
+   11     périlleux                      -0.000034       0.0851
+   12     pythagore                      -0.000032       0.1530
+   13     décontraction                  -0.000032       0.1229
+   14     pi                             -0.000032       0.1428
+   15     seriez                         -0.000030       0.0588
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      concentre                      +0.000899       0.0832
+   2      trépied                        +0.000823       0.1159
+   3      frisquet                       +0.000803       0.1288
+   4      agrippant                      +0.000665       0.1007
+   5      caramel                        +0.000662       0.0922
+   6      remarquable                    +0.000653       0.0598
+   7      assemblage                     +0.000622       0.0939
+   8      oublie                         +0.000552       0.0395
+   9      ressembler                     +0.000438       0.0533
+   10     lecture                        +0.000417       0.0424
+   11     étages                         +0.000403       0.0486
+   12     reposer                        +0.000355       0.0440
+   13     attelage                       +0.000344       0.0942
+   14     atteler                        +0.000286       0.0990
+   15     étroite                        +0.000273       0.0480
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pinaud                         -0.002232       0.4636
+   2      blêmes                         -0.001505       0.0970
+   3      planche                        -0.001425       0.1883
+   4      déboucher                      -0.001424       0.0820
+   5      pinuche                        -0.001295       0.3230
+   6      universelle                    -0.001234       0.0778
+   7      césar                          -0.000867       0.0889
+   8      sommet                         -0.000829       0.0469
+   9      chapitre                       -0.000819       0.0536
+   10     transversale                   -0.000794       0.1184
+   11     flexible                       -0.000792       0.1064
+   12     constituent                    -0.000769       0.0882
+   13     apprêtant                      -0.000748       0.1169
+   14     démenti                        -0.000737       0.0976
+   15     iv                             -0.000723       0.0616
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      frisquet                       +0.043180       0.1288
+   2      concentre                      +0.040692       0.0832
+   3      caramel                        +0.040102       0.0922
+   4      assemblage                     +0.034122       0.0939
+   5      trépied                        +0.031947       0.1159
+   6      agrippant                      +0.031131       0.1007
+   7      remarquable                    +0.028225       0.0598
+   8      oublie                         +0.024575       0.0395
+   9      attelage                       +0.024491       0.0942
+   10     reposer                        +0.021745       0.0440
+   11     ressembler                     +0.021261       0.0533
+   12     étalée                         +0.017510       0.0887
+   13     eiffel                         +0.016755       0.0959
+   14     étages                         +0.016475       0.0486
+   15     lecture                        +0.014291       0.0424
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pinaud                         -0.126629       0.4636
+   2      planche                        -0.073327       0.1883
+   3      blêmes                         -0.066904       0.0970
+   4      déboucher                      -0.061413       0.0820
+   5      pinuche                        -0.050956       0.3230
+   6      universelle                    -0.044966       0.0778
+   7      transversale                   -0.043065       0.1184
+   8      césar                          -0.040404       0.0889
+   9      flexible                       -0.039776       0.1064
+   10     hypothèses                     -0.037273       0.0720
+   11     sommet                         -0.037209       0.0469
+   12     chapitre                       -0.035555       0.0536
+   13     athlète                        -0.033005       0.0959
+   14     saut                           -0.031428       0.0643
+   15     caisse                         -0.030055       0.0494
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+damnation                 +0.000150     +0.000051     +0.000051     0.1212
+roulement                 +0.000000     +0.000048     +0.000048     0.0783
+instable                  +0.000000     +0.000048     +0.000048     0.0836
+athlète                   +0.000000     +0.000043     +0.000043     0.0959
+constituent               +0.000000     +0.000040     +0.000040     0.0882
+saut                      +0.000000     +0.000038     +0.000038     0.0643
+please                    +0.000000     +0.000036     +0.000036     0.1223
+blêmes                    +0.000000     +0.000036     +0.000036     0.0970
+fouet                     +0.000000     +0.000033     +0.000033     0.0591
+basculer                  +0.000025     +0.000032     +0.000032     0.0657
+planche                   +0.000000     +0.000031     +0.000031     0.1883
+touriste                  +0.000000     +0.000029     +0.000029     0.0876
+photographique            +0.000000     +0.000028     +0.000028     0.1053
+transversale              +0.000000     +0.000028     +0.000028     0.1184
+eiffel                    +0.000231     +0.000024     +0.000024     0.0959
+déguster                  +0.000183     +0.000021     +0.000021     0.0820
+assemblage                +0.000622     +0.000019     +0.000019     0.0939
+chapitre                  +0.000000     +0.000019     +0.000019     0.0536
+mouche                    +0.000000     +0.000017     +0.000017     0.0553
+lâcher                    +0.000000     +0.000017     +0.000017     0.0908
+logit final pour 'femme': -0.8090
+# analyse pour la classe: HOMME  prédite
+# logit: 0.6179
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      roulement                      +0.000045       0.0783
+   2      planche                        +0.000033       0.1883
+   3      transversale                   +0.000032       0.1184
+   4      meurtrissures                  +0.000026       0.1195
+   5      mouche                         +0.000026       0.0553
+   6      saut                           +0.000024       0.0643
+   7      athlète                        +0.000021       0.0959
+   8      instable                       +0.000021       0.0836
+   9      fouet                          +0.000020       0.0591
+   10     atteler                        +0.000019       0.0990
+   11     mouches                        +0.000017       0.0588
+   12     apprêtant                      +0.000017       0.1169
+   13     lâcher                         +0.000016       0.0908
+   14     général                        +0.000016       0.0392
+   15     please                         +0.000015       0.1223
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pinaud                         -0.000155       0.4636
+   2      funambule                      -0.000090       0.1302
+   3      pinuche                        -0.000088       0.3230
+   4      universelle                    -0.000059       0.0778
+   5      verriez                        -0.000041       0.1136
+   6      précaire                       -0.000033       0.0777
+   7      remarquable                    -0.000030       0.0598
+   8      agrippant                      -0.000028       0.1007
+   9      démenti                        -0.000027       0.0976
+   10     périlleux                      -0.000027       0.0851
+   11     dominer                        -0.000026       0.0665
+   12     tambour                        -0.000026       0.0697
+   13     rétablissement                 -0.000025       0.0978
+   14     trépied                        -0.000024       0.1159
+   15     joins                          -0.000024       0.1223
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      roulement                      +0.000045       0.0783
+   2      planche                        +0.000033       0.1883
+   3      transversale                   +0.000032       0.1184
+   4      meurtrissures                  +0.000026       0.1195
+   5      mouche                         +0.000026       0.0553
+   6      saut                           +0.000024       0.0643
+   7      athlète                        +0.000021       0.0959
+   8      instable                       +0.000021       0.0836
+   9      fouet                          +0.000020       0.0591
+   10     atteler                        +0.000019       0.0990
+   11     mouches                        +0.000017       0.0588
+   12     apprêtant                      +0.000017       0.1169
+   13     lâcher                         +0.000016       0.0908
+   14     général                        +0.000016       0.0392
+   15     please                         +0.000015       0.1223
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pinaud                         -0.000155       0.4636
+   2      funambule                      -0.000090       0.1302
+   3      pinuche                        -0.000088       0.3230
+   4      universelle                    -0.000059       0.0778
+   5      verriez                        -0.000041       0.1136
+   6      précaire                       -0.000033       0.0777
+   7      remarquable                    -0.000030       0.0598
+   8      agrippant                      -0.000028       0.1007
+   9      démenti                        -0.000027       0.0976
+   10     périlleux                      -0.000027       0.0851
+   11     dominer                        -0.000026       0.0665
+   12     tambour                        -0.000026       0.0697
+   13     rétablissement                 -0.000025       0.0978
+   14     trépied                        -0.000024       0.1159
+   15     joins                          -0.000024       0.1223
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pinuche                        +0.001629       0.3230
+   2      pinaud                         +0.001580       0.4636
+   3      déboucher                      +0.001214       0.0820
+   4      blêmes                         +0.001157       0.0970
+   5      universelle                    +0.001017       0.0778
+   6      planche                        +0.001016       0.1883
+   7      agenouille                     +0.000815       0.0998
+   8      démenti                        +0.000804       0.0976
+   9      faîte                          +0.000733       0.0893
+   10     césar                          +0.000707       0.0889
+   11     constituent                    +0.000683       0.0882
+   12     transversale                   +0.000682       0.1184
+   13     flexible                       +0.000662       0.1064
+   14     chapitre                       +0.000659       0.0536
+   15     iv                             +0.000649       0.0616
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      concentre                      -0.000897       0.0832
+   2      trépied                        -0.000776       0.1159
+   3      frisquet                       -0.000755       0.1288
+   4      caramel                        -0.000629       0.0922
+   5      remarquable                    -0.000607       0.0598
+   6      oublie                         -0.000506       0.0395
+   7      agrippant                      -0.000497       0.1007
+   8      assemblage                     -0.000350       0.0939
+   9      étages                         -0.000329       0.0486
+   10     lève                           -0.000328       0.0440
+   11     lecture                        -0.000293       0.0424
+   12     reposer                        -0.000279       0.0440
+   13     logique                        -0.000275       0.0466
+   14     étroite                        -0.000260       0.0480
+   15     ressembler                     -0.000242       0.0533
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pinaud                         +0.089265       0.4636
+   2      déboucher                      +0.053666       0.0820
+   3      pinuche                        +0.052698       0.3230
+   4      planche                        +0.052092       0.1883
+   5      blêmes                         +0.051841       0.0970
+   6      universelle                    +0.035880       0.0778
+   7      agenouille                     +0.035398       0.0998
+   8      flexible                       +0.032471       0.1064
+   9      transversale                   +0.032380       0.1184
+   10     césar                          +0.032128       0.0889
+   11     démenti                        +0.030338       0.0976
+   12     pi                             +0.030098       0.1428
+   13     hypothèses                     +0.029879       0.0720
+   14     saut                           +0.029321       0.0643
+   15     sommet                         +0.027910       0.0469
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      trépied                        -0.042250       0.1159
+   2      concentre                      -0.041184       0.0832
+   3      frisquet                       -0.038675       0.1288
+   4      caramel                        -0.035701       0.0922
+   5      remarquable                    -0.028457       0.0598
+   6      oublie                         -0.024558       0.0395
+   7      agrippant                      -0.023912       0.1007
+   8      assemblage                     -0.017458       0.0939
+   9      funambule                      -0.016835       0.1302
+   10     reposer                        -0.015912       0.0440
+   11     décontraction                  -0.014080       0.1229
+   12     damnation                      -0.013393       0.1212
+   13     lève                           -0.013270       0.0440
+   14     attelage                       -0.013020       0.0942
+   15     logique                        -0.012534       0.0466
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+roulement                 +0.000373     +0.000045     +0.000045     0.0783
+planche                   +0.001016     +0.000033     +0.000033     0.1883
+transversale              +0.000682     +0.000032     +0.000032     0.1184
+meurtrissures             +0.000149     +0.000026     +0.000026     0.1195
+mouche                    +0.000545     +0.000026     +0.000026     0.0553
+saut                      +0.000579     +0.000024     +0.000024     0.0643
+athlète                   +0.000487     +0.000021     +0.000021     0.0959
+instable                  +0.000016     +0.000021     +0.000021     0.0836
+fouet                     +0.000135     +0.000020     +0.000020     0.0591
+atteler                   +0.000000     +0.000019     +0.000019     0.0990
+mouches                   +0.000497     +0.000017     +0.000017     0.0588
+apprêtant                 +0.000429     +0.000017     +0.000017     0.1169
+lâcher                    +0.000000     +0.000016     +0.000016     0.0908
+général                   +0.000141     +0.000016     +0.000016     0.0392
+please                    +0.000359     +0.000015     +0.000015     0.1223
+drôles                    +0.000000     +0.000015     +0.000015     0.0641
+pi                        +0.000608     +0.000015     +0.000015     0.1428
+photographique            +0.000046     +0.000015     +0.000015     0.1053
+déguster                  +0.000000     +0.000015     +0.000015     0.0820
+barre                     +0.000604     +0.000014     +0.000014     0.0521
+logit final pour 'homme': 0.6179

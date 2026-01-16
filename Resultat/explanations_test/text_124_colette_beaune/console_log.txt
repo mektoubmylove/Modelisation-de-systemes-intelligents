@@ -1,0 +1,386 @@
+texte analysé: vertu ou leur maison et , par extension , leurs châteaux ou fiefs étaient attaquées . désormais , la guerre offensive se livrait entre des groupes de combattants professionnels soldés qui s affrontaie...
+prédiction: FEMME (confiance: 68.4%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.4892
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jeanne                         +0.000519       0.3775
+   2      fiefs                          +0.000158       0.2814
+   3      xive                           +0.000091       0.1246
+   4      offensive                      +0.000090       0.0815
+   5      montfort                       +0.000087       0.1422
+   6      exclusion                      +0.000077       0.0959
+   7      précepteur                     +0.000069       0.1047
+   8      absents                        +0.000069       0.0714
+   9      revendication                  +0.000067       0.1125
+   10     philippe                       +0.000066       0.0672
+   11     conclusion                     +0.000061       0.0507
+   12     flandre                        +0.000061       0.1291
+   13     anjou                          +0.000058       0.1119
+   14     surprit                        +0.000054       0.0567
+   15     affrontaient                   +0.000038       0.1011
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      historien                      -0.000190       0.1797
+   2      masculin                       -0.000145       0.0717
+   3      textes                         -0.000116       0.1354
+   4      désormais                      -0.000081       0.0717
+   5      anglais                        -0.000076       0.0809
+   6      marie                          -0.000076       0.0842
+   7      gilles                         -0.000075       0.0979
+   8      défensive                      -0.000072       0.1484
+   9      autonomie                      -0.000068       0.0912
+   10     claude                         -0.000065       0.1415
+   11     soigner                        -0.000061       0.0435
+   12     utilise                        -0.000060       0.0637
+   13     étendard                       -0.000058       0.1893
+   14     rome                           -0.000058       0.0632
+   15     exception                      -0.000057       0.0448
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jeanne                         +0.000519       0.3775
+   2      fiefs                          +0.000158       0.2814
+   3      xive                           +0.000091       0.1246
+   4      offensive                      +0.000090       0.0815
+   5      montfort                       +0.000087       0.1422
+   6      exclusion                      +0.000077       0.0959
+   7      précepteur                     +0.000069       0.1047
+   8      absents                        +0.000069       0.0714
+   9      revendication                  +0.000067       0.1125
+   10     philippe                       +0.000066       0.0672
+   11     conclusion                     +0.000061       0.0507
+   12     flandre                        +0.000061       0.1291
+   13     anjou                          +0.000058       0.1119
+   14     surprit                        +0.000054       0.0567
+   15     affrontaient                   +0.000038       0.1011
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      historien                      -0.000190       0.1797
+   2      masculin                       -0.000145       0.0717
+   3      textes                         -0.000116       0.1354
+   4      désormais                      -0.000081       0.0717
+   5      anglais                        -0.000076       0.0809
+   6      marie                          -0.000076       0.0842
+   7      gilles                         -0.000075       0.0979
+   8      défensive                      -0.000072       0.1484
+   9      autonomie                      -0.000068       0.0912
+   10     claude                         -0.000065       0.1415
+   11     soigner                        -0.000061       0.0435
+   12     utilise                        -0.000060       0.0637
+   13     étendard                       -0.000058       0.1893
+   14     rome                           -0.000058       0.0632
+   15     exception                      -0.000057       0.0448
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pernelle                       +0.002289       0.1837
+   2      étendard                       +0.002184       0.1893
+   3      participent                    +0.001984       0.1039
+   4      symbolise                      +0.001949       0.1114
+   5      gilles                         +0.001923       0.0979
+   6      légistes                       +0.001822       0.1230
+   7      marie                          +0.001701       0.0842
+   8      masculin                       +0.001678       0.0717
+   9      appelés                        +0.001423       0.0691
+   10     gérer                          +0.001273       0.0752
+   11     exception                      +0.001076       0.0448
+   12     féminine                       +0.000996       0.0513
+   13     jolie                          +0.000971       0.0348
+   14     voulue                         +0.000852       0.0742
+   15     défensive                      +0.000835       0.1484
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jeanne                         -0.006420       0.3775
+   2      bourguignons                   -0.002058       0.1407
+   3      xive                           -0.001770       0.1246
+   4      alléguant                      -0.001663       0.1207
+   5      molle                          -0.001311       0.0532
+   6      anglais                        -0.001261       0.0809
+   7      iv                             -0.001241       0.0561
+   8      complexion                     -0.001167       0.1291
+   9      montfort                       -0.001151       0.1422
+   10     livrait                        -0.001086       0.0625
+   11     invention                      -0.001049       0.0607
+   12     affrontaient                   -0.001036       0.1011
+   13     durent                         -0.001034       0.0582
+   14     exploits                       -0.001009       0.0651
+   15     opinion                        -0.001005       0.0455
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pernelle                       +0.115049       0.1837
+   2      gilles                         +0.105149       0.0979
+   3      marie                          +0.099711       0.0842
+   4      symbolise                      +0.092956       0.1114
+   5      participent                    +0.089532       0.1039
+   6      étendard                       +0.088338       0.1893
+   7      masculin                       +0.081633       0.0717
+   8      légistes                       +0.076438       0.1230
+   9      appelés                        +0.072673       0.0691
+   10     défensive                      +0.057479       0.1484
+   11     claude                         +0.055593       0.1415
+   12     exception                      +0.054246       0.0448
+   13     gérer                          +0.053660       0.0752
+   14     jolie                          +0.047055       0.0348
+   15     féminine                       +0.045857       0.0513
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jeanne                         -0.307518       0.3775
+   2      bourguignons                   -0.094829       0.1407
+   3      alléguant                      -0.087554       0.1207
+   4      xive                           -0.075926       0.1246
+   5      montfort                       -0.074832       0.1422
+   6      anglais                        -0.068177       0.0809
+   7      molle                          -0.065036       0.0532
+   8      complexion                     -0.059225       0.1291
+   9      exploits                       -0.057402       0.0651
+   10     iv                             -0.054748       0.0561
+   11     livrait                        -0.051868       0.0625
+   12     durent                         -0.050688       0.0582
+   13     commandements                  -0.048628       0.0929
+   14     invention                      -0.048606       0.0607
+   15     opinion                        -0.047979       0.0455
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+jeanne                    +0.000000     +0.000519     +0.000519     0.3775
+fiefs                     +0.000000     +0.000158     +0.000158     0.2814
+xive                      +0.000000     +0.000091     +0.000091     0.1246
+offensive                 +0.000000     +0.000090     +0.000090     0.0815
+montfort                  +0.000000     +0.000087     +0.000087     0.1422
+exclusion                 +0.000000     +0.000077     +0.000077     0.0959
+précepteur                +0.000124     +0.000069     +0.000069     0.1047
+absents                   +0.000509     +0.000069     +0.000069     0.0714
+revendication             +0.000000     +0.000067     +0.000067     0.1125
+philippe                  +0.000547     +0.000066     +0.000066     0.0672
+conclusion                +0.000087     +0.000061     +0.000061     0.0507
+flandre                   +0.000441     +0.000061     +0.000061     0.1291
+anjou                     +0.000000     +0.000058     +0.000058     0.1119
+surprit                   +0.000000     +0.000054     +0.000054     0.0567
+affrontaient              +0.000000     +0.000038     +0.000038     0.1011
+dame                      +0.000106     +0.000038     +0.000038     0.0698
+exploits                  +0.000000     +0.000036     +0.000036     0.0651
+alléguant                 +0.000000     +0.000036     +0.000036     0.1207
+xve                       +0.000000     +0.000035     +0.000035     0.1093
+pernelle                  +0.002289     +0.000031     +0.000031     0.1837
+logit final pour 'femme': 0.4892
+# analyse pour la classe: HOMME
+# logit: -0.2845
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jeanne                         +0.000157       0.3775
+   2      fiefs                          +0.000141       0.2814
+   3      revendication                  +0.000040       0.1125
+   4      précepteur                     +0.000038       0.1047
+   5      alléguant                      +0.000030       0.1207
+   6      conclusion                     +0.000027       0.0507
+   7      philippe                       +0.000022       0.0672
+   8      xive                           +0.000022       0.1246
+   9      absents                        +0.000019       0.0714
+   10     xve                            +0.000019       0.1093
+   11     offensive                      +0.000019       0.0815
+   12     anjou                          +0.000018       0.1119
+   13     surprit                        +0.000016       0.0567
+   14     montfort                       +0.000016       0.1422
+   15     modèle                         +0.000010       0.0425
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      textes                         -0.000072       0.1354
+   2      historien                      -0.000067       0.1797
+   3      masculin                       -0.000054       0.0717
+   4      défensive                      -0.000039       0.1484
+   5      pucelle                        -0.000038       0.1047
+   6      anglais                        -0.000038       0.0809
+   7      flandre                        -0.000036       0.1291
+   8      justifie                       -0.000036       0.0825
+   9      légistes                       -0.000035       0.1230
+   10     gilles                         -0.000033       0.0979
+   11     autonomie                      -0.000031       0.0912
+   12     désormais                      -0.000030       0.0717
+   13     commandements                  -0.000029       0.0929
+   14     claude                         -0.000028       0.1415
+   15     complexion                     -0.000024       0.1291
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jeanne                         +0.000157       0.3775
+   2      fiefs                          +0.000141       0.2814
+   3      revendication                  +0.000040       0.1125
+   4      précepteur                     +0.000038       0.1047
+   5      alléguant                      +0.000030       0.1207
+   6      conclusion                     +0.000027       0.0507
+   7      philippe                       +0.000022       0.0672
+   8      xive                           +0.000022       0.1246
+   9      absents                        +0.000019       0.0714
+   10     xve                            +0.000019       0.1093
+   11     offensive                      +0.000019       0.0815
+   12     anjou                          +0.000018       0.1119
+   13     surprit                        +0.000016       0.0567
+   14     montfort                       +0.000016       0.1422
+   15     modèle                         +0.000010       0.0425
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      textes                         -0.000072       0.1354
+   2      historien                      -0.000067       0.1797
+   3      masculin                       -0.000054       0.0717
+   4      défensive                      -0.000039       0.1484
+   5      pucelle                        -0.000038       0.1047
+   6      anglais                        -0.000038       0.0809
+   7      flandre                        -0.000036       0.1291
+   8      justifie                       -0.000036       0.0825
+   9      légistes                       -0.000035       0.1230
+   10     gilles                         -0.000033       0.0979
+   11     autonomie                      -0.000031       0.0912
+   12     désormais                      -0.000030       0.0717
+   13     commandements                  -0.000029       0.0929
+   14     claude                         -0.000028       0.1415
+   15     complexion                     -0.000024       0.1291
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jeanne                         +0.003199       0.3775
+   2      bourguignons                   +0.000921       0.1407
+   3      alléguant                      +0.000845       0.1207
+   4      xive                           +0.000810       0.1246
+   5      molle                          +0.000645       0.0532
+   6      invention                      +0.000633       0.0607
+   7      complexion                     +0.000606       0.1291
+   8      exploits                       +0.000593       0.0651
+   9      anglais                        +0.000592       0.0809
+   10     iv                             +0.000579       0.0561
+   11     opinion                        +0.000534       0.0455
+   12     furent                         +0.000531       0.0379
+   13     livrait                        +0.000527       0.0625
+   14     affrontaient                   +0.000515       0.1011
+   15     commandements                  +0.000484       0.0929
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      étendard                       -0.001413       0.1893
+   2      symbolise                      -0.001185       0.1114
+   3      pernelle                       -0.001145       0.1837
+   4      participent                    -0.001062       0.1039
+   5      marie                          -0.000952       0.0842
+   6      gilles                         -0.000875       0.0979
+   7      masculin                       -0.000809       0.0717
+   8      légistes                       -0.000800       0.1230
+   9      gérer                          -0.000684       0.0752
+   10     appelés                        -0.000650       0.0691
+   11     claude                         -0.000573       0.1415
+   12     exception                      -0.000542       0.0448
+   13     féminine                       -0.000455       0.0513
+   14     jolie                          -0.000430       0.0348
+   15     voulue                         -0.000411       0.0742
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jeanne                         +0.142102       0.3775
+   2      alléguant                      +0.049877       0.1207
+   3      xive                           +0.047381       0.1246
+   4      montfort                       +0.038772       0.1422
+   5      bourguignons                   +0.037931       0.1407
+   6      molle                          +0.033040       0.0532
+   7      exploits                       +0.032851       0.0651
+   8      anglais                        +0.031068       0.0809
+   9      complexion                     +0.030479       0.1291
+   10     iv                             +0.028885       0.0561
+   11     opinion                        +0.028678       0.0455
+   12     invention                      +0.027857       0.0607
+   13     furent                         +0.027448       0.0379
+   14     commandements                  +0.026257       0.0929
+   15     livrait                        +0.022314       0.0625
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      étendard                       -0.059374       0.1893
+   2      symbolise                      -0.056021       0.1114
+   3      pernelle                       -0.052422       0.1837
+   4      marie                          -0.052169       0.0842
+   5      gilles                         -0.046315       0.0979
+   6      participent                    -0.043754       0.1039
+   7      claude                         -0.038436       0.1415
+   8      masculin                       -0.037486       0.0717
+   9      appelés                        -0.033627       0.0691
+   10     légistes                       -0.032131       0.1230
+   11     gérer                          -0.030565       0.0752
+   12     exception                      -0.024651       0.0448
+   13     défensive                      -0.022135       0.1484
+   14     féminine                       -0.021798       0.0513
+   15     étendre                        -0.020226       0.0509
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+jeanne                    +0.003199     +0.000157     +0.000157     0.3775
+fiefs                     +0.000128     +0.000141     +0.000141     0.2814
+revendication             +0.000000     +0.000040     +0.000040     0.1125
+précepteur                +0.000000     +0.000038     +0.000038     0.1047
+alléguant                 +0.000845     +0.000030     +0.000030     0.1207
+conclusion                +0.000000     +0.000027     +0.000027     0.0507
+philippe                  +0.000000     +0.000022     +0.000022     0.0672
+xive                      +0.000810     +0.000022     +0.000022     0.1246
+absents                   +0.000000     +0.000019     +0.000019     0.0714
+xve                       +0.000207     +0.000019     +0.000019     0.1093
+offensive                 +0.000016     +0.000019     +0.000019     0.0815
+anjou                     +0.000273     +0.000018     +0.000018     0.1119
+surprit                   +0.000123     +0.000016     +0.000016     0.0567
+montfort                  +0.000477     +0.000016     +0.000016     0.1422
+modèle                    +0.000000     +0.000010     +0.000010     0.0425
+bouillante                +0.000294     +0.000010     +0.000010     0.0773
+aventure                  +0.000397     +0.000009     +0.000009     0.0376
+charles                   +0.000216     +0.000008     +0.000008     0.0550
+dame                      +0.000014     +0.000007     +0.000007     0.0698
+totalité                  +0.000000     +0.000007     +0.000007     0.0663
+logit final pour 'homme': -0.2845

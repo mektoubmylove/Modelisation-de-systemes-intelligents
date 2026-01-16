@@ -1,0 +1,386 @@
+texte analysé: coudes , ses mains sont sagement croisées dans son giron , un voile aérien l enveloppe , comme un écrin pour la splendeur de son visage enfantin , les larges yeux aux prunelles claires , la bouche dou...
+prédiction: FEMME (confiance: 96.4%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.9450
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      singularité                    +0.000105       0.0838
+   2      représentations                +0.000032       0.0715
+   3      giron                          +0.000030       0.0761
+   4      trajectoire                    +0.000028       0.0652
+   5      épingle                        +0.000028       0.0579
+   6      camaraderie                    +0.000028       0.0724
+   7      aisance                        +0.000026       0.0459
+   8      gracieusement                  +0.000025       0.0649
+   9      déploie                        +0.000025       0.0703
+   10     aérien                         +0.000022       0.0700
+   11     naissante                      +0.000020       0.0645
+   12     division                       +0.000020       0.0683
+   13     rendue                         +0.000016       0.0415
+   14     uni                            +0.000016       0.0621
+   15     biche                          +0.000015       0.0663
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chignon                        -0.000140       0.1005
+   2      désolée                        -0.000081       0.0429
+   3      tante                          -0.000072       0.0859
+   4      arrondi                        -0.000066       0.0683
+   5      soyeux                         -0.000064       0.0597
+   6      entourée                       -0.000059       0.0414
+   7      partage                        -0.000057       0.0416
+   8      splendeur                      -0.000043       0.0515
+   9      transparent                    -0.000042       0.0539
+   10     sara                           -0.000042       0.7883
+   11     hanches                        -0.000036       0.0407
+   12     prunelles                      -0.000035       0.0556
+   13     sobre                          -0.000034       0.0571
+   14     observe                        -0.000034       0.0478
+   15     conséquences                   -0.000033       0.0419
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      singularité                    +0.000105       0.0838
+   2      représentations                +0.000032       0.0715
+   3      giron                          +0.000030       0.0761
+   4      trajectoire                    +0.000028       0.0652
+   5      épingle                        +0.000028       0.0579
+   6      camaraderie                    +0.000028       0.0724
+   7      aisance                        +0.000026       0.0459
+   8      gracieusement                  +0.000025       0.0649
+   9      déploie                        +0.000025       0.0703
+   10     aérien                         +0.000022       0.0700
+   11     naissante                      +0.000020       0.0645
+   12     division                       +0.000020       0.0683
+   13     rendue                         +0.000016       0.0415
+   14     uni                            +0.000016       0.0621
+   15     biche                          +0.000015       0.0663
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chignon                        -0.000140       0.1005
+   2      désolée                        -0.000081       0.0429
+   3      tante                          -0.000072       0.0859
+   4      arrondi                        -0.000066       0.0683
+   5      soyeux                         -0.000064       0.0597
+   6      entourée                       -0.000059       0.0414
+   7      partage                        -0.000057       0.0416
+   8      splendeur                      -0.000043       0.0515
+   9      transparent                    -0.000042       0.0539
+   10     sara                           -0.000042       0.7883
+   11     hanches                        -0.000036       0.0407
+   12     prunelles                      -0.000035       0.0556
+   13     sobre                          -0.000034       0.0571
+   14     observe                        -0.000034       0.0478
+   15     conséquences                   -0.000033       0.0419
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sara                           +0.009081       0.7883
+   2      chignon                        +0.002644       0.1005
+   3      tante                          +0.001310       0.0859
+   4      enveloppée                     +0.001222       0.0524
+   5      désolée                        +0.001196       0.0429
+   6      rendue                         +0.001011       0.0415
+   7      soyeux                         +0.000998       0.0597
+   8      mariée                         +0.000986       0.0392
+   9      partage                        +0.000977       0.0416
+   10     critères                       +0.000864       0.0761
+   11     inscrites                      +0.000821       0.0874
+   12     détachée                       +0.000805       0.0597
+   13     fines                          +0.000793       0.0403
+   14     imprévisible                   +0.000720       0.0610
+   15     entourée                       +0.000712       0.0414
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      division                       -0.001520       0.0683
+   2      épingle                        -0.000917       0.0579
+   3      banquettes                     -0.000867       0.0715
+   4      singularité                    -0.000690       0.0838
+   5      invention                      -0.000614       0.0529
+   6      aérien                         -0.000609       0.0700
+   7      sourde                         -0.000499       0.0370
+   8      soixante                       -0.000469       0.0333
+   9      possibles                      -0.000456       0.0882
+   10     remontés                       -0.000439       0.0755
+   11     apparaît                       -0.000401       0.0435
+   12     traversé                       -0.000399       0.0359
+   13     gracieusement                  -0.000386       0.0649
+   14     opulent                        -0.000382       0.1016
+   15     distinguer                     -0.000378       0.0389
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sara                           +0.300915       0.7883
+   2      chignon                        +0.070229       0.1005
+   3      tante                          +0.042177       0.0859
+   4      rendue                         +0.040127       0.0415
+   5      enveloppée                     +0.035532       0.0524
+   6      inscrites                      +0.031483       0.0874
+   7      mariée                         +0.028992       0.0392
+   8      désolée                        +0.028728       0.0429
+   9      éclatant                       +0.028699       0.0484
+   10     imprévisible                   +0.028295       0.0610
+   11     détachée                       +0.027690       0.0597
+   12     critères                       +0.026154       0.0761
+   13     déploie                        +0.025781       0.0703
+   14     fines                          +0.024499       0.0403
+   15     immaculée                      +0.023678       0.0715
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      division                       -0.051163       0.0683
+   2      banquettes                     -0.032521       0.0715
+   3      épingle                        -0.031373       0.0579
+   4      invention                      -0.021107       0.0529
+   5      possibles                      -0.020633       0.0882
+   6      remontés                       -0.018178       0.0755
+   7      opulent                        -0.016835       0.1016
+   8      quarante                       -0.016727       0.0304
+   9      sourde                         -0.016663       0.0370
+   10     harmonieusement                -0.016616       0.0961
+   11     apparaît                       -0.016091       0.0435
+   12     soixante                       -0.015305       0.0333
+   13     aérien                         -0.014414       0.0700
+   14     uni                            -0.013988       0.0621
+   15     traversé                       -0.013866       0.0359
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+singularité               +0.000000     +0.000105     +0.000105     0.0838
+représentations           +0.000000     +0.000032     +0.000032     0.0715
+giron                     +0.000175     +0.000030     +0.000030     0.0761
+trajectoire               +0.000000     +0.000028     +0.000028     0.0652
+épingle                   +0.000000     +0.000028     +0.000028     0.0579
+camaraderie               +0.000000     +0.000028     +0.000028     0.0724
+aisance                   +0.000097     +0.000026     +0.000026     0.0459
+gracieusement             +0.000000     +0.000025     +0.000025     0.0649
+déploie                   +0.000460     +0.000025     +0.000025     0.0703
+aérien                    +0.000000     +0.000022     +0.000022     0.0700
+naissante                 +0.000114     +0.000020     +0.000020     0.0645
+division                  +0.000000     +0.000020     +0.000020     0.0683
+rendue                    +0.001011     +0.000016     +0.000016     0.0415
+uni                       +0.000000     +0.000016     +0.000016     0.0621
+biche                     +0.000000     +0.000015     +0.000015     0.0663
+ouverts                   +0.000252     +0.000014     +0.000014     0.0336
+auparavant                +0.000228     +0.000014     +0.000014     0.0331
+éclatant                  +0.000687     +0.000014     +0.000014     0.0484
+rêveries                  +0.000000     +0.000014     +0.000014     0.0648
+écrin                     +0.000000     +0.000013     +0.000013     0.0690
+logit final pour 'femme': 1.9450
+# analyse pour la classe: HOMME
+# logit: -1.3532
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      singularité                    +0.000057       0.0838
+   2      aérien                         +0.000023       0.0700
+   3      déploie                        +0.000022       0.0703
+   4      immaculée                      +0.000021       0.0715
+   5      division                       +0.000020       0.0683
+   6      soulignés                      +0.000020       0.0936
+   7      essaim                         +0.000019       0.0737
+   8      opulent                        +0.000017       0.1016
+   9      imprévisible                   +0.000017       0.0610
+   10     éclatant                       +0.000015       0.0484
+   11     biche                          +0.000014       0.0663
+   12     épingle                        +0.000013       0.0579
+   13     représentations                +0.000013       0.0715
+   14     animés                         +0.000012       0.0686
+   15     paternels                      +0.000011       0.0924
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sara                           -0.000111       0.7883
+   2      chignon                        -0.000068       0.1005
+   3      désolée                        -0.000048       0.0429
+   4      partage                        -0.000041       0.0416
+   5      entourée                       -0.000035       0.0414
+   6      sereinement                    -0.000031       0.0847
+   7      harmonieusement                -0.000027       0.0961
+   8      arrondi                        -0.000026       0.0683
+   9      soyeux                         -0.000022       0.0597
+   10     vies                           -0.000021       0.0428
+   11     traditionnelle                 -0.000020       0.0669
+   12     tante                          -0.000019       0.0859
+   13     possibles                      -0.000019       0.0882
+   14     inscrite                       -0.000019       0.0606
+   15     hanches                        -0.000019       0.0407
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      singularité                    +0.000057       0.0838
+   2      aérien                         +0.000023       0.0700
+   3      déploie                        +0.000022       0.0703
+   4      immaculée                      +0.000021       0.0715
+   5      division                       +0.000020       0.0683
+   6      soulignés                      +0.000020       0.0936
+   7      essaim                         +0.000019       0.0737
+   8      opulent                        +0.000017       0.1016
+   9      imprévisible                   +0.000017       0.0610
+   10     éclatant                       +0.000015       0.0484
+   11     biche                          +0.000014       0.0663
+   12     épingle                        +0.000013       0.0579
+   13     représentations                +0.000013       0.0715
+   14     animés                         +0.000012       0.0686
+   15     paternels                      +0.000011       0.0924
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sara                           -0.000111       0.7883
+   2      chignon                        -0.000068       0.1005
+   3      désolée                        -0.000048       0.0429
+   4      partage                        -0.000041       0.0416
+   5      entourée                       -0.000035       0.0414
+   6      sereinement                    -0.000031       0.0847
+   7      harmonieusement                -0.000027       0.0961
+   8      arrondi                        -0.000026       0.0683
+   9      soyeux                         -0.000022       0.0597
+   10     vies                           -0.000021       0.0428
+   11     traditionnelle                 -0.000020       0.0669
+   12     tante                          -0.000019       0.0859
+   13     possibles                      -0.000019       0.0882
+   14     inscrite                       -0.000019       0.0606
+   15     hanches                        -0.000019       0.0407
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      division                       +0.001117       0.0683
+   2      banquettes                     +0.000667       0.0715
+   3      épingle                        +0.000581       0.0579
+   4      singularité                    +0.000564       0.0838
+   5      invention                      +0.000476       0.0529
+   6      sourde                         +0.000429       0.0370
+   7      possibles                      +0.000397       0.0882
+   8      uni                            +0.000338       0.0621
+   9      aérien                         +0.000330       0.0700
+   10     gracieusement                  +0.000317       0.0649
+   11     traversé                       +0.000304       0.0359
+   12     soixante                       +0.000302       0.0333
+   13     camaraderie                    +0.000293       0.0724
+   14     apparaît                       +0.000256       0.0435
+   15     distinguer                     +0.000254       0.0389
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sara                           -0.004441       0.7883
+   2      chignon                        -0.001916       0.1005
+   3      enveloppée                     -0.000977       0.0524
+   4      tante                          -0.000922       0.0859
+   5      désolée                        -0.000765       0.0429
+   6      mariée                         -0.000745       0.0392
+   7      rendue                         -0.000712       0.0415
+   8      soyeux                         -0.000606       0.0597
+   9      partage                        -0.000601       0.0416
+   10     critères                       -0.000574       0.0761
+   11     arrondi                        -0.000547       0.0683
+   12     fines                          -0.000533       0.0403
+   13     détachée                       -0.000503       0.0597
+   14     entourée                       -0.000478       0.0414
+   15     immaculée                      -0.000467       0.0715
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      division                       +0.035578       0.0683
+   2      banquettes                     +0.026691       0.0715
+   3      épingle                        +0.019603       0.0579
+   4      possibles                      +0.017292       0.0882
+   5      invention                      +0.016299       0.0529
+   6      sourde                         +0.014612       0.0370
+   7      harmonieusement                +0.014316       0.0961
+   8      uni                            +0.013654       0.0621
+   9      traversé                       +0.012093       0.0359
+   10     soixante                       +0.010532       0.0333
+   11     écrin                          +0.010401       0.0690
+   12     quarante                       +0.010391       0.0304
+   13     distinguer                     +0.009474       0.0389
+   14     gracieusement                  +0.009359       0.0649
+   15     apparaît                       +0.008709       0.0435
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sara                           -0.123765       0.7883
+   2      chignon                        -0.049112       0.1005
+   3      tante                          -0.032294       0.0859
+   4      enveloppée                     -0.032235       0.0524
+   5      rendue                         -0.026291       0.0415
+   6      mariée                         -0.022839       0.0392
+   7      critères                       -0.021742       0.0761
+   8      imprévisible                   -0.020887       0.0610
+   9      éclatant                       -0.020049       0.0484
+   10     détachée                       -0.018557       0.0597
+   11     déploie                        -0.018301       0.0703
+   12     désolée                        -0.017226       0.0429
+   13     inscrites                      -0.017079       0.0874
+   14     immaculée                      -0.016805       0.0715
+   15     claires                        -0.015868       0.0480
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+singularité               +0.000564     +0.000057     +0.000057     0.0838
+aérien                    +0.000330     +0.000023     +0.000023     0.0700
+déploie                   +0.000000     +0.000022     +0.000022     0.0703
+immaculée                 +0.000000     +0.000021     +0.000021     0.0715
+division                  +0.001117     +0.000020     +0.000020     0.0683
+soulignés                 +0.000000     +0.000020     +0.000020     0.0936
+essaim                    +0.000000     +0.000019     +0.000019     0.0737
+opulent                   +0.000198     +0.000017     +0.000017     0.1016
+imprévisible              +0.000000     +0.000017     +0.000017     0.0610
+éclatant                  +0.000000     +0.000015     +0.000015     0.0484
+biche                     +0.000125     +0.000014     +0.000014     0.0663
+épingle                   +0.000581     +0.000013     +0.000013     0.0579
+représentations           +0.000000     +0.000013     +0.000013     0.0715
+animés                    +0.000022     +0.000012     +0.000012     0.0686
+paternels                 +0.000000     +0.000011     +0.000011     0.0924
+aisance                   +0.000017     +0.000011     +0.000011     0.0459
+gracieusement             +0.000317     +0.000010     +0.000010     0.0649
+enveloppe                 +0.000057     +0.000009     +0.000009     0.0352
+trajectoire               +0.000211     +0.000009     +0.000009     0.0652
+remontés                  +0.000038     +0.000008     +0.000008     0.0755
+logit final pour 'homme': -1.3532

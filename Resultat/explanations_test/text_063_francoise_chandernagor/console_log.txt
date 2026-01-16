@@ -1,0 +1,387 @@
+texte analysé: , dans son temps , avait osé poser la question aux comités : que décidez vous du louveteau ? que veut on ? le déporter ? non . le tuer ? non . l empoisonner ? non . mais quoi donc ? s en défaire gomin...
+prédiction: HOMME (confiance: 62.6%)
+vérité terrain: FEMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  vraie classe
+# logit: -0.2705
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      comité                         +0.000211       0.3745
+   2      députés                        +0.000078       0.1216
+   3      espagne                        +0.000078       0.0806
+   4      provoque                       +0.000076       0.0865
+   5      madrid                         +0.000069       0.1280
+   6      comités                        +0.000065       0.1432
+   7      librement                      +0.000049       0.0710
+   8      outré                          +0.000047       0.1194
+   9      instruire                      +0.000046       0.0967
+   10     fable                          +0.000044       0.0979
+   11     présenté                       +0.000035       0.0602
+   12     perfide                        +0.000034       0.1015
+   13     tractations                    +0.000034       0.1465
+   14     créer                          +0.000031       0.0609
+   15     empoisonner                    +0.000028       0.1045
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      instituteurs                   -0.000102       0.2930
+   2      orphelin                       -0.000100       0.1957
+   3      décidez                        -0.000072       0.1255
+   4      éducation                      -0.000071       0.0583
+   5      éduquer                        -0.000060       0.1271
+   6      défaire                        -0.000059       0.1407
+   7      rassurer                       -0.000056       0.0577
+   8      simon                          -0.000047       0.1054
+   9      gouvernement                   -0.000046       0.0704
+   10     princes                        -0.000046       0.0912
+   11     aimerait                       -0.000045       0.0722
+   12     éclairés                       -0.000043       0.0959
+   13     destinées                      -0.000041       0.0797
+   14     principes                      -0.000040       0.0735
+   15     auquel                         -0.000040       0.0467
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      comité                         +0.000211       0.3745
+   2      députés                        +0.000078       0.1216
+   3      espagne                        +0.000078       0.0806
+   4      provoque                       +0.000076       0.0865
+   5      madrid                         +0.000069       0.1280
+   6      comités                        +0.000065       0.1432
+   7      librement                      +0.000049       0.0710
+   8      outré                          +0.000047       0.1194
+   9      instruire                      +0.000046       0.0967
+   10     fable                          +0.000044       0.0979
+   11     présenté                       +0.000035       0.0602
+   12     perfide                        +0.000034       0.1015
+   13     tractations                    +0.000034       0.1465
+   14     créer                          +0.000031       0.0609
+   15     empoisonner                    +0.000028       0.1045
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      instituteurs                   -0.000102       0.2930
+   2      orphelin                       -0.000100       0.1957
+   3      décidez                        -0.000072       0.1255
+   4      éducation                      -0.000071       0.0583
+   5      éduquer                        -0.000060       0.1271
+   6      défaire                        -0.000059       0.1407
+   7      rassurer                       -0.000056       0.0577
+   8      simon                          -0.000047       0.1054
+   9      gouvernement                   -0.000046       0.0704
+   10     princes                        -0.000046       0.0912
+   11     aimerait                       -0.000045       0.0722
+   12     éclairés                       -0.000043       0.0959
+   13     destinées                      -0.000041       0.0797
+   14     principes                      -0.000040       0.0735
+   15     auquel                         -0.000040       0.0467
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      orphelin                       +0.001705       0.1957
+   2      défaire                        +0.001588       0.1407
+   3      instituteurs                   +0.001230       0.2930
+   4      améliorer                      +0.001134       0.0913
+   5      trouverait                     +0.001116       0.0647
+   6      princes                        +0.000883       0.0912
+   7      teint                          +0.000878       0.0536
+   8      laurent                        +0.000855       0.1028
+   9      otage                          +0.000837       0.1112
+   10     empêche                        +0.000808       0.0980
+   11     mathieu                        +0.000797       0.1259
+   12     principes                      +0.000724       0.0735
+   13     osé                            +0.000723       0.0519
+   14     confié                         +0.000652       0.1156
+   15     voudrait                       +0.000586       0.0519
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      matériel                       -0.001926       0.1207
+   2      départements                   -0.001386       0.1419
+   3      espagnols                      -0.001383       0.1096
+   4      sûreté                         -0.001291       0.0764
+   5      députés                        -0.001282       0.1216
+   6      commissaire                    -0.001250       0.0843
+   7      comités                        -0.001084       0.1432
+   8      perfide                        -0.001064       0.1015
+   9      fixé                           -0.001008       0.0572
+   10     instructions                   -0.001004       0.0762
+   11     empoisonner                    -0.000986       0.1045
+   12     fable                          -0.000973       0.0979
+   13     commencement                   -0.000931       0.0736
+   14     surveillance                   -0.000917       0.1287
+   15     prisonnier                     -0.000863       0.0641
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      orphelin                       +0.077547       0.1957
+   2      défaire                        +0.069236       0.1407
+   3      améliorer                      +0.051536       0.0913
+   4      trouverait                     +0.051041       0.0647
+   5      princes                        +0.045557       0.0912
+   6      instituteurs                   +0.044363       0.2930
+   7      otage                          +0.041720       0.1112
+   8      laurent                        +0.041282       0.1028
+   9      teint                          +0.040828       0.0536
+   10     principes                      +0.038994       0.0735
+   11     osé                            +0.034961       0.0519
+   12     mathieu                        +0.034298       0.1259
+   13     ambassadeur                    +0.032092       0.1072
+   14     empêche                        +0.031721       0.0980
+   15     voudrait                       +0.029418       0.0519
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      matériel                       -0.093623       0.1207
+   2      députés                        -0.069525       0.1216
+   3      départements                   -0.067850       0.1419
+   4      espagnols                      -0.066253       0.1096
+   5      sûreté                         -0.064241       0.0764
+   6      comités                        -0.058433       0.1432
+   7      fable                          -0.054535       0.0979
+   8      commissaire                    -0.054223       0.0843
+   9      instructions                   -0.050164       0.0762
+   10     empoisonner                    -0.049677       0.1045
+   11     perfide                        -0.044983       0.1015
+   12     pitié                          -0.044479       0.0931
+   13     fixé                           -0.043063       0.0572
+   14     commencement                   -0.041454       0.0736
+   15     prisonnier                     -0.040815       0.0641
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+comité                    +0.000000     +0.000211     +0.000211     0.3745
+députés                   +0.000000     +0.000078     +0.000078     0.1216
+espagne                   +0.000000     +0.000078     +0.000078     0.0806
+provoque                  +0.000000     +0.000076     +0.000076     0.0865
+madrid                    +0.000000     +0.000069     +0.000069     0.1280
+comités                   +0.000000     +0.000065     +0.000065     0.1432
+librement                 +0.000029     +0.000049     +0.000049     0.0710
+outré                     +0.000216     +0.000047     +0.000047     0.1194
+instruire                 +0.000000     +0.000046     +0.000046     0.0967
+fable                     +0.000000     +0.000044     +0.000044     0.0979
+présenté                  +0.000000     +0.000035     +0.000035     0.0602
+perfide                   +0.000000     +0.000034     +0.000034     0.1015
+tractations               +0.000000     +0.000034     +0.000034     0.1465
+créer                     +0.000000     +0.000031     +0.000031     0.0609
+empoisonner               +0.000000     +0.000028     +0.000028     0.1045
+temple                    +0.000000     +0.000027     +0.000027     0.0782
+navarre                   +0.000000     +0.000024     +0.000024     0.1445
+départements              +0.000000     +0.000024     +0.000024     0.1419
+espagnols                 +0.000000     +0.000020     +0.000020     0.1096
+matériel                  +0.000000     +0.000020     +0.000020     0.1207
+logit final pour 'femme': -0.2705
+# analyse pour la classe: HOMME  prédite
+# logit: 0.2464
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      comité                         +0.000041       0.3745
+   2      fable                          +0.000040       0.0979
+   3      provoque                       +0.000032       0.0865
+   4      outré                          +0.000030       0.1194
+   5      députés                        +0.000028       0.1216
+   6      librement                      +0.000028       0.0710
+   7      présenté                       +0.000024       0.0602
+   8      tractations                    +0.000020       0.1465
+   9      créer                          +0.000018       0.0609
+   10     trouverait                     +0.000018       0.0647
+   11     commissaires                   +0.000017       0.1346
+   12     espagnols                      +0.000015       0.1096
+   13     vive                           +0.000013       0.0468
+   14     bouchon                        +0.000012       0.0846
+   15     envoyer                        +0.000012       0.0471
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      instituteurs                   -0.000078       0.2930
+   2      princes                        -0.000057       0.0912
+   3      captivité                      -0.000048       0.1101
+   4      éclairés                       -0.000048       0.0959
+   5      ambassadeur                    -0.000039       0.1072
+   6      éducation                      -0.000038       0.0583
+   7      tyran                          -0.000038       0.1069
+   8      courrier                       -0.000037       0.0645
+   9      auquel                         -0.000037       0.0467
+   10     principes                      -0.000035       0.0735
+   11     décidez                        -0.000033       0.1255
+   12     orphelin                       -0.000031       0.1957
+   13     régime                         -0.000025       0.0680
+   14     otage                          -0.000025       0.1112
+   15     éclairé                        -0.000023       0.0610
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      comité                         +0.000041       0.3745
+   2      fable                          +0.000040       0.0979
+   3      provoque                       +0.000032       0.0865
+   4      outré                          +0.000030       0.1194
+   5      députés                        +0.000028       0.1216
+   6      librement                      +0.000028       0.0710
+   7      présenté                       +0.000024       0.0602
+   8      tractations                    +0.000020       0.1465
+   9      créer                          +0.000018       0.0609
+   10     trouverait                     +0.000018       0.0647
+   11     commissaires                   +0.000017       0.1346
+   12     espagnols                      +0.000015       0.1096
+   13     vive                           +0.000013       0.0468
+   14     bouchon                        +0.000012       0.0846
+   15     envoyer                        +0.000012       0.0471
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      instituteurs                   -0.000078       0.2930
+   2      princes                        -0.000057       0.0912
+   3      captivité                      -0.000048       0.1101
+   4      éclairés                       -0.000048       0.0959
+   5      ambassadeur                    -0.000039       0.1072
+   6      éducation                      -0.000038       0.0583
+   7      tyran                          -0.000038       0.1069
+   8      courrier                       -0.000037       0.0645
+   9      auquel                         -0.000037       0.0467
+   10     principes                      -0.000035       0.0735
+   11     décidez                        -0.000033       0.1255
+   12     orphelin                       -0.000031       0.1957
+   13     régime                         -0.000025       0.0680
+   14     otage                          -0.000025       0.1112
+   15     éclairé                        -0.000023       0.0610
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      matériel                       +0.001273       0.1207
+   2      fable                          +0.000942       0.0979
+   3      empoisonner                    +0.000930       0.1045
+   4      députés                        +0.000903       0.1216
+   5      sûreté                         +0.000902       0.0764
+   6      départements                   +0.000887       0.1419
+   7      comités                        +0.000853       0.1432
+   8      instructions                   +0.000754       0.0762
+   9      perfide                        +0.000742       0.1015
+   10     pitié                          +0.000739       0.0931
+   11     fixé                           +0.000704       0.0572
+   12     prisonnier                     +0.000698       0.0641
+   13     commissaire                    +0.000684       0.0843
+   14     commencement                   +0.000655       0.0736
+   15     espagnols                      +0.000615       0.1096
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      défaire                        -0.000860       0.1407
+   2      orphelin                       -0.000796       0.1957
+   3      instituteurs                   -0.000777       0.2930
+   4      améliorer                      -0.000742       0.0913
+   5      confié                         -0.000687       0.1156
+   6      mathieu                        -0.000667       0.1259
+   7      trouverait                     -0.000613       0.0647
+   8      laurent                        -0.000570       0.1028
+   9      teint                          -0.000553       0.0536
+   10     otage                          -0.000460       0.1112
+   11     enfermés                       -0.000386       0.0840
+   12     osé                            -0.000375       0.0519
+   13     voudrait                       -0.000353       0.0519
+   14     princes                        -0.000341       0.0912
+   15     tyran                          -0.000339       0.1069
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      matériel                       +0.057618       0.1207
+   2      comités                        +0.048345       0.1432
+   3      fable                          +0.046531       0.0979
+   4      sûreté                         +0.039997       0.0764
+   5      députés                        +0.039886       0.1216
+   6      comité                         +0.039403       0.3745
+   7      empoisonner                    +0.038776       0.1045
+   8      départements                   +0.036386       0.1419
+   9      perfide                        +0.034938       0.1015
+   10     instructions                   +0.034698       0.0762
+   11     espagnols                      +0.032816       0.1096
+   12     fixé                           +0.030521       0.0572
+   13     pitié                          +0.029018       0.0931
+   14     commissaire                    +0.027995       0.0843
+   15     prisonnier                     +0.025810       0.0641
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      confié                         -0.037888       0.1156
+   2      instituteurs                   -0.037715       0.2930
+   3      orphelin                       -0.036186       0.1957
+   4      défaire                        -0.034170       0.1407
+   5      trouverait                     -0.030373       0.0647
+   6      mathieu                        -0.027461       0.1259
+   7      laurent                        -0.026814       0.1028
+   8      teint                          -0.026271       0.0536
+   9      améliorer                      -0.025408       0.0913
+   10     otage                          -0.025167       0.1112
+   11     princes                        -0.023199       0.0912
+   12     osé                            -0.021517       0.0519
+   13     ambassadeur                    -0.021352       0.1072
+   14     voudrait                       -0.018961       0.0519
+   15     principes                      -0.018785       0.0735
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+comité                    +0.000580     +0.000041     +0.000041     0.3745
+fable                     +0.000942     +0.000040     +0.000040     0.0979
+provoque                  +0.000007     +0.000032     +0.000032     0.0865
+outré                     +0.000000     +0.000030     +0.000030     0.1194
+députés                   +0.000903     +0.000028     +0.000028     0.1216
+librement                 +0.000086     +0.000028     +0.000028     0.0710
+présenté                  +0.000260     +0.000024     +0.000024     0.0602
+tractations               +0.000209     +0.000020     +0.000020     0.1465
+créer                     +0.000148     +0.000018     +0.000018     0.0609
+trouverait                +0.000000     +0.000018     +0.000018     0.0647
+commissaires              +0.000132     +0.000017     +0.000017     0.1346
+espagnols                 +0.000615     +0.000015     +0.000015     0.1096
+vive                      +0.000046     +0.000013     +0.000013     0.0468
+bouchon                   +0.000328     +0.000012     +0.000012     0.0846
+envoyer                   +0.000000     +0.000012     +0.000012     0.0471
+chargés                   +0.000000     +0.000010     +0.000010     0.0591
+journaux                  +0.000239     +0.000009     +0.000009     0.0550
+détaché                   +0.000572     +0.000009     +0.000009     0.0761
+fixé                      +0.000704     +0.000008     +0.000008     0.0572
+outre                     +0.000439     +0.000008     +0.000008     0.0527
+logit final pour 'homme': 0.2464

@@ -1,0 +1,5 @@
+filename: (LEBLANC)(Maurice)(les trois yeux)(1)(1920)(1864)(1941)(fr)(z)(z)(V)(R)(T).txt
+index: 238
+first_name: maurice
+last_name: leblanc
+true_label: homme

@@ -1,0 +1,386 @@
+texte analysé: les marcheurs et le convoi diminuait , et pourtant pierre colmieu , toujours légèrement trébuchant , ne marchait pas vite . mais la caravane de chariots allait très lentement , car le chemin n était p...
+prédiction: FEMME (confiance: 62.3%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.2727
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marcheurs                      +0.000125       0.1253
+   2      gaillardement                  +0.000105       0.1246
+   3      marchands                      +0.000103       0.2460
+   4      soudards                       +0.000080       0.1319
+   5      approuva                       +0.000061       0.0640
+   6      boueux                         +0.000053       0.0826
+   7      fit                            +0.000052       0.0752
+   8      déployée                       +0.000038       0.0820
+   9      rênes                          +0.000038       0.0766
+   10     sûrement                       +0.000038       0.0382
+   11     guillaume                      +0.000036       0.0816
+   12     fichus                         +0.000036       0.0958
+   13     veillée                        +0.000032       0.0795
+   14     lieues                         +0.000030       0.0702
+   15     trébuchant                     +0.000025       0.0944
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ricanaient                     -0.000137       0.1199
+   2      bertoul                        -0.000133       0.5964
+   3      charrettes                     -0.000128       0.0879
+   4      chariots                       -0.000068       0.2701
+   5      soldats                        -0.000052       0.1014
+   6      moquez                         -0.000048       0.0920
+   7      enfourcha                      -0.000047       0.1122
+   8      aides                          -0.000045       0.0736
+   9      protégée                       -0.000045       0.0566
+   10     associés                       -0.000043       0.0831
+   11     pardonne                       -0.000041       0.0529
+   12     gourde                         -0.000041       0.0797
+   13     riaient                        -0.000039       0.0622
+   14     vérifier                       -0.000038       0.0441
+   15     préparer                       -0.000038       0.0366
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marcheurs                      +0.000125       0.1253
+   2      gaillardement                  +0.000105       0.1246
+   3      marchands                      +0.000103       0.2460
+   4      soudards                       +0.000080       0.1319
+   5      approuva                       +0.000061       0.0640
+   6      boueux                         +0.000053       0.0826
+   7      fit                            +0.000052       0.0752
+   8      déployée                       +0.000038       0.0820
+   9      rênes                          +0.000038       0.0766
+   10     sûrement                       +0.000038       0.0382
+   11     guillaume                      +0.000036       0.0816
+   12     fichus                         +0.000036       0.0958
+   13     veillée                        +0.000032       0.0795
+   14     lieues                         +0.000030       0.0702
+   15     trébuchant                     +0.000025       0.0944
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ricanaient                     -0.000137       0.1199
+   2      bertoul                        -0.000133       0.5964
+   3      charrettes                     -0.000128       0.0879
+   4      chariots                       -0.000068       0.2701
+   5      soldats                        -0.000052       0.1014
+   6      moquez                         -0.000048       0.0920
+   7      enfourcha                      -0.000047       0.1122
+   8      aides                          -0.000045       0.0736
+   9      protégée                       -0.000045       0.0566
+   10     associés                       -0.000043       0.0831
+   11     pardonne                       -0.000041       0.0529
+   12     gourde                         -0.000041       0.0797
+   13     riaient                        -0.000039       0.0622
+   14     vérifier                       -0.000038       0.0441
+   15     préparer                       -0.000038       0.0366
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bertoul                        +0.005780       0.5964
+   2      messire                        +0.002177       0.1175
+   3      protégée                       +0.001618       0.0566
+   4      caillouteux                    +0.001458       0.1239
+   5      enfourcha                      +0.001152       0.1122
+   6      rênes                          +0.001003       0.0766
+   7      protection                     +0.000803       0.0462
+   8      préoccupait                    +0.000726       0.0795
+   9      tendit                         +0.000726       0.0457
+   10     jolis                          +0.000698       0.0607
+   11     charrettes                     +0.000629       0.0879
+   12     vérifier                       +0.000614       0.0441
+   13     nommant                        +0.000604       0.1205
+   14     déployée                       +0.000549       0.0820
+   15     séduit                         +0.000548       0.0668
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chariots                       -0.004477       0.2701
+   2      convoi                         -0.002760       0.1425
+   3      marcheurs                      -0.002742       0.1253
+   4      gaillardement                  -0.002617       0.1246
+   5      caravane                       -0.001696       0.2694
+   6      marchand                       -0.001591       0.1062
+   7      soudards                       -0.001188       0.1319
+   8      marchands                      -0.001160       0.2460
+   9      ferons                         -0.001157       0.0650
+   10     fit                            -0.001156       0.0752
+   11     fallut                         -0.001090       0.0490
+   12     compagnons                     -0.000796       0.0486
+   13     attendez                       -0.000680       0.0461
+   14     cria                           -0.000663       0.0470
+   15     connaissaient                  -0.000658       0.0485
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bertoul                        +0.275347       0.5964
+   2      messire                        +0.114800       0.1175
+   3      protégée                       +0.080832       0.0566
+   4      enfourcha                      +0.065325       0.1122
+   5      caillouteux                    +0.063300       0.1239
+   6      rênes                          +0.053381       0.0766
+   7      protection                     +0.044846       0.0462
+   8      jolis                          +0.038937       0.0607
+   9      charrettes                     +0.038344       0.0879
+   10     tendit                         +0.034772       0.0457
+   11     vérifier                       +0.031644       0.0441
+   12     préoccupait                    +0.031512       0.0795
+   13     nommant                        +0.030184       0.1205
+   14     gourde                         +0.026003       0.0797
+   15     guillaume                      +0.024255       0.0816
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chariots                       -0.174072       0.2701
+   2      gaillardement                  -0.144373       0.1246
+   3      marcheurs                      -0.137750       0.1253
+   4      convoi                         -0.121349       0.1425
+   5      marchand                       -0.082970       0.1062
+   6      caravane                       -0.075595       0.2694
+   7      ferons                         -0.061649       0.0650
+   8      marchands                      -0.057624       0.2460
+   9      soudards                       -0.054751       0.1319
+   10     fit                            -0.053869       0.0752
+   11     fallut                         -0.048854       0.0490
+   12     lieues                         -0.042173       0.0702
+   13     compagnons                     -0.039851       0.0486
+   14     patrouilles                    -0.037476       0.0989
+   15     diminuait                      -0.032417       0.0979
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+marcheurs                 +0.000000     +0.000125     +0.000125     0.1253
+gaillardement             +0.000000     +0.000105     +0.000105     0.1246
+marchands                 +0.000000     +0.000103     +0.000103     0.2460
+soudards                  +0.000000     +0.000080     +0.000080     0.1319
+approuva                  +0.000000     +0.000061     +0.000061     0.0640
+boueux                    +0.000000     +0.000053     +0.000053     0.0826
+fit                       +0.000000     +0.000052     +0.000052     0.0752
+déployée                  +0.000549     +0.000038     +0.000038     0.0820
+rênes                     +0.001003     +0.000038     +0.000038     0.0766
+sûrement                  +0.000234     +0.000038     +0.000038     0.0382
+guillaume                 +0.000376     +0.000036     +0.000036     0.0816
+fichus                    +0.000000     +0.000036     +0.000036     0.0958
+veillée                   +0.000212     +0.000032     +0.000032     0.0795
+lieues                    +0.000000     +0.000030     +0.000030     0.0702
+trébuchant                +0.000000     +0.000025     +0.000025     0.0944
+murmurant                 +0.000000     +0.000024     +0.000024     0.0686
+aidé                      +0.000000     +0.000024     +0.000024     0.0484
+certes                    +0.000148     +0.000021     +0.000021     0.0395
+contenu                   +0.000437     +0.000019     +0.000019     0.0433
+cheval                    +0.000000     +0.000013     +0.000013     0.0783
+logit final pour 'femme': 0.2727
+# analyse pour la classe: HOMME
+# logit: -0.2285
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marchands                      +0.000071       0.2460
+   2      gaillardement                  +0.000035       0.1246
+   3      trébuchant                     +0.000032       0.0944
+   4      marcheurs                      +0.000031       0.1253
+   5      négligeable                    +0.000026       0.0792
+   6      déployée                       +0.000026       0.0820
+   7      boueux                         +0.000023       0.0826
+   8      approuva                       +0.000020       0.0640
+   9      murmurant                      +0.000019       0.0686
+   10     cheval                         +0.000018       0.0783
+   11     sûrement                       +0.000016       0.0382
+   12     veillée                        +0.000014       0.0795
+   13     fichus                         +0.000013       0.0958
+   14     lieues                         +0.000012       0.0702
+   15     contenu                        +0.000011       0.0433
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      caravane                       -0.000104       0.2694
+   2      bertoul                        -0.000069       0.5964
+   3      ricanaient                     -0.000064       0.1199
+   4      chariots                       -0.000064       0.2701
+   5      associés                       -0.000063       0.0831
+   6      charrettes                     -0.000058       0.0879
+   7      soldats                        -0.000047       0.1014
+   8      accompagnaient                 -0.000036       0.0737
+   9      caillouteux                    -0.000036       0.1239
+   10     messire                        -0.000034       0.1175
+   11     patrouilles                    -0.000027       0.0989
+   12     soutiens                       -0.000025       0.0873
+   13     pardonne                       -0.000025       0.0529
+   14     gourde                         -0.000024       0.0797
+   15     protégée                       -0.000022       0.0566
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marchands                      +0.000071       0.2460
+   2      gaillardement                  +0.000035       0.1246
+   3      trébuchant                     +0.000032       0.0944
+   4      marcheurs                      +0.000031       0.1253
+   5      négligeable                    +0.000026       0.0792
+   6      déployée                       +0.000026       0.0820
+   7      boueux                         +0.000023       0.0826
+   8      approuva                       +0.000020       0.0640
+   9      murmurant                      +0.000019       0.0686
+   10     cheval                         +0.000018       0.0783
+   11     sûrement                       +0.000016       0.0382
+   12     veillée                        +0.000014       0.0795
+   13     fichus                         +0.000013       0.0958
+   14     lieues                         +0.000012       0.0702
+   15     contenu                        +0.000011       0.0433
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      caravane                       -0.000104       0.2694
+   2      bertoul                        -0.000069       0.5964
+   3      ricanaient                     -0.000064       0.1199
+   4      chariots                       -0.000064       0.2701
+   5      associés                       -0.000063       0.0831
+   6      charrettes                     -0.000058       0.0879
+   7      soldats                        -0.000047       0.1014
+   8      accompagnaient                 -0.000036       0.0737
+   9      caillouteux                    -0.000036       0.1239
+   10     messire                        -0.000034       0.1175
+   11     patrouilles                    -0.000027       0.0989
+   12     soutiens                       -0.000025       0.0873
+   13     pardonne                       -0.000025       0.0529
+   14     gourde                         -0.000024       0.0797
+   15     protégée                       -0.000022       0.0566
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chariots                       +0.002525       0.2701
+   2      convoi                         +0.002032       0.1425
+   3      marcheurs                      +0.001744       0.1253
+   4      gaillardement                  +0.001606       0.1246
+   5      marchand                       +0.001121       0.1062
+   6      ferons                         +0.000822       0.0650
+   7      caravane                       +0.000806       0.2694
+   8      fit                            +0.000776       0.0752
+   9      fallut                         +0.000763       0.0490
+   10     soudards                       +0.000741       0.1319
+   11     ricanaient                     +0.000579       0.1199
+   12     connaissaient                  +0.000523       0.0485
+   13     fichus                         +0.000477       0.0958
+   14     moquez                         +0.000466       0.0920
+   15     attendez                       +0.000459       0.0461
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bertoul                        -0.004349       0.5964
+   2      protégée                       -0.001111       0.0566
+   3      messire                        -0.001077       0.1175
+   4      enfourcha                      -0.000877       0.1122
+   5      nommant                        -0.000709       0.1205
+   6      caillouteux                    -0.000666       0.1239
+   7      protection                     -0.000521       0.0462
+   8      rênes                          -0.000506       0.0766
+   9      charrettes                     -0.000481       0.0879
+   10     déployée                       -0.000451       0.0820
+   11     vérifier                       -0.000408       0.0441
+   12     préoccupait                    -0.000406       0.0795
+   13     tendit                         -0.000396       0.0457
+   14     jolis                          -0.000378       0.0607
+   15     gourde                         -0.000328       0.0797
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chariots                       +0.096617       0.2701
+   2      marcheurs                      +0.089466       0.1253
+   3      gaillardement                  +0.083482       0.1246
+   4      convoi                         +0.079889       0.1425
+   5      marchand                       +0.054028       0.1062
+   6      ferons                         +0.041912       0.0650
+   7      caravane                       +0.036711       0.2694
+   8      fit                            +0.036540       0.0752
+   9      fallut                         +0.032279       0.0490
+   10     marchands                      +0.030957       0.2460
+   11     soudards                       +0.024851       0.1319
+   12     trébuchant                     +0.023477       0.0944
+   13     ricanaient                     +0.022960       0.1199
+   14     compagnons                     +0.021686       0.0486
+   15     lieues                         +0.021520       0.0702
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bertoul                        -0.194515       0.5964
+   2      messire                        -0.063516       0.1175
+   3      enfourcha                      -0.054770       0.1122
+   4      protégée                       -0.050141       0.0566
+   5      nommant                        -0.028401       0.1205
+   6      rênes                          -0.027748       0.0766
+   7      charrettes                     -0.027274       0.0879
+   8      protection                     -0.026706       0.0462
+   9      caillouteux                    -0.025053       0.1239
+   10     vérifier                       -0.022312       0.0441
+   11     tendit                         -0.021042       0.0457
+   12     jolis                          -0.020648       0.0607
+   13     préoccupait                    -0.019898       0.0795
+   14     déployée                       -0.017293       0.0820
+   15     négligeable                    -0.015722       0.0792
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+marchands                 +0.000415     +0.000071     +0.000071     0.2460
+gaillardement             +0.001606     +0.000035     +0.000035     0.1246
+trébuchant                +0.000244     +0.000032     +0.000032     0.0944
+marcheurs                 +0.001744     +0.000031     +0.000031     0.1253
+négligeable               +0.000000     +0.000026     +0.000026     0.0792
+déployée                  +0.000000     +0.000026     +0.000026     0.0820
+boueux                    +0.000203     +0.000023     +0.000023     0.0826
+approuva                  +0.000100     +0.000020     +0.000020     0.0640
+murmurant                 +0.000156     +0.000019     +0.000019     0.0686
+cheval                    +0.000000     +0.000018     +0.000018     0.0783
+sûrement                  +0.000000     +0.000016     +0.000016     0.0382
+veillée                   +0.000000     +0.000014     +0.000014     0.0795
+fichus                    +0.000477     +0.000013     +0.000013     0.0958
+lieues                    +0.000337     +0.000012     +0.000012     0.0702
+contenu                   +0.000000     +0.000011     +0.000011     0.0433
+rênes                     +0.000000     +0.000010     +0.000010     0.0766
+présenter                 +0.000000     +0.000008     +0.000008     0.0386
+attendez                  +0.000459     +0.000008     +0.000008     0.0461
+penses                    +0.000152     +0.000007     +0.000007     0.0429
+laissez                   +0.000033     +0.000007     +0.000007     0.0395
+logit final pour 'homme': -0.2285

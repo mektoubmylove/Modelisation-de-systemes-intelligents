@@ -1,0 +1,5 @@
+filename: (VALLOTTON)(Félix)(les soupirs de cyprien morus)(1)(1900)(1865)(1925)(fr)(z)(z)(V)(R)(T).txt
+index: 160
+first_name: felix
+last_name: vallotton
+true_label: homme

@@ -1,0 +1,5 @@
+filename: (REDONNET)(Marie)(la femme au colt 45)(2)(2016)(1948)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 212
+first_name: marie
+last_name: redonnet
+true_label: femme

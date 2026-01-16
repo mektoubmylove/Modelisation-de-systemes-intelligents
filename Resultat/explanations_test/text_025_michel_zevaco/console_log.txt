@@ -1,0 +1,386 @@
+texte analysé: mit à trancher les liens qui l enserraient , à le débarrasser des plis de la cape qui l étouffait . el se or torero ! s exclama el chico , lorsque le visage de la victime fut enfin dégagé . et le visa...
+prédiction: HOMME (confiance: 67.4%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.3964
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      torero                         +0.000123       0.4364
+   2      écria                          +0.000074       0.1640
+   3      étouffait                      +0.000069       0.0503
+   4      rua                            +0.000046       0.0605
+   5      diables                        +0.000043       0.0572
+   6      fit                            +0.000031       0.0575
+   7      reveniez                       +0.000031       0.0957
+   8      frictions                      +0.000030       0.0963
+   9      sauveur                        +0.000027       0.0552
+   10     écrivain                       +0.000023       0.0477
+   11     plis                           +0.000019       0.0410
+   12     délivrer                       +0.000019       0.0469
+   13     capes                          +0.000019       0.0911
+   14     dégager                        +0.000018       0.0375
+   15     remercier                      +0.000018       0.0368
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chico                          -0.000429       0.6075
+   2      pardaillan                     -0.000113       0.1465
+   3      el                             -0.000111       0.3268
+   4      enrouée                        -0.000095       0.0693
+   5      bredouilla                     -0.000063       0.0634
+   6      ébahissement                   -0.000057       0.0893
+   7      infortune                      -0.000057       0.0643
+   8      exclama                        -0.000048       0.0438
+   9      trancher                       -0.000041       0.0520
+   10     giralda                        -0.000038       0.1587
+   11     cependant                      -0.000036       0.0279
+   12     interrompre                    -0.000034       0.0374
+   13     enserraient                    -0.000033       0.0889
+   14     sourcil                        -0.000032       0.0483
+   15     aidant                         -0.000028       0.0463
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      torero                         +0.000123       0.4364
+   2      écria                          +0.000074       0.1640
+   3      étouffait                      +0.000069       0.0503
+   4      rua                            +0.000046       0.0605
+   5      diables                        +0.000043       0.0572
+   6      fit                            +0.000031       0.0575
+   7      reveniez                       +0.000031       0.0957
+   8      frictions                      +0.000030       0.0963
+   9      sauveur                        +0.000027       0.0552
+   10     écrivain                       +0.000023       0.0477
+   11     plis                           +0.000019       0.0410
+   12     délivrer                       +0.000019       0.0469
+   13     capes                          +0.000019       0.0911
+   14     dégager                        +0.000018       0.0375
+   15     remercier                      +0.000018       0.0368
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chico                          -0.000429       0.6075
+   2      pardaillan                     -0.000113       0.1465
+   3      el                             -0.000111       0.3268
+   4      enrouée                        -0.000095       0.0693
+   5      bredouilla                     -0.000063       0.0634
+   6      ébahissement                   -0.000057       0.0893
+   7      infortune                      -0.000057       0.0643
+   8      exclama                        -0.000048       0.0438
+   9      trancher                       -0.000041       0.0520
+   10     giralda                        -0.000038       0.1587
+   11     cependant                      -0.000036       0.0279
+   12     interrompre                    -0.000034       0.0374
+   13     enserraient                    -0.000033       0.0889
+   14     sourcil                        -0.000032       0.0483
+   15     aidant                         -0.000028       0.0463
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      capes                          +0.001740       0.0911
+   2      exclama                        +0.001720       0.0438
+   3      malmené                        +0.001305       0.0786
+   4      fronçant                       +0.000992       0.0602
+   5      enserraient                    +0.000985       0.0889
+   6      stoïquement                    +0.000936       0.0963
+   7      el                             +0.000924       0.3268
+   8      enrouée                        +0.000865       0.0693
+   9      sourcil                        +0.000793       0.0483
+   10     restées                        +0.000708       0.0531
+   11     intonation                     +0.000620       0.0579
+   12     respirer                       +0.000582       0.0298
+   13     étouffais                      +0.000507       0.0889
+   14     bredouilla                     +0.000488       0.0634
+   15     liens                          +0.000428       0.0359
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chico                          -0.008267       0.6075
+   2      torero                         -0.005310       0.4364
+   3      pardaillan                     -0.001997       0.1465
+   4      césar                          -0.001893       0.1292
+   5      infortune                      -0.001251       0.0643
+   6      diables                        -0.001067       0.0572
+   7      minute                         -0.001026       0.0558
+   8      mit                            -0.000936       0.0914
+   9      fit                            -0.000880       0.0575
+   10     séant                          -0.000827       0.0760
+   11     rua                            -0.000824       0.0605
+   12     fût                            -0.000696       0.0300
+   13     giralda                        -0.000659       0.1587
+   14     eut                            -0.000621       0.0281
+   15     complaisant                    -0.000538       0.0732
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      capes                          +0.083637       0.0911
+   2      exclama                        +0.075452       0.0438
+   3      el                             +0.064491       0.3268
+   4      malmené                        +0.056418       0.0786
+   5      enserraient                    +0.049920       0.0889
+   6      fronçant                       +0.047907       0.0602
+   7      enrouée                        +0.042440       0.0693
+   8      sourcil                        +0.041331       0.0483
+   9      restées                        +0.037172       0.0531
+   10     stoïquement                    +0.036366       0.0963
+   11     intonation                     +0.032122       0.0579
+   12     écoulait                       +0.027909       0.0628
+   13     bredouilla                     +0.027489       0.0634
+   14     respirer                       +0.024096       0.0298
+   15     étouffais                      +0.023244       0.0889
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chico                          -0.442871       0.6075
+   2      torero                         -0.311047       0.4364
+   3      pardaillan                     -0.132748       0.1465
+   4      césar                          -0.080309       0.1292
+   5      infortune                      -0.064730       0.0643
+   6      giralda                        -0.054413       0.1587
+   7      diables                        -0.053244       0.0572
+   8      minute                         -0.043930       0.0558
+   9      fit                            -0.040819       0.0575
+   10     fût                            -0.034933       0.0300
+   11     séant                          -0.034525       0.0760
+   12     rua                            -0.032612       0.0605
+   13     mit                            -0.031504       0.0914
+   14     eut                            -0.029942       0.0281
+   15     comédien                       -0.026530       0.0690
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+torero                    +0.000000     +0.000123     +0.000123     0.4364
+écria                     +0.000000     +0.000074     +0.000074     0.1640
+étouffait                 +0.000000     +0.000069     +0.000069     0.0503
+rua                       +0.000000     +0.000046     +0.000046     0.0605
+diables                   +0.000000     +0.000043     +0.000043     0.0572
+fit                       +0.000000     +0.000031     +0.000031     0.0575
+reveniez                  +0.000000     +0.000031     +0.000031     0.0957
+frictions                 +0.000117     +0.000030     +0.000030     0.0963
+sauveur                   +0.000000     +0.000027     +0.000027     0.0552
+écrivain                  +0.000000     +0.000023     +0.000023     0.0477
+plis                      +0.000266     +0.000019     +0.000019     0.0410
+délivrer                  +0.000000     +0.000019     +0.000019     0.0469
+capes                     +0.001740     +0.000019     +0.000019     0.0911
+dégager                   +0.000000     +0.000018     +0.000018     0.0375
+remercier                 +0.000190     +0.000018     +0.000018     0.0368
+croissant                 +0.000123     +0.000017     +0.000017     0.0477
+nain                      +0.000000     +0.000016     +0.000016     0.1379
+dégagé                    +0.000000     +0.000016     +0.000016     0.0442
+comédien                  +0.000000     +0.000015     +0.000015     0.0690
+don                       +0.000000     +0.000015     +0.000015     0.0654
+logit final pour 'femme': -0.3964
+# analyse pour la classe: HOMME  prédite
+# logit: 0.3321
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      el                             +0.000069       0.3268
+   2      comédien                       +0.000041       0.0690
+   3      écria                          +0.000038       0.1640
+   4      reveniez                       +0.000038       0.0957
+   5      frictions                      +0.000037       0.0963
+   6      étouffait                      +0.000037       0.0503
+   7      diables                        +0.000030       0.0572
+   8      rua                            +0.000030       0.0605
+   9      stoïquement                    +0.000028       0.0963
+   10     sauveur                        +0.000018       0.0552
+   11     remercier                      +0.000018       0.0368
+   12     dégagé                         +0.000014       0.0442
+   13     évidente                       +0.000014       0.0429
+   14     croissant                      +0.000013       0.0477
+   15     fit                            +0.000012       0.0575
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chico                          -0.000237       0.6075
+   2      enrouée                        -0.000069       0.0693
+   3      bredouilla                     -0.000050       0.0634
+   4      pardaillan                     -0.000045       0.1465
+   5      nain                           -0.000039       0.1379
+   6      infortune                      -0.000039       0.0643
+   7      écoulait                       -0.000035       0.0628
+   8      césar                          -0.000033       0.1292
+   9      mit                            -0.000029       0.0914
+   10     exclama                        -0.000028       0.0438
+   11     fronçant                       -0.000027       0.0602
+   12     interrompre                    -0.000022       0.0374
+   13     enserraient                    -0.000021       0.0889
+   14     capes                          -0.000021       0.0911
+   15     trancher                       -0.000020       0.0520
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      el                             +0.000069       0.3268
+   2      comédien                       +0.000041       0.0690
+   3      écria                          +0.000038       0.1640
+   4      reveniez                       +0.000038       0.0957
+   5      frictions                      +0.000037       0.0963
+   6      étouffait                      +0.000037       0.0503
+   7      diables                        +0.000030       0.0572
+   8      rua                            +0.000030       0.0605
+   9      stoïquement                    +0.000028       0.0963
+   10     sauveur                        +0.000018       0.0552
+   11     remercier                      +0.000018       0.0368
+   12     dégagé                         +0.000014       0.0442
+   13     évidente                       +0.000014       0.0429
+   14     croissant                      +0.000013       0.0477
+   15     fit                            +0.000012       0.0575
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chico                          -0.000237       0.6075
+   2      enrouée                        -0.000069       0.0693
+   3      bredouilla                     -0.000050       0.0634
+   4      pardaillan                     -0.000045       0.1465
+   5      nain                           -0.000039       0.1379
+   6      infortune                      -0.000039       0.0643
+   7      écoulait                       -0.000035       0.0628
+   8      césar                          -0.000033       0.1292
+   9      mit                            -0.000029       0.0914
+   10     exclama                        -0.000028       0.0438
+   11     fronçant                       -0.000027       0.0602
+   12     interrompre                    -0.000022       0.0374
+   13     enserraient                    -0.000021       0.0889
+   14     capes                          -0.000021       0.0911
+   15     trancher                       -0.000020       0.0520
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chico                          +0.007509       0.6075
+   2      torero                         +0.004645       0.4364
+   3      pardaillan                     +0.001659       0.1465
+   4      césar                          +0.001602       0.1292
+   5      minute                         +0.001143       0.0558
+   6      giralda                        +0.001023       0.1587
+   7      infortune                      +0.000985       0.0643
+   8      diables                        +0.000897       0.0572
+   9      mit                            +0.000814       0.0914
+   10     fit                            +0.000773       0.0575
+   11     rua                            +0.000707       0.0605
+   12     séant                          +0.000704       0.0760
+   13     fût                            +0.000668       0.0300
+   14     comédien                       +0.000631       0.0690
+   15     eut                            +0.000600       0.0281
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      capes                          -0.001644       0.0911
+   2      exclama                        -0.001538       0.0438
+   3      malmené                        -0.001027       0.0786
+   4      stoïquement                    -0.001015       0.0963
+   5      enserraient                    -0.000861       0.0889
+   6      enrouée                        -0.000822       0.0693
+   7      fronçant                       -0.000813       0.0602
+   8      el                             -0.000785       0.3268
+   9      restées                        -0.000676       0.0531
+   10     sourcil                        -0.000640       0.0483
+   11     intonation                     -0.000604       0.0579
+   12     étouffais                      -0.000593       0.0889
+   13     respirer                       -0.000510       0.0298
+   14     bredouilla                     -0.000413       0.0634
+   15     écoulait                       -0.000370       0.0628
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chico                          +0.396554       0.6075
+   2      torero                         +0.273636       0.4364
+   3      pardaillan                     +0.108747       0.1465
+   4      césar                          +0.063863       0.1292
+   5      giralda                        +0.057005       0.1587
+   6      infortune                      +0.053074       0.0643
+   7      diables                        +0.050044       0.0572
+   8      minute                         +0.047256       0.0558
+   9      fit                            +0.038255       0.0575
+   10     fût                            +0.031680       0.0300
+   11     rua                            +0.031447       0.0605
+   12     séant                          +0.030965       0.0760
+   13     écria                          +0.029948       0.1640
+   14     eut                            +0.028314       0.0281
+   15     comédien                       +0.027671       0.0690
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      capes                          -0.075447       0.0911
+   2      exclama                        -0.068276       0.0438
+   3      el                             -0.051558       0.3268
+   4      malmené                        -0.051481       0.0786
+   5      enrouée                        -0.040487       0.0693
+   6      enserraient                    -0.039384       0.0889
+   7      fronçant                       -0.037003       0.0602
+   8      stoïquement                    -0.036325       0.0963
+   9      sourcil                        -0.034156       0.0483
+   10     restées                        -0.033481       0.0531
+   11     intonation                     -0.030824       0.0579
+   12     étouffais                      -0.030069       0.0889
+   13     écoulait                       -0.028342       0.0628
+   14     bredouilla                     -0.027877       0.0634
+   15     respirer                       -0.023032       0.0298
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+el                        +0.000000     +0.000069     +0.000069     0.3268
+comédien                  +0.000631     +0.000041     +0.000041     0.0690
+écria                     +0.000492     +0.000038     +0.000038     0.1640
+reveniez                  +0.000095     +0.000038     +0.000038     0.0957
+frictions                 +0.000000     +0.000037     +0.000037     0.0963
+étouffait                 +0.000128     +0.000037     +0.000037     0.0503
+diables                   +0.000897     +0.000030     +0.000030     0.0572
+rua                       +0.000707     +0.000030     +0.000030     0.0605
+stoïquement               +0.000000     +0.000028     +0.000028     0.0963
+sauveur                   +0.000264     +0.000018     +0.000018     0.0552
+remercier                 +0.000000     +0.000018     +0.000018     0.0368
+dégagé                    +0.000424     +0.000014     +0.000014     0.0442
+évidente                  +0.000000     +0.000014     +0.000014     0.0429
+croissant                 +0.000000     +0.000013     +0.000013     0.0477
+fit                       +0.000773     +0.000012     +0.000012     0.0575
+délivrer                  +0.000366     +0.000012     +0.000012     0.0469
+reconnaissant             +0.000000     +0.000012     +0.000012     0.0402
+naturelle                 +0.000254     +0.000012     +0.000012     0.0334
+torero                    +0.004645     +0.000012     +0.000012     0.4364
+dégager                   +0.000017     +0.000011     +0.000011     0.0375
+logit final pour 'homme': 0.3321

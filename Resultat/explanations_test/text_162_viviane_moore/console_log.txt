@@ -1,0 +1,386 @@
+texte analysé: couleur de miel suivi d une cavalière dont il reconnut aussitôt l attitude altière . sa femme , la reine marguerite , la mère de ses enfants . il fronça les sourcils et frappa le plat bord de son poin...
+prédiction: FEMME (confiance: 83.4%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.9419
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      boudait                        +0.000113       0.1043
+   2      fit                            +0.000094       0.1221
+   3      courbant                       +0.000085       0.1063
+   4      admirait                       +0.000063       0.0672
+   5      ambiguïté                      +0.000059       0.0959
+   6      kiosque                        +0.000057       0.0942
+   7      embarcadère                    +0.000055       0.1193
+   8      aperçut                        +0.000054       0.0511
+   9      intelligence                   +0.000050       0.0460
+   10     frappa                         +0.000047       0.0544
+   11     guillaume                      +0.000042       0.1767
+   12     cavalière                      +0.000041       0.1018
+   13     interrompit                    +0.000038       0.0557
+   14     allusion                       +0.000036       0.0546
+   15     chemins                        +0.000035       0.0482
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      reine                          -0.000184       0.2108
+   2      tarse                          -0.000174       0.3924
+   3      roi                            -0.000124       0.1948
+   4      marguerite                     -0.000121       0.1747
+   5      voluptueuses                   -0.000120       0.1241
+   6      redresser                      -0.000104       0.0650
+   7      droiture                       -0.000097       0.1050
+   8      dissimulée                     -0.000092       0.0752
+   9      ram                            -0.000089       0.1607
+   10     méprisait                      -0.000087       0.0872
+   11     pétales                        -0.000079       0.0774
+   12     habileté                       -0.000077       0.0708
+   13     hugues                         -0.000072       0.1318
+   14     serpent                        -0.000068       0.0635
+   15     fierté                         -0.000068       0.0468
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      boudait                        +0.000113       0.1043
+   2      fit                            +0.000094       0.1221
+   3      courbant                       +0.000085       0.1063
+   4      admirait                       +0.000063       0.0672
+   5      ambiguïté                      +0.000059       0.0959
+   6      kiosque                        +0.000057       0.0942
+   7      embarcadère                    +0.000055       0.1193
+   8      aperçut                        +0.000054       0.0511
+   9      intelligence                   +0.000050       0.0460
+   10     frappa                         +0.000047       0.0544
+   11     guillaume                      +0.000042       0.1767
+   12     cavalière                      +0.000041       0.1018
+   13     interrompit                    +0.000038       0.0557
+   14     allusion                       +0.000036       0.0546
+   15     chemins                        +0.000035       0.0482
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      reine                          -0.000184       0.2108
+   2      tarse                          -0.000174       0.3924
+   3      roi                            -0.000124       0.1948
+   4      marguerite                     -0.000121       0.1747
+   5      voluptueuses                   -0.000120       0.1241
+   6      redresser                      -0.000104       0.0650
+   7      droiture                       -0.000097       0.1050
+   8      dissimulée                     -0.000092       0.0752
+   9      ram                            -0.000089       0.1607
+   10     méprisait                      -0.000087       0.0872
+   11     pétales                        -0.000079       0.0774
+   12     habileté                       -0.000077       0.0708
+   13     hugues                         -0.000072       0.1318
+   14     serpent                        -0.000068       0.0635
+   15     fierté                         -0.000068       0.0468
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      reine                          +0.002778       0.2108
+   2      ram                            +0.002600       0.1607
+   3      batiste                        +0.002246       0.1208
+   4      fronça                         +0.001799       0.0699
+   5      pétales                        +0.001652       0.0774
+   6      délaissée                      +0.001602       0.1037
+   7      affectionnait                  +0.001482       0.1053
+   8      lévrier                        +0.001385       0.1340
+   9      voluptueuses                   +0.001241       0.1241
+   10     fierté                         +0.001239       0.0468
+   11     sicile                         +0.001149       0.1114
+   12     boudait                        +0.001140       0.1043
+   13     hugues                         +0.001136       0.1318
+   14     redresser                      +0.001089       0.0650
+   15     raidir                         +0.001057       0.1024
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      émir                           -0.002337       0.1448
+   2      ministre                       -0.002212       0.1282
+   3      tarse                          -0.002028       0.3924
+   4      fit                            -0.001870       0.1221
+   5      allusion                       -0.001628       0.0546
+   6      poing                          -0.001254       0.0422
+   7      aperçut                        -0.001120       0.0511
+   8      rapports                       -0.001105       0.0516
+   9      brusques                       -0.001079       0.0792
+   10     reconnut                       -0.001073       0.0529
+   11     put                            -0.001019       0.0464
+   12     craintif                       -0.000983       0.0877
+   13     continuez                      -0.000926       0.0721
+   14     unissaient                     -0.000895       0.1091
+   15     complot                        -0.000774       0.0830
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ram                            +0.122674       0.1607
+   2      reine                          +0.107114       0.2108
+   3      batiste                        +0.090975       0.1208
+   4      fronça                         +0.069435       0.0699
+   5      affectionnait                  +0.064309       0.1053
+   6      voluptueuses                   +0.059628       0.1241
+   7      délaissée                      +0.059344       0.1037
+   8      lévrier                        +0.054497       0.1340
+   9      pétales                        +0.050261       0.0774
+   10     fierté                         +0.050128       0.0468
+   11     préférant                      +0.047722       0.0822
+   12     raidir                         +0.043103       0.1024
+   13     boudait                        +0.041538       0.1043
+   14     miel                           +0.037964       0.0570
+   15     sensualité                     +0.034743       0.0844
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tarse                          -0.130591       0.3924
+   2      ministre                       -0.102100       0.1282
+   3      émir                           -0.082784       0.1448
+   4      fit                            -0.072789       0.1221
+   5      allusion                       -0.067668       0.0546
+   6      rapports                       -0.054700       0.0516
+   7      reconnut                       -0.054624       0.0529
+   8      poing                          -0.051457       0.0422
+   9      craintif                       -0.050461       0.0877
+   10     complot                        -0.050114       0.0830
+   11     brusques                       -0.047433       0.0792
+   12     continuez                      -0.047251       0.0721
+   13     prévenus                       -0.040106       0.0798
+   14     put                            -0.039025       0.0464
+   15     aperçut                        -0.038971       0.0511
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+boudait                   +0.001140     +0.000113     +0.000113     0.1043
+fit                       +0.000000     +0.000094     +0.000094     0.1221
+courbant                  +0.000000     +0.000085     +0.000085     0.1063
+admirait                  +0.000000     +0.000063     +0.000063     0.0672
+ambiguïté                 +0.000131     +0.000059     +0.000059     0.0959
+kiosque                   +0.000000     +0.000057     +0.000057     0.0942
+embarcadère               +0.000339     +0.000055     +0.000055     0.1193
+aperçut                   +0.000000     +0.000054     +0.000054     0.0511
+intelligence              +0.000000     +0.000050     +0.000050     0.0460
+frappa                    +0.000000     +0.000047     +0.000047     0.0544
+guillaume                 +0.000661     +0.000042     +0.000042     0.1767
+cavalière                 +0.000000     +0.000041     +0.000041     0.1018
+interrompit               +0.000000     +0.000038     +0.000038     0.0557
+allusion                  +0.000000     +0.000036     +0.000036     0.0546
+chemins                   +0.000000     +0.000035     +0.000035     0.0482
+dissimulait               +0.000000     +0.000034     +0.000034     0.0702
+émir                      +0.000000     +0.000031     +0.000031     0.1448
+harem                     +0.000000     +0.000030     +0.000030     0.1151
+saute                     +0.000000     +0.000030     +0.000030     0.0574
+trahi                     +0.000264     +0.000026     +0.000026     0.0656
+logit final pour 'femme': 0.9419
+# analyse pour la classe: HOMME
+# logit: -0.6724
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      boudait                        +0.000054       0.1043
+   2      harem                          +0.000044       0.1151
+   3      courbant                       +0.000037       0.1063
+   4      embarcadère                    +0.000037       0.1193
+   5      admirait                       +0.000032       0.0672
+   6      affectionnait                  +0.000029       0.1053
+   7      aperçut                        +0.000027       0.0511
+   8      kiosque                        +0.000027       0.0942
+   9      descendue                      +0.000024       0.0675
+   10     émir                           +0.000022       0.1448
+   11     intelligence                   +0.000020       0.0460
+   12     sensualité                     +0.000019       0.0844
+   13     prématuré                      +0.000019       0.1050
+   14     animal                         +0.000018       0.0425
+   15     ambiguïté                      +0.000016       0.0959
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      reine                          -0.000121       0.2108
+   2      sicile                         -0.000063       0.1114
+   3      droiture                       -0.000061       0.1050
+   4      roi                            -0.000056       0.1948
+   5      redresser                      -0.000049       0.0650
+   6      méprisait                      -0.000048       0.0872
+   7      ram                            -0.000047       0.1607
+   8      pétales                        -0.000046       0.0774
+   9      hugues                         -0.000046       0.1318
+   10     habileté                       -0.000045       0.0708
+   11     froissés                       -0.000044       0.0998
+   12     dissimulée                     -0.000041       0.0752
+   13     voluptueuses                   -0.000040       0.1241
+   14     éducation                      -0.000038       0.0499
+   15     ministre                       -0.000037       0.1282
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      boudait                        +0.000054       0.1043
+   2      harem                          +0.000044       0.1151
+   3      courbant                       +0.000037       0.1063
+   4      embarcadère                    +0.000037       0.1193
+   5      admirait                       +0.000032       0.0672
+   6      affectionnait                  +0.000029       0.1053
+   7      aperçut                        +0.000027       0.0511
+   8      kiosque                        +0.000027       0.0942
+   9      descendue                      +0.000024       0.0675
+   10     émir                           +0.000022       0.1448
+   11     intelligence                   +0.000020       0.0460
+   12     sensualité                     +0.000019       0.0844
+   13     prématuré                      +0.000019       0.1050
+   14     animal                         +0.000018       0.0425
+   15     ambiguïté                      +0.000016       0.0959
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      reine                          -0.000121       0.2108
+   2      sicile                         -0.000063       0.1114
+   3      droiture                       -0.000061       0.1050
+   4      roi                            -0.000056       0.1948
+   5      redresser                      -0.000049       0.0650
+   6      méprisait                      -0.000048       0.0872
+   7      ram                            -0.000047       0.1607
+   8      pétales                        -0.000046       0.0774
+   9      hugues                         -0.000046       0.1318
+   10     habileté                       -0.000045       0.0708
+   11     froissés                       -0.000044       0.0998
+   12     dissimulée                     -0.000041       0.0752
+   13     voluptueuses                   -0.000040       0.1241
+   14     éducation                      -0.000038       0.0499
+   15     ministre                       -0.000037       0.1282
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tarse                          +0.001815       0.3924
+   2      émir                           +0.001511       0.1448
+   3      ministre                       +0.001442       0.1282
+   4      fit                            +0.001322       0.1221
+   5      allusion                       +0.001109       0.0546
+   6      brusques                       +0.000869       0.0792
+   7      reconnut                       +0.000814       0.0529
+   8      rapports                       +0.000769       0.0516
+   9      craintif                       +0.000725       0.0877
+   10     put                            +0.000708       0.0464
+   11     aperçut                        +0.000707       0.0511
+   12     unissaient                     +0.000694       0.1091
+   13     poing                          +0.000691       0.0422
+   14     continuez                      +0.000557       0.0721
+   15     vinrent                        +0.000520       0.0635
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ram                            -0.001883       0.1607
+   2      reine                          -0.001784       0.2108
+   3      batiste                        -0.001252       0.1208
+   4      fronça                         -0.001090       0.0699
+   5      délaissée                      -0.000998       0.1037
+   6      lévrier                        -0.000986       0.1340
+   7      pétales                        -0.000977       0.0774
+   8      affectionnait                  -0.000907       0.1053
+   9      fierté                         -0.000826       0.0468
+   10     raidir                         -0.000784       0.1024
+   11     voluptueuses                   -0.000754       0.1241
+   12     droiture                       -0.000749       0.1050
+   13     préférant                      -0.000700       0.0822
+   14     mathieu                        -0.000693       0.1077
+   15     mariage                        -0.000678       0.0419
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tarse                          +0.094621       0.3924
+   2      ministre                       +0.069953       0.1282
+   3      fit                            +0.055978       0.1221
+   4      émir                           +0.050481       0.1448
+   5      allusion                       +0.046725       0.0546
+   6      reconnut                       +0.040009       0.0529
+   7      roi                            +0.037535       0.1948
+   8      rapports                       +0.037019       0.0516
+   9      craintif                       +0.036409       0.0877
+   10     brusques                       +0.034100       0.0792
+   11     complot                        +0.032429       0.0830
+   12     poing                          +0.030205       0.0422
+   13     continuez                      +0.030022       0.0721
+   14     put                            +0.028816       0.0464
+   15     unissaient                     +0.026315       0.1091
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ram                            -0.085249       0.1607
+   2      reine                          -0.058112       0.2108
+   3      batiste                        -0.052937       0.1208
+   4      affectionnait                  -0.042865       0.1053
+   5      fronça                         -0.042682       0.0699
+   6      délaissée                      -0.038425       0.1037
+   7      lévrier                        -0.035858       0.1340
+   8      raidir                         -0.035399       0.1024
+   9      voluptueuses                   -0.033784       0.1241
+   10     fierté                         -0.032992       0.0468
+   11     mathieu                        -0.032484       0.1077
+   12     préférant                      -0.030404       0.0822
+   13     croisent                       -0.029244       0.0807
+   14     pétales                        -0.028628       0.0774
+   15     sensualité                     -0.027104       0.0844
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+boudait                   +0.000000     +0.000054     +0.000054     0.1043
+harem                     +0.000000     +0.000044     +0.000044     0.1151
+courbant                  +0.000193     +0.000037     +0.000037     0.1063
+embarcadère               +0.000000     +0.000037     +0.000037     0.1193
+admirait                  +0.000267     +0.000032     +0.000032     0.0672
+affectionnait             +0.000000     +0.000029     +0.000029     0.1053
+aperçut                   +0.000707     +0.000027     +0.000027     0.0511
+kiosque                   +0.000434     +0.000027     +0.000027     0.0942
+descendue                 +0.000000     +0.000024     +0.000024     0.0675
+émir                      +0.001511     +0.000022     +0.000022     0.1448
+intelligence              +0.000348     +0.000020     +0.000020     0.0460
+sensualité                +0.000000     +0.000019     +0.000019     0.0844
+prématuré                 +0.000000     +0.000019     +0.000019     0.1050
+animal                    +0.000107     +0.000018     +0.000018     0.0425
+ambiguïté                 +0.000010     +0.000016     +0.000016     0.0959
+fit                       +0.001322     +0.000015     +0.000015     0.1221
+interrompit               +0.000068     +0.000013     +0.000013     0.0557
+allusion                  +0.001109     +0.000013     +0.000013     0.0546
+projette                  +0.000000     +0.000012     +0.000012     0.0896
+attitude                  +0.000389     +0.000012     +0.000012     0.0411
+logit final pour 'homme': -0.6724

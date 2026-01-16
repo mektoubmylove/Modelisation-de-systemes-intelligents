@@ -1,0 +1,386 @@
+texte analysé: allier . moi , du cantal . mon père a quatre vingt huit ans et vit encore dans sa ferme . il en était plus fier , aurait on juré , que de ses titres scientifiques . il m est passé par les mains beauco...
+prédiction: HOMME (confiance: 80.4%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.8317
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      éventreur                      +0.000179       0.1869
+   2      tolérance                      +0.000069       0.1051
+   3      bravade                        +0.000059       0.1245
+   4      actes                          +0.000055       0.1118
+   5      attentat                       +0.000052       0.0898
+   6      juré                           +0.000051       0.0575
+   7      éprouvaient                    +0.000049       0.1056
+   8      savante                        +0.000048       0.1006
+   9      historiques                    +0.000044       0.0931
+   10     risquent                       +0.000039       0.0905
+   11     racontent                      +0.000039       0.0877
+   12     humiliés                       +0.000038       0.1434
+   13     secteur                        +0.000030       0.0831
+   14     xviiie                         +0.000028       0.0989
+   15     auteur                         +0.000027       0.0561
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      criminels                      -0.000122       0.1706
+   2      jack                           -0.000080       0.1099
+   3      aliénés                        -0.000079       0.2900
+   4      scientifiques                  -0.000071       0.0882
+   5      interpellée                    -0.000057       0.1336
+   6      publiques                      -0.000054       0.0870
+   7      retrouvée                      -0.000048       0.0586
+   8      persuadés                      -0.000041       0.0943
+   9      attardés                       -0.000040       0.1192
+   10     concorde                       -0.000039       0.1009
+   11     répétés                        -0.000038       0.0937
+   12     crapuleux                      -0.000034       0.1343
+   13     vanter                         -0.000034       0.0765
+   14     motif                          -0.000032       0.0597
+   15     pis                            -0.000029       0.0479
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      éventreur                      +0.000179       0.1869
+   2      tolérance                      +0.000069       0.1051
+   3      bravade                        +0.000059       0.1245
+   4      actes                          +0.000055       0.1118
+   5      attentat                       +0.000052       0.0898
+   6      juré                           +0.000051       0.0575
+   7      éprouvaient                    +0.000049       0.1056
+   8      savante                        +0.000048       0.1006
+   9      historiques                    +0.000044       0.0931
+   10     risquent                       +0.000039       0.0905
+   11     racontent                      +0.000039       0.0877
+   12     humiliés                       +0.000038       0.1434
+   13     secteur                        +0.000030       0.0831
+   14     xviiie                         +0.000028       0.0989
+   15     auteur                         +0.000027       0.0561
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      criminels                      -0.000122       0.1706
+   2      jack                           -0.000080       0.1099
+   3      aliénés                        -0.000079       0.2900
+   4      scientifiques                  -0.000071       0.0882
+   5      interpellée                    -0.000057       0.1336
+   6      publiques                      -0.000054       0.0870
+   7      retrouvée                      -0.000048       0.0586
+   8      persuadés                      -0.000041       0.0943
+   9      attardés                       -0.000040       0.1192
+   10     concorde                       -0.000039       0.1009
+   11     répétés                        -0.000038       0.0937
+   12     crapuleux                      -0.000034       0.1343
+   13     vanter                         -0.000034       0.0765
+   14     motif                          -0.000032       0.0597
+   15     pis                            -0.000029       0.0479
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      éventreur                      +0.001708       0.1869
+   2      orthodoxe                      +0.000917       0.1275
+   3      criminels                      +0.000892       0.1706
+   4      humiliation                    +0.000863       0.0679
+   5      tolérance                      +0.000844       0.1051
+   6      retrouvée                      +0.000769       0.0586
+   7      majorité                       +0.000752       0.0669
+   8      interpellée                    +0.000712       0.1336
+   9      constante                      +0.000701       0.0784
+   10     racontent                      +0.000640       0.0877
+   11     parlent                        +0.000536       0.0543
+   12     remarques                      +0.000527       0.0810
+   13     jack                           +0.000497       0.1099
+   14     humiliés                       +0.000492       0.1434
+   15     persuadés                      +0.000432       0.0943
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      maigret                        -0.006968       0.4734
+   2      clichy                         -0.002115       0.1260
+   3      crapuleux                      -0.001649       0.1343
+   4      montmartre                     -0.001617       0.1021
+   5      recommencera                   -0.001533       0.1355
+   6      jadis                          -0.001149       0.0578
+   7      persuadé                       -0.001056       0.0588
+   8      crime                          -0.000998       0.1005
+   9      refoulée                       -0.000954       0.1418
+   10     vampire                        -0.000878       0.1157
+   11     secteur                        -0.000841       0.0831
+   12     résumé                         -0.000835       0.0826
+   13     fatalement                     -0.000778       0.0937
+   14     savante                        -0.000720       0.1006
+   15     pensif                         -0.000668       0.0826
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      éventreur                      +0.077675       0.1869
+   2      orthodoxe                      +0.047222       0.1275
+   3      retrouvée                      +0.041326       0.0586
+   4      criminels                      +0.040765       0.1706
+   5      humiliation                    +0.038603       0.0679
+   6      constante                      +0.033791       0.0784
+   7      majorité                       +0.029980       0.0669
+   8      persuadés                      +0.028482       0.0943
+   9      tolérance                      +0.028424       0.1051
+   10     racontent                      +0.028374       0.0877
+   11     remarques                      +0.027970       0.0810
+   12     aliénés                        +0.027384       0.2900
+   13     parlent                        +0.025286       0.0543
+   14     interpellée                    +0.025069       0.1336
+   15     jack                           +0.024668       0.1099
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      maigret                        -0.350704       0.4734
+   2      clichy                         -0.106490       0.1260
+   3      montmartre                     -0.079967       0.1021
+   4      crapuleux                      -0.075656       0.1343
+   5      recommencera                   -0.070921       0.1355
+   6      jadis                          -0.056380       0.0578
+   7      persuadé                       -0.053519       0.0588
+   8      crime                          -0.049529       0.1005
+   9      secteur                        -0.045703       0.0831
+   10     résumé                         -0.044351       0.0826
+   11     éprouvaient                    -0.039119       0.1056
+   12     refoulée                       -0.039083       0.1418
+   13     savante                        -0.038309       0.1006
+   14     vampire                        -0.037756       0.1157
+   15     fatalement                     -0.036952       0.0937
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+éventreur                 +0.001708     +0.000179     +0.000179     0.1869
+tolérance                 +0.000844     +0.000069     +0.000069     0.1051
+bravade                   +0.000000     +0.000059     +0.000059     0.1245
+actes                     +0.000000     +0.000055     +0.000055     0.1118
+attentat                  +0.000000     +0.000052     +0.000052     0.0898
+juré                      +0.000000     +0.000051     +0.000051     0.0575
+éprouvaient               +0.000000     +0.000049     +0.000049     0.1056
+savante                   +0.000000     +0.000048     +0.000048     0.1006
+historiques               +0.000000     +0.000044     +0.000044     0.0931
+risquent                  +0.000000     +0.000039     +0.000039     0.0905
+racontent                 +0.000640     +0.000039     +0.000039     0.0877
+humiliés                  +0.000492     +0.000038     +0.000038     0.1434
+secteur                   +0.000000     +0.000030     +0.000030     0.0831
+xviiie                    +0.000000     +0.000028     +0.000028     0.0989
+auteur                    +0.000000     +0.000027     +0.000027     0.0561
+clichy                    +0.000000     +0.000026     +0.000026     0.1260
+comprenez                 +0.000000     +0.000023     +0.000023     0.0526
+allier                    +0.000244     +0.000021     +0.000021     0.1255
+persuadé                  +0.000000     +0.000019     +0.000019     0.0588
+polonais                  +0.000309     +0.000017     +0.000017     0.1045
+logit final pour 'femme': -0.8317
+# analyse pour la classe: HOMME  prédite
+# logit: 0.5829
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      éventreur                      +0.000141       0.1869
+   2      savante                        +0.000030       0.1006
+   3      bravade                        +0.000028       0.1245
+   4      analogie                       +0.000027       0.1396
+   5      tolérance                      +0.000027       0.1051
+   6      éprouvaient                    +0.000025       0.1056
+   7      secteur                        +0.000023       0.0831
+   8      risquent                       +0.000022       0.0905
+   9      humiliés                       +0.000022       0.1434
+   10     racontent                      +0.000021       0.0877
+   11     médiocres                      +0.000021       0.1029
+   12     éprouvé                        +0.000020       0.0609
+   13     juré                           +0.000019       0.0575
+   14     conscient                      +0.000018       0.0669
+   15     polonais                       +0.000015       0.1045
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      criminels                      -0.000104       0.1706
+   2      aliénés                        -0.000069       0.2900
+   3      manifestation                  -0.000046       0.0769
+   4      attardés                       -0.000044       0.1192
+   5      recommencera                   -0.000043       0.1355
+   6      motif                          -0.000043       0.0597
+   7      vampire                        -0.000040       0.1157
+   8      répétés                        -0.000038       0.0937
+   9      entourage                      -0.000037       0.0698
+   10     prisons                        -0.000037       0.0947
+   11     pis                            -0.000030       0.0479
+   12     persuadés                      -0.000030       0.0943
+   13     crime                          -0.000029       0.1005
+   14     publiques                      -0.000028       0.0870
+   15     résumé                         -0.000026       0.0826
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      éventreur                      +0.000141       0.1869
+   2      savante                        +0.000030       0.1006
+   3      bravade                        +0.000028       0.1245
+   4      analogie                       +0.000027       0.1396
+   5      tolérance                      +0.000027       0.1051
+   6      éprouvaient                    +0.000025       0.1056
+   7      secteur                        +0.000023       0.0831
+   8      risquent                       +0.000022       0.0905
+   9      humiliés                       +0.000022       0.1434
+   10     racontent                      +0.000021       0.0877
+   11     médiocres                      +0.000021       0.1029
+   12     éprouvé                        +0.000020       0.0609
+   13     juré                           +0.000019       0.0575
+   14     conscient                      +0.000018       0.0669
+   15     polonais                       +0.000015       0.1045
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      criminels                      -0.000104       0.1706
+   2      aliénés                        -0.000069       0.2900
+   3      manifestation                  -0.000046       0.0769
+   4      attardés                       -0.000044       0.1192
+   5      recommencera                   -0.000043       0.1355
+   6      motif                          -0.000043       0.0597
+   7      vampire                        -0.000040       0.1157
+   8      répétés                        -0.000038       0.0937
+   9      entourage                      -0.000037       0.0698
+   10     prisons                        -0.000037       0.0947
+   11     pis                            -0.000030       0.0479
+   12     persuadés                      -0.000030       0.0943
+   13     crime                          -0.000029       0.1005
+   14     publiques                      -0.000028       0.0870
+   15     résumé                         -0.000026       0.0826
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      maigret                        +0.005850       0.4734
+   2      clichy                         +0.001846       0.1260
+   3      crapuleux                      +0.001593       0.1343
+   4      montmartre                     +0.001493       0.1021
+   5      jadis                          +0.001136       0.0578
+   6      recommencera                   +0.001106       0.1355
+   7      persuadé                       +0.000973       0.0588
+   8      crime                          +0.000960       0.1005
+   9      fatalement                     +0.000850       0.0937
+   10     vampire                        +0.000746       0.1157
+   11     refoulée                       +0.000732       0.1418
+   12     résumé                         +0.000686       0.0826
+   13     secteur                        +0.000661       0.0831
+   14     crimes                         +0.000652       0.1360
+   15     éprouvaient                    +0.000609       0.1056
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      éventreur                      -0.001373       0.1869
+   2      orthodoxe                      -0.000849       0.1275
+   3      interpellée                    -0.000825       0.1336
+   4      criminels                      -0.000764       0.1706
+   5      retrouvée                      -0.000707       0.0586
+   6      humiliation                    -0.000692       0.0679
+   7      tolérance                      -0.000624       0.1051
+   8      majorité                       -0.000539       0.0669
+   9      racontent                      -0.000525       0.0877
+   10     jack                           -0.000483       0.1099
+   11     scientifiques                  -0.000461       0.0882
+   12     remarques                      -0.000408       0.0810
+   13     constante                      -0.000385       0.0784
+   14     attardés                       -0.000379       0.1192
+   15     parlent                        -0.000378       0.0543
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      maigret                        +0.265798       0.4734
+   2      clichy                         +0.084529       0.1260
+   3      crapuleux                      +0.073313       0.1343
+   4      montmartre                     +0.068091       0.1021
+   5      jadis                          +0.055650       0.0578
+   6      persuadé                       +0.047689       0.0588
+   7      recommencera                   +0.044666       0.1355
+   8      fatalement                     +0.041839       0.0937
+   9      crime                          +0.038082       0.1005
+   10     résumé                         +0.037177       0.0826
+   11     secteur                        +0.036044       0.0831
+   12     refoulée                       +0.035430       0.1418
+   13     éprouvaient                    +0.032994       0.1056
+   14     vampire                        +0.032565       0.1157
+   15     juré                           +0.031549       0.0575
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      éventreur                      -0.060095       0.1869
+   2      orthodoxe                      -0.048009       0.1275
+   3      criminels                      -0.044820       0.1706
+   4      aliénés                        -0.043193       0.2900
+   5      interpellée                    -0.038502       0.1336
+   6      humiliation                    -0.036649       0.0679
+   7      retrouvée                      -0.035668       0.0586
+   8      racontent                      -0.030157       0.0877
+   9      jack                           -0.029206       0.1099
+   10     tolérance                      -0.027724       0.1051
+   11     majorité                       -0.024061       0.0669
+   12     persuadés                      -0.023211       0.0943
+   13     remarques                      -0.022862       0.0810
+   14     constante                      -0.021707       0.0784
+   15     sache                          -0.021013       0.0465
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+éventreur                 +0.000000     +0.000141     +0.000141     0.1869
+savante                   +0.000500     +0.000030     +0.000030     0.1006
+bravade                   +0.000079     +0.000028     +0.000028     0.1245
+analogie                  +0.000000     +0.000027     +0.000027     0.1396
+tolérance                 +0.000000     +0.000027     +0.000027     0.1051
+éprouvaient               +0.000609     +0.000025     +0.000025     0.1056
+secteur                   +0.000661     +0.000023     +0.000023     0.0831
+risquent                  +0.000032     +0.000022     +0.000022     0.0905
+humiliés                  +0.000077     +0.000022     +0.000022     0.1434
+racontent                 +0.000000     +0.000021     +0.000021     0.0877
+médiocres                 +0.000000     +0.000021     +0.000021     0.1029
+éprouvé                   +0.000313     +0.000020     +0.000020     0.0609
+juré                      +0.000588     +0.000019     +0.000019     0.0575
+conscient                 +0.000380     +0.000018     +0.000018     0.0669
+polonais                  +0.000000     +0.000015     +0.000015     0.1045
+xviiie                    +0.000000     +0.000014     +0.000014     0.0989
+comprenez                 +0.000489     +0.000013     +0.000013     0.0526
+étudié                    +0.000021     +0.000012     +0.000012     0.0727
+auteur                    +0.000262     +0.000011     +0.000011     0.0561
+actes                     +0.000353     +0.000011     +0.000011     0.1118
+logit final pour 'homme': 0.5829

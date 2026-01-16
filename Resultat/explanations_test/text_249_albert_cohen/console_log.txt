@@ -1,0 +1,386 @@
+texte analysé: vais mieux . au revoir . sans transition , elle dit à son père que paris lui déplaisait , qu elle avait hâte de retrouver les primevères et que , d ailleurs , elle préférait que le mariage eût lieu à ...
+prédiction: HOMME (confiance: 81.7%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.8399
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      saltiel                        +0.000175       0.6820
+   2      solal                          +0.000158       0.3193
+   3      gaillardement                  +0.000061       0.1069
+   4      vendrait                       +0.000059       0.1056
+   5      commissionnaire                +0.000052       0.1109
+   6      exemplaires                    +0.000048       0.1272
+   7      neveu                          +0.000043       0.1073
+   8      rajeunit                       +0.000039       0.1034
+   9      transition                     +0.000038       0.0651
+   10     einstein                       +0.000033       0.1039
+   11     moelle                         +0.000032       0.0710
+   12     ruminait                       +0.000030       0.0916
+   13     pigeonnier                     +0.000030       0.1095
+   14     valeureux                      +0.000030       0.0812
+   15     préférait                      +0.000028       0.0419
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cents                          -0.000068       0.0664
+   2      chanta                         -0.000055       0.0766
+   3      mariage                        -0.000050       0.0665
+   4      acheta                         -0.000049       0.0694
+   5      genève                         -0.000043       0.0822
+   6      imprimeurs                     -0.000040       0.1124
+   7      imprimerie                     -0.000038       0.0785
+   8      jouets                         -0.000034       0.0565
+   9      torts                          -0.000032       0.0713
+   10     attendaient                    -0.000028       0.0353
+   11     cependant                      -0.000027       0.0313
+   12     lait                           -0.000027       0.0346
+   13     passants                       -0.000022       0.0436
+   14     permettre                      -0.000019       0.0345
+   15     envol                          -0.000018       0.0659
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      saltiel                        +0.000175       0.6820
+   2      solal                          +0.000158       0.3193
+   3      gaillardement                  +0.000061       0.1069
+   4      vendrait                       +0.000059       0.1056
+   5      commissionnaire                +0.000052       0.1109
+   6      exemplaires                    +0.000048       0.1272
+   7      neveu                          +0.000043       0.1073
+   8      rajeunit                       +0.000039       0.1034
+   9      transition                     +0.000038       0.0651
+   10     einstein                       +0.000033       0.1039
+   11     moelle                         +0.000032       0.0710
+   12     ruminait                       +0.000030       0.0916
+   13     pigeonnier                     +0.000030       0.1095
+   14     valeureux                      +0.000030       0.0812
+   15     préférait                      +0.000028       0.0419
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cents                          -0.000068       0.0664
+   2      chanta                         -0.000055       0.0766
+   3      mariage                        -0.000050       0.0665
+   4      acheta                         -0.000049       0.0694
+   5      genève                         -0.000043       0.0822
+   6      imprimeurs                     -0.000040       0.1124
+   7      imprimerie                     -0.000038       0.0785
+   8      jouets                         -0.000034       0.0565
+   9      torts                          -0.000032       0.0713
+   10     attendaient                    -0.000028       0.0353
+   11     cependant                      -0.000027       0.0313
+   12     lait                           -0.000027       0.0346
+   13     passants                       -0.000022       0.0436
+   14     permettre                      -0.000019       0.0345
+   15     envol                          -0.000018       0.0659
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      primevères                     +0.001441       0.1075
+   2      renvoya                        +0.001114       0.0697
+   3      mariage                        +0.001092       0.0665
+   4      jubilait                       +0.001041       0.0829
+   5      exemplaires                    +0.000976       0.1272
+   6      amande                         +0.000704       0.0646
+   7      imprimeurs                     +0.000673       0.1124
+   8      serviraient                    +0.000599       0.0909
+   9      tirerait                       +0.000577       0.1557
+   10     rajeuni                        +0.000530       0.0889
+   11     jupe                           +0.000470       0.0416
+   12     ordonna                        +0.000427       0.0497
+   13     préférait                      +0.000402       0.0419
+   14     envol                          +0.000375       0.0659
+   15     ouvrage                        +0.000373       0.0806
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      saltiel                        -0.005750       0.6820
+   2      solal                          -0.002900       0.3193
+   3      cents                          -0.001584       0.0664
+   4      gaillardement                  -0.001532       0.1069
+   5      huissier                       -0.001216       0.0764
+   6      expliquaient                   -0.001062       0.0899
+   7      transition                     -0.000991       0.0651
+   8      pigeonnier                     -0.000872       0.1095
+   9      caoutchouc                     -0.000839       0.0579
+   10     xxi                            -0.000816       0.0892
+   11     dirigeaient                    -0.000811       0.0702
+   12     valeureux                      -0.000738       0.0812
+   13     vendrait                       -0.000710       0.1056
+   14     genève                         -0.000701       0.0822
+   15     eût                            -0.000621       0.0350
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      primevères                     +0.059497       0.1075
+   2      mariage                        +0.050335       0.0665
+   3      renvoya                        +0.047417       0.0697
+   4      jubilait                       +0.045511       0.0829
+   5      amande                         +0.031762       0.0646
+   6      imprimeurs                     +0.030068       0.1124
+   7      exemplaires                    +0.029393       0.1272
+   8      ordonna                        +0.024430       0.0497
+   9      tirerait                       +0.024272       0.1557
+   10     lait                           +0.023080       0.0346
+   11     serviraient                    +0.021569       0.0909
+   12     acheta                         +0.020918       0.0694
+   13     ouvrage                        +0.020342       0.0806
+   14     rajeuni                        +0.019928       0.0889
+   15     imprimerie                     +0.019602       0.0785
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      saltiel                        -0.215689       0.6820
+   2      solal                          -0.107655       0.3193
+   3      gaillardement                  -0.065468       0.1069
+   4      cents                          -0.060916       0.0664
+   5      pigeonnier                     -0.054808       0.1095
+   6      huissier                       -0.053828       0.0764
+   7      expliquaient                   -0.052240       0.0899
+   8      transition                     -0.048979       0.0651
+   9      commissionnaire                -0.033971       0.1109
+   10     valeureux                      -0.033137       0.0812
+   11     xxi                            -0.033114       0.0892
+   12     caoutchouc                     -0.030779       0.0579
+   13     vendrait                       -0.029718       0.1056
+   14     dirigeaient                    -0.028088       0.0702
+   15     somme                          -0.027563       0.0318
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+saltiel                   +0.000000     +0.000175     +0.000175     0.6820
+solal                     +0.000000     +0.000158     +0.000158     0.3193
+gaillardement             +0.000000     +0.000061     +0.000061     0.1069
+vendrait                  +0.000000     +0.000059     +0.000059     0.1056
+commissionnaire           +0.000000     +0.000052     +0.000052     0.1109
+exemplaires               +0.000976     +0.000048     +0.000048     0.1272
+neveu                     +0.000000     +0.000043     +0.000043     0.1073
+rajeunit                  +0.000000     +0.000039     +0.000039     0.1034
+transition                +0.000000     +0.000038     +0.000038     0.0651
+einstein                  +0.000025     +0.000033     +0.000033     0.1039
+moelle                    +0.000000     +0.000032     +0.000032     0.0710
+ruminait                  +0.000000     +0.000030     +0.000030     0.0916
+pigeonnier                +0.000000     +0.000030     +0.000030     0.1095
+valeureux                 +0.000000     +0.000030     +0.000030     0.0812
+préférait                 +0.000402     +0.000028     +0.000028     0.0419
+suivants                  +0.000092     +0.000025     +0.000025     0.0537
+décida                    +0.000282     +0.000024     +0.000024     0.0399
+rassemblement             +0.000000     +0.000023     +0.000023     0.0722
+dirigea                   +0.000000     +0.000022     +0.000022     0.0432
+somme                     +0.000000     +0.000022     +0.000022     0.0318
+logit final pour 'femme': -0.8399
+# analyse pour la classe: HOMME  prédite
+# logit: 0.6575
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      solal                          +0.000107       0.3193
+   2      commissionnaire                +0.000039       0.1109
+   3      vendrait                       +0.000031       0.1056
+   4      plut                           +0.000030       0.0702
+   5      rajeunit                       +0.000030       0.1034
+   6      valeureux                      +0.000026       0.0812
+   7      oncle                          +0.000023       0.0841
+   8      préférait                      +0.000022       0.0419
+   9      exemplaires                    +0.000022       0.1272
+   10     saltiel                        +0.000020       0.6820
+   11     eût                            +0.000019       0.0350
+   12     gaillardement                  +0.000018       0.1069
+   13     hôtel                          +0.000015       0.0326
+   14     frottait                       +0.000015       0.0635
+   15     transition                     +0.000015       0.0651
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cents                          -0.000048       0.0664
+   2      primevères                     -0.000035       0.1075
+   3      mariage                        -0.000032       0.0665
+   4      jouets                         -0.000030       0.0565
+   5      tirerait                       -0.000029       0.1557
+   6      essayaient                     -0.000024       0.0639
+   7      agrément                       -0.000023       0.0685
+   8      rajeuni                        -0.000021       0.0889
+   9      acheta                         -0.000020       0.0694
+   10     villes                         -0.000020       0.0410
+   11     songeait                       -0.000019       0.0465
+   12     retourna                       -0.000019       0.0772
+   13     cependant                      -0.000018       0.0313
+   14     philosophique                  -0.000018       0.0812
+   15     torts                          -0.000017       0.0713
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      solal                          +0.000107       0.3193
+   2      commissionnaire                +0.000039       0.1109
+   3      vendrait                       +0.000031       0.1056
+   4      plut                           +0.000030       0.0702
+   5      rajeunit                       +0.000030       0.1034
+   6      valeureux                      +0.000026       0.0812
+   7      oncle                          +0.000023       0.0841
+   8      préférait                      +0.000022       0.0419
+   9      exemplaires                    +0.000022       0.1272
+   10     saltiel                        +0.000020       0.6820
+   11     eût                            +0.000019       0.0350
+   12     gaillardement                  +0.000018       0.1069
+   13     hôtel                          +0.000015       0.0326
+   14     frottait                       +0.000015       0.0635
+   15     transition                     +0.000015       0.0651
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cents                          -0.000048       0.0664
+   2      primevères                     -0.000035       0.1075
+   3      mariage                        -0.000032       0.0665
+   4      jouets                         -0.000030       0.0565
+   5      tirerait                       -0.000029       0.1557
+   6      essayaient                     -0.000024       0.0639
+   7      agrément                       -0.000023       0.0685
+   8      rajeuni                        -0.000021       0.0889
+   9      acheta                         -0.000020       0.0694
+   10     villes                         -0.000020       0.0410
+   11     songeait                       -0.000019       0.0465
+   12     retourna                       -0.000019       0.0772
+   13     cependant                      -0.000018       0.0313
+   14     philosophique                  -0.000018       0.0812
+   15     torts                          -0.000017       0.0713
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      saltiel                        +0.004823       0.6820
+   2      solal                          +0.002728       0.3193
+   3      cents                          +0.001480       0.0664
+   4      gaillardement                  +0.001102       0.1069
+   5      huissier                       +0.001043       0.0764
+   6      expliquaient                   +0.000965       0.0899
+   7      transition                     +0.000844       0.0651
+   8      genève                         +0.000788       0.0822
+   9      pigeonnier                     +0.000700       0.1095
+   10     xxi                            +0.000698       0.0892
+   11     dirigeaient                    +0.000681       0.0702
+   12     vendrait                       +0.000669       0.1056
+   13     caoutchouc                     +0.000663       0.0579
+   14     eût                            +0.000582       0.0350
+   15     valeureux                      +0.000569       0.0812
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      primevères                     -0.001191       0.1075
+   2      exemplaires                    -0.001182       0.1272
+   3      renvoya                        -0.000948       0.0697
+   4      mariage                        -0.000926       0.0665
+   5      jubilait                       -0.000803       0.0829
+   6      amande                         -0.000718       0.0646
+   7      tirerait                       -0.000552       0.1557
+   8      serviraient                    -0.000528       0.0909
+   9      envol                          -0.000487       0.0659
+   10     jupe                           -0.000461       0.0416
+   11     imprimeurs                     -0.000436       0.1124
+   12     einstein                       -0.000384       0.1039
+   13     lait                           -0.000382       0.0346
+   14     ordonna                        -0.000321       0.0497
+   15     émoi                           -0.000302       0.0561
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      saltiel                        +0.221332       0.6820
+   2      solal                          +0.100926       0.3193
+   3      cents                          +0.056417       0.0664
+   4      huissier                       +0.051546       0.0764
+   5      expliquaient                   +0.045304       0.0899
+   6      gaillardement                  +0.044958       0.1069
+   7      pigeonnier                     +0.040307       0.1095
+   8      transition                     +0.039253       0.0651
+   9      genève                         +0.031809       0.0822
+   10     xxi                            +0.031608       0.0892
+   11     valeureux                      +0.027798       0.0812
+   12     caoutchouc                     +0.026422       0.0579
+   13     eût                            +0.026334       0.0350
+   14     somme                          +0.024867       0.0318
+   15     vendrait                       +0.023752       0.1056
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      primevères                     -0.055174       0.1075
+   2      exemplaires                    -0.045626       0.1272
+   3      mariage                        -0.044275       0.0665
+   4      renvoya                        -0.042370       0.0697
+   5      jubilait                       -0.035710       0.0829
+   6      amande                         -0.031948       0.0646
+   7      imprimeurs                     -0.027889       0.1124
+   8      tirerait                       -0.026786       0.1557
+   9      envol                          -0.026284       0.0659
+   10     jupe                           -0.022224       0.0416
+   11     lait                           -0.021685       0.0346
+   12     ordonna                        -0.018070       0.0497
+   13     serviraient                    -0.016943       0.0909
+   14     émoi                           -0.015392       0.0561
+   15     jouets                         -0.014744       0.0565
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+solal                     +0.002728     +0.000107     +0.000107     0.3193
+commissionnaire           +0.000410     +0.000039     +0.000039     0.1109
+vendrait                  +0.000669     +0.000031     +0.000031     0.1056
+plut                      +0.000333     +0.000030     +0.000030     0.0702
+rajeunit                  +0.000286     +0.000030     +0.000030     0.1034
+valeureux                 +0.000569     +0.000026     +0.000026     0.0812
+oncle                     +0.000249     +0.000023     +0.000023     0.0841
+préférait                 +0.000000     +0.000022     +0.000022     0.0419
+exemplaires               +0.000000     +0.000022     +0.000022     0.1272
+saltiel                   +0.004823     +0.000020     +0.000020     0.6820
+eût                       +0.000582     +0.000019     +0.000019     0.0350
+gaillardement             +0.001102     +0.000018     +0.000018     0.1069
+hôtel                     +0.000175     +0.000015     +0.000015     0.0326
+frottait                  +0.000048     +0.000015     +0.000015     0.0635
+transition                +0.000844     +0.000015     +0.000015     0.0651
+décida                    +0.000000     +0.000015     +0.000015     0.0399
+somme                     +0.000523     +0.000013     +0.000013     0.0318
+général                   +0.000122     +0.000012     +0.000012     0.0320
+dirigea                   +0.000086     +0.000012     +0.000012     0.0432
+xxi                       +0.000698     +0.000012     +0.000012     0.0892
+logit final pour 'homme': 0.6575

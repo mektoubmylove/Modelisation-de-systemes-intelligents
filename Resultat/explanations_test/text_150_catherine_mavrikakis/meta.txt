@@ -1,0 +1,5 @@
+filename: (MAVRIKAKIS)(Catherine)(oscar de profundis)(2)(2016)(1961)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 150
+first_name: catherine
+last_name: mavrikakis
+true_label: femme

@@ -1,0 +1,383 @@
+texte analysé: vraiment , je ne sais pas . . . peut être qu elle vous aimait ? peut être . il a fini son verre cul sec . peut être bien oui . . . peut être bien . . . et vous n êtes pas parti à cause de françoise ? ...
+prédiction: FEMME (confiance: 87.7%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.1453
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      accommoder                     +0.000073       0.1516
+   2      jean                           +0.000055       0.0711
+   3      inquisiteur                    +0.000053       0.1530
+   4      tisane                         +0.000044       0.1422
+   5      prétextes                      +0.000043       0.1460
+   6      con                            +0.000041       0.3398
+   7      délit                          +0.000034       0.1268
+   8      dresse                         +0.000034       0.1113
+   9      prononcer                      +0.000029       0.0730
+   10     foi                            +0.000028       0.0676
+   11     paul                           +0.000024       0.0973
+   12     lucide                         +0.000015       0.1172
+   13     phrases                        +0.000011       0.0701
+   14     flagrant                       +0.000007       0.1419
+   15     familier                       +0.000005       0.0878
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      stupéfaite                     -0.000334       0.2447
+   2      chloé                          -0.000265       0.4764
+   3      françoise                      -0.000163       0.1581
+   4      sensiblerie                    -0.000147       0.2247
+   5      incroyable                     -0.000104       0.3240
+   6      courageux                      -0.000099       0.1027
+   7      sers                           -0.000088       0.1134
+   8      fatigant                       -0.000063       0.1508
+   9      caresse                        -0.000055       0.0856
+   10     horreur                        -0.000050       0.1310
+   11     prétexte                       -0.000043       0.0719
+   12     habit                          -0.000023       0.1118
+   13     faiblesse                      -0.000021       0.0803
+   14     gare                           -0.000020       0.0723
+   15     crier                          -0.000019       0.0656
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      accommoder                     +0.000073       0.1516
+   2      jean                           +0.000055       0.0711
+   3      inquisiteur                    +0.000053       0.1530
+   4      tisane                         +0.000044       0.1422
+   5      prétextes                      +0.000043       0.1460
+   6      con                            +0.000041       0.3398
+   7      délit                          +0.000034       0.1268
+   8      dresse                         +0.000034       0.1113
+   9      prononcer                      +0.000029       0.0730
+   10     foi                            +0.000028       0.0676
+   11     paul                           +0.000024       0.0973
+   12     lucide                         +0.000015       0.1172
+   13     phrases                        +0.000011       0.0701
+   14     flagrant                       +0.000007       0.1419
+   15     familier                       +0.000005       0.0878
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      stupéfaite                     -0.000334       0.2447
+   2      chloé                          -0.000265       0.4764
+   3      françoise                      -0.000163       0.1581
+   4      sensiblerie                    -0.000147       0.2247
+   5      incroyable                     -0.000104       0.3240
+   6      courageux                      -0.000099       0.1027
+   7      sers                           -0.000088       0.1134
+   8      fatigant                       -0.000063       0.1508
+   9      caresse                        -0.000055       0.0856
+   10     horreur                        -0.000050       0.1310
+   11     prétexte                       -0.000043       0.0719
+   12     habit                          -0.000023       0.1118
+   13     faiblesse                      -0.000021       0.0803
+   14     gare                           -0.000020       0.0723
+   15     crier                          -0.000019       0.0656
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chloé                          +0.005740       0.4764
+   2      stupéfaite                     +0.003111       0.2447
+   3      sensiblerie                    +0.002406       0.2247
+   4      sers                           +0.001783       0.1134
+   5      choquée                        +0.001619       0.1307
+   6      françoise                      +0.001219       0.1581
+   7      courageux                      +0.001166       0.1027
+   8      caresse                        +0.001046       0.0856
+   9      incroyable                     +0.000922       0.3240
+   10     familier                       +0.000704       0.0878
+   11     ben                            +0.000579       0.0943
+   12     états                          +0.000385       0.0862
+   13     lâcheté                        +0.000380       0.1102
+   14     attache                        +0.000374       0.1000
+   15     prétexte                       +0.000266       0.0719
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      con                            -0.002913       0.3398
+   2      prononcer                      -0.000930       0.0730
+   3      cul                            -0.000865       0.0940
+   4      accommoder                     -0.000851       0.1516
+   5      tisane                         -0.000849       0.1422
+   6      bouteille                      -0.000834       0.0738
+   7      flagrant                       -0.000762       0.1419
+   8      dresse                         -0.000712       0.1113
+   9      lucide                         -0.000709       0.1172
+   10     jean                           -0.000609       0.0711
+   11     pattes                         -0.000596       0.0734
+   12     prétextes                      -0.000498       0.1460
+   13     fatigant                       -0.000463       0.1508
+   14     paul                           -0.000454       0.0973
+   15     foi                            -0.000441       0.0676
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chloé                          +0.205877       0.4764
+   2      stupéfaite                     +0.121671       0.2447
+   3      sers                           +0.087810       0.1134
+   4      sensiblerie                    +0.071135       0.2247
+   5      choquée                        +0.065990       0.1307
+   6      courageux                      +0.047520       0.1027
+   7      incroyable                     +0.037075       0.3240
+   8      familier                       +0.036820       0.0878
+   9      caresse                        +0.035212       0.0856
+   10     françoise                      +0.034329       0.1581
+   11     ben                            +0.029059       0.0943
+   12     lâcheté                        +0.020442       0.1102
+   13     précis                         +0.019342       0.0677
+   14     états                          +0.018690       0.0862
+   15     inquisiteur                    +0.018346       0.1530
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      con                            -0.137199       0.3398
+   2      flagrant                       -0.049491       0.1419
+   3      bouteille                      -0.046040       0.0738
+   4      prononcer                      -0.044207       0.0730
+   5      cul                            -0.039054       0.0940
+   6      lucide                         -0.037654       0.1172
+   7      tisane                         -0.035762       0.1422
+   8      dresse                         -0.034477       0.1113
+   9      fatigant                       -0.032139       0.1508
+   10     jean                           -0.026439       0.0711
+   11     pattes                         -0.025308       0.0734
+   12     prétextes                      -0.023497       0.1460
+   13     accommoder                     -0.021789       0.1516
+   14     foi                            -0.019780       0.0676
+   15     crier                          -0.012980       0.0656
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+accommoder                +0.000000     +0.000073     +0.000073     0.1516
+jean                      +0.000000     +0.000055     +0.000055     0.0711
+inquisiteur               +0.000000     +0.000053     +0.000053     0.1530
+tisane                    +0.000000     +0.000044     +0.000044     0.1422
+prétextes                 +0.000000     +0.000043     +0.000043     0.1460
+con                       +0.000000     +0.000041     +0.000041     0.3398
+délit                     +0.000040     +0.000034     +0.000034     0.1268
+dresse                    +0.000000     +0.000034     +0.000034     0.1113
+prononcer                 +0.000000     +0.000029     +0.000029     0.0730
+foi                       +0.000000     +0.000028     +0.000028     0.0676
+paul                      +0.000000     +0.000024     +0.000024     0.0973
+lucide                    +0.000000     +0.000015     +0.000015     0.1172
+phrases                   +0.000154     +0.000011     +0.000011     0.0701
+flagrant                  +0.000000     +0.000007     +0.000007     0.1419
+familier                  +0.000704     +0.000005     +0.000005     0.0878
+lâcheté                   +0.000380     +0.000004     +0.000004     0.1102
+bouteille                 +0.000000     +0.000004     +0.000004     0.0738
+animal                    +0.000000     +0.000003     +0.000003     0.0705
+ben                       +0.000579     +0.000001     +0.000001     0.0943
+logit final pour 'femme': 1.1453
+# analyse pour la classe: HOMME
+# logit: -0.8227
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tisane                         +0.000049       0.1422
+   2      accommoder                     +0.000043       0.1516
+   3      animal                         +0.000027       0.0705
+   4      choquée                        +0.000026       0.1307
+   5      inquisiteur                    +0.000025       0.1530
+   6      lâcheté                        +0.000021       0.1102
+   7      prétextes                      +0.000020       0.1460
+   8      délit                          +0.000019       0.1268
+   9      jean                           +0.000017       0.0711
+   10     dresse                         +0.000015       0.1113
+   11     lucide                         +0.000014       0.1172
+   12     foi                            +0.000013       0.0676
+   13     ben                            +0.000010       0.0943
+   14     arrange                        +0.000009       0.1027
+   15     prononcer                      +0.000008       0.0730
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chloé                          -0.000151       0.4764
+   2      stupéfaite                     -0.000125       0.2447
+   3      françoise                      -0.000086       0.1581
+   4      con                            -0.000058       0.3398
+   5      sensiblerie                    -0.000050       0.2247
+   6      courageux                      -0.000043       0.1027
+   7      forts                          -0.000036       0.1739
+   8      fatigant                       -0.000035       0.1508
+   9      prétexte                       -0.000032       0.0719
+   10     caresse                        -0.000027       0.0856
+   11     précis                         -0.000020       0.0677
+   12     paul                           -0.000020       0.0973
+   13     horreur                        -0.000019       0.1310
+   14     cul                            -0.000015       0.0940
+   15     sers                           -0.000015       0.1134
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tisane                         +0.000049       0.1422
+   2      accommoder                     +0.000043       0.1516
+   3      animal                         +0.000027       0.0705
+   4      choquée                        +0.000026       0.1307
+   5      inquisiteur                    +0.000025       0.1530
+   6      lâcheté                        +0.000021       0.1102
+   7      prétextes                      +0.000020       0.1460
+   8      délit                          +0.000019       0.1268
+   9      jean                           +0.000017       0.0711
+   10     dresse                         +0.000015       0.1113
+   11     lucide                         +0.000014       0.1172
+   12     foi                            +0.000013       0.0676
+   13     ben                            +0.000010       0.0943
+   14     arrange                        +0.000009       0.1027
+   15     prononcer                      +0.000008       0.0730
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chloé                          -0.000151       0.4764
+   2      stupéfaite                     -0.000125       0.2447
+   3      françoise                      -0.000086       0.1581
+   4      con                            -0.000058       0.3398
+   5      sensiblerie                    -0.000050       0.2247
+   6      courageux                      -0.000043       0.1027
+   7      forts                          -0.000036       0.1739
+   8      fatigant                       -0.000035       0.1508
+   9      prétexte                       -0.000032       0.0719
+   10     caresse                        -0.000027       0.0856
+   11     précis                         -0.000020       0.0677
+   12     paul                           -0.000020       0.0973
+   13     horreur                        -0.000019       0.1310
+   14     cul                            -0.000015       0.0940
+   15     sers                           -0.000015       0.1134
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      con                            +0.002354       0.3398
+   2      accommoder                     +0.000824       0.1516
+   3      flagrant                       +0.000721       0.1419
+   4      tisane                         +0.000647       0.1422
+   5      bouteille                      +0.000620       0.0738
+   6      prononcer                      +0.000589       0.0730
+   7      cul                            +0.000589       0.0940
+   8      paul                           +0.000578       0.0973
+   9      dresse                         +0.000480       0.1113
+   10     jean                           +0.000444       0.0711
+   11     forts                          +0.000436       0.1739
+   12     pattes                         +0.000356       0.0734
+   13     lucide                         +0.000328       0.1172
+   14     foi                            +0.000299       0.0676
+   15     inquisiteur                    +0.000291       0.1530
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chloé                          -0.004109       0.4764
+   2      stupéfaite                     -0.001926       0.2447
+   3      sensiblerie                    -0.001661       0.2247
+   4      choquée                        -0.001348       0.1307
+   5      sers                           -0.001251       0.1134
+   6      caresse                        -0.000831       0.0856
+   7      courageux                      -0.000812       0.1027
+   8      françoise                      -0.000682       0.1581
+   9      incroyable                     -0.000566       0.3240
+   10     familier                       -0.000459       0.0878
+   11     ben                            -0.000440       0.0943
+   12     états                          -0.000295       0.0862
+   13     attache                        -0.000287       0.1000
+   14     habit                          -0.000183       0.1118
+   15     lâcheté                        -0.000153       0.1102
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      con                            +0.101458       0.3398
+   2      flagrant                       +0.048811       0.1419
+   3      tisane                         +0.033978       0.1422
+   4      bouteille                      +0.033706       0.0738
+   5      prononcer                      +0.029161       0.0730
+   6      cul                            +0.027180       0.0940
+   7      dresse                         +0.025947       0.1113
+   8      accommoder                     +0.021181       0.1516
+   9      paul                           +0.018782       0.0973
+   10     lucide                         +0.018770       0.1172
+   11     jean                           +0.017280       0.0711
+   12     pattes                         +0.014949       0.0734
+   13     prétextes                      +0.012630       0.1460
+   14     forts                          +0.011996       0.1739
+   15     fatigant                       +0.010747       0.1508
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chloé                          -0.140047       0.4764
+   2      stupéfaite                     -0.067760       0.2447
+   3      sers                           -0.059007       0.1134
+   4      choquée                        -0.057059       0.1307
+   5      sensiblerie                    -0.048492       0.2247
+   6      courageux                      -0.037783       0.1027
+   7      françoise                      -0.024549       0.1581
+   8      caresse                        -0.023180       0.0856
+   9      ben                            -0.021546       0.0943
+   10     familier                       -0.020945       0.0878
+   11     états                          -0.016244       0.0862
+   12     incroyable                     -0.014110       0.3240
+   13     attache                        -0.013678       0.1000
+   14     inquisiteur                    -0.008951       0.1530
+   15     gare                           -0.006411       0.0723
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+tisane                    +0.000647     +0.000049     +0.000049     0.1422
+accommoder                +0.000824     +0.000043     +0.000043     0.1516
+animal                    +0.000156     +0.000027     +0.000027     0.0705
+choquée                   +0.000000     +0.000026     +0.000026     0.1307
+inquisiteur               +0.000291     +0.000025     +0.000025     0.1530
+lâcheté                   +0.000000     +0.000021     +0.000021     0.1102
+prétextes                 +0.000252     +0.000020     +0.000020     0.1460
+délit                     +0.000008     +0.000019     +0.000019     0.1268
+jean                      +0.000444     +0.000017     +0.000017     0.0711
+dresse                    +0.000480     +0.000015     +0.000015     0.1113
+lucide                    +0.000328     +0.000014     +0.000014     0.1172
+foi                       +0.000299     +0.000013     +0.000013     0.0676
+ben                       +0.000000     +0.000010     +0.000010     0.0943
+arrange                   +0.000084     +0.000009     +0.000009     0.1027
+prononcer                 +0.000589     +0.000008     +0.000008     0.0730
+phrases                   +0.000000     +0.000008     +0.000008     0.0701
+pattes                    +0.000356     +0.000003     +0.000003     0.0734
+gare                      +0.000000     +0.000000     +0.000000     0.0723
+logit final pour 'homme': -0.8227

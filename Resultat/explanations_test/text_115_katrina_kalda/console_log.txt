@@ -1,0 +1,386 @@
+texte analysé: la regarder et d avouer qu elle me faisait peur . pourquoi ? quel drôle de rêve . j ai voulu entrer dans ma journée ; j ai jeté un coup d oeil à ma montre , il serait bientôt temps de partir à l usine...
+prédiction: FEMME (confiance: 93.8%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.5548
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      intelligence                   +0.000162       0.1705
+   2      périphérie                     +0.000112       0.1968
+   3      admirait                       +0.000105       0.1244
+   4      somme                          +0.000083       0.0742
+   5      ponts                          +0.000068       0.1204
+   6      professeur                     +0.000065       0.1874
+   7      vision                         +0.000063       0.0833
+   8      menue                          +0.000061       0.1399
+   9      usine                          +0.000061       0.1268
+   10     trentaine                      +0.000045       0.0986
+   11     maigre                         +0.000045       0.0828
+   12     événement                      +0.000044       0.0868
+   13     évolution                      +0.000044       0.1382
+   14     raconté                        +0.000028       0.0796
+   15     nette                          +0.000026       0.1074
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rondeur                        -0.000216       0.3570
+   2      date                           -0.000138       0.1551
+   3      rapprocher                     -0.000136       0.1073
+   4      protéger                       -0.000111       0.0790
+   5      née                            -0.000100       0.0872
+   6      décevoir                       -0.000099       0.1528
+   7      rapporte                       -0.000099       0.1186
+   8      anciennes                      -0.000085       0.0946
+   9      précédé                        -0.000084       0.1260
+   10     thèse                          -0.000083       0.1516
+   11     université                     -0.000075       0.1282
+   12     études                         -0.000073       0.0831
+   13     retenu                         -0.000071       0.0884
+   14     préparé                        -0.000071       0.0809
+   15     marie                          -0.000058       0.0881
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      intelligence                   +0.000162       0.1705
+   2      périphérie                     +0.000112       0.1968
+   3      admirait                       +0.000105       0.1244
+   4      somme                          +0.000083       0.0742
+   5      ponts                          +0.000068       0.1204
+   6      professeur                     +0.000065       0.1874
+   7      vision                         +0.000063       0.0833
+   8      menue                          +0.000061       0.1399
+   9      usine                          +0.000061       0.1268
+   10     trentaine                      +0.000045       0.0986
+   11     maigre                         +0.000045       0.0828
+   12     événement                      +0.000044       0.0868
+   13     évolution                      +0.000044       0.1382
+   14     raconté                        +0.000028       0.0796
+   15     nette                          +0.000026       0.1074
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rondeur                        -0.000216       0.3570
+   2      date                           -0.000138       0.1551
+   3      rapprocher                     -0.000136       0.1073
+   4      protéger                       -0.000111       0.0790
+   5      née                            -0.000100       0.0872
+   6      décevoir                       -0.000099       0.1528
+   7      rapporte                       -0.000099       0.1186
+   8      anciennes                      -0.000085       0.0946
+   9      précédé                        -0.000084       0.1260
+   10     thèse                          -0.000083       0.1516
+   11     université                     -0.000075       0.1282
+   12     études                         -0.000073       0.0831
+   13     retenu                         -0.000071       0.0884
+   14     préparé                        -0.000071       0.0809
+   15     marie                          -0.000058       0.0881
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      souvenue                       +0.003995       0.1987
+   2      rondeur                        +0.003037       0.3570
+   3      née                            +0.002664       0.0872
+   4      protéger                       +0.002148       0.0790
+   5      fragile                        +0.001913       0.0842
+   6      botanique                      +0.001488       0.2174
+   7      souvienne                      +0.001481       0.1593
+   8      meilleures                     +0.001465       0.1082
+   9      études                         +0.001461       0.0831
+   10     appliquée                      +0.001459       0.1412
+   11     naissance                      +0.001419       0.0743
+   12     marie                          +0.001406       0.0881
+   13     fins                           +0.001279       0.0826
+   14     université                     +0.001128       0.1282
+   15     cachée                         +0.001055       0.0971
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      intelligence                   -0.001909       0.1705
+   2      somme                          -0.001725       0.0742
+   3      trentaine                      -0.001592       0.0986
+   4      nette                          -0.001408       0.1074
+   5      évolution                      -0.001215       0.1382
+   6      professeur                     -0.001130       0.1874
+   7      grégoire                       -0.001118       0.2428
+   8      événement                      -0.001052       0.0868
+   9      décevoir                       -0.000998       0.1528
+   10     élève                          -0.000950       0.0882
+   11     paraître                       -0.000840       0.0791
+   12     avouer                         -0.000767       0.0768
+   13     maigre                         -0.000695       0.0828
+   14     admirait                       -0.000646       0.1244
+   15     lointaine                      -0.000613       0.0944
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      souvenue                       +0.170110       0.1987
+   2      botanique                      +0.082599       0.2174
+   3      née                            +0.080550       0.0872
+   4      rondeur                        +0.078252       0.3570
+   5      fragile                        +0.071868       0.0842
+   6      protéger                       +0.060256       0.0790
+   7      naissance                      +0.053164       0.0743
+   8      souvienne                      +0.051389       0.1593
+   9      appliquée                      +0.050490       0.1412
+   10     meilleures                     +0.046269       0.1082
+   11     marie                          +0.045518       0.0881
+   12     fins                           +0.043582       0.0826
+   13     université                     +0.042227       0.1282
+   14     usine                          +0.041965       0.1268
+   15     études                         +0.036130       0.0831
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      décevoir                       -0.057161       0.1528
+   2      nette                          -0.055081       0.1074
+   3      trentaine                      -0.053003       0.0986
+   4      somme                          -0.052092       0.0742
+   5      intelligence                   -0.051773       0.1705
+   6      professeur                     -0.046386       0.1874
+   7      élève                          -0.039671       0.0882
+   8      événement                      -0.037868       0.0868
+   9      paraître                       -0.035912       0.0791
+   10     grégoire                       -0.034412       0.2428
+   11     date                           -0.034303       0.1551
+   12     évolution                      -0.030520       0.1382
+   13     ignore                         -0.027861       0.0807
+   14     avouer                         -0.026886       0.0768
+   15     lointaine                      -0.025583       0.0944
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+intelligence              +0.000000     +0.000162     +0.000162     0.1705
+périphérie                +0.000000     +0.000112     +0.000112     0.1968
+admirait                  +0.000000     +0.000105     +0.000105     0.1244
+somme                     +0.000000     +0.000083     +0.000083     0.0742
+ponts                     +0.000153     +0.000068     +0.000068     0.1204
+professeur                +0.000000     +0.000065     +0.000065     0.1874
+vision                    +0.000246     +0.000063     +0.000063     0.0833
+menue                     +0.000112     +0.000061     +0.000061     0.1399
+usine                     +0.000682     +0.000061     +0.000061     0.1268
+trentaine                 +0.000000     +0.000045     +0.000045     0.0986
+maigre                    +0.000000     +0.000045     +0.000045     0.0828
+événement                 +0.000000     +0.000044     +0.000044     0.0868
+évolution                 +0.000000     +0.000044     +0.000044     0.1382
+raconté                   +0.000000     +0.000028     +0.000028     0.0796
+nette                     +0.000000     +0.000026     +0.000026     0.1074
+froide                    +0.000690     +0.000024     +0.000024     0.0745
+maigreur                  +0.000149     +0.000023     +0.000023     0.1550
+élève                     +0.000000     +0.000019     +0.000019     0.0882
+connaissais               +0.000000     +0.000015     +0.000015     0.0897
+grégoire                  +0.000000     +0.000014     +0.000014     0.2428
+logit final pour 'femme': 1.5548
+# analyse pour la classe: HOMME
+# logit: -1.1648
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      botanique                      +0.000072       0.2174
+   2      intelligence                   +0.000069       0.1705
+   3      admirait                       +0.000058       0.1244
+   4      professeur                     +0.000056       0.1874
+   5      périphérie                     +0.000056       0.1968
+   6      évolution                      +0.000055       0.1382
+   7      trentaine                      +0.000044       0.0986
+   8      somme                          +0.000040       0.0742
+   9      ponts                          +0.000040       0.1204
+   10     souvenue                       +0.000035       0.1987
+   11     événement                      +0.000034       0.0868
+   12     usine                          +0.000030       0.1268
+   13     vision                         +0.000025       0.0833
+   14     menue                          +0.000021       0.1399
+   15     particulièrement               +0.000020       0.0831
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rapprocher                     -0.000074       0.1073
+   2      date                           -0.000072       0.1551
+   3      rondeur                        -0.000059       0.3570
+   4      protéger                       -0.000057       0.0790
+   5      anciennes                      -0.000052       0.0946
+   6      rapporte                       -0.000041       0.1186
+   7      précédé                        -0.000041       0.1260
+   8      décevoir                       -0.000038       0.1528
+   9      née                            -0.000037       0.0872
+   10     études                         -0.000037       0.0831
+   11     sujets                         -0.000035       0.1007
+   12     mince                          -0.000033       0.0756
+   13     préparé                        -0.000032       0.0809
+   14     retenu                         -0.000030       0.0884
+   15     élèves                         -0.000030       0.1124
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      botanique                      +0.000072       0.2174
+   2      intelligence                   +0.000069       0.1705
+   3      admirait                       +0.000058       0.1244
+   4      professeur                     +0.000056       0.1874
+   5      périphérie                     +0.000056       0.1968
+   6      évolution                      +0.000055       0.1382
+   7      trentaine                      +0.000044       0.0986
+   8      somme                          +0.000040       0.0742
+   9      ponts                          +0.000040       0.1204
+   10     souvenue                       +0.000035       0.1987
+   11     événement                      +0.000034       0.0868
+   12     usine                          +0.000030       0.1268
+   13     vision                         +0.000025       0.0833
+   14     menue                          +0.000021       0.1399
+   15     particulièrement               +0.000020       0.0831
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rapprocher                     -0.000074       0.1073
+   2      date                           -0.000072       0.1551
+   3      rondeur                        -0.000059       0.3570
+   4      protéger                       -0.000057       0.0790
+   5      anciennes                      -0.000052       0.0946
+   6      rapporte                       -0.000041       0.1186
+   7      précédé                        -0.000041       0.1260
+   8      décevoir                       -0.000038       0.1528
+   9      née                            -0.000037       0.0872
+   10     études                         -0.000037       0.0831
+   11     sujets                         -0.000035       0.1007
+   12     mince                          -0.000033       0.0756
+   13     préparé                        -0.000032       0.0809
+   14     retenu                         -0.000030       0.0884
+   15     élèves                         -0.000030       0.1124
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      somme                          +0.001245       0.0742
+   2      intelligence                   +0.001215       0.1705
+   3      nette                          +0.001183       0.1074
+   4      trentaine                      +0.000960       0.0986
+   5      événement                      +0.000837       0.0868
+   6      grégoire                       +0.000803       0.2428
+   7      professeur                     +0.000798       0.1874
+   8      avouer                         +0.000701       0.0768
+   9      décevoir                       +0.000670       0.1528
+   10     évolution                      +0.000662       0.1382
+   11     suppose                        +0.000569       0.0928
+   12     paraître                       +0.000540       0.0791
+   13     élève                          +0.000512       0.0882
+   14     maigre                         +0.000451       0.0828
+   15     admirait                       +0.000443       0.1244
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      souvenue                       -0.002969       0.1987
+   2      rondeur                        -0.002482       0.3570
+   3      née                            -0.001976       0.0872
+   4      protéger                       -0.001323       0.0790
+   5      fragile                        -0.001212       0.0842
+   6      marie                          -0.001174       0.0881
+   7      études                         -0.001063       0.0831
+   8      botanique                      -0.000966       0.2174
+   9      naissance                      -0.000961       0.0743
+   10     appliquée                      -0.000894       0.1412
+   11     fins                           -0.000861       0.0826
+   12     souvienne                      -0.000853       0.1593
+   13     meilleures                     -0.000852       0.1082
+   14     cachée                         -0.000830       0.0971
+   15     université                     -0.000777       0.1282
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      nette                          +0.045685       0.1074
+   2      somme                          +0.039289       0.0742
+   3      date                           +0.037153       0.1551
+   4      trentaine                      +0.031751       0.0986
+   5      événement                      +0.029994       0.0868
+   6      décevoir                       +0.029858       0.1528
+   7      élève                          +0.025406       0.0882
+   8      sujets                         +0.025021       0.1007
+   9      intelligence                   +0.024914       0.1705
+   10     avouer                         +0.024777       0.0768
+   11     professeur                     +0.023821       0.1874
+   12     paraître                       +0.022352       0.0791
+   13     grégoire                       +0.021546       0.2428
+   14     suppose                        +0.020256       0.0928
+   15     lointaine                      +0.019638       0.0944
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      souvenue                       -0.137476       0.1987
+   2      rondeur                        -0.073874       0.3570
+   3      née                            -0.064306       0.0872
+   4      botanique                      -0.059766       0.2174
+   5      fragile                        -0.050183       0.0842
+   6      marie                          -0.044083       0.0881
+   7      naissance                      -0.038583       0.0743
+   8      protéger                       -0.035269       0.0790
+   9      meilleures                     -0.033020       0.1082
+   10     université                     -0.031484       0.1282
+   11     appliquée                      -0.029994       0.1412
+   12     cachée                         -0.029561       0.0971
+   13     fins                           -0.029367       0.0826
+   14     études                         -0.028569       0.0831
+   15     souvienne                      -0.027590       0.1593
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+botanique                 +0.000000     +0.000072     +0.000072     0.2174
+intelligence              +0.001215     +0.000069     +0.000069     0.1705
+admirait                  +0.000443     +0.000058     +0.000058     0.1244
+professeur                +0.000798     +0.000056     +0.000056     0.1874
+périphérie                +0.000351     +0.000056     +0.000056     0.1968
+évolution                 +0.000662     +0.000055     +0.000055     0.1382
+trentaine                 +0.000960     +0.000044     +0.000044     0.0986
+somme                     +0.001245     +0.000040     +0.000040     0.0742
+ponts                     +0.000000     +0.000040     +0.000040     0.1204
+souvenue                  +0.000000     +0.000035     +0.000035     0.1987
+événement                 +0.000837     +0.000034     +0.000034     0.0868
+usine                     +0.000000     +0.000030     +0.000030     0.1268
+vision                    +0.000000     +0.000025     +0.000025     0.0833
+menue                     +0.000104     +0.000021     +0.000021     0.1399
+particulièrement          +0.000000     +0.000020     +0.000020     0.0831
+connaissais               +0.000223     +0.000015     +0.000015     0.0897
+grégoire                  +0.000803     +0.000014     +0.000014     0.2428
+réservée                  +0.000000     +0.000009     +0.000009     0.1102
+modeste                   +0.000000     +0.000007     +0.000007     0.0943
+nette                     +0.001183     +0.000007     +0.000007     0.1074
+logit final pour 'homme': -1.1648

@@ -1,0 +1,5 @@
+filename: (SORMAN)(Joy)(sciences de la vie)(2)(2017)(1973)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 120
+first_name: joy
+last_name: sorman
+true_label: femme

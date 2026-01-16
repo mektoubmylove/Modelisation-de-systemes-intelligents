@@ -1,0 +1,5 @@
+filename: (LEPELLETIER)(Edmond)(Emile Zola, Sa Vie—Son Oeuvre)(1)(1908)(1846)(1913)(fr)(z)(z)(V)(R)(T).txt
+index: 263
+first_name: edmond
+last_name: lepelletier
+true_label: homme

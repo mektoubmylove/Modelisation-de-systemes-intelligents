@@ -1,0 +1,386 @@
+texte analysé: reconnaissait hier si solennellement pour le chef de la famille ! et qui , devant une situation aussi grave , ne me consulte même pas ? . . . et , après une minute de réflexion : enfin , complotez , m...
+prédiction: HOMME (confiance: 55.6%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.1180
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clerc                          +0.000270       0.4662
+   2      notaire                        +0.000242       0.2363
+   3      triomphalement                 +0.000108       0.1080
+   4      honnêteté                      +0.000089       0.0802
+   5      grades                         +0.000076       0.1385
+   6      interrogea                     +0.000071       0.0674
+   7      physique                       +0.000059       0.0957
+   8      rattachait                     +0.000056       0.1300
+   9      figurer                        +0.000048       0.0864
+   10     moyenne                        +0.000045       0.0659
+   11     franchit                       +0.000045       0.0734
+   12     bonhomme                       +0.000042       0.0605
+   13     xv                             +0.000039       0.0832
+   14     officiers                      +0.000037       0.0789
+   15     romanesque                     +0.000037       0.0960
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      épousant                       -0.000128       0.1020
+   2      aïeul                          -0.000127       0.1119
+   3      actuelle                       -0.000104       0.0811
+   4      bernard                        -0.000085       0.0901
+   5      plaisanté                      -0.000075       0.1257
+   6      inconvénient                   -0.000071       0.0838
+   7      marquise                       -0.000063       0.3167
+   8      mariage                        -0.000057       0.0470
+   9      épanouie                       -0.000052       0.0999
+   10     intime                         -0.000051       0.0549
+   11     crédit                         -0.000050       0.0733
+   12     nourrir                        -0.000050       0.0546
+   13     acheter                        -0.000048       0.0448
+   14     noble                          -0.000046       0.0620
+   15     commodément                    -0.000043       0.1285
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clerc                          +0.000270       0.4662
+   2      notaire                        +0.000242       0.2363
+   3      triomphalement                 +0.000108       0.1080
+   4      honnêteté                      +0.000089       0.0802
+   5      grades                         +0.000076       0.1385
+   6      interrogea                     +0.000071       0.0674
+   7      physique                       +0.000059       0.0957
+   8      rattachait                     +0.000056       0.1300
+   9      figurer                        +0.000048       0.0864
+   10     moyenne                        +0.000045       0.0659
+   11     franchit                       +0.000045       0.0734
+   12     bonhomme                       +0.000042       0.0605
+   13     xv                             +0.000039       0.0832
+   14     officiers                      +0.000037       0.0789
+   15     romanesque                     +0.000037       0.0960
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      épousant                       -0.000128       0.1020
+   2      aïeul                          -0.000127       0.1119
+   3      actuelle                       -0.000104       0.0811
+   4      bernard                        -0.000085       0.0901
+   5      plaisanté                      -0.000075       0.1257
+   6      inconvénient                   -0.000071       0.0838
+   7      marquise                       -0.000063       0.3167
+   8      mariage                        -0.000057       0.0470
+   9      épanouie                       -0.000052       0.0999
+   10     intime                         -0.000051       0.0549
+   11     crédit                         -0.000050       0.0733
+   12     nourrir                        -0.000050       0.0546
+   13     acheter                        -0.000048       0.0448
+   14     noble                          -0.000046       0.0620
+   15     commodément                    -0.000043       0.1285
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      saluée                         +0.001614       0.1148
+   2      aïeul                          +0.001474       0.1119
+   3      écoulés                        +0.001258       0.1058
+   4      familiarité                    +0.001245       0.0850
+   5      madame                         +0.001165       0.0927
+   6      mariage                        +0.001057       0.0470
+   7      étude                          +0.001040       0.1967
+   8      dot                            +0.001037       0.1018
+   9      ruminer                        +0.001009       0.1075
+   10     actuelle                       +0.000890       0.0811
+   11     plaisanté                      +0.000868       0.1257
+   12     installa                       +0.000816       0.0639
+   13     inconvénient                   +0.000813       0.0838
+   14     consulte                       +0.000721       0.1023
+   15     nourrir                        +0.000699       0.0546
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marquise                       -0.003665       0.3167
+   2      clerc                          -0.003453       0.4662
+   3      notaire                        -0.002697       0.2363
+   4      désirez                        -0.001427       0.0855
+   5      gravi                          -0.001409       0.1169
+   6      interrogea                     -0.001263       0.0674
+   7      moyenne                        -0.001258       0.0659
+   8      trouverez                      -0.001227       0.0772
+   9      bonhomme                       -0.001002       0.0605
+   10     communiquer                    -0.000973       0.0663
+   11     figurer                        -0.000953       0.0864
+   12     patron                         -0.000922       0.0530
+   13     sympathie                      -0.000881       0.0609
+   14     second                         -0.000787       0.0450
+   15     minute                         -0.000775       0.0443
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      saluée                         +0.096016       0.1148
+   2      aïeul                          +0.078699       0.1119
+   3      écoulés                        +0.070236       0.1058
+   4      madame                         +0.066890       0.0927
+   5      dot                            +0.063999       0.1018
+   6      mariage                        +0.063215       0.0470
+   7      étude                          +0.059952       0.1967
+   8      familiarité                    +0.055829       0.0850
+   9      ruminer                        +0.049447       0.1075
+   10     installa                       +0.046889       0.0639
+   11     inconvénient                   +0.044533       0.0838
+   12     actuelle                       +0.041964       0.0811
+   13     plaisanté                      +0.040749       0.1257
+   14     épanouie                       +0.040087       0.0999
+   15     consulte                       +0.038487       0.1023
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      notaire                        -0.185672       0.2363
+   2      clerc                          -0.160880       0.4662
+   3      marquise                       -0.152126       0.3167
+   4      interrogea                     -0.074192       0.0674
+   5      désirez                        -0.073506       0.0855
+   6      gravi                          -0.064811       0.1169
+   7      moyenne                        -0.063761       0.0659
+   8      trouverez                      -0.063448       0.0772
+   9      banale                         -0.055473       0.1462
+   10     bonhomme                       -0.052987       0.0605
+   11     sympathie                      -0.052095       0.0609
+   12     communiquer                    -0.049961       0.0663
+   13     flattait                       -0.046391       0.1069
+   14     franchise                      -0.045350       0.0754
+   15     second                         -0.044872       0.0450
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+clerc                     +0.000000     +0.000270     +0.000270     0.4662
+notaire                   +0.000000     +0.000242     +0.000242     0.2363
+triomphalement            +0.000176     +0.000108     +0.000108     0.1080
+honnêteté                 +0.000000     +0.000089     +0.000089     0.0802
+grades                    +0.000000     +0.000076     +0.000076     0.1385
+interrogea                +0.000000     +0.000071     +0.000071     0.0674
+physique                  +0.000000     +0.000059     +0.000059     0.0957
+rattachait                +0.000228     +0.000056     +0.000056     0.1300
+figurer                   +0.000000     +0.000048     +0.000048     0.0864
+moyenne                   +0.000000     +0.000045     +0.000045     0.0659
+franchit                  +0.000202     +0.000045     +0.000045     0.0734
+bonhomme                  +0.000000     +0.000042     +0.000042     0.0605
+xv                        +0.000000     +0.000039     +0.000039     0.0832
+officiers                 +0.000000     +0.000037     +0.000037     0.0789
+romanesque                +0.000565     +0.000037     +0.000037     0.0960
+consulte                  +0.000721     +0.000037     +0.000037     0.1023
+étude                     +0.001040     +0.000037     +0.000037     0.1967
+réflexion                 +0.000000     +0.000036     +0.000036     0.0511
+ruminer                   +0.001009     +0.000027     +0.000027     0.1075
+marquis                   +0.000000     +0.000026     +0.000026     0.1035
+logit final pour 'femme': -0.1180
+# analyse pour la classe: HOMME  prédite
+# logit: 0.1086
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clerc                          +0.000173       0.4662
+   2      notaire                        +0.000124       0.2363
+   3      triomphalement                 +0.000086       0.1080
+   4      rattachait                     +0.000075       0.1300
+   5      grades                         +0.000075       0.1385
+   6      interrogea                     +0.000066       0.0674
+   7      consulte                       +0.000059       0.1023
+   8      honnêteté                      +0.000053       0.0802
+   9      saluée                         +0.000043       0.1148
+   10     physique                       +0.000043       0.0957
+   11     franchit                       +0.000039       0.0734
+   12     altérer                        +0.000037       0.1295
+   13     ruminer                        +0.000037       0.1075
+   14     romanesque                     +0.000037       0.0960
+   15     officiers                      +0.000032       0.0789
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marquise                       -0.000132       0.3167
+   2      épousant                       -0.000095       0.1020
+   3      aïeul                          -0.000076       0.1119
+   4      bernard                        -0.000070       0.0901
+   5      actuelle                       -0.000058       0.0811
+   6      crédit                         -0.000041       0.0733
+   7      inconvénient                   -0.000037       0.0838
+   8      solennellement                 -0.000037       0.0944
+   9      commodément                    -0.000037       0.1285
+   10     mariage                        -0.000036       0.0470
+   11     intime                         -0.000035       0.0549
+   12     dot                            -0.000033       0.1018
+   13     flattait                       -0.000030       0.1069
+   14     acheter                        -0.000029       0.0448
+   15     nourrir                        -0.000027       0.0546
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clerc                          +0.000173       0.4662
+   2      notaire                        +0.000124       0.2363
+   3      triomphalement                 +0.000086       0.1080
+   4      rattachait                     +0.000075       0.1300
+   5      grades                         +0.000075       0.1385
+   6      interrogea                     +0.000066       0.0674
+   7      consulte                       +0.000059       0.1023
+   8      honnêteté                      +0.000053       0.0802
+   9      saluée                         +0.000043       0.1148
+   10     physique                       +0.000043       0.0957
+   11     franchit                       +0.000039       0.0734
+   12     altérer                        +0.000037       0.1295
+   13     ruminer                        +0.000037       0.1075
+   14     romanesque                     +0.000037       0.0960
+   15     officiers                      +0.000032       0.0789
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marquise                       -0.000132       0.3167
+   2      épousant                       -0.000095       0.1020
+   3      aïeul                          -0.000076       0.1119
+   4      bernard                        -0.000070       0.0901
+   5      actuelle                       -0.000058       0.0811
+   6      crédit                         -0.000041       0.0733
+   7      inconvénient                   -0.000037       0.0838
+   8      solennellement                 -0.000037       0.0944
+   9      commodément                    -0.000037       0.1285
+   10     mariage                        -0.000036       0.0470
+   11     intime                         -0.000035       0.0549
+   12     dot                            -0.000033       0.1018
+   13     flattait                       -0.000030       0.1069
+   14     acheter                        -0.000029       0.0448
+   15     nourrir                        -0.000027       0.0546
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clerc                          +0.003936       0.4662
+   2      notaire                        +0.003038       0.2363
+   3      marquise                       +0.002862       0.3167
+   4      désirez                        +0.001366       0.0855
+   5      interrogea                     +0.001284       0.0674
+   6      trouverez                      +0.001241       0.0772
+   7      moyenne                        +0.001219       0.0659
+   8      gravi                          +0.001161       0.1169
+   9      flattait                       +0.001103       0.1069
+   10     figurer                        +0.001004       0.0864
+   11     bonhomme                       +0.000983       0.0605
+   12     sympathie                      +0.000979       0.0609
+   13     minute                         +0.000949       0.0443
+   14     communiquer                    +0.000926       0.0663
+   15     patron                         +0.000885       0.0530
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      saluée                         -0.001698       0.1148
+   2      étude                          -0.001519       0.1967
+   3      aïeul                          -0.001416       0.1119
+   4      madame                         -0.001232       0.0927
+   5      écoulés                        -0.001191       0.1058
+   6      mariage                        -0.001077       0.0470
+   7      familiarité                    -0.001008       0.0850
+   8      dot                            -0.000957       0.1018
+   9      plaisanté                      -0.000926       0.1257
+   10     ruminer                        -0.000818       0.1075
+   11     actuelle                       -0.000799       0.0811
+   12     installa                       -0.000794       0.0639
+   13     consulte                       -0.000705       0.1023
+   14     inconvénient                   -0.000691       0.0838
+   15     rattachait                     -0.000689       0.1300
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      notaire                        +0.183851       0.2363
+   2      clerc                          +0.174106       0.4662
+   3      marquise                       +0.137402       0.3167
+   4      interrogea                     +0.076358       0.0674
+   5      désirez                        +0.070897       0.0855
+   6      moyenne                        +0.067515       0.0659
+   7      trouverez                      +0.067052       0.0772
+   8      gravi                          +0.057509       0.1169
+   9      flattait                       +0.057156       0.1069
+   10     sympathie                      +0.055020       0.0609
+   11     bonhomme                       +0.053811       0.0605
+   12     communiquer                    +0.050320       0.0663
+   13     minute                         +0.049766       0.0443
+   14     scrupuleuse                    +0.048596       0.1360
+   15     banale                         +0.047636       0.1462
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      saluée                         -0.093296       0.1148
+   2      étude                          -0.085358       0.1967
+   3      aïeul                          -0.082367       0.1119
+   4      madame                         -0.067947       0.0927
+   5      écoulés                        -0.066808       0.1058
+   6      dot                            -0.065372       0.1018
+   7      mariage                        -0.064329       0.0470
+   8      familiarité                    -0.056153       0.0850
+   9      ruminer                        -0.051021       0.1075
+   10     plaisanté                      -0.048914       0.1257
+   11     installa                       -0.045224       0.0639
+   12     inconvénient                   -0.042055       0.0838
+   13     consulte                       -0.039884       0.1023
+   14     épousant                       -0.039754       0.1020
+   15     actuelle                       -0.038785       0.0811
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+clerc                     +0.003936     +0.000173     +0.000173     0.4662
+notaire                   +0.003038     +0.000124     +0.000124     0.2363
+triomphalement            +0.000052     +0.000086     +0.000086     0.1080
+rattachait                +0.000000     +0.000075     +0.000075     0.1300
+grades                    +0.000306     +0.000075     +0.000075     0.1385
+interrogea                +0.001284     +0.000066     +0.000066     0.0674
+consulte                  +0.000000     +0.000059     +0.000059     0.1023
+honnêteté                 +0.000316     +0.000053     +0.000053     0.0802
+saluée                    +0.000000     +0.000043     +0.000043     0.1148
+physique                  +0.000310     +0.000043     +0.000043     0.0957
+franchit                  +0.000000     +0.000039     +0.000039     0.0734
+altérer                   +0.000618     +0.000037     +0.000037     0.1295
+ruminer                   +0.000000     +0.000037     +0.000037     0.1075
+romanesque                +0.000000     +0.000037     +0.000037     0.0960
+officiers                 +0.000607     +0.000032     +0.000032     0.0789
+grassouillet              +0.000657     +0.000029     +0.000029     0.1398
+xv                        +0.000533     +0.000029     +0.000029     0.0832
+bonhomme                  +0.000983     +0.000029     +0.000029     0.0605
+voyez                     +0.000496     +0.000028     +0.000028     0.0441
+réflexion                 +0.000497     +0.000024     +0.000024     0.0511
+logit final pour 'homme': 0.1086

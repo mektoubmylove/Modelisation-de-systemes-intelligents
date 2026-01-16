@@ -1,0 +1,387 @@
+texte analysé: bonne mine , les astres , avec mézigue . . . et à part ça , qu est ce que tu prends , à ton petit déjeuner ? c est l heure . ! img . png images img . png n importe quoi . ! img . png images img . png ...
+prédiction: FEMME (confiance: 70.2%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.5132
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marc                           +0.000097       0.1284
+   2      emplissant                     +0.000083       0.0971
+   3      fichus                         +0.000079       0.1755
+   4      détachait                      +0.000067       0.0654
+   5      marchande                      +0.000067       0.0665
+   6      africains                      +0.000066       0.0891
+   7      pipe                           +0.000062       0.0522
+   8      auteur                         +0.000051       0.0439
+   9      écrivait                       +0.000049       0.0497
+   10     lecteur                        +0.000047       0.0594
+   11     bistrot                        +0.000046       0.0685
+   12     chaussée                       +0.000043       0.0384
+   13     commerçants                    +0.000043       0.0619
+   14     léchait                        +0.000042       0.0902
+   15     noircis                        +0.000042       0.0840
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      img                            -0.000395       0.6234
+   2      lise                           -0.000133       0.0791
+   3      conformément                   -0.000126       0.0867
+   4      fus                            -0.000098       0.0579
+   5      agisse                         -0.000081       0.1420
+   6      croissants                     -0.000070       0.1567
+   7      décharnés                      -0.000069       0.1041
+   8      imprimerie                     -0.000068       0.0838
+   9      apportant                      -0.000067       0.0650
+   10     activait                       -0.000066       0.0872
+   11     formes                         -0.000063       0.0775
+   12     boulangerie                    -0.000062       0.0753
+   13     compromis                      -0.000062       0.0619
+   14     lait                           -0.000061       0.0369
+   15     acacias                        -0.000060       0.1023
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marc                           +0.000097       0.1284
+   2      emplissant                     +0.000083       0.0971
+   3      fichus                         +0.000079       0.1755
+   4      détachait                      +0.000067       0.0654
+   5      marchande                      +0.000067       0.0665
+   6      africains                      +0.000066       0.0891
+   7      pipe                           +0.000062       0.0522
+   8      auteur                         +0.000051       0.0439
+   9      écrivait                       +0.000049       0.0497
+   10     lecteur                        +0.000047       0.0594
+   11     bistrot                        +0.000046       0.0685
+   12     chaussée                       +0.000043       0.0384
+   13     commerçants                    +0.000043       0.0619
+   14     léchait                        +0.000042       0.0902
+   15     noircis                        +0.000042       0.0840
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      img                            -0.000395       0.6234
+   2      lise                           -0.000133       0.0791
+   3      conformément                   -0.000126       0.0867
+   4      fus                            -0.000098       0.0579
+   5      agisse                         -0.000081       0.1420
+   6      croissants                     -0.000070       0.1567
+   7      décharnés                      -0.000069       0.1041
+   8      imprimerie                     -0.000068       0.0838
+   9      apportant                      -0.000067       0.0650
+   10     activait                       -0.000066       0.0872
+   11     formes                         -0.000063       0.0775
+   12     boulangerie                    -0.000062       0.0753
+   13     compromis                      -0.000062       0.0619
+   14     lait                           -0.000061       0.0369
+   15     acacias                        -0.000060       0.1023
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      img                            +0.007553       0.6234
+   2      léchait                        +0.002973       0.0902
+   3      traiterait                     +0.001729       0.1148
+   4      enveloppée                     +0.001703       0.0576
+   5      décharnés                      +0.001661       0.1041
+   6      activait                       +0.001548       0.0872
+   7      albert                         +0.001499       0.0696
+   8      frisquet                       +0.001073       0.1122
+   9      poubelle                       +0.000984       0.0593
+   10     exemplaires                    +0.000940       0.0679
+   11     compromis                      +0.000808       0.0619
+   12     coupure                        +0.000765       0.0725
+   13     noircis                        +0.000759       0.0840
+   14     mitaines                       +0.000710       0.1060
+   15     lait                           +0.000656       0.0369
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pipe                           -0.002114       0.0522
+   2      crépuscule                     -0.001487       0.0999
+   3      carbure                        -0.001287       0.1235
+   4      bistrot                        -0.001279       0.0685
+   5      baril                          -0.001243       0.1110
+   6      bistrots                       -0.001175       0.0967
+   7      commissions                    -0.001142       0.0812
+   8      mézigue                        -0.001140       0.1235
+   9      instructions                   -0.001118       0.0552
+   10     divers                         -0.001115       0.0810
+   11     lecteur                        -0.001088       0.0594
+   12     emplissant                     -0.001080       0.0971
+   13     tôle                           -0.000963       0.0671
+   14     boulangerie                    -0.000951       0.0753
+   15     marc                           -0.000949       0.1284
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      img                            +0.374814       0.6234
+   2      léchait                        +0.151505       0.0902
+   3      traiterait                     +0.083338       0.1148
+   4      enveloppée                     +0.077972       0.0576
+   5      activait                       +0.075835       0.0872
+   6      albert                         +0.070434       0.0696
+   7      décharnés                      +0.068731       0.1041
+   8      poubelle                       +0.054435       0.0593
+   9      exemplaires                    +0.048689       0.0679
+   10     frisquet                       +0.041808       0.1122
+   11     mitaines                       +0.040834       0.1060
+   12     agisse                         +0.037621       0.1420
+   13     noircis                        +0.036304       0.0840
+   14     serve                          +0.032156       0.0671
+   15     coupure                        +0.029456       0.0725
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pipe                           -0.101063       0.0522
+   2      crépuscule                     -0.072993       0.0999
+   3      marc                           -0.069584       0.1284
+   4      acacias                        -0.068198       0.1023
+   5      bistrot                        -0.058741       0.0685
+   6      baril                          -0.057950       0.1110
+   7      carbure                        -0.056417       0.1235
+   8      mézigue                        -0.054399       0.1235
+   9      divers                         -0.053583       0.0810
+   10     boulangerie                    -0.053475       0.0753
+   11     bistrots                       -0.051451       0.0967
+   12     commissions                    -0.049875       0.0812
+   13     instructions                   -0.045426       0.0552
+   14     courais                        -0.044182       0.0791
+   15     astres                         -0.040826       0.0816
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+marc                      +0.000000     +0.000097     +0.000097     0.1284
+emplissant                +0.000000     +0.000083     +0.000083     0.0971
+fichus                    +0.000000     +0.000079     +0.000079     0.1755
+détachait                 +0.000000     +0.000067     +0.000067     0.0654
+marchande                 +0.000186     +0.000067     +0.000067     0.0665
+africains                 +0.000000     +0.000066     +0.000066     0.0891
+pipe                      +0.000000     +0.000062     +0.000062     0.0522
+auteur                    +0.000000     +0.000051     +0.000051     0.0439
+écrivait                  +0.000000     +0.000049     +0.000049     0.0497
+lecteur                   +0.000000     +0.000047     +0.000047     0.0594
+bistrot                   +0.000000     +0.000046     +0.000046     0.0685
+chaussée                  +0.000087     +0.000043     +0.000043     0.0384
+commerçants               +0.000000     +0.000043     +0.000043     0.0619
+léchait                   +0.002973     +0.000042     +0.000042     0.0902
+noircis                   +0.000759     +0.000042     +0.000042     0.0840
+radio                     +0.000000     +0.000041     +0.000041     0.0482
+courais                   +0.000000     +0.000038     +0.000038     0.0791
+baril                     +0.000000     +0.000036     +0.000036     0.1110
+exemplaires               +0.000940     +0.000032     +0.000032     0.0679
+semblable                 +0.000000     +0.000031     +0.000031     0.0408
+logit final pour 'femme': 0.5132
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.3435
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marc                           +0.000087       0.1284
+   2      courais                        +0.000051       0.0791
+   3      africains                      +0.000043       0.0891
+   4      fichus                         +0.000040       0.1755
+   5      mézigue                        +0.000039       0.1235
+   6      marchande                      +0.000039       0.0665
+   7      emplissant                     +0.000038       0.0971
+   8      détachait                      +0.000035       0.0654
+   9      descendis                      +0.000034       0.0933
+   10     pipe                           +0.000032       0.0522
+   11     radio                          +0.000030       0.0482
+   12     auteur                         +0.000026       0.0439
+   13     divers                         +0.000025       0.0810
+   14     bistrot                        +0.000024       0.0685
+   15     noircis                        +0.000019       0.0840
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      img                            -0.000363       0.6234
+   2      fus                            -0.000073       0.0579
+   3      agisse                         -0.000068       0.1420
+   4      croissants                     -0.000063       0.1567
+   5      conformément                   -0.000060       0.0867
+   6      lise                           -0.000049       0.0791
+   7      formes                         -0.000049       0.0775
+   8      compromis                      -0.000048       0.0619
+   9      traiterait                     -0.000047       0.1148
+   10     activait                       -0.000041       0.0872
+   11     acacias                        -0.000037       0.1023
+   12     constituée                     -0.000036       0.0767
+   13     apportant                      -0.000035       0.0650
+   14     sandwich                       -0.000032       0.0671
+   15     sortis                         -0.000028       0.0413
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marc                           +0.000087       0.1284
+   2      courais                        +0.000051       0.0791
+   3      africains                      +0.000043       0.0891
+   4      fichus                         +0.000040       0.1755
+   5      mézigue                        +0.000039       0.1235
+   6      marchande                      +0.000039       0.0665
+   7      emplissant                     +0.000038       0.0971
+   8      détachait                      +0.000035       0.0654
+   9      descendis                      +0.000034       0.0933
+   10     pipe                           +0.000032       0.0522
+   11     radio                          +0.000030       0.0482
+   12     auteur                         +0.000026       0.0439
+   13     divers                         +0.000025       0.0810
+   14     bistrot                        +0.000024       0.0685
+   15     noircis                        +0.000019       0.0840
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      img                            -0.000363       0.6234
+   2      fus                            -0.000073       0.0579
+   3      agisse                         -0.000068       0.1420
+   4      croissants                     -0.000063       0.1567
+   5      conformément                   -0.000060       0.0867
+   6      lise                           -0.000049       0.0791
+   7      formes                         -0.000049       0.0775
+   8      compromis                      -0.000048       0.0619
+   9      traiterait                     -0.000047       0.1148
+   10     activait                       -0.000041       0.0872
+   11     acacias                        -0.000037       0.1023
+   12     constituée                     -0.000036       0.0767
+   13     apportant                      -0.000035       0.0650
+   14     sandwich                       -0.000032       0.0671
+   15     sortis                         -0.000028       0.0413
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pipe                           +0.001676       0.0522
+   2      crépuscule                     +0.001163       0.0999
+   3      carbure                        +0.001085       0.1235
+   4      fichus                         +0.001072       0.1755
+   5      bistrot                        +0.001061       0.0685
+   6      acacias                        +0.000883       0.1023
+   7      emplissant                     +0.000851       0.0971
+   8      achetai                        +0.000824       0.1076
+   9      bistrots                       +0.000822       0.0967
+   10     instructions                   +0.000813       0.0552
+   11     mézigue                        +0.000753       0.1235
+   12     baril                          +0.000731       0.1110
+   13     tôle                           +0.000702       0.0671
+   14     débarrassé                     +0.000689       0.0575
+   15     lecteur                        +0.000662       0.0594
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      img                            -0.004325       0.6234
+   2      léchait                        -0.002251       0.0902
+   3      enveloppée                     -0.001457       0.0576
+   4      décharnés                      -0.001332       0.1041
+   5      albert                         -0.001163       0.0696
+   6      activait                       -0.001159       0.0872
+   7      traiterait                     -0.001036       0.1148
+   8      exemplaires                    -0.000870       0.0679
+   9      frisquet                       -0.000847       0.1122
+   10     poubelle                       -0.000809       0.0593
+   11     compromis                      -0.000712       0.0619
+   12     coupure                        -0.000602       0.0725
+   13     lait                           -0.000522       0.0369
+   14     déjeuner                       -0.000485       0.0334
+   15     anarchiste                     -0.000481       0.0946
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pipe                           +0.079380       0.0522
+   2      acacias                        +0.061935       0.1023
+   3      carbure                        +0.050208       0.1235
+   4      bistrot                        +0.048147       0.0685
+   5      crépuscule                     +0.047229       0.0999
+   6      bistrots                       +0.042803       0.0967
+   7      boulangerie                    +0.042105       0.0753
+   8      marc                           +0.040766       0.1284
+   9      divers                         +0.039232       0.0810
+   10     fichus                         +0.038112       0.1755
+   11     baril                          +0.036783       0.1110
+   12     emplissant                     +0.034338       0.0971
+   13     astres                         +0.033909       0.0816
+   14     achetai                        +0.032486       0.1076
+   15     mézigue                        +0.032054       0.1235
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      img                            -0.242679       0.6234
+   2      léchait                        -0.109914       0.0902
+   3      enveloppée                     -0.067882       0.0576
+   4      activait                       -0.061452       0.0872
+   5      décharnés                      -0.056944       0.1041
+   6      albert                         -0.056269       0.0696
+   7      traiterait                     -0.055863       0.1148
+   8      poubelle                       -0.047154       0.0593
+   9      exemplaires                    -0.042027       0.0679
+   10     frisquet                       -0.032483       0.1122
+   11     mitaines                       -0.027801       0.1060
+   12     imprimerie                     -0.027722       0.0838
+   13     coupure                        -0.026037       0.0725
+   14     compromis                      -0.025409       0.0619
+   15     déjeuner                       -0.022999       0.0334
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+marc                      +0.000528     +0.000087     +0.000087     0.1284
+courais                   +0.000470     +0.000051     +0.000051     0.0791
+africains                 +0.000392     +0.000043     +0.000043     0.0891
+fichus                    +0.001072     +0.000040     +0.000040     0.1755
+mézigue                   +0.000753     +0.000039     +0.000039     0.1235
+marchande                 +0.000000     +0.000039     +0.000039     0.0665
+emplissant                +0.000851     +0.000038     +0.000038     0.0971
+détachait                 +0.000598     +0.000035     +0.000035     0.0654
+descendis                 +0.000555     +0.000034     +0.000034     0.0933
+pipe                      +0.001676     +0.000032     +0.000032     0.0522
+radio                     +0.000354     +0.000030     +0.000030     0.0482
+auteur                    +0.000295     +0.000026     +0.000026     0.0439
+divers                    +0.000657     +0.000025     +0.000025     0.0810
+bistrot                   +0.001061     +0.000024     +0.000024     0.0685
+noircis                   +0.000000     +0.000019     +0.000019     0.0840
+édition                   +0.000000     +0.000019     +0.000019     0.0632
+journaux                  +0.000227     +0.000018     +0.000018     0.0398
+quartier                  +0.000283     +0.000018     +0.000018     0.0344
+brouillard                +0.000133     +0.000018     +0.000018     0.0436
+carbure                   +0.001085     +0.000017     +0.000017     0.1235
+logit final pour 'homme': -0.3435

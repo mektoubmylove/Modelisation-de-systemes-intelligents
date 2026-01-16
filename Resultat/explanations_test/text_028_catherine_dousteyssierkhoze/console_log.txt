@@ -1,0 +1,386 @@
+texte analysé: la ds et deux voitures de fonction . l effort produit m a épuisé , j ai le souffle court et j ai dû m asseoir un moment afin de retrouver mes esprits . j ai perdu l habitude de véhiculer des cadavres ...
+prédiction: FEMME (confiance: 76.9%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.6529
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cook                           +0.000121       0.1791
+   2      my                             +0.000080       0.1193
+   3      alphonse                       +0.000075       0.1383
+   4      illustrés                      +0.000072       0.1387
+   5      sbires                         +0.000069       0.1351
+   6      incontournable                 +0.000063       0.1526
+   7      acquérir                       +0.000056       0.0912
+   8      débarquement                   +0.000055       0.1190
+   9      finissent                      +0.000054       0.0812
+   10     chapitre                       +0.000051       0.0697
+   11     définitivement                 +0.000050       0.0629
+   12     surprendre                     +0.000048       0.0667
+   13     mentionné                      +0.000045       0.1139
+   14     convenir                       +0.000044       0.0939
+   15     tournure                       +0.000042       0.0862
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      exil                           -0.000147       0.0878
+   2      vieillesse                     -0.000146       0.0880
+   3      déménagement                   -0.000138       0.1066
+   4      dumont                         -0.000121       0.2009
+   5      ch                             -0.000109       0.1438
+   6      disposé                        -0.000107       0.0757
+   7      xixe                           -0.000107       0.1178
+   8      décence                        -0.000096       0.1217
+   9      échéance                       -0.000090       0.1153
+   10     marion                         -0.000083       0.1723
+   11     couvent                        -0.000082       0.0944
+   12     jacques                        -0.000078       0.0786
+   13     agirait                        -0.000068       0.1169
+   14     emballe                        -0.000063       0.1211
+   15     finiront                       -0.000056       0.1221
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cook                           +0.000121       0.1791
+   2      my                             +0.000080       0.1193
+   3      alphonse                       +0.000075       0.1383
+   4      illustrés                      +0.000072       0.1387
+   5      sbires                         +0.000069       0.1351
+   6      incontournable                 +0.000063       0.1526
+   7      acquérir                       +0.000056       0.0912
+   8      débarquement                   +0.000055       0.1190
+   9      finissent                      +0.000054       0.0812
+   10     chapitre                       +0.000051       0.0697
+   11     définitivement                 +0.000050       0.0629
+   12     surprendre                     +0.000048       0.0667
+   13     mentionné                      +0.000045       0.1139
+   14     convenir                       +0.000044       0.0939
+   15     tournure                       +0.000042       0.0862
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      exil                           -0.000147       0.0878
+   2      vieillesse                     -0.000146       0.0880
+   3      déménagement                   -0.000138       0.1066
+   4      dumont                         -0.000121       0.2009
+   5      ch                             -0.000109       0.1438
+   6      disposé                        -0.000107       0.0757
+   7      xixe                           -0.000107       0.1178
+   8      décence                        -0.000096       0.1217
+   9      échéance                       -0.000090       0.1153
+   10     marion                         -0.000083       0.1723
+   11     couvent                        -0.000082       0.0944
+   12     jacques                        -0.000078       0.0786
+   13     agirait                        -0.000068       0.1169
+   14     emballe                        -0.000063       0.1211
+   15     finiront                       -0.000056       0.1221
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marion                         +0.002616       0.1723
+   2      relecture                      +0.002409       0.1767
+   3      constat                        +0.002256       0.1077
+   4      albert                         +0.001948       0.1038
+   5      emballe                        +0.001759       0.1211
+   6      mentionné                      +0.001522       0.1139
+   7      laurent                        +0.001437       0.1111
+   8      déménagement                   +0.001253       0.1066
+   9      supporte                       +0.001246       0.0775
+   10     séjourner                      +0.001156       0.1279
+   11     couvent                        +0.001154       0.0944
+   12     oublie                         +0.001096       0.0513
+   13     agirait                        +0.000936       0.1169
+   14     douloureux                     +0.000896       0.0602
+   15     osé                            +0.000884       0.0561
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ds                             -0.002375       0.1970
+   2      sbires                         -0.002133       0.1351
+   3      chapitre                       -0.001342       0.0697
+   4      dumont                         -0.001313       0.2009
+   5      administrative                 -0.001224       0.1265
+   6      termes                         -0.001149       0.0638
+   7      échéance                       -0.001130       0.1153
+   8      débarquement                   -0.001083       0.1190
+   9      cook                           -0.001048       0.1791
+   10     surprendre                     -0.000933       0.0667
+   11     aventures                      -0.000890       0.0666
+   12     perfides                       -0.000890       0.1369
+   13     plan                           -0.000887       0.0498
+   14     provisions                     -0.000842       0.0820
+   15     ch                             -0.000817       0.1438
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marion                         +0.113407       0.1723
+   2      constat                        +0.109341       0.1077
+   3      relecture                      +0.099181       0.1767
+   4      albert                         +0.093480       0.1038
+   5      emballe                        +0.091422       0.1211
+   6      laurent                        +0.077251       0.1111
+   7      mentionné                      +0.073994       0.1139
+   8      séjourner                      +0.061332       0.1279
+   9      déménagement                   +0.060832       0.1066
+   10     agirait                        +0.058411       0.1169
+   11     supporte                       +0.051888       0.0775
+   12     oublie                         +0.046964       0.0513
+   13     douloureux                     +0.044595       0.0602
+   14     couvent                        +0.041160       0.0944
+   15     étrangère                      +0.039100       0.0609
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ds                             -0.115225       0.1970
+   2      sbires                         -0.082684       0.1351
+   3      dumont                         -0.081783       0.2009
+   4      administrative                 -0.079469       0.1265
+   5      perfides                       -0.061496       0.1369
+   6      chapitre                       -0.059966       0.0697
+   7      échéance                       -0.059417       0.1153
+   8      illustrés                      -0.052536       0.1387
+   9      termes                         -0.049814       0.0638
+   10     ch                             -0.048952       0.1438
+   11     cook                           -0.046188       0.1791
+   12     surprendre                     -0.041854       0.0667
+   13     débarquement                   -0.039586       0.1190
+   14     provisions                     -0.039513       0.0820
+   15     plan                           -0.039393       0.0498
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+cook                      +0.000000     +0.000121     +0.000121     0.1791
+my                        +0.000000     +0.000080     +0.000080     0.1193
+alphonse                  +0.000000     +0.000075     +0.000075     0.1383
+illustrés                 +0.000000     +0.000072     +0.000072     0.1387
+sbires                    +0.000000     +0.000069     +0.000069     0.1351
+incontournable            +0.000000     +0.000063     +0.000063     0.1526
+acquérir                  +0.000159     +0.000056     +0.000056     0.0912
+débarquement              +0.000000     +0.000055     +0.000055     0.1190
+finissent                 +0.000000     +0.000054     +0.000054     0.0812
+chapitre                  +0.000000     +0.000051     +0.000051     0.0697
+définitivement            +0.000000     +0.000050     +0.000050     0.0629
+surprendre                +0.000000     +0.000048     +0.000048     0.0667
+mentionné                 +0.001522     +0.000045     +0.000045     0.1139
+convenir                  +0.000000     +0.000044     +0.000044     0.0939
+tournure                  +0.000000     +0.000042     +0.000042     0.0862
+définitif                 +0.000000     +0.000041     +0.000041     0.0870
+provisions                +0.000000     +0.000031     +0.000031     0.0820
+perfides                  +0.000000     +0.000030     +0.000030     0.1369
+romans                    +0.000000     +0.000030     +0.000030     0.0731
+aventures                 +0.000000     +0.000024     +0.000024     0.0666
+logit final pour 'femme': 0.6529
+# analyse pour la classe: HOMME
+# logit: -0.5515
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cook                           +0.000073       0.1791
+   2      finissent                      +0.000048       0.0812
+   3      débarquement                   +0.000041       0.1190
+   4      my                             +0.000038       0.1193
+   5      acquérir                       +0.000035       0.0912
+   6      tournure                       +0.000033       0.0862
+   7      définitif                      +0.000032       0.0870
+   8      provisions                     +0.000030       0.0820
+   9      chapitre                       +0.000025       0.0697
+   10     perfides                       +0.000025       0.1369
+   11     alphonse                       +0.000025       0.1383
+   12     surprendre                     +0.000025       0.0667
+   13     pièges                         +0.000022       0.0943
+   14     mentionné                      +0.000019       0.1139
+   15     séjourner                      +0.000017       0.1279
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      déménagement                   -0.000101       0.1066
+   2      restaurer                      -0.000081       0.1142
+   3      couvent                        -0.000077       0.0944
+   4      exil                           -0.000072       0.0878
+   5      vieillesse                     -0.000072       0.0880
+   6      échéance                       -0.000072       0.1153
+   7      revus                          -0.000056       0.1214
+   8      xixe                           -0.000054       0.1178
+   9      dumont                         -0.000050       0.2009
+   10     agirait                        -0.000048       0.1169
+   11     ch                             -0.000045       0.1438
+   12     finiront                       -0.000043       0.1221
+   13     lauriers                       -0.000043       0.1158
+   14     disposé                        -0.000042       0.0757
+   15     marion                         -0.000041       0.1723
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cook                           +0.000073       0.1791
+   2      finissent                      +0.000048       0.0812
+   3      débarquement                   +0.000041       0.1190
+   4      my                             +0.000038       0.1193
+   5      acquérir                       +0.000035       0.0912
+   6      tournure                       +0.000033       0.0862
+   7      définitif                      +0.000032       0.0870
+   8      provisions                     +0.000030       0.0820
+   9      chapitre                       +0.000025       0.0697
+   10     perfides                       +0.000025       0.1369
+   11     alphonse                       +0.000025       0.1383
+   12     surprendre                     +0.000025       0.0667
+   13     pièges                         +0.000022       0.0943
+   14     mentionné                      +0.000019       0.1139
+   15     séjourner                      +0.000017       0.1279
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      déménagement                   -0.000101       0.1066
+   2      restaurer                      -0.000081       0.1142
+   3      couvent                        -0.000077       0.0944
+   4      exil                           -0.000072       0.0878
+   5      vieillesse                     -0.000072       0.0880
+   6      échéance                       -0.000072       0.1153
+   7      revus                          -0.000056       0.1214
+   8      xixe                           -0.000054       0.1178
+   9      dumont                         -0.000050       0.2009
+   10     agirait                        -0.000048       0.1169
+   11     ch                             -0.000045       0.1438
+   12     finiront                       -0.000043       0.1221
+   13     lauriers                       -0.000043       0.1158
+   14     disposé                        -0.000042       0.0757
+   15     marion                         -0.000041       0.1723
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ds                             +0.001941       0.1970
+   2      sbires                         +0.001391       0.1351
+   3      débarquement                   +0.001068       0.1190
+   4      échéance                       +0.000936       0.1153
+   5      chapitre                       +0.000926       0.0697
+   6      dumont                         +0.000872       0.2009
+   7      illustrés                      +0.000848       0.1387
+   8      termes                         +0.000847       0.0638
+   9      administrative                 +0.000813       0.1265
+   10     cook                           +0.000725       0.1791
+   11     surprendre                     +0.000712       0.0667
+   12     aventures                      +0.000694       0.0666
+   13     perfides                       +0.000690       0.1369
+   14     restaurer                      +0.000664       0.1142
+   15     convenir                       +0.000595       0.0939
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marion                         -0.002018       0.1723
+   2      relecture                      -0.001636       0.1767
+   3      constat                        -0.001636       0.1077
+   4      albert                         -0.001516       0.1038
+   5      emballe                        -0.001482       0.1211
+   6      laurent                        -0.000987       0.1111
+   7      séjourner                      -0.000907       0.1279
+   8      mentionné                      -0.000894       0.1139
+   9      déménagement                   -0.000806       0.1066
+   10     agirait                        -0.000804       0.1169
+   11     oublie                         -0.000739       0.0513
+   12     douloureux                     -0.000736       0.0602
+   13     couvent                        -0.000721       0.0944
+   14     supporte                       -0.000676       0.0775
+   15     étrangère                      -0.000674       0.0609
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ds                             +0.093025       0.1970
+   2      administrative                 +0.057777       0.1265
+   3      sbires                         +0.057360       0.1351
+   4      dumont                         +0.050572       0.2009
+   5      illustrés                      +0.050024       0.1387
+   6      échéance                       +0.044726       0.1153
+   7      chapitre                       +0.042349       0.0697
+   8      perfides                       +0.041778       0.1369
+   9      ch                             +0.040278       0.1438
+   10     débarquement                   +0.038296       0.1190
+   11     termes                         +0.037401       0.0638
+   12     surprendre                     +0.032267       0.0667
+   13     cook                           +0.031314       0.1791
+   14     xixe                           +0.031029       0.1178
+   15     convenir                       +0.030961       0.0939
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marion                         -0.093982       0.1723
+   2      constat                        -0.082246       0.1077
+   3      albert                         -0.074573       0.1038
+   4      emballe                        -0.074200       0.1211
+   5      relecture                      -0.066079       0.1767
+   6      laurent                        -0.049278       0.1111
+   7      séjourner                      -0.047358       0.1279
+   8      agirait                        -0.044807       0.1169
+   9      mentionné                      -0.040059       0.1139
+   10     douloureux                     -0.037721       0.0602
+   11     déménagement                   -0.036206       0.1066
+   12     oublie                         -0.034971       0.0513
+   13     environnement                  -0.034261       0.1046
+   14     étrangère                      -0.032864       0.0609
+   15     supporte                       -0.029848       0.0775
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+cook                      +0.000725     +0.000073     +0.000073     0.1791
+finissent                 +0.000124     +0.000048     +0.000048     0.0812
+débarquement              +0.001068     +0.000041     +0.000041     0.1190
+my                        +0.000363     +0.000038     +0.000038     0.1193
+acquérir                  +0.000000     +0.000035     +0.000035     0.0912
+tournure                  +0.000377     +0.000033     +0.000033     0.0862
+définitif                 +0.000372     +0.000032     +0.000032     0.0870
+provisions                +0.000443     +0.000030     +0.000030     0.0820
+chapitre                  +0.000926     +0.000025     +0.000025     0.0697
+perfides                  +0.000690     +0.000025     +0.000025     0.1369
+alphonse                  +0.000056     +0.000025     +0.000025     0.1383
+surprendre                +0.000712     +0.000025     +0.000025     0.0667
+pièges                    +0.000230     +0.000022     +0.000022     0.0943
+mentionné                 +0.000000     +0.000019     +0.000019     0.1139
+séjourner                 +0.000000     +0.000017     +0.000017     0.1279
+sbires                    +0.001391     +0.000017     +0.000017     0.1351
+romans                    +0.000074     +0.000016     +0.000016     0.0731
+activité                  +0.000000     +0.000014     +0.000014     0.0626
+guère                     +0.000365     +0.000014     +0.000014     0.1038
+aventures                 +0.000694     +0.000014     +0.000014     0.0666
+logit final pour 'homme': -0.5515

@@ -1,0 +1,387 @@
+texte analysé: et avancèrent , les traits inquiets , comme craignant une mauvaise nouvelle . où est il ? demanda la dame . dans sa chambre , répondit la blouse blanche . pourquoi n est il pas venu à notre rencontre ...
+prédiction: HOMME (confiance: 67.5%)
+vérité terrain: FEMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  vraie classe
+# logit: -0.3967
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      interrogea                     +0.000096       0.0919
+   2      regardai                       +0.000078       0.1459
+   3      referma                        +0.000068       0.0895
+   4      levai                          +0.000061       0.1482
+   5      bassine                        +0.000059       0.1373
+   6      dirigea                        +0.000058       0.0834
+   7      infernal                       +0.000050       0.1209
+   8      vision                         +0.000050       0.0688
+   9      abaissant                      +0.000050       0.1881
+   10     secrétaire                     +0.000048       0.0796
+   11     automatique                    +0.000043       0.1116
+   12     franchi                        +0.000043       0.0863
+   13     dame                           +0.000040       0.0603
+   14     retard                         +0.000039       0.0644
+   15     clef                           +0.000039       0.0886
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fus                            -0.000156       0.1046
+   2      fixai                          -0.000138       0.2199
+   3      mule                           -0.000133       0.1413
+   4      serpillière                    -0.000091       0.1626
+   5      rassurer                       -0.000079       0.0755
+   6      aies                           -0.000070       0.1005
+   7      amer                           -0.000062       0.0841
+   8      reprochait                     -0.000061       0.1104
+   9      loquet                         -0.000057       0.1463
+   10     travaille                      -0.000055       0.0664
+   11     médical                        -0.000054       0.1227
+   12     éloignaient                    -0.000050       0.1330
+   13     détruit                        -0.000047       0.0870
+   14     témoin                         -0.000046       0.0712
+   15     sert                           -0.000045       0.0637
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      interrogea                     +0.000096       0.0919
+   2      regardai                       +0.000078       0.1459
+   3      referma                        +0.000068       0.0895
+   4      levai                          +0.000061       0.1482
+   5      bassine                        +0.000059       0.1373
+   6      dirigea                        +0.000058       0.0834
+   7      infernal                       +0.000050       0.1209
+   8      vision                         +0.000050       0.0688
+   9      abaissant                      +0.000050       0.1881
+   10     secrétaire                     +0.000048       0.0796
+   11     automatique                    +0.000043       0.1116
+   12     franchi                        +0.000043       0.0863
+   13     dame                           +0.000040       0.0603
+   14     retard                         +0.000039       0.0644
+   15     clef                           +0.000039       0.0886
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fus                            -0.000156       0.1046
+   2      fixai                          -0.000138       0.2199
+   3      mule                           -0.000133       0.1413
+   4      serpillière                    -0.000091       0.1626
+   5      rassurer                       -0.000079       0.0755
+   6      aies                           -0.000070       0.1005
+   7      amer                           -0.000062       0.0841
+   8      reprochait                     -0.000061       0.1104
+   9      loquet                         -0.000057       0.1463
+   10     travaille                      -0.000055       0.0664
+   11     médical                        -0.000054       0.1227
+   12     éloignaient                    -0.000050       0.1330
+   13     détruit                        -0.000047       0.0870
+   14     témoin                         -0.000046       0.0712
+   15     sert                           -0.000045       0.0637
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      dévisagea                      +0.002139       0.1227
+   2      goûter                         +0.002040       0.1566
+   3      fixai                          +0.001860       0.2199
+   4      accueil                        +0.001370       0.0800
+   5      amer                           +0.001059       0.0841
+   6      travaille                      +0.001050       0.0664
+   7      inquiets                       +0.001020       0.1008
+   8      bain                           +0.000911       0.0688
+   9      médical                        +0.000780       0.1227
+   10     hôpital                        +0.000766       0.0742
+   11     cherchant                      +0.000750       0.0690
+   12     seize                          +0.000668       0.1435
+   13     retard                         +0.000612       0.0644
+   14     referma                        +0.000592       0.0895
+   15     laissa                         +0.000548       0.0700
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      automatique                    -0.003576       0.1116
+   2      interrogea                     -0.001879       0.0919
+   3      quart                          -0.001870       0.0655
+   4      précautions                    -0.001461       0.0832
+   5      prisonnier                     -0.001451       0.0839
+   6      eut                            -0.001342       0.0610
+   7      furent                         -0.001325       0.0655
+   8      dirigeait                      -0.001315       0.0874
+   9      entré                          -0.001304       0.0675
+   10     docteur                        -0.001300       0.1509
+   11     secrétaire                     -0.001273       0.0796
+   12     trio                           -0.001214       0.1257
+   13     fermait                        -0.001127       0.0880
+   14     bassine                        -0.000907       0.1373
+   15     arrêta                         -0.000905       0.0724
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fixai                          +0.112757       0.2199
+   2      dévisagea                      +0.093456       0.1227
+   3      goûter                         +0.090813       0.1566
+   4      accueil                        +0.060967       0.0800
+   5      travaille                      +0.047355       0.0664
+   6      bain                           +0.045535       0.0688
+   7      amer                           +0.043056       0.0841
+   8      inquiets                       +0.040529       0.1008
+   9      hôpital                        +0.037306       0.0742
+   10     laissa                         +0.037073       0.0700
+   11     seize                          +0.035748       0.1435
+   12     médical                        +0.034314       0.1227
+   13     consultation                   +0.033420       0.1288
+   14     cherchant                      +0.029378       0.0690
+   15     retard                         +0.025972       0.0644
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      automatique                    -0.159676       0.1116
+   2      quart                          -0.083597       0.0655
+   3      précautions                    -0.074959       0.0832
+   4      interrogea                     -0.073052       0.0919
+   5      entré                          -0.063770       0.0675
+   6      secrétaire                     -0.063314       0.0796
+   7      dirigeait                      -0.061717       0.0874
+   8      prisonnier                     -0.061112       0.0839
+   9      furent                         -0.059154       0.0655
+   10     docteur                        -0.056052       0.1509
+   11     eut                            -0.054797       0.0610
+   12     fermait                        -0.048864       0.0880
+   13     bassine                        -0.048366       0.1373
+   14     arrêta                         -0.043966       0.0724
+   15     trio                           -0.041013       0.1257
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+interrogea                +0.000000     +0.000096     +0.000096     0.0919
+regardai                  +0.000000     +0.000078     +0.000078     0.1459
+referma                   +0.000592     +0.000068     +0.000068     0.0895
+levai                     +0.000000     +0.000061     +0.000061     0.1482
+bassine                   +0.000000     +0.000059     +0.000059     0.1373
+dirigea                   +0.000000     +0.000058     +0.000058     0.0834
+infernal                  +0.000000     +0.000050     +0.000050     0.1209
+vision                    +0.000374     +0.000050     +0.000050     0.0688
+abaissant                 +0.000000     +0.000050     +0.000050     0.1881
+secrétaire                +0.000000     +0.000048     +0.000048     0.0796
+automatique               +0.000000     +0.000043     +0.000043     0.1116
+franchi                   +0.000000     +0.000043     +0.000043     0.0863
+dame                      +0.000003     +0.000040     +0.000040     0.0603
+retard                    +0.000612     +0.000039     +0.000039     0.0644
+clef                      +0.000000     +0.000039     +0.000039     0.0886
+dupe                      +0.000096     +0.000036     +0.000036     0.1019
+satisfait                 +0.000000     +0.000030     +0.000030     0.0711
+avancèrent                +0.000069     +0.000029     +0.000029     0.1348
+hôpital                   +0.000766     +0.000027     +0.000027     0.0742
+écria                     +0.000000     +0.000026     +0.000026     0.0888
+logit final pour 'femme': -0.3967
+# analyse pour la classe: HOMME  prédite
+# logit: 0.3361
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      interrogea                     +0.000066       0.0919
+   2      regardai                       +0.000040       0.1459
+   3      dupe                           +0.000039       0.1019
+   4      levai                          +0.000037       0.1482
+   5      docteur                        +0.000034       0.1509
+   6      ouvrit                         +0.000033       0.0703
+   7      infernal                       +0.000031       0.1209
+   8      questionnai                    +0.000030       0.2458
+   9      maintint                       +0.000029       0.1647
+   10     curiosité                      +0.000028       0.0612
+   11     hôpital                        +0.000027       0.0742
+   12     fermait                        +0.000026       0.0880
+   13     abaissant                      +0.000026       0.1881
+   14     inquiets                       +0.000023       0.1008
+   15     dirigea                        +0.000022       0.0834
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fus                            -0.000126       0.1046
+   2      mule                           -0.000099       0.1413
+   3      seize                          -0.000069       0.1435
+   4      éloignaient                    -0.000061       0.1330
+   5      reprochait                     -0.000058       0.1104
+   6      loquet                         -0.000053       0.1463
+   7      rassurer                       -0.000047       0.0755
+   8      fixai                          -0.000043       0.2199
+   9      consultation                   -0.000042       0.1288
+   10     auras                          -0.000042       0.0727
+   11     aies                           -0.000038       0.1005
+   12     amer                           -0.000034       0.0841
+   13     prétend                        -0.000032       0.0896
+   14     témoin                         -0.000032       0.0712
+   15     médical                        -0.000031       0.1227
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      interrogea                     +0.000066       0.0919
+   2      regardai                       +0.000040       0.1459
+   3      dupe                           +0.000039       0.1019
+   4      levai                          +0.000037       0.1482
+   5      docteur                        +0.000034       0.1509
+   6      ouvrit                         +0.000033       0.0703
+   7      infernal                       +0.000031       0.1209
+   8      questionnai                    +0.000030       0.2458
+   9      maintint                       +0.000029       0.1647
+   10     curiosité                      +0.000028       0.0612
+   11     hôpital                        +0.000027       0.0742
+   12     fermait                        +0.000026       0.0880
+   13     abaissant                      +0.000026       0.1881
+   14     inquiets                       +0.000023       0.1008
+   15     dirigea                        +0.000022       0.0834
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fus                            -0.000126       0.1046
+   2      mule                           -0.000099       0.1413
+   3      seize                          -0.000069       0.1435
+   4      éloignaient                    -0.000061       0.1330
+   5      reprochait                     -0.000058       0.1104
+   6      loquet                         -0.000053       0.1463
+   7      rassurer                       -0.000047       0.0755
+   8      fixai                          -0.000043       0.2199
+   9      consultation                   -0.000042       0.1288
+   10     auras                          -0.000042       0.0727
+   11     aies                           -0.000038       0.1005
+   12     amer                           -0.000034       0.0841
+   13     prétend                        -0.000032       0.0896
+   14     témoin                         -0.000032       0.0712
+   15     médical                        -0.000031       0.1227
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      automatique                    +0.002654       0.1116
+   2      quart                          +0.001485       0.0655
+   3      interrogea                     +0.001480       0.0919
+   4      dirigeait                      +0.001319       0.0874
+   5      prisonnier                     +0.001204       0.0839
+   6      furent                         +0.001164       0.0655
+   7      eut                            +0.001138       0.0610
+   8      entré                          +0.001065       0.0675
+   9      précautions                    +0.001040       0.0832
+   10     docteur                        +0.000940       0.1509
+   11     fermait                        +0.000933       0.0880
+   12     secrétaire                     +0.000914       0.0796
+   13     trio                           +0.000828       0.1257
+   14     arrêta                         +0.000814       0.0724
+   15     piqué                          +0.000813       0.0904
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      dévisagea                      -0.001588       0.1227
+   2      goûter                         -0.001395       0.1566
+   3      accueil                        -0.001089       0.0800
+   4      médical                        -0.000966       0.1227
+   5      amer                           -0.000877       0.0841
+   6      travaille                      -0.000813       0.0664
+   7      inquiets                       -0.000759       0.1008
+   8      bain                           -0.000727       0.0688
+   9      hôpital                        -0.000701       0.0742
+   10     phase                          -0.000688       0.1262
+   11     fixai                          -0.000653       0.2199
+   12     retard                         -0.000549       0.0644
+   13     seize                          -0.000527       0.1435
+   14     referma                        -0.000511       0.0895
+   15     laissa                         -0.000496       0.0700
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      automatique                    +0.126835       0.1116
+   2      quart                          +0.061954       0.0655
+   3      dirigeait                      +0.057030       0.0874
+   4      interrogea                     +0.055738       0.0919
+   5      précautions                    +0.052100       0.0832
+   6      entré                          +0.051475       0.0675
+   7      prisonnier                     +0.046908       0.0839
+   8      docteur                        +0.046208       0.1509
+   9      furent                         +0.046079       0.0655
+   10     secrétaire                     +0.045947       0.0796
+   11     fermait                        +0.043860       0.0880
+   12     eut                            +0.042870       0.0610
+   13     stupéfait                      +0.040389       0.0987
+   14     trio                           +0.035878       0.1257
+   15     bassine                        +0.034981       0.1373
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      dévisagea                      -0.074306       0.1227
+   2      goûter                         -0.063040       0.1566
+   3      fixai                          -0.058526       0.2199
+   4      accueil                        -0.046797       0.0800
+   5      médical                        -0.044122       0.1227
+   6      travaille                      -0.035284       0.0664
+   7      bain                           -0.033338       0.0688
+   8      laissa                         -0.032705       0.0700
+   9      amer                           -0.031046       0.0841
+   10     hôpital                        -0.029948       0.0742
+   11     seize                          -0.026553       0.1435
+   12     retard                         -0.024852       0.0644
+   13     consultation                   -0.024063       0.1288
+   14     inquiets                       -0.021569       0.1008
+   15     familier                       -0.018821       0.0810
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+interrogea                +0.001480     +0.000066     +0.000066     0.0919
+regardai                  +0.000322     +0.000040     +0.000040     0.1459
+dupe                      +0.000000     +0.000039     +0.000039     0.1019
+levai                     +0.000485     +0.000037     +0.000037     0.1482
+docteur                   +0.000940     +0.000034     +0.000034     0.1509
+ouvrit                    +0.000000     +0.000033     +0.000033     0.0703
+infernal                  +0.000000     +0.000031     +0.000031     0.1209
+questionnai               +0.000343     +0.000030     +0.000030     0.2458
+maintint                  +0.000062     +0.000029     +0.000029     0.1647
+curiosité                 +0.000207     +0.000028     +0.000028     0.0612
+hôpital                   +0.000000     +0.000027     +0.000027     0.0742
+fermait                   +0.000933     +0.000026     +0.000026     0.0880
+abaissant                 +0.000347     +0.000026     +0.000026     0.1881
+inquiets                  +0.000000     +0.000023     +0.000023     0.1008
+dirigea                   +0.000267     +0.000022     +0.000022     0.0834
+avancèrent                +0.000000     +0.000020     +0.000020     0.1348
+automatique               +0.002654     +0.000020     +0.000020     0.1116
+vision                    +0.000000     +0.000019     +0.000019     0.0688
+condition                 +0.000533     +0.000017     +0.000017     0.0662
+secrétaire                +0.000914     +0.000015     +0.000015     0.0796
+logit final pour 'homme': 0.3361

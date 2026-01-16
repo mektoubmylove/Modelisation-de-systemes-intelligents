@@ -1,0 +1,5 @@
+filename: (DE NOAILLES)(Anna)(La Domination)(2)(1905)(1876)(1933)(fr)(z)(z)(V)(R)(T).txt
+index: 240
+first_name: anna
+last_name: de_noailles
+true_label: femme

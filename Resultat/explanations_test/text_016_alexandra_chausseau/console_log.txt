@@ -1,0 +1,386 @@
+texte analysé: maquille tous les jours , prend soin de sa toilette . oui , mais elle prend soin d elle et de son intérieur pour qu il ne lui reproche rien . qu il n ait rien contre elle . c est peine perdue . les ho...
+prédiction: FEMME (confiance: 75.1%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.5992
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      maquille                       +0.000100       0.1864
+   2      dentition                      +0.000064       0.1864
+   3      fichiers                       +0.000048       0.1592
+   4      sûrement                       +0.000044       0.0603
+   5      physique                       +0.000044       0.1246
+   6      poing                          +0.000041       0.0616
+   7      grinçait                       +0.000038       0.1576
+   8      vérifié                        +0.000036       0.1055
+   9      roux                           +0.000032       0.0821
+   10     frappe                         +0.000032       0.0781
+   11     connaissez                     +0.000025       0.0657
+   12     ceinture                       +0.000017       0.0647
+   13     délicat                        +0.000015       0.0760
+   14     harcèlement                    +0.000014       0.1734
+   15     fonctionne                     +0.000013       0.1066
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marques                        -0.000126       0.1651
+   2      reconstruire                   -0.000126       0.1247
+   3      menti                          -0.000089       0.0852
+   4      anciennes                      -0.000087       0.0745
+   5      jointures                      -0.000082       0.1437
+   6      traces                         -0.000080       0.1875
+   7      reproche                       -0.000078       0.0696
+   8      meure                          -0.000068       0.1197
+   9      détruit                        -0.000066       0.1660
+   10     légiste                        -0.000061       0.2972
+   11     rapport                        -0.000059       0.0578
+   12     ongles                         -0.000057       0.0695
+   13     geôlier                        -0.000055       0.1614
+   14     insista                        -0.000052       0.0828
+   15     battait                        -0.000045       0.0698
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      maquille                       +0.000100       0.1864
+   2      dentition                      +0.000064       0.1864
+   3      fichiers                       +0.000048       0.1592
+   4      sûrement                       +0.000044       0.0603
+   5      physique                       +0.000044       0.1246
+   6      poing                          +0.000041       0.0616
+   7      grinçait                       +0.000038       0.1576
+   8      vérifié                        +0.000036       0.1055
+   9      roux                           +0.000032       0.0821
+   10     frappe                         +0.000032       0.0781
+   11     connaissez                     +0.000025       0.0657
+   12     ceinture                       +0.000017       0.0647
+   13     délicat                        +0.000015       0.0760
+   14     harcèlement                    +0.000014       0.1734
+   15     fonctionne                     +0.000013       0.1066
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marques                        -0.000126       0.1651
+   2      reconstruire                   -0.000126       0.1247
+   3      menti                          -0.000089       0.0852
+   4      anciennes                      -0.000087       0.0745
+   5      jointures                      -0.000082       0.1437
+   6      traces                         -0.000080       0.1875
+   7      reproche                       -0.000078       0.0696
+   8      meure                          -0.000068       0.1197
+   9      détruit                        -0.000066       0.1660
+   10     légiste                        -0.000061       0.2972
+   11     rapport                        -0.000059       0.0578
+   12     ongles                         -0.000057       0.0695
+   13     geôlier                        -0.000055       0.1614
+   14     insista                        -0.000052       0.0828
+   15     battait                        -0.000045       0.0698
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marques                        +0.001914       0.1651
+   2      geôlier                        +0.001097       0.1614
+   3      lança                          +0.001078       0.0762
+   4      légiste                        +0.000999       0.2972
+   5      maltraiter                     +0.000972       0.1855
+   6      maquille                       +0.000955       0.1864
+   7      arrêtée                        +0.000909       0.0736
+   8      traces                         +0.000899       0.1875
+   9      trouvent                       +0.000827       0.1441
+   10     reconstruire                   +0.000757       0.1247
+   11     perdue                         +0.000719       0.0592
+   12     rongeait                       +0.000716       0.1140
+   13     battait                        +0.000709       0.0698
+   14     menti                          +0.000678       0.0852
+   15     meure                          +0.000660       0.1197
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      accentue                       -0.001700       0.1673
+   2      dentition                      -0.001657       0.1864
+   3      poing                          -0.001478       0.0616
+   4      fichiers                       -0.001398       0.1592
+   5      frapper                        -0.001305       0.0614
+   6      retors                         -0.001236       0.1597
+   7      rabaisser                      -0.001045       0.1837
+   8      jouent                         -0.001015       0.0974
+   9      contrôler                      -0.000897       0.1954
+   10     libéré                         -0.000868       0.0934
+   11     prouver                        -0.000845       0.1360
+   12     connaissez                     -0.000829       0.0657
+   13     isole                          -0.000755       0.1625
+   14     poings                         -0.000719       0.0695
+   15     clame                          -0.000659       0.1608
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marques                        +0.090420       0.1651
+   2      maquille                       +0.062039       0.1864
+   3      traces                         +0.058562       0.1875
+   4      trouvent                       +0.055040       0.1441
+   5      lança                          +0.054867       0.0762
+   6      arrêtée                        +0.042606       0.0736
+   7      meure                          +0.039378       0.1197
+   8      perdue                         +0.038193       0.0592
+   9      jointures                      +0.036058       0.1437
+   10     geôlier                        +0.033812       0.1614
+   11     reconstruire                   +0.033321       0.1247
+   12     maltraiter                     +0.032560       0.1855
+   13     menti                          +0.031474       0.0852
+   14     rongeait                       +0.029912       0.1140
+   15     trace                          +0.027991       0.0581
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      dentition                      -0.090028       0.1864
+   2      accentue                       -0.076659       0.1673
+   3      retors                         -0.066611       0.1597
+   4      frapper                        -0.061825       0.0614
+   5      poing                          -0.060120       0.0616
+   6      fichiers                       -0.046771       0.1592
+   7      libéré                         -0.044625       0.0934
+   8      jouent                         -0.043175       0.0974
+   9      poings                         -0.038494       0.0695
+   10     connaissez                     -0.037866       0.0657
+   11     rabaisser                      -0.036331       0.1837
+   12     contrôler                      -0.030234       0.1954
+   13     victime                        -0.029729       0.0635
+   14     clame                          -0.029640       0.1608
+   15     isole                          -0.022634       0.1625
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+maquille                  +0.000955     +0.000100     +0.000100     0.1864
+dentition                 +0.000000     +0.000064     +0.000064     0.1864
+fichiers                  +0.000000     +0.000048     +0.000048     0.1592
+sûrement                  +0.000511     +0.000044     +0.000044     0.0603
+physique                  +0.000000     +0.000044     +0.000044     0.1246
+poing                     +0.000000     +0.000041     +0.000041     0.0616
+grinçait                  +0.000000     +0.000038     +0.000038     0.1576
+vérifié                   +0.000348     +0.000036     +0.000036     0.1055
+roux                      +0.000000     +0.000032     +0.000032     0.0821
+frappe                    +0.000000     +0.000032     +0.000032     0.0781
+connaissez                +0.000000     +0.000025     +0.000025     0.0657
+ceinture                  +0.000000     +0.000017     +0.000017     0.0647
+délicat                   +0.000083     +0.000015     +0.000015     0.0760
+harcèlement               +0.000280     +0.000014     +0.000014     0.1734
+fonctionne                +0.000000     +0.000013     +0.000013     0.1066
+prouver                   +0.000000     +0.000010     +0.000010     0.1360
+truc                      +0.000588     +0.000005     +0.000005     0.0835
+noté                      +0.000000     +0.000003     +0.000003     0.0982
+cadence                   +0.000000     +0.000003     +0.000003     0.1074
+victime                   +0.000000     +0.000002     +0.000002     0.0635
+logit final pour 'femme': 0.5992
+# analyse pour la classe: HOMME
+# logit: -0.5041
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      maquille                       +0.000053       0.1864
+   2      harcèlement                    +0.000041       0.1734
+   3      fichiers                       +0.000040       0.1592
+   4      rabaisser                      +0.000039       0.1837
+   5      physique                       +0.000036       0.1246
+   6      vérifié                        +0.000034       0.1055
+   7      sûrement                       +0.000034       0.0603
+   8      accentue                       +0.000028       0.1673
+   9      fonctionne                     +0.000023       0.1066
+   10     frappe                         +0.000023       0.0781
+   11     roux                           +0.000021       0.0821
+   12     maltraiter                     +0.000014       0.1855
+   13     clame                          +0.000014       0.1608
+   14     ceinture                       +0.000014       0.0647
+   15     contrôler                      +0.000013       0.1954
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      dentition                      -0.000058       0.1864
+   2      reconstruire                   -0.000055       0.1247
+   3      isole                          -0.000055       0.1625
+   4      anciennes                      -0.000051       0.0745
+   5      reproche                       -0.000050       0.0696
+   6      jouent                         -0.000048       0.0974
+   7      menti                          -0.000044       0.0852
+   8      meure                          -0.000044       0.1197
+   9      marques                        -0.000041       0.1651
+   10     ongles                         -0.000040       0.0695
+   11     cadence                        -0.000039       0.1074
+   12     libéré                         -0.000038       0.0934
+   13     traces                         -0.000036       0.1875
+   14     légiste                        -0.000034       0.2972
+   15     insista                        -0.000034       0.0828
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      maquille                       +0.000053       0.1864
+   2      harcèlement                    +0.000041       0.1734
+   3      fichiers                       +0.000040       0.1592
+   4      rabaisser                      +0.000039       0.1837
+   5      physique                       +0.000036       0.1246
+   6      vérifié                        +0.000034       0.1055
+   7      sûrement                       +0.000034       0.0603
+   8      accentue                       +0.000028       0.1673
+   9      fonctionne                     +0.000023       0.1066
+   10     frappe                         +0.000023       0.0781
+   11     roux                           +0.000021       0.0821
+   12     maltraiter                     +0.000014       0.1855
+   13     clame                          +0.000014       0.1608
+   14     ceinture                       +0.000014       0.0647
+   15     contrôler                      +0.000013       0.1954
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      dentition                      -0.000058       0.1864
+   2      reconstruire                   -0.000055       0.1247
+   3      isole                          -0.000055       0.1625
+   4      anciennes                      -0.000051       0.0745
+   5      reproche                       -0.000050       0.0696
+   6      jouent                         -0.000048       0.0974
+   7      menti                          -0.000044       0.0852
+   8      meure                          -0.000044       0.1197
+   9      marques                        -0.000041       0.1651
+   10     ongles                         -0.000040       0.0695
+   11     cadence                        -0.000039       0.1074
+   12     libéré                         -0.000038       0.0934
+   13     traces                         -0.000036       0.1875
+   14     légiste                        -0.000034       0.2972
+   15     insista                        -0.000034       0.0828
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      accentue                       +0.001569       0.1673
+   2      frapper                        +0.001199       0.0614
+   3      poing                          +0.001134       0.0616
+   4      contrôler                      +0.001105       0.1954
+   5      dentition                      +0.001090       0.1864
+   6      retors                         +0.001051       0.1597
+   7      fichiers                       +0.001035       0.1592
+   8      rabaisser                      +0.000898       0.1837
+   9      prouver                        +0.000851       0.1360
+   10     jouent                         +0.000791       0.0974
+   11     connaissez                     +0.000647       0.0657
+   12     poings                         +0.000627       0.0695
+   13     victime                        +0.000566       0.0635
+   14     clame                          +0.000515       0.1608
+   15     libéré                         +0.000492       0.0934
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marques                        -0.001485       0.1651
+   2      légiste                        -0.001421       0.2972
+   3      geôlier                        -0.001089       0.1614
+   4      lança                          -0.000966       0.0762
+   5      maltraiter                     -0.000785       0.1855
+   6      reconstruire                   -0.000751       0.1247
+   7      meure                          -0.000713       0.1197
+   8      trouvent                       -0.000703       0.1441
+   9      rongeait                       -0.000702       0.1140
+   10     arrêtée                        -0.000594       0.0736
+   11     perdue                         -0.000567       0.0592
+   12     menti                          -0.000541       0.0852
+   13     maquille                       -0.000524       0.1864
+   14     battait                        -0.000506       0.0698
+   15     traces                         -0.000458       0.1875
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      accentue                       +0.081877       0.1673
+   2      dentition                      +0.066313       0.1864
+   3      frapper                        +0.061941       0.0614
+   4      retors                         +0.058611       0.1597
+   5      poing                          +0.053172       0.0616
+   6      poings                         +0.037383       0.0695
+   7      clame                          +0.036769       0.1608
+   8      fichiers                       +0.035572       0.1592
+   9      contrôler                      +0.034965       0.1954
+   10     jouent                         +0.033716       0.0974
+   11     connaissez                     +0.030461       0.0657
+   12     victime                        +0.030428       0.0635
+   13     rabaisser                      +0.028172       0.1837
+   14     libéré                         +0.023740       0.0934
+   15     prouver                        +0.021288       0.1360
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marques                        -0.074103       0.1651
+   2      trouvent                       -0.052002       0.1441
+   3      lança                          -0.050801       0.0762
+   4      maquille                       -0.034465       0.1864
+   5      geôlier                        -0.034314       0.1614
+   6      traces                         -0.033935       0.1875
+   7      perdue                         -0.033676       0.0592
+   8      reconstruire                   -0.031448       0.1247
+   9      meure                          -0.031141       0.1197
+   10     rongeait                       -0.029265       0.1140
+   11     arrêtée                        -0.027936       0.0736
+   12     menti                          -0.027166       0.0852
+   13     harcèlement                    -0.025845       0.1734
+   14     jointures                      -0.025085       0.1437
+   15     légiste                        -0.023954       0.2972
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+maquille                  +0.000000     +0.000053     +0.000053     0.1864
+harcèlement               +0.000000     +0.000041     +0.000041     0.1734
+fichiers                  +0.001035     +0.000040     +0.000040     0.1592
+rabaisser                 +0.000898     +0.000039     +0.000039     0.1837
+physique                  +0.000266     +0.000036     +0.000036     0.1246
+vérifié                   +0.000000     +0.000034     +0.000034     0.1055
+sûrement                  +0.000000     +0.000034     +0.000034     0.0603
+accentue                  +0.001569     +0.000028     +0.000028     0.1673
+fonctionne                +0.000141     +0.000023     +0.000023     0.1066
+frappe                    +0.000102     +0.000023     +0.000023     0.0781
+roux                      +0.000074     +0.000021     +0.000021     0.0821
+maltraiter                +0.000000     +0.000014     +0.000014     0.1855
+clame                     +0.000515     +0.000014     +0.000014     0.1608
+ceinture                  +0.000080     +0.000014     +0.000014     0.0647
+contrôler                 +0.001105     +0.000013     +0.000013     0.1954
+veiller                   +0.000000     +0.000011     +0.000011     0.0780
+délicat                   +0.000000     +0.000008     +0.000008     0.0760
+prouver                   +0.000851     +0.000007     +0.000007     0.1360
+connaissez                +0.000647     +0.000007     +0.000007     0.0657
+truc                      +0.000000     +0.000004     +0.000004     0.0835
+logit final pour 'homme': -0.5041

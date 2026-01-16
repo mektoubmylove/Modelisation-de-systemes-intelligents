@@ -1,0 +1,386 @@
+texte analysé: , il était ridicule , car il affectait d être homme de sport : à tout propos il courait au pas gymnastique suédois , selon les manuels officiels ; il sautait à pieds joints chaque menu obstacle , un j...
+prédiction: HOMME (confiance: 78.7%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.7226
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cèdre                          +0.000104       0.1065
+   2      préhistoriques                 +0.000078       0.1283
+   3      spectateurs                    +0.000065       0.0656
+   4      atlas                          +0.000061       0.1002
+   5      albâtre                        +0.000055       0.1180
+   6      boulangère                     +0.000050       0.1133
+   7      joints                         +0.000047       0.0677
+   8      chapeau                        +0.000046       0.0846
+   9      abbé                           +0.000039       0.0793
+   10     dépit                          +0.000035       0.0477
+   11     officiels                      +0.000034       0.0779
+   12     gymnastique                    +0.000032       0.0809
+   13     extraits                       +0.000029       0.0969
+   14     départements                   +0.000029       0.1148
+   15     hôtel                          +0.000028       0.0389
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      oral                           -0.000196       0.5620
+   2      cyr                            -0.000079       0.1275
+   3      enseigna                       -0.000070       0.1247
+   4      escortés                       -0.000067       0.1163
+   5      redouté                        -0.000067       0.0810
+   6      hindous                        -0.000052       0.1261
+   7      pêcher                         -0.000048       0.0759
+   8      employés                       -0.000046       0.0544
+   9      marquée                        -0.000045       0.0615
+   10     féliciter                      -0.000044       0.0688
+   11     garda                          -0.000044       0.0598
+   12     excellence                     -0.000043       0.0714
+   13     échangent                      -0.000042       0.0853
+   14     programme                      -0.000038       0.0520
+   15     envahirent                     -0.000034       0.1097
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cèdre                          +0.000104       0.1065
+   2      préhistoriques                 +0.000078       0.1283
+   3      spectateurs                    +0.000065       0.0656
+   4      atlas                          +0.000061       0.1002
+   5      albâtre                        +0.000055       0.1180
+   6      boulangère                     +0.000050       0.1133
+   7      joints                         +0.000047       0.0677
+   8      chapeau                        +0.000046       0.0846
+   9      abbé                           +0.000039       0.0793
+   10     dépit                          +0.000035       0.0477
+   11     officiels                      +0.000034       0.0779
+   12     gymnastique                    +0.000032       0.0809
+   13     extraits                       +0.000029       0.0969
+   14     départements                   +0.000029       0.1148
+   15     hôtel                          +0.000028       0.0389
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      oral                           -0.000196       0.5620
+   2      cyr                            -0.000079       0.1275
+   3      enseigna                       -0.000070       0.1247
+   4      escortés                       -0.000067       0.1163
+   5      redouté                        -0.000067       0.0810
+   6      hindous                        -0.000052       0.1261
+   7      pêcher                         -0.000048       0.0759
+   8      employés                       -0.000046       0.0544
+   9      marquée                        -0.000045       0.0615
+   10     féliciter                      -0.000044       0.0688
+   11     garda                          -0.000044       0.0598
+   12     excellence                     -0.000043       0.0714
+   13     échangent                      -0.000042       0.0853
+   14     programme                      -0.000038       0.0520
+   15     envahirent                     -0.000034       0.1097
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      joyau                          +0.001509       0.0993
+   2      plant                          +0.001050       0.1315
+   3      ossature                       +0.000940       0.1039
+   4      cerisier                       +0.000940       0.1065
+   5      nôtre                          +0.000726       0.0509
+   6      sien                           +0.000699       0.0386
+   7      établissements                 +0.000684       0.0821
+   8      mérite                         +0.000664       0.0446
+   9      employés                       +0.000656       0.0544
+   10     détestait                      +0.000630       0.0564
+   11     rois                           +0.000603       0.0621
+   12     france                         +0.000545       0.0783
+   13     suédois                        +0.000539       0.1018
+   14     géographie                     +0.000530       0.0755
+   15     albâtre                        +0.000525       0.1180
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      préhistoriques                 -0.001714       0.1283
+   2      affectait                      -0.001480       0.0867
+   3      atlas                          -0.001427       0.1002
+   4      enseigna                       -0.001421       0.1247
+   5      hindous                        -0.001314       0.1261
+   6      tunisie                        -0.001238       0.1290
+   7      ruse                           -0.001201       0.0648
+   8      collecte                       -0.001158       0.1185
+   9      départements                   -0.001133       0.1148
+   10     expositions                    -0.001062       0.1054
+   11     jadis                          -0.001059       0.0505
+   12     dessein                        -0.000959       0.0727
+   13     candidats                      -0.000908       0.0924
+   14     buvait                         -0.000883       0.0518
+   15     alexandre                      -0.000840       0.0770
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      joyau                          +0.064575       0.0993
+   2      cerisier                       +0.048673       0.1065
+   3      plant                          +0.046063       0.1315
+   4      ossature                       +0.045542       0.1039
+   5      nôtre                          +0.034663       0.0509
+   6      sien                           +0.034488       0.0386
+   7      mérite                         +0.034296       0.0446
+   8      associations                   +0.030775       0.0905
+   9      employés                       +0.029614       0.0544
+   10     suédois                        +0.028451       0.1018
+   11     rois                           +0.028181       0.0621
+   12     france                         +0.028013       0.0783
+   13     détestait                      +0.027450       0.0564
+   14     établissements                 +0.027226       0.0821
+   15     menu                           +0.024691       0.0517
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      préhistoriques                 -0.076181       0.1283
+   2      affectait                      -0.072883       0.0867
+   3      atlas                          -0.069480       0.1002
+   4      ruse                           -0.062295       0.0648
+   5      hindous                        -0.061135       0.1261
+   6      tunisie                        -0.058205       0.1290
+   7      enseigna                       -0.054557       0.1247
+   8      collecte                       -0.052978       0.1185
+   9      jadis                          -0.051335       0.0505
+   10     départements                   -0.049169       0.1148
+   11     alexandre                      -0.048084       0.0770
+   12     expositions                    -0.047334       0.1054
+   13     guillotine                     -0.043886       0.0926
+   14     contrée                        -0.043188       0.0865
+   15     buvait                         -0.041343       0.0518
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+cèdre                     +0.000000     +0.000104     +0.000104     0.1065
+préhistoriques            +0.000000     +0.000078     +0.000078     0.1283
+spectateurs               +0.000000     +0.000065     +0.000065     0.0656
+atlas                     +0.000000     +0.000061     +0.000061     0.1002
+albâtre                   +0.000525     +0.000055     +0.000055     0.1180
+boulangère                +0.000435     +0.000050     +0.000050     0.1133
+joints                    +0.000000     +0.000047     +0.000047     0.0677
+chapeau                   +0.000000     +0.000046     +0.000046     0.0846
+abbé                      +0.000000     +0.000039     +0.000039     0.0793
+dépit                     +0.000012     +0.000035     +0.000035     0.0477
+officiels                 +0.000000     +0.000034     +0.000034     0.0779
+gymnastique               +0.000000     +0.000032     +0.000032     0.0809
+extraits                  +0.000000     +0.000029     +0.000029     0.0969
+départements              +0.000000     +0.000029     +0.000029     0.1148
+hôtel                     +0.000000     +0.000028     +0.000028     0.0389
+ruse                      +0.000000     +0.000028     +0.000028     0.0648
+tunisie                   +0.000000     +0.000021     +0.000021     0.1290
+courait                   +0.000000     +0.000021     +0.000021     0.0454
+dessein                   +0.000000     +0.000020     +0.000020     0.0727
+candidats                 +0.000000     +0.000019     +0.000019     0.0924
+logit final pour 'femme': -0.7226
+# analyse pour la classe: HOMME  prédite
+# logit: 0.5847
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cèdre                          +0.000053       0.1065
+   2      plant                          +0.000044       0.1315
+   3      préhistoriques                 +0.000042       0.1283
+   4      spectateurs                    +0.000042       0.0656
+   5      vivions                        +0.000034       0.0853
+   6      boulangère                     +0.000032       0.1133
+   7      atlas                          +0.000030       0.1002
+   8      officiels                      +0.000027       0.0779
+   9      albâtre                        +0.000024       0.1180
+   10     abbé                           +0.000022       0.0793
+   11     encouragent                    +0.000022       0.1158
+   12     joints                         +0.000022       0.0677
+   13     hôtel                          +0.000021       0.0389
+   14     extraits                       +0.000018       0.0969
+   15     ridicule                       +0.000018       0.0412
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hindous                        -0.000036       0.1261
+   2      peuples                        -0.000033       0.0716
+   3      redouté                        -0.000033       0.0810
+   4      marquée                        -0.000032       0.0615
+   5      sautait                        -0.000032       0.0673
+   6      population                     -0.000030       0.0577
+   7      escortés                       -0.000030       0.1163
+   8      pêcher                         -0.000028       0.0759
+   9      envahirent                     -0.000027       0.1097
+   10     villes                         -0.000027       0.0489
+   11     monstres                       -0.000026       0.0634
+   12     règne                          -0.000025       0.0544
+   13     cyr                            -0.000024       0.1275
+   14     rois                           -0.000023       0.0621
+   15     richesses                      -0.000023       0.0720
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cèdre                          +0.000053       0.1065
+   2      plant                          +0.000044       0.1315
+   3      préhistoriques                 +0.000042       0.1283
+   4      spectateurs                    +0.000042       0.0656
+   5      vivions                        +0.000034       0.0853
+   6      boulangère                     +0.000032       0.1133
+   7      atlas                          +0.000030       0.1002
+   8      officiels                      +0.000027       0.0779
+   9      albâtre                        +0.000024       0.1180
+   10     abbé                           +0.000022       0.0793
+   11     encouragent                    +0.000022       0.1158
+   12     joints                         +0.000022       0.0677
+   13     hôtel                          +0.000021       0.0389
+   14     extraits                       +0.000018       0.0969
+   15     ridicule                       +0.000018       0.0412
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hindous                        -0.000036       0.1261
+   2      peuples                        -0.000033       0.0716
+   3      redouté                        -0.000033       0.0810
+   4      marquée                        -0.000032       0.0615
+   5      sautait                        -0.000032       0.0673
+   6      population                     -0.000030       0.0577
+   7      escortés                       -0.000030       0.1163
+   8      pêcher                         -0.000028       0.0759
+   9      envahirent                     -0.000027       0.1097
+   10     villes                         -0.000027       0.0489
+   11     monstres                       -0.000026       0.0634
+   12     règne                          -0.000025       0.0544
+   13     cyr                            -0.000024       0.1275
+   14     rois                           -0.000023       0.0621
+   15     richesses                      -0.000023       0.0720
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      enseigna                       +0.001520       0.1247
+   2      atlas                          +0.001313       0.1002
+   3      affectait                      +0.001288       0.0867
+   4      préhistoriques                 +0.001287       0.1283
+   5      hindous                        +0.001217       0.1261
+   6      tunisie                        +0.001080       0.1290
+   7      jadis                          +0.001050       0.0505
+   8      ruse                           +0.001034       0.0648
+   9      départements                   +0.000985       0.1148
+   10     candidats                      +0.000869       0.0924
+   11     collecte                       +0.000853       0.1185
+   12     expositions                    +0.000848       0.1054
+   13     dessein                        +0.000792       0.0727
+   14     buvait                         +0.000764       0.0518
+   15     pêcher                         +0.000762       0.0759
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      joyau                          -0.001334       0.0993
+   2      ossature                       -0.000868       0.1039
+   3      plant                          -0.000864       0.1315
+   4      cerisier                       -0.000789       0.1065
+   5      oral                           -0.000735       0.5620
+   6      albâtre                        -0.000693       0.1180
+   7      suédois                        -0.000658       0.1018
+   8      établissements                 -0.000623       0.0821
+   9      rois                           -0.000621       0.0621
+   10     employés                       -0.000591       0.0544
+   11     mérite                         -0.000564       0.0446
+   12     sien                           -0.000552       0.0386
+   13     nôtre                          -0.000508       0.0509
+   14     mentionnait                    -0.000484       0.1202
+   15     associations                   -0.000462       0.0905
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      atlas                          +0.062974       0.1002
+   2      affectait                      +0.062178       0.0867
+   3      préhistoriques                 +0.061296       0.1283
+   4      enseigna                       +0.060958       0.1247
+   5      hindous                        +0.057890       0.1261
+   6      tunisie                        +0.056856       0.1290
+   7      ruse                           +0.054300       0.0648
+   8      jadis                          +0.051895       0.0505
+   9      collecte                       +0.046398       0.1185
+   10     expositions                    +0.046091       0.1054
+   11     alexandre                      +0.041058       0.0770
+   12     buvait                         +0.037723       0.0518
+   13     contrée                        +0.036589       0.0865
+   14     guillotine                     +0.036510       0.0926
+   15     départements                   +0.036266       0.1148
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      joyau                          -0.064665       0.0993
+   2      ossature                       -0.042621       0.1039
+   3      cerisier                       -0.039527       0.1065
+   4      suédois                        -0.035976       0.1018
+   5      plant                          -0.034916       0.1315
+   6      sien                           -0.030835       0.0386
+   7      mérite                         -0.030002       0.0446
+   8      rois                           -0.029719       0.0621
+   9      associations                   -0.027935       0.0905
+   10     albâtre                        -0.027539       0.1180
+   11     employés                       -0.027387       0.0544
+   12     menu                           -0.024918       0.0517
+   13     nôtre                          -0.023890       0.0509
+   14     mentionnait                    -0.023546       0.1202
+   15     boulangère                     -0.023388       0.1133
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+cèdre                     +0.000276     +0.000053     +0.000053     0.1065
+plant                     +0.000000     +0.000044     +0.000044     0.1315
+préhistoriques            +0.001287     +0.000042     +0.000042     0.1283
+spectateurs               +0.000332     +0.000042     +0.000042     0.0656
+vivions                   +0.000000     +0.000034     +0.000034     0.0853
+boulangère                +0.000000     +0.000032     +0.000032     0.1133
+atlas                     +0.001313     +0.000030     +0.000030     0.1002
+officiels                 +0.000508     +0.000027     +0.000027     0.0779
+albâtre                   +0.000000     +0.000024     +0.000024     0.1180
+abbé                      +0.000618     +0.000022     +0.000022     0.0793
+encouragent               +0.000000     +0.000022     +0.000022     0.1158
+joints                    +0.000591     +0.000022     +0.000022     0.0677
+hôtel                     +0.000206     +0.000021     +0.000021     0.0389
+extraits                  +0.000475     +0.000018     +0.000018     0.0969
+ridicule                  +0.000225     +0.000018     +0.000018     0.0412
+jean                      +0.000184     +0.000017     +0.000017     0.0406
+expositions               +0.000848     +0.000017     +0.000017     0.1054
+expliquait                +0.000000     +0.000017     +0.000017     0.0500
+associations              +0.000000     +0.000016     +0.000016     0.0905
+ruse                      +0.001034     +0.000016     +0.000016     0.0648
+logit final pour 'homme': 0.5847

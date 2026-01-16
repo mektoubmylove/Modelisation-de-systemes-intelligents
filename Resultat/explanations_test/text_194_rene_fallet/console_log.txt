@@ -1,0 +1,386 @@
+texte analysé: là , assis en caleçon sur le bord du sommier , merveilleusement ahuri la fille n avait rien pris . c était invraisemblable ces billets étaient faux , alors . il en saisit un , le regarda au jour . il ...
+prédiction: HOMME (confiance: 64.1%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.2601
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      serin                          +0.000117       0.2025
+   2      aperçut                        +0.000106       0.1488
+   3      bégaya                         +0.000089       0.1529
+   4      sommier                        +0.000076       0.1459
+   5      casserole                      +0.000076       0.2434
+   6      estimez                        +0.000055       0.1665
+   7      dépasse                        +0.000049       0.0878
+   8      merveilleusement               +0.000048       0.1169
+   9      dormi                          +0.000036       0.0688
+   10     caleçon                        +0.000035       0.2580
+   11     enveloppe                      +0.000032       0.1332
+   12     cage                           +0.000032       0.0718
+   13     remercier                      +0.000028       0.0759
+   14     ridicule                       +0.000025       0.0634
+   15     invraisemblable                +0.000024       0.1058
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      putains                        -0.000109       0.1416
+   2      hésitations                    -0.000095       0.1251
+   3      parlez                         -0.000090       0.1393
+   4      putain                         -0.000078       0.1967
+   5      incroyable                     -0.000076       0.2137
+   6      bafouilla                      -0.000060       0.1520
+   7      mademoiselle                   -0.000059       0.1540
+   8      ahuri                          -0.000052       0.1111
+   9      hocha                          -0.000047       0.0895
+   10     travailles                     -0.000044       0.1305
+   11     métier                         -0.000039       0.0591
+   12     gêné                           -0.000036       0.0717
+   13     téléphone                      -0.000035       0.0673
+   14     mères                          -0.000035       0.0764
+   15     brandit                        -0.000035       0.1169
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      serin                          +0.000117       0.2025
+   2      aperçut                        +0.000106       0.1488
+   3      bégaya                         +0.000089       0.1529
+   4      sommier                        +0.000076       0.1459
+   5      casserole                      +0.000076       0.2434
+   6      estimez                        +0.000055       0.1665
+   7      dépasse                        +0.000049       0.0878
+   8      merveilleusement               +0.000048       0.1169
+   9      dormi                          +0.000036       0.0688
+   10     caleçon                        +0.000035       0.2580
+   11     enveloppe                      +0.000032       0.1332
+   12     cage                           +0.000032       0.0718
+   13     remercier                      +0.000028       0.0759
+   14     ridicule                       +0.000025       0.0634
+   15     invraisemblable                +0.000024       0.1058
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      putains                        -0.000109       0.1416
+   2      hésitations                    -0.000095       0.1251
+   3      parlez                         -0.000090       0.1393
+   4      putain                         -0.000078       0.1967
+   5      incroyable                     -0.000076       0.2137
+   6      bafouilla                      -0.000060       0.1520
+   7      mademoiselle                   -0.000059       0.1540
+   8      ahuri                          -0.000052       0.1111
+   9      hocha                          -0.000047       0.0895
+   10     travailles                     -0.000044       0.1305
+   11     métier                         -0.000039       0.0591
+   12     gêné                           -0.000036       0.0717
+   13     téléphone                      -0.000035       0.0673
+   14     mères                          -0.000035       0.0764
+   15     brandit                        -0.000035       0.1169
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mademoiselle                   +0.002136       0.1540
+   2      hocha                          +0.001738       0.0895
+   3      casserole                      +0.001636       0.2434
+   4      étouffa                        +0.001401       0.1197
+   5      reposa                         +0.001049       0.1070
+   6      murmura                        +0.001044       0.1488
+   7      plaît                          +0.000919       0.0582
+   8      mères                          +0.000803       0.0764
+   9      plumes                         +0.000765       0.0861
+   10     incroyable                     +0.000612       0.2137
+   11     travailles                     +0.000546       0.1305
+   12     brandit                        +0.000535       0.1169
+   13     bouger                         +0.000488       0.0620
+   14     téléphone                      +0.000486       0.0673
+   15     rougit                         +0.000443       0.0891
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      aperçut                        -0.002263       0.1488
+   2      ahuri                          -0.001764       0.1111
+   3      bégaya                         -0.001722       0.1529
+   4      sommier                        -0.001515       0.1459
+   5      serin                          -0.001466       0.2025
+   6      fred                           -0.001334       0.1746
+   7      estimez                        -0.001232       0.1665
+   8      invraisemblable                -0.001101       0.1058
+   9      putains                        -0.001062       0.1416
+   10     billets                        -0.000960       0.0756
+   11     eut                            -0.000928       0.0581
+   12     gêné                           -0.000729       0.0717
+   13     migraine                       -0.000710       0.1197
+   14     enveloppe                      -0.000706       0.1332
+   15     paie                           -0.000704       0.0890
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mademoiselle                   +0.126793       0.1540
+   2      hocha                          +0.086374       0.0895
+   3      casserole                      +0.077077       0.2434
+   4      étouffa                        +0.071543       0.1197
+   5      reposa                         +0.058068       0.1070
+   6      plaît                          +0.045866       0.0582
+   7      murmura                        +0.044944       0.1488
+   8      mères                          +0.042767       0.0764
+   9      plumes                         +0.039201       0.0861
+   10     brandit                        +0.035617       0.1169
+   11     téléphone                      +0.023132       0.0673
+   12     rougit                         +0.022406       0.0891
+   13     bouger                         +0.021979       0.0620
+   14     remercier                      +0.020524       0.0759
+   15     reprenant                      +0.018840       0.0848
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      aperçut                        -0.119538       0.1488
+   2      ahuri                          -0.093843       0.1111
+   3      bégaya                         -0.077045       0.1529
+   4      sommier                        -0.070992       0.1459
+   5      serin                          -0.069927       0.2025
+   6      fred                           -0.068377       0.1746
+   7      invraisemblable                -0.063306       0.1058
+   8      estimez                        -0.050562       0.1665
+   9      putain                         -0.050388       0.1967
+   10     eut                            -0.049747       0.0581
+   11     putains                        -0.049386       0.1416
+   12     billets                        -0.046863       0.0756
+   13     gêné                           -0.030357       0.0717
+   14     cage                           -0.029901       0.0718
+   15     sonnait                        -0.028664       0.0869
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+serin                     +0.000000     +0.000117     +0.000117     0.2025
+aperçut                   +0.000000     +0.000106     +0.000106     0.1488
+bégaya                    +0.000000     +0.000089     +0.000089     0.1529
+sommier                   +0.000000     +0.000076     +0.000076     0.1459
+casserole                 +0.001636     +0.000076     +0.000076     0.2434
+estimez                   +0.000000     +0.000055     +0.000055     0.1665
+dépasse                   +0.000222     +0.000049     +0.000049     0.0878
+merveilleusement          +0.000000     +0.000048     +0.000048     0.1169
+dormi                     +0.000000     +0.000036     +0.000036     0.0688
+caleçon                   +0.000000     +0.000035     +0.000035     0.2580
+enveloppe                 +0.000000     +0.000032     +0.000032     0.1332
+cage                      +0.000000     +0.000032     +0.000032     0.0718
+remercier                 +0.000382     +0.000028     +0.000028     0.0759
+ridicule                  +0.000000     +0.000025     +0.000025     0.0634
+invraisemblable           +0.000000     +0.000024     +0.000024     0.1058
+leva                      +0.000029     +0.000022     +0.000022     0.0671
+ayez                      +0.000000     +0.000022     +0.000022     0.0762
+prit                      +0.000000     +0.000021     +0.000021     0.0626
+réfléchissant             +0.000000     +0.000020     +0.000020     0.1145
+paie                      +0.000000     +0.000018     +0.000018     0.0890
+logit final pour 'femme': -0.2601
+# analyse pour la classe: HOMME  prédite
+# logit: 0.3208
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      serin                          +0.000084       0.2025
+   2      casserole                      +0.000077       0.2434
+   3      sommier                        +0.000036       0.1459
+   4      bégaya                         +0.000030       0.1529
+   5      remercier                      +0.000028       0.0759
+   6      ridicule                       +0.000027       0.0634
+   7      ouvrit                         +0.000026       0.0670
+   8      dépasse                        +0.000026       0.0878
+   9      fumante                        +0.000024       0.1326
+   10     taisait                        +0.000019       0.1056
+   11     stupide                        +0.000016       0.0722
+   12     saisit                         +0.000014       0.0612
+   13     reprenant                      +0.000013       0.0848
+   14     aperçut                        +0.000012       0.1488
+   15     dormi                          +0.000010       0.0688
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      putain                         -0.000088       0.1967
+   2      putains                        -0.000080       0.1416
+   3      bafouilla                      -0.000055       0.1520
+   4      tutoyait                       -0.000053       0.1769
+   5      hésitations                    -0.000053       0.1251
+   6      ahuri                          -0.000049       0.1111
+   7      manquèrent                     -0.000047       0.1792
+   8      hocha                          -0.000041       0.0895
+   9      caleçon                        -0.000035       0.2580
+   10     osait                          -0.000028       0.0732
+   11     bouger                         -0.000027       0.0620
+   12     constitué                      -0.000026       0.1145
+   13     murmura                        -0.000024       0.1488
+   14     sonnait                        -0.000024       0.0869
+   15     songea                         -0.000022       0.0905
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      serin                          +0.000084       0.2025
+   2      casserole                      +0.000077       0.2434
+   3      sommier                        +0.000036       0.1459
+   4      bégaya                         +0.000030       0.1529
+   5      remercier                      +0.000028       0.0759
+   6      ridicule                       +0.000027       0.0634
+   7      ouvrit                         +0.000026       0.0670
+   8      dépasse                        +0.000026       0.0878
+   9      fumante                        +0.000024       0.1326
+   10     taisait                        +0.000019       0.1056
+   11     stupide                        +0.000016       0.0722
+   12     saisit                         +0.000014       0.0612
+   13     reprenant                      +0.000013       0.0848
+   14     aperçut                        +0.000012       0.1488
+   15     dormi                          +0.000010       0.0688
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      putain                         -0.000088       0.1967
+   2      putains                        -0.000080       0.1416
+   3      bafouilla                      -0.000055       0.1520
+   4      tutoyait                       -0.000053       0.1769
+   5      hésitations                    -0.000053       0.1251
+   6      ahuri                          -0.000049       0.1111
+   7      manquèrent                     -0.000047       0.1792
+   8      hocha                          -0.000041       0.0895
+   9      caleçon                        -0.000035       0.2580
+   10     osait                          -0.000028       0.0732
+   11     bouger                         -0.000027       0.0620
+   12     constitué                      -0.000026       0.1145
+   13     murmura                        -0.000024       0.1488
+   14     sonnait                        -0.000024       0.0869
+   15     songea                         -0.000022       0.0905
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      aperçut                        +0.002015       0.1488
+   2      serin                          +0.001579       0.2025
+   3      ahuri                          +0.001433       0.1111
+   4      sommier                        +0.001305       0.1459
+   5      bégaya                         +0.001270       0.1529
+   6      estimez                        +0.001238       0.1665
+   7      fred                           +0.001072       0.1746
+   8      billets                        +0.001056       0.0756
+   9      putains                        +0.000970       0.1416
+   10     invraisemblable                +0.000899       0.1058
+   11     eut                            +0.000885       0.0581
+   12     caleçon                        +0.000818       0.2580
+   13     gêné                           +0.000754       0.0717
+   14     paie                           +0.000735       0.0890
+   15     migraine                       +0.000658       0.1197
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mademoiselle                   -0.001897       0.1540
+   2      casserole                      -0.001406       0.2434
+   3      hocha                          -0.001390       0.0895
+   4      étouffa                        -0.001043       0.1197
+   5      reposa                         -0.000866       0.1070
+   6      murmura                        -0.000740       0.1488
+   7      plaît                          -0.000731       0.0582
+   8      mères                          -0.000614       0.0764
+   9      plumes                         -0.000559       0.0861
+   10     incroyable                     -0.000549       0.2137
+   11     travailles                     -0.000414       0.1305
+   12     rougit                         -0.000388       0.0891
+   13     bafouilla                      -0.000386       0.1520
+   14     téléphone                      -0.000369       0.0673
+   15     bouger                         -0.000340       0.0620
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      aperçut                        +0.090895       0.1488
+   2      sommier                        +0.073382       0.1459
+   3      ahuri                          +0.068645       0.1111
+   4      serin                          +0.060082       0.2025
+   5      fred                           +0.058172       0.1746
+   6      bégaya                         +0.053137       0.1529
+   7      estimez                        +0.049114       0.1665
+   8      billets                        +0.041440       0.0756
+   9      eut                            +0.040532       0.0581
+   10     invraisemblable                +0.040315       0.1058
+   11     putain                         +0.038976       0.1967
+   12     putains                        +0.036690       0.1416
+   13     gêné                           +0.028203       0.0717
+   14     migraine                       +0.026788       0.1197
+   15     ayez                           +0.024705       0.0762
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mademoiselle                   -0.100213       0.1540
+   2      casserole                      -0.067362       0.2434
+   3      hocha                          -0.066640       0.0895
+   4      étouffa                        -0.048685       0.1197
+   5      murmura                        -0.045044       0.1488
+   6      reposa                         -0.042850       0.1070
+   7      plaît                          -0.037886       0.0582
+   8      mères                          -0.031540       0.0764
+   9      plumes                         -0.029118       0.0861
+   10     brandit                        -0.021389       0.1169
+   11     incroyable                     -0.020421       0.2137
+   12     rougit                         -0.020401       0.0891
+   13     bouger                         -0.017949       0.0620
+   14     téléphone                      -0.014725       0.0673
+   15     bafouilla                      -0.010706       0.1520
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+serin                     +0.001579     +0.000084     +0.000084     0.2025
+casserole                 +0.000000     +0.000077     +0.000077     0.2434
+sommier                   +0.001305     +0.000036     +0.000036     0.1459
+bégaya                    +0.001270     +0.000030     +0.000030     0.1529
+remercier                 +0.000000     +0.000028     +0.000028     0.0759
+ridicule                  +0.000323     +0.000027     +0.000027     0.0634
+ouvrit                    +0.000062     +0.000026     +0.000026     0.0670
+dépasse                   +0.000000     +0.000026     +0.000026     0.0878
+fumante                   +0.000000     +0.000024     +0.000024     0.1326
+taisait                   +0.000040     +0.000019     +0.000019     0.1056
+stupide                   +0.000000     +0.000016     +0.000016     0.0722
+saisit                    +0.000102     +0.000014     +0.000014     0.0612
+reprenant                 +0.000000     +0.000013     +0.000013     0.0848
+aperçut                   +0.002015     +0.000012     +0.000012     0.1488
+dormi                     +0.000327     +0.000010     +0.000010     0.0688
+migraine                  +0.000658     +0.000010     +0.000010     0.1197
+hésita                    +0.000245     +0.000009     +0.000009     0.0800
+fred                      +0.001072     +0.000009     +0.000009     0.1746
+parla                     +0.000385     +0.000008     +0.000008     0.0783
+merveilleusement          +0.000384     +0.000008     +0.000008     0.1169
+logit final pour 'homme': 0.3208

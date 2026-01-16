@@ -1,0 +1,387 @@
+texte analysé: ce que nous allons voir ! s écria jeanne . elle sortit son épée , en porta la pointe entre les mamelles de la fille , qui recula dans le fleuve jusqu à ce que l eau lui montât à la ceinture . quant à ...
+prédiction: FEMME (confiance: 51.2%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: -0.0124
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jeanne                         +0.000456       0.4349
+   2      hire                           +0.000174       0.1954
+   3      alençon                        +0.000148       0.1522
+   4      sologne                        +0.000121       0.1445
+   5      frappa                         +0.000100       0.1109
+   6      écria                          +0.000051       0.1184
+   7      jean                           +0.000051       0.0875
+   8      clochettes                     +0.000048       0.1160
+   9      arguments                      +0.000047       0.0614
+   10     paralysée                      +0.000046       0.0895
+   11     tourelles                      +0.000038       0.1152
+   12     prévaloir                      +0.000037       0.1265
+   13     rêvait                         +0.000037       0.0557
+   14     bastille                       +0.000035       0.1047
+   15     abusé                          +0.000035       0.0860
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      délais                         -0.000170       0.0998
+   2      gilles                         -0.000124       0.2255
+   3      boeufs                         -0.000071       0.0864
+   4      frusques                       -0.000068       0.1309
+   5      partez                         -0.000067       0.0689
+   6      voulions                       -0.000066       0.0965
+   7      orléans                        -0.000062       0.1809
+   8      obéir                          -0.000059       0.0561
+   9      emprunté                       -0.000057       0.0667
+   10     rejoignit                      -0.000053       0.0606
+   11     devions                        -0.000050       0.0741
+   12     attacher                       -0.000049       0.0574
+   13     calmez                         -0.000049       0.0895
+   14     crédit                         -0.000049       0.0667
+   15     ramasser                       -0.000047       0.0527
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jeanne                         +0.000456       0.4349
+   2      hire                           +0.000174       0.1954
+   3      alençon                        +0.000148       0.1522
+   4      sologne                        +0.000121       0.1445
+   5      frappa                         +0.000100       0.1109
+   6      écria                          +0.000051       0.1184
+   7      jean                           +0.000051       0.0875
+   8      clochettes                     +0.000048       0.1160
+   9      arguments                      +0.000047       0.0614
+   10     paralysée                      +0.000046       0.0895
+   11     tourelles                      +0.000038       0.1152
+   12     prévaloir                      +0.000037       0.1265
+   13     rêvait                         +0.000037       0.0557
+   14     bastille                       +0.000035       0.1047
+   15     abusé                          +0.000035       0.0860
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      délais                         -0.000170       0.0998
+   2      gilles                         -0.000124       0.2255
+   3      boeufs                         -0.000071       0.0864
+   4      frusques                       -0.000068       0.1309
+   5      partez                         -0.000067       0.0689
+   6      voulions                       -0.000066       0.0965
+   7      orléans                        -0.000062       0.1809
+   8      obéir                          -0.000059       0.0561
+   9      emprunté                       -0.000057       0.0667
+   10     rejoignit                      -0.000053       0.0606
+   11     devions                        -0.000050       0.0741
+   12     attacher                       -0.000049       0.0574
+   13     calmez                         -0.000049       0.0895
+   14     crédit                         -0.000049       0.0667
+   15     ramasser                       -0.000047       0.0527
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gilles                         +0.003674       0.2255
+   2      messire                        +0.002290       0.1296
+   3      rejoignit                      +0.001470       0.0606
+   4      ajouta                         +0.001299       0.0970
+   5      refusait                       +0.001219       0.0518
+   6      calmez                         +0.001196       0.0895
+   7      voulions                       +0.001017       0.0965
+   8      cadeau                         +0.000914       0.0465
+   9      lame                           +0.000863       0.0569
+   10     partez                         +0.000812       0.0689
+   11     orléans                        +0.000782       0.1809
+   12     emprunté                       +0.000709       0.0667
+   13     prince                         +0.000679       0.0537
+   14     installés                      +0.000677       0.0574
+   15     monastère                      +0.000632       0.1041
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jeanne                         -0.005590       0.4349
+   2      rive                           -0.003770       0.2419
+   3      hire                           -0.002757       0.1954
+   4      hallucination                  -0.001823       0.0937
+   5      frappa                         -0.001412       0.1109
+   6      bastille                       -0.001304       0.1047
+   7      tourelles                      -0.001242       0.1152
+   8      tarde                          -0.001198       0.0838
+   9      étriers                        -0.001063       0.1221
+   10     fâche                          -0.001052       0.0905
+   11     clochettes                     -0.000995       0.1160
+   12     innocence                      -0.000946       0.0578
+   13     jean                           -0.000712       0.0875
+   14     mamelles                       -0.000661       0.1169
+   15     fleuve                         -0.000625       0.1136
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gilles                         +0.189673       0.2255
+   2      messire                        +0.134111       0.1296
+   3      rejoignit                      +0.078352       0.0606
+   4      ajouta                         +0.068675       0.0970
+   5      calmez                         +0.068029       0.0895
+   6      refusait                       +0.063083       0.0518
+   7      lame                           +0.052343       0.0569
+   8      cadeau                         +0.049878       0.0465
+   9      voulions                       +0.047483       0.0965
+   10     monastère                      +0.042581       0.1041
+   11     partez                         +0.042561       0.0689
+   12     coffret                        +0.039806       0.0921
+   13     emprunté                       +0.037063       0.0667
+   14     installés                      +0.036007       0.0574
+   15     orléans                        +0.034303       0.1809
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jeanne                         -0.310794       0.4349
+   2      rive                           -0.186205       0.2419
+   3      hire                           -0.164758       0.1954
+   4      hallucination                  -0.102434       0.0937
+   5      frappa                         -0.085036       0.1109
+   6      bastille                       -0.074286       0.1047
+   7      tourelles                      -0.065985       0.1152
+   8      tarde                          -0.061475       0.0838
+   9      étriers                        -0.057444       0.1221
+   10     fâche                          -0.055088       0.0905
+   11     innocence                      -0.054656       0.0578
+   12     clochettes                     -0.051876       0.1160
+   13     jean                           -0.034273       0.0875
+   14     assiéger                       -0.031758       0.1391
+   15     garces                         -0.031565       0.1374
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+jeanne                    +0.000000     +0.000456     +0.000456     0.4349
+hire                      +0.000000     +0.000174     +0.000174     0.1954
+alençon                   +0.000000     +0.000148     +0.000148     0.1522
+sologne                   +0.000263     +0.000121     +0.000121     0.1445
+frappa                    +0.000000     +0.000100     +0.000100     0.1109
+écria                     +0.000000     +0.000051     +0.000051     0.1184
+jean                      +0.000000     +0.000051     +0.000051     0.0875
+clochettes                +0.000000     +0.000048     +0.000048     0.1160
+arguments                 +0.000001     +0.000047     +0.000047     0.0614
+paralysée                 +0.000402     +0.000046     +0.000046     0.0895
+tourelles                 +0.000000     +0.000038     +0.000038     0.1152
+prévaloir                 +0.000001     +0.000037     +0.000037     0.1265
+rêvait                    +0.000241     +0.000037     +0.000037     0.0557
+bastille                  +0.000000     +0.000035     +0.000035     0.1047
+abusé                     +0.000284     +0.000035     +0.000035     0.0860
+hallucination             +0.000000     +0.000034     +0.000034     0.0937
+épée                      +0.000000     +0.000032     +0.000032     0.1389
+avril                     +0.000000     +0.000031     +0.000031     0.0578
+assiéger                  +0.000000     +0.000027     +0.000027     0.1391
+franchir                  +0.000000     +0.000027     +0.000027     0.0500
+logit final pour 'femme': -0.0124
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.0596
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jeanne                         +0.000156       0.4349
+   2      sologne                        +0.000024       0.1445
+   3      prévaloir                      +0.000023       0.1265
+   4      coffret                        +0.000023       0.0921
+   5      jean                           +0.000022       0.0875
+   6      moqué                          +0.000020       0.0970
+   7      écria                          +0.000018       0.1184
+   8      paralysée                      +0.000018       0.0895
+   9      bastille                       +0.000018       0.1047
+   10     refusait                       +0.000014       0.0518
+   11     général                        +0.000012       0.0411
+   12     monastère                      +0.000010       0.1041
+   13     rêvait                         +0.000010       0.0557
+   14     arguments                      +0.000010       0.0614
+   15     franchir                       +0.000009       0.0500
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rive                           -0.000060       0.2419
+   2      gilles                         -0.000058       0.2255
+   3      boeufs                         -0.000041       0.0864
+   4      orléans                        -0.000040       0.1809
+   5      délais                         -0.000040       0.0998
+   6      pourpoint                      -0.000035       0.0977
+   7      bâtard                         -0.000032       0.0935
+   8      voulions                       -0.000030       0.0965
+   9      selle                          -0.000027       0.0764
+   10     assiéger                       -0.000027       0.1391
+   11     fleuve                         -0.000026       0.1136
+   12     pourras                        -0.000026       0.0588
+   13     consignes                      -0.000022       0.0788
+   14     serions                        -0.000021       0.0650
+   15     rejoignit                      -0.000021       0.0606
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jeanne                         +0.000156       0.4349
+   2      sologne                        +0.000024       0.1445
+   3      prévaloir                      +0.000023       0.1265
+   4      coffret                        +0.000023       0.0921
+   5      jean                           +0.000022       0.0875
+   6      moqué                          +0.000020       0.0970
+   7      écria                          +0.000018       0.1184
+   8      paralysée                      +0.000018       0.0895
+   9      bastille                       +0.000018       0.1047
+   10     refusait                       +0.000014       0.0518
+   11     général                        +0.000012       0.0411
+   12     monastère                      +0.000010       0.1041
+   13     rêvait                         +0.000010       0.0557
+   14     arguments                      +0.000010       0.0614
+   15     franchir                       +0.000009       0.0500
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rive                           -0.000060       0.2419
+   2      gilles                         -0.000058       0.2255
+   3      boeufs                         -0.000041       0.0864
+   4      orléans                        -0.000040       0.1809
+   5      délais                         -0.000040       0.0998
+   6      pourpoint                      -0.000035       0.0977
+   7      bâtard                         -0.000032       0.0935
+   8      voulions                       -0.000030       0.0965
+   9      selle                          -0.000027       0.0764
+   10     assiéger                       -0.000027       0.1391
+   11     fleuve                         -0.000026       0.1136
+   12     pourras                        -0.000026       0.0588
+   13     consignes                      -0.000022       0.0788
+   14     serions                        -0.000021       0.0650
+   15     rejoignit                      -0.000021       0.0606
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jeanne                         +0.002716       0.4349
+   2      rive                           +0.001826       0.2419
+   3      hire                           +0.001345       0.1954
+   4      frappa                         +0.000822       0.1109
+   5      hallucination                  +0.000669       0.0937
+   6      bastille                       +0.000565       0.1047
+   7      fâche                          +0.000560       0.0905
+   8      tourelles                      +0.000549       0.1152
+   9      innocence                      +0.000542       0.0578
+   10     étriers                        +0.000409       0.1221
+   11     mamelles                       +0.000403       0.1169
+   12     tarde                          +0.000322       0.0838
+   13     meilleurs                      +0.000309       0.0484
+   14     clochettes                     +0.000293       0.1160
+   15     jean                           +0.000284       0.0875
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gilles                         -0.001631       0.2255
+   2      messire                        -0.001074       0.1296
+   3      rejoignit                      -0.000726       0.0606
+   4      calmez                         -0.000627       0.0895
+   5      ajouta                         -0.000607       0.0970
+   6      refusait                       -0.000606       0.0518
+   7      voulions                       -0.000542       0.0965
+   8      lame                           -0.000485       0.0569
+   9      cadeau                         -0.000479       0.0465
+   10     coffret                        -0.000465       0.0921
+   11     partez                         -0.000419       0.0689
+   12     orléans                        -0.000393       0.1809
+   13     installés                      -0.000388       0.0574
+   14     sologne                        -0.000363       0.1445
+   15     recula                         -0.000333       0.0630
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jeanne                         +0.140945       0.4349
+   2      rive                           +0.084115       0.2419
+   3      hire                           +0.074402       0.1954
+   4      frappa                         +0.046963       0.1109
+   5      hallucination                  +0.040635       0.0937
+   6      bastille                       +0.031785       0.1047
+   7      fâche                          +0.030916       0.0905
+   8      tourelles                      +0.026900       0.1152
+   9      innocence                      +0.025295       0.0578
+   10     étriers                        +0.020705       0.1221
+   11     clochettes                     +0.019434       0.1160
+   12     jean                           +0.015298       0.0875
+   13     assiéger                       +0.015053       0.1391
+   14     meilleurs                      +0.014927       0.0484
+   15     mamelles                       +0.014438       0.1169
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gilles                         -0.089968       0.2255
+   2      messire                        -0.059907       0.1296
+   3      rejoignit                      -0.032856       0.0606
+   4      coffret                        -0.032078       0.0921
+   5      refusait                       -0.030186       0.0518
+   6      calmez                         -0.028440       0.0895
+   7      ajouta                         -0.027875       0.0970
+   8      lame                           -0.023554       0.0569
+   9      cadeau                         -0.023016       0.0465
+   10     partez                         -0.020221       0.0689
+   11     monastère                      -0.017519       0.1041
+   12     voulions                       -0.016423       0.0965
+   13     installés                      -0.016156       0.0574
+   14     recula                         -0.013578       0.0630
+   15     paralysée                      -0.012676       0.0895
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+jeanne                    +0.002716     +0.000156     +0.000156     0.4349
+sologne                   +0.000000     +0.000024     +0.000024     0.1445
+prévaloir                 +0.000000     +0.000023     +0.000023     0.1265
+coffret                   +0.000000     +0.000023     +0.000023     0.0921
+jean                      +0.000284     +0.000022     +0.000022     0.0875
+moqué                     +0.000064     +0.000020     +0.000020     0.0970
+écria                     +0.000099     +0.000018     +0.000018     0.1184
+paralysée                 +0.000000     +0.000018     +0.000018     0.0895
+bastille                  +0.000565     +0.000018     +0.000018     0.1047
+refusait                  +0.000000     +0.000014     +0.000014     0.0518
+général                   +0.000121     +0.000012     +0.000012     0.0411
+monastère                 +0.000000     +0.000010     +0.000010     0.1041
+rêvait                    +0.000000     +0.000010     +0.000010     0.0557
+arguments                 +0.000164     +0.000010     +0.000010     0.0614
+franchir                  +0.000000     +0.000009     +0.000009     0.0500
+cadeau                    +0.000000     +0.000007     +0.000007     0.0465
+dressée                   +0.000000     +0.000006     +0.000006     0.0653
+avions                    +0.000000     +0.000006     +0.000006     0.0418
+installés                 +0.000000     +0.000006     +0.000006     0.0574
+cheval                    +0.000050     +0.000006     +0.000006     0.0432
+logit final pour 'homme': -0.0596

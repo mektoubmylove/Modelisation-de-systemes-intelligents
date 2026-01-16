@@ -1,0 +1,387 @@
+texte analysé: dorlotait sur ses genoux , elle était entrain de lui dire : my little sweet , et lui : my little ketty . mais enfin il avait bien le droit de se croire dans un vestibule . sur la table , il y avait du...
+prédiction: FEMME (confiance: 79.6%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.7698
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      poivre                         +0.000218       0.6797
+   2      my                             +0.000156       0.2775
+   3      vola                           +0.000112       0.0930
+   4      toussa                         +0.000076       0.0932
+   5      little                         +0.000074       0.3717
+   6      vestibule                      +0.000069       0.1310
+   7      sweet                          +0.000037       0.1298
+   8      chapitre                       +0.000036       0.0541
+   9      passerait                      +0.000034       0.0572
+   10     tâcha                          +0.000023       0.1271
+   11     roula                          +0.000023       0.0625
+   12     you                            +0.000023       0.0843
+   13     eût                            +0.000020       0.0432
+   14     écarter                        +0.000020       0.0547
+   15     soie                           +0.000017       0.0446
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pouces                         -0.000063       0.1569
+   2      divan                          -0.000051       0.0715
+   3      want                           -0.000048       0.1398
+   4      montra                         -0.000042       0.0515
+   5      supplia                        -0.000041       0.0740
+   6      recevait                       -0.000039       0.0522
+   7      meurent                        -0.000038       0.0717
+   8      filer                          -0.000037       0.0527
+   9      souffrait                      -0.000027       0.0520
+   10     pendule                        -0.000025       0.0697
+   11     peignoir                       -0.000023       0.0678
+   12     inquiet                        -0.000022       0.0416
+   13     finirait                       -0.000021       0.0639
+   14     vante                          -0.000019       0.0975
+   15     toucha                         -0.000017       0.0638
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      poivre                         +0.000218       0.6797
+   2      my                             +0.000156       0.2775
+   3      vola                           +0.000112       0.0930
+   4      toussa                         +0.000076       0.0932
+   5      little                         +0.000074       0.3717
+   6      vestibule                      +0.000069       0.1310
+   7      sweet                          +0.000037       0.1298
+   8      chapitre                       +0.000036       0.0541
+   9      passerait                      +0.000034       0.0572
+   10     tâcha                          +0.000023       0.1271
+   11     roula                          +0.000023       0.0625
+   12     you                            +0.000023       0.0843
+   13     eût                            +0.000020       0.0432
+   14     écarter                        +0.000020       0.0547
+   15     soie                           +0.000017       0.0446
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pouces                         -0.000063       0.1569
+   2      divan                          -0.000051       0.0715
+   3      want                           -0.000048       0.1398
+   4      montra                         -0.000042       0.0515
+   5      supplia                        -0.000041       0.0740
+   6      recevait                       -0.000039       0.0522
+   7      meurent                        -0.000038       0.0717
+   8      filer                          -0.000037       0.0527
+   9      souffrait                      -0.000027       0.0520
+   10     pendule                        -0.000025       0.0697
+   11     peignoir                       -0.000023       0.0678
+   12     inquiet                        -0.000022       0.0416
+   13     finirait                       -0.000021       0.0639
+   14     vante                          -0.000019       0.0975
+   15     toucha                         -0.000017       0.0638
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      poivre                         +0.002980       0.6797
+   2      little                         +0.001446       0.3717
+   3      entrain                        +0.001275       0.0667
+   4      want                           +0.001164       0.1398
+   5      partit                         +0.000944       0.1073
+   6      pensa                          +0.000848       0.1047
+   7      soulever                       +0.000641       0.0534
+   8      you                            +0.000540       0.0843
+   9      finirait                       +0.000524       0.0639
+   10     soie                           +0.000508       0.0446
+   11     ajouta                         +0.000481       0.0466
+   12     valère                         +0.000366       0.1743
+   13     vante                          +0.000309       0.0975
+   14     appuya                         +0.000279       0.0590
+   15     cheminée                       +0.000274       0.0476
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      eût                            -0.001057       0.0432
+   2      chapitre                       -0.000881       0.0541
+   3      vola                           -0.000875       0.0930
+   4      tâcha                          -0.000803       0.1271
+   5      montra                         -0.000763       0.0515
+   6      pendule                        -0.000672       0.0697
+   7      cria                           -0.000614       0.0498
+   8      roula                          -0.000545       0.0625
+   9      souffrait                      -0.000443       0.0520
+   10     voulut                         -0.000436       0.0483
+   11     supplia                        -0.000424       0.0740
+   12     toussa                         -0.000417       0.0932
+   13     divan                          -0.000405       0.0715
+   14     jargon                         -0.000397       0.1003
+   15     mit                            -0.000327       0.0423
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      poivre                         +0.149702       0.6797
+   2      little                         +0.080198       0.3717
+   3      entrain                        +0.066069       0.0667
+   4      want                           +0.063876       0.1398
+   5      pensa                          +0.058350       0.1047
+   6      partit                         +0.048364       0.1073
+   7      you                            +0.034104       0.0843
+   8      finirait                       +0.031732       0.0639
+   9      soulever                       +0.030428       0.0534
+   10     soie                           +0.026831       0.0446
+   11     valère                         +0.024978       0.1743
+   12     ajouta                         +0.023353       0.0466
+   13     appuya                         +0.017246       0.0590
+   14     paupières                      +0.013987       0.0417
+   15     cheminée                       +0.013799       0.0476
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      eût                            -0.058041       0.0432
+   2      vola                           -0.046041       0.0930
+   3      montra                         -0.044079       0.0515
+   4      chapitre                       -0.043023       0.0541
+   5      pendule                        -0.042124       0.0697
+   6      my                             -0.039623       0.2775
+   7      tâcha                          -0.039236       0.1271
+   8      cria                           -0.030817       0.0498
+   9      roula                          -0.030071       0.0625
+   10     souffrait                      -0.027547       0.0520
+   11     divan                          -0.025925       0.0715
+   12     jargon                         -0.024993       0.1003
+   13     voulut                         -0.024749       0.0483
+   14     supplia                        -0.022027       0.0740
+   15     mit                            -0.021733       0.0423
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+poivre                    +0.002980     +0.000218     +0.000218     0.6797
+my                        +0.000000     +0.000156     +0.000156     0.2775
+vola                      +0.000000     +0.000112     +0.000112     0.0930
+toussa                    +0.000000     +0.000076     +0.000076     0.0932
+little                    +0.001446     +0.000074     +0.000074     0.3717
+vestibule                 +0.000060     +0.000069     +0.000069     0.1310
+sweet                     +0.000000     +0.000037     +0.000037     0.1298
+chapitre                  +0.000000     +0.000036     +0.000036     0.0541
+passerait                 +0.000228     +0.000034     +0.000034     0.0572
+tâcha                     +0.000000     +0.000023     +0.000023     0.1271
+roula                     +0.000000     +0.000023     +0.000023     0.0625
+you                       +0.000540     +0.000023     +0.000023     0.0843
+eût                       +0.000000     +0.000020     +0.000020     0.0432
+écarter                   +0.000000     +0.000020     +0.000020     0.0547
+soie                      +0.000508     +0.000017     +0.000017     0.0446
+valère                    +0.000366     +0.000014     +0.000014     0.1743
+bougea                    +0.000000     +0.000012     +0.000012     0.0674
+cria                      +0.000000     +0.000009     +0.000009     0.0498
+partit                    +0.000944     +0.000003     +0.000003     0.1073
+marchait                  +0.000000     +0.000002     +0.000002     0.0421
+logit final pour 'femme': 0.7698
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.5927
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      poivre                         +0.000159       0.6797
+   2      my                             +0.000065       0.2775
+   3      vola                           +0.000033       0.0930
+   4      eût                            +0.000032       0.0432
+   5      entrain                        +0.000026       0.0667
+   6      étrangle                       +0.000019       0.0947
+   7      chapitre                       +0.000018       0.0541
+   8      soie                           +0.000018       0.0446
+   9      passerait                      +0.000018       0.0572
+   10     toussa                         +0.000015       0.0932
+   11     écarter                        +0.000012       0.0547
+   12     roula                          +0.000012       0.0625
+   13     peignoir                       +0.000010       0.0678
+   14     histoires                      +0.000007       0.0385
+   15     entraient                      +0.000007       0.0694
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      little                         -0.000088       0.3717
+   2      pouces                         -0.000070       0.1569
+   3      pensa                          -0.000034       0.1047
+   4      recevait                       -0.000024       0.0522
+   5      souffrait                      -0.000022       0.0520
+   6      anglaise                       -0.000021       0.0583
+   7      finirait                       -0.000019       0.0639
+   8      valère                         -0.000019       0.1743
+   9      nappe                          -0.000018       0.0560
+   10     toucha                         -0.000018       0.0638
+   11     nuque                          -0.000017       0.0864
+   12     montra                         -0.000015       0.0515
+   13     filer                          -0.000015       0.0527
+   14     vante                          -0.000014       0.0975
+   15     want                           -0.000012       0.1398
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      poivre                         +0.000159       0.6797
+   2      my                             +0.000065       0.2775
+   3      vola                           +0.000033       0.0930
+   4      eût                            +0.000032       0.0432
+   5      entrain                        +0.000026       0.0667
+   6      étrangle                       +0.000019       0.0947
+   7      chapitre                       +0.000018       0.0541
+   8      soie                           +0.000018       0.0446
+   9      passerait                      +0.000018       0.0572
+   10     toussa                         +0.000015       0.0932
+   11     écarter                        +0.000012       0.0547
+   12     roula                          +0.000012       0.0625
+   13     peignoir                       +0.000010       0.0678
+   14     histoires                      +0.000007       0.0385
+   15     entraient                      +0.000007       0.0694
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      little                         -0.000088       0.3717
+   2      pouces                         -0.000070       0.1569
+   3      pensa                          -0.000034       0.1047
+   4      recevait                       -0.000024       0.0522
+   5      souffrait                      -0.000022       0.0520
+   6      anglaise                       -0.000021       0.0583
+   7      finirait                       -0.000019       0.0639
+   8      valère                         -0.000019       0.1743
+   9      nappe                          -0.000018       0.0560
+   10     toucha                         -0.000018       0.0638
+   11     nuque                          -0.000017       0.0864
+   12     montra                         -0.000015       0.0515
+   13     filer                          -0.000015       0.0527
+   14     vante                          -0.000014       0.0975
+   15     want                           -0.000012       0.1398
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      my                             +0.000848       0.2775
+   2      eût                            +0.000775       0.0432
+   3      vola                           +0.000690       0.0930
+   4      chapitre                       +0.000644       0.0541
+   5      montra                         +0.000509       0.0515
+   6      toussa                         +0.000491       0.0932
+   7      tâcha                          +0.000481       0.1271
+   8      valère                         +0.000441       0.1743
+   9      divan                          +0.000427       0.0715
+   10     cria                           +0.000415       0.0498
+   11     voulut                         +0.000397       0.0483
+   12     supplia                        +0.000368       0.0740
+   13     roula                          +0.000341       0.0625
+   14     souffrait                      +0.000336       0.0520
+   15     pendule                        +0.000305       0.0697
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      poivre                         -0.002602       0.6797
+   2      entrain                        -0.000934       0.0667
+   3      want                           -0.000888       0.1398
+   4      pensa                          -0.000648       0.1047
+   5      partit                         -0.000591       0.1073
+   6      little                         -0.000589       0.3717
+   7      you                            -0.000446       0.0843
+   8      soulever                       -0.000399       0.0534
+   9      soie                           -0.000398       0.0446
+   10     finirait                       -0.000396       0.0639
+   11     ajouta                         -0.000368       0.0466
+   12     cheminée                       -0.000292       0.0476
+   13     appuya                         -0.000271       0.0590
+   14     meurent                        -0.000213       0.0717
+   15     vante                          -0.000196       0.0975
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      my                             +0.058490       0.2775
+   2      eût                            +0.038802       0.0432
+   3      vola                           +0.036833       0.0930
+   4      chapitre                       +0.028828       0.0541
+   5      tâcha                          +0.028143       0.1271
+   6      montra                         +0.027905       0.0515
+   7      divan                          +0.026390       0.0715
+   8      voulut                         +0.022679       0.0483
+   9      toussa                         +0.022240       0.0932
+   10     cria                           +0.021686       0.0498
+   11     supplia                        +0.019886       0.0740
+   12     roula                          +0.018128       0.0625
+   13     souffrait                      +0.017960       0.0520
+   14     pendule                        +0.017922       0.0697
+   15     mit                            +0.017413       0.0423
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      poivre                         -0.142755       0.6797
+   2      want                           -0.057556       0.1398
+   3      entrain                        -0.052119       0.0667
+   4      pensa                          -0.043956       0.1047
+   5      little                         -0.030382       0.3717
+   6      partit                         -0.029884       0.1073
+   7      you                            -0.027415       0.0843
+   8      soie                           -0.021517       0.0446
+   9      finirait                       -0.021021       0.0639
+   10     ajouta                         -0.017735       0.0466
+   11     soulever                       -0.016924       0.0534
+   12     cheminée                       -0.016406       0.0476
+   13     appuya                         -0.013275       0.0590
+   14     paupières                      -0.010771       0.0417
+   15     meurent                        -0.007808       0.0717
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+poivre                    +0.000000     +0.000159     +0.000159     0.6797
+my                        +0.000848     +0.000065     +0.000065     0.2775
+vola                      +0.000690     +0.000033     +0.000033     0.0930
+eût                       +0.000775     +0.000032     +0.000032     0.0432
+entrain                   +0.000000     +0.000026     +0.000026     0.0667
+étrangle                  +0.000000     +0.000019     +0.000019     0.0947
+chapitre                  +0.000644     +0.000018     +0.000018     0.0541
+soie                      +0.000000     +0.000018     +0.000018     0.0446
+passerait                 +0.000000     +0.000018     +0.000018     0.0572
+toussa                    +0.000491     +0.000015     +0.000015     0.0932
+écarter                   +0.000053     +0.000012     +0.000012     0.0547
+roula                     +0.000341     +0.000012     +0.000012     0.0625
+peignoir                  +0.000000     +0.000010     +0.000010     0.0678
+histoires                 +0.000112     +0.000007     +0.000007     0.0385
+entraient                 +0.000020     +0.000007     +0.000007     0.0694
+vestibule                 +0.000154     +0.000005     +0.000005     0.1310
+hésita                    +0.000027     +0.000005     +0.000005     0.0538
+sweet                     +0.000207     +0.000004     +0.000004     0.1298
+jargon                    +0.000287     +0.000002     +0.000002     0.1003
+furieux                   +0.000045     +0.000002     +0.000002     0.0453
+logit final pour 'homme': -0.5927

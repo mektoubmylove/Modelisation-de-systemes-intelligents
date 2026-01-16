@@ -1,0 +1,386 @@
+texte analysé: visage de marie à la lumière de la lanterne . elle avait l air soulagée depuis qu elle pouvait se connecter aux réseaux sociaux . elle avait tellement insisté que mina avait été obligée de l emmener a...
+prédiction: FEMME (confiance: 82.7%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.9220
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sillonnaient                   +0.000057       0.0867
+   2      cessa                          +0.000052       0.0463
+   3      rôder                          +0.000052       0.0649
+   4      balayait                       +0.000050       0.0665
+   5      corbeaux                       +0.000044       0.0718
+   6      inscrivait                     +0.000039       0.0801
+   7      écrivait                       +0.000035       0.0451
+   8      slogans                        +0.000032       0.0874
+   9      mêlée                          +0.000031       0.0434
+   10     micro                          +0.000030       0.0582
+   11     cinéma                         +0.000028       0.0422
+   12     préparaient                    +0.000026       0.0642
+   13     prétendait                     +0.000024       0.0445
+   14     dissimulait                    +0.000023       0.0539
+   15     fit                            +0.000022       0.0312
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mina                           -0.000420       0.7183
+   2      marie                          -0.000132       0.1825
+   3      clubs                          -0.000112       0.0852
+   4      charrettes                     -0.000087       0.0730
+   5      rivalisaient                   -0.000078       0.1023
+   6      distribuaient                  -0.000069       0.1029
+   7      sigle                          -0.000068       0.0976
+   8      secouaient                     -0.000066       0.0750
+   9      peuplaient                     -0.000065       0.0870
+   10     connecter                      -0.000065       0.1120
+   11     criaient                       -0.000061       0.0595
+   12     bus                            -0.000052       0.0559
+   13     sociaux                        -0.000051       0.0675
+   14     exaspérée                      -0.000049       0.0658
+   15     militants                      -0.000049       0.0932
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sillonnaient                   +0.000057       0.0867
+   2      cessa                          +0.000052       0.0463
+   3      rôder                          +0.000052       0.0649
+   4      balayait                       +0.000050       0.0665
+   5      corbeaux                       +0.000044       0.0718
+   6      inscrivait                     +0.000039       0.0801
+   7      écrivait                       +0.000035       0.0451
+   8      slogans                        +0.000032       0.0874
+   9      mêlée                          +0.000031       0.0434
+   10     micro                          +0.000030       0.0582
+   11     cinéma                         +0.000028       0.0422
+   12     préparaient                    +0.000026       0.0642
+   13     prétendait                     +0.000024       0.0445
+   14     dissimulait                    +0.000023       0.0539
+   15     fit                            +0.000022       0.0312
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mina                           -0.000420       0.7183
+   2      marie                          -0.000132       0.1825
+   3      clubs                          -0.000112       0.0852
+   4      charrettes                     -0.000087       0.0730
+   5      rivalisaient                   -0.000078       0.1023
+   6      distribuaient                  -0.000069       0.1029
+   7      sigle                          -0.000068       0.0976
+   8      secouaient                     -0.000066       0.0750
+   9      peuplaient                     -0.000065       0.0870
+   10     connecter                      -0.000065       0.1120
+   11     criaient                       -0.000061       0.0595
+   12     bus                            -0.000052       0.0559
+   13     sociaux                        -0.000051       0.0675
+   14     exaspérée                      -0.000049       0.0658
+   15     militants                      -0.000049       0.0932
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mina                           +0.003153       0.7183
+   2      marie                          +0.002952       0.1825
+   3      soulagée                       +0.002100       0.0494
+   4      exaspérée                      +0.002066       0.0658
+   5      transgression                  +0.001930       0.1035
+   6      moqua                          +0.001742       0.0808
+   7      peuplaient                     +0.001031       0.0870
+   8      enceintes                      +0.000919       0.0712
+   9      contour                        +0.000852       0.0705
+   10     ordinateurs                    +0.000842       0.0768
+   11     obligée                        +0.000770       0.0393
+   12     emmener                        +0.000757       0.0350
+   13     accueil                        +0.000722       0.0401
+   14     slogans                        +0.000703       0.0874
+   15     chaotique                      +0.000696       0.0782
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lanterne                       -0.001057       0.0566
+   2      tracts                         -0.000992       0.0948
+   3      distribuaient                  -0.000970       0.1029
+   4      poing                          -0.000893       0.0324
+   5      corbeaux                       -0.000852       0.0718
+   6      étable                         -0.000848       0.0681
+   7      sigle                          -0.000834       0.0976
+   8      carrefour                      -0.000802       0.0528
+   9      rôder                          -0.000800       0.0649
+   10     micro                          -0.000764       0.0582
+   11     préparaient                    -0.000764       0.0642
+   12     colporteurs                    -0.000734       0.1060
+   13     vacarme                        -0.000691       0.0477
+   14     vaches                         -0.000672       0.0519
+   15     communiquer                    -0.000643       0.0454
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marie                          +0.117252       0.1825
+   2      soulagée                       +0.079394       0.0494
+   3      transgression                  +0.078107       0.1035
+   4      mina                           +0.069565       0.7183
+   5      exaspérée                      +0.068031       0.0658
+   6      moqua                          +0.061743       0.0808
+   7      slogans                        +0.029201       0.0874
+   8      peuplaient                     +0.028677       0.0870
+   9      emmener                        +0.026854       0.0350
+   10     enceintes                      +0.026845       0.0712
+   11     chaotique                      +0.025546       0.0782
+   12     bus                            +0.024705       0.0559
+   13     obligée                        +0.023434       0.0393
+   14     séances                        +0.019524       0.0544
+   15     accueil                        +0.019512       0.0401
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      distribuaient                  -0.054863       0.1029
+   2      lanterne                       -0.043666       0.0566
+   3      sigle                          -0.038319       0.0976
+   4      étable                         -0.038023       0.0681
+   5      tracts                         -0.037881       0.0948
+   6      poing                          -0.036971       0.0324
+   7      colporteurs                    -0.034086       0.1060
+   8      affiches                       -0.031775       0.0590
+   9      carrefour                      -0.031737       0.0528
+   10     camions                        -0.029401       0.0607
+   11     sociaux                        -0.028235       0.0675
+   12     communiquer                    -0.028224       0.0454
+   13     micro                          -0.026644       0.0582
+   14     cessa                          -0.024248       0.0463
+   15     vacarme                        -0.023774       0.0477
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+sillonnaient              +0.000298     +0.000057     +0.000057     0.0867
+cessa                     +0.000000     +0.000052     +0.000052     0.0463
+rôder                     +0.000000     +0.000052     +0.000052     0.0649
+balayait                  +0.000000     +0.000050     +0.000050     0.0665
+corbeaux                  +0.000000     +0.000044     +0.000044     0.0718
+inscrivait                +0.000000     +0.000039     +0.000039     0.0801
+écrivait                  +0.000000     +0.000035     +0.000035     0.0451
+slogans                   +0.000703     +0.000032     +0.000032     0.0874
+mêlée                     +0.000000     +0.000031     +0.000031     0.0434
+micro                     +0.000000     +0.000030     +0.000030     0.0582
+cinéma                    +0.000000     +0.000028     +0.000028     0.0422
+préparaient               +0.000000     +0.000026     +0.000026     0.0642
+prétendait                +0.000000     +0.000024     +0.000024     0.0445
+dissimulait               +0.000000     +0.000023     +0.000023     0.0539
+fit                       +0.000000     +0.000022     +0.000022     0.0312
+lanterne                  +0.000000     +0.000022     +0.000022     0.0566
+embouteillage             +0.000000     +0.000020     +0.000020     0.0940
+colporteurs               +0.000000     +0.000019     +0.000019     0.1060
+lampe                     +0.000000     +0.000018     +0.000018     0.0340
+tracts                    +0.000000     +0.000017     +0.000017     0.0948
+logit final pour 'femme': 0.9220
+# analyse pour la classe: HOMME
+# logit: -0.6410
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      embouteillage                  +0.000032       0.0940
+   2      cessa                          +0.000030       0.0463
+   3      sillonnaient                   +0.000025       0.0867
+   4      cinéma                         +0.000023       0.0422
+   5      micro                          +0.000022       0.0582
+   6      inscrivait                     +0.000021       0.0801
+   7      corbeaux                       +0.000020       0.0718
+   8      balayait                       +0.000014       0.0665
+   9      moqua                          +0.000013       0.0808
+   10     héberger                       +0.000013       0.0719
+   11     soulagée                       +0.000012       0.0494
+   12     carrefour                      +0.000012       0.0528
+   13     mêlée                          +0.000012       0.0434
+   14     tacitement                     +0.000011       0.0897
+   15     insisté                        +0.000011       0.0438
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mina                           -0.000136       0.7183
+   2      clubs                          -0.000070       0.0852
+   3      distribuaient                  -0.000062       0.1029
+   4      marie                          -0.000048       0.1825
+   5      charrettes                     -0.000046       0.0730
+   6      criaient                       -0.000041       0.0595
+   7      secouaient                     -0.000036       0.0750
+   8      connecter                      -0.000035       0.1120
+   9      étable                         -0.000031       0.0681
+   10     sigle                          -0.000030       0.0976
+   11     rivalisaient                   -0.000029       0.1023
+   12     exaspérée                      -0.000028       0.0658
+   13     sociaux                        -0.000028       0.0675
+   14     accrochée                      -0.000027       0.0452
+   15     ordinateurs                    -0.000025       0.0768
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      embouteillage                  +0.000032       0.0940
+   2      cessa                          +0.000030       0.0463
+   3      sillonnaient                   +0.000025       0.0867
+   4      cinéma                         +0.000023       0.0422
+   5      micro                          +0.000022       0.0582
+   6      inscrivait                     +0.000021       0.0801
+   7      corbeaux                       +0.000020       0.0718
+   8      balayait                       +0.000014       0.0665
+   9      moqua                          +0.000013       0.0808
+   10     héberger                       +0.000013       0.0719
+   11     soulagée                       +0.000012       0.0494
+   12     carrefour                      +0.000012       0.0528
+   13     mêlée                          +0.000012       0.0434
+   14     tacitement                     +0.000011       0.0897
+   15     insisté                        +0.000011       0.0438
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mina                           -0.000136       0.7183
+   2      clubs                          -0.000070       0.0852
+   3      distribuaient                  -0.000062       0.1029
+   4      marie                          -0.000048       0.1825
+   5      charrettes                     -0.000046       0.0730
+   6      criaient                       -0.000041       0.0595
+   7      secouaient                     -0.000036       0.0750
+   8      connecter                      -0.000035       0.1120
+   9      étable                         -0.000031       0.0681
+   10     sigle                          -0.000030       0.0976
+   11     rivalisaient                   -0.000029       0.1023
+   12     exaspérée                      -0.000028       0.0658
+   13     sociaux                        -0.000028       0.0675
+   14     accrochée                      -0.000027       0.0452
+   15     ordinateurs                    -0.000025       0.0768
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lanterne                       +0.000775       0.0566
+   2      tracts                         +0.000766       0.0948
+   3      rôder                          +0.000687       0.0649
+   4      distribuaient                  +0.000654       0.1029
+   5      étable                         +0.000623       0.0681
+   6      carrefour                      +0.000562       0.0528
+   7      vaches                         +0.000555       0.0519
+   8      micro                          +0.000549       0.0582
+   9      camions                        +0.000540       0.0607
+   10     poing                          +0.000508       0.0324
+   11     corbeaux                       +0.000507       0.0718
+   12     communiquer                    +0.000447       0.0454
+   13     sigle                          +0.000423       0.0976
+   14     cessa                          +0.000423       0.0463
+   15     colporteurs                    +0.000415       0.1060
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marie                          -0.002444       0.1825
+   2      exaspérée                      -0.001384       0.0658
+   3      soulagée                       -0.001366       0.0494
+   4      mina                           -0.001340       0.7183
+   5      moqua                          -0.001269       0.0808
+   6      transgression                  -0.001097       0.1035
+   7      peuplaient                     -0.000691       0.0870
+   8      enceintes                      -0.000638       0.0712
+   9      chaotique                      -0.000582       0.0782
+   10     clubs                          -0.000577       0.0852
+   11     obligée                        -0.000542       0.0393
+   12     ordinateurs                    -0.000530       0.0768
+   13     emmener                        -0.000488       0.0350
+   14     contour                        -0.000472       0.0705
+   15     connecter                      -0.000442       0.1120
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      distribuaient                  +0.034641       0.1029
+   2      lanterne                       +0.032791       0.0566
+   3      étable                         +0.030796       0.0681
+   4      tracts                         +0.028244       0.0948
+   5      camions                        +0.025807       0.0607
+   6      affiches                       +0.024275       0.0590
+   7      rôder                          +0.023802       0.0649
+   8      poing                          +0.022423       0.0324
+   9      sociaux                        +0.021055       0.0675
+   10     vaches                         +0.020514       0.0519
+   11     colporteurs                    +0.020073       0.1060
+   12     communiquer                    +0.019797       0.0454
+   13     carrefour                      +0.018782       0.0528
+   14     micro                          +0.018445       0.0582
+   15     cessa                          +0.017686       0.0463
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marie                          -0.096870       0.1825
+   2      soulagée                       -0.051618       0.0494
+   3      exaspérée                      -0.048391       0.0658
+   4      moqua                          -0.046557       0.0808
+   5      transgression                  -0.044367       0.1035
+   6      enceintes                      -0.025164       0.0712
+   7      chaotique                      -0.022456       0.0782
+   8      bus                            -0.019915       0.0559
+   9      peuplaient                     -0.017975       0.0870
+   10     emmener                        -0.017907       0.0350
+   11     obligée                        -0.017103       0.0393
+   12     clubs                          -0.016810       0.0852
+   13     changeaient                    -0.015588       0.0699
+   14     slogans                        -0.015388       0.0874
+   15     connecter                      -0.014684       0.1120
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+embouteillage             +0.000285     +0.000032     +0.000032     0.0940
+cessa                     +0.000423     +0.000030     +0.000030     0.0463
+sillonnaient              +0.000000     +0.000025     +0.000025     0.0867
+cinéma                    +0.000116     +0.000023     +0.000023     0.0422
+micro                     +0.000549     +0.000022     +0.000022     0.0582
+inscrivait                +0.000114     +0.000021     +0.000021     0.0801
+corbeaux                  +0.000507     +0.000020     +0.000020     0.0718
+balayait                  +0.000376     +0.000014     +0.000014     0.0665
+moqua                     +0.000000     +0.000013     +0.000013     0.0808
+héberger                  +0.000000     +0.000013     +0.000013     0.0719
+soulagée                  +0.000000     +0.000012     +0.000012     0.0494
+carrefour                 +0.000562     +0.000012     +0.000012     0.0528
+mêlée                     +0.000179     +0.000012     +0.000012     0.0434
+tacitement                +0.000000     +0.000011     +0.000011     0.0897
+insisté                   +0.000000     +0.000011     +0.000011     0.0438
+migraine                  +0.000231     +0.000011     +0.000011     0.0631
+écrivait                  +0.000142     +0.000010     +0.000010     0.0451
+amie                      +0.000000     +0.000010     +0.000010     0.0309
+réseaux                   +0.000198     +0.000009     +0.000009     0.0718
+four                      +0.000000     +0.000009     +0.000009     0.0486
+logit final pour 'homme': -0.6410

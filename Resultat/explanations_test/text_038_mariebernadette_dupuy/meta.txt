@@ -1,0 +1,5 @@
+filename: (DUPUY)(Marie-Bernadette)(amélia, un cœur en exil)(2)(2017)(1952)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 38
+first_name: mariebernadette
+last_name: dupuy
+true_label: femme

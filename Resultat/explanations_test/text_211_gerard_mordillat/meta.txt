@@ -1,0 +1,5 @@
+filename: (MORDILLAT)(Gérard)(ce que savait jennie)(1)(2012)(1949)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 211
+first_name: gerard
+last_name: mordillat
+true_label: homme

@@ -1,0 +1,387 @@
+texte analysé: je l écoutais me dire que tout allait bien , qu il avait bon appétit mais qu il ne marchait toujours pas . il n est pas sorti depuis six jours et je vais le voir tout à l heure . être avec lui signifi...
+prédiction: HOMME (confiance: 52.5%)
+vérité terrain: FEMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  vraie classe
+# logit: -0.0203
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      enviais                        +0.000129       0.1619
+   2      cortège                        +0.000117       0.1752
+   3      annuelle                       +0.000111       0.1525
+   4      comparant                      +0.000105       0.1651
+   5      cinéma                         +0.000100       0.1552
+   6      échappée                       +0.000098       0.1160
+   7      film                           +0.000090       0.1567
+   8      pleuvait                       +0.000084       0.1011
+   9      traversant                     +0.000081       0.0859
+   10     complexité                     +0.000063       0.1451
+   11     hôtel                          +0.000058       0.0581
+   12     enfermé                        +0.000056       0.0763
+   13     mexique                        +0.000055       0.1451
+   14     barre                          +0.000045       0.1513
+   15     écoutais                       +0.000044       0.1011
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      inéluctablement                -0.000150       0.1914
+   2      normaux                        -0.000137       0.1307
+   3      arranger                       -0.000102       0.0722
+   4      diffuse                        -0.000099       0.1124
+   5      abstraction                    -0.000093       0.1398
+   6      ressent                        -0.000087       0.1086
+   7      télévision                     -0.000087       0.0925
+   8      vastes                         -0.000082       0.0935
+   9      insouciance                    -0.000082       0.1032
+   10     horizon                        -0.000079       0.1229
+   11     rétrécit                       -0.000078       0.1644
+   12     sortant                        -0.000077       0.1198
+   13     compréhension                  -0.000076       0.1055
+   14     studio                         -0.000066       0.1077
+   15     courses                        -0.000063       0.1379
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      enviais                        +0.000129       0.1619
+   2      cortège                        +0.000117       0.1752
+   3      annuelle                       +0.000111       0.1525
+   4      comparant                      +0.000105       0.1651
+   5      cinéma                         +0.000100       0.1552
+   6      échappée                       +0.000098       0.1160
+   7      film                           +0.000090       0.1567
+   8      pleuvait                       +0.000084       0.1011
+   9      traversant                     +0.000081       0.0859
+   10     complexité                     +0.000063       0.1451
+   11     hôtel                          +0.000058       0.0581
+   12     enfermé                        +0.000056       0.0763
+   13     mexique                        +0.000055       0.1451
+   14     barre                          +0.000045       0.1513
+   15     écoutais                       +0.000044       0.1011
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      inéluctablement                -0.000150       0.1914
+   2      normaux                        -0.000137       0.1307
+   3      arranger                       -0.000102       0.0722
+   4      diffuse                        -0.000099       0.1124
+   5      abstraction                    -0.000093       0.1398
+   6      ressent                        -0.000087       0.1086
+   7      télévision                     -0.000087       0.0925
+   8      vastes                         -0.000082       0.0935
+   9      insouciance                    -0.000082       0.1032
+   10     horizon                        -0.000079       0.1229
+   11     rétrécit                       -0.000078       0.1644
+   12     sortant                        -0.000077       0.1198
+   13     compréhension                  -0.000076       0.1055
+   14     studio                         -0.000066       0.1077
+   15     courses                        -0.000063       0.1379
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      enviais                        +0.002096       0.1619
+   2      insouciance                    +0.001654       0.1032
+   3      échappée                       +0.001629       0.1160
+   4      courses                        +0.001563       0.1379
+   5      accompagnerait                 +0.001410       0.1613
+   6      meilleures                     +0.001201       0.0825
+   7      meudon                         +0.001062       0.2044
+   8      ressent                        +0.001045       0.1086
+   9      film                           +0.000949       0.1567
+   10     normaux                        +0.000947       0.1307
+   11     comprend                       +0.000942       0.0652
+   12     lisais                         +0.000929       0.1075
+   13     mexique                        +0.000864       0.1451
+   14     vastes                         +0.000856       0.0935
+   15     compréhension                  +0.000849       0.1055
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cortège                        -0.003351       0.1752
+   2      barre                          -0.003155       0.1513
+   3      rames                          -0.002170       0.1336
+   4      horizon                        -0.002051       0.1229
+   5      rentrions                      -0.001738       0.1631
+   6      immobilité                     -0.001660       0.0944
+   7      équipage                       -0.001620       0.1069
+   8      marin                          -0.001519       0.0880
+   9      traqué                         -0.001430       0.1340
+   10     halte                          -0.001419       0.0971
+   11     île                            -0.001164       0.0781
+   12     écoutais                       -0.001042       0.1011
+   13     enfermé                        -0.000863       0.0763
+   14     transport                      -0.000849       0.0954
+   15     ennemis                        -0.000849       0.0733
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      insouciance                    +0.097911       0.1032
+   2      enviais                        +0.097630       0.1619
+   3      accompagnerait                 +0.091347       0.1613
+   4      échappée                       +0.087418       0.1160
+   5      courses                        +0.069033       0.1379
+   6      meilleures                     +0.065983       0.0825
+   7      mexique                        +0.057470       0.1451
+   8      compréhension                  +0.050627       0.1055
+   9      ressent                        +0.050374       0.1086
+   10     normaux                        +0.050116       0.1307
+   11     film                           +0.042982       0.1567
+   12     comprend                       +0.042946       0.0652
+   13     vastes                         +0.042499       0.0935
+   14     abstraction                    +0.041672       0.1398
+   15     finalement                     +0.040057       0.0620
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cortège                        -0.179224       0.1752
+   2      barre                          -0.175352       0.1513
+   3      rames                          -0.133873       0.1336
+   4      horizon                        -0.114664       0.1229
+   5      immobilité                     -0.085231       0.0944
+   6      traqué                         -0.083278       0.1340
+   7      marin                          -0.079121       0.0880
+   8      rentrions                      -0.079007       0.1631
+   9      équipage                       -0.074621       0.1069
+   10     halte                          -0.060555       0.0971
+   11     écoutais                       -0.060503       0.1011
+   12     île                            -0.058787       0.0781
+   13     transport                      -0.049051       0.0954
+   14     cinéma                         -0.046454       0.1552
+   15     enfermé                        -0.045600       0.0763
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+enviais                   +0.002096     +0.000129     +0.000129     0.1619
+cortège                   +0.000000     +0.000117     +0.000117     0.1752
+annuelle                  +0.000353     +0.000111     +0.000111     0.1525
+comparant                 +0.000000     +0.000105     +0.000105     0.1651
+cinéma                    +0.000000     +0.000100     +0.000100     0.1552
+échappée                  +0.001629     +0.000098     +0.000098     0.1160
+film                      +0.000949     +0.000090     +0.000090     0.1567
+pleuvait                  +0.000340     +0.000084     +0.000084     0.1011
+traversant                +0.000000     +0.000081     +0.000081     0.0859
+complexité                +0.000261     +0.000063     +0.000063     0.1451
+hôtel                     +0.000000     +0.000058     +0.000058     0.0581
+enfermé                   +0.000000     +0.000056     +0.000056     0.0763
+mexique                   +0.000864     +0.000055     +0.000055     0.1451
+barre                     +0.000000     +0.000045     +0.000045     0.1513
+écoutais                  +0.000000     +0.000044     +0.000044     0.1011
+immobilité                +0.000000     +0.000044     +0.000044     0.0944
+marin                     +0.000000     +0.000043     +0.000043     0.0880
+précédente                +0.000000     +0.000039     +0.000039     0.0754
+rentrions                 +0.000000     +0.000039     +0.000039     0.1631
+appétit                   +0.000000     +0.000038     +0.000038     0.0713
+logit final pour 'femme': -0.0203
+# analyse pour la classe: HOMME  prédite
+# logit: 0.0801
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      enviais                        +0.000115       0.1619
+   2      cinéma                         +0.000113       0.1552
+   3      barre                          +0.000090       0.1513
+   4      meudon                         +0.000085       0.2044
+   5      cortège                        +0.000085       0.1752
+   6      annuelle                       +0.000081       0.1525
+   7      entoure                        +0.000071       0.0963
+   8      film                           +0.000066       0.1567
+   9      traversant                     +0.000051       0.0859
+   10     hôtel                          +0.000046       0.0581
+   11     échappée                       +0.000042       0.1160
+   12     aisance                        +0.000039       0.0841
+   13     concrète                       +0.000037       0.1657
+   14     immobilité                     +0.000037       0.0944
+   15     enfermé                        +0.000035       0.0763
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      abstraction                    -0.000095       0.1398
+   2      normaux                        -0.000068       0.1307
+   3      studio                         -0.000064       0.1077
+   4      vastes                         -0.000056       0.0935
+   5      arranger                       -0.000056       0.0722
+   6      finalement                     -0.000052       0.0620
+   7      équipage                       -0.000051       0.1069
+   8      insouciance                    -0.000050       0.1032
+   9      ressent                        -0.000043       0.1086
+   10     relations                      -0.000042       0.0649
+   11     russe                          -0.000041       0.0976
+   12     désormais                      -0.000038       0.0572
+   13     inéluctablement                -0.000038       0.1914
+   14     café                           -0.000038       0.1132
+   15     île                            -0.000036       0.0781
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      enviais                        +0.000115       0.1619
+   2      cinéma                         +0.000113       0.1552
+   3      barre                          +0.000090       0.1513
+   4      meudon                         +0.000085       0.2044
+   5      cortège                        +0.000085       0.1752
+   6      annuelle                       +0.000081       0.1525
+   7      entoure                        +0.000071       0.0963
+   8      film                           +0.000066       0.1567
+   9      traversant                     +0.000051       0.0859
+   10     hôtel                          +0.000046       0.0581
+   11     échappée                       +0.000042       0.1160
+   12     aisance                        +0.000039       0.0841
+   13     concrète                       +0.000037       0.1657
+   14     immobilité                     +0.000037       0.0944
+   15     enfermé                        +0.000035       0.0763
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      abstraction                    -0.000095       0.1398
+   2      normaux                        -0.000068       0.1307
+   3      studio                         -0.000064       0.1077
+   4      vastes                         -0.000056       0.0935
+   5      arranger                       -0.000056       0.0722
+   6      finalement                     -0.000052       0.0620
+   7      équipage                       -0.000051       0.1069
+   8      insouciance                    -0.000050       0.1032
+   9      ressent                        -0.000043       0.1086
+   10     relations                      -0.000042       0.0649
+   11     russe                          -0.000041       0.0976
+   12     désormais                      -0.000038       0.0572
+   13     inéluctablement                -0.000038       0.1914
+   14     café                           -0.000038       0.1132
+   15     île                            -0.000036       0.0781
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cortège                        +0.003349       0.1752
+   2      barre                          +0.002945       0.1513
+   3      horizon                        +0.001935       0.1229
+   4      rames                          +0.001921       0.1336
+   5      immobilité                     +0.001603       0.0944
+   6      rentrions                      +0.001589       0.1631
+   7      marin                          +0.001443       0.0880
+   8      équipage                       +0.001393       0.1069
+   9      halte                          +0.001296       0.0971
+   10     traqué                         +0.001285       0.1340
+   11     concrète                       +0.001262       0.1657
+   12     île                            +0.001008       0.0781
+   13     cité                           +0.000867       0.0720
+   14     écoutais                       +0.000861       0.1011
+   15     transport                      +0.000856       0.0954
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      échappée                       -0.001848       0.1160
+   2      enviais                        -0.001666       0.1619
+   3      insouciance                    -0.001526       0.1032
+   4      courses                        -0.001512       0.1379
+   5      accompagnerait                 -0.001233       0.1613
+   6      meilleures                     -0.001014       0.0825
+   7      film                           -0.000955       0.1567
+   8      comprend                       -0.000863       0.0652
+   9      meudon                         -0.000823       0.2044
+   10     compréhension                  -0.000814       0.1055
+   11     ressent                        -0.000716       0.1086
+   12     vacances                       -0.000705       0.0657
+   13     normaux                        -0.000704       0.1307
+   14     russe                          -0.000641       0.0976
+   15     lisais                         -0.000636       0.1075
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cortège                        +0.184601       0.1752
+   2      barre                          +0.166929       0.1513
+   3      rames                          +0.111845       0.1336
+   4      horizon                        +0.106653       0.1229
+   5      immobilité                     +0.091591       0.0944
+   6      rentrions                      +0.082077       0.1631
+   7      marin                          +0.081398       0.0880
+   8      traqué                         +0.078743       0.1340
+   9      équipage                       +0.065045       0.1069
+   10     concrète                       +0.063287       0.1657
+   11     halte                          +0.060417       0.0971
+   12     cinéma                         +0.055638       0.1552
+   13     écoutais                       +0.052728       0.1011
+   14     île                            +0.048184       0.0781
+   15     transport                      +0.046152       0.0954
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      échappée                       -0.093291       0.1160
+   2      insouciance                    -0.090384       0.1032
+   3      enviais                        -0.081913       0.1619
+   4      accompagnerait                 -0.076391       0.1613
+   5      courses                        -0.072402       0.1379
+   6      meilleures                     -0.057357       0.0825
+   7      compréhension                  -0.052273       0.1055
+   8      abstraction                    -0.046922       0.1398
+   9      mexique                        -0.046458       0.1451
+   10     comprend                       -0.045537       0.0652
+   11     film                           -0.045391       0.1567
+   12     normaux                        -0.045119       0.1307
+   13     meudon                         -0.042807       0.2044
+   14     ressent                        -0.040920       0.1086
+   15     vacances                       -0.039044       0.0657
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+enviais                   +0.000000     +0.000115     +0.000115     0.1619
+cinéma                    +0.000849     +0.000113     +0.000113     0.1552
+barre                     +0.002945     +0.000090     +0.000090     0.1513
+meudon                    +0.000000     +0.000085     +0.000085     0.2044
+cortège                   +0.003349     +0.000085     +0.000085     0.1752
+annuelle                  +0.000041     +0.000081     +0.000081     0.1525
+entoure                   +0.000205     +0.000071     +0.000071     0.0963
+film                      +0.000000     +0.000066     +0.000066     0.1567
+traversant                +0.000602     +0.000051     +0.000051     0.0859
+hôtel                     +0.000465     +0.000046     +0.000046     0.0581
+échappée                  +0.000000     +0.000042     +0.000042     0.1160
+aisance                   +0.000095     +0.000039     +0.000039     0.0841
+concrète                  +0.001262     +0.000037     +0.000037     0.1657
+immobilité                +0.001603     +0.000037     +0.000037     0.0944
+enfermé                   +0.000730     +0.000035     +0.000035     0.0763
+écoutais                  +0.000861     +0.000034     +0.000034     0.1011
+gisant                    +0.000000     +0.000029     +0.000029     0.1291
+animal                    +0.000307     +0.000026     +0.000026     0.0600
+conversations             +0.000000     +0.000026     +0.000026     0.0679
+lisais                    +0.000000     +0.000026     +0.000026     0.1075
+logit final pour 'homme': 0.0801

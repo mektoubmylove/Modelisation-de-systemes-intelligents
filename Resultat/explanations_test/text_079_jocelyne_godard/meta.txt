@@ -1,0 +1,5 @@
+filename: (GODARD)(Jocelyne)(la couronne insolente)(2)(2000)(1953)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 79
+first_name: jocelyne
+last_name: godard
+true_label: femme

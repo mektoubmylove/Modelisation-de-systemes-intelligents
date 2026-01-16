@@ -1,0 +1,5 @@
+filename: (HOLPARAN)(Jennifer)(killer nostrum)(2)(2014)(1985)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 96
+first_name: jennifer
+last_name: holparan
+true_label: femme

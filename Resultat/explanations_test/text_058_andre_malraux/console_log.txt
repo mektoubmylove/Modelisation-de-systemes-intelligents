@@ -1,0 +1,386 @@
+texte analysé: enfin réfléchit , le menton dans ses mains . je lui remets les deux traductions . tu es tout à fait sûr de tes deux textes ? tout à fait sûr . dis donc , ça te serait peut être égal de me dire à quoi ...
+prédiction: HOMME (confiance: 52.3%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.0182
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hésiterait                     +0.000097       0.1588
+   2      boys                           +0.000082       0.1416
+   3      papillons                      +0.000075       0.1002
+   4      traductions                    +0.000074       0.1659
+   5      descendant                     +0.000057       0.0743
+   6      empoisonner                    +0.000047       0.1242
+   7      saurons                        +0.000046       0.1225
+   8      supposer                       +0.000046       0.0854
+   9      savent                         +0.000045       0.0587
+   10     connues                        +0.000039       0.0979
+   11     profitaient                    +0.000037       0.1437
+   12     bourgeois                      +0.000037       0.0826
+   13     fusil                          +0.000036       0.0822
+   14     utilisés                       +0.000034       0.1369
+   15     recouvertes                    +0.000023       0.1161
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hésitants                      -0.000147       0.1455
+   2      recouvrir                      -0.000123       0.2347
+   3      affiche                        -0.000122       0.2893
+   4      affiches                       -0.000105       0.3204
+   5      manqué                         -0.000090       0.0634
+   6      remets                         -0.000084       0.0977
+   7      crût                           -0.000080       0.1594
+   8      textes                         -0.000073       0.1064
+   9      prévenue                       -0.000072       0.0947
+   10     interloqué                     -0.000065       0.1166
+   11     pourront                       -0.000058       0.0921
+   12     chinois                        -0.000052       0.0889
+   13     suivent                        -0.000052       0.0886
+   14     diverses                       -0.000048       0.0760
+   15     seront                         -0.000043       0.1738
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hésiterait                     +0.000097       0.1588
+   2      boys                           +0.000082       0.1416
+   3      papillons                      +0.000075       0.1002
+   4      traductions                    +0.000074       0.1659
+   5      descendant                     +0.000057       0.0743
+   6      empoisonner                    +0.000047       0.1242
+   7      saurons                        +0.000046       0.1225
+   8      supposer                       +0.000046       0.0854
+   9      savent                         +0.000045       0.0587
+   10     connues                        +0.000039       0.0979
+   11     profitaient                    +0.000037       0.1437
+   12     bourgeois                      +0.000037       0.0826
+   13     fusil                          +0.000036       0.0822
+   14     utilisés                       +0.000034       0.1369
+   15     recouvertes                    +0.000023       0.1161
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hésitants                      -0.000147       0.1455
+   2      recouvrir                      -0.000123       0.2347
+   3      affiche                        -0.000122       0.2893
+   4      affiches                       -0.000105       0.3204
+   5      manqué                         -0.000090       0.0634
+   6      remets                         -0.000084       0.0977
+   7      crût                           -0.000080       0.1594
+   8      textes                         -0.000073       0.1064
+   9      prévenue                       -0.000072       0.0947
+   10     interloqué                     -0.000065       0.1166
+   11     pourront                       -0.000058       0.0921
+   12     chinois                        -0.000052       0.0889
+   13     suivent                        -0.000052       0.0886
+   14     diverses                       -0.000048       0.0760
+   15     seront                         -0.000043       0.1738
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      prévenue                       +0.002725       0.0947
+   2      irréguliers                    +0.001801       0.1527
+   3      hésiterait                     +0.001658       0.1588
+   4      hésitants                      +0.001458       0.1455
+   5      seront                         +0.001276       0.1738
+   6      imprimée                       +0.000941       0.1313
+   7      parer                          +0.000869       0.1054
+   8      recouvrir                      +0.000819       0.2347
+   9      utilisés                       +0.000754       0.1369
+   10     descendons                     +0.000724       0.1416
+   11     manqué                         +0.000686       0.0634
+   12     employées                      +0.000674       0.1388
+   13     recouvertes                    +0.000645       0.1161
+   14     suivent                        +0.000585       0.0886
+   15     admettre                       +0.000549       0.0681
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fusil                          -0.001945       0.0822
+   2      crût                           -0.001791       0.1594
+   3      empoisonner                    -0.001552       0.1242
+   4      renseignements                 -0.001538       0.0746
+   5      saurons                        -0.001443       0.1225
+   6      affiches                       -0.001430       0.3204
+   7      traductions                    -0.001332       0.1659
+   8      interloqué                     -0.001330       0.1166
+   9      fût                            -0.001266       0.0591
+   10     troupes                        -0.001206       0.1853
+   11     police                         -0.001133       0.0628
+   12     connues                        -0.001108       0.0979
+   13     bourgeois                      -0.001062       0.0826
+   14     bénéficient                    -0.000975       0.1853
+   15     profitaient                    -0.000964       0.1437
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      prévenue                       +0.158172       0.0947
+   2      irréguliers                    +0.099420       0.1527
+   3      hésiterait                     +0.088418       0.1588
+   4      hésitants                      +0.082181       0.1455
+   5      seront                         +0.057511       0.1738
+   6      descendons                     +0.052580       0.1416
+   7      imprimée                       +0.051103       0.1313
+   8      recouvrir                      +0.044239       0.2347
+   9      utilisés                       +0.042536       0.1369
+   10     employées                      +0.041650       0.1388
+   11     parer                          +0.039923       0.1054
+   12     recouvertes                    +0.039186       0.1161
+   13     manqué                         +0.036947       0.0634
+   14     suivent                        +0.034279       0.0886
+   15     pourront                       +0.032494       0.0921
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fusil                          -0.104481       0.0822
+   2      crût                           -0.089593       0.1594
+   3      empoisonner                    -0.086626       0.1242
+   4      affiches                       -0.085788       0.3204
+   5      renseignements                 -0.076137       0.0746
+   6      interloqué                     -0.074032       0.1166
+   7      fût                            -0.073545       0.0591
+   8      saurons                        -0.071885       0.1225
+   9      profitaient                    -0.067209       0.1437
+   10     police                         -0.062271       0.0628
+   11     bénéficient                    -0.060054       0.1853
+   12     bourgeois                      -0.059162       0.0826
+   13     connues                        -0.058810       0.0979
+   14     traductions                    -0.054370       0.1659
+   15     boys                           -0.050175       0.1416
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+hésiterait                +0.001658     +0.000097     +0.000097     0.1588
+boys                      +0.000000     +0.000082     +0.000082     0.1416
+papillons                 +0.000000     +0.000075     +0.000075     0.1002
+traductions               +0.000000     +0.000074     +0.000074     0.1659
+descendant                +0.000000     +0.000057     +0.000057     0.0743
+empoisonner               +0.000000     +0.000047     +0.000047     0.1242
+saurons                   +0.000000     +0.000046     +0.000046     0.1225
+supposer                  +0.000000     +0.000046     +0.000046     0.0854
+savent                    +0.000185     +0.000045     +0.000045     0.0587
+connues                   +0.000000     +0.000039     +0.000039     0.0979
+profitaient               +0.000000     +0.000037     +0.000037     0.1437
+bourgeois                 +0.000000     +0.000037     +0.000037     0.0826
+fusil                     +0.000000     +0.000036     +0.000036     0.0822
+utilisés                  +0.000754     +0.000034     +0.000034     0.1369
+recouvertes               +0.000645     +0.000023     +0.000023     0.1161
+faisons                   +0.000000     +0.000021     +0.000021     0.0742
+fût                       +0.000000     +0.000018     +0.000018     0.0591
+réfléchit                 +0.000000     +0.000016     +0.000016     0.0736
+position                  +0.000000     +0.000016     +0.000016     0.0574
+aurions                   +0.000026     +0.000015     +0.000015     0.0774
+logit final pour 'femme': -0.0182
+# analyse pour la classe: HOMME  prédite
+# logit: 0.0757
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hésiterait                     +0.000101       0.1588
+   2      papillons                      +0.000042       0.1002
+   3      employées                      +0.000036       0.1388
+   4      boys                           +0.000035       0.1416
+   5      faisons                        +0.000031       0.0742
+   6      bourgeois                      +0.000031       0.0826
+   7      descendant                     +0.000030       0.0743
+   8      supposer                       +0.000022       0.0854
+   9      voyons                         +0.000021       0.0617
+   10     fût                            +0.000016       0.0591
+   11     profitaient                    +0.000015       0.1437
+   12     arracher                       +0.000014       0.0609
+   13     recouvertes                    +0.000014       0.1161
+   14     affiche                        +0.000013       0.2893
+   15     net                            +0.000011       0.0600
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      recouvrir                      -0.000097       0.2347
+   2      nôtres                         -0.000081       0.1847
+   3      manqué                         -0.000074       0.0634
+   4      remets                         -0.000065       0.0977
+   5      textes                         -0.000060       0.1064
+   6      hésitants                      -0.000054       0.1455
+   7      crût                           -0.000046       0.1594
+   8      affiches                       -0.000045       0.3204
+   9      aurons                         -0.000044       0.0777
+   10     réserves                       -0.000044       0.0940
+   11     diverses                       -0.000040       0.0760
+   12     interloqué                     -0.000038       0.1166
+   13     pourront                       -0.000036       0.0921
+   14     barreaux                       -0.000033       0.0922
+   15     populaire                      -0.000033       0.0886
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hésiterait                     +0.000101       0.1588
+   2      papillons                      +0.000042       0.1002
+   3      employées                      +0.000036       0.1388
+   4      boys                           +0.000035       0.1416
+   5      faisons                        +0.000031       0.0742
+   6      bourgeois                      +0.000031       0.0826
+   7      descendant                     +0.000030       0.0743
+   8      supposer                       +0.000022       0.0854
+   9      voyons                         +0.000021       0.0617
+   10     fût                            +0.000016       0.0591
+   11     profitaient                    +0.000015       0.1437
+   12     arracher                       +0.000014       0.0609
+   13     recouvertes                    +0.000014       0.1161
+   14     affiche                        +0.000013       0.2893
+   15     net                            +0.000011       0.0600
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      recouvrir                      -0.000097       0.2347
+   2      nôtres                         -0.000081       0.1847
+   3      manqué                         -0.000074       0.0634
+   4      remets                         -0.000065       0.0977
+   5      textes                         -0.000060       0.1064
+   6      hésitants                      -0.000054       0.1455
+   7      crût                           -0.000046       0.1594
+   8      affiches                       -0.000045       0.3204
+   9      aurons                         -0.000044       0.0777
+   10     réserves                       -0.000044       0.0940
+   11     diverses                       -0.000040       0.0760
+   12     interloqué                     -0.000038       0.1166
+   13     pourront                       -0.000036       0.0921
+   14     barreaux                       -0.000033       0.0922
+   15     populaire                      -0.000033       0.0886
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      affiches                       +0.002513       0.3204
+   2      fusil                          +0.001820       0.0822
+   3      empoisonner                    +0.001704       0.1242
+   4      crût                           +0.001508       0.1594
+   5      renseignements                 +0.001289       0.0746
+   6      saurons                        +0.001256       0.1225
+   7      bénéficient                    +0.001212       0.1853
+   8      fût                            +0.001200       0.0591
+   9      troupes                        +0.001200       0.1853
+   10     interloqué                     +0.001123       0.1166
+   11     traductions                    +0.001021       0.1659
+   12     profitaient                    +0.000998       0.1437
+   13     connues                        +0.000990       0.0979
+   14     police                         +0.000984       0.0628
+   15     diverses                       +0.000798       0.0760
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      prévenue                       -0.002359       0.0947
+   2      hésiterait                     -0.001360       0.1588
+   3      irréguliers                    -0.001238       0.1527
+   4      imprimée                       -0.001054       0.1313
+   5      seront                         -0.000888       0.1738
+   6      hésitants                      -0.000878       0.1455
+   7      affiche                        -0.000815       0.2893
+   8      parer                          -0.000713       0.1054
+   9      descendons                     -0.000659       0.1416
+   10     suivent                        -0.000621       0.0886
+   11     recouvertes                    -0.000578       0.1161
+   12     recouvrir                      -0.000551       0.2347
+   13     sûrs                           -0.000538       0.0874
+   14     pourront                       -0.000520       0.0921
+   15     employées                      -0.000485       0.1388
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      affiches                       +0.143582       0.3204
+   2      empoisonner                    +0.100452       0.1242
+   3      fusil                          +0.096510       0.0822
+   4      crût                           +0.074551       0.1594
+   5      bénéficient                    +0.074155       0.1853
+   6      saurons                        +0.071518       0.1225
+   7      fût                            +0.070110       0.0591
+   8      interloqué                     +0.067191       0.1166
+   9      renseignements                 +0.060383       0.0746
+   10     profitaient                    +0.059993       0.1437
+   11     police                         +0.051451       0.0628
+   12     connues                        +0.050664       0.0979
+   13     bourgeois                      +0.045254       0.0826
+   14     traductions                    +0.042798       0.1659
+   15     diverses                       +0.042640       0.0760
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      prévenue                       -0.144141       0.0947
+   2      hésiterait                     -0.078154       0.1588
+   3      irréguliers                    -0.068838       0.1527
+   4      imprimée                       -0.055856       0.1313
+   5      affiche                        -0.055359       0.2893
+   6      hésitants                      -0.053762       0.1455
+   7      seront                         -0.048428       0.1738
+   8      descendons                     -0.044218       0.1416
+   9      suivent                        -0.041648       0.0886
+   10     parer                          -0.036443       0.1054
+   11     employées                      -0.034654       0.1388
+   12     pourront                       -0.030525       0.0921
+   13     manqué                         -0.029782       0.0634
+   14     recouvertes                    -0.029258       0.1161
+   15     utilisés                       -0.028507       0.1369
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+hésiterait                +0.000000     +0.000101     +0.000101     0.1588
+papillons                 +0.000476     +0.000042     +0.000042     0.1002
+employées                 +0.000000     +0.000036     +0.000036     0.1388
+boys                      +0.000693     +0.000035     +0.000035     0.1416
+faisons                   +0.000031     +0.000031     +0.000031     0.0742
+bourgeois                 +0.000791     +0.000031     +0.000031     0.0826
+descendant                +0.000438     +0.000030     +0.000030     0.0743
+supposer                  +0.000657     +0.000022     +0.000022     0.0854
+voyons                    +0.000006     +0.000021     +0.000021     0.0617
+fût                       +0.001200     +0.000016     +0.000016     0.0591
+profitaient               +0.000998     +0.000015     +0.000015     0.1437
+arracher                  +0.000000     +0.000014     +0.000014     0.0609
+recouvertes               +0.000000     +0.000014     +0.000014     0.1161
+affiche                   +0.000000     +0.000013     +0.000013     0.2893
+net                       +0.000000     +0.000011     +0.000011     0.0600
+réfléchit                 +0.000429     +0.000010     +0.000010     0.0736
+utilisés                  +0.000000     +0.000010     +0.000010     0.1369
+imprimée                  +0.000000     +0.000009     +0.000009     0.1313
+seront                    +0.000000     +0.000008     +0.000008     0.1738
+coupée                    +0.000000     +0.000008     +0.000008     0.0797
+logit final pour 'homme': 0.0757

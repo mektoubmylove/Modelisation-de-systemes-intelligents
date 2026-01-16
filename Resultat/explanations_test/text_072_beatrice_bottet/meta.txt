@@ -1,0 +1,5 @@
+filename: (BOTTET)(Béatrice)(Bertoul et le secret des hiboux)(2)(2009)(1950)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 72
+first_name: beatrice
+last_name: bottet
+true_label: femme

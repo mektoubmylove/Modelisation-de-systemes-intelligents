@@ -1,0 +1,386 @@
+texte analysé: . comme pour donner raison à son sentiment qu on l épiait , le téléphone gris se mit à jouer son air à présent connu . jennifer s empara de l engin . calmez vous ! ordonna la femme à la voix rauque , ...
+prédiction: FEMME (confiance: 93.9%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.6073
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      imparable                      +0.000083       0.0888
+   2      dégueuler                      +0.000061       0.1049
+   3      administré                     +0.000048       0.0822
+   4      pilules                        +0.000043       0.0747
+   5      agitée                         +0.000035       0.0516
+   6      observaient                    +0.000030       0.0652
+   7      vidéo                          +0.000028       0.1413
+   8      endormit                       +0.000026       0.0543
+   9      appareil                       +0.000024       0.0372
+   10     respirait                      +0.000024       0.0440
+   11     installa                       +0.000020       0.0439
+   12     tumulte                        +0.000019       0.0538
+   13     bousculait                     +0.000018       0.0763
+   14     tire                           +0.000017       0.0664
+   15     raté                           +0.000015       0.0459
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lait                           -0.000354       0.2683
+   2      lancinant                      -0.000117       0.0859
+   3      jennifer                       -0.000097       0.7004
+   4      marion                         -0.000095       0.2098
+   5      soigner                        -0.000089       0.0757
+   6      bébé                           -0.000063       0.0764
+   7      infime                         -0.000060       0.0537
+   8      avéré                          -0.000058       0.0842
+   9      nina                           -0.000054       0.2151
+   10     épiait                         -0.000052       0.0682
+   11     résignée                       -0.000047       0.0572
+   12     cauchemars                     -0.000047       0.0496
+   13     stéphane                       -0.000040       0.0968
+   14     engluée                        -0.000040       0.1031
+   15     efficace                       -0.000038       0.0427
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      imparable                      +0.000083       0.0888
+   2      dégueuler                      +0.000061       0.1049
+   3      administré                     +0.000048       0.0822
+   4      pilules                        +0.000043       0.0747
+   5      agitée                         +0.000035       0.0516
+   6      observaient                    +0.000030       0.0652
+   7      vidéo                          +0.000028       0.1413
+   8      endormit                       +0.000026       0.0543
+   9      appareil                       +0.000024       0.0372
+   10     respirait                      +0.000024       0.0440
+   11     installa                       +0.000020       0.0439
+   12     tumulte                        +0.000019       0.0538
+   13     bousculait                     +0.000018       0.0763
+   14     tire                           +0.000017       0.0664
+   15     raté                           +0.000015       0.0459
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lait                           -0.000354       0.2683
+   2      lancinant                      -0.000117       0.0859
+   3      jennifer                       -0.000097       0.7004
+   4      marion                         -0.000095       0.2098
+   5      soigner                        -0.000089       0.0757
+   6      bébé                           -0.000063       0.0764
+   7      infime                         -0.000060       0.0537
+   8      avéré                          -0.000058       0.0842
+   9      nina                           -0.000054       0.2151
+   10     épiait                         -0.000052       0.0682
+   11     résignée                       -0.000047       0.0572
+   12     cauchemars                     -0.000047       0.0496
+   13     stéphane                       -0.000040       0.0968
+   14     engluée                        -0.000040       0.1031
+   15     efficace                       -0.000038       0.0427
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      nina                           +0.004203       0.2151
+   2      lait                           +0.004014       0.2683
+   3      marion                         +0.002840       0.2098
+   4      bébé                           +0.002179       0.0764
+   5      jennifer                       +0.001682       0.7004
+   6      abasourdie                     +0.001340       0.0698
+   7      scruta                         +0.001122       0.0685
+   8      éveillée                       +0.001061       0.0568
+   9      empourpra                      +0.001046       0.0836
+   10     efficace                       +0.001017       0.0427
+   11     calmez                         +0.000863       0.0675
+   12     engluée                        +0.000792       0.1031
+   13     frigo                          +0.000781       0.0666
+   14     résignée                       +0.000774       0.0572
+   15     empara                         +0.000764       0.0505
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      demeura                        -0.001599       0.0501
+   2      vidéo                          -0.001296       0.1413
+   3      tumulte                        -0.000897       0.0538
+   4      organisme                      -0.000838       0.0644
+   5      engin                          -0.000676       0.0569
+   6      dus                            -0.000655       0.0583
+   7      épiait                         -0.000616       0.0682
+   8      minute                         -0.000550       0.0304
+   9      tire                           -0.000510       0.0664
+   10     stéphane                       -0.000473       0.0968
+   11     appareil                       -0.000471       0.0372
+   12     pompe                          -0.000470       0.0532
+   13     réfléchi                       -0.000468       0.0394
+   14     épiant                         -0.000452       0.0875
+   15     observaient                    -0.000439       0.0652
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      nina                           +0.135757       0.2151
+   2      marion                         +0.094681       0.2098
+   3      lait                           +0.075273       0.2683
+   4      bébé                           +0.072463       0.0764
+   5      abasourdie                     +0.048358       0.0698
+   6      éveillée                       +0.044143       0.0568
+   7      empourpra                      +0.038503       0.0836
+   8      scruta                         +0.035272       0.0685
+   9      calmez                         +0.034508       0.0675
+   10     efficace                       +0.032107       0.0427
+   11     frigo                          +0.028501       0.0666
+   12     engluée                        +0.024589       0.1031
+   13     installa                       +0.024397       0.0439
+   14     résignée                       +0.023080       0.0572
+   15     tom                            +0.022912       0.0809
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      demeura                        -0.058903       0.0501
+   2      vidéo                          -0.042907       0.1413
+   3      tumulte                        -0.033409       0.0538
+   4      épiait                         -0.029076       0.0682
+   5      organisme                      -0.026961       0.0644
+   6      dus                            -0.025321       0.0583
+   7      engin                          -0.023417       0.0569
+   8      tire                           -0.020417       0.0664
+   9      réfléchi                       -0.020037       0.0394
+   10     rauque                         -0.017758       0.0439
+   11     avéré                          -0.017609       0.0842
+   12     lancinant                      -0.017001       0.0859
+   13     minute                         -0.016412       0.0304
+   14     pompe                          -0.015437       0.0532
+   15     communication                  -0.015207       0.0437
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+imparable                 +0.000034     +0.000083     +0.000083     0.0888
+dégueuler                 +0.000047     +0.000061     +0.000061     0.1049
+administré                +0.000040     +0.000048     +0.000048     0.0822
+pilules                   +0.000000     +0.000043     +0.000043     0.0747
+agitée                    +0.000299     +0.000035     +0.000035     0.0516
+observaient               +0.000000     +0.000030     +0.000030     0.0652
+vidéo                     +0.000000     +0.000028     +0.000028     0.1413
+endormit                  +0.000226     +0.000026     +0.000026     0.0543
+appareil                  +0.000000     +0.000024     +0.000024     0.0372
+respirait                 +0.000000     +0.000024     +0.000024     0.0440
+installa                  +0.000565     +0.000020     +0.000020     0.0439
+tumulte                   +0.000000     +0.000019     +0.000019     0.0538
+bousculait                +0.000307     +0.000018     +0.000018     0.0763
+tire                      +0.000000     +0.000017     +0.000017     0.0664
+raté                      +0.000203     +0.000015     +0.000015     0.0459
+reprit                    +0.000000     +0.000015     +0.000015     0.0358
+demeura                   +0.000000     +0.000014     +0.000014     0.0501
+éveillée                  +0.001061     +0.000013     +0.000013     0.0568
+divers                    +0.000000     +0.000012     +0.000012     0.0368
+métronome                 +0.000440     +0.000012     +0.000012     0.0929
+logit final pour 'femme': 1.6073
+# analyse pour la classe: HOMME
+# logit: -1.1345
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      imparable                      +0.000044       0.0888
+   2      administré                     +0.000035       0.0822
+   3      agitée                         +0.000023       0.0516
+   4      dégueuler                      +0.000022       0.1049
+   5      observaient                    +0.000019       0.0652
+   6      pilules                        +0.000019       0.0747
+   7      raté                           +0.000018       0.0459
+   8      installa                       +0.000017       0.0439
+   9      bousculait                     +0.000015       0.0763
+   10     respirait                      +0.000013       0.0440
+   11     secoué                         +0.000012       0.0428
+   12     reprit                         +0.000012       0.0358
+   13     engin                          +0.000012       0.0569
+   14     éveillée                       +0.000010       0.0568
+   15     souci                          +0.000010       0.0350
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lait                           -0.000170       0.2683
+   2      jennifer                       -0.000099       0.7004
+   3      lancinant                      -0.000071       0.0859
+   4      bébé                           -0.000046       0.0764
+   5      marion                         -0.000041       0.2098
+   6      soigner                        -0.000040       0.0757
+   7      avéré                          -0.000034       0.0842
+   8      scruta                         -0.000030       0.0685
+   9      infime                         -0.000028       0.0537
+   10     épiait                         -0.000022       0.0682
+   11     engluée                        -0.000021       0.1031
+   12     résignée                       -0.000019       0.0572
+   13     cauchemars                     -0.000018       0.0496
+   14     efficace                       -0.000018       0.0427
+   15     soubresauts                    -0.000018       0.0660
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      imparable                      +0.000044       0.0888
+   2      administré                     +0.000035       0.0822
+   3      agitée                         +0.000023       0.0516
+   4      dégueuler                      +0.000022       0.1049
+   5      observaient                    +0.000019       0.0652
+   6      pilules                        +0.000019       0.0747
+   7      raté                           +0.000018       0.0459
+   8      installa                       +0.000017       0.0439
+   9      bousculait                     +0.000015       0.0763
+   10     respirait                      +0.000013       0.0440
+   11     secoué                         +0.000012       0.0428
+   12     reprit                         +0.000012       0.0358
+   13     engin                          +0.000012       0.0569
+   14     éveillée                       +0.000010       0.0568
+   15     souci                          +0.000010       0.0350
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lait                           -0.000170       0.2683
+   2      jennifer                       -0.000099       0.7004
+   3      lancinant                      -0.000071       0.0859
+   4      bébé                           -0.000046       0.0764
+   5      marion                         -0.000041       0.2098
+   6      soigner                        -0.000040       0.0757
+   7      avéré                          -0.000034       0.0842
+   8      scruta                         -0.000030       0.0685
+   9      infime                         -0.000028       0.0537
+   10     épiait                         -0.000022       0.0682
+   11     engluée                        -0.000021       0.1031
+   12     résignée                       -0.000019       0.0572
+   13     cauchemars                     -0.000018       0.0496
+   14     efficace                       -0.000018       0.0427
+   15     soubresauts                    -0.000018       0.0660
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      demeura                        +0.001088       0.0501
+   2      vidéo                          +0.000881       0.1413
+   3      tumulte                        +0.000563       0.0538
+   4      épiait                         +0.000510       0.0682
+   5      organisme                      +0.000505       0.0644
+   6      stéphane                       +0.000438       0.0968
+   7      engin                          +0.000417       0.0569
+   8      minute                         +0.000388       0.0304
+   9      dus                            +0.000380       0.0583
+   10     réfléchi                       +0.000357       0.0394
+   11     appareil                       +0.000336       0.0372
+   12     tire                           +0.000322       0.0664
+   13     pompe                          +0.000321       0.0532
+   14     pilules                        +0.000305       0.0747
+   15     observaient                    +0.000304       0.0652
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lait                           -0.002646       0.2683
+   2      nina                           -0.002546       0.2151
+   3      marion                         -0.002300       0.2098
+   4      bébé                           -0.001308       0.0764
+   5      abasourdie                     -0.000818       0.0698
+   6      empourpra                      -0.000813       0.0836
+   7      éveillée                       -0.000697       0.0568
+   8      scruta                         -0.000649       0.0685
+   9      efficace                       -0.000636       0.0427
+   10     calmez                         -0.000633       0.0675
+   11     jennifer                       -0.000608       0.7004
+   12     résignée                       -0.000586       0.0572
+   13     frigo                          -0.000573       0.0666
+   14     engluée                        -0.000530       0.1031
+   15     cauchemars                     -0.000502       0.0496
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      demeura                        +0.040753       0.0501
+   2      vidéo                          +0.033224       0.1413
+   3      épiait                         +0.023694       0.0682
+   4      lancinant                      +0.021840       0.0859
+   5      tumulte                        +0.019574       0.0538
+   6      jennifer                       +0.019222       0.7004
+   7      organisme                      +0.017432       0.0644
+   8      réfléchi                       +0.015879       0.0394
+   9      rauque                         +0.014270       0.0439
+   10     tire                           +0.013233       0.0664
+   11     minute                         +0.011929       0.0304
+   12     dus                            +0.011536       0.0583
+   13     soubresauts                    +0.011494       0.0660
+   14     communication                  +0.011434       0.0437
+   15     engin                          +0.011201       0.0569
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      nina                           -0.082895       0.2151
+   2      marion                         -0.080960       0.2098
+   3      lait                           -0.041425       0.2683
+   4      bébé                           -0.036681       0.0764
+   5      éveillée                       -0.029575       0.0568
+   6      abasourdie                     -0.027973       0.0698
+   7      empourpra                      -0.027867       0.0836
+   8      calmez                         -0.025098       0.0675
+   9      frigo                          -0.023094       0.0666
+   10     résignée                       -0.019935       0.0572
+   11     efficace                       -0.019098       0.0427
+   12     installa                       -0.018686       0.0439
+   13     scruta                         -0.017909       0.0685
+   14     tom                            -0.017768       0.0809
+   15     cauchemars                     -0.017013       0.0496
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+imparable                 +0.000000     +0.000044     +0.000044     0.0888
+administré                +0.000106     +0.000035     +0.000035     0.0822
+agitée                    +0.000000     +0.000023     +0.000023     0.0516
+dégueuler                 +0.000000     +0.000022     +0.000022     0.1049
+observaient               +0.000304     +0.000019     +0.000019     0.0652
+pilules                   +0.000305     +0.000019     +0.000019     0.0747
+raté                      +0.000000     +0.000018     +0.000018     0.0459
+installa                  +0.000000     +0.000017     +0.000017     0.0439
+bousculait                +0.000000     +0.000015     +0.000015     0.0763
+respirait                 +0.000000     +0.000013     +0.000013     0.0440
+secoué                    +0.000092     +0.000012     +0.000012     0.0428
+reprit                    +0.000131     +0.000012     +0.000012     0.0358
+engin                     +0.000417     +0.000012     +0.000012     0.0569
+éveillée                  +0.000000     +0.000010     +0.000010     0.0568
+souci                     +0.000123     +0.000010     +0.000010     0.0350
+bancale                   +0.000000     +0.000010     +0.000010     0.0941
+épiant                    +0.000291     +0.000009     +0.000009     0.0875
+probables                 +0.000045     +0.000009     +0.000009     0.0982
+sortirait                 +0.000000     +0.000007     +0.000007     0.0594
+demanda                   +0.000000     +0.000007     +0.000007     0.0333
+logit final pour 'homme': -1.1345

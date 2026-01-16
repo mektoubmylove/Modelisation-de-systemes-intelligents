@@ -1,0 +1,386 @@
+texte analysé: pour en emporter les restes . maître agostini prit très mal ces promesses et demanda au maréchal de bien noter les paroles de cristoforo car il lui en demanderait réparation devant les tribunaux . pui...
+prédiction: HOMME (confiance: 86.6%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.9789
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      padre                          +0.000234       0.5293
+   2      carabinier                     +0.000096       0.1965
+   3      montagnard                     +0.000060       0.1482
+   4      réparation                     +0.000050       0.0896
+   5      vraisemblablement              +0.000044       0.0896
+   6      inspecteur                     +0.000042       0.0833
+   7      fonça                          +0.000041       0.0955
+   8      apprirent                      +0.000041       0.1116
+   9      don                            +0.000036       0.1510
+   10     sûrement                       +0.000036       0.0449
+   11     jurant                         +0.000036       0.0929
+   12     prêtre                         +0.000035       0.1278
+   13     assassins                      +0.000033       0.0799
+   14     aperçut                        +0.000033       0.0555
+   15     promesses                      +0.000033       0.0630
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      intima                         -0.000088       0.1061
+   2      forgeron                       -0.000074       0.1232
+   3      crâne                          -0.000068       0.1384
+   4      maréchal                       -0.000067       0.2786
+   5      restes                         -0.000045       0.0532
+   6      cynique                        -0.000044       0.0873
+   7      libérer                        -0.000041       0.0595
+   8      mentait                        -0.000034       0.0842
+   9      assommé                        -0.000033       0.0831
+   10     vii                            -0.000032       0.0760
+   11     multiples                      -0.000032       0.0656
+   12     soulagement                    -0.000031       0.0495
+   13     vol                            -0.000030       0.0479
+   14     pauvreté                       -0.000030       0.0804
+   15     péter                          -0.000030       0.1008
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      padre                          +0.000234       0.5293
+   2      carabinier                     +0.000096       0.1965
+   3      montagnard                     +0.000060       0.1482
+   4      réparation                     +0.000050       0.0896
+   5      vraisemblablement              +0.000044       0.0896
+   6      inspecteur                     +0.000042       0.0833
+   7      fonça                          +0.000041       0.0955
+   8      apprirent                      +0.000041       0.1116
+   9      don                            +0.000036       0.1510
+   10     sûrement                       +0.000036       0.0449
+   11     jurant                         +0.000036       0.0929
+   12     prêtre                         +0.000035       0.1278
+   13     assassins                      +0.000033       0.0799
+   14     aperçut                        +0.000033       0.0555
+   15     promesses                      +0.000033       0.0630
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      intima                         -0.000088       0.1061
+   2      forgeron                       -0.000074       0.1232
+   3      crâne                          -0.000068       0.1384
+   4      maréchal                       -0.000067       0.2786
+   5      restes                         -0.000045       0.0532
+   6      cynique                        -0.000044       0.0873
+   7      libérer                        -0.000041       0.0595
+   8      mentait                        -0.000034       0.0842
+   9      assommé                        -0.000033       0.0831
+   10     vii                            -0.000032       0.0760
+   11     multiples                      -0.000032       0.0656
+   12     soulagement                    -0.000031       0.0495
+   13     vol                            -0.000030       0.0479
+   14     pauvreté                       -0.000030       0.0804
+   15     péter                          -0.000030       0.1008
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      soulagement                    +0.001458       0.0495
+   2      cynique                        +0.001331       0.0873
+   3      intima                         +0.001213       0.1061
+   4      forgeron                       +0.000822       0.1232
+   5      multiples                      +0.000805       0.0656
+   6      agités                         +0.000780       0.0951
+   7      liait                          +0.000732       0.0933
+   8      gémir                          +0.000635       0.0757
+   9      pauvreté                       +0.000544       0.0804
+   10     mentait                        +0.000508       0.0842
+   11     restes                         +0.000481       0.0532
+   12     tribunaux                      +0.000439       0.1126
+   13     reposer                        +0.000397       0.0492
+   14     emporté                        +0.000397       0.0525
+   15     inlassablement                 +0.000342       0.0821
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      padre                          -0.004444       0.5293
+   2      carabinier                     -0.001939       0.1965
+   3      vraisemblablement              -0.001514       0.0896
+   4      maréchal                       -0.001210       0.2786
+   5      troubler                       -0.001093       0.0660
+   6      tumulte                        -0.001051       0.0760
+   7      jurant                         -0.001033       0.0929
+   8      chapitre                       -0.000916       0.0600
+   9      eût                            -0.000851       0.0479
+   10     causes                         -0.000820       0.0741
+   11     crâne                          -0.000761       0.1384
+   12     assommé                        -0.000732       0.0831
+   13     inspecteur                     -0.000720       0.0833
+   14     dut                            -0.000705       0.0523
+   15     furent                         -0.000695       0.0465
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      soulagement                    +0.067248       0.0495
+   2      intima                         +0.063218       0.1061
+   3      cynique                        +0.059019       0.0873
+   4      forgeron                       +0.043000       0.1232
+   5      multiples                      +0.038607       0.0656
+   6      liait                          +0.031665       0.0933
+   7      mentait                        +0.028856       0.0842
+   8      gémir                          +0.028733       0.0757
+   9      agités                         +0.027345       0.0951
+   10     pauvreté                       +0.025633       0.0804
+   11     tribunaux                      +0.025376       0.1126
+   12     restes                         +0.022435       0.0532
+   13     emporté                        +0.022238       0.0525
+   14     meurtre                        +0.019407       0.1266
+   15     reposer                        +0.019099       0.0492
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      padre                          -0.254203       0.5293
+   2      carabinier                     -0.110165       0.1965
+   3      vraisemblablement              -0.068404       0.0896
+   4      maréchal                       -0.050610       0.2786
+   5      troubler                       -0.050346       0.0660
+   6      jurant                         -0.046072       0.0929
+   7      chapitre                       -0.045800       0.0600
+   8      eût                            -0.045351       0.0479
+   9      carabiniers                    -0.040292       0.1679
+   10     causes                         -0.039253       0.0741
+   11     connaissant                    -0.037277       0.0727
+   12     tumulte                        -0.036567       0.0760
+   13     aperçut                        -0.034246       0.0555
+   14     furent                         -0.032335       0.0465
+   15     inspecteur                     -0.032070       0.0833
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+padre                     +0.000000     +0.000234     +0.000234     0.5293
+carabinier                +0.000000     +0.000096     +0.000096     0.1965
+montagnard                +0.000000     +0.000060     +0.000060     0.1482
+réparation                +0.000000     +0.000050     +0.000050     0.0896
+vraisemblablement         +0.000000     +0.000044     +0.000044     0.0896
+inspecteur                +0.000000     +0.000042     +0.000042     0.0833
+fonça                     +0.000000     +0.000041     +0.000041     0.0955
+apprirent                 +0.000000     +0.000041     +0.000041     0.1116
+don                       +0.000000     +0.000036     +0.000036     0.1510
+sûrement                  +0.000201     +0.000036     +0.000036     0.0449
+jurant                    +0.000000     +0.000036     +0.000036     0.0929
+prêtre                    +0.000295     +0.000035     +0.000035     0.1278
+assassins                 +0.000000     +0.000033     +0.000033     0.0799
+aperçut                   +0.000000     +0.000033     +0.000033     0.0555
+promesses                 +0.000000     +0.000033     +0.000033     0.0630
+visiteurs                 +0.000000     +0.000033     +0.000033     0.0610
+inlassablement            +0.000342     +0.000022     +0.000022     0.0821
+médecin                   +0.000000     +0.000021     +0.000021     0.0912
+chapitre                  +0.000000     +0.000021     +0.000021     0.0600
+taire                     +0.000319     +0.000020     +0.000020     0.0451
+logit final pour 'femme': -0.9789
+# analyse pour la classe: HOMME  prédite
+# logit: 0.8860
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      padre                          +0.000147       0.5293
+   2      carabinier                     +0.000076       0.1965
+   3      réparation                     +0.000050       0.0896
+   4      prêtre                         +0.000043       0.1278
+   5      montagnard                     +0.000032       0.1482
+   6      fiches                         +0.000031       0.0865
+   7      inspecteur                     +0.000028       0.0833
+   8      apprirent                      +0.000027       0.1116
+   9      don                            +0.000026       0.1510
+   10     eût                            +0.000026       0.0479
+   11     noter                          +0.000025       0.0764
+   12     vraisemblablement              +0.000025       0.0896
+   13     jurant                         +0.000021       0.0929
+   14     connaissant                    +0.000017       0.0727
+   15     inlassablement                 +0.000017       0.0821
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      forgeron                       -0.000060       0.1232
+   2      crâne                          -0.000054       0.1384
+   3      intima                         -0.000050       0.1061
+   4      péter                          -0.000048       0.1008
+   5      mentait                        -0.000043       0.0842
+   6      assommé                        -0.000041       0.0831
+   7      tribunaux                      -0.000040       0.1126
+   8      soulagement                    -0.000039       0.0495
+   9      vii                            -0.000031       0.0760
+   10     vol                            -0.000029       0.0479
+   11     colères                        -0.000029       0.0795
+   12     gémir                          -0.000028       0.0757
+   13     maréchal                       -0.000028       0.2786
+   14     porté                          -0.000025       0.0445
+   15     restes                         -0.000023       0.0532
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      padre                          +0.000147       0.5293
+   2      carabinier                     +0.000076       0.1965
+   3      réparation                     +0.000050       0.0896
+   4      prêtre                         +0.000043       0.1278
+   5      montagnard                     +0.000032       0.1482
+   6      fiches                         +0.000031       0.0865
+   7      inspecteur                     +0.000028       0.0833
+   8      apprirent                      +0.000027       0.1116
+   9      don                            +0.000026       0.1510
+   10     eût                            +0.000026       0.0479
+   11     noter                          +0.000025       0.0764
+   12     vraisemblablement              +0.000025       0.0896
+   13     jurant                         +0.000021       0.0929
+   14     connaissant                    +0.000017       0.0727
+   15     inlassablement                 +0.000017       0.0821
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      forgeron                       -0.000060       0.1232
+   2      crâne                          -0.000054       0.1384
+   3      intima                         -0.000050       0.1061
+   4      péter                          -0.000048       0.1008
+   5      mentait                        -0.000043       0.0842
+   6      assommé                        -0.000041       0.0831
+   7      tribunaux                      -0.000040       0.1126
+   8      soulagement                    -0.000039       0.0495
+   9      vii                            -0.000031       0.0760
+   10     vol                            -0.000029       0.0479
+   11     colères                        -0.000029       0.0795
+   12     gémir                          -0.000028       0.0757
+   13     maréchal                       -0.000028       0.2786
+   14     porté                          -0.000025       0.0445
+   15     restes                         -0.000023       0.0532
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      padre                          +0.005483       0.5293
+   2      carabinier                     +0.001574       0.1965
+   3      vraisemblablement              +0.001395       0.0896
+   4      jurant                         +0.001072       0.0929
+   5      troubler                       +0.000963       0.0660
+   6      carabiniers                    +0.000868       0.1679
+   7      tumulte                        +0.000850       0.0760
+   8      maréchal                       +0.000850       0.2786
+   9      estimait                       +0.000845       0.0770
+   10     inspecteur                     +0.000800       0.0833
+   11     eût                            +0.000797       0.0479
+   12     assommé                        +0.000760       0.0831
+   13     causes                         +0.000756       0.0741
+   14     chapitre                       +0.000742       0.0600
+   15     aperçut                        +0.000714       0.0555
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      soulagement                    -0.001282       0.0495
+   2      cynique                        -0.001045       0.0873
+   3      intima                         -0.000826       0.1061
+   4      liait                          -0.000819       0.0933
+   5      multiples                      -0.000676       0.0656
+   6      gémir                          -0.000512       0.0757
+   7      agités                         -0.000477       0.0951
+   8      mentait                        -0.000471       0.0842
+   9      restes                         -0.000454       0.0532
+   10     pauvreté                       -0.000406       0.0804
+   11     forgeron                       -0.000365       0.1232
+   12     reposer                        -0.000315       0.0492
+   13     inlassablement                 -0.000315       0.0821
+   14     emporté                        -0.000311       0.0525
+   15     taire                          -0.000303       0.0451
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      padre                          +0.238339       0.5293
+   2      carabinier                     +0.082254       0.1965
+   3      vraisemblablement              +0.057686       0.0896
+   4      jurant                         +0.046096       0.0929
+   5      troubler                       +0.040366       0.0660
+   6      eût                            +0.038142       0.0479
+   7      causes                         +0.034244       0.0741
+   8      maréchal                       +0.033906       0.2786
+   9      tumulte                        +0.032821       0.0760
+   10     chapitre                       +0.031929       0.0600
+   11     apprirent                      +0.031689       0.1116
+   12     inspecteur                     +0.030949       0.0833
+   13     connaissant                    +0.030368       0.0727
+   14     carabiniers                    +0.030113       0.1679
+   15     fonça                          +0.028835       0.0955
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      soulagement                    -0.056643       0.0495
+   2      intima                         -0.050901       0.1061
+   3      cynique                        -0.044305       0.0873
+   4      liait                          -0.030776       0.0933
+   5      multiples                      -0.030171       0.0656
+   6      mentait                        -0.029707       0.0842
+   7      gémir                          -0.025133       0.0757
+   8      tribunaux                      -0.023493       0.1126
+   9      pauvreté                       -0.020143       0.0804
+   10     emporté                        -0.018743       0.0525
+   11     restes                         -0.018229       0.0532
+   12     forgeron                       -0.016689       0.1232
+   13     agités                         -0.014583       0.0951
+   14     reposer                        -0.014487       0.0492
+   15     demanderait                    -0.014374       0.0872
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+padre                     +0.005483     +0.000147     +0.000147     0.5293
+carabinier                +0.001574     +0.000076     +0.000076     0.1965
+réparation                +0.000305     +0.000050     +0.000050     0.0896
+prêtre                    +0.000000     +0.000043     +0.000043     0.1278
+montagnard                +0.000238     +0.000032     +0.000032     0.1482
+fiches                    +0.000570     +0.000031     +0.000031     0.0865
+inspecteur                +0.000800     +0.000028     +0.000028     0.0833
+apprirent                 +0.000503     +0.000027     +0.000027     0.1116
+don                       +0.000506     +0.000026     +0.000026     0.1510
+eût                       +0.000797     +0.000026     +0.000026     0.0479
+noter                     +0.000309     +0.000025     +0.000025     0.0764
+vraisemblablement         +0.001395     +0.000025     +0.000025     0.0896
+jurant                    +0.001072     +0.000021     +0.000021     0.0929
+connaissant               +0.000631     +0.000017     +0.000017     0.0727
+inlassablement            +0.000000     +0.000017     +0.000017     0.0821
+fonça                     +0.000576     +0.000016     +0.000016     0.0955
+exigea                    +0.000036     +0.000015     +0.000015     0.0982
+visiteurs                 +0.000202     +0.000015     +0.000015     0.0610
+sûrement                  +0.000000     +0.000014     +0.000014     0.0449
+aient                     +0.000000     +0.000014     +0.000014     0.0504
+logit final pour 'homme': 0.8860

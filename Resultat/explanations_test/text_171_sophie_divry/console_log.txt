@@ -1,0 +1,386 @@
+texte analysé: estimer la teneur du repas , afin d accorder mon rythme d avalage à la corne d abondance bertrandine , car rien n est pire que de voir un gueuleton s arrêter net . heureusement , le menu semblait four...
+prédiction: FEMME (confiance: 90.0%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.3143
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mouchard                       +0.000056       0.1110
+   2      obtenu                         +0.000047       0.0432
+   3      estomac                        +0.000047       0.0808
+   4      paulo                          +0.000046       0.1252
+   5      corne                          +0.000045       0.0682
+   6      concurrent                     +0.000042       0.0942
+   7      secrète                        +0.000041       0.0428
+   8      antibiotiques                  +0.000041       0.1116
+   9      pulsions                       +0.000034       0.0855
+   10     rôti                           +0.000031       0.0728
+   11     définitivement                 +0.000029       0.0424
+   12     sylvie                         +0.000022       0.1961
+   13     demandai                       +0.000019       0.1420
+   14     ex                             +0.000016       0.0487
+   15     accorder                       +0.000015       0.0453
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bertrande                      -0.000432       0.7327
+   2      attaquant                      -0.000058       0.0860
+   3      marius                         -0.000051       0.1272
+   4      maux                           -0.000047       0.1148
+   5      délicatement                   -0.000045       0.0483
+   6      battait                        -0.000045       0.0815
+   7      profite                        -0.000042       0.0508
+   8      corbeille                      -0.000036       0.0613
+   9      changea                        -0.000035       0.0516
+   10     poulet                         -0.000034       0.0533
+   11     évanouit                       -0.000032       0.0689
+   12     courgettes                     -0.000031       0.1169
+   13     senti                          -0.000027       0.0349
+   14     gosse                          -0.000027       0.0528
+   15     emploi                         -0.000025       0.0424
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mouchard                       +0.000056       0.1110
+   2      obtenu                         +0.000047       0.0432
+   3      estomac                        +0.000047       0.0808
+   4      paulo                          +0.000046       0.1252
+   5      corne                          +0.000045       0.0682
+   6      concurrent                     +0.000042       0.0942
+   7      secrète                        +0.000041       0.0428
+   8      antibiotiques                  +0.000041       0.1116
+   9      pulsions                       +0.000034       0.0855
+   10     rôti                           +0.000031       0.0728
+   11     définitivement                 +0.000029       0.0424
+   12     sylvie                         +0.000022       0.1961
+   13     demandai                       +0.000019       0.1420
+   14     ex                             +0.000016       0.0487
+   15     accorder                       +0.000015       0.0453
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bertrande                      -0.000432       0.7327
+   2      attaquant                      -0.000058       0.0860
+   3      marius                         -0.000051       0.1272
+   4      maux                           -0.000047       0.1148
+   5      délicatement                   -0.000045       0.0483
+   6      battait                        -0.000045       0.0815
+   7      profite                        -0.000042       0.0508
+   8      corbeille                      -0.000036       0.0613
+   9      changea                        -0.000035       0.0516
+   10     poulet                         -0.000034       0.0533
+   11     évanouit                       -0.000032       0.0689
+   12     courgettes                     -0.000031       0.1169
+   13     senti                          -0.000027       0.0349
+   14     gosse                          -0.000027       0.0528
+   15     emploi                         -0.000025       0.0424
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bertrande                      +0.011249       0.7327
+   2      courgettes                     +0.001819       0.1169
+   3      pouf                           +0.001385       0.0962
+   4      pulsions                       +0.001103       0.0855
+   5      teneur                         +0.001058       0.0845
+   6      salade                         +0.001019       0.1752
+   7      paulo                          +0.000889       0.1252
+   8      calmement                      +0.000857       0.0520
+   9      battait                        +0.000823       0.0815
+   10     rôti                           +0.000799       0.0728
+   11     grandit                        +0.000618       0.0669
+   12     menu                           +0.000601       0.0466
+   13     moineau                        +0.000594       0.0977
+   14     délicatement                   +0.000546       0.0483
+   15     ajouta                         +0.000463       0.0405
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      antibiotiques                  -0.001120       0.1116
+   2      demandai                       -0.000916       0.1420
+   3      marius                         -0.000895       0.1272
+   4      mouchard                       -0.000846       0.1110
+   5      jacky                          -0.000825       0.1451
+   6      parut                          -0.000781       0.0404
+   7      maux                           -0.000726       0.1148
+   8      voisin                         -0.000674       0.0343
+   9      concurrent                     -0.000619       0.0942
+   10     évanouit                       -0.000616       0.0689
+   11     prénommé                       -0.000554       0.1105
+   12     gosse                          -0.000533       0.0528
+   13     estomac                        -0.000492       0.0808
+   14     venus                          -0.000419       0.0344
+   15     fuir                           -0.000413       0.0354
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bertrande                      +0.416048       0.7327
+   2      courgettes                     +0.066266       0.1169
+   3      pulsions                       +0.050211       0.0855
+   4      pouf                           +0.047874       0.0962
+   5      teneur                         +0.041227       0.0845
+   6      moineau                        +0.038944       0.0977
+   7      calmement                      +0.028987       0.0520
+   8      rôti                           +0.023574       0.0728
+   9      délicatement                   +0.022518       0.0483
+   10     menu                           +0.022099       0.0466
+   11     battait                        +0.021695       0.0815
+   12     paulo                          +0.021243       0.1252
+   13     grandit                        +0.020052       0.0669
+   14     déménager                      +0.019471       0.0694
+   15     salade                         +0.018734       0.1752
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      demandai                       -0.065376       0.1420
+   2      jacky                          -0.041362       0.1451
+   3      marius                         -0.040999       0.1272
+   4      antibiotiques                  -0.036229       0.1116
+   5      mouchard                       -0.033028       0.1110
+   6      gosse                          -0.032054       0.0528
+   7      maux                           -0.031942       0.1148
+   8      parut                          -0.029108       0.0404
+   9      voisin                         -0.027048       0.0343
+   10     estomac                        -0.023690       0.0808
+   11     sylvie                         -0.023313       0.1961
+   12     évanouit                       -0.022932       0.0689
+   13     saoul                          -0.020002       0.0766
+   14     type                           -0.018017       0.0363
+   15     cirque                         -0.017240       0.0588
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+mouchard                  +0.000000     +0.000056     +0.000056     0.1110
+obtenu                    +0.000189     +0.000047     +0.000047     0.0432
+estomac                   +0.000000     +0.000047     +0.000047     0.0808
+paulo                     +0.000889     +0.000046     +0.000046     0.1252
+corne                     +0.000000     +0.000045     +0.000045     0.0682
+concurrent                +0.000000     +0.000042     +0.000042     0.0942
+secrète                   +0.000000     +0.000041     +0.000041     0.0428
+antibiotiques             +0.000000     +0.000041     +0.000041     0.1116
+pulsions                  +0.001103     +0.000034     +0.000034     0.0855
+rôti                      +0.000799     +0.000031     +0.000031     0.0728
+définitivement            +0.000000     +0.000029     +0.000029     0.0424
+sylvie                    +0.000000     +0.000022     +0.000022     0.1961
+demandai                  +0.000000     +0.000019     +0.000019     0.1420
+ex                        +0.000000     +0.000016     +0.000016     0.0487
+accorder                  +0.000000     +0.000015     +0.000015     0.0453
+recette                   +0.000000     +0.000014     +0.000014     0.0627
+prénommé                  +0.000000     +0.000011     +0.000011     0.1105
+révélait                  +0.000000     +0.000009     +0.000009     0.0553
+net                       +0.000183     +0.000009     +0.000009     0.0367
+parut                     +0.000000     +0.000009     +0.000009     0.0404
+logit final pour 'femme': 1.3143
+# analyse pour la classe: HOMME
+# logit: -0.8858
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sylvie                         +0.000031       0.1961
+   2      mouchard                       +0.000030       0.1110
+   3      corne                          +0.000027       0.0682
+   4      pulsions                       +0.000025       0.0855
+   5      obtenu                         +0.000023       0.0432
+   6      secrète                        +0.000019       0.0428
+   7      antibiotiques                  +0.000018       0.1116
+   8      abondance                      +0.000014       0.0586
+   9      salade                         +0.000012       0.1752
+   10     voisin                         +0.000011       0.0343
+   11     marius                         +0.000011       0.1272
+   12     merveilleux                    +0.000010       0.0411
+   13     accorder                       +0.000010       0.0453
+   14     rôti                           +0.000009       0.0728
+   15     parut                          +0.000008       0.0404
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bertrande                      -0.000258       0.7327
+   2      attaquant                      -0.000036       0.0860
+   3      délicatement                   -0.000031       0.0483
+   4      battait                        -0.000028       0.0815
+   5      maux                           -0.000027       0.1148
+   6      évanouit                       -0.000024       0.0689
+   7      changea                        -0.000024       0.0516
+   8      saoul                          -0.000022       0.0766
+   9      corbeille                      -0.000019       0.0613
+   10     alcool                         -0.000018       0.0393
+   11     tendances                      -0.000018       0.0908
+   12     profite                        -0.000016       0.0508
+   13     déménager                      -0.000016       0.0694
+   14     calmement                      -0.000014       0.0520
+   15     senti                          -0.000013       0.0349
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sylvie                         +0.000031       0.1961
+   2      mouchard                       +0.000030       0.1110
+   3      corne                          +0.000027       0.0682
+   4      pulsions                       +0.000025       0.0855
+   5      obtenu                         +0.000023       0.0432
+   6      secrète                        +0.000019       0.0428
+   7      antibiotiques                  +0.000018       0.1116
+   8      abondance                      +0.000014       0.0586
+   9      salade                         +0.000012       0.1752
+   10     voisin                         +0.000011       0.0343
+   11     marius                         +0.000011       0.1272
+   12     merveilleux                    +0.000010       0.0411
+   13     accorder                       +0.000010       0.0453
+   14     rôti                           +0.000009       0.0728
+   15     parut                          +0.000008       0.0404
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bertrande                      -0.000258       0.7327
+   2      attaquant                      -0.000036       0.0860
+   3      délicatement                   -0.000031       0.0483
+   4      battait                        -0.000028       0.0815
+   5      maux                           -0.000027       0.1148
+   6      évanouit                       -0.000024       0.0689
+   7      changea                        -0.000024       0.0516
+   8      saoul                          -0.000022       0.0766
+   9      corbeille                      -0.000019       0.0613
+   10     alcool                         -0.000018       0.0393
+   11     tendances                      -0.000018       0.0908
+   12     profite                        -0.000016       0.0508
+   13     déménager                      -0.000016       0.0694
+   14     calmement                      -0.000014       0.0520
+   15     senti                          -0.000013       0.0349
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jacky                          +0.000940       0.1451
+   2      antibiotiques                  +0.000728       0.1116
+   3      marius                         +0.000662       0.1272
+   4      demandai                       +0.000623       0.1420
+   5      mouchard                       +0.000582       0.1110
+   6      parut                          +0.000546       0.0404
+   7      maux                           +0.000523       0.1148
+   8      saoul                          +0.000435       0.0766
+   9      voisin                         +0.000423       0.0343
+   10     prénommé                       +0.000403       0.1105
+   11     nuisance                       +0.000398       0.1162
+   12     évanouit                       +0.000393       0.0689
+   13     estomac                        +0.000384       0.0808
+   14     concurrent                     +0.000371       0.0942
+   15     type                           +0.000310       0.0363
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bertrande                      -0.007051       0.7327
+   2      courgettes                     -0.001257       0.1169
+   3      pouf                           -0.001043       0.0962
+   4      pulsions                       -0.000832       0.0855
+   5      salade                         -0.000820       0.1752
+   6      teneur                         -0.000691       0.0845
+   7      paulo                          -0.000569       0.1252
+   8      calmement                      -0.000548       0.0520
+   9      battait                        -0.000538       0.0815
+   10     rôti                           -0.000475       0.0728
+   11     grandit                        -0.000449       0.0669
+   12     délicatement                   -0.000403       0.0483
+   13     menu                           -0.000392       0.0466
+   14     moineau                        -0.000386       0.0977
+   15     profite                        -0.000384       0.0508
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jacky                          +0.046223       0.1451
+   2      demandai                       +0.043966       0.1420
+   3      antibiotiques                  +0.026552       0.1116
+   4      maux                           +0.026360       0.1148
+   5      saoul                          +0.026010       0.0766
+   6      marius                         +0.024681       0.1272
+   7      mouchard                       +0.022134       0.1110
+   8      estomac                        +0.020634       0.0808
+   9      parut                          +0.019708       0.0404
+   10     gosse                          +0.017295       0.0528
+   11     nuisance                       +0.016634       0.1162
+   12     évanouit                       +0.016549       0.0689
+   13     voisin                         +0.014984       0.0343
+   14     fuir                           +0.014370       0.0354
+   15     type                           +0.013806       0.0363
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bertrande                      -0.245220       0.7327
+   2      courgettes                     -0.048300       0.1169
+   3      pouf                           -0.042960       0.0962
+   4      pulsions                       -0.039503       0.0855
+   5      teneur                         -0.028769       0.0845
+   6      moineau                        -0.024227       0.0977
+   7      salade                         -0.021931       0.1752
+   8      calmement                      -0.017250       0.0520
+   9      grandit                        -0.016801       0.0669
+   10     menu                           -0.016766       0.0466
+   11     potentiel                      -0.016447       0.0848
+   12     délicatement                   -0.015996       0.0483
+   13     battait                        -0.015843       0.0815
+   14     mange                          -0.013387       0.0410
+   15     paulo                          -0.013260       0.1252
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+sylvie                    +0.000050     +0.000031     +0.000031     0.1961
+mouchard                  +0.000582     +0.000030     +0.000030     0.1110
+corne                     +0.000233     +0.000027     +0.000027     0.0682
+pulsions                  +0.000000     +0.000025     +0.000025     0.0855
+obtenu                    +0.000000     +0.000023     +0.000023     0.0432
+secrète                   +0.000193     +0.000019     +0.000019     0.0428
+antibiotiques             +0.000728     +0.000018     +0.000018     0.1116
+abondance                 +0.000000     +0.000014     +0.000014     0.0586
+salade                    +0.000000     +0.000012     +0.000012     0.1752
+voisin                    +0.000423     +0.000011     +0.000011     0.0343
+marius                    +0.000662     +0.000011     +0.000011     0.1272
+merveilleux               +0.000000     +0.000010     +0.000010     0.0411
+accorder                  +0.000253     +0.000010     +0.000010     0.0453
+rôti                      +0.000000     +0.000009     +0.000009     0.0728
+parut                     +0.000546     +0.000008     +0.000008     0.0404
+assiette                  +0.000000     +0.000007     +0.000007     0.0411
+net                       +0.000000     +0.000007     +0.000007     0.0367
+définitivement            +0.000051     +0.000007     +0.000007     0.0424
+concurrent                +0.000371     +0.000006     +0.000006     0.0942
+estomac                   +0.000384     +0.000005     +0.000005     0.0808
+logit final pour 'homme': -0.8858

@@ -1,0 +1,386 @@
+texte analysé: de calla à ses morts . il fallait leur préparer une fête somptueuse . calmer pour toujours leurs colères , adoucir leurs chagrins . jamais plus oscar ne retournerait au cimetière notre dame des neiges...
+prédiction: FEMME (confiance: 77.7%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.6647
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bunker                         +0.000148       0.2033
+   2      quittant                       +0.000060       0.0412
+   3      aveux                          +0.000056       0.0544
+   4      plancher                       +0.000051       0.0768
+   5      cave                           +0.000050       0.0810
+   6      invasion                       +0.000049       0.0599
+   7      placard                        +0.000043       0.0433
+   8      blindée                        +0.000043       0.0790
+   9      embué                          +0.000038       0.0932
+   10     tirs                           +0.000037       0.0744
+   11     suivraient                     +0.000034       0.0911
+   12     grandioses                     +0.000033       0.0811
+   13     vision                         +0.000028       0.0333
+   14     neiges                         +0.000024       0.0684
+   15     oiseau                         +0.000024       0.0341
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      oscar                          -0.000379       0.7011
+   2      mo                             -0.000180       0.3266
+   3      adrian                         -0.000176       0.1390
+   4      clarisse                       -0.000078       0.1106
+   5      repensait                      -0.000063       0.0873
+   6      flous                          -0.000063       0.0737
+   7      cimetière                      -0.000062       0.0793
+   8      préparer                       -0.000058       0.0587
+   9      proches                        -0.000053       0.0354
+   10     attrapée                       -0.000053       0.0834
+   11     soldats                        -0.000052       0.0812
+   12     étrangement                    -0.000050       0.0398
+   13     enlaçait                       -0.000049       0.0911
+   14     adoucir                        -0.000048       0.0641
+   15     star                           -0.000045       0.0653
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bunker                         +0.000148       0.2033
+   2      quittant                       +0.000060       0.0412
+   3      aveux                          +0.000056       0.0544
+   4      plancher                       +0.000051       0.0768
+   5      cave                           +0.000050       0.0810
+   6      invasion                       +0.000049       0.0599
+   7      placard                        +0.000043       0.0433
+   8      blindée                        +0.000043       0.0790
+   9      embué                          +0.000038       0.0932
+   10     tirs                           +0.000037       0.0744
+   11     suivraient                     +0.000034       0.0911
+   12     grandioses                     +0.000033       0.0811
+   13     vision                         +0.000028       0.0333
+   14     neiges                         +0.000024       0.0684
+   15     oiseau                         +0.000024       0.0341
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      oscar                          -0.000379       0.7011
+   2      mo                             -0.000180       0.3266
+   3      adrian                         -0.000176       0.1390
+   4      clarisse                       -0.000078       0.1106
+   5      repensait                      -0.000063       0.0873
+   6      flous                          -0.000063       0.0737
+   7      cimetière                      -0.000062       0.0793
+   8      préparer                       -0.000058       0.0587
+   9      proches                        -0.000053       0.0354
+   10     attrapée                       -0.000053       0.0834
+   11     soldats                        -0.000052       0.0812
+   12     étrangement                    -0.000050       0.0398
+   13     enlaçait                       -0.000049       0.0911
+   14     adoucir                        -0.000048       0.0641
+   15     star                           -0.000045       0.0653
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mo                             +0.005926       0.3266
+   2      enlaçait                       +0.001777       0.0911
+   3      repensait                      +0.001575       0.0873
+   4      remplie                        +0.001202       0.0434
+   5      retournerait                   +0.001159       0.0768
+   6      clarisse                       +0.001006       0.1106
+   7      bruce                          +0.000810       0.1089
+   8      adoucir                        +0.000771       0.0641
+   9      préparer                       +0.000743       0.0587
+   10     passée                         +0.000683       0.0294
+   11     proches                        +0.000682       0.0354
+   12     magnifique                     +0.000678       0.0328
+   13     adieux                         +0.000666       0.0499
+   14     rangeant                       +0.000647       0.0689
+   15     calmer                         +0.000639       0.0338
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      oscar                          -0.006348       0.7011
+   2      plancher                       -0.002063       0.0768
+   3      blindée                        -0.001820       0.0790
+   4      invasion                       -0.001147       0.0599
+   5      épervier                       -0.000961       0.0971
+   6      tronc                          -0.000942       0.0445
+   7      souterrains                    -0.000796       0.0691
+   8      forcés                         -0.000745       0.0633
+   9      drogué                         -0.000736       0.0856
+   10     eurent                         -0.000683       0.0391
+   11     pénétré                        -0.000645       0.0462
+   12     couvrait                       -0.000634       0.0455
+   13     crépuscule                     -0.000632       0.0437
+   14     conduit                        -0.000565       0.0314
+   15     descendu                       -0.000552       0.0378
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mo                             +0.243304       0.3266
+   2      enlaçait                       +0.063470       0.0911
+   3      repensait                      +0.062201       0.0873
+   4      remplie                        +0.050588       0.0434
+   5      adrian                         +0.048372       0.1390
+   6      adoucir                        +0.045465       0.0641
+   7      retournerait                   +0.042065       0.0768
+   8      bruce                          +0.041305       0.1089
+   9      préparer                       +0.039532       0.0587
+   10     calmer                         +0.031589       0.0338
+   11     bunker                         +0.031382       0.2033
+   12     rangeant                       +0.030892       0.0689
+   13     proches                        +0.030413       0.0354
+   14     clarisse                       +0.029871       0.1106
+   15     magnifique                     +0.029612       0.0328
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      oscar                          -0.134006       0.7011
+   2      plancher                       -0.083918       0.0768
+   3      blindée                        -0.076437       0.0790
+   4      invasion                       -0.051601       0.0599
+   5      souterrains                    -0.042648       0.0691
+   6      tronc                          -0.041699       0.0445
+   7      épervier                       -0.037934       0.0971
+   8      eurent                         -0.036152       0.0391
+   9      pénétré                        -0.027982       0.0462
+   10     forcés                         -0.027975       0.0633
+   11     drogué                         -0.026282       0.0856
+   12     paraissaient                   -0.025992       0.0425
+   13     cimetière                      -0.025703       0.0793
+   14     couvrait                       -0.025354       0.0455
+   15     grandioses                     -0.025307       0.0811
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+bunker                    +0.000474     +0.000148     +0.000148     0.2033
+quittant                  +0.000000     +0.000060     +0.000060     0.0412
+aveux                     +0.000000     +0.000056     +0.000056     0.0544
+plancher                  +0.000000     +0.000051     +0.000051     0.0768
+cave                      +0.000000     +0.000050     +0.000050     0.0810
+invasion                  +0.000000     +0.000049     +0.000049     0.0599
+placard                   +0.000000     +0.000043     +0.000043     0.0433
+blindée                   +0.000000     +0.000043     +0.000043     0.0790
+embué                     +0.000064     +0.000038     +0.000038     0.0932
+tirs                      +0.000000     +0.000037     +0.000037     0.0744
+suivraient                +0.000402     +0.000034     +0.000034     0.0911
+grandioses                +0.000000     +0.000033     +0.000033     0.0811
+vision                    +0.000142     +0.000028     +0.000028     0.0333
+neiges                    +0.000000     +0.000024     +0.000024     0.0684
+oiseau                    +0.000000     +0.000024     +0.000024     0.0341
+tronc                     +0.000000     +0.000021     +0.000021     0.0445
+éprouvait                 +0.000000     +0.000021     +0.000021     0.0407
+delà                      +0.000000     +0.000019     +0.000019     0.0298
+eurent                    +0.000000     +0.000018     +0.000018     0.0391
+voués                     +0.000128     +0.000018     +0.000018     0.0840
+logit final pour 'femme': 0.6647
+# analyse pour la classe: HOMME
+# logit: -0.5817
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bunker                         +0.000058       0.2033
+   2      quittant                       +0.000038       0.0412
+   3      invasion                       +0.000029       0.0599
+   4      plancher                       +0.000025       0.0768
+   5      aveux                          +0.000024       0.0544
+   6      oiseau                         +0.000023       0.0341
+   7      tirs                           +0.000023       0.0744
+   8      neiges                         +0.000020       0.0684
+   9      cave                           +0.000017       0.0810
+   10     gisant                         +0.000014       0.0677
+   11     eurent                         +0.000014       0.0391
+   12     pénétré                        +0.000013       0.0462
+   13     novembre                       +0.000012       0.0442
+   14     grandioses                     +0.000011       0.0811
+   15     éprouvait                      +0.000010       0.0407
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mo                             -0.000065       0.3266
+   2      adrian                         -0.000064       0.1390
+   3      repensait                      -0.000052       0.0873
+   4      enlaçait                       -0.000049       0.0911
+   5      cimetière                      -0.000046       0.0793
+   6      soldats                        -0.000040       0.0812
+   7      clarisse                       -0.000039       0.1106
+   8      armée                          -0.000032       0.0684
+   9      oscar                          -0.000030       0.7011
+   10     préparer                       -0.000030       0.0587
+   11     proches                        -0.000026       0.0354
+   12     flous                          -0.000025       0.0737
+   13     attrapée                       -0.000024       0.0834
+   14     étrangement                    -0.000024       0.0398
+   15     rangeant                       -0.000024       0.0689
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bunker                         +0.000058       0.2033
+   2      quittant                       +0.000038       0.0412
+   3      invasion                       +0.000029       0.0599
+   4      plancher                       +0.000025       0.0768
+   5      aveux                          +0.000024       0.0544
+   6      oiseau                         +0.000023       0.0341
+   7      tirs                           +0.000023       0.0744
+   8      neiges                         +0.000020       0.0684
+   9      cave                           +0.000017       0.0810
+   10     gisant                         +0.000014       0.0677
+   11     eurent                         +0.000014       0.0391
+   12     pénétré                        +0.000013       0.0462
+   13     novembre                       +0.000012       0.0442
+   14     grandioses                     +0.000011       0.0811
+   15     éprouvait                      +0.000010       0.0407
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mo                             -0.000065       0.3266
+   2      adrian                         -0.000064       0.1390
+   3      repensait                      -0.000052       0.0873
+   4      enlaçait                       -0.000049       0.0911
+   5      cimetière                      -0.000046       0.0793
+   6      soldats                        -0.000040       0.0812
+   7      clarisse                       -0.000039       0.1106
+   8      armée                          -0.000032       0.0684
+   9      oscar                          -0.000030       0.7011
+   10     préparer                       -0.000030       0.0587
+   11     proches                        -0.000026       0.0354
+   12     flous                          -0.000025       0.0737
+   13     attrapée                       -0.000024       0.0834
+   14     étrangement                    -0.000024       0.0398
+   15     rangeant                       -0.000024       0.0689
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      oscar                          +0.003671       0.7011
+   2      plancher                       +0.001327       0.0768
+   3      blindée                        +0.001238       0.0790
+   4      invasion                       +0.000745       0.0599
+   5      épervier                       +0.000715       0.0971
+   6      tronc                          +0.000590       0.0445
+   7      couvrait                       +0.000517       0.0455
+   8      forcés                         +0.000514       0.0633
+   9      eurent                         +0.000488       0.0391
+   10     paraissaient                   +0.000410       0.0425
+   11     souterrains                    +0.000399       0.0691
+   12     descendu                       +0.000389       0.0378
+   13     crépuscule                     +0.000377       0.0437
+   14     arrêta                         +0.000370       0.0350
+   15     conduit                        +0.000368       0.0314
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mo                             -0.004099       0.3266
+   2      enlaçait                       -0.001251       0.0911
+   3      repensait                      -0.001018       0.0873
+   4      clarisse                       -0.000854       0.1106
+   5      remplie                        -0.000705       0.0434
+   6      retournerait                   -0.000627       0.0768
+   7      bruce                          -0.000622       0.1089
+   8      adoucir                        -0.000611       0.0641
+   9      bunker                         -0.000543       0.2033
+   10     magnifique                     -0.000485       0.0328
+   11     calmer                         -0.000484       0.0338
+   12     adrian                         -0.000475       0.1390
+   13     passée                         -0.000473       0.0294
+   14     attrapée                       -0.000454       0.0834
+   15     rangeant                       -0.000444       0.0689
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      oscar                          +0.102020       0.7011
+   2      plancher                       +0.057628       0.0768
+   3      blindée                        +0.053285       0.0790
+   4      invasion                       +0.033309       0.0599
+   5      tronc                          +0.027916       0.0445
+   6      épervier                       +0.026983       0.0971
+   7      souterrains                    +0.026297       0.0691
+   8      eurent                         +0.024957       0.0391
+   9      forcés                         +0.022583       0.0633
+   10     couvrait                       +0.019626       0.0455
+   11     grandioses                     +0.019448       0.0811
+   12     paraissaient                   +0.019176       0.0425
+   13     arrêta                         +0.018313       0.0350
+   14     couloirs                       +0.018200       0.0416
+   15     extermination                  +0.017951       0.0919
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mo                             -0.157644       0.3266
+   2      enlaçait                       -0.045375       0.0911
+   3      repensait                      -0.039558       0.0873
+   4      adrian                         -0.035455       0.1390
+   5      adoucir                        -0.034507       0.0641
+   6      bunker                         -0.033848       0.2033
+   7      remplie                        -0.032066       0.0434
+   8      clarisse                       -0.029715       0.1106
+   9      bruce                          -0.025197       0.1089
+   10     préparer                       -0.023804       0.0587
+   11     calmer                         -0.023278       0.0338
+   12     recroquevillé                  -0.022709       0.0671
+   13     retournerait                   -0.021492       0.0768
+   14     magnifique                     -0.020822       0.0328
+   15     proches                        -0.020632       0.0354
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+bunker                    +0.000000     +0.000058     +0.000058     0.2033
+quittant                  +0.000148     +0.000038     +0.000038     0.0412
+invasion                  +0.000745     +0.000029     +0.000029     0.0599
+plancher                  +0.001327     +0.000025     +0.000025     0.0768
+aveux                     +0.000245     +0.000024     +0.000024     0.0544
+oiseau                    +0.000114     +0.000023     +0.000023     0.0341
+tirs                      +0.000000     +0.000023     +0.000023     0.0744
+neiges                    +0.000109     +0.000020     +0.000020     0.0684
+cave                      +0.000108     +0.000017     +0.000017     0.0810
+gisant                    +0.000000     +0.000014     +0.000014     0.0677
+eurent                    +0.000488     +0.000014     +0.000014     0.0391
+pénétré                   +0.000364     +0.000013     +0.000013     0.0462
+novembre                  +0.000096     +0.000012     +0.000012     0.0442
+grandioses                +0.000340     +0.000011     +0.000011     0.0811
+éprouvait                 +0.000068     +0.000010     +0.000010     0.0407
+plan                      +0.000345     +0.000009     +0.000009     0.0292
+vision                    +0.000000     +0.000009     +0.000009     0.0333
+conduit                   +0.000368     +0.000008     +0.000008     0.0314
+couvrait                  +0.000517     +0.000007     +0.000007     0.0455
+voués                     +0.000000     +0.000007     +0.000007     0.0840
+logit final pour 'homme': -0.5817

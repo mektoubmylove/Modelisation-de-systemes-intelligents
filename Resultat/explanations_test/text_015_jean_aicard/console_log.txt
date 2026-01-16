@@ -1,0 +1,386 @@
+texte analysé: quoiqu un peu jeune , n ayant que vingt ans , comme vous savez , et c est un brave pitoua . comme il nous en faudrait beaucoup , affirma m . augias avec toute sa gravité . oui , dit arnet , il est bra...
+prédiction: HOMME (confiance: 74.6%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.5402
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      digression                     +0.000242       0.3775
+   2      mulet                          +0.000171       0.3268
+   3      lièvre                         +0.000138       0.2416
+   4      brave                          +0.000103       0.1398
+   5      députés                        +0.000093       0.1447
+   6      enragé                         +0.000064       0.1224
+   7      perdrix                        +0.000062       0.1720
+   8      rênes                          +0.000055       0.1153
+   9      fit                            +0.000054       0.1133
+   10     limite                         +0.000053       0.0720
+   11     bavard                         +0.000052       0.1041
+   12     âne                            +0.000048       0.1888
+   13     corriger                       +0.000037       0.1071
+   14     ajoutait                       +0.000037       0.0851
+   15     cheval                         +0.000030       0.1180
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      garda                          -0.000080       0.0880
+   2      revenions                      -0.000072       0.1778
+   3      appelés                        -0.000070       0.1087
+   4      sagesse                        -0.000065       0.0747
+   5      braconnier                     -0.000052       0.2046
+   6      quelquefois                    -0.000048       0.0753
+   7      charrette                      -0.000042       0.1050
+   8      éloquence                      -0.000042       0.1177
+   9      principes                      -0.000041       0.0875
+   10     lois                           -0.000039       0.0742
+   11     populaire                      -0.000037       0.0887
+   12     travaille                      -0.000031       0.0604
+   13     ba                             -0.000028       0.1752
+   14     croit                          -0.000028       0.0561
+   15     quoiqu                         -0.000028       0.1130
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      digression                     +0.000242       0.3775
+   2      mulet                          +0.000171       0.3268
+   3      lièvre                         +0.000138       0.2416
+   4      brave                          +0.000103       0.1398
+   5      députés                        +0.000093       0.1447
+   6      enragé                         +0.000064       0.1224
+   7      perdrix                        +0.000062       0.1720
+   8      rênes                          +0.000055       0.1153
+   9      fit                            +0.000054       0.1133
+   10     limite                         +0.000053       0.0720
+   11     bavard                         +0.000052       0.1041
+   12     âne                            +0.000048       0.1888
+   13     corriger                       +0.000037       0.1071
+   14     ajoutait                       +0.000037       0.0851
+   15     cheval                         +0.000030       0.1180
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      garda                          -0.000080       0.0880
+   2      revenions                      -0.000072       0.1778
+   3      appelés                        -0.000070       0.1087
+   4      sagesse                        -0.000065       0.0747
+   5      braconnier                     -0.000052       0.2046
+   6      quelquefois                    -0.000048       0.0753
+   7      charrette                      -0.000042       0.1050
+   8      éloquence                      -0.000042       0.1177
+   9      principes                      -0.000041       0.0875
+   10     lois                           -0.000039       0.0742
+   11     populaire                      -0.000037       0.0887
+   12     travaille                      -0.000031       0.0604
+   13     ba                             -0.000028       0.1752
+   14     croit                          -0.000028       0.0561
+   15     quoiqu                         -0.000028       0.1130
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      parte                          +0.002863       0.1870
+   2      appelés                        +0.001509       0.1087
+   3      mener                          +0.001413       0.1269
+   4      affirma                        +0.001386       0.0932
+   5      rênes                          +0.001250       0.1153
+   6      conducteurs                    +0.001250       0.1382
+   7      principes                      +0.001069       0.0875
+   8      travaille                      +0.000912       0.0604
+   9      décide                         +0.000788       0.0686
+   10     rends                          +0.000572       0.0652
+   11     existent                       +0.000541       0.0928
+   12     répété                         +0.000514       0.0757
+   13     patience                       +0.000466       0.0606
+   14     entraîner                      +0.000448       0.0719
+   15     croit                          +0.000418       0.0561
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mulet                          -0.006546       0.3268
+   2      digression                     -0.005215       0.3775
+   3      brave                          -0.002234       0.1398
+   4      chars                          -0.001925       0.1298
+   5      âne                            -0.001880       0.1888
+   6      savant                         -0.001712       0.0899
+   7      éloquence                      -0.001472       0.1177
+   8      députés                        -0.001435       0.1447
+   9      fit                            -0.001372       0.1133
+   10     savants                        -0.001140       0.1052
+   11     conduit                        -0.000873       0.0590
+   12     limite                         -0.000669       0.0720
+   13     coutume                        -0.000644       0.0798
+   14     curieux                        -0.000606       0.0550
+   15     tournure                       -0.000565       0.0950
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      parte                          +0.133342       0.1870
+   2      appelés                        +0.100184       0.1087
+   3      mener                          +0.072513       0.1269
+   4      conducteurs                    +0.071893       0.1382
+   5      rênes                          +0.066211       0.1153
+   6      affirma                        +0.065506       0.0932
+   7      principes                      +0.059048       0.0875
+   8      travaille                      +0.056481       0.0604
+   9      décide                         +0.047694       0.0686
+   10     rends                          +0.032870       0.0652
+   11     existent                       +0.032622       0.0928
+   12     patience                       +0.029939       0.0606
+   13     répété                         +0.028736       0.0757
+   14     entraîner                      +0.028530       0.0719
+   15     répondant                      +0.023593       0.0939
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mulet                          -0.365639       0.3268
+   2      digression                     -0.278531       0.3775
+   3      brave                          -0.122153       0.1398
+   4      âne                            -0.110371       0.1888
+   5      chars                          -0.103644       0.1298
+   6      députés                        -0.090857       0.1447
+   7      savant                         -0.090833       0.0899
+   8      éloquence                      -0.076634       0.1177
+   9      fit                            -0.075526       0.1133
+   10     savants                        -0.060802       0.1052
+   11     conduit                        -0.049369       0.0590
+   12     limite                         -0.044978       0.0720
+   13     enragé                         -0.036963       0.1224
+   14     coutume                        -0.034066       0.0798
+   15     fabriquer                      -0.030959       0.0894
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+digression                +0.000000     +0.000242     +0.000242     0.3775
+mulet                     +0.000000     +0.000171     +0.000171     0.3268
+lièvre                    +0.000000     +0.000138     +0.000138     0.2416
+brave                     +0.000000     +0.000103     +0.000103     0.1398
+députés                   +0.000000     +0.000093     +0.000093     0.1447
+enragé                    +0.000000     +0.000064     +0.000064     0.1224
+perdrix                   +0.000000     +0.000062     +0.000062     0.1720
+rênes                     +0.001250     +0.000055     +0.000055     0.1153
+fit                       +0.000000     +0.000054     +0.000054     0.1133
+limite                    +0.000000     +0.000053     +0.000053     0.0720
+bavard                    +0.000000     +0.000052     +0.000052     0.1041
+âne                       +0.000000     +0.000048     +0.000048     0.1888
+corriger                  +0.000000     +0.000037     +0.000037     0.1071
+ajoutait                  +0.000000     +0.000037     +0.000037     0.0851
+cheval                    +0.000000     +0.000030     +0.000030     0.1180
+chevaux                   +0.000116     +0.000026     +0.000026     0.0695
+chars                     +0.000000     +0.000018     +0.000018     0.1298
+tournure                  +0.000000     +0.000016     +0.000016     0.0950
+miens                     +0.000271     +0.000015     +0.000015     0.0778
+existent                  +0.000541     +0.000014     +0.000014     0.0928
+logit final pour 'femme': -0.5402
+# analyse pour la classe: HOMME  prédite
+# logit: 0.5359
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      digression                     +0.000140       0.3775
+   2      lièvre                         +0.000062       0.2416
+   3      limite                         +0.000046       0.0720
+   4      bavard                         +0.000042       0.1041
+   5      perdrix                        +0.000041       0.1720
+   6      rênes                          +0.000036       0.1153
+   7      corriger                       +0.000034       0.1071
+   8      parte                          +0.000034       0.1870
+   9      députés                        +0.000031       0.1447
+   10     chars                          +0.000028       0.1298
+   11     tournure                       +0.000027       0.0950
+   12     décide                         +0.000026       0.0686
+   13     cheval                         +0.000024       0.1180
+   14     brave                          +0.000023       0.1398
+   15     ba                             +0.000022       0.1752
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      braconnier                     -0.000094       0.2046
+   2      éloquence                      -0.000045       0.1177
+   3      quoiqu                         -0.000043       0.1130
+   4      sagesse                        -0.000043       0.0747
+   5      populaire                      -0.000040       0.0887
+   6      principes                      -0.000039       0.0875
+   7      entraîner                      -0.000037       0.0719
+   8      conducteurs                    -0.000033       0.1382
+   9      garda                          -0.000031       0.0880
+   10     charretier                     -0.000029       0.1752
+   11     rends                          -0.000029       0.0652
+   12     champs                         -0.000026       0.0625
+   13     savant                         -0.000023       0.0899
+   14     capables                       -0.000023       0.0725
+   15     coutume                        -0.000022       0.0798
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      digression                     +0.000140       0.3775
+   2      lièvre                         +0.000062       0.2416
+   3      limite                         +0.000046       0.0720
+   4      bavard                         +0.000042       0.1041
+   5      perdrix                        +0.000041       0.1720
+   6      rênes                          +0.000036       0.1153
+   7      corriger                       +0.000034       0.1071
+   8      parte                          +0.000034       0.1870
+   9      députés                        +0.000031       0.1447
+   10     chars                          +0.000028       0.1298
+   11     tournure                       +0.000027       0.0950
+   12     décide                         +0.000026       0.0686
+   13     cheval                         +0.000024       0.1180
+   14     brave                          +0.000023       0.1398
+   15     ba                             +0.000022       0.1752
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      braconnier                     -0.000094       0.2046
+   2      éloquence                      -0.000045       0.1177
+   3      quoiqu                         -0.000043       0.1130
+   4      sagesse                        -0.000043       0.0747
+   5      populaire                      -0.000040       0.0887
+   6      principes                      -0.000039       0.0875
+   7      entraîner                      -0.000037       0.0719
+   8      conducteurs                    -0.000033       0.1382
+   9      garda                          -0.000031       0.0880
+   10     charretier                     -0.000029       0.1752
+   11     rends                          -0.000029       0.0652
+   12     champs                         -0.000026       0.0625
+   13     savant                         -0.000023       0.0899
+   14     capables                       -0.000023       0.0725
+   15     coutume                        -0.000022       0.0798
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mulet                          +0.006779       0.3268
+   2      digression                     +0.004008       0.3775
+   3      brave                          +0.001948       0.1398
+   4      âne                            +0.001858       0.1888
+   5      chars                          +0.001483       0.1298
+   6      fit                            +0.001327       0.1133
+   7      députés                        +0.001317       0.1447
+   8      éloquence                      +0.001273       0.1177
+   9      savant                         +0.001176       0.0899
+   10     savants                        +0.000839       0.1052
+   11     enragé                         +0.000756       0.1224
+   12     limite                         +0.000734       0.0720
+   13     conduit                        +0.000731       0.0590
+   14     quoiqu                         +0.000715       0.1130
+   15     coutume                        +0.000692       0.0798
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      parte                          -0.002433       0.1870
+   2      appelés                        -0.001329       0.1087
+   3      conducteurs                    -0.001227       0.1382
+   4      affirma                        -0.001186       0.0932
+   5      mener                          -0.001008       0.1269
+   6      décide                         -0.000912       0.0686
+   7      travaille                      -0.000758       0.0604
+   8      rênes                          -0.000740       0.1153
+   9      principes                      -0.000732       0.0875
+   10     existent                       -0.000445       0.0928
+   11     patience                       -0.000425       0.0606
+   12     entraîner                      -0.000389       0.0719
+   13     rends                          -0.000341       0.0652
+   14     croit                          -0.000305       0.0561
+   15     répondant                      -0.000302       0.0939
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mulet                          +0.367660       0.3268
+   2      digression                     +0.250092       0.3775
+   3      âne                            +0.106823       0.1888
+   4      brave                          +0.106342       0.1398
+   5      chars                          +0.081965       0.1298
+   6      députés                        +0.077708       0.1447
+   7      fit                            +0.074680       0.1133
+   8      savant                         +0.069111       0.0899
+   9      éloquence                      +0.068721       0.1177
+   10     savants                        +0.048227       0.1052
+   11     conduit                        +0.043846       0.0590
+   12     limite                         +0.040806       0.0720
+   13     coutume                        +0.037273       0.0798
+   14     tournure                       +0.035679       0.0950
+   15     enragé                         +0.034517       0.1224
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      parte                          -0.121315       0.1870
+   2      appelés                        -0.084805       0.1087
+   3      conducteurs                    -0.072352       0.1382
+   4      affirma                        -0.058622       0.0932
+   5      mener                          -0.053665       0.1269
+   6      décide                         -0.052219       0.0686
+   7      principes                      -0.039805       0.0875
+   8      travaille                      -0.038880       0.0604
+   9      rênes                          -0.037454       0.1153
+   10     existent                       -0.031554       0.0928
+   11     entraîner                      -0.030969       0.0719
+   12     patience                       -0.025675       0.0606
+   13     rends                          -0.025224       0.0652
+   14     miens                          -0.018397       0.0778
+   15     croit                          -0.017764       0.0561
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+digression                +0.004008     +0.000140     +0.000140     0.3775
+lièvre                    +0.000478     +0.000062     +0.000062     0.2416
+limite                    +0.000734     +0.000046     +0.000046     0.0720
+bavard                    +0.000499     +0.000042     +0.000042     0.1041
+perdrix                   +0.000458     +0.000041     +0.000041     0.1720
+rênes                     +0.000000     +0.000036     +0.000036     0.1153
+corriger                  +0.000281     +0.000034     +0.000034     0.1071
+parte                     +0.000000     +0.000034     +0.000034     0.1870
+députés                   +0.001317     +0.000031     +0.000031     0.1447
+chars                     +0.001483     +0.000028     +0.000028     0.1298
+tournure                  +0.000640     +0.000027     +0.000027     0.0950
+décide                    +0.000000     +0.000026     +0.000026     0.0686
+cheval                    +0.000097     +0.000024     +0.000024     0.1180
+brave                     +0.001948     +0.000023     +0.000023     0.1398
+ba                        +0.000071     +0.000022     +0.000022     0.1752
+mener                     +0.000000     +0.000018     +0.000018     0.1269
+chevaux                   +0.000000     +0.000018     +0.000018     0.0695
+ajoutait                  +0.000180     +0.000017     +0.000017     0.0851
+répondant                 +0.000000     +0.000013     +0.000013     0.0939
+fit                       +0.001327     +0.000011     +0.000011     0.1133
+logit final pour 'homme': 0.5359

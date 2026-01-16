@@ -1,0 +1,386 @@
+texte analysé: inquiètes pas . . . où t es en ce moment , on te voit jamais ? même guillaume peut pas dire . . . tu marches à part avec l autre pute maintenant ? mireille ? non , je la vois pas tant que ça . . . je ...
+prédiction: FEMME (confiance: 79.4%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.7917
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sonia                          +0.000165       0.5372
+   2      lirait                         +0.000127       0.1418
+   3      mac                            +0.000101       0.1254
+   4      do                             +0.000100       0.1204
+   5      disparaissait                  +0.000075       0.0772
+   6      marc                           +0.000069       0.0945
+   7      mecs                           +0.000060       0.1088
+   8      verrai                         +0.000051       0.0783
+   9      obéissent                      +0.000046       0.1284
+   10     guillaume                      +0.000042       0.2201
+   11     inquiètes                      +0.000040       0.1131
+   12     passes                         +0.000036       0.0935
+   13     mireille                       +0.000036       0.1568
+   14     calmée                         +0.000035       0.1022
+   15     taxi                           +0.000021       0.0747
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      malignes                       -0.000145       0.1720
+   2      bite                           -0.000096       0.1434
+   3      putain                         -0.000096       0.2522
+   4      engueuler                      -0.000079       0.1220
+   5      laissées                       -0.000075       0.0884
+   6      reproche                       -0.000070       0.0594
+   7      chiens                         -0.000063       0.1127
+   8      sales                          -0.000062       0.0657
+   9      putes                          -0.000062       0.1341
+   10     collé                          -0.000059       0.0703
+   11     reine                          -0.000052       0.0656
+   12     parcs                          -0.000050       0.1201
+   13     support                        -0.000047       0.1123
+   14     bâtards                        -0.000047       0.1378
+   15     parlent                        -0.000047       0.0625
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sonia                          +0.000165       0.5372
+   2      lirait                         +0.000127       0.1418
+   3      mac                            +0.000101       0.1254
+   4      do                             +0.000100       0.1204
+   5      disparaissait                  +0.000075       0.0772
+   6      marc                           +0.000069       0.0945
+   7      mecs                           +0.000060       0.1088
+   8      verrai                         +0.000051       0.0783
+   9      obéissent                      +0.000046       0.1284
+   10     guillaume                      +0.000042       0.2201
+   11     inquiètes                      +0.000040       0.1131
+   12     passes                         +0.000036       0.0935
+   13     mireille                       +0.000036       0.1568
+   14     calmée                         +0.000035       0.1022
+   15     taxi                           +0.000021       0.0747
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      malignes                       -0.000145       0.1720
+   2      bite                           -0.000096       0.1434
+   3      putain                         -0.000096       0.2522
+   4      engueuler                      -0.000079       0.1220
+   5      laissées                       -0.000075       0.0884
+   6      reproche                       -0.000070       0.0594
+   7      chiens                         -0.000063       0.1127
+   8      sales                          -0.000062       0.0657
+   9      putes                          -0.000062       0.1341
+   10     collé                          -0.000059       0.0703
+   11     reine                          -0.000052       0.0656
+   12     parcs                          -0.000050       0.1201
+   13     support                        -0.000047       0.1123
+   14     bâtards                        -0.000047       0.1378
+   15     parlent                        -0.000047       0.0625
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sonia                          +0.003722       0.5372
+   2      calmée                         +0.001338       0.1022
+   3      dégoûtée                       +0.001330       0.1150
+   4      passée                         +0.001011       0.0495
+   5      appréhension                   +0.000866       0.0749
+   6      bâtards                        +0.000845       0.1378
+   7      parlent                        +0.000826       0.0625
+   8      reine                          +0.000801       0.0656
+   9      chie                           +0.000780       0.1679
+   10     guillaume                      +0.000753       0.2201
+   11     sorties                        +0.000745       0.0733
+   12     marches                        +0.000701       0.0510
+   13     piscine                        +0.000636       0.0931
+   14     montée                         +0.000596       0.0611
+   15     malignes                       +0.000561       0.1720
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mireille                       -0.002136       0.1568
+   2      putes                          -0.001884       0.1341
+   3      putain                         -0.001643       0.2522
+   4      mac                            -0.001437       0.1254
+   5      mecs                           -0.001407       0.1088
+   6      flairé                         -0.001247       0.1261
+   7      engueuler                      -0.001208       0.1220
+   8      mômes                          -0.001053       0.1244
+   9      malin                          -0.000899       0.0675
+   10     descendait                     -0.000874       0.0634
+   11     chier                          -0.000866       0.1108
+   12     gueule                         -0.000663       0.0590
+   13     type                           -0.000622       0.0532
+   14     merde                          -0.000615       0.0776
+   15     marc                           -0.000551       0.0945
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sonia                          +0.235871       0.5372
+   2      dégoûtée                       +0.067575       0.1150
+   3      calmée                         +0.065371       0.1022
+   4      bâtards                        +0.051336       0.1378
+   5      chie                           +0.048670       0.1679
+   6      passée                         +0.048640       0.0495
+   7      reine                          +0.048405       0.0656
+   8      guillaume                      +0.045904       0.2201
+   9      piscine                        +0.040704       0.0931
+   10     parlent                        +0.040560       0.0625
+   11     clébard                        +0.038730       0.1679
+   12     appréhension                   +0.037331       0.0749
+   13     marches                        +0.036965       0.0510
+   14     sorties                        +0.035975       0.0733
+   15     malignes                       +0.026081       0.1720
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mireille                       -0.105277       0.1568
+   2      putain                         -0.088806       0.2522
+   3      putes                          -0.086050       0.1341
+   4      mac                            -0.073201       0.1254
+   5      mecs                           -0.062697       0.1088
+   6      flairé                         -0.058914       0.1261
+   7      malin                          -0.049054       0.0675
+   8      engueuler                      -0.043560       0.1220
+   9      descendait                     -0.043343       0.0634
+   10     mômes                          -0.035497       0.1244
+   11     chier                          -0.031296       0.1108
+   12     marc                           -0.029905       0.0945
+   13     disparaissait                  -0.029816       0.0772
+   14     insulter                       -0.027808       0.0948
+   15     gueule                         -0.026877       0.0590
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+sonia                     +0.003722     +0.000165     +0.000165     0.5372
+lirait                    +0.000354     +0.000127     +0.000127     0.1418
+mac                       +0.000000     +0.000101     +0.000101     0.1254
+do                        +0.000000     +0.000100     +0.000100     0.1204
+disparaissait             +0.000000     +0.000075     +0.000075     0.0772
+marc                      +0.000000     +0.000069     +0.000069     0.0945
+mecs                      +0.000000     +0.000060     +0.000060     0.1088
+verrai                    +0.000091     +0.000051     +0.000051     0.0783
+obéissent                 +0.000000     +0.000046     +0.000046     0.1284
+guillaume                 +0.000753     +0.000042     +0.000042     0.2201
+inquiètes                 +0.000358     +0.000040     +0.000040     0.1131
+passes                    +0.000268     +0.000036     +0.000036     0.0935
+mireille                  +0.000000     +0.000036     +0.000036     0.1568
+calmée                    +0.001338     +0.000035     +0.000035     0.1022
+taxi                      +0.000000     +0.000021     +0.000021     0.0747
+merde                     +0.000000     +0.000020     +0.000020     0.0776
+descendait                +0.000000     +0.000016     +0.000016     0.0634
+montée                    +0.000596     +0.000015     +0.000015     0.0611
+mômes                     +0.000000     +0.000013     +0.000013     0.1244
+pute                      +0.000000     +0.000013     +0.000013     0.1076
+logit final pour 'femme': 0.7917
+# analyse pour la classe: HOMME
+# logit: -0.5569
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lirait                         +0.000096       0.1418
+   2      sonia                          +0.000060       0.5372
+   3      do                             +0.000054       0.1204
+   4      obéissent                      +0.000050       0.1284
+   5      marc                           +0.000050       0.0945
+   6      mireille                       +0.000043       0.1568
+   7      disparaissait                  +0.000042       0.0772
+   8      verrai                         +0.000042       0.0783
+   9      mecs                           +0.000039       0.1088
+   10     inquiètes                      +0.000037       0.1131
+   11     calmée                         +0.000032       0.1022
+   12     taxi                           +0.000025       0.0747
+   13     clébard                        +0.000018       0.1679
+   14     descendait                     +0.000017       0.0634
+   15     écrasée                        +0.000011       0.0873
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      putain                         -0.000107       0.2522
+   2      malignes                       -0.000073       0.1720
+   3      laissées                       -0.000060       0.0884
+   4      engueuler                      -0.000059       0.1220
+   5      bâtard                         -0.000045       0.1142
+   6      bite                           -0.000045       0.1434
+   7      collé                          -0.000043       0.0703
+   8      reproche                       -0.000041       0.0594
+   9      reine                          -0.000041       0.0656
+   10     flairé                         -0.000034       0.1261
+   11     tapent                         -0.000032       0.1480
+   12     sales                          -0.000030       0.0657
+   13     insulter                       -0.000029       0.0948
+   14     sorties                        -0.000027       0.0733
+   15     putes                          -0.000027       0.1341
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lirait                         +0.000096       0.1418
+   2      sonia                          +0.000060       0.5372
+   3      do                             +0.000054       0.1204
+   4      obéissent                      +0.000050       0.1284
+   5      marc                           +0.000050       0.0945
+   6      mireille                       +0.000043       0.1568
+   7      disparaissait                  +0.000042       0.0772
+   8      verrai                         +0.000042       0.0783
+   9      mecs                           +0.000039       0.1088
+   10     inquiètes                      +0.000037       0.1131
+   11     calmée                         +0.000032       0.1022
+   12     taxi                           +0.000025       0.0747
+   13     clébard                        +0.000018       0.1679
+   14     descendait                     +0.000017       0.0634
+   15     écrasée                        +0.000011       0.0873
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      putain                         -0.000107       0.2522
+   2      malignes                       -0.000073       0.1720
+   3      laissées                       -0.000060       0.0884
+   4      engueuler                      -0.000059       0.1220
+   5      bâtard                         -0.000045       0.1142
+   6      bite                           -0.000045       0.1434
+   7      collé                          -0.000043       0.0703
+   8      reproche                       -0.000041       0.0594
+   9      reine                          -0.000041       0.0656
+   10     flairé                         -0.000034       0.1261
+   11     tapent                         -0.000032       0.1480
+   12     sales                          -0.000030       0.0657
+   13     insulter                       -0.000029       0.0948
+   14     sorties                        -0.000027       0.0733
+   15     putes                          -0.000027       0.1341
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mireille                       +0.001810       0.1568
+   2      putain                         +0.001374       0.2522
+   3      putes                          +0.001371       0.1341
+   4      mac                            +0.001262       0.1254
+   5      mecs                           +0.000977       0.1088
+   6      flairé                         +0.000902       0.1261
+   7      malin                          +0.000688       0.0675
+   8      chier                          +0.000611       0.1108
+   9      mômes                          +0.000516       0.1244
+   10     type                           +0.000485       0.0532
+   11     engueuler                      +0.000465       0.1220
+   12     merde                          +0.000459       0.0776
+   13     gueule                         +0.000422       0.0590
+   14     descendait                     +0.000419       0.0634
+   15     taxi                           +0.000313       0.0747
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sonia                          -0.002247       0.5372
+   2      calmée                         -0.001034       0.1022
+   3      dégoûtée                       -0.000823       0.1150
+   4      passée                         -0.000759       0.0495
+   5      piscine                        -0.000691       0.0931
+   6      clébard                        -0.000657       0.1679
+   7      chie                           -0.000622       0.1679
+   8      malignes                       -0.000591       0.1720
+   9      reine                          -0.000585       0.0656
+   10     parlent                        -0.000572       0.0625
+   11     appréhension                   -0.000554       0.0749
+   12     marches                        -0.000535       0.0510
+   13     écrasée                        -0.000452       0.0873
+   14     sorties                        -0.000398       0.0733
+   15     tapent                         -0.000388       0.1480
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mireille                       +0.088445       0.1568
+   2      putain                         +0.079733       0.2522
+   3      putes                          +0.067649       0.1341
+   4      mac                            +0.065121       0.1254
+   5      mecs                           +0.043657       0.1088
+   6      flairé                         +0.043018       0.1261
+   7      malin                          +0.040360       0.0675
+   8      chier                          +0.026387       0.1108
+   9      gamins                         +0.025020       0.0812
+   10     type                           +0.022468       0.0532
+   11     descendait                     +0.021775       0.0634
+   12     merde                          +0.021139       0.0776
+   13     gueule                         +0.020214       0.0590
+   14     engueuler                      +0.019928       0.1220
+   15     marc                           +0.019519       0.0945
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sonia                          -0.146805       0.5372
+   2      calmée                         -0.052075       0.1022
+   3      dégoûtée                       -0.045083       0.1150
+   4      chie                           -0.040216       0.1679
+   5      piscine                        -0.037788       0.0931
+   6      passée                         -0.037300       0.0495
+   7      clébard                        -0.036881       0.1679
+   8      reine                          -0.033367       0.0656
+   9      marches                        -0.032692       0.0510
+   10     guillaume                      -0.027449       0.2201
+   11     parlent                        -0.026294       0.0625
+   12     appréhension                   -0.025880       0.0749
+   13     malignes                       -0.024328       0.1720
+   14     bâtards                        -0.023965       0.1378
+   15     sorties                        -0.020681       0.0733
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+lirait                    +0.000146     +0.000096     +0.000096     0.1418
+sonia                     +0.000000     +0.000060     +0.000060     0.5372
+do                        +0.000000     +0.000054     +0.000054     0.1204
+obéissent                 +0.000281     +0.000050     +0.000050     0.1284
+marc                      +0.000291     +0.000050     +0.000050     0.0945
+mireille                  +0.001810     +0.000043     +0.000043     0.1568
+disparaissait             +0.000254     +0.000042     +0.000042     0.0772
+verrai                    +0.000000     +0.000042     +0.000042     0.0783
+mecs                      +0.000977     +0.000039     +0.000039     0.1088
+inquiètes                 +0.000000     +0.000037     +0.000037     0.1131
+calmée                    +0.000000     +0.000032     +0.000032     0.1022
+taxi                      +0.000313     +0.000025     +0.000025     0.0747
+clébard                   +0.000000     +0.000018     +0.000018     0.1679
+descendait                +0.000419     +0.000017     +0.000017     0.0634
+écrasée                   +0.000000     +0.000011     +0.000011     0.0873
+mômes                     +0.000516     +0.000011     +0.000011     0.1244
+piscine                   +0.000000     +0.000008     +0.000008     0.0931
+refuser                   +0.000000     +0.000008     +0.000008     0.0564
+marches                   +0.000000     +0.000007     +0.000007     0.0510
+mac                       +0.001262     +0.000007     +0.000007     0.1254
+logit final pour 'homme': -0.5569

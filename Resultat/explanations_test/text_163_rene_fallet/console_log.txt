@@ -1,0 +1,386 @@
+texte analysé: soir là , buvait une bière en compagnie de mr tim . celui ci , placide , lançait en l air : pas soûl , ce soir , chicagoan ? pas en forme . il n y aura pas de la grande musique , boss . vous buvez tro...
+prédiction: HOMME (confiance: 78.0%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.6769
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      soûl                           +0.000187       0.1768
+   2      mr                             +0.000105       0.3870
+   3      timothy                        +0.000058       0.1461
+   4      gagnèrent                      +0.000057       0.0768
+   5      soie                           +0.000054       0.0735
+   6      touchez                        +0.000040       0.0753
+   7      alcools                        +0.000036       0.0858
+   8      imbéciles                      +0.000032       0.1127
+   9      whisky                         +0.000030       0.0557
+   10     torero                         +0.000030       0.1248
+   11     artistes                       +0.000028       0.0540
+   12     blonde                         +0.000028       0.0370
+   13     alluma                         +0.000026       0.0474
+   14     gratté                         +0.000025       0.0912
+   15     pub                            +0.000023       0.0830
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tim                            -0.000393       0.5037
+   2      roy                            -0.000115       0.2043
+   3      serveuse                       -0.000046       0.0668
+   4      recouvrait                     -0.000044       0.0558
+   5      trombone                       -0.000043       0.1137
+   6      consommateurs                  -0.000043       0.0778
+   7      ivre                           -0.000042       0.0434
+   8      lenteur                        -0.000041       0.0468
+   9      harry                          -0.000039       0.1986
+   10     ernie                          -0.000035       0.1584
+   11     estrade                        -0.000034       0.1166
+   12     james                          -0.000033       0.0726
+   13     boss                           -0.000033       0.1768
+   14     conseilla                      -0.000029       0.0634
+   15     charleston                     -0.000025       0.1284
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      soûl                           +0.000187       0.1768
+   2      mr                             +0.000105       0.3870
+   3      timothy                        +0.000058       0.1461
+   4      gagnèrent                      +0.000057       0.0768
+   5      soie                           +0.000054       0.0735
+   6      touchez                        +0.000040       0.0753
+   7      alcools                        +0.000036       0.0858
+   8      imbéciles                      +0.000032       0.1127
+   9      whisky                         +0.000030       0.0557
+   10     torero                         +0.000030       0.1248
+   11     artistes                       +0.000028       0.0540
+   12     blonde                         +0.000028       0.0370
+   13     alluma                         +0.000026       0.0474
+   14     gratté                         +0.000025       0.0912
+   15     pub                            +0.000023       0.0830
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tim                            -0.000393       0.5037
+   2      roy                            -0.000115       0.2043
+   3      serveuse                       -0.000046       0.0668
+   4      recouvrait                     -0.000044       0.0558
+   5      trombone                       -0.000043       0.1137
+   6      consommateurs                  -0.000043       0.0778
+   7      ivre                           -0.000042       0.0434
+   8      lenteur                        -0.000041       0.0468
+   9      harry                          -0.000039       0.1986
+   10     ernie                          -0.000035       0.1584
+   11     estrade                        -0.000034       0.1166
+   12     james                          -0.000033       0.0726
+   13     boss                           -0.000033       0.1768
+   14     conseilla                      -0.000029       0.0634
+   15     charleston                     -0.000025       0.1284
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tim                            +0.003533       0.5037
+   2      attrapa                        +0.001233       0.0626
+   3      jeun                           +0.001141       0.0858
+   4      mr                             +0.000932       0.3870
+   5      james                          +0.000922       0.0726
+   6      conseilla                      +0.000772       0.0634
+   7      gisait                         +0.000673       0.0540
+   8      soie                           +0.000671       0.0735
+   9      charleston                     +0.000628       0.1284
+   10     accepté                        +0.000590       0.0339
+   11     lança                          +0.000572       0.0422
+   12     roy                            +0.000565       0.2043
+   13     jolie                          +0.000561       0.0318
+   14     gratté                         +0.000457       0.0912
+   15     cérémonie                      +0.000436       0.0432
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      harry                          -0.002430       0.1986
+   2      imbéciles                      -0.002042       0.1127
+   3      timothy                        -0.001895       0.1461
+   4      alcools                        -0.001615       0.0858
+   5      consommateurs                  -0.001564       0.0778
+   6      soûl                           -0.001414       0.1768
+   7      estrade                        -0.001413       0.1166
+   8      gentlemen                      -0.001294       0.0926
+   9      torero                         -0.001177       0.1248
+   10     trombone                       -0.001117       0.1137
+   11     gagnèrent                      -0.001041       0.0768
+   12     boss                           -0.000864       0.1768
+   13     buvait                         -0.000763       0.0442
+   14     messieurs                      -0.000644       0.0421
+   15     tournèrent                     -0.000638       0.0615
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tim                            +0.300167       0.5037
+   2      mr                             +0.070835       0.3870
+   3      attrapa                        +0.060264       0.0626
+   4      jeun                           +0.057831       0.0858
+   5      conseilla                      +0.042610       0.0634
+   6      james                          +0.038643       0.0726
+   7      charleston                     +0.035957       0.1284
+   8      gisait                         +0.032821       0.0540
+   9      soie                           +0.031293       0.0735
+   10     jolie                          +0.026839       0.0318
+   11     accepté                        +0.025139       0.0339
+   12     lança                          +0.023345       0.0422
+   13     roy                            +0.022532       0.2043
+   14     gratté                         +0.021034       0.0912
+   15     cérémonie                      +0.020458       0.0432
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      imbéciles                      -0.116309       0.1127
+   2      harry                          -0.096242       0.1986
+   3      timothy                        -0.085873       0.1461
+   4      estrade                        -0.075901       0.1166
+   5      consommateurs                  -0.075628       0.0778
+   6      soûl                           -0.074128       0.1768
+   7      alcools                        -0.072044       0.0858
+   8      gentlemen                      -0.064269       0.0926
+   9      torero                         -0.061203       0.1248
+   10     trombone                       -0.057878       0.1137
+   11     gagnèrent                      -0.056453       0.0768
+   12     emphatique                     -0.037790       0.1021
+   13     buvait                         -0.034340       0.0442
+   14     chelsea                        -0.034112       0.1284
+   15     tournèrent                     -0.033862       0.0615
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+soûl                      +0.000000     +0.000187     +0.000187     0.1768
+mr                        +0.000932     +0.000105     +0.000105     0.3870
+timothy                   +0.000000     +0.000058     +0.000058     0.1461
+gagnèrent                 +0.000000     +0.000057     +0.000057     0.0768
+soie                      +0.000671     +0.000054     +0.000054     0.0735
+touchez                   +0.000000     +0.000040     +0.000040     0.0753
+alcools                   +0.000000     +0.000036     +0.000036     0.0858
+imbéciles                 +0.000000     +0.000032     +0.000032     0.1127
+whisky                    +0.000000     +0.000030     +0.000030     0.0557
+torero                    +0.000000     +0.000030     +0.000030     0.1248
+artistes                  +0.000000     +0.000028     +0.000028     0.0540
+blonde                    +0.000386     +0.000028     +0.000028     0.0370
+alluma                    +0.000023     +0.000026     +0.000026     0.0474
+gratté                    +0.000457     +0.000025     +0.000025     0.0912
+pub                       +0.000307     +0.000023     +0.000023     0.0830
+musiciens                 +0.000000     +0.000021     +0.000021     0.0604
+chaises                   +0.000000     +0.000021     +0.000021     0.0390
+batterie                  +0.000000     +0.000020     +0.000020     0.0636
+gentlemen                 +0.000000     +0.000019     +0.000019     0.0926
+buvez                     +0.000252     +0.000019     +0.000019     0.0680
+logit final pour 'femme': -0.6769
+# analyse pour la classe: HOMME  prédite
+# logit: 0.5866
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      soûl                           +0.000087       0.1768
+   2      timothy                        +0.000046       0.1461
+   3      pub                            +0.000043       0.0830
+   4      imbéciles                      +0.000036       0.1127
+   5      soie                           +0.000034       0.0735
+   6      touchez                        +0.000033       0.0753
+   7      charleston                     +0.000031       0.1284
+   8      blonde                         +0.000031       0.0370
+   9      gagnèrent                      +0.000029       0.0768
+   10     batterie                       +0.000028       0.0636
+   11     gratté                         +0.000026       0.0912
+   12     artistes                       +0.000022       0.0540
+   13     mr                             +0.000019       0.3870
+   14     amateurs                       +0.000018       0.0597
+   15     emphatique                     +0.000018       0.1021
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tim                            -0.000277       0.5037
+   2      roy                            -0.000085       0.2043
+   3      recouvrait                     -0.000033       0.0558
+   4      snobs                          -0.000033       0.0989
+   5      harry                          -0.000032       0.1986
+   6      conseilla                      -0.000030       0.0634
+   7      boss                           -0.000029       0.1768
+   8      consommateurs                  -0.000027       0.0778
+   9      james                          -0.000026       0.0726
+   10     estrade                        -0.000025       0.1166
+   11     ivre                           -0.000025       0.0434
+   12     fracas                         -0.000023       0.0472
+   13     vice                           -0.000021       0.0511
+   14     désigner                       -0.000021       0.0556
+   15     lenteur                        -0.000019       0.0468
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      soûl                           +0.000087       0.1768
+   2      timothy                        +0.000046       0.1461
+   3      pub                            +0.000043       0.0830
+   4      imbéciles                      +0.000036       0.1127
+   5      soie                           +0.000034       0.0735
+   6      touchez                        +0.000033       0.0753
+   7      charleston                     +0.000031       0.1284
+   8      blonde                         +0.000031       0.0370
+   9      gagnèrent                      +0.000029       0.0768
+   10     batterie                       +0.000028       0.0636
+   11     gratté                         +0.000026       0.0912
+   12     artistes                       +0.000022       0.0540
+   13     mr                             +0.000019       0.3870
+   14     amateurs                       +0.000018       0.0597
+   15     emphatique                     +0.000018       0.1021
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tim                            -0.000277       0.5037
+   2      roy                            -0.000085       0.2043
+   3      recouvrait                     -0.000033       0.0558
+   4      snobs                          -0.000033       0.0989
+   5      harry                          -0.000032       0.1986
+   6      conseilla                      -0.000030       0.0634
+   7      boss                           -0.000029       0.1768
+   8      consommateurs                  -0.000027       0.0778
+   9      james                          -0.000026       0.0726
+   10     estrade                        -0.000025       0.1166
+   11     ivre                           -0.000025       0.0434
+   12     fracas                         -0.000023       0.0472
+   13     vice                           -0.000021       0.0511
+   14     désigner                       -0.000021       0.0556
+   15     lenteur                        -0.000019       0.0468
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      harry                          +0.002311       0.1986
+   2      imbéciles                      +0.002010       0.1127
+   3      alcools                        +0.001619       0.0858
+   4      consommateurs                  +0.001406       0.0778
+   5      soûl                           +0.001394       0.1768
+   6      timothy                        +0.001333       0.1461
+   7      estrade                        +0.001307       0.1166
+   8      gentlemen                      +0.001179       0.0926
+   9      torero                         +0.000999       0.1248
+   10     gagnèrent                      +0.000979       0.0768
+   11     trombone                       +0.000966       0.1137
+   12     boss                           +0.000809       0.1768
+   13     tournèrent                     +0.000786       0.0615
+   14     cigare                         +0.000674       0.0567
+   15     buvait                         +0.000662       0.0442
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tim                            -0.003346       0.5037
+   2      mr                             -0.001715       0.3870
+   3      attrapa                        -0.001153       0.0626
+   4      jeun                           -0.001103       0.0858
+   5      james                          -0.000771       0.0726
+   6      soie                           -0.000657       0.0735
+   7      conseilla                      -0.000584       0.0634
+   8      gisait                         -0.000520       0.0540
+   9      jolie                          -0.000513       0.0318
+   10     lança                          -0.000511       0.0422
+   11     accepté                        -0.000439       0.0339
+   12     cérémonie                      -0.000419       0.0432
+   13     blonde                         -0.000387       0.0370
+   14     buvez                          -0.000313       0.0680
+   15     gratté                         -0.000293       0.0912
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      imbéciles                      +0.098696       0.1127
+   2      harry                          +0.088580       0.1986
+   3      soûl                           +0.067720       0.1768
+   4      alcools                        +0.064969       0.0858
+   5      consommateurs                  +0.059853       0.0778
+   6      estrade                        +0.059012       0.1166
+   7      gentlemen                      +0.056004       0.0926
+   8      timothy                        +0.053704       0.1461
+   9      torero                         +0.047547       0.1248
+   10     trombone                       +0.046118       0.1137
+   11     gagnèrent                      +0.044376       0.0768
+   12     tournèrent                     +0.032376       0.0615
+   13     cigare                         +0.029998       0.0567
+   14     amateurs                       +0.029820       0.0597
+   15     buvait                         +0.028699       0.0442
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tim                            -0.263521       0.5037
+   2      mr                             -0.088842       0.3870
+   3      attrapa                        -0.050073       0.0626
+   4      jeun                           -0.047028       0.0858
+   5      james                          -0.037221       0.0726
+   6      conseilla                      -0.035773       0.0634
+   7      soie                           -0.027079       0.0735
+   8      gisait                         -0.025867       0.0540
+   9      jolie                          -0.023736       0.0318
+   10     lança                          -0.020695       0.0422
+   11     cérémonie                      -0.018161       0.0432
+   12     roy                            -0.017238       0.2043
+   13     accepté                        -0.016644       0.0339
+   14     blonde                         -0.014874       0.0370
+   15     recouvrait                     -0.012599       0.0558
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+soûl                      +0.001394     +0.000087     +0.000087     0.1768
+timothy                   +0.001333     +0.000046     +0.000046     0.1461
+pub                       +0.000000     +0.000043     +0.000043     0.0830
+imbéciles                 +0.002010     +0.000036     +0.000036     0.1127
+soie                      +0.000000     +0.000034     +0.000034     0.0735
+touchez                   +0.000532     +0.000033     +0.000033     0.0753
+charleston                +0.000000     +0.000031     +0.000031     0.1284
+blonde                    +0.000000     +0.000031     +0.000031     0.0370
+gagnèrent                 +0.000979     +0.000029     +0.000029     0.0768
+batterie                  +0.000240     +0.000028     +0.000028     0.0636
+gratté                    +0.000000     +0.000026     +0.000026     0.0912
+artistes                  +0.000124     +0.000022     +0.000022     0.0540
+mr                        +0.000000     +0.000019     +0.000019     0.3870
+amateurs                  +0.000606     +0.000018     +0.000018     0.0597
+emphatique                +0.000441     +0.000018     +0.000018     0.1021
+voyez                     +0.000223     +0.000017     +0.000017     0.0317
+alcools                   +0.001619     +0.000016     +0.000016     0.0858
+housse                    +0.000605     +0.000016     +0.000016     0.1792
+gentlemen                 +0.001179     +0.000014     +0.000014     0.0926
+alluma                    +0.000098     +0.000013     +0.000013     0.0474
+logit final pour 'homme': 0.5866

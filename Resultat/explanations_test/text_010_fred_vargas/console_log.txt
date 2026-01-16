@@ -1,0 +1,386 @@
+texte analysé: ? on peut vérifier , appeler le ministère . . . certes , monsieur le commissaire , mais si c était sorel , cela fera du vilain . il n a pas bon caractère . paquelin se rassit lourdement . vous étiez d...
+prédiction: FEMME (confiance: 63.3%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.2756
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      muséum                         +0.000138       0.1675
+   2      contrôlé                       +0.000102       0.2517
+   3      transpirant                    +0.000083       0.1562
+   4      disparitions                   +0.000053       0.2714
+   5      balustrade                     +0.000051       0.0973
+   6      chapitre                       +0.000047       0.0643
+   7      subordonnés                    +0.000043       0.1326
+   8      carrément                      +0.000036       0.0784
+   9      vilain                         +0.000034       0.0779
+   10     osa                            +0.000029       0.0725
+   11     reprit                         +0.000022       0.0543
+   12     rassit                         +0.000022       0.0996
+   13     étiez                          +0.000020       0.0514
+   14     excuses                        +0.000015       0.0642
+   15     retrouva                       +0.000015       0.0637
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bricole                        -0.000513       0.4379
+   2      adamsberg                      -0.000289       0.2346
+   3      filez                          -0.000121       0.1258
+   4      vérifier                       -0.000117       0.1668
+   5      apportée                       -0.000097       0.0969
+   6      déglingué                      -0.000076       0.1609
+   7      témoin                         -0.000057       0.0542
+   8      boulot                         -0.000053       0.1478
+   9      bénédiction                    -0.000051       0.0822
+   10     interrompre                    -0.000049       0.0617
+   11     exceptionnel                   -0.000048       0.0766
+   12     phalange                       -0.000036       0.1467
+   13     réfléchi                       -0.000035       0.0596
+   14     braqué                         -0.000032       0.1071
+   15     suffire                        -0.000032       0.0902
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      muséum                         +0.000138       0.1675
+   2      contrôlé                       +0.000102       0.2517
+   3      transpirant                    +0.000083       0.1562
+   4      disparitions                   +0.000053       0.2714
+   5      balustrade                     +0.000051       0.0973
+   6      chapitre                       +0.000047       0.0643
+   7      subordonnés                    +0.000043       0.1326
+   8      carrément                      +0.000036       0.0784
+   9      vilain                         +0.000034       0.0779
+   10     osa                            +0.000029       0.0725
+   11     reprit                         +0.000022       0.0543
+   12     rassit                         +0.000022       0.0996
+   13     étiez                          +0.000020       0.0514
+   14     excuses                        +0.000015       0.0642
+   15     retrouva                       +0.000015       0.0637
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bricole                        -0.000513       0.4379
+   2      adamsberg                      -0.000289       0.2346
+   3      filez                          -0.000121       0.1258
+   4      vérifier                       -0.000117       0.1668
+   5      apportée                       -0.000097       0.0969
+   6      déglingué                      -0.000076       0.1609
+   7      témoin                         -0.000057       0.0542
+   8      boulot                         -0.000053       0.1478
+   9      bénédiction                    -0.000051       0.0822
+   10     interrompre                    -0.000049       0.0617
+   11     exceptionnel                   -0.000048       0.0766
+   12     phalange                       -0.000036       0.1467
+   13     réfléchi                       -0.000035       0.0596
+   14     braqué                         -0.000032       0.1071
+   15     suffire                        -0.000032       0.0902
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      adamsberg                      +0.004812       0.2346
+   2      déglingué                      +0.003041       0.1609
+   3      vérifier                       +0.002799       0.1668
+   4      bénédiction                    +0.001884       0.0822
+   5      rassit                         +0.001360       0.0996
+   6      louis                          +0.001143       0.1891
+   7      devrait                        +0.001140       0.0470
+   8      normal                         +0.001139       0.0510
+   9      tourna                         +0.000928       0.1107
+   10     exceptionnel                   +0.000893       0.0766
+   11     apportée                       +0.000875       0.0969
+   12     soutenue                       +0.000577       0.0868
+   13     ressemblait                    +0.000565       0.0491
+   14     disparitions                   +0.000477       0.2714
+   15     rend                           +0.000473       0.0470
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pouce                          -0.003005       0.1167
+   2      bricole                        -0.002358       0.4379
+   3      os                             -0.001574       0.2088
+   4      commissaire                    -0.001567       0.0840
+   5      accoudé                        -0.001541       0.1002
+   6      braqué                         -0.001485       0.1071
+   7      chapitre                       -0.001468       0.0643
+   8      transpirant                    -0.001358       0.1562
+   9      signalé                        -0.001247       0.0912
+   10     muséum                         -0.001196       0.1675
+   11     patron                         -0.001037       0.0551
+   12     boulot                         -0.000984       0.1478
+   13     contrôlé                       -0.000955       0.2517
+   14     réfléchi                       -0.000766       0.0596
+   15     cul                            -0.000754       0.0661
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      adamsberg                      +0.211672       0.2346
+   2      vérifier                       +0.149801       0.1668
+   3      déglingué                      +0.149256       0.1609
+   4      bénédiction                    +0.076920       0.0822
+   5      rassit                         +0.060371       0.0996
+   6      exceptionnel                   +0.055291       0.0766
+   7      devrait                        +0.050684       0.0470
+   8      louis                          +0.048592       0.1891
+   9      normal                         +0.047664       0.0510
+   10     apportée                       +0.043296       0.0969
+   11     tourna                         +0.038080       0.1107
+   12     disparitions                   +0.037455       0.2714
+   13     soutenue                       +0.034235       0.0868
+   14     accident                       +0.022364       0.0495
+   15     ressemblait                    +0.022026       0.0491
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pouce                          -0.153392       0.1167
+   2      braqué                         -0.077260       0.1071
+   3      os                             -0.076437       0.2088
+   4      chapitre                       -0.070564       0.0643
+   5      transpirant                    -0.062993       0.1562
+   6      accoudé                        -0.060476       0.1002
+   7      commissaire                    -0.054425       0.0840
+   8      signalé                        -0.050696       0.0912
+   9      boulot                         -0.049692       0.1478
+   10     patron                         -0.048749       0.0551
+   11     filez                          -0.048621       0.1258
+   12     cul                            -0.037906       0.0661
+   13     muséum                         -0.033136       0.1675
+   14     joué                           -0.031874       0.0512
+   15     réfléchi                       -0.031010       0.0596
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+muséum                    +0.000000     +0.000138     +0.000138     0.1675
+contrôlé                  +0.000000     +0.000102     +0.000102     0.2517
+transpirant               +0.000000     +0.000083     +0.000083     0.1562
+disparitions              +0.000477     +0.000053     +0.000053     0.2714
+balustrade                +0.000000     +0.000051     +0.000051     0.0973
+chapitre                  +0.000000     +0.000047     +0.000047     0.0643
+subordonnés               +0.000107     +0.000043     +0.000043     0.1326
+carrément                 +0.000000     +0.000036     +0.000036     0.0784
+vilain                    +0.000000     +0.000034     +0.000034     0.0779
+osa                       +0.000000     +0.000029     +0.000029     0.0725
+reprit                    +0.000000     +0.000022     +0.000022     0.0543
+rassit                    +0.001360     +0.000022     +0.000022     0.0996
+étiez                     +0.000000     +0.000020     +0.000020     0.0514
+excuses                   +0.000000     +0.000015     +0.000015     0.0642
+retrouva                  +0.000213     +0.000015     +0.000015     0.0637
+joué                      +0.000000     +0.000015     +0.000015     0.0512
+certes                    +0.000140     +0.000015     +0.000015     0.0499
+ponctuel                  +0.000000     +0.000012     +0.000012     0.1384
+papiers                   +0.000000     +0.000011     +0.000011     0.0509
+métro                     +0.000000     +0.000010     +0.000010     0.0790
+logit final pour 'femme': 0.2756
+# analyse pour la classe: HOMME
+# logit: -0.2677
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      muséum                         +0.000126       0.1675
+   2      balustrade                     +0.000051       0.0973
+   3      subordonnés                    +0.000043       0.1326
+   4      os                             +0.000036       0.2088
+   5      osa                            +0.000034       0.0725
+   6      chapitre                       +0.000024       0.0643
+   7      carrément                      +0.000023       0.0784
+   8      contrôlé                       +0.000022       0.2517
+   9      quartier                       +0.000022       0.0473
+   10     rassit                         +0.000020       0.0996
+   11     reprit                         +0.000020       0.0543
+   12     transpirant                    +0.000017       0.1562
+   13     vilain                         +0.000015       0.0779
+   14     accident                       +0.000013       0.0495
+   15     ponctuel                       +0.000012       0.1384
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bricole                        -0.000248       0.4379
+   2      adamsberg                      -0.000197       0.2346
+   3      filez                          -0.000104       0.1258
+   4      vérifier                       -0.000065       0.1668
+   5      pouce                          -0.000044       0.1167
+   6      honnêtement                    -0.000043       0.0975
+   7      braqué                         -0.000041       0.1071
+   8      phalange                       -0.000039       0.1467
+   9      témoin                         -0.000037       0.0542
+   10     arrondissement                 -0.000032       0.0971
+   11     interrompre                    -0.000032       0.0617
+   12     croisées                       -0.000031       0.0736
+   13     improbable                     -0.000027       0.0879
+   14     apportée                       -0.000025       0.0969
+   15     ongle                          -0.000019       0.0907
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      muséum                         +0.000126       0.1675
+   2      balustrade                     +0.000051       0.0973
+   3      subordonnés                    +0.000043       0.1326
+   4      os                             +0.000036       0.2088
+   5      osa                            +0.000034       0.0725
+   6      chapitre                       +0.000024       0.0643
+   7      carrément                      +0.000023       0.0784
+   8      contrôlé                       +0.000022       0.2517
+   9      quartier                       +0.000022       0.0473
+   10     rassit                         +0.000020       0.0996
+   11     reprit                         +0.000020       0.0543
+   12     transpirant                    +0.000017       0.1562
+   13     vilain                         +0.000015       0.0779
+   14     accident                       +0.000013       0.0495
+   15     ponctuel                       +0.000012       0.1384
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bricole                        -0.000248       0.4379
+   2      adamsberg                      -0.000197       0.2346
+   3      filez                          -0.000104       0.1258
+   4      vérifier                       -0.000065       0.1668
+   5      pouce                          -0.000044       0.1167
+   6      honnêtement                    -0.000043       0.0975
+   7      braqué                         -0.000041       0.1071
+   8      phalange                       -0.000039       0.1467
+   9      témoin                         -0.000037       0.0542
+   10     arrondissement                 -0.000032       0.0971
+   11     interrompre                    -0.000032       0.0617
+   12     croisées                       -0.000031       0.0736
+   13     improbable                     -0.000027       0.0879
+   14     apportée                       -0.000025       0.0969
+   15     ongle                          -0.000019       0.0907
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pouce                          +0.002512       0.1167
+   2      bricole                        +0.002486       0.4379
+   3      transpirant                    +0.001343       0.1562
+   4      commissaire                    +0.001259       0.0840
+   5      braqué                         +0.001250       0.1071
+   6      accoudé                        +0.001205       0.1002
+   7      os                             +0.001195       0.2088
+   8      chapitre                       +0.001152       0.0643
+   9      muséum                         +0.001003       0.1675
+   10     signalé                        +0.000976       0.0912
+   11     patron                         +0.000835       0.0551
+   12     arrondissement                 +0.000756       0.0971
+   13     réfléchi                       +0.000732       0.0596
+   14     osa                            +0.000705       0.0725
+   15     boulot                         +0.000606       0.1478
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      adamsberg                      -0.003968       0.2346
+   2      déglingué                      -0.002494       0.1609
+   3      vérifier                       -0.002001       0.1668
+   4      bénédiction                    -0.001498       0.0822
+   5      rassit                         -0.001168       0.0996
+   6      louis                          -0.000904       0.1891
+   7      normal                         -0.000897       0.0510
+   8      disparitions                   -0.000856       0.2714
+   9      devrait                        -0.000840       0.0470
+   10     tourna                         -0.000563       0.1107
+   11     apportée                       -0.000560       0.0969
+   12     exceptionnel                   -0.000557       0.0766
+   13     soutenue                       -0.000429       0.0868
+   14     ressemblait                    -0.000400       0.0491
+   15     rend                           -0.000385       0.0470
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pouce                          +0.128952       0.1167
+   2      transpirant                    +0.070190       0.1562
+   3      bricole                        +0.065883       0.4379
+   4      braqué                         +0.060328       0.1071
+   5      os                             +0.054758       0.2088
+   6      chapitre                       +0.052785       0.0643
+   7      commissaire                    +0.044340       0.0840
+   8      accoudé                        +0.043322       0.1002
+   9      signalé                        +0.040156       0.0912
+   10     patron                         +0.039751       0.0551
+   11     filez                          +0.035099       0.1258
+   12     boulot                         +0.034506       0.1478
+   13     cul                            +0.033600       0.0661
+   14     osa                            +0.031906       0.0725
+   15     réfléchi                       +0.030113       0.0596
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      adamsberg                      -0.170004       0.2346
+   2      déglingué                      -0.120195       0.1609
+   3      vérifier                       -0.106204       0.1668
+   4      bénédiction                    -0.057810       0.0822
+   5      rassit                         -0.051719       0.0996
+   6      disparitions                   -0.050480       0.2714
+   7      louis                          -0.047390       0.1891
+   8      exceptionnel                   -0.042601       0.0766
+   9      normal                         -0.036171       0.0510
+   10     devrait                        -0.035947       0.0470
+   11     soutenue                       -0.032374       0.0868
+   12     tourna                         -0.025625       0.1107
+   13     apportée                       -0.022599       0.0969
+   14     subordonnés                    -0.020512       0.1326
+   15     accident                       -0.015984       0.0495
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+muséum                    +0.001003     +0.000126     +0.000126     0.1675
+balustrade                +0.000314     +0.000051     +0.000051     0.0973
+subordonnés               +0.000000     +0.000043     +0.000043     0.1326
+os                        +0.001195     +0.000036     +0.000036     0.2088
+osa                       +0.000705     +0.000034     +0.000034     0.0725
+chapitre                  +0.001152     +0.000024     +0.000024     0.0643
+carrément                 +0.000410     +0.000023     +0.000023     0.0784
+contrôlé                  +0.000235     +0.000022     +0.000022     0.2517
+quartier                  +0.000370     +0.000022     +0.000022     0.0473
+rassit                    +0.000000     +0.000020     +0.000020     0.0996
+reprit                    +0.000331     +0.000020     +0.000020     0.0543
+transpirant               +0.001343     +0.000017     +0.000017     0.1562
+vilain                    +0.000000     +0.000015     +0.000015     0.0779
+accident                  +0.000000     +0.000013     +0.000013     0.0495
+ponctuel                  +0.000436     +0.000012     +0.000012     0.1384
+excuses                   +0.000249     +0.000011     +0.000011     0.0642
+crapaud                   +0.000517     +0.000011     +0.000011     0.1138
+probablement              +0.000017     +0.000008     +0.000008     0.0551
+étiez                     +0.000568     +0.000008     +0.000008     0.0514
+métro                     +0.000044     +0.000007     +0.000007     0.0790
+logit final pour 'homme': -0.2677

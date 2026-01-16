@@ -1,0 +1,386 @@
+texte analysé: et , sans qu elle fût sûre de rien , son coeur se serra . le lendemain , à son arrivée sur l île , elle croisa le capitaine qui partait . je dois aller à noeud régler quelques affaires . exceptionnell...
+prédiction: FEMME (confiance: 61.4%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.2329
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      referma                        +0.000194       0.1668
+   2      tomba                          +0.000095       0.0713
+   3      capitaine                      +0.000094       0.1704
+   4      ayez                           +0.000083       0.1491
+   5      secrétaire                     +0.000077       0.0742
+   6      sbires                         +0.000074       0.1525
+   7      paperasses                     +0.000071       0.1540
+   8      portrait                       +0.000070       0.0695
+   9      retard                         +0.000065       0.1200
+   10     intruse                        +0.000060       0.1629
+   11     monta                          +0.000060       0.0746
+   12     tiroir                         +0.000051       0.0731
+   13     daté                           +0.000051       0.1566
+   14     marcha                         +0.000050       0.0905
+   15     photographies                  +0.000050       0.1044
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      partait                        -0.000218       0.1458
+   2      françoise                      -0.000195       0.1360
+   3      thermomètre                    -0.000158       0.1444
+   4      rabat                          -0.000139       0.1286
+   5      régler                         -0.000139       0.1428
+   6      lenteur                        -0.000122       0.0826
+   7      supposa                        -0.000109       0.1530
+   8      remplaçait                     -0.000101       0.1304
+   9      songea                         -0.000072       0.1772
+   10     recommence                     -0.000071       0.0879
+   11     restions                       -0.000070       0.1436
+   12     encre                          -0.000069       0.0762
+   13     piège                          -0.000063       0.0714
+   14     tiroirs                        -0.000063       0.0935
+   15     gardée                         -0.000060       0.0881
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      referma                        +0.000194       0.1668
+   2      tomba                          +0.000095       0.0713
+   3      capitaine                      +0.000094       0.1704
+   4      ayez                           +0.000083       0.1491
+   5      secrétaire                     +0.000077       0.0742
+   6      sbires                         +0.000074       0.1525
+   7      paperasses                     +0.000071       0.1540
+   8      portrait                       +0.000070       0.0695
+   9      retard                         +0.000065       0.1200
+   10     intruse                        +0.000060       0.1629
+   11     monta                          +0.000060       0.0746
+   12     tiroir                         +0.000051       0.0731
+   13     daté                           +0.000051       0.1566
+   14     marcha                         +0.000050       0.0905
+   15     photographies                  +0.000050       0.1044
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      partait                        -0.000218       0.1458
+   2      françoise                      -0.000195       0.1360
+   3      thermomètre                    -0.000158       0.1444
+   4      rabat                          -0.000139       0.1286
+   5      régler                         -0.000139       0.1428
+   6      lenteur                        -0.000122       0.0826
+   7      supposa                        -0.000109       0.1530
+   8      remplaçait                     -0.000101       0.1304
+   9      songea                         -0.000072       0.1772
+   10     recommence                     -0.000071       0.0879
+   11     restions                       -0.000070       0.1436
+   12     encre                          -0.000069       0.0762
+   13     piège                          -0.000063       0.0714
+   14     tiroirs                        -0.000063       0.0935
+   15     gardée                         -0.000060       0.0881
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      caroline                       +0.003474       0.1623
+   2      manoir                         +0.003272       0.1400
+   3      intruse                        +0.002796       0.1629
+   4      geôlier                        +0.001766       0.1577
+   5      referma                        +0.001653       0.1668
+   6      naissance                      +0.001474       0.0572
+   7      ramener                        +0.001465       0.0645
+   8      partait                        +0.001464       0.1458
+   9      infirmière                     +0.001461       0.0938
+   10     adèle                          +0.001426       0.1667
+   11     serra                          +0.001421       0.0757
+   12     retard                         +0.001383       0.1200
+   13     françoise                      +0.001378       0.1360
+   14     aimerais                       +0.001365       0.0603
+   15     prénom                         +0.001296       0.0691
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      capitaine                      -0.003419       0.1704
+   2      fût                            -0.003289       0.1211
+   3      eut                            -0.003032       0.1137
+   4      sbires                         -0.002982       0.1525
+   5      paperasses                     -0.002506       0.1540
+   6      avertie                        -0.001975       0.1184
+   7      daté                           -0.001833       0.1566
+   8      ayez                           -0.001799       0.1491
+   9      pareille                       -0.001695       0.0606
+   10     secrétaire                     -0.001516       0.0742
+   11     marcha                         -0.001467       0.0905
+   12     continent                      -0.001395       0.2302
+   13     photographies                  -0.001395       0.1044
+   14     courut                         -0.001364       0.0810
+   15     rafiot                         -0.001310       0.1957
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      caroline                       +0.183502       0.1623
+   2      manoir                         +0.139388       0.1400
+   3      intruse                        +0.128406       0.1629
+   4      partait                        +0.084052       0.1458
+   5      françoise                      +0.083640       0.1360
+   6      geôlier                        +0.082203       0.1577
+   7      referma                        +0.077590       0.1668
+   8      revienne                       +0.077252       0.0885
+   9      naissance                      +0.076122       0.0572
+   10     ramener                        +0.072907       0.0645
+   11     infirmière                     +0.072625       0.0938
+   12     adèle                          +0.072279       0.1667
+   13     retard                         +0.071325       0.1200
+   14     prénom                         +0.069871       0.0691
+   15     aimerais                       +0.066507       0.0603
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fût                            -0.169355       0.1211
+   2      eut                            -0.154379       0.1137
+   3      capitaine                      -0.147731       0.1704
+   4      sbires                         -0.132955       0.1525
+   5      avertie                        -0.117511       0.1184
+   6      paperasses                     -0.103945       0.1540
+   7      pareille                       -0.095019       0.0606
+   8      rafiot                         -0.093319       0.1957
+   9      secrétaire                     -0.084110       0.0742
+   10     ayez                           -0.083979       0.1491
+   11     photographies                  -0.079999       0.1044
+   12     île                            -0.079886       0.0789
+   13     daté                           -0.075080       0.1566
+   14     courut                         -0.073601       0.0810
+   15     continent                      -0.070468       0.2302
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+referma                   +0.001653     +0.000194     +0.000194     0.1668
+tomba                     +0.000000     +0.000095     +0.000095     0.0713
+capitaine                 +0.000000     +0.000094     +0.000094     0.1704
+ayez                      +0.000000     +0.000083     +0.000083     0.1491
+secrétaire                +0.000000     +0.000077     +0.000077     0.0742
+sbires                    +0.000000     +0.000074     +0.000074     0.1525
+paperasses                +0.000000     +0.000071     +0.000071     0.1540
+portrait                  +0.000000     +0.000070     +0.000070     0.0695
+retard                    +0.001383     +0.000065     +0.000065     0.1200
+intruse                   +0.002796     +0.000060     +0.000060     0.1629
+monta                     +0.000000     +0.000060     +0.000060     0.0746
+tiroir                    +0.000000     +0.000051     +0.000051     0.0731
+daté                      +0.000000     +0.000051     +0.000051     0.1566
+marcha                    +0.000000     +0.000050     +0.000050     0.0905
+photographies             +0.000000     +0.000050     +0.000050     0.1044
+fût                       +0.000000     +0.000047     +0.000047     0.1211
+auparavant                +0.000631     +0.000044     +0.000044     0.0613
+congé                     +0.000000     +0.000043     +0.000043     0.0702
+rafiot                    +0.000000     +0.000042     +0.000042     0.1957
+aviez                     +0.000000     +0.000039     +0.000039     0.0642
+logit final pour 'femme': 0.2329
+# analyse pour la classe: HOMME
+# logit: -0.2302
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rafiot                         +0.000076       0.1957
+   2      monta                          +0.000054       0.0746
+   3      congé                          +0.000046       0.0702
+   4      fût                            +0.000045       0.1211
+   5      referma                        +0.000042       0.1668
+   6      photographies                  +0.000036       0.1044
+   7      tomba                          +0.000034       0.0713
+   8      paperasses                     +0.000032       0.1540
+   9      capitaine                      +0.000032       0.1704
+   10     amie                           +0.000031       0.0574
+   11     ouvrit                         +0.000031       0.0656
+   12     daté                           +0.000030       0.1566
+   13     marcha                         +0.000030       0.0905
+   14     événement                      +0.000028       0.0668
+   15     secrétaire                     +0.000027       0.0742
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      françoise                      -0.000119       0.1360
+   2      partait                        -0.000106       0.1458
+   3      caroline                       -0.000090       0.1623
+   4      thermomètre                    -0.000086       0.1444
+   5      régler                         -0.000083       0.1428
+   6      supposa                        -0.000072       0.1530
+   7      remplaçait                     -0.000064       0.1304
+   8      lenteur                        -0.000053       0.0826
+   9      songea                         -0.000051       0.1772
+   10     prénom                         -0.000048       0.0691
+   11     mission                        -0.000047       0.0659
+   12     continent                      -0.000045       0.2302
+   13     linge                          -0.000044       0.0667
+   14     rabat                          -0.000041       0.1286
+   15     encre                          -0.000039       0.0762
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rafiot                         +0.000076       0.1957
+   2      monta                          +0.000054       0.0746
+   3      congé                          +0.000046       0.0702
+   4      fût                            +0.000045       0.1211
+   5      referma                        +0.000042       0.1668
+   6      photographies                  +0.000036       0.1044
+   7      tomba                          +0.000034       0.0713
+   8      paperasses                     +0.000032       0.1540
+   9      capitaine                      +0.000032       0.1704
+   10     amie                           +0.000031       0.0574
+   11     ouvrit                         +0.000031       0.0656
+   12     daté                           +0.000030       0.1566
+   13     marcha                         +0.000030       0.0905
+   14     événement                      +0.000028       0.0668
+   15     secrétaire                     +0.000027       0.0742
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      françoise                      -0.000119       0.1360
+   2      partait                        -0.000106       0.1458
+   3      caroline                       -0.000090       0.1623
+   4      thermomètre                    -0.000086       0.1444
+   5      régler                         -0.000083       0.1428
+   6      supposa                        -0.000072       0.1530
+   7      remplaçait                     -0.000064       0.1304
+   8      lenteur                        -0.000053       0.0826
+   9      songea                         -0.000051       0.1772
+   10     prénom                         -0.000048       0.0691
+   11     mission                        -0.000047       0.0659
+   12     continent                      -0.000045       0.2302
+   13     linge                          -0.000044       0.0667
+   14     rabat                          -0.000041       0.1286
+   15     encre                          -0.000039       0.0762
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fût                            +0.002670       0.1211
+   2      eut                            +0.002495       0.1137
+   3      capitaine                      +0.002418       0.1704
+   4      sbires                         +0.001780       0.1525
+   5      avertie                        +0.001711       0.1184
+   6      ayez                           +0.001654       0.1491
+   7      pareille                       +0.001304       0.0606
+   8      rafiot                         +0.001276       0.1957
+   9      courut                         +0.001258       0.0810
+   10     daté                           +0.001195       0.1566
+   11     paperasses                     +0.001171       0.1540
+   12     photographies                  +0.001167       0.1044
+   13     continent                      +0.001067       0.2302
+   14     secrétaire                     +0.000987       0.0742
+   15     marcha                         +0.000955       0.0905
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      caroline                       -0.002992       0.1623
+   2      manoir                         -0.002359       0.1400
+   3      intruse                        -0.001892       0.1629
+   4      geôlier                        -0.001310       0.1577
+   5      referma                        -0.001191       0.1668
+   6      partait                        -0.001177       0.1458
+   7      serra                          -0.001130       0.0757
+   8      prénom                         -0.001121       0.0691
+   9      ramener                        -0.001065       0.0645
+   10     revienne                       -0.001052       0.0885
+   11     naissance                      -0.001041       0.0572
+   12     fumoir                         -0.001027       0.1694
+   13     infirmière                     -0.001025       0.0938
+   14     retard                         -0.000949       0.1200
+   15     aimerais                       -0.000894       0.0603
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fût                            +0.133595       0.1211
+   2      eut                            +0.119359       0.1137
+   3      capitaine                      +0.106879       0.1704
+   4      avertie                        +0.089482       0.1184
+   5      sbires                         +0.079444       0.1525
+   6      rafiot                         +0.077171       0.1957
+   7      ayez                           +0.077009       0.1491
+   8      pareille                       +0.068358       0.0606
+   9      daté                           +0.067882       0.1566
+   10     courut                         +0.065595       0.0810
+   11     photographies                  +0.062583       0.1044
+   12     secrétaire                     +0.056052       0.0742
+   13     île                            +0.053950       0.0789
+   14     tomba                          +0.048132       0.0713
+   15     événement                      +0.046940       0.0668
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      caroline                       -0.162899       0.1623
+   2      manoir                         -0.108915       0.1400
+   3      intruse                        -0.089524       0.1629
+   4      geôlier                        -0.065828       0.1577
+   5      partait                        -0.063225       0.1458
+   6      prénom                         -0.060463       0.0691
+   7      revienne                       -0.059156       0.0885
+   8      fumoir                         -0.057719       0.1694
+   9      ramener                        -0.055575       0.0645
+   10     referma                        -0.054702       0.1668
+   11     naissance                      -0.053391       0.0572
+   12     infirmière                     -0.053011       0.0938
+   13     retard                         -0.049968       0.1200
+   14     serra                          -0.049757       0.0757
+   15     aimerais                       -0.048241       0.0603
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+rafiot                    +0.001276     +0.000076     +0.000076     0.1957
+monta                     +0.000631     +0.000054     +0.000054     0.0746
+congé                     +0.000212     +0.000046     +0.000046     0.0702
+fût                       +0.002670     +0.000045     +0.000045     0.1211
+referma                   +0.000000     +0.000042     +0.000042     0.1668
+photographies             +0.001167     +0.000036     +0.000036     0.1044
+tomba                     +0.000883     +0.000034     +0.000034     0.0713
+paperasses                +0.001171     +0.000032     +0.000032     0.1540
+capitaine                 +0.002418     +0.000032     +0.000032     0.1704
+amie                      +0.000000     +0.000031     +0.000031     0.0574
+ouvrit                    +0.000000     +0.000031     +0.000031     0.0656
+daté                      +0.001195     +0.000030     +0.000030     0.1566
+marcha                    +0.000955     +0.000030     +0.000030     0.0905
+événement                 +0.000866     +0.000028     +0.000028     0.0668
+secrétaire                +0.000987     +0.000027     +0.000027     0.0742
+inventer                  +0.000059     +0.000027     +0.000027     0.0788
+aviez                     +0.000535     +0.000025     +0.000025     0.0642
+ayez                      +0.001654     +0.000023     +0.000023     0.1491
+jeux                      +0.000353     +0.000022     +0.000022     0.0645
+entières                  +0.000000     +0.000020     +0.000020     0.0859
+logit final pour 'homme': -0.2302

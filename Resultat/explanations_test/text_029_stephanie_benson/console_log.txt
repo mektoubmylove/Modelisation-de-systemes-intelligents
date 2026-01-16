@@ -1,0 +1,386 @@
+texte analysé: , frais et vivifiant , venu directement du pôle nord . il y a trop de méditerranée dans ta vie , ma belle . inès se demanda s il faisait allusion au climat ou aux hommes , mais elle sourit , de toute ...
+prédiction: FEMME (confiance: 94.7%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.6706
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pedro                          +0.000144       0.2381
+   2      madrid                         +0.000052       0.1226
+   3      bruxelles                      +0.000041       0.1094
+   4      bella                          +0.000031       0.0746
+   5      pocket                         +0.000028       0.0794
+   6      pôle                           +0.000021       0.0551
+   7      commençait                     +0.000019       0.0224
+   8      nada                           +0.000018       0.0823
+   9      équipée                        +0.000018       0.0449
+   10     usine                          +0.000017       0.0383
+   11     rendit                         +0.000016       0.0566
+   12     allusion                       +0.000016       0.0306
+   13     billet                         +0.000015       0.0283
+   14     secoua                         +0.000014       0.0310
+   15     installa                       +0.000014       0.0319
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rhéa                           -0.000531       0.4394
+   2      tommy                          -0.000236       0.4906
+   3      inès                           -0.000223       0.5191
+   4      dettes                         -0.000102       0.0871
+   5      giancarlo                      -0.000089       0.1162
+   6      rome                           -0.000062       0.0800
+   7      epicur                         -0.000055       0.1128
+   8      suggéra                        -0.000051       0.0439
+   9      morales                        -0.000044       0.0980
+   10     enrico                         -0.000036       0.0909
+   11     annuler                        -0.000034       0.0512
+   12     gnome                          -0.000032       0.1445
+   13     nota                           -0.000032       0.0441
+   14     complexe                       -0.000031       0.0358
+   15     aborder                        -0.000030       0.0328
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pedro                          +0.000144       0.2381
+   2      madrid                         +0.000052       0.1226
+   3      bruxelles                      +0.000041       0.1094
+   4      bella                          +0.000031       0.0746
+   5      pocket                         +0.000028       0.0794
+   6      pôle                           +0.000021       0.0551
+   7      commençait                     +0.000019       0.0224
+   8      nada                           +0.000018       0.0823
+   9      équipée                        +0.000018       0.0449
+   10     usine                          +0.000017       0.0383
+   11     rendit                         +0.000016       0.0566
+   12     allusion                       +0.000016       0.0306
+   13     billet                         +0.000015       0.0283
+   14     secoua                         +0.000014       0.0310
+   15     installa                       +0.000014       0.0319
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rhéa                           -0.000531       0.4394
+   2      tommy                          -0.000236       0.4906
+   3      inès                           -0.000223       0.5191
+   4      dettes                         -0.000102       0.0871
+   5      giancarlo                      -0.000089       0.1162
+   6      rome                           -0.000062       0.0800
+   7      epicur                         -0.000055       0.1128
+   8      suggéra                        -0.000051       0.0439
+   9      morales                        -0.000044       0.0980
+   10     enrico                         -0.000036       0.0909
+   11     annuler                        -0.000034       0.0512
+   12     gnome                          -0.000032       0.1445
+   13     nota                           -0.000032       0.0441
+   14     complexe                       -0.000031       0.0358
+   15     aborder                        -0.000030       0.0328
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      inès                           +0.008101       0.5191
+   2      tommy                          +0.005809       0.4906
+   3      rhéa                           +0.005240       0.4394
+   4      dettes                         +0.001244       0.0871
+   5      epicur                         +0.001221       0.1128
+   6      giancarlo                      +0.001158       0.1162
+   7      suggéra                        +0.000962       0.0439
+   8      oublie                         +0.000837       0.0455
+   9      soupira                        +0.000818       0.0303
+   10     susurra                        +0.000686       0.0556
+   11     enrico                         +0.000622       0.0909
+   12     vivifiant                      +0.000573       0.0701
+   13     échangea                       +0.000524       0.0529
+   14     annuler                        +0.000506       0.0512
+   15     composa                        +0.000476       0.0513
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pedro                          -0.002514       0.2381
+   2      allusion                       -0.000792       0.0306
+   3      rendit                         -0.000780       0.0566
+   4      nada                           -0.000599       0.0823
+   5      madrid                         -0.000598       0.1226
+   6      panne                          -0.000441       0.0385
+   7      psychiatre                     -0.000423       0.0575
+   8      vol                            -0.000334       0.0247
+   9      pocket                         -0.000315       0.0794
+   10     également                      -0.000302       0.0234
+   11     nord                           -0.000302       0.0243
+   12     pousser                        -0.000297       0.0225
+   13     système                        -0.000291       0.0285
+   14     méditerranée                   -0.000259       0.0473
+   15     commanda                       -0.000215       0.0381
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      inès                           +0.270688       0.5191
+   2      tommy                          +0.171598       0.4906
+   3      rhéa                           +0.098626       0.4394
+   4      epicur                         +0.040090       0.1128
+   5      dettes                         +0.036389       0.0871
+   6      giancarlo                      +0.028413       0.1162
+   7      soupira                        +0.027491       0.0303
+   8      suggéra                        +0.026431       0.0439
+   9      oublie                         +0.026169       0.0455
+   10     enrico                         +0.021180       0.0909
+   11     susurra                        +0.020627       0.0556
+   12     échangea                       +0.020508       0.0529
+   13     vivifiant                      +0.019791       0.0701
+   14     tolérance                      +0.018334       0.0544
+   15     installa                       +0.017644       0.0319
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pedro                          -0.076990       0.2381
+   2      madrid                         -0.034426       0.1226
+   3      rendit                         -0.026018       0.0566
+   4      psychiatre                     -0.025605       0.0575
+   5      allusion                       -0.025223       0.0306
+   6      panne                          -0.016842       0.0385
+   7      vol                            -0.016167       0.0247
+   8      morales                        -0.015610       0.0980
+   9      nord                           -0.014976       0.0243
+   10     méditerranée                   -0.011199       0.0473
+   11     pousser                        -0.010813       0.0225
+   12     osait                          -0.010787       0.0281
+   13     également                      -0.010326       0.0234
+   14     commanda                       -0.009854       0.0381
+   15     pocket                         -0.009607       0.0794
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+pedro                     +0.000000     +0.000144     +0.000144     0.2381
+madrid                    +0.000000     +0.000052     +0.000052     0.1226
+bruxelles                 +0.000169     +0.000041     +0.000041     0.1094
+bella                     +0.000000     +0.000031     +0.000031     0.0746
+pocket                    +0.000000     +0.000028     +0.000028     0.0794
+pôle                      +0.000000     +0.000021     +0.000021     0.0551
+commençait                +0.000000     +0.000019     +0.000019     0.0224
+nada                      +0.000000     +0.000018     +0.000018     0.0823
+équipée                   +0.000068     +0.000018     +0.000018     0.0449
+usine                     +0.000210     +0.000017     +0.000017     0.0383
+rendit                    +0.000000     +0.000016     +0.000016     0.0566
+allusion                  +0.000000     +0.000016     +0.000016     0.0306
+billet                    +0.000000     +0.000015     +0.000015     0.0283
+secoua                    +0.000000     +0.000014     +0.000014     0.0310
+installa                  +0.000400     +0.000014     +0.000014     0.0319
+proposer                  +0.000049     +0.000014     +0.000014     0.0286
+honorer                   +0.000130     +0.000010     +0.000010     0.0441
+inventer                  +0.000000     +0.000010     +0.000010     0.0309
+intention                 +0.000000     +0.000010     +0.000010     0.0224
+lançant                   +0.000000     +0.000010     +0.000010     0.0372
+logit final pour 'femme': 1.6706
+# analyse pour la classe: HOMME
+# logit: -1.2147
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bruxelles                      +0.000027       0.1094
+   2      nada                           +0.000019       0.0823
+   3      échangea                       +0.000019       0.0529
+   4      installa                       +0.000012       0.0319
+   5      rendit                         +0.000012       0.0566
+   6      permettrait                    +0.000011       0.0358
+   7      madrid                         +0.000010       0.1226
+   8      pôle                           +0.000010       0.0551
+   9      bella                          +0.000010       0.0746
+   10     demanda                        +0.000009       0.0486
+   11     usine                          +0.000009       0.0383
+   12     chevelure                      +0.000009       0.0291
+   13     lançant                        +0.000009       0.0372
+   14     commençait                     +0.000008       0.0224
+   15     poursuivit                     +0.000007       0.0329
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rhéa                           -0.000183       0.4394
+   2      inès                           -0.000134       0.5191
+   3      tommy                          -0.000112       0.4906
+   4      dettes                         -0.000066       0.0871
+   5      giancarlo                      -0.000048       0.1162
+   6      morales                        -0.000045       0.0980
+   7      suggéra                        -0.000029       0.0439
+   8      psychiatre                     -0.000025       0.0575
+   9      annuler                        -0.000024       0.0512
+   10     nota                           -0.000020       0.0441
+   11     rome                           -0.000020       0.0800
+   12     gnome                          -0.000018       0.1445
+   13     complexe                       -0.000017       0.0358
+   14     envers                         -0.000017       0.0231
+   15     composa                        -0.000016       0.0513
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bruxelles                      +0.000027       0.1094
+   2      nada                           +0.000019       0.0823
+   3      échangea                       +0.000019       0.0529
+   4      installa                       +0.000012       0.0319
+   5      rendit                         +0.000012       0.0566
+   6      permettrait                    +0.000011       0.0358
+   7      madrid                         +0.000010       0.1226
+   8      pôle                           +0.000010       0.0551
+   9      bella                          +0.000010       0.0746
+   10     demanda                        +0.000009       0.0486
+   11     usine                          +0.000009       0.0383
+   12     chevelure                      +0.000009       0.0291
+   13     lançant                        +0.000009       0.0372
+   14     commençait                     +0.000008       0.0224
+   15     poursuivit                     +0.000007       0.0329
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rhéa                           -0.000183       0.4394
+   2      inès                           -0.000134       0.5191
+   3      tommy                          -0.000112       0.4906
+   4      dettes                         -0.000066       0.0871
+   5      giancarlo                      -0.000048       0.1162
+   6      morales                        -0.000045       0.0980
+   7      suggéra                        -0.000029       0.0439
+   8      psychiatre                     -0.000025       0.0575
+   9      annuler                        -0.000024       0.0512
+   10     nota                           -0.000020       0.0441
+   11     rome                           -0.000020       0.0800
+   12     gnome                          -0.000018       0.1445
+   13     complexe                       -0.000017       0.0358
+   14     envers                         -0.000017       0.0231
+   15     composa                        -0.000016       0.0513
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pedro                          +0.002064       0.2381
+   2      rendit                         +0.000605       0.0566
+   3      allusion                       +0.000582       0.0306
+   4      nada                           +0.000401       0.0823
+   5      madrid                         +0.000358       0.1226
+   6      psychiatre                     +0.000331       0.0575
+   7      panne                          +0.000314       0.0385
+   8      pocket                         +0.000280       0.0794
+   9      également                      +0.000260       0.0234
+   10     pousser                        +0.000233       0.0225
+   11     nord                           +0.000219       0.0243
+   12     commanda                       +0.000211       0.0381
+   13     vol                            +0.000204       0.0247
+   14     système                        +0.000196       0.0285
+   15     escale                         +0.000185       0.0529
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      inès                           -0.006016       0.5191
+   2      rhéa                           -0.004287       0.4394
+   3      tommy                          -0.004268       0.4906
+   4      dettes                         -0.000885       0.0871
+   5      giancarlo                      -0.000867       0.1162
+   6      epicur                         -0.000818       0.1128
+   7      suggéra                        -0.000759       0.0439
+   8      soupira                        -0.000627       0.0303
+   9      oublie                         -0.000596       0.0455
+   10     enrico                         -0.000530       0.0909
+   11     susurra                        -0.000489       0.0556
+   12     vivifiant                      -0.000454       0.0701
+   13     échangea                       -0.000369       0.0529
+   14     mariage                        -0.000360       0.0235
+   15     composa                        -0.000338       0.0513
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pedro                          +0.071999       0.2381
+   2      psychiatre                     +0.019394       0.0575
+   3      rendit                         +0.018178       0.0566
+   4      allusion                       +0.017934       0.0306
+   5      madrid                         +0.016193       0.1226
+   6      morales                        +0.011330       0.0980
+   7      nord                           +0.011315       0.0243
+   8      panne                          +0.011242       0.0385
+   9      vol                            +0.010533       0.0247
+   10     pousser                        +0.009106       0.0225
+   11     également                      +0.007861       0.0234
+   12     commanda                       +0.007368       0.0381
+   13     pocket                         +0.006895       0.0794
+   14     escale                         +0.006802       0.0529
+   15     osait                          +0.006796       0.0281
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      inès                           -0.167766       0.5191
+   2      tommy                          -0.122481       0.4906
+   3      rhéa                           -0.098984       0.4394
+   4      epicur                         -0.027366       0.1128
+   5      dettes                         -0.024216       0.0871
+   6      soupira                        -0.020591       0.0303
+   7      suggéra                        -0.020377       0.0439
+   8      oublie                         -0.019040       0.0455
+   9      enrico                         -0.018164       0.0909
+   10     échangea                       -0.016715       0.0529
+   11     giancarlo                      -0.014889       0.1162
+   12     vivifiant                      -0.014242       0.0701
+   13     installa                       -0.013380       0.0319
+   14     susurra                        -0.012496       0.0556
+   15     bruxelles                      -0.010586       0.1094
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+bruxelles                 +0.000006     +0.000027     +0.000027     0.1094
+nada                      +0.000401     +0.000019     +0.000019     0.0823
+échangea                  +0.000000     +0.000019     +0.000019     0.0529
+installa                  +0.000000     +0.000012     +0.000012     0.0319
+rendit                    +0.000605     +0.000012     +0.000012     0.0566
+permettrait               +0.000000     +0.000011     +0.000011     0.0358
+madrid                    +0.000358     +0.000010     +0.000010     0.1226
+pôle                      +0.000000     +0.000010     +0.000010     0.0551
+bella                     +0.000021     +0.000010     +0.000010     0.0746
+demanda                   +0.000000     +0.000009     +0.000009     0.0486
+usine                     +0.000000     +0.000009     +0.000009     0.0383
+chevelure                 +0.000000     +0.000009     +0.000009     0.0291
+lançant                   +0.000033     +0.000009     +0.000009     0.0372
+commençait                +0.000107     +0.000008     +0.000008     0.0224
+poursuivit                +0.000029     +0.000007     +0.000007     0.0329
+allusion                  +0.000582     +0.000007     +0.000007     0.0306
+secoua                    +0.000000     +0.000007     +0.000007     0.0310
+inventer                  +0.000038     +0.000007     +0.000007     0.0309
+haussement                +0.000099     +0.000006     +0.000006     0.0448
+équipée                   +0.000009     +0.000006     +0.000006     0.0449
+logit final pour 'homme': -1.2147

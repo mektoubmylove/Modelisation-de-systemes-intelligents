@@ -1,0 +1,5 @@
+filename: (PEREC)(Georges)(un homme qui dort)(1)(1967)(1936)(1982)(fr)(z)(z)(V)(R)(T).txt
+index: 0
+first_name: georges
+last_name: perec
+true_label: homme

@@ -1,0 +1,386 @@
+texte analysé: ri , qu est ce qu on a pu rire , on a ri comme des fous . épilogue cabinet de me deligne , avocat de m . paul millecam écoutez , maître , j ai fait ce que vous m aviez demandé , alors qu après tout , ...
+prédiction: FEMME (confiance: 87.7%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.1460
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      avocat                         +0.000121       0.2124
+   2      vocabulaire                    +0.000079       0.0857
+   3      épilogue                       +0.000062       0.1052
+   4      obstination                    +0.000055       0.0821
+   5      somme                          +0.000052       0.0462
+   6      idiot                          +0.000048       0.0609
+   7      aviez                          +0.000035       0.0519
+   8      nièce                          +0.000032       0.0821
+   9      concrètes                      +0.000025       0.1411
+   10     obligé                         +0.000024       0.0491
+   11     al                             +0.000023       0.2258
+   12     intention                      +0.000022       0.0462
+   13     longuement                     +0.000021       0.0469
+   14     rencontrée                     +0.000019       0.0711
+   15     paul                           +0.000017       0.0677
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      comprendrait                   -0.000197       0.1742
+   2      circonstance                   -0.000149       0.2057
+   3      alliance                       -0.000119       0.1410
+   4      li                             -0.000096       0.2664
+   5      ok                             -0.000089       0.1100
+   6      accidentelle                   -0.000085       0.1348
+   7      supermarché                    -0.000079       0.1070
+   8      soyons                         -0.000063       0.0691
+   9      tienne                         -0.000050       0.0620
+   10     aimons                         -0.000050       0.0938
+   11     biologique                     -0.000049       0.1270
+   12     plateau                        -0.000041       0.0534
+   13     amoureuse                      -0.000037       0.0565
+   14     injuste                        -0.000037       0.0681
+   15     ri                             -0.000034       0.1343
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      avocat                         +0.000121       0.2124
+   2      vocabulaire                    +0.000079       0.0857
+   3      épilogue                       +0.000062       0.1052
+   4      obstination                    +0.000055       0.0821
+   5      somme                          +0.000052       0.0462
+   6      idiot                          +0.000048       0.0609
+   7      aviez                          +0.000035       0.0519
+   8      nièce                          +0.000032       0.0821
+   9      concrètes                      +0.000025       0.1411
+   10     obligé                         +0.000024       0.0491
+   11     al                             +0.000023       0.2258
+   12     intention                      +0.000022       0.0462
+   13     longuement                     +0.000021       0.0469
+   14     rencontrée                     +0.000019       0.0711
+   15     paul                           +0.000017       0.0677
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      comprendrait                   -0.000197       0.1742
+   2      circonstance                   -0.000149       0.2057
+   3      alliance                       -0.000119       0.1410
+   4      li                             -0.000096       0.2664
+   5      ok                             -0.000089       0.1100
+   6      accidentelle                   -0.000085       0.1348
+   7      supermarché                    -0.000079       0.1070
+   8      soyons                         -0.000063       0.0691
+   9      tienne                         -0.000050       0.0620
+   10     aimons                         -0.000050       0.0938
+   11     biologique                     -0.000049       0.1270
+   12     plateau                        -0.000041       0.0534
+   13     amoureuse                      -0.000037       0.0565
+   14     injuste                        -0.000037       0.0681
+   15     ri                             -0.000034       0.1343
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      katia                          +0.006120       0.6490
+   2      comprendrait                   +0.001896       0.1742
+   3      ri                             +0.001625       0.1343
+   4      nièce                          +0.001462       0.0821
+   5      alliance                       +0.001368       0.1410
+   6      effectuer                      +0.001169       0.0824
+   7      accidentelle                   +0.001085       0.1348
+   8      malhonnête                     +0.001022       0.1199
+   9      parenté                        +0.000866       0.0971
+   10     épouser                        +0.000857       0.0606
+   11     amoureuse                      +0.000821       0.0565
+   12     ok                             +0.000813       0.1100
+   13     marier                         +0.000537       0.0637
+   14     plateau                        +0.000421       0.0534
+   15     habiter                        +0.000416       0.0694
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      avocat                         -0.002162       0.2124
+   2      somme                          -0.001074       0.0462
+   3      circonstance                   -0.001030       0.2057
+   4      obligé                         -0.000956       0.0491
+   5      idiot                          -0.000889       0.0609
+   6      paie                           -0.000817       0.0704
+   7      crime                          -0.000715       0.0535
+   8      naturel                        -0.000695       0.0481
+   9      vocabulaire                    -0.000630       0.0857
+   10     écoutez                        -0.000616       0.0583
+   11     supermarché                    -0.000611       0.1070
+   12     oubliez                        -0.000552       0.0644
+   13     longuement                     -0.000503       0.0469
+   14     épilogue                       -0.000376       0.1052
+   15     concrètes                      -0.000355       0.1411
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      katia                          +0.249117       0.6490
+   2      ri                             +0.102356       0.1343
+   3      comprendrait                   +0.083759       0.1742
+   4      accidentelle                   +0.075881       0.1348
+   5      nièce                          +0.070865       0.0821
+   6      effectuer                      +0.054068       0.0824
+   7      alliance                       +0.050844       0.1410
+   8      ok                             +0.049506       0.1100
+   9      parenté                        +0.046940       0.0971
+   10     amoureuse                      +0.040116       0.0565
+   11     biologique                     +0.038908       0.1270
+   12     malhonnête                     +0.035145       0.1199
+   13     épouser                        +0.029981       0.0606
+   14     plateau                        +0.024163       0.0534
+   15     divorcer                       +0.021969       0.1181
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      avocat                         -0.140414       0.2124
+   2      circonstance                   -0.061398       0.2057
+   3      idiot                          -0.053675       0.0609
+   4      somme                          -0.052904       0.0462
+   5      obligé                         -0.041438       0.0491
+   6      vocabulaire                    -0.038459       0.0857
+   7      crime                          -0.034579       0.0535
+   8      supermarché                    -0.033138       0.1070
+   9      naturel                        -0.032496       0.0481
+   10     paie                           -0.030804       0.0704
+   11     écoutez                        -0.029267       0.0583
+   12     oubliez                        -0.027508       0.0644
+   13     juge                           -0.021820       0.0549
+   14     al                             -0.020859       0.2258
+   15     aviez                          -0.020830       0.0519
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+avocat                    +0.000000     +0.000121     +0.000121     0.2124
+vocabulaire               +0.000000     +0.000079     +0.000079     0.0857
+épilogue                  +0.000000     +0.000062     +0.000062     0.1052
+obstination               +0.000000     +0.000055     +0.000055     0.0821
+somme                     +0.000000     +0.000052     +0.000052     0.0462
+idiot                     +0.000000     +0.000048     +0.000048     0.0609
+aviez                     +0.000000     +0.000035     +0.000035     0.0519
+nièce                     +0.001462     +0.000032     +0.000032     0.0821
+concrètes                 +0.000000     +0.000025     +0.000025     0.1411
+obligé                    +0.000000     +0.000024     +0.000024     0.0491
+al                        +0.000000     +0.000023     +0.000023     0.2258
+intention                 +0.000000     +0.000022     +0.000022     0.0462
+longuement                +0.000000     +0.000021     +0.000021     0.0469
+rencontrée                +0.000000     +0.000019     +0.000019     0.0711
+paul                      +0.000000     +0.000017     +0.000017     0.0677
+sauté                     +0.000140     +0.000015     +0.000015     0.0666
+juge                      +0.000000     +0.000014     +0.000014     0.0549
+fous                      +0.000000     +0.000009     +0.000009     0.0480
+habiter                   +0.000416     +0.000009     +0.000009     0.0694
+apporte                   +0.000211     +0.000004     +0.000004     0.0561
+logit final pour 'femme': 1.1460
+# analyse pour la classe: HOMME
+# logit: -0.8159
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      avocat                         +0.000084       0.2124
+   2      vocabulaire                    +0.000065       0.0857
+   3      idiot                          +0.000045       0.0609
+   4      li                             +0.000043       0.2664
+   5      oncle                          +0.000029       0.0611
+   6      somme                          +0.000025       0.0462
+   7      obstination                    +0.000023       0.0821
+   8      épilogue                       +0.000022       0.1052
+   9      aviez                          +0.000019       0.0519
+   10     concrètes                      +0.000018       0.1411
+   11     apporte                        +0.000017       0.0561
+   12     nièce                          +0.000016       0.0821
+   13     fous                           +0.000013       0.0480
+   14     mienne                         +0.000011       0.0505
+   15     juge                           +0.000009       0.0549
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      circonstance                   -0.000079       0.2057
+   2      alliance                       -0.000071       0.1410
+   3      comprendrait                   -0.000060       0.1742
+   4      katia                          -0.000055       0.6490
+   5      ok                             -0.000041       0.1100
+   6      malhonnête                     -0.000036       0.1199
+   7      accidentelle                   -0.000023       0.1348
+   8      tienne                         -0.000023       0.0620
+   9      commis                         -0.000023       0.0529
+   10     soyons                         -0.000022       0.0691
+   11     épouser                        -0.000022       0.0606
+   12     parenté                        -0.000020       0.0971
+   13     supermarché                    -0.000020       0.1070
+   14     écoutez                        -0.000016       0.0583
+   15     naturel                        -0.000015       0.0481
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      avocat                         +0.000084       0.2124
+   2      vocabulaire                    +0.000065       0.0857
+   3      idiot                          +0.000045       0.0609
+   4      li                             +0.000043       0.2664
+   5      oncle                          +0.000029       0.0611
+   6      somme                          +0.000025       0.0462
+   7      obstination                    +0.000023       0.0821
+   8      épilogue                       +0.000022       0.1052
+   9      aviez                          +0.000019       0.0519
+   10     concrètes                      +0.000018       0.1411
+   11     apporte                        +0.000017       0.0561
+   12     nièce                          +0.000016       0.0821
+   13     fous                           +0.000013       0.0480
+   14     mienne                         +0.000011       0.0505
+   15     juge                           +0.000009       0.0549
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      circonstance                   -0.000079       0.2057
+   2      alliance                       -0.000071       0.1410
+   3      comprendrait                   -0.000060       0.1742
+   4      katia                          -0.000055       0.6490
+   5      ok                             -0.000041       0.1100
+   6      malhonnête                     -0.000036       0.1199
+   7      accidentelle                   -0.000023       0.1348
+   8      tienne                         -0.000023       0.0620
+   9      commis                         -0.000023       0.0529
+   10     soyons                         -0.000022       0.0691
+   11     épouser                        -0.000022       0.0606
+   12     parenté                        -0.000020       0.0971
+   13     supermarché                    -0.000020       0.1070
+   14     écoutez                        -0.000016       0.0583
+   15     naturel                        -0.000015       0.0481
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      avocat                         +0.001394       0.2124
+   2      circonstance                   +0.001083       0.2057
+   3      somme                          +0.000775       0.0462
+   4      obligé                         +0.000688       0.0491
+   5      idiot                          +0.000622       0.0609
+   6      paie                           +0.000581       0.0704
+   7      crime                          +0.000478       0.0535
+   8      concrètes                      +0.000471       0.1411
+   9      naturel                        +0.000427       0.0481
+   10     écoutez                        +0.000407       0.0583
+   11     paul                           +0.000402       0.0677
+   12     longuement                     +0.000390       0.0469
+   13     al                             +0.000388       0.2258
+   14     vocabulaire                    +0.000377       0.0857
+   15     aviez                          +0.000349       0.0519
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      katia                          -0.003100       0.6490
+   2      comprendrait                   -0.001361       0.1742
+   3      ri                             -0.001157       0.1343
+   4      nièce                          -0.001065       0.0821
+   5      accidentelle                   -0.000795       0.1348
+   6      effectuer                      -0.000769       0.0824
+   7      alliance                       -0.000744       0.1410
+   8      ok                             -0.000742       0.1100
+   9      malhonnête                     -0.000692       0.1199
+   10     parenté                        -0.000683       0.0971
+   11     épouser                        -0.000582       0.0606
+   12     amoureuse                      -0.000552       0.0565
+   13     marier                         -0.000480       0.0637
+   14     li                             -0.000401       0.2664
+   15     plateau                        -0.000345       0.0534
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      avocat                         +0.083101       0.2124
+   2      circonstance                   +0.060350       0.2057
+   3      somme                          +0.040764       0.0462
+   4      idiot                          +0.037274       0.0609
+   5      obligé                         +0.031208       0.0491
+   6      al                             +0.028380       0.2258
+   7      paie                           +0.027284       0.0704
+   8      concrètes                      +0.026447       0.1411
+   9      crime                          +0.023848       0.0535
+   10     vocabulaire                    +0.022963       0.0857
+   11     naturel                        +0.020636       0.0481
+   12     écoutez                        +0.019275       0.0583
+   13     aviez                          +0.018860       0.0519
+   14     oubliez                        +0.018027       0.0644
+   15     longuement                     +0.017309       0.0469
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      katia                          -0.124954       0.6490
+   2      ri                             -0.071027       0.1343
+   3      comprendrait                   -0.063664       0.1742
+   4      accidentelle                   -0.053121       0.1348
+   5      nièce                          -0.050841       0.0821
+   6      parenté                        -0.044011       0.0971
+   7      ok                             -0.042709       0.1100
+   8      effectuer                      -0.041947       0.0824
+   9      biologique                     -0.033836       0.1270
+   10     amoureuse                      -0.029362       0.0565
+   11     malhonnête                     -0.026061       0.1199
+   12     alliance                       -0.025909       0.1410
+   13     épouser                        -0.020463       0.0606
+   14     plateau                        -0.019911       0.0534
+   15     marier                         -0.018207       0.0637
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+avocat                    +0.001394     +0.000084     +0.000084     0.2124
+vocabulaire               +0.000377     +0.000065     +0.000065     0.0857
+idiot                     +0.000622     +0.000045     +0.000045     0.0609
+li                        +0.000000     +0.000043     +0.000043     0.2664
+oncle                     +0.000000     +0.000029     +0.000029     0.0611
+somme                     +0.000775     +0.000025     +0.000025     0.0462
+obstination               +0.000119     +0.000023     +0.000023     0.0821
+épilogue                  +0.000180     +0.000022     +0.000022     0.1052
+aviez                     +0.000349     +0.000019     +0.000019     0.0519
+concrètes                 +0.000471     +0.000018     +0.000018     0.1411
+apporte                   +0.000000     +0.000017     +0.000017     0.0561
+nièce                     +0.000000     +0.000016     +0.000016     0.0821
+fous                      +0.000173     +0.000013     +0.000013     0.0480
+mienne                    +0.000000     +0.000011     +0.000011     0.0505
+juge                      +0.000147     +0.000009     +0.000009     0.0549
+longuement                +0.000390     +0.000008     +0.000008     0.0469
+marier                    +0.000000     +0.000008     +0.000008     0.0637
+obligé                    +0.000688     +0.000007     +0.000007     0.0491
+biologique                +0.000000     +0.000006     +0.000006     0.1270
+vouliez                   +0.000000     +0.000005     +0.000005     0.0788
+logit final pour 'homme': -0.8159

@@ -1,0 +1,5 @@
+filename: (BOULENGER)(Marcel)(Lettres de Chantilly)(1)(1907)(1873)(1932)(fr)(z)(z)(V)(R)(T).txt
+index: 266
+first_name: marcel
+last_name: boulenger
+true_label: homme

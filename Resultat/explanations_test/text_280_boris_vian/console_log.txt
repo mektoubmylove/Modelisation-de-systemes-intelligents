@@ -1,0 +1,386 @@
+texte analysé: c était une mouche . ganard pauvre vieux . il ne faut pas le plaindre , dit l abbé grille . il a une belle situation . une belle situation . oui , dit wolf . une jolie situation . l abbé grille remit ...
+prédiction: HOMME (confiance: 70.3%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.4752
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      abbé                           +0.000172       0.3671
+   2      grille                         +0.000106       0.2267
+   3      portefeuille                   +0.000071       0.0956
+   4      xxiv                           +0.000037       0.0882
+   5      chapelle                       +0.000027       0.1443
+   6      aptitude                       +0.000025       0.0750
+   7      prêtre                         +0.000023       0.0858
+   8      donnerai                       +0.000021       0.0491
+   9      aurez                          +0.000020       0.0342
+   10     anicroche                      +0.000018       0.1001
+   11     étendue                        +0.000017       0.0344
+   12     enlevait                       +0.000015       0.0585
+   13     chapitre                       +0.000015       0.0403
+   14     écoliers                       +0.000014       0.0705
+   15     tenez                          +0.000013       0.0365
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      wolf                           -0.000273       0.7459
+   2      tolérant                       -0.000080       0.0937
+   3      stations                       -0.000056       0.0592
+   4      athée                          -0.000048       0.0827
+   5      déplaisir                      -0.000041       0.0730
+   6      compréhension                  -0.000036       0.0545
+   7      remercie                       -0.000029       0.0711
+   8      établissait                    -0.000027       0.0780
+   9      apprenait                      -0.000026       0.0457
+   10     central                        -0.000024       0.0459
+   11     faculté                        -0.000024       0.0479
+   12     propagande                     -0.000022       0.0739
+   13     voilée                         -0.000021       0.0584
+   14     camouflage                     -0.000020       0.0846
+   15     plaindre                       -0.000020       0.0351
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      abbé                           +0.000172       0.3671
+   2      grille                         +0.000106       0.2267
+   3      portefeuille                   +0.000071       0.0956
+   4      xxiv                           +0.000037       0.0882
+   5      chapelle                       +0.000027       0.1443
+   6      aptitude                       +0.000025       0.0750
+   7      prêtre                         +0.000023       0.0858
+   8      donnerai                       +0.000021       0.0491
+   9      aurez                          +0.000020       0.0342
+   10     anicroche                      +0.000018       0.1001
+   11     étendue                        +0.000017       0.0344
+   12     enlevait                       +0.000015       0.0585
+   13     chapitre                       +0.000015       0.0403
+   14     écoliers                       +0.000014       0.0705
+   15     tenez                          +0.000013       0.0365
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      wolf                           -0.000273       0.7459
+   2      tolérant                       -0.000080       0.0937
+   3      stations                       -0.000056       0.0592
+   4      athée                          -0.000048       0.0827
+   5      déplaisir                      -0.000041       0.0730
+   6      compréhension                  -0.000036       0.0545
+   7      remercie                       -0.000029       0.0711
+   8      établissait                    -0.000027       0.0780
+   9      apprenait                      -0.000026       0.0457
+   10     central                        -0.000024       0.0459
+   11     faculté                        -0.000024       0.0479
+   12     propagande                     -0.000022       0.0739
+   13     voilée                         -0.000021       0.0584
+   14     camouflage                     -0.000020       0.0846
+   15     plaindre                       -0.000020       0.0351
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tolérant                       +0.001246       0.0937
+   2      jolie                          +0.001136       0.0574
+   3      confesseur                     +0.001009       0.0796
+   4      amusant                        +0.000841       0.0443
+   5      connivence                     +0.000777       0.0587
+   6      sereine                        +0.000756       0.0505
+   7      confessionnal                  +0.000664       0.0812
+   8      établissait                    +0.000651       0.0780
+   9      différente                     +0.000562       0.0370
+   10     déplaisir                      +0.000506       0.0730
+   11     groupés                        +0.000448       0.0714
+   12     tendit                         +0.000447       0.0361
+   13     photos                         +0.000447       0.0396
+   14     cérémonie                      +0.000445       0.0390
+   15     fraîche                        +0.000429       0.0316
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      wolf                           -0.007458       0.7459
+   2      abbé                           -0.003182       0.3671
+   3      grille                         -0.001336       0.2267
+   4      camouflage                     -0.000983       0.0846
+   5      portefeuille                   -0.000946       0.0956
+   6      manoeuvre                      -0.000927       0.0435
+   7      xxiv                           -0.000913       0.0882
+   8      rectangle                      -0.000866       0.0566
+   9      chapitre                       -0.000731       0.0403
+   10     trompe                         -0.000651       0.0350
+   11     obscure                        -0.000630       0.0425
+   12     armé                           -0.000586       0.0430
+   13     donnerai                       -0.000585       0.0491
+   14     stations                       -0.000535       0.0592
+   15     mouche                         -0.000460       0.0415
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tolérant                       +0.063407       0.0937
+   2      jolie                          +0.062139       0.0574
+   3      confesseur                     +0.049516       0.0796
+   4      amusant                        +0.041399       0.0443
+   5      sereine                        +0.035417       0.0505
+   6      confessionnal                  +0.034181       0.0812
+   7      connivence                     +0.033072       0.0587
+   8      établissait                    +0.029513       0.0780
+   9      déplaisir                      +0.029403       0.0730
+   10     différente                     +0.028207       0.0370
+   11     groupés                        +0.025412       0.0714
+   12     fraîche                        +0.024937       0.0316
+   13     compréhension                  +0.023582       0.0545
+   14     photos                         +0.021419       0.0396
+   15     communion                      +0.020812       0.0529
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      wolf                           -0.354031       0.7459
+   2      abbé                           -0.115053       0.3671
+   3      grille                         -0.084185       0.2267
+   4      xxiv                           -0.053198       0.0882
+   5      portefeuille                   -0.052050       0.0956
+   6      camouflage                     -0.049735       0.0846
+   7      manoeuvre                      -0.047544       0.0435
+   8      rectangle                      -0.039814       0.0566
+   9      chapitre                       -0.038182       0.0403
+   10     armé                           -0.033995       0.0430
+   11     obscure                        -0.033590       0.0425
+   12     trompe                         -0.030036       0.0350
+   13     tenez                          -0.026691       0.0365
+   14     donnerai                       -0.024824       0.0491
+   15     confession                     -0.024567       0.0523
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+abbé                      +0.000000     +0.000172     +0.000172     0.3671
+grille                    +0.000000     +0.000106     +0.000106     0.2267
+portefeuille              +0.000000     +0.000071     +0.000071     0.0956
+xxiv                      +0.000000     +0.000037     +0.000037     0.0882
+chapelle                  +0.000000     +0.000027     +0.000027     0.1443
+aptitude                  +0.000000     +0.000025     +0.000025     0.0750
+prêtre                    +0.000287     +0.000023     +0.000023     0.0858
+donnerai                  +0.000000     +0.000021     +0.000021     0.0491
+aurez                     +0.000012     +0.000020     +0.000020     0.0342
+anicroche                 +0.000302     +0.000018     +0.000018     0.1001
+étendue                   +0.000000     +0.000017     +0.000017     0.0344
+enlevait                  +0.000426     +0.000015     +0.000015     0.0585
+chapitre                  +0.000000     +0.000015     +0.000015     0.0403
+écoliers                  +0.000000     +0.000014     +0.000014     0.0705
+tenez                     +0.000000     +0.000013     +0.000013     0.0365
+mouche                    +0.000000     +0.000012     +0.000012     0.0415
+familier                  +0.000073     +0.000012     +0.000012     0.0386
+armé                      +0.000000     +0.000011     +0.000011     0.0430
+retraite                  +0.000000     +0.000010     +0.000010     0.0324
+confession                +0.000000     +0.000010     +0.000010     0.0523
+logit final pour 'femme': -0.4752
+# analyse pour la classe: HOMME  prédite
+# logit: 0.3866
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      abbé                           +0.000090       0.3671
+   2      grille                         +0.000046       0.2267
+   3      portefeuille                   +0.000046       0.0956
+   4      prêtre                         +0.000034       0.0858
+   5      xxiv                           +0.000031       0.0882
+   6      mouche                         +0.000024       0.0415
+   7      aptitude                       +0.000022       0.0750
+   8      enlevait                       +0.000013       0.0585
+   9      chapitre                       +0.000012       0.0403
+   10     aurez                          +0.000010       0.0342
+   11     tenez                          +0.000010       0.0365
+   12     négligemment                   +0.000009       0.0561
+   13     étendue                        +0.000009       0.0344
+   14     stupéfaction                   +0.000008       0.0471
+   15     confession                     +0.000008       0.0523
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      wolf                           -0.000169       0.7459
+   2      tolérant                       -0.000051       0.0937
+   3      camouflage                     -0.000033       0.0846
+   4      propagande                     -0.000030       0.0739
+   5      athée                          -0.000030       0.0827
+   6      manoeuvre                      -0.000026       0.0435
+   7      stations                       -0.000021       0.0592
+   8      soldats                        -0.000020       0.0400
+   9      établissait                    -0.000020       0.0780
+   10     confessionnal                  -0.000018       0.0812
+   11     déplaisir                      -0.000018       0.0730
+   12     subtile                        -0.000017       0.0592
+   13     entraînaient                   -0.000017       0.0793
+   14     sécurité                       -0.000015       0.0313
+   15     rectangle                      -0.000015       0.0566
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      abbé                           +0.000090       0.3671
+   2      grille                         +0.000046       0.2267
+   3      portefeuille                   +0.000046       0.0956
+   4      prêtre                         +0.000034       0.0858
+   5      xxiv                           +0.000031       0.0882
+   6      mouche                         +0.000024       0.0415
+   7      aptitude                       +0.000022       0.0750
+   8      enlevait                       +0.000013       0.0585
+   9      chapitre                       +0.000012       0.0403
+   10     aurez                          +0.000010       0.0342
+   11     tenez                          +0.000010       0.0365
+   12     négligemment                   +0.000009       0.0561
+   13     étendue                        +0.000009       0.0344
+   14     stupéfaction                   +0.000008       0.0471
+   15     confession                     +0.000008       0.0523
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      wolf                           -0.000169       0.7459
+   2      tolérant                       -0.000051       0.0937
+   3      camouflage                     -0.000033       0.0846
+   4      propagande                     -0.000030       0.0739
+   5      athée                          -0.000030       0.0827
+   6      manoeuvre                      -0.000026       0.0435
+   7      stations                       -0.000021       0.0592
+   8      soldats                        -0.000020       0.0400
+   9      établissait                    -0.000020       0.0780
+   10     confessionnal                  -0.000018       0.0812
+   11     déplaisir                      -0.000018       0.0730
+   12     subtile                        -0.000017       0.0592
+   13     entraînaient                   -0.000017       0.0793
+   14     sécurité                       -0.000015       0.0313
+   15     rectangle                      -0.000015       0.0566
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      wolf                           +0.006517       0.7459
+   2      abbé                           +0.003081       0.3671
+   3      grille                         +0.001113       0.2267
+   4      xxiv                           +0.000933       0.0882
+   5      camouflage                     +0.000828       0.0846
+   6      manoeuvre                      +0.000786       0.0435
+   7      portefeuille                   +0.000774       0.0956
+   8      rectangle                      +0.000689       0.0566
+   9      donnerai                       +0.000616       0.0491
+   10     chapitre                       +0.000570       0.0403
+   11     trompe                         +0.000519       0.0350
+   12     stations                       +0.000494       0.0592
+   13     armé                           +0.000473       0.0430
+   14     obscure                        +0.000457       0.0425
+   15     compartiment                   +0.000439       0.0608
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jolie                          -0.000977       0.0574
+   2      tolérant                       -0.000904       0.0937
+   3      confesseur                     -0.000860       0.0796
+   4      connivence                     -0.000650       0.0587
+   5      sereine                        -0.000649       0.0505
+   6      amusant                        -0.000624       0.0443
+   7      confessionnal                  -0.000507       0.0812
+   8      établissait                    -0.000496       0.0780
+   9      différente                     -0.000405       0.0370
+   10     cérémonie                      -0.000380       0.0390
+   11     fraîche                        -0.000373       0.0316
+   12     photos                         -0.000372       0.0396
+   13     tendit                         -0.000306       0.0361
+   14     athée                          -0.000292       0.0827
+   15     compréhension                  -0.000291       0.0545
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      wolf                           +0.257508       0.7459
+   2      abbé                           +0.106850       0.3671
+   3      xxiv                           +0.053354       0.0882
+   4      grille                         +0.052971       0.2267
+   5      portefeuille                   +0.043082       0.0956
+   6      camouflage                     +0.040906       0.0846
+   7      manoeuvre                      +0.038994       0.0435
+   8      chapitre                       +0.031971       0.0403
+   9      rectangle                      +0.031805       0.0566
+   10     donnerai                       +0.026685       0.0491
+   11     trompe                         +0.025669       0.0350
+   12     armé                           +0.025444       0.0430
+   13     tenez                          +0.024709       0.0365
+   14     obscure                        +0.023946       0.0425
+   15     chapelle                       +0.022812       0.1443
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jolie                          -0.053172       0.0574
+   2      tolérant                       -0.051538       0.0937
+   3      confesseur                     -0.045208       0.0796
+   4      connivence                     -0.031304       0.0587
+   5      sereine                        -0.030839       0.0505
+   6      amusant                        -0.029182       0.0443
+   7      confessionnal                  -0.025000       0.0812
+   8      fraîche                        -0.020676       0.0316
+   9      différente                     -0.020572       0.0370
+   10     compréhension                  -0.020178       0.0545
+   11     établissait                    -0.019060       0.0780
+   12     groupés                        -0.019003       0.0714
+   13     athée                          -0.017661       0.0827
+   14     cérémonie                      -0.017164       0.0390
+   15     photos                         -0.016907       0.0396
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+abbé                      +0.003081     +0.000090     +0.000090     0.3671
+grille                    +0.001113     +0.000046     +0.000046     0.2267
+portefeuille              +0.000774     +0.000046     +0.000046     0.0956
+prêtre                    +0.000000     +0.000034     +0.000034     0.0858
+xxiv                      +0.000933     +0.000031     +0.000031     0.0882
+mouche                    +0.000359     +0.000024     +0.000024     0.0415
+aptitude                  +0.000123     +0.000022     +0.000022     0.0750
+enlevait                  +0.000000     +0.000013     +0.000013     0.0585
+chapitre                  +0.000570     +0.000012     +0.000012     0.0403
+aurez                     +0.000000     +0.000010     +0.000010     0.0342
+tenez                     +0.000433     +0.000010     +0.000010     0.0365
+négligemment              +0.000359     +0.000009     +0.000009     0.0561
+étendue                   +0.000236     +0.000009     +0.000009     0.0344
+stupéfaction              +0.000131     +0.000008     +0.000008     0.0471
+confession                +0.000319     +0.000008     +0.000008     0.0523
+armé                      +0.000473     +0.000007     +0.000007     0.0430
+donnerai                  +0.000616     +0.000007     +0.000007     0.0491
+compartiment              +0.000439     +0.000006     +0.000006     0.0608
+retraite                  +0.000183     +0.000006     +0.000006     0.0324
+évoquer                   +0.000000     +0.000006     +0.000006     0.0415
+logit final pour 'homme': 0.3866

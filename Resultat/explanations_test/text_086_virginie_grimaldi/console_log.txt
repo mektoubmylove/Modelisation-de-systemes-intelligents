@@ -1,0 +1,386 @@
+texte analysé: les bras enroulés autour d un barreau de l échelle , uniquement vêtue d un justaucorps fuchsia . elle m a téléphoné pour me demander de l aide , explique marius . elle n avait jamais eu le vertige jus...
+prédiction: FEMME (confiance: 77.9%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.6829
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gustave                        +0.000133       0.4795
+   2      conduite                       +0.000054       0.0285
+   3      maillot                        +0.000029       0.0493
+   4      fuchsia                        +0.000029       0.0771
+   5      explication                    +0.000026       0.0289
+   6      consent                        +0.000025       0.0625
+   7      échelle                        +0.000025       0.0349
+   8      ouïe                           +0.000021       0.0579
+   9      barreau                        +0.000020       0.0671
+   10     franchit                       +0.000018       0.0430
+   11     satisfait                      +0.000016       0.0305
+   12     pompier                        +0.000016       0.0683
+   13     intention                      +0.000013       0.0263
+   14     paresseux                      +0.000012       0.0525
+   15     perché                         +0.000011       0.0535
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rosalie                        -0.000417       0.4624
+   2      marius                         -0.000245       0.5883
+   3      approchent                     -0.000059       0.0550
+   4      survécu                        -0.000051       0.0462
+   5      oppose                         -0.000048       0.0540
+   6      justaucorps                    -0.000045       0.0907
+   7      crampe                         -0.000041       0.0689
+   8      hausse                         -0.000037       0.0492
+   9      précédé                        -0.000036       0.0447
+   10     ouvre                          -0.000036       0.0261
+   11     couillon                       -0.000035       0.0831
+   12     grue                           -0.000034       0.1300
+   13     enroulés                       -0.000029       0.0777
+   14     tente                          -0.000028       0.0310
+   15     éloigner                       -0.000028       0.0277
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gustave                        +0.000133       0.4795
+   2      conduite                       +0.000054       0.0285
+   3      maillot                        +0.000029       0.0493
+   4      fuchsia                        +0.000029       0.0771
+   5      explication                    +0.000026       0.0289
+   6      consent                        +0.000025       0.0625
+   7      échelle                        +0.000025       0.0349
+   8      ouïe                           +0.000021       0.0579
+   9      barreau                        +0.000020       0.0671
+   10     franchit                       +0.000018       0.0430
+   11     satisfait                      +0.000016       0.0305
+   12     pompier                        +0.000016       0.0683
+   13     intention                      +0.000013       0.0263
+   14     paresseux                      +0.000012       0.0525
+   15     perché                         +0.000011       0.0535
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rosalie                        -0.000417       0.4624
+   2      marius                         -0.000245       0.5883
+   3      approchent                     -0.000059       0.0550
+   4      survécu                        -0.000051       0.0462
+   5      oppose                         -0.000048       0.0540
+   6      justaucorps                    -0.000045       0.0907
+   7      crampe                         -0.000041       0.0689
+   8      hausse                         -0.000037       0.0492
+   9      précédé                        -0.000036       0.0447
+   10     ouvre                          -0.000036       0.0261
+   11     couillon                       -0.000035       0.0831
+   12     grue                           -0.000034       0.1300
+   13     enroulés                       -0.000029       0.0777
+   14     tente                          -0.000028       0.0310
+   15     éloigner                       -0.000028       0.0277
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rosalie                        +0.004954       0.4624
+   2      fuchsia                        +0.002307       0.0771
+   3      joséphine                      +0.001316       0.0784
+   4      tétanisée                      +0.001086       0.0737
+   5      décédée                        +0.001018       0.0669
+   6      empaillé                       +0.000952       0.0827
+   7      enroulés                       +0.000864       0.0777
+   8      blesser                        +0.000825       0.0419
+   9      survécu                        +0.000647       0.0462
+   10     plisse                         +0.000602       0.0696
+   11     réaction                       +0.000555       0.0312
+   12     appréhension                   +0.000541       0.0395
+   13     sourcils                       +0.000473       0.0277
+   14     décide                         +0.000472       0.0324
+   15     éloigner                       +0.000453       0.0277
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marius                         -0.005678       0.5883
+   2      gustave                        -0.005639       0.4795
+   3      grue                           -0.001574       0.1300
+   4      camion                         -0.000941       0.0444
+   5      barreau                        -0.000891       0.0671
+   6      couillon                       -0.000857       0.0831
+   7      engin                          -0.000657       0.0486
+   8      échelle                        -0.000503       0.0349
+   9      soixante                       -0.000474       0.0284
+   10     conduite                       -0.000432       0.0285
+   11     ouïe                           -0.000423       0.0579
+   12     réplique                       -0.000407       0.0361
+   13     magnanime                      -0.000397       0.0687
+   14     grimpe                         -0.000394       0.0522
+   15     invincible                     -0.000361       0.0529
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rosalie                        +0.209085       0.4624
+   2      fuchsia                        +0.107654       0.0771
+   3      joséphine                      +0.057598       0.0784
+   4      empaillé                       +0.055405       0.0827
+   5      enroulés                       +0.050269       0.0777
+   6      tétanisée                      +0.048443       0.0737
+   7      blesser                        +0.043087       0.0419
+   8      décédée                        +0.038477       0.0669
+   9      survécu                        +0.031000       0.0462
+   10     plisse                         +0.024621       0.0696
+   11     éloigner                       +0.023176       0.0277
+   12     décide                         +0.022923       0.0324
+   13     interroge                      +0.022829       0.0407
+   14     exclame                        +0.021396       0.0572
+   15     tenue                          +0.021361       0.0268
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marius                         -0.270354       0.5883
+   2      gustave                        -0.263844       0.4795
+   3      grue                           -0.078724       0.1300
+   4      couillon                       -0.049107       0.0831
+   5      barreau                        -0.046906       0.0671
+   6      camion                         -0.042282       0.0444
+   7      engin                          -0.029145       0.0486
+   8      justaucorps                    -0.021134       0.0907
+   9      échelle                        -0.021113       0.0349
+   10     soixante                       -0.020688       0.0284
+   11     conduite                       -0.019477       0.0285
+   12     invincible                     -0.017841       0.0529
+   13     réplique                       -0.017468       0.0361
+   14     jouait                         -0.016116       0.0277
+   15     descendent                     -0.014046       0.0505
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+gustave                   +0.000000     +0.000133     +0.000133     0.4795
+conduite                  +0.000000     +0.000054     +0.000054     0.0285
+maillot                   +0.000000     +0.000029     +0.000029     0.0493
+fuchsia                   +0.002307     +0.000029     +0.000029     0.0771
+explication               +0.000000     +0.000026     +0.000026     0.0289
+consent                   +0.000044     +0.000025     +0.000025     0.0625
+échelle                   +0.000000     +0.000025     +0.000025     0.0349
+ouïe                      +0.000000     +0.000021     +0.000021     0.0579
+barreau                   +0.000000     +0.000020     +0.000020     0.0671
+franchit                  +0.000181     +0.000018     +0.000018     0.0430
+satisfait                 +0.000000     +0.000016     +0.000016     0.0305
+pompier                   +0.000113     +0.000016     +0.000016     0.0683
+intention                 +0.000000     +0.000013     +0.000013     0.0263
+paresseux                 +0.000108     +0.000012     +0.000012     0.0525
+perché                    +0.000000     +0.000011     +0.000011     0.0535
+décédée                   +0.001018     +0.000009     +0.000009     0.0669
+pompiers                  +0.000000     +0.000009     +0.000009     0.1018
+secoue                    +0.000328     +0.000008     +0.000008     0.0443
+tenue                     +0.000390     +0.000008     +0.000008     0.0268
+arbre                     +0.000000     +0.000007     +0.000007     0.0279
+logit final pour 'femme': 0.6829
+# analyse pour la classe: HOMME
+# logit: -0.5764
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gustave                        +0.000218       0.4795
+   2      conduite                       +0.000035       0.0285
+   3      plisse                         +0.000034       0.0696
+   4      marius                         +0.000028       0.5883
+   5      fuchsia                        +0.000019       0.0771
+   6      maillot                        +0.000018       0.0493
+   7      pompier                        +0.000016       0.0683
+   8      franchit                       +0.000014       0.0430
+   9      descendent                     +0.000013       0.0505
+   10     secoue                         +0.000012       0.0443
+   11     décide                         +0.000012       0.0324
+   12     satisfait                      +0.000011       0.0305
+   13     paresseux                      +0.000010       0.0525
+   14     décédée                        +0.000009       0.0669
+   15     explication                    +0.000008       0.0289
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rosalie                        -0.000323       0.4624
+   2      crampe                         -0.000054       0.0689
+   3      survécu                        -0.000039       0.0462
+   4      approchent                     -0.000035       0.0550
+   5      couillon                       -0.000030       0.0831
+   6      carpe                          -0.000029       0.0648
+   7      oppose                         -0.000022       0.0540
+   8      précédé                        -0.000021       0.0447
+   9      incrédule                      -0.000019       0.0415
+   10     ouvre                          -0.000018       0.0261
+   11     blesser                        -0.000018       0.0419
+   12     monte                          -0.000018       0.0274
+   13     tente                          -0.000018       0.0310
+   14     justaucorps                    -0.000017       0.0907
+   15     grue                           -0.000017       0.1300
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gustave                        +0.000218       0.4795
+   2      conduite                       +0.000035       0.0285
+   3      plisse                         +0.000034       0.0696
+   4      marius                         +0.000028       0.5883
+   5      fuchsia                        +0.000019       0.0771
+   6      maillot                        +0.000018       0.0493
+   7      pompier                        +0.000016       0.0683
+   8      franchit                       +0.000014       0.0430
+   9      descendent                     +0.000013       0.0505
+   10     secoue                         +0.000012       0.0443
+   11     décide                         +0.000012       0.0324
+   12     satisfait                      +0.000011       0.0305
+   13     paresseux                      +0.000010       0.0525
+   14     décédée                        +0.000009       0.0669
+   15     explication                    +0.000008       0.0289
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rosalie                        -0.000323       0.4624
+   2      crampe                         -0.000054       0.0689
+   3      survécu                        -0.000039       0.0462
+   4      approchent                     -0.000035       0.0550
+   5      couillon                       -0.000030       0.0831
+   6      carpe                          -0.000029       0.0648
+   7      oppose                         -0.000022       0.0540
+   8      précédé                        -0.000021       0.0447
+   9      incrédule                      -0.000019       0.0415
+   10     ouvre                          -0.000018       0.0261
+   11     blesser                        -0.000018       0.0419
+   12     monte                          -0.000018       0.0274
+   13     tente                          -0.000018       0.0310
+   14     justaucorps                    -0.000017       0.0907
+   15     grue                           -0.000017       0.1300
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marius                         +0.005707       0.5883
+   2      gustave                        +0.004830       0.4795
+   3      grue                           +0.000955       0.1300
+   4      camion                         +0.000761       0.0444
+   5      barreau                        +0.000735       0.0671
+   6      couillon                       +0.000602       0.0831
+   7      engin                          +0.000484       0.0486
+   8      échelle                        +0.000423       0.0349
+   9      soixante                       +0.000405       0.0284
+   10     conduite                       +0.000368       0.0285
+   11     ouïe                           +0.000320       0.0579
+   12     grimpe                         +0.000294       0.0522
+   13     jouait                         +0.000268       0.0277
+   14     invincible                     +0.000265       0.0529
+   15     réplique                       +0.000259       0.0361
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rosalie                        -0.003096       0.4624
+   2      fuchsia                        -0.001825       0.0771
+   3      joséphine                      -0.000990       0.0784
+   4      tétanisée                      -0.000957       0.0737
+   5      décédée                        -0.000893       0.0669
+   6      empaillé                       -0.000723       0.0827
+   7      blesser                        -0.000645       0.0419
+   8      enroulés                       -0.000633       0.0777
+   9      survécu                        -0.000606       0.0462
+   10     exclame                        -0.000533       0.0572
+   11     plisse                         -0.000508       0.0696
+   12     décide                         -0.000454       0.0324
+   13     réaction                       -0.000413       0.0312
+   14     appréhension                   -0.000383       0.0395
+   15     sourcils                       -0.000375       0.0277
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marius                         +0.273392       0.5883
+   2      gustave                        +0.264274       0.4795
+   3      grue                           +0.055089       0.1300
+   4      barreau                        +0.040163       0.0671
+   5      couillon                       +0.035450       0.0831
+   6      camion                         +0.034053       0.0444
+   7      engin                          +0.019934       0.0486
+   8      échelle                        +0.018671       0.0349
+   9      soixante                       +0.017938       0.0284
+   10     conduite                       +0.015564       0.0285
+   11     jouait                         +0.013785       0.0277
+   12     justaucorps                    +0.013211       0.0907
+   13     invincible                     +0.012289       0.0529
+   14     réplique                       +0.011612       0.0361
+   15     explication                    +0.011563       0.0289
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rosalie                        -0.148916       0.4624
+   2      fuchsia                        -0.088469       0.0771
+   3      joséphine                      -0.045227       0.0784
+   4      enroulés                       -0.042624       0.0777
+   5      empaillé                       -0.041712       0.0827
+   6      tétanisée                      -0.041578       0.0737
+   7      décédée                        -0.038205       0.0669
+   8      blesser                        -0.034043       0.0419
+   9      survécu                        -0.028130       0.0462
+   10     exclame                        -0.025370       0.0572
+   11     plisse                         -0.023932       0.0696
+   12     décide                         -0.023146       0.0324
+   13     interroge                      -0.022006       0.0407
+   14     fronce                         -0.019655       0.0630
+   15     éloigner                       -0.019310       0.0277
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+gustave                   +0.004830     +0.000218     +0.000218     0.4795
+conduite                  +0.000368     +0.000035     +0.000035     0.0285
+plisse                    +0.000000     +0.000034     +0.000034     0.0696
+marius                    +0.005707     +0.000028     +0.000028     0.5883
+fuchsia                   +0.000000     +0.000019     +0.000019     0.0771
+maillot                   +0.000158     +0.000018     +0.000018     0.0493
+pompier                   +0.000000     +0.000016     +0.000016     0.0683
+franchit                  +0.000000     +0.000014     +0.000014     0.0430
+descendent                +0.000151     +0.000013     +0.000013     0.0505
+secoue                    +0.000000     +0.000012     +0.000012     0.0443
+décide                    +0.000000     +0.000012     +0.000012     0.0324
+satisfait                 +0.000192     +0.000011     +0.000011     0.0305
+paresseux                 +0.000000     +0.000010     +0.000010     0.0525
+décédée                   +0.000000     +0.000009     +0.000009     0.0669
+explication               +0.000259     +0.000008     +0.000008     0.0289
+camion                    +0.000761     +0.000008     +0.000008     0.0444
+ouïe                      +0.000320     +0.000008     +0.000008     0.0579
+pompiers                  +0.000000     +0.000007     +0.000007     0.1018
+adieu                     +0.000226     +0.000006     +0.000006     0.0319
+enroulés                  +0.000000     +0.000005     +0.000005     0.0777
+logit final pour 'homme': -0.5764

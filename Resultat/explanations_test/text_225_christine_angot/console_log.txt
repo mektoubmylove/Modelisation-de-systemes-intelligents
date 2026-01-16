@@ -1,0 +1,384 @@
+texte analysé: possède un petit immeuble à laval dans la mayenne . il y a un local au rez de chaussée . possibilité d ouvrir une librairie que je pourrais tenir . lumière chez claude au retour . je frappe à la vitre...
+prédiction: FEMME (confiance: 85.0%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.9342
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      avril                          +0.000081       0.1297
+   2      pleure                         +0.000065       0.1158
+   3      chaussée                       +0.000045       0.0519
+   4      définitivement                 +0.000044       0.0570
+   5      vision                         +0.000039       0.0515
+   6      normales                       +0.000038       0.1173
+   7      frappe                         +0.000035       0.0613
+   8      leçon                          +0.000034       0.0590
+   9      bruges                         +0.000033       0.1738
+   10     hauteurs                       +0.000027       0.0857
+   11     librairie                      +0.000027       0.1859
+   12     fâche                          +0.000023       0.1016
+   13     borde                          +0.000023       0.1303
+   14     file                           +0.000023       0.0532
+   15     local                          +0.000011       0.0716
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      claude                         -0.000268       0.5489
+   2      recommencé                     -0.000168       0.0876
+   3      laval                          -0.000142       0.2954
+   4      taise                          -0.000110       0.1152
+   5      foutue                         -0.000071       0.0935
+   6      reproche                       -0.000069       0.0546
+   7      possède                        -0.000068       0.0563
+   8      mayenne                        -0.000063       0.1977
+   9      garçons                        -0.000053       0.0493
+   10     approche                       -0.000047       0.0456
+   11     monte                          -0.000038       0.0477
+   12     vitre                          -0.000038       0.0556
+   13     plaît                          -0.000036       0.0457
+   14     met                            -0.000036       0.0901
+   15     contestation                   -0.000034       0.1317
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      avril                          +0.000081       0.1297
+   2      pleure                         +0.000065       0.1158
+   3      chaussée                       +0.000045       0.0519
+   4      définitivement                 +0.000044       0.0570
+   5      vision                         +0.000039       0.0515
+   6      normales                       +0.000038       0.1173
+   7      frappe                         +0.000035       0.0613
+   8      leçon                          +0.000034       0.0590
+   9      bruges                         +0.000033       0.1738
+   10     hauteurs                       +0.000027       0.0857
+   11     librairie                      +0.000027       0.1859
+   12     fâche                          +0.000023       0.1016
+   13     borde                          +0.000023       0.1303
+   14     file                           +0.000023       0.0532
+   15     local                          +0.000011       0.0716
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      claude                         -0.000268       0.5489
+   2      recommencé                     -0.000168       0.0876
+   3      laval                          -0.000142       0.2954
+   4      taise                          -0.000110       0.1152
+   5      foutue                         -0.000071       0.0935
+   6      reproche                       -0.000069       0.0546
+   7      possède                        -0.000068       0.0563
+   8      mayenne                        -0.000063       0.1977
+   9      garçons                        -0.000053       0.0493
+   10     approche                       -0.000047       0.0456
+   11     monte                          -0.000038       0.0477
+   12     vitre                          -0.000038       0.0556
+   13     plaît                          -0.000036       0.0457
+   14     met                            -0.000036       0.0901
+   15     contestation                   -0.000034       0.1317
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      claude                         +0.002755       0.5489
+   2      muret                          +0.001758       0.2140
+   3      déjeuner                       +0.001490       0.0904
+   4      pleure                         +0.001356       0.1158
+   5      foutue                         +0.001343       0.0935
+   6      emmener                        +0.001191       0.0522
+   7      bruges                         +0.001096       0.1738
+   8      flash                          +0.001087       0.1118
+   9      oublie                         +0.001004       0.0465
+   10     plaît                          +0.000932       0.0457
+   11     fric                           +0.000928       0.0946
+   12     laval                          +0.000880       0.2954
+   13     recommencé                     +0.000878       0.0876
+   14     garçons                        +0.000646       0.0493
+   15     prochaine                      +0.000630       0.0470
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      carcassonne                    -0.002735       0.3640
+   2      mayenne                        -0.001830       0.1977
+   3      rapports                       -0.001275       0.0591
+   4      fâche                          -0.001275       0.1016
+   5      contestation                   -0.001120       0.1317
+   6      hauteurs                       -0.001057       0.0857
+   7      grince                         -0.000970       0.1112
+   8      monstre                        -0.000932       0.1160
+   9      colline                        -0.000887       0.0724
+   10     coffre                         -0.000665       0.0597
+   11     platine                        -0.000541       0.1224
+   12     possède                        -0.000515       0.0563
+   13     avril                          -0.000479       0.1297
+   14     tables                         -0.000459       0.0521
+   15     samedi                         -0.000385       0.0606
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      muret                          +0.087812       0.2140
+   2      déjeuner                       +0.069901       0.0904
+   3      pleure                         +0.069715       0.1158
+   4      laval                          +0.067096       0.2954
+   5      claude                         +0.060677       0.5489
+   6      fric                           +0.056414       0.0946
+   7      emmener                        +0.053739       0.0522
+   8      foutue                         +0.051792       0.0935
+   9      bruges                         +0.051664       0.1738
+   10     oublie                         +0.043604       0.0465
+   11     plaît                          +0.040583       0.0457
+   12     flash                          +0.040037       0.1118
+   13     local                          +0.032735       0.0716
+   14     prochaine                      +0.026013       0.0470
+   15     leçon                          +0.023288       0.0590
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      carcassonne                    -0.183045       0.3640
+   2      mayenne                        -0.104599       0.1977
+   3      contestation                   -0.065224       0.1317
+   4      rapports                       -0.060299       0.0591
+   5      grince                         -0.059045       0.1112
+   6      fâche                          -0.055848       0.1016
+   7      monstre                        -0.052636       0.1160
+   8      colline                        -0.047368       0.0724
+   9      hauteurs                       -0.046395       0.0857
+   10     possède                        -0.031755       0.0563
+   11     coffre                         -0.028593       0.0597
+   12     borde                          -0.028548       0.1303
+   13     samedi                         -0.027656       0.0606
+   14     platine                        -0.024273       0.1224
+   15     tables                         -0.022958       0.0521
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+avril                     +0.000000     +0.000081     +0.000081     0.1297
+pleure                    +0.001356     +0.000065     +0.000065     0.1158
+chaussée                  +0.000169     +0.000045     +0.000045     0.0519
+définitivement            +0.000000     +0.000044     +0.000044     0.0570
+vision                    +0.000228     +0.000039     +0.000039     0.0515
+normales                  +0.000000     +0.000038     +0.000038     0.1173
+frappe                    +0.000000     +0.000035     +0.000035     0.0613
+leçon                     +0.000386     +0.000034     +0.000034     0.0590
+bruges                    +0.001096     +0.000033     +0.000033     0.1738
+hauteurs                  +0.000000     +0.000027     +0.000027     0.0857
+librairie                 +0.000138     +0.000027     +0.000027     0.1859
+fâche                     +0.000000     +0.000023     +0.000023     0.1016
+borde                     +0.000000     +0.000023     +0.000023     0.1303
+file                      +0.000000     +0.000023     +0.000023     0.0532
+local                     +0.000613     +0.000011     +0.000011     0.0716
+platine                   +0.000000     +0.000005     +0.000005     0.1224
+immeuble                  +0.000000     +0.000002     +0.000002     0.0623
+abandonne                 +0.000000     +0.000001     +0.000001     0.0653
+logit final pour 'femme': 0.9342
+# analyse pour la classe: HOMME
+# logit: -0.8028
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      muret                          +0.000059       0.2140
+   2      avril                          +0.000038       0.1297
+   3      borde                          +0.000032       0.1303
+   4      pleure                         +0.000021       0.1158
+   5      local                          +0.000017       0.0716
+   6      vision                         +0.000016       0.0515
+   7      chaussée                       +0.000015       0.0519
+   8      leçon                          +0.000014       0.0590
+   9      fric                           +0.000013       0.0946
+   10     constate                       +0.000012       0.0786
+   11     frappe                         +0.000012       0.0613
+   12     totalement                     +0.000011       0.0566
+   13     définitivement                 +0.000010       0.0570
+   14     file                           +0.000010       0.0532
+   15     normales                       +0.000009       0.1173
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      claude                         -0.000117       0.5489
+   2      recommencé                     -0.000075       0.0876
+   3      taise                          -0.000069       0.1152
+   4      foutue                         -0.000043       0.0935
+   5      contestation                   -0.000043       0.1317
+   6      laval                          -0.000039       0.2954
+   7      reproche                       -0.000035       0.0546
+   8      carcassonne                    -0.000032       0.3640
+   9      mayenne                        -0.000030       0.1977
+   10     possède                        -0.000029       0.0563
+   11     monte                          -0.000025       0.0477
+   12     coffre                         -0.000022       0.0597
+   13     rapports                       -0.000022       0.0591
+   14     garçons                        -0.000022       0.0493
+   15     relations                      -0.000019       0.0526
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      muret                          +0.000059       0.2140
+   2      avril                          +0.000038       0.1297
+   3      borde                          +0.000032       0.1303
+   4      pleure                         +0.000021       0.1158
+   5      local                          +0.000017       0.0716
+   6      vision                         +0.000016       0.0515
+   7      chaussée                       +0.000015       0.0519
+   8      leçon                          +0.000014       0.0590
+   9      fric                           +0.000013       0.0946
+   10     constate                       +0.000012       0.0786
+   11     frappe                         +0.000012       0.0613
+   12     totalement                     +0.000011       0.0566
+   13     définitivement                 +0.000010       0.0570
+   14     file                           +0.000010       0.0532
+   15     normales                       +0.000009       0.1173
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      claude                         -0.000117       0.5489
+   2      recommencé                     -0.000075       0.0876
+   3      taise                          -0.000069       0.1152
+   4      foutue                         -0.000043       0.0935
+   5      contestation                   -0.000043       0.1317
+   6      laval                          -0.000039       0.2954
+   7      reproche                       -0.000035       0.0546
+   8      carcassonne                    -0.000032       0.3640
+   9      mayenne                        -0.000030       0.1977
+   10     possède                        -0.000029       0.0563
+   11     monte                          -0.000025       0.0477
+   12     coffre                         -0.000022       0.0597
+   13     rapports                       -0.000022       0.0591
+   14     garçons                        -0.000022       0.0493
+   15     relations                      -0.000019       0.0526
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      carcassonne                    +0.001460       0.3640
+   2      mayenne                        +0.001214       0.1977
+   3      rapports                       +0.000858       0.0591
+   4      fâche                          +0.000761       0.1016
+   5      contestation                   +0.000672       0.1317
+   6      hauteurs                       +0.000625       0.0857
+   7      avril                          +0.000515       0.1297
+   8      colline                        +0.000470       0.0724
+   9      grince                         +0.000420       0.1112
+   10     coffre                         +0.000378       0.0597
+   11     monstre                        +0.000370       0.1160
+   12     librairie                      +0.000352       0.1859
+   13     possède                        +0.000266       0.0563
+   14     tables                         +0.000234       0.0521
+   15     normales                       +0.000232       0.1173
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      claude                         -0.002047       0.5489
+   2      muret                          -0.001194       0.2140
+   3      laval                          -0.001140       0.2954
+   4      déjeuner                       -0.001105       0.0904
+   5      flash                          -0.000886       0.1118
+   6      pleure                         -0.000858       0.1158
+   7      foutue                         -0.000817       0.0935
+   8      fric                           -0.000796       0.0946
+   9      bruges                         -0.000782       0.1738
+   10     emmener                        -0.000752       0.0522
+   11     plaît                          -0.000681       0.0457
+   12     recommencé                     -0.000655       0.0876
+   13     oublie                         -0.000642       0.0465
+   14     garçons                        -0.000468       0.0493
+   15     prochaine                      -0.000408       0.0470
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      carcassonne                    +0.113074       0.3640
+   2      mayenne                        +0.076510       0.1977
+   3      rapports                       +0.043092       0.0591
+   4      contestation                   +0.039703       0.1317
+   5      fâche                          +0.036000       0.1016
+   6      grince                         +0.027256       0.1112
+   7      hauteurs                       +0.026207       0.0857
+   8      colline                        +0.024483       0.0724
+   9      monstre                        +0.021992       0.1160
+   10     coffre                         +0.019812       0.0597
+   11     librairie                      +0.019020       0.1859
+   12     possède                        +0.016994       0.0563
+   13     avril                          +0.015091       0.1297
+   14     samedi                         +0.012528       0.0606
+   15     tables                         +0.012213       0.0521
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      laval                          -0.074910       0.2954
+   2      muret                          -0.068848       0.2140
+   3      déjeuner                       -0.050998       0.0904
+   4      fric                           -0.047957       0.0946
+   5      claude                         -0.041975       0.5489
+   6      pleure                         -0.036963       0.1158
+   7      emmener                        -0.033836       0.0522
+   8      flash                          -0.033110       0.1118
+   9      bruges                         -0.031582       0.1738
+   10     foutue                         -0.030501       0.0935
+   11     plaît                          -0.029411       0.0457
+   12     oublie                         -0.026449       0.0465
+   13     local                          -0.018309       0.0716
+   14     prochaine                      -0.017806       0.0470
+   15     revient                        -0.015765       0.0475
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+muret                     +0.000000     +0.000059     +0.000059     0.2140
+avril                     +0.000515     +0.000038     +0.000038     0.1297
+borde                     +0.000181     +0.000032     +0.000032     0.1303
+pleure                    +0.000000     +0.000021     +0.000021     0.1158
+local                     +0.000000     +0.000017     +0.000017     0.0716
+vision                    +0.000000     +0.000016     +0.000016     0.0515
+chaussée                  +0.000000     +0.000015     +0.000015     0.0519
+leçon                     +0.000000     +0.000014     +0.000014     0.0590
+fric                      +0.000000     +0.000013     +0.000013     0.0946
+constate                  +0.000000     +0.000012     +0.000012     0.0786
+frappe                    +0.000082     +0.000012     +0.000012     0.0613
+totalement                +0.000000     +0.000011     +0.000011     0.0566
+définitivement            +0.000080     +0.000010     +0.000010     0.0570
+file                      +0.000000     +0.000010     +0.000010     0.0532
+normales                  +0.000232     +0.000009     +0.000009     0.1173
+descends                  +0.000000     +0.000008     +0.000008     0.0742
+platine                   +0.000185     +0.000007     +0.000007     0.1224
+immeuble                  +0.000000     +0.000006     +0.000006     0.0623
+hauteurs                  +0.000625     +0.000005     +0.000005     0.0857
+bruges                    +0.000000     +0.000004     +0.000004     0.1738
+logit final pour 'homme': -0.8028

@@ -1,0 +1,5 @@
+filename: (KRAMER)(Pascale)(les vivants)(2)(2000)(1961)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 223
+first_name: pascale
+last_name: kramer
+true_label: femme

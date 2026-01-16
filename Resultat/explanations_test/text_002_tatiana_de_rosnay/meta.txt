@@ -1,0 +1,5 @@
+filename: (DE ROSNAY)(Tatiana)(l_appartement témoin)(2)(1992)(1961)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 2
+first_name: tatiana
+last_name: de_rosnay
+true_label: femme

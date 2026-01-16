@@ -1,0 +1,5 @@
+filename: (ZEVACO)(Michel)(pardaillan et fausta)(1)(1913)(1860)(1918)(fr)(z)(z)(V)(R)(T).txt
+index: 25
+first_name: michel
+last_name: zevaco
+true_label: homme

@@ -1,0 +1,386 @@
+texte analysé: tenir sur ses jambes : il marchait très droit , au contraire , il dressait jusqu à six pieds du sol l orgueil d une magnifique raideur . mais c était son idée , je suppose , qu une voiture le transpor...
+prédiction: HOMME (confiance: 61.3%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.2238
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      supériorité                    +0.000074       0.0860
+   2      mors                           +0.000070       0.1372
+   3      suggestions                    +0.000058       0.1314
+   4      singulières                    +0.000052       0.1252
+   5      persuadé                       +0.000049       0.0628
+   6      cheval                         +0.000047       0.1958
+   7      nationales                     +0.000044       0.1260
+   8      justice                        +0.000043       0.0519
+   9      réparer                        +0.000042       0.0653
+   10     développe                      +0.000037       0.1074
+   11     rênes                          +0.000036       0.0957
+   12     caprices                       +0.000031       0.0789
+   13     emparé                         +0.000030       0.0953
+   14     susceptibilités                +0.000029       0.1514
+   15     fit                            +0.000028       0.0470
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      anglais                        -0.000268       0.3167
+   2      déduisit                       -0.000141       0.1390
+   3      décemment                      -0.000121       0.1110
+   4      grassement                     -0.000119       0.1310
+   5      retrouverait                   -0.000115       0.0862
+   6      raideur                        -0.000098       0.0963
+   7      public                         -0.000096       0.0502
+   8      paroxysme                      -0.000095       0.1107
+   9      race                           -0.000089       0.0627
+   10     cocher                         -0.000086       0.3729
+   11     compté                         -0.000077       0.0721
+   12     tiendrait                      -0.000074       0.0838
+   13     coussins                       -0.000061       0.0691
+   14     cependant                      -0.000057       0.0456
+   15     tendresse                      -0.000057       0.0498
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      supériorité                    +0.000074       0.0860
+   2      mors                           +0.000070       0.1372
+   3      suggestions                    +0.000058       0.1314
+   4      singulières                    +0.000052       0.1252
+   5      persuadé                       +0.000049       0.0628
+   6      cheval                         +0.000047       0.1958
+   7      nationales                     +0.000044       0.1260
+   8      justice                        +0.000043       0.0519
+   9      réparer                        +0.000042       0.0653
+   10     développe                      +0.000037       0.1074
+   11     rênes                          +0.000036       0.0957
+   12     caprices                       +0.000031       0.0789
+   13     emparé                         +0.000030       0.0953
+   14     susceptibilités                +0.000029       0.1514
+   15     fit                            +0.000028       0.0470
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      anglais                        -0.000268       0.3167
+   2      déduisit                       -0.000141       0.1390
+   3      décemment                      -0.000121       0.1110
+   4      grassement                     -0.000119       0.1310
+   5      retrouverait                   -0.000115       0.0862
+   6      raideur                        -0.000098       0.0963
+   7      public                         -0.000096       0.0502
+   8      paroxysme                      -0.000095       0.1107
+   9      race                           -0.000089       0.0627
+   10     cocher                         -0.000086       0.3729
+   11     compté                         -0.000077       0.0721
+   12     tiendrait                      -0.000074       0.0838
+   13     coussins                       -0.000061       0.0691
+   14     cependant                      -0.000057       0.0456
+   15     tendresse                      -0.000057       0.0498
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      déduisit                       +0.002644       0.1390
+   2      dessina                        +0.002202       0.1056
+   3      raideur                        +0.001772       0.0963
+   4      rendue                         +0.001609       0.0622
+   5      magnifiques                    +0.001303       0.0707
+   6      coussins                       +0.001277       0.0691
+   7      rênes                          +0.001218       0.0957
+   8      retrouverait                   +0.001145       0.0862
+   9      magnifique                     +0.000996       0.0512
+   10     généreuse                      +0.000924       0.0761
+   11     cocher                         +0.000919       0.3729
+   12     champagne                      +0.000869       0.0629
+   13     rafraîchir                     +0.000795       0.0877
+   14     changement                     +0.000614       0.0533
+   15     célérité                       +0.000550       0.1378
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      anglais                        -0.003453       0.3167
+   2      télépathie                     -0.003136       0.1557
+   3      singulières                    -0.002449       0.1252
+   4      aperçûmes                      -0.001901       0.1605
+   5      phénomènes                     -0.001872       0.1069
+   6      boxe                           -0.001749       0.1163
+   7      exprima                        -0.001725       0.1088
+   8      persuadé                       -0.001587       0.0628
+   9      naturelles                     -0.001477       0.0879
+   10     emparé                         -0.001269       0.0953
+   11     britannique                    -0.001220       0.0951
+   12     opinion                        -0.001127       0.0594
+   13     nationales                     -0.001102       0.1260
+   14     eut                            -0.001001       0.0460
+   15     écrasé                         -0.000954       0.0663
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      déduisit                       +0.145014       0.1390
+   2      dessina                        +0.117171       0.1056
+   3      raideur                        +0.088142       0.0963
+   4      magnifiques                    +0.076384       0.0707
+   5      rendue                         +0.072877       0.0622
+   6      retrouverait                   +0.069403       0.0862
+   7      coussins                       +0.063378       0.0691
+   8      magnifique                     +0.051841       0.0512
+   9      rênes                          +0.050669       0.0957
+   10     généreuse                      +0.044765       0.0761
+   11     champagne                      +0.043486       0.0629
+   12     rafraîchir                     +0.035524       0.0877
+   13     invita                         +0.032646       0.0816
+   14     changement                     +0.031688       0.0533
+   15     paroxysme                      +0.031089       0.1107
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      anglais                        -0.181434       0.3167
+   2      télépathie                     -0.156374       0.1557
+   3      aperçûmes                      -0.108988       0.1605
+   4      singulières                    -0.108756       0.1252
+   5      phénomènes                     -0.104548       0.1069
+   6      exprima                        -0.096617       0.1088
+   7      boxe                           -0.092901       0.1163
+   8      persuadé                       -0.088920       0.0628
+   9      naturelles                     -0.071903       0.0879
+   10     britannique                    -0.062461       0.0951
+   11     emparé                         -0.056125       0.0953
+   12     opinion                        -0.054100       0.0594
+   13     mors                           -0.053842       0.1372
+   14     nationales                     -0.053661       0.1260
+   15     eut                            -0.052532       0.0460
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+supériorité               +0.000162     +0.000074     +0.000074     0.0860
+mors                      +0.000000     +0.000070     +0.000070     0.1372
+suggestions               +0.000000     +0.000058     +0.000058     0.1314
+singulières               +0.000000     +0.000052     +0.000052     0.1252
+persuadé                  +0.000000     +0.000049     +0.000049     0.0628
+cheval                    +0.000000     +0.000047     +0.000047     0.1958
+nationales                +0.000000     +0.000044     +0.000044     0.1260
+justice                   +0.000000     +0.000043     +0.000043     0.0519
+réparer                   +0.000000     +0.000042     +0.000042     0.0653
+développe                 +0.000000     +0.000037     +0.000037     0.1074
+rênes                     +0.001218     +0.000036     +0.000036     0.0957
+caprices                  +0.000124     +0.000031     +0.000031     0.0789
+emparé                    +0.000000     +0.000030     +0.000030     0.0953
+susceptibilités           +0.000029     +0.000029     +0.000029     0.1514
+fit                       +0.000000     +0.000028     +0.000028     0.0470
+efforcer                  +0.000000     +0.000027     +0.000027     0.1239
+écrasé                    +0.000000     +0.000025     +0.000025     0.0663
+rendue                    +0.001609     +0.000023     +0.000023     0.0622
+merveilleux               +0.000322     +0.000022     +0.000022     0.0557
+sensibilité               +0.000321     +0.000022     +0.000022     0.0791
+logit final pour 'femme': -0.2238
+# analyse pour la classe: HOMME  prédite
+# logit: 0.2368
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      singulières                    +0.000076       0.1252
+   2      mors                           +0.000063       0.1372
+   3      cheval                         +0.000051       0.1958
+   4      exprima                        +0.000049       0.1088
+   5      supériorité                    +0.000048       0.0860
+   6      boxe                           +0.000037       0.1163
+   7      choqué                         +0.000035       0.0900
+   8      merveilleux                    +0.000032       0.0557
+   9      développe                      +0.000032       0.1074
+   10     rênes                          +0.000030       0.0957
+   11     incontestable                  +0.000025       0.1137
+   12     invita                         +0.000024       0.0816
+   13     aperçûmes                      +0.000022       0.1605
+   14     susceptibilités                +0.000021       0.1514
+   15     réparer                        +0.000021       0.0653
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      anglais                        -0.000232       0.3167
+   2      décemment                      -0.000088       0.1110
+   3      prouvait                       -0.000082       0.0927
+   4      suppose                        -0.000075       0.1157
+   5      retrouverait                   -0.000073       0.0862
+   6      raideur                        -0.000071       0.0963
+   7      race                           -0.000069       0.0627
+   8      tiendrait                      -0.000065       0.0838
+   9      compté                         -0.000065       0.0721
+   10     déduisit                       -0.000062       0.1390
+   11     paroxysme                      -0.000058       0.1107
+   12     public                         -0.000051       0.0502
+   13     coussins                       -0.000044       0.0691
+   14     baigné                         -0.000040       0.0961
+   15     convenances                    -0.000037       0.1000
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      singulières                    +0.000076       0.1252
+   2      mors                           +0.000063       0.1372
+   3      cheval                         +0.000051       0.1958
+   4      exprima                        +0.000049       0.1088
+   5      supériorité                    +0.000048       0.0860
+   6      boxe                           +0.000037       0.1163
+   7      choqué                         +0.000035       0.0900
+   8      merveilleux                    +0.000032       0.0557
+   9      développe                      +0.000032       0.1074
+   10     rênes                          +0.000030       0.0957
+   11     incontestable                  +0.000025       0.1137
+   12     invita                         +0.000024       0.0816
+   13     aperçûmes                      +0.000022       0.1605
+   14     susceptibilités                +0.000021       0.1514
+   15     réparer                        +0.000021       0.0653
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      anglais                        -0.000232       0.3167
+   2      décemment                      -0.000088       0.1110
+   3      prouvait                       -0.000082       0.0927
+   4      suppose                        -0.000075       0.1157
+   5      retrouverait                   -0.000073       0.0862
+   6      raideur                        -0.000071       0.0963
+   7      race                           -0.000069       0.0627
+   8      tiendrait                      -0.000065       0.0838
+   9      compté                         -0.000065       0.0721
+   10     déduisit                       -0.000062       0.1390
+   11     paroxysme                      -0.000058       0.1107
+   12     public                         -0.000051       0.0502
+   13     coussins                       -0.000044       0.0691
+   14     baigné                         -0.000040       0.0961
+   15     convenances                    -0.000037       0.1000
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      anglais                        +0.003744       0.3167
+   2      télépathie                     +0.002728       0.1557
+   3      singulières                    +0.002497       0.1252
+   4      boxe                           +0.001947       0.1163
+   5      phénomènes                     +0.001891       0.1069
+   6      exprima                        +0.001797       0.1088
+   7      aperçûmes                      +0.001754       0.1605
+   8      persuadé                       +0.001631       0.0628
+   9      britannique                    +0.001338       0.0951
+   10     naturelles                     +0.001298       0.0879
+   11     emparé                         +0.001160       0.0953
+   12     opinion                        +0.001050       0.0594
+   13     eut                            +0.001027       0.0460
+   14     nationales                     +0.000993       0.1260
+   15     mors                           +0.000921       0.1372
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      déduisit                       -0.002585       0.1390
+   2      dessina                        -0.002089       0.1056
+   3      rendue                         -0.001589       0.0622
+   4      raideur                        -0.001459       0.0963
+   5      coussins                       -0.001280       0.0691
+   6      magnifiques                    -0.001193       0.0707
+   7      cocher                         -0.001044       0.3729
+   8      généreuse                      -0.000924       0.0761
+   9      magnifique                     -0.000888       0.0512
+   10     retrouverait                   -0.000851       0.0862
+   11     champagne                      -0.000819       0.0629
+   12     rênes                          -0.000801       0.0957
+   13     rafraîchir                     -0.000673       0.0877
+   14     changement                     -0.000595       0.0533
+   15     tiendrait                      -0.000501       0.0838
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      anglais                        +0.159119       0.3167
+   2      télépathie                     +0.144335       0.1557
+   3      singulières                    +0.114589       0.1252
+   4      boxe                           +0.105142       0.1163
+   5      phénomènes                     +0.098618       0.1069
+   6      aperçûmes                      +0.095781       0.1605
+   7      exprima                        +0.092019       0.1088
+   8      persuadé                       +0.082017       0.0628
+   9      britannique                    +0.061265       0.0951
+   10     naturelles                     +0.060052       0.0879
+   11     mors                           +0.059987       0.1372
+   12     emparé                         +0.058515       0.0953
+   13     eut                            +0.048290       0.0460
+   14     opinion                        +0.044769       0.0594
+   15     nationales                     +0.043375       0.1260
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      déduisit                       -0.126770       0.1390
+   2      dessina                        -0.098239       0.1056
+   3      rendue                         -0.069238       0.0622
+   4      magnifiques                    -0.065504       0.0707
+   5      raideur                        -0.065019       0.0963
+   6      coussins                       -0.061847       0.0691
+   7      retrouverait                   -0.053321       0.0862
+   8      généreuse                      -0.049327       0.0761
+   9      magnifique                     -0.043617       0.0512
+   10     champagne                      -0.038828       0.0629
+   11     changement                     -0.032765       0.0533
+   12     invita                         -0.031997       0.0816
+   13     rênes                          -0.030990       0.0957
+   14     rafraîchir                     -0.029827       0.0877
+   15     guides                         -0.029185       0.1004
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+singulières               +0.002497     +0.000076     +0.000076     0.1252
+mors                      +0.000921     +0.000063     +0.000063     0.1372
+cheval                    +0.000132     +0.000051     +0.000051     0.1958
+exprima                   +0.001797     +0.000049     +0.000049     0.1088
+supériorité               +0.000026     +0.000048     +0.000048     0.0860
+boxe                      +0.001947     +0.000037     +0.000037     0.1163
+choqué                    +0.000046     +0.000035     +0.000035     0.0900
+merveilleux               +0.000000     +0.000032     +0.000032     0.0557
+développe                 +0.000401     +0.000032     +0.000032     0.1074
+rênes                     +0.000000     +0.000030     +0.000030     0.0957
+incontestable             +0.000000     +0.000025     +0.000025     0.1137
+invita                    +0.000000     +0.000024     +0.000024     0.0816
+aperçûmes                 +0.001754     +0.000022     +0.000022     0.1605
+susceptibilités           +0.000124     +0.000021     +0.000021     0.1514
+réparer                   +0.000638     +0.000021     +0.000021     0.0653
+persuadé                  +0.001631     +0.000019     +0.000019     0.0628
+justice                   +0.000389     +0.000019     +0.000019     0.0519
+télépathie                +0.002728     +0.000018     +0.000018     0.1557
+désirs                    +0.000220     +0.000017     +0.000017     0.0639
+phénomènes                +0.001891     +0.000017     +0.000017     0.1069
+logit final pour 'homme': 0.2368

@@ -1,0 +1,386 @@
+texte analysé: et qui l avait conduit à deux doigts de la victoire ? aurait il perdu sa direction de manoeuvre , cette possibilité de surprises qui distinguait son état major , ses capacités d offensive , sa foi en ...
+prédiction: HOMME (confiance: 58.4%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.1662
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      antoinette                     +0.000102       0.1018
+   2      offensive                      +0.000090       0.0894
+   3      pacifiste                      +0.000083       0.1366
+   4      max                            +0.000074       0.0966
+   5      prétendaient                   +0.000061       0.0869
+   6      puissances                     +0.000058       0.0869
+   7      impitoyable                    +0.000053       0.0690
+   8      menée                          +0.000046       0.0648
+   9      militaires                     +0.000044       0.0634
+   10     dossiers                       +0.000043       0.0615
+   11     usines                         +0.000041       0.0778
+   12     illustrée                      +0.000039       0.1204
+   13     tiroir                         +0.000036       0.0497
+   14     tiendra                        +0.000035       0.0758
+   15     réel                           +0.000034       0.0501
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      foch                           -0.000195       0.4045
+   2      joffre                         -0.000122       0.1473
+   3      recrutement                    -0.000105       0.1096
+   4      abaissement                    -0.000095       0.1357
+   5      cottes                         -0.000084       0.1375
+   6      bombardée                      -0.000084       0.1300
+   7      entrecoupés                    -0.000078       0.1221
+   8      clemenceau                     -0.000076       0.2789
+   9      maçon                          -0.000074       0.0994
+   10     armand                         -0.000072       0.1143
+   11     continuité                     -0.000066       0.0977
+   12     cauchemars                     -0.000066       0.0626
+   13     gardé                          -0.000065       0.0391
+   14     blocus                         -0.000064       0.1279
+   15     chroniqueurs                   -0.000059       0.1279
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      antoinette                     +0.000102       0.1018
+   2      offensive                      +0.000090       0.0894
+   3      pacifiste                      +0.000083       0.1366
+   4      max                            +0.000074       0.0966
+   5      prétendaient                   +0.000061       0.0869
+   6      puissances                     +0.000058       0.0869
+   7      impitoyable                    +0.000053       0.0690
+   8      menée                          +0.000046       0.0648
+   9      militaires                     +0.000044       0.0634
+   10     dossiers                       +0.000043       0.0615
+   11     usines                         +0.000041       0.0778
+   12     illustrée                      +0.000039       0.1204
+   13     tiroir                         +0.000036       0.0497
+   14     tiendra                        +0.000035       0.0758
+   15     réel                           +0.000034       0.0501
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      foch                           -0.000195       0.4045
+   2      joffre                         -0.000122       0.1473
+   3      recrutement                    -0.000105       0.1096
+   4      abaissement                    -0.000095       0.1357
+   5      cottes                         -0.000084       0.1375
+   6      bombardée                      -0.000084       0.1300
+   7      entrecoupés                    -0.000078       0.1221
+   8      clemenceau                     -0.000076       0.2789
+   9      maçon                          -0.000074       0.0994
+   10     armand                         -0.000072       0.1143
+   11     continuité                     -0.000066       0.0977
+   12     cauchemars                     -0.000066       0.0626
+   13     gardé                          -0.000065       0.0391
+   14     blocus                         -0.000064       0.1279
+   15     chroniqueurs                   -0.000059       0.1279
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bombardée                      +0.002841       0.1300
+   2      joffre                         +0.002348       0.1473
+   3      armand                         +0.001719       0.1143
+   4      recrutement                    +0.001531       0.1096
+   5      nerveuse                       +0.001466       0.0554
+   6      cauchemars                     +0.001182       0.0626
+   7      capacités                      +0.001178       0.0752
+   8      chroniqueurs                   +0.001136       0.1279
+   9      élégant                        +0.001095       0.0556
+   10     raccrochait                    +0.001026       0.1121
+   11     surhumain                      +0.000843       0.0979
+   12     canapé                         +0.000833       0.0544
+   13     capitonnée                     +0.000793       0.1252
+   14     dossiers                       +0.000785       0.0615
+   15     dédaigneux                     +0.000750       0.0863
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clemenceau                     -0.004985       0.2789
+   2      blocus                         -0.002194       0.1279
+   3      ricanant                       -0.002118       0.0853
+   4      puissances                     -0.002060       0.0869
+   5      manoeuvre                      -0.001769       0.0578
+   6      pasteurs                       -0.001563       0.1426
+   7      centrales                      -0.001442       0.1233
+   8      immunité                       -0.001414       0.1300
+   9      république                     -0.001326       0.0630
+   10     max                            -0.001169       0.0966
+   11     major                          -0.001127       0.0792
+   12     craquements                    -0.001111       0.0869
+   13     condamné                       -0.001104       0.0537
+   14     prétendaient                   -0.001098       0.0869
+   15     continuité                     -0.001062       0.0977
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bombardée                      +0.163152       0.1300
+   2      joffre                         +0.100841       0.1473
+   3      recrutement                    +0.080117       0.1096
+   4      armand                         +0.076928       0.1143
+   5      nerveuse                       +0.067561       0.0554
+   6      cauchemars                     +0.067391       0.0626
+   7      capacités                      +0.066030       0.0752
+   8      chroniqueurs                   +0.063939       0.1279
+   9      surhumain                      +0.057832       0.0979
+   10     élégant                        +0.055445       0.0556
+   11     france                         +0.051935       0.0803
+   12     cottes                         +0.049605       0.1375
+   13     raccrochait                    +0.049232       0.1121
+   14     enfermait                      +0.046179       0.0812
+   15     dossiers                       +0.044544       0.0615
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clemenceau                     -0.232024       0.2789
+   2      blocus                         -0.115347       0.1279
+   3      puissances                     -0.104431       0.0869
+   4      ricanant                       -0.100241       0.0853
+   5      pasteurs                       -0.091119       0.1426
+   6      centrales                      -0.086684       0.1233
+   7      manoeuvre                      -0.079062       0.0578
+   8      max                            -0.073467       0.0966
+   9      immunité                       -0.068023       0.1300
+   10     république                     -0.062398       0.0630
+   11     prétendaient                   -0.061060       0.0869
+   12     tigre                          -0.059786       0.0844
+   13     continuité                     -0.054742       0.0977
+   14     major                          -0.054410       0.0792
+   15     condamné                       -0.050291       0.0537
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+antoinette                +0.000000     +0.000102     +0.000102     0.1018
+offensive                 +0.000000     +0.000090     +0.000090     0.0894
+pacifiste                 +0.000370     +0.000083     +0.000083     0.1366
+max                       +0.000000     +0.000074     +0.000074     0.0966
+prétendaient              +0.000000     +0.000061     +0.000061     0.0869
+puissances                +0.000000     +0.000058     +0.000058     0.0869
+impitoyable               +0.000000     +0.000053     +0.000053     0.0690
+menée                     +0.000515     +0.000046     +0.000046     0.0648
+militaires                +0.000000     +0.000044     +0.000044     0.0634
+dossiers                  +0.000785     +0.000043     +0.000043     0.0615
+usines                    +0.000000     +0.000041     +0.000041     0.0778
+illustrée                 +0.000000     +0.000039     +0.000039     0.1204
+tiroir                    +0.000000     +0.000036     +0.000036     0.0497
+tiendra                   +0.000111     +0.000035     +0.000035     0.0758
+réel                      +0.000000     +0.000034     +0.000034     0.0501
+centrales                 +0.000000     +0.000032     +0.000032     0.1233
+journaux                  +0.000000     +0.000028     +0.000028     0.0456
+craquements               +0.000000     +0.000028     +0.000028     0.0869
+arpente                   +0.000209     +0.000027     +0.000027     0.1104
+arrêté                    +0.000000     +0.000027     +0.000027     0.0387
+logit final pour 'femme': -0.1662
+# analyse pour la classe: HOMME  prédite
+# logit: 0.1731
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      puissances                     +0.000061       0.0869
+   2      max                            +0.000053       0.0966
+   3      usines                         +0.000052       0.0778
+   4      pacifiste                      +0.000049       0.1366
+   5      prétendaient                   +0.000043       0.0869
+   6      militaires                     +0.000039       0.0634
+   7      antoinette                     +0.000037       0.1018
+   8      arpente                        +0.000035       0.1104
+   9      percevait                      +0.000031       0.0719
+   10     réel                           +0.000030       0.0501
+   11     voyons                         +0.000030       0.0861
+   12     dossiers                       +0.000030       0.0615
+   13     lorgnon                        +0.000029       0.1239
+   14     offensive                      +0.000028       0.0894
+   15     général                        +0.000027       0.0391
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      abaissement                    -0.000103       0.1357
+   2      bombardée                      -0.000103       0.1300
+   3      foch                           -0.000099       0.4045
+   4      clemenceau                     -0.000090       0.2789
+   5      chroniqueurs                   -0.000087       0.1279
+   6      entrecoupés                    -0.000072       0.1221
+   7      recrutement                    -0.000071       0.1096
+   8      cottes                         -0.000065       0.1375
+   9      continuité                     -0.000058       0.0977
+   10     raccrochait                    -0.000057       0.1121
+   11     capitonnée                     -0.000055       0.1252
+   12     cauchemars                     -0.000049       0.0626
+   13     armand                         -0.000048       0.1143
+   14     surhumain                      -0.000046       0.0979
+   15     gardé                          -0.000043       0.0391
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      puissances                     +0.000061       0.0869
+   2      max                            +0.000053       0.0966
+   3      usines                         +0.000052       0.0778
+   4      pacifiste                      +0.000049       0.1366
+   5      prétendaient                   +0.000043       0.0869
+   6      militaires                     +0.000039       0.0634
+   7      antoinette                     +0.000037       0.1018
+   8      arpente                        +0.000035       0.1104
+   9      percevait                      +0.000031       0.0719
+   10     réel                           +0.000030       0.0501
+   11     voyons                         +0.000030       0.0861
+   12     dossiers                       +0.000030       0.0615
+   13     lorgnon                        +0.000029       0.1239
+   14     offensive                      +0.000028       0.0894
+   15     général                        +0.000027       0.0391
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      abaissement                    -0.000103       0.1357
+   2      bombardée                      -0.000103       0.1300
+   3      foch                           -0.000099       0.4045
+   4      clemenceau                     -0.000090       0.2789
+   5      chroniqueurs                   -0.000087       0.1279
+   6      entrecoupés                    -0.000072       0.1221
+   7      recrutement                    -0.000071       0.1096
+   8      cottes                         -0.000065       0.1375
+   9      continuité                     -0.000058       0.0977
+   10     raccrochait                    -0.000057       0.1121
+   11     capitonnée                     -0.000055       0.1252
+   12     cauchemars                     -0.000049       0.0626
+   13     armand                         -0.000048       0.1143
+   14     surhumain                      -0.000046       0.0979
+   15     gardé                          -0.000043       0.0391
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clemenceau                     +0.003756       0.2789
+   2      blocus                         +0.002227       0.1279
+   3      puissances                     +0.001707       0.0869
+   4      pasteurs                       +0.001677       0.1426
+   5      ricanant                       +0.001638       0.0853
+   6      manoeuvre                      +0.001493       0.0578
+   7      centrales                      +0.001241       0.1233
+   8      foch                           +0.001167       0.4045
+   9      max                            +0.001158       0.0966
+   10     lorgnon                        +0.001096       0.1239
+   11     république                     +0.001070       0.0630
+   12     continuité                     +0.000982       0.0977
+   13     prétendaient                   +0.000960       0.0869
+   14     condamné                       +0.000953       0.0537
+   15     tigre                          +0.000906       0.0844
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bombardée                      -0.002192       0.1300
+   2      joffre                         -0.001791       0.1473
+   3      recrutement                    -0.001262       0.1096
+   4      cauchemars                     -0.001186       0.0626
+   5      chroniqueurs                   -0.001161       0.1279
+   6      nerveuse                       -0.001134       0.0554
+   7      armand                         -0.001132       0.1143
+   8      élégant                        -0.000851       0.0556
+   9      capitonnée                     -0.000813       0.1252
+   10     capacités                      -0.000746       0.0752
+   11     tension                        -0.000731       0.0530
+   12     gardé                          -0.000708       0.0391
+   13     canapé                         -0.000696       0.0544
+   14     vues                           -0.000644       0.0536
+   15     secoue                         -0.000589       0.0655
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clemenceau                     +0.178095       0.2789
+   2      blocus                         +0.105068       0.1279
+   3      puissances                     +0.090037       0.0869
+   4      pasteurs                       +0.085315       0.1426
+   5      ricanant                       +0.073385       0.0853
+   6      manoeuvre                      +0.069092       0.0578
+   7      centrales                      +0.066919       0.1233
+   8      max                            +0.064592       0.0966
+   9      immunité                       +0.051056       0.1300
+   10     république                     +0.048767       0.0630
+   11     tigre                          +0.048236       0.0844
+   12     continuité                     +0.047040       0.0977
+   13     prétendaient                   +0.044792       0.0869
+   14     condamné                       +0.043267       0.0537
+   15     usines                         +0.041310       0.0778
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bombardée                      -0.126504       0.1300
+   2      joffre                         -0.083233       0.1473
+   3      chroniqueurs                   -0.071100       0.1279
+   4      armand                         -0.064168       0.1143
+   5      cauchemars                     -0.062398       0.0626
+   6      recrutement                    -0.061417       0.1096
+   7      nerveuse                       -0.051617       0.0554
+   8      cottes                         -0.048598       0.1375
+   9      capacités                      -0.047175       0.0752
+   10     élégant                        -0.046062       0.0556
+   11     france                         -0.039738       0.0803
+   12     capitonnée                     -0.039606       0.1252
+   13     raccrochait                    -0.038254       0.1121
+   14     gardé                          -0.033610       0.0391
+   15     dossiers                       -0.033363       0.0615
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+puissances                +0.001707     +0.000061     +0.000061     0.0869
+max                       +0.001158     +0.000053     +0.000053     0.0966
+usines                    +0.000507     +0.000052     +0.000052     0.0778
+pacifiste                 +0.000000     +0.000049     +0.000049     0.1366
+prétendaient              +0.000960     +0.000043     +0.000043     0.0869
+militaires                +0.000310     +0.000039     +0.000039     0.0634
+antoinette                +0.000759     +0.000037     +0.000037     0.1018
+arpente                   +0.000000     +0.000035     +0.000035     0.1104
+percevait                 +0.000207     +0.000031     +0.000031     0.0719
+réel                      +0.000127     +0.000030     +0.000030     0.0501
+voyons                    +0.000047     +0.000030     +0.000030     0.0861
+dossiers                  +0.000000     +0.000030     +0.000030     0.0615
+lorgnon                   +0.001096     +0.000029     +0.000029     0.1239
+offensive                 +0.000090     +0.000028     +0.000028     0.0894
+général                   +0.000287     +0.000027     +0.000027     0.0391
+menée                     +0.000000     +0.000026     +0.000026     0.0648
+craquements               +0.000882     +0.000025     +0.000025     0.0869
+illustrée                 +0.000467     +0.000025     +0.000025     0.1204
+secoue                    +0.000000     +0.000024     +0.000024     0.0655
+journaux                  +0.000311     +0.000023     +0.000023     0.0456
+logit final pour 'homme': 0.1731

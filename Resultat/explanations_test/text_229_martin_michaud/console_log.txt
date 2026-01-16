@@ -1,0 +1,387 @@
+texte analysé: perforation , de la nuque vers la gorge . et lawson a des plaies similaires au menton et au sternum , mais encore plus profondes que celles de judith harper . pis les traces de frottement au cou et au...
+prédiction: FEMME (confiance: 82.8%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.9313
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      détective                      +0.000201       0.1571
+   2      diagonale                      +0.000084       0.0856
+   3      will                           +0.000079       0.1011
+   4      pistolet                       +0.000074       0.0578
+   5      quittant                       +0.000066       0.0451
+   6      suspect                        +0.000064       0.0515
+   7      bajoues                        +0.000058       0.0980
+   8      berger                         +0.000050       0.0597
+   9      logiquement                    +0.000038       0.0814
+   10     alibi                          +0.000034       0.0738
+   11     chapitre                       +0.000033       0.0448
+   12     ford                           +0.000031       0.0909
+   13     similaires                     +0.000030       0.0876
+   14     prit                           +0.000020       0.0348
+   15     discussions                    +0.000019       0.0516
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jacinthe                       -0.000157       0.5455
+   2      vérifications                  -0.000122       0.1030
+   3      déplora                        -0.000108       0.0967
+   4      résidus                        -0.000107       0.0944
+   5      cellulaire                     -0.000098       0.0959
+   6      judith                         -0.000084       0.1041
+   7      ontario                        -0.000077       0.1303
+   8      rétorqua                       -0.000060       0.0647
+   9      meurtres                       -0.000058       0.1371
+   10     exaspérée                      -0.000053       0.0694
+   11     confirme                       -0.000051       0.0639
+   12     soufflait                      -0.000044       0.0494
+   13     profondes                      -0.000042       0.0478
+   14     chevilles                      -0.000041       0.0497
+   15     découragé                      -0.000037       0.0633
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      détective                      +0.000201       0.1571
+   2      diagonale                      +0.000084       0.0856
+   3      will                           +0.000079       0.1011
+   4      pistolet                       +0.000074       0.0578
+   5      quittant                       +0.000066       0.0451
+   6      suspect                        +0.000064       0.0515
+   7      bajoues                        +0.000058       0.0980
+   8      berger                         +0.000050       0.0597
+   9      logiquement                    +0.000038       0.0814
+   10     alibi                          +0.000034       0.0738
+   11     chapitre                       +0.000033       0.0448
+   12     ford                           +0.000031       0.0909
+   13     similaires                     +0.000030       0.0876
+   14     prit                           +0.000020       0.0348
+   15     discussions                    +0.000019       0.0516
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jacinthe                       -0.000157       0.5455
+   2      vérifications                  -0.000122       0.1030
+   3      déplora                        -0.000108       0.0967
+   4      résidus                        -0.000107       0.0944
+   5      cellulaire                     -0.000098       0.0959
+   6      judith                         -0.000084       0.1041
+   7      ontario                        -0.000077       0.1303
+   8      rétorqua                       -0.000060       0.0647
+   9      meurtres                       -0.000058       0.1371
+   10     exaspérée                      -0.000053       0.0694
+   11     confirme                       -0.000051       0.0639
+   12     soufflait                      -0.000044       0.0494
+   13     profondes                      -0.000042       0.0478
+   14     chevilles                      -0.000041       0.0497
+   15     découragé                      -0.000037       0.0633
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      meurtres                       +0.003329       0.1371
+   2      judith                         +0.002341       0.1041
+   3      rétorqua                       +0.002259       0.0647
+   4      exaspérée                      +0.002207       0.0694
+   5      nadja                          +0.001401       0.1554
+   6      jacinthe                       +0.001350       0.5455
+   7      serveur                        +0.001152       0.0637
+   8      animées                        +0.001064       0.0773
+   9      déplora                        +0.001062       0.0967
+   10     cellulaire                     +0.000903       0.0959
+   11     souffla                        +0.000898       0.0489
+   12     effectuer                      +0.000888       0.0579
+   13     oublie                         +0.000676       0.0329
+   14     lança                          +0.000660       0.0423
+   15     chercha                        +0.000648       0.0435
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      harper                         -0.002487       0.2841
+   2      sergent                        -0.001736       0.1436
+   3      victor                         -0.001416       0.4376
+   4      diagonale                      -0.001252       0.0856
+   5      bajoues                        -0.001169       0.0980
+   6      pistolet                       -0.001150       0.0578
+   7      logiquement                    -0.001113       0.0814
+   8      chapitre                       -0.000814       0.0448
+   9      ford                           -0.000760       0.0909
+   10     suspect                        -0.000641       0.0515
+   11     chier                          -0.000603       0.0721
+   12     crime                          -0.000528       0.0377
+   13     contenté                       -0.000503       0.0599
+   14     arme                           -0.000503       0.0373
+   15     commanda                       -0.000384       0.0552
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      meurtres                       +0.179299       0.1371
+   2      rétorqua                       +0.123944       0.0647
+   3      exaspérée                      +0.121124       0.0694
+   4      judith                         +0.120224       0.1041
+   5      nadja                          +0.073415       0.1554
+   6      serveur                        +0.062292       0.0637
+   7      animées                        +0.058804       0.0773
+   8      jacinthe                       +0.048399       0.5455
+   9      déplora                        +0.048102       0.0967
+   10     cellulaire                     +0.047559       0.0959
+   11     effectuer                      +0.045981       0.0579
+   12     souffla                        +0.043096       0.0489
+   13     oublie                         +0.034242       0.0329
+   14     lança                          +0.033262       0.0423
+   15     chercha                        +0.032832       0.0435
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      harper                         -0.133472       0.2841
+   2      victor                         -0.111228       0.4376
+   3      sergent                        -0.099547       0.1436
+   4      logiquement                    -0.064628       0.0814
+   5      diagonale                      -0.062419       0.0856
+   6      bajoues                        -0.062096       0.0980
+   7      pistolet                       -0.059282       0.0578
+   8      chapitre                       -0.039491       0.0448
+   9      suspect                        -0.037825       0.0515
+   10     chier                          -0.036182       0.0721
+   11     ford                           -0.034394       0.0909
+   12     arme                           -0.030785       0.0373
+   13     crime                          -0.029682       0.0377
+   14     commanda                       -0.028923       0.0552
+   15     victime                        -0.023144       0.0353
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+détective                 +0.000512     +0.000201     +0.000201     0.1571
+diagonale                 +0.000000     +0.000084     +0.000084     0.0856
+will                      +0.000000     +0.000079     +0.000079     0.1011
+pistolet                  +0.000000     +0.000074     +0.000074     0.0578
+quittant                  +0.000000     +0.000066     +0.000066     0.0451
+suspect                   +0.000000     +0.000064     +0.000064     0.0515
+bajoues                   +0.000000     +0.000058     +0.000058     0.0980
+berger                    +0.000000     +0.000050     +0.000050     0.0597
+logiquement               +0.000000     +0.000038     +0.000038     0.0814
+alibi                     +0.000000     +0.000034     +0.000034     0.0738
+chapitre                  +0.000000     +0.000033     +0.000033     0.0448
+ford                      +0.000000     +0.000031     +0.000031     0.0909
+similaires                +0.000000     +0.000030     +0.000030     0.0876
+prit                      +0.000000     +0.000020     +0.000020     0.0348
+discussions               +0.000369     +0.000019     +0.000019     0.0516
+contenté                  +0.000000     +0.000017     +0.000017     0.0599
+reprit                    +0.000000     +0.000015     +0.000015     0.0378
+victor                    +0.000000     +0.000015     +0.000015     0.4376
+arme                      +0.000000     +0.000014     +0.000014     0.0373
+rabattre                  +0.000123     +0.000013     +0.000013     0.0711
+logit final pour 'femme': 0.9313
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.6369
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      détective                      +0.000059       0.1571
+   2      harper                         +0.000047       0.2841
+   3      quittant                       +0.000042       0.0451
+   4      diagonale                      +0.000036       0.0856
+   5      suspect                        +0.000031       0.0515
+   6      pistolet                       +0.000027       0.0578
+   7      ford                           +0.000025       0.0909
+   8      bajoues                        +0.000025       0.0980
+   9      chapitre                       +0.000019       0.0448
+   10     berger                         +0.000018       0.0597
+   11     alibi                          +0.000016       0.0738
+   12     animées                        +0.000015       0.0773
+   13     reprit                         +0.000012       0.0378
+   14     nadja                          +0.000011       0.1554
+   15     discussions                    +0.000010       0.0516
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jacinthe                       -0.000093       0.5455
+   2      résidus                        -0.000074       0.0944
+   3      déplora                        -0.000055       0.0967
+   4      cellulaire                     -0.000051       0.0959
+   5      judith                         -0.000040       0.1041
+   6      meurtres                       -0.000038       0.1371
+   7      confirme                       -0.000037       0.0639
+   8      vérifications                  -0.000035       0.1030
+   9      chevilles                      -0.000034       0.0497
+   10     vétuste                        -0.000033       0.0919
+   11     exaspérée                      -0.000032       0.0694
+   12     vibrer                         -0.000030       0.0556
+   13     boeufs                         -0.000029       0.0687
+   14     victor                         -0.000029       0.4376
+   15     soufflait                      -0.000027       0.0494
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      détective                      +0.000059       0.1571
+   2      harper                         +0.000047       0.2841
+   3      quittant                       +0.000042       0.0451
+   4      diagonale                      +0.000036       0.0856
+   5      suspect                        +0.000031       0.0515
+   6      pistolet                       +0.000027       0.0578
+   7      ford                           +0.000025       0.0909
+   8      bajoues                        +0.000025       0.0980
+   9      chapitre                       +0.000019       0.0448
+   10     berger                         +0.000018       0.0597
+   11     alibi                          +0.000016       0.0738
+   12     animées                        +0.000015       0.0773
+   13     reprit                         +0.000012       0.0378
+   14     nadja                          +0.000011       0.1554
+   15     discussions                    +0.000010       0.0516
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jacinthe                       -0.000093       0.5455
+   2      résidus                        -0.000074       0.0944
+   3      déplora                        -0.000055       0.0967
+   4      cellulaire                     -0.000051       0.0959
+   5      judith                         -0.000040       0.1041
+   6      meurtres                       -0.000038       0.1371
+   7      confirme                       -0.000037       0.0639
+   8      vérifications                  -0.000035       0.1030
+   9      chevilles                      -0.000034       0.0497
+   10     vétuste                        -0.000033       0.0919
+   11     exaspérée                      -0.000032       0.0694
+   12     vibrer                         -0.000030       0.0556
+   13     boeufs                         -0.000029       0.0687
+   14     victor                         -0.000029       0.4376
+   15     soufflait                      -0.000027       0.0494
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      harper                         +0.001790       0.2841
+   2      victor                         +0.001600       0.4376
+   3      sergent                        +0.001073       0.1436
+   4      diagonale                      +0.000863       0.0856
+   5      logiquement                    +0.000853       0.0814
+   6      bajoues                        +0.000771       0.0980
+   7      pistolet                       +0.000742       0.0578
+   8      chapitre                       +0.000532       0.0448
+   9      contenté                       +0.000440       0.0599
+   10     suspect                        +0.000371       0.0515
+   11     chier                          +0.000356       0.0721
+   12     crime                          +0.000346       0.0377
+   13     vibrer                         +0.000335       0.0556
+   14     commanda                       +0.000325       0.0552
+   15     arme                           +0.000311       0.0373
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      meurtres                       -0.002395       0.1371
+   2      judith                         -0.001610       0.1041
+   3      rétorqua                       -0.001548       0.0647
+   4      exaspérée                      -0.001487       0.0694
+   5      nadja                          -0.000984       0.1554
+   6      animées                        -0.000787       0.0773
+   7      jacinthe                       -0.000730       0.5455
+   8      cellulaire                     -0.000716       0.0959
+   9      serveur                        -0.000690       0.0637
+   10     déplora                        -0.000608       0.0967
+   11     effectuer                      -0.000567       0.0579
+   12     souffla                        -0.000475       0.0489
+   13     lança                          -0.000458       0.0423
+   14     oublie                         -0.000444       0.0329
+   15     chercha                        -0.000407       0.0435
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      victor                         +0.116504       0.4376
+   2      harper                         +0.085889       0.2841
+   3      sergent                        +0.061463       0.1436
+   4      logiquement                    +0.049129       0.0814
+   5      diagonale                      +0.043269       0.0856
+   6      bajoues                        +0.040085       0.0980
+   7      pistolet                       +0.038039       0.0578
+   8      chapitre                       +0.026587       0.0448
+   9      ontario                        +0.022947       0.1303
+   10     commanda                       +0.022609       0.0552
+   11     vibrer                         +0.020837       0.0556
+   12     suspect                        +0.020278       0.0515
+   13     arme                           +0.020151       0.0373
+   14     chier                          +0.019139       0.0721
+   15     crime                          +0.018412       0.0377
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      meurtres                       -0.125928       0.1371
+   2      rétorqua                       -0.085649       0.0647
+   3      judith                         -0.082841       0.1041
+   4      exaspérée                      -0.082723       0.0694
+   5      nadja                          -0.056032       0.1554
+   6      animées                        -0.044845       0.0773
+   7      cellulaire                     -0.035803       0.0959
+   8      serveur                        -0.035470       0.0637
+   9      effectuer                      -0.028271       0.0579
+   10     déplora                        -0.026669       0.0967
+   11     lança                          -0.023097       0.0423
+   12     essayant                       -0.022657       0.0424
+   13     oublie                         -0.022574       0.0329
+   14     frottement                     -0.021822       0.0790
+   15     souffla                        -0.020464       0.0489
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+détective                 +0.000000     +0.000059     +0.000059     0.1571
+harper                    +0.001790     +0.000047     +0.000047     0.2841
+quittant                  +0.000139     +0.000042     +0.000042     0.0451
+diagonale                 +0.000863     +0.000036     +0.000036     0.0856
+suspect                   +0.000371     +0.000031     +0.000031     0.0515
+pistolet                  +0.000742     +0.000027     +0.000027     0.0578
+ford                      +0.000306     +0.000025     +0.000025     0.0909
+bajoues                   +0.000771     +0.000025     +0.000025     0.0980
+chapitre                  +0.000532     +0.000019     +0.000019     0.0448
+berger                    +0.000123     +0.000018     +0.000018     0.0597
+alibi                     +0.000026     +0.000016     +0.000016     0.0738
+animées                   +0.000000     +0.000015     +0.000015     0.0773
+reprit                    +0.000154     +0.000012     +0.000012     0.0378
+nadja                     +0.000000     +0.000011     +0.000011     0.1554
+discussions               +0.000000     +0.000010     +0.000010     0.0516
+vain                      +0.000147     +0.000010     +0.000010     0.0347
+découverte                +0.000000     +0.000008     +0.000008     0.0363
+garée                     +0.000014     +0.000008     +0.000008     0.0676
+détails                   +0.000028     +0.000007     +0.000007     0.0319
+arme                      +0.000311     +0.000007     +0.000007     0.0373
+logit final pour 'homme': -0.6369

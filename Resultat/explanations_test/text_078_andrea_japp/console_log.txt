@@ -1,0 +1,386 @@
+texte analysé: bon voisinage avec elles , chacun son territoire . les membres d une triade n auraient jamais enlevé un enfant italien , sauf comme mesure de représailles et ce n est pas le cas . nous sommes en train...
+prédiction: FEMME (confiance: 80.0%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.8130
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pistolet                       +0.000070       0.0490
+   2      porsche                        +0.000058       0.1051
+   3      hugo                           +0.000048       0.1710
+   4      rebroussa                      +0.000040       0.0819
+   5      ombilical                      +0.000033       0.0900
+   6      connaissez                     +0.000029       0.0618
+   7      repoussante                    +0.000025       0.0830
+   8      représailles                   +0.000023       0.0539
+   9      appareil                       +0.000022       0.0332
+   10     tiroir                         +0.000020       0.0352
+   11     poignée                        +0.000020       0.0307
+   12     george                         +0.000019       0.0613
+   13     existait                       +0.000019       0.0308
+   14     combiné                        +0.000019       0.0489
+   15     courut                         +0.000018       0.0390
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vitelli                        -0.000702       0.7717
+   2      sophia                         -0.000214       0.2282
+   3      sarah                          -0.000118       0.1464
+   4      incontrôlables                 -0.000099       0.0864
+   5      toni                           -0.000071       0.1203
+   6      tangible                       -0.000052       0.0667
+   7      voisinage                      -0.000051       0.0455
+   8      professionnelle                -0.000048       0.0459
+   9      quantité                       -0.000041       0.0732
+   10     retenait                       -0.000038       0.0385
+   11     chargeur                       -0.000033       0.0723
+   12     ordinateur                     -0.000032       0.0532
+   13     causer                         -0.000028       0.0774
+   14     tracas                         -0.000028       0.1316
+   15     maria                          -0.000026       0.0534
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pistolet                       +0.000070       0.0490
+   2      porsche                        +0.000058       0.1051
+   3      hugo                           +0.000048       0.1710
+   4      rebroussa                      +0.000040       0.0819
+   5      ombilical                      +0.000033       0.0900
+   6      connaissez                     +0.000029       0.0618
+   7      repoussante                    +0.000025       0.0830
+   8      représailles                   +0.000023       0.0539
+   9      appareil                       +0.000022       0.0332
+   10     tiroir                         +0.000020       0.0352
+   11     poignée                        +0.000020       0.0307
+   12     george                         +0.000019       0.0613
+   13     existait                       +0.000019       0.0308
+   14     combiné                        +0.000019       0.0489
+   15     courut                         +0.000018       0.0390
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vitelli                        -0.000702       0.7717
+   2      sophia                         -0.000214       0.2282
+   3      sarah                          -0.000118       0.1464
+   4      incontrôlables                 -0.000099       0.0864
+   5      toni                           -0.000071       0.1203
+   6      tangible                       -0.000052       0.0667
+   7      voisinage                      -0.000051       0.0455
+   8      professionnelle                -0.000048       0.0459
+   9      quantité                       -0.000041       0.0732
+   10     retenait                       -0.000038       0.0385
+   11     chargeur                       -0.000033       0.0723
+   12     ordinateur                     -0.000032       0.0532
+   13     causer                         -0.000028       0.0774
+   14     tracas                         -0.000028       0.1316
+   15     maria                          -0.000026       0.0534
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vitelli                        +0.009002       0.7717
+   2      extirpa                        +0.001784       0.0678
+   3      madame                         +0.001511       0.1420
+   4      sarah                          +0.001275       0.1464
+   5      hugo                           +0.001140       0.1710
+   6      gangs                          +0.000819       0.1025
+   7      lingerie                       +0.000806       0.0637
+   8      rangea                         +0.000648       0.0508
+   9      tangible                       +0.000622       0.0667
+   10     féminine                       +0.000613       0.0398
+   11     cordon                         +0.000591       0.0487
+   12     ramassis                       +0.000582       0.0781
+   13     étonna                         +0.000580       0.0413
+   14     reposa                         +0.000548       0.0504
+   15     joindre                        +0.000485       0.0352
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      causer                         -0.001863       0.0774
+   2      projectiles                    -0.001515       0.0703
+   3      chargeur                       -0.001344       0.0723
+   4      pistolet                       -0.001036       0.0490
+   5      repoussante                    -0.000935       0.0830
+   6      combat                         -0.000906       0.0637
+   7      rebroussa                      -0.000894       0.0819
+   8      sophia                         -0.000884       0.2282
+   9      connaissez                     -0.000812       0.0618
+   10     balles                         -0.000809       0.0376
+   11     tracas                         -0.000788       0.1316
+   12     insaisissables                 -0.000738       0.0931
+   13     gênante                        -0.000645       0.0697
+   14     porsche                        -0.000585       0.1051
+   15     courut                         -0.000554       0.0390
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vitelli                        +0.268094       0.7717
+   2      hugo                           +0.071294       0.1710
+   3      extirpa                        +0.069609       0.0678
+   4      sarah                          +0.067788       0.1464
+   5      madame                         +0.042502       0.1420
+   6      gangs                          +0.037651       0.1025
+   7      lingerie                       +0.032759       0.0637
+   8      ordinateur                     +0.029635       0.0532
+   9      prépara                        +0.027133       0.0550
+   10     rangea                         +0.027025       0.0508
+   11     ramassis                       +0.026880       0.0781
+   12     féminine                       +0.025669       0.0398
+   13     poème                          +0.025525       0.0515
+   14     tangible                       +0.024402       0.0667
+   15     étonna                         +0.023152       0.0413
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      causer                         -0.079163       0.0774
+   2      projectiles                    -0.067659       0.0703
+   3      chargeur                       -0.063707       0.0723
+   4      tracas                         -0.054518       0.1316
+   5      sophia                         -0.051996       0.2282
+   6      repoussante                    -0.043413       0.0830
+   7      pistolet                       -0.041822       0.0490
+   8      connaissez                     -0.037179       0.0618
+   9      combat                         -0.036657       0.0637
+   10     balles                         -0.035092       0.0376
+   11     rebroussa                      -0.034451       0.0819
+   12     gênante                        -0.027399       0.0697
+   13     sympathies                     -0.025116       0.0746
+   14     courut                         -0.023665       0.0390
+   15     insaisissables                 -0.022792       0.0931
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+pistolet                  +0.000000     +0.000070     +0.000070     0.0490
+porsche                   +0.000000     +0.000058     +0.000058     0.1051
+hugo                      +0.001140     +0.000048     +0.000048     0.1710
+rebroussa                 +0.000000     +0.000040     +0.000040     0.0819
+ombilical                 +0.000000     +0.000033     +0.000033     0.0900
+connaissez                +0.000000     +0.000029     +0.000029     0.0618
+repoussante               +0.000000     +0.000025     +0.000025     0.0830
+représailles              +0.000003     +0.000023     +0.000023     0.0539
+appareil                  +0.000000     +0.000022     +0.000022     0.0332
+tiroir                    +0.000000     +0.000020     +0.000020     0.0352
+poignée                   +0.000000     +0.000020     +0.000020     0.0307
+george                    +0.000143     +0.000019     +0.000019     0.0613
+existait                  +0.000000     +0.000019     +0.000019     0.0308
+combiné                   +0.000000     +0.000019     +0.000019     0.0489
+courut                    +0.000000     +0.000018     +0.000018     0.0390
+valait                    +0.000000     +0.000016     +0.000016     0.0301
+reprit                    +0.000000     +0.000015     +0.000015     0.0320
+sortit                    +0.000000     +0.000015     +0.000015     0.0640
+informa                   +0.000000     +0.000015     +0.000015     0.0608
+cordon                    +0.000591     +0.000014     +0.000014     0.0487
+logit final pour 'femme': 0.8130
+# analyse pour la classe: HOMME
+# logit: -0.5763
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      porsche                        +0.000037       0.1051
+   2      pistolet                       +0.000023       0.0490
+   3      gangs                          +0.000021       0.1025
+   4      négligeable                    +0.000018       0.0588
+   5      rentrerait                     +0.000016       0.0577
+   6      informa                        +0.000015       0.0608
+   7      représailles                   +0.000014       0.0539
+   8      rebroussa                      +0.000014       0.0819
+   9      poignée                        +0.000013       0.0307
+   10     arrivant                       +0.000012       0.0323
+   11     réputation                     +0.000012       0.0668
+   12     sut                            +0.000011       0.0377
+   13     reprit                         +0.000011       0.0320
+   14     ramassis                       +0.000010       0.0781
+   15     quartier                       +0.000010       0.0279
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vitelli                        -0.000579       0.7717
+   2      sophia                         -0.000115       0.2282
+   3      sarah                          -0.000074       0.1464
+   4      toni                           -0.000044       0.1203
+   5      tracas                         -0.000030       0.1316
+   6      tangible                       -0.000026       0.0667
+   7      causer                         -0.000024       0.0774
+   8      retenait                       -0.000024       0.0385
+   9      quantité                       -0.000023       0.0732
+   10     chargeur                       -0.000023       0.0723
+   11     voisinage                      -0.000022       0.0455
+   12     incontrôlables                 -0.000020       0.0864
+   13     zone                           -0.000018       0.0800
+   14     professionnelle                -0.000017       0.0459
+   15     maria                          -0.000017       0.0534
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      porsche                        +0.000037       0.1051
+   2      pistolet                       +0.000023       0.0490
+   3      gangs                          +0.000021       0.1025
+   4      négligeable                    +0.000018       0.0588
+   5      rentrerait                     +0.000016       0.0577
+   6      informa                        +0.000015       0.0608
+   7      représailles                   +0.000014       0.0539
+   8      rebroussa                      +0.000014       0.0819
+   9      poignée                        +0.000013       0.0307
+   10     arrivant                       +0.000012       0.0323
+   11     réputation                     +0.000012       0.0668
+   12     sut                            +0.000011       0.0377
+   13     reprit                         +0.000011       0.0320
+   14     ramassis                       +0.000010       0.0781
+   15     quartier                       +0.000010       0.0279
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vitelli                        -0.000579       0.7717
+   2      sophia                         -0.000115       0.2282
+   3      sarah                          -0.000074       0.1464
+   4      toni                           -0.000044       0.1203
+   5      tracas                         -0.000030       0.1316
+   6      tangible                       -0.000026       0.0667
+   7      causer                         -0.000024       0.0774
+   8      retenait                       -0.000024       0.0385
+   9      quantité                       -0.000023       0.0732
+   10     chargeur                       -0.000023       0.0723
+   11     voisinage                      -0.000022       0.0455
+   12     incontrôlables                 -0.000020       0.0864
+   13     zone                           -0.000018       0.0800
+   14     professionnelle                -0.000017       0.0459
+   15     maria                          -0.000017       0.0534
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      causer                         +0.001269       0.0774
+   2      projectiles                    +0.000939       0.0703
+   3      chargeur                       +0.000876       0.0723
+   4      rebroussa                      +0.000687       0.0819
+   5      combat                         +0.000671       0.0637
+   6      pistolet                       +0.000645       0.0490
+   7      repoussante                    +0.000588       0.0830
+   8      insaisissables                 +0.000554       0.0931
+   9      tracas                         +0.000538       0.1316
+   10     balles                         +0.000489       0.0376
+   11     connaissez                     +0.000482       0.0618
+   12     porsche                        +0.000464       0.1051
+   13     sophia                         +0.000454       0.2282
+   14     courut                         +0.000426       0.0390
+   15     sortit                         +0.000417       0.0640
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vitelli                        -0.006161       0.7717
+   2      extirpa                        -0.001190       0.0678
+   3      madame                         -0.000899       0.1420
+   4      gangs                          -0.000642       0.1025
+   5      hugo                           -0.000526       0.1710
+   6      étonna                         -0.000440       0.0413
+   7      reposa                         -0.000430       0.0504
+   8      tangible                       -0.000421       0.0667
+   9      sarah                          -0.000406       0.1464
+   10     lingerie                       -0.000403       0.0637
+   11     rangea                         -0.000387       0.0508
+   12     féminine                       -0.000376       0.0398
+   13     ramassis                       -0.000370       0.0781
+   14     cordon                         -0.000368       0.0487
+   15     maria                          -0.000354       0.0534
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      causer                         +0.054750       0.0774
+   2      chargeur                       +0.040128       0.0723
+   3      projectiles                    +0.038135       0.0703
+   4      sophia                         +0.036040       0.2282
+   5      tracas                         +0.033648       0.1316
+   6      repoussante                    +0.027923       0.0830
+   7      combat                         +0.027564       0.0637
+   8      pistolet                       +0.026055       0.0490
+   9      rebroussa                      +0.020821       0.0819
+   10     sympathies                     +0.019908       0.0746
+   11     balles                         +0.019357       0.0376
+   12     connaissez                     +0.018609       0.0618
+   13     courut                         +0.015521       0.0390
+   14     insaisissables                 +0.015277       0.0931
+   15     ombilical                      +0.014499       0.0900
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vitelli                        -0.131081       0.7717
+   2      extirpa                        -0.042424       0.0678
+   3      hugo                           -0.037676       0.1710
+   4      madame                         -0.025625       0.1420
+   5      gangs                          -0.025545       0.1025
+   6      sarah                          -0.023670       0.1464
+   7      ordinateur                     -0.021241       0.0532
+   8      poème                          -0.018770       0.0515
+   9      ramassis                       -0.018341       0.0781
+   10     étonna                         -0.017970       0.0413
+   11     lingerie                       -0.016946       0.0637
+   12     rangea                         -0.016472       0.0508
+   13     tangible                       -0.015299       0.0667
+   14     féminine                       -0.014134       0.0398
+   15     prépara                        -0.013671       0.0550
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+porsche                   +0.000464     +0.000037     +0.000037     0.1051
+pistolet                  +0.000645     +0.000023     +0.000023     0.0490
+gangs                     +0.000000     +0.000021     +0.000021     0.1025
+négligeable               +0.000000     +0.000018     +0.000018     0.0588
+rentrerait                +0.000000     +0.000016     +0.000016     0.0577
+informa                   +0.000311     +0.000015     +0.000015     0.0608
+représailles              +0.000010     +0.000014     +0.000014     0.0539
+rebroussa                 +0.000687     +0.000014     +0.000014     0.0819
+poignée                   +0.000104     +0.000013     +0.000013     0.0307
+arrivant                  +0.000148     +0.000012     +0.000012     0.0323
+réputation                +0.000180     +0.000012     +0.000012     0.0668
+sut                       +0.000324     +0.000011     +0.000011     0.0377
+reprit                    +0.000127     +0.000011     +0.000011     0.0320
+ramassis                  +0.000000     +0.000010     +0.000010     0.0781
+quartier                  +0.000161     +0.000010     +0.000010     0.0279
+bonsoir                   +0.000042     +0.000009     +0.000009     0.0394
+gênante                   +0.000314     +0.000009     +0.000009     0.0697
+restaurant                +0.000000     +0.000009     +0.000009     0.0670
+connaissez                +0.000482     +0.000008     +0.000008     0.0618
+amicale                   +0.000000     +0.000008     +0.000008     0.0475
+logit final pour 'homme': -0.5763

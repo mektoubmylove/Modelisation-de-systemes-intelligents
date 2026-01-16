@@ -1,0 +1,386 @@
+texte analysé: ? à part les zombies , non le porte avions n avance plus . nous sommes immobiles . tu as raison , ce n est pas normal . allons voir le capitaine tout de suite . ils se hâtèrent jusqu aux quartiers de ...
+prédiction: FEMME (confiance: 83.1%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.9224
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hâtèrent                       +0.000106       0.1079
+   2      somnolence                     +0.000096       0.0849
+   3      interrogea                     +0.000057       0.0513
+   4      capitaine                      +0.000055       0.1019
+   5      désamorcer                     +0.000054       0.1074
+   6      puces                          +0.000051       0.1531
+   7      satellite                      +0.000047       0.1031
+   8      échelons                       +0.000046       0.0912
+   9      coururent                      +0.000043       0.0838
+   10     pupitre                        +0.000043       0.0764
+   11     terminée                       +0.000036       0.0454
+   12     avions                         +0.000035       0.0700
+   13     avançons                       +0.000035       0.0975
+   14     coins                          +0.000031       0.0428
+   15     similaires                     +0.000029       0.0921
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mélissa                        -0.000288       0.6694
+   2      cédric                         -0.000200       0.2835
+   3      suggéra                        -0.000169       0.1338
+   4      aodhan                         -0.000108       0.1771
+   5      afficha                        -0.000101       0.0912
+   6      découragement                  -0.000073       0.0633
+   7      traites                        -0.000071       0.0950
+   8      géographique                   -0.000068       0.0874
+   9      international                  -0.000067       0.0725
+   10     normaux                        -0.000055       0.0790
+   11     agente                         -0.000054       0.1357
+   12     directeur                      -0.000049       0.0462
+   13     programme                      -0.000040       0.0469
+   14     trouvez                        -0.000037       0.0458
+   15     section                        -0.000037       0.0673
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hâtèrent                       +0.000106       0.1079
+   2      somnolence                     +0.000096       0.0849
+   3      interrogea                     +0.000057       0.0513
+   4      capitaine                      +0.000055       0.1019
+   5      désamorcer                     +0.000054       0.1074
+   6      puces                          +0.000051       0.1531
+   7      satellite                      +0.000047       0.1031
+   8      échelons                       +0.000046       0.0912
+   9      coururent                      +0.000043       0.0838
+   10     pupitre                        +0.000043       0.0764
+   11     terminée                       +0.000036       0.0454
+   12     avions                         +0.000035       0.0700
+   13     avançons                       +0.000035       0.0975
+   14     coins                          +0.000031       0.0428
+   15     similaires                     +0.000029       0.0921
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mélissa                        -0.000288       0.6694
+   2      cédric                         -0.000200       0.2835
+   3      suggéra                        -0.000169       0.1338
+   4      aodhan                         -0.000108       0.1771
+   5      afficha                        -0.000101       0.0912
+   6      découragement                  -0.000073       0.0633
+   7      traites                        -0.000071       0.0950
+   8      géographique                   -0.000068       0.0874
+   9      international                  -0.000067       0.0725
+   10     normaux                        -0.000055       0.0790
+   11     agente                         -0.000054       0.1357
+   12     directeur                      -0.000049       0.0462
+   13     programme                      -0.000040       0.0469
+   14     trouvez                        -0.000037       0.0458
+   15     section                        -0.000037       0.0673
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      suggéra                        +0.003138       0.1338
+   2      mélissa                        +0.003060       0.6694
+   3      cédric                         +0.002174       0.2835
+   4      afficha                        +0.002077       0.0912
+   5      soupira                        +0.001295       0.0461
+   6      données                        +0.001015       0.0525
+   7      aodhan                         +0.000925       0.1771
+   8      affirma                        +0.000871       0.0571
+   9      déterminer                     +0.000789       0.0631
+   10     découragement                  +0.000768       0.0633
+   11     agente                         +0.000716       0.1357
+   12     normal                         +0.000715       0.0374
+   13     récupéra                       +0.000711       0.0856
+   14     rassurante                     +0.000664       0.0639
+   15     puces                          +0.000587       0.1531
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      satellite                      -0.001555       0.1031
+   2      somnolence                     -0.001307       0.0849
+   3      capitaine                      -0.001293       0.1019
+   4      immobiles                      -0.001262       0.0510
+   5      cabine                         -0.001016       0.0489
+   6      coururent                      -0.001013       0.0838
+   7      désamorcer                     -0.000924       0.1074
+   8      interrogea                     -0.000846       0.0513
+   9      rapports                       -0.000824       0.0440
+   10     communiquer                    -0.000674       0.0505
+   11     fonctions                      -0.000636       0.0529
+   12     agents                         -0.000555       0.0545
+   13     terminée                       -0.000543       0.0454
+   14     côte                           -0.000519       0.0355
+   15     officier                       -0.000506       0.0496
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      suggéra                        +0.114297       0.1338
+   2      cédric                         +0.093798       0.2835
+   3      afficha                        +0.091559       0.0912
+   4      soupira                        +0.054797       0.0461
+   5      données                        +0.045883       0.0525
+   6      aodhan                         +0.045598       0.1771
+   7      découragement                  +0.039130       0.0633
+   8      puces                          +0.038258       0.1531
+   9      récupéra                       +0.036879       0.0856
+   10     rassurante                     +0.034349       0.0639
+   11     affirma                        +0.033264       0.0571
+   12     déterminer                     +0.032730       0.0631
+   13     constatèrent                   +0.032345       0.1084
+   14     normal                         +0.031804       0.0374
+   15     hâtèrent                       +0.023570       0.1079
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      capitaine                      -0.055288       0.1019
+   2      immobiles                      -0.052721       0.0510
+   3      somnolence                     -0.048907       0.0849
+   4      satellite                      -0.046832       0.1031
+   5      rapports                       -0.043800       0.0440
+   6      désamorcer                     -0.042281       0.1074
+   7      cabine                         -0.040963       0.0489
+   8      interrogea                     -0.040367       0.0513
+   9      coururent                      -0.032730       0.0838
+   10     communiquer                    -0.031753       0.0505
+   11     agents                         -0.030639       0.0545
+   12     fonctions                      -0.026350       0.0529
+   13     comprit                        -0.026035       0.0429
+   14     connaissez                     -0.025017       0.0384
+   15     terminée                       -0.024328       0.0454
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+hâtèrent                  +0.000397     +0.000106     +0.000106     0.1079
+somnolence                +0.000000     +0.000096     +0.000096     0.0849
+interrogea                +0.000000     +0.000057     +0.000057     0.0513
+capitaine                 +0.000000     +0.000055     +0.000055     0.1019
+désamorcer                +0.000000     +0.000054     +0.000054     0.1074
+puces                     +0.000587     +0.000051     +0.000051     0.1531
+satellite                 +0.000000     +0.000047     +0.000047     0.1031
+échelons                  +0.000000     +0.000046     +0.000046     0.0912
+coururent                 +0.000000     +0.000043     +0.000043     0.0838
+pupitre                   +0.000176     +0.000043     +0.000043     0.0764
+terminée                  +0.000000     +0.000036     +0.000036     0.0454
+avions                    +0.000127     +0.000035     +0.000035     0.0700
+avançons                  +0.000000     +0.000035     +0.000035     0.0975
+coins                     +0.000000     +0.000031     +0.000031     0.0428
+similaires                +0.000000     +0.000029     +0.000029     0.0921
+récupéra                  +0.000711     +0.000022     +0.000022     0.0856
+connaissez                +0.000000     +0.000020     +0.000020     0.0384
+reçois                    +0.000153     +0.000017     +0.000017     0.0627
+emprise                   +0.000192     +0.000016     +0.000016     0.0640
+côte                      +0.000000     +0.000016     +0.000016     0.0355
+logit final pour 'femme': 0.9224
+# analyse pour la classe: HOMME
+# logit: -0.6690
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      satellite                      +0.000060       0.1031
+   2      somnolence                     +0.000052       0.0849
+   3      puces                          +0.000045       0.1531
+   4      hâtèrent                       +0.000043       0.1079
+   5      interrogea                     +0.000037       0.0513
+   6      coins                          +0.000023       0.0428
+   7      arrêtées                       +0.000019       0.0778
+   8      constatèrent                   +0.000018       0.1084
+   9      terminée                       +0.000018       0.0454
+   10     contrôle                       +0.000016       0.0457
+   11     capitaine                      +0.000016       0.1019
+   12     désamorcer                     +0.000015       0.1074
+   13     demanda                        +0.000014       0.0740
+   14     coururent                      +0.000014       0.0838
+   15     satan                          +0.000012       0.0812
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mélissa                        -0.000369       0.6694
+   2      suggéra                        -0.000088       0.1338
+   3      cédric                         -0.000074       0.2835
+   4      afficha                        -0.000057       0.0912
+   5      normaux                        -0.000041       0.0790
+   6      aodhan                         -0.000039       0.1771
+   7      traites                        -0.000029       0.0950
+   8      indiquait                      -0.000023       0.0553
+   9      international                  -0.000023       0.0725
+   10     directeur                      -0.000022       0.0462
+   11     trouvez                        -0.000021       0.0458
+   12     découragement                  -0.000021       0.0633
+   13     données                        -0.000021       0.0525
+   14     approchant                     -0.000020       0.0485
+   15     santé                          -0.000020       0.0341
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      satellite                      +0.000060       0.1031
+   2      somnolence                     +0.000052       0.0849
+   3      puces                          +0.000045       0.1531
+   4      hâtèrent                       +0.000043       0.1079
+   5      interrogea                     +0.000037       0.0513
+   6      coins                          +0.000023       0.0428
+   7      arrêtées                       +0.000019       0.0778
+   8      constatèrent                   +0.000018       0.1084
+   9      terminée                       +0.000018       0.0454
+   10     contrôle                       +0.000016       0.0457
+   11     capitaine                      +0.000016       0.1019
+   12     désamorcer                     +0.000015       0.1074
+   13     demanda                        +0.000014       0.0740
+   14     coururent                      +0.000014       0.0838
+   15     satan                          +0.000012       0.0812
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mélissa                        -0.000369       0.6694
+   2      suggéra                        -0.000088       0.1338
+   3      cédric                         -0.000074       0.2835
+   4      afficha                        -0.000057       0.0912
+   5      normaux                        -0.000041       0.0790
+   6      aodhan                         -0.000039       0.1771
+   7      traites                        -0.000029       0.0950
+   8      indiquait                      -0.000023       0.0553
+   9      international                  -0.000023       0.0725
+   10     directeur                      -0.000022       0.0462
+   11     trouvez                        -0.000021       0.0458
+   12     découragement                  -0.000021       0.0633
+   13     données                        -0.000021       0.0525
+   14     approchant                     -0.000020       0.0485
+   15     santé                          -0.000020       0.0341
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      satellite                      +0.000989       0.1031
+   2      capitaine                      +0.000985       0.1019
+   3      immobiles                      +0.000968       0.0510
+   4      somnolence                     +0.000878       0.0849
+   5      coururent                      +0.000828       0.0838
+   6      désamorcer                     +0.000685       0.1074
+   7      cabine                         +0.000658       0.0489
+   8      rapports                       +0.000591       0.0440
+   9      interrogea                     +0.000543       0.0513
+   10     communiquer                    +0.000485       0.0505
+   11     fonctions                      +0.000453       0.0529
+   12     agents                         +0.000430       0.0545
+   13     terminée                       +0.000399       0.0454
+   14     également                      +0.000394       0.0357
+   15     côte                           +0.000351       0.0355
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      suggéra                        -0.002303       0.1338
+   2      mélissa                        -0.001385       0.6694
+   3      afficha                        -0.001374       0.0912
+   4      cédric                         -0.001113       0.2835
+   5      soupira                        -0.000953       0.0461
+   6      données                        -0.000665       0.0525
+   7      affirma                        -0.000600       0.0571
+   8      puces                          -0.000570       0.1531
+   9      aodhan                         -0.000534       0.1771
+   10     normal                         -0.000508       0.0374
+   11     agente                         -0.000490       0.1357
+   12     découragement                  -0.000487       0.0633
+   13     déterminer                     -0.000479       0.0631
+   14     rassurante                     -0.000475       0.0639
+   15     récupéra                       -0.000410       0.0856
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mélissa                        +0.071147       0.6694
+   2      immobiles                      +0.039559       0.0510
+   3      capitaine                      +0.038843       0.1019
+   4      rapports                       +0.031397       0.0440
+   5      désamorcer                     +0.030799       0.1074
+   6      somnolence                     +0.029337       0.0849
+   7      coururent                      +0.028501       0.0838
+   8      cabine                         +0.026522       0.0489
+   9      satellite                      +0.024997       0.1031
+   10     agents                         +0.023593       0.0545
+   11     communiquer                    +0.023007       0.0505
+   12     interrogea                     +0.021851       0.0513
+   13     fonctions                      +0.018513       0.0529
+   14     également                      +0.018109       0.0357
+   15     terminée                       +0.017413       0.0454
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      suggéra                        -0.079273       0.1338
+   2      afficha                        -0.054934       0.0912
+   3      cédric                         -0.054918       0.2835
+   4      soupira                        -0.039836       0.0461
+   5      puces                          -0.037647       0.1531
+   6      aodhan                         -0.028289       0.1771
+   7      données                        -0.025876       0.0525
+   8      découragement                  -0.025115       0.0633
+   9      rassurante                     -0.022826       0.0639
+   10     constatèrent                   -0.022570       0.1084
+   11     normal                         -0.022299       0.0374
+   12     affirma                        -0.021839       0.0571
+   13     récupéra                       -0.021203       0.0856
+   14     déterminer                     -0.017278       0.0631
+   15     hâtèrent                       -0.015842       0.1079
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+satellite                 +0.000989     +0.000060     +0.000060     0.1031
+somnolence                +0.000878     +0.000052     +0.000052     0.0849
+puces                     +0.000000     +0.000045     +0.000045     0.1531
+hâtèrent                  +0.000000     +0.000043     +0.000043     0.1079
+interrogea                +0.000543     +0.000037     +0.000037     0.0513
+coins                     +0.000035     +0.000023     +0.000023     0.0428
+arrêtées                  +0.000000     +0.000019     +0.000019     0.0778
+constatèrent              +0.000000     +0.000018     +0.000018     0.1084
+terminée                  +0.000399     +0.000018     +0.000018     0.0454
+contrôle                  +0.000100     +0.000016     +0.000016     0.0457
+capitaine                 +0.000985     +0.000016     +0.000016     0.1019
+désamorcer                +0.000685     +0.000015     +0.000015     0.1074
+demanda                   +0.000000     +0.000014     +0.000014     0.0740
+coururent                 +0.000828     +0.000014     +0.000014     0.0838
+satan                     +0.000000     +0.000012     +0.000012     0.0812
+curieusement              +0.000000     +0.000011     +0.000011     0.0542
+côte                      +0.000351     +0.000011     +0.000011     0.0355
+utilisa                   +0.000018     +0.000010     +0.000010     0.1054
+trouverons                +0.000000     +0.000009     +0.000009     0.0810
+avions                    +0.000000     +0.000009     +0.000009     0.0700
+logit final pour 'homme': -0.6690

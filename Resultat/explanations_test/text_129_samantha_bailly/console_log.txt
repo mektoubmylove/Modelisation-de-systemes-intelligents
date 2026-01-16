@@ -1,0 +1,386 @@
+texte analysé: l energie sur laquelle se dessina un emblème bien connu des veilleurs . un croissant de lune fendu en son milieu . puis plus rien . le silence revint , paisible . le jeu des quatre vents venait de don...
+prédiction: FEMME (confiance: 87.3%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.0991
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gide                           +0.000130       0.2095
+   2      promenant                      +0.000073       0.1208
+   3      implique                       +0.000071       0.1510
+   4      fendu                          +0.000067       0.1311
+   5      disponibles                    +0.000061       0.1349
+   6      vents                          +0.000056       0.1003
+   7      matériel                       +0.000048       0.1565
+   8      oraison                        +0.000044       0.1607
+   9      comportent                     +0.000036       0.1661
+   10     créer                          +0.000033       0.0790
+   11     voler                          +0.000028       0.0697
+   12     apprentie                      +0.000027       0.1989
+   13     cité                           +0.000026       0.0774
+   14     ouest                          +0.000022       0.0815
+   15     oraisons                       +0.000019       0.1948
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      inaperçus                      -0.000197       0.1849
+   2      filante                        -0.000139       0.2165
+   3      veilleurs                      -0.000125       0.2082
+   4      spécifique                     -0.000125       0.1788
+   5      voeu                           -0.000101       0.1082
+   6      monts                          -0.000090       0.1368
+   7      précieuses                     -0.000083       0.0934
+   8      royaumes                       -0.000079       0.1702
+   9      auberge                        -0.000077       0.0988
+   10     épargner                       -0.000073       0.0989
+   11     souhaite                       -0.000071       0.0760
+   12     différent                      -0.000062       0.0675
+   13     parlent                        -0.000060       0.0761
+   14     nourrir                        -0.000059       0.0739
+   15     identité                       -0.000054       0.0764
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gide                           +0.000130       0.2095
+   2      promenant                      +0.000073       0.1208
+   3      implique                       +0.000071       0.1510
+   4      fendu                          +0.000067       0.1311
+   5      disponibles                    +0.000061       0.1349
+   6      vents                          +0.000056       0.1003
+   7      matériel                       +0.000048       0.1565
+   8      oraison                        +0.000044       0.1607
+   9      comportent                     +0.000036       0.1661
+   10     créer                          +0.000033       0.0790
+   11     voler                          +0.000028       0.0697
+   12     apprentie                      +0.000027       0.1989
+   13     cité                           +0.000026       0.0774
+   14     ouest                          +0.000022       0.0815
+   15     oraisons                       +0.000019       0.1948
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      inaperçus                      -0.000197       0.1849
+   2      filante                        -0.000139       0.2165
+   3      veilleurs                      -0.000125       0.2082
+   4      spécifique                     -0.000125       0.1788
+   5      voeu                           -0.000101       0.1082
+   6      monts                          -0.000090       0.1368
+   7      précieuses                     -0.000083       0.0934
+   8      royaumes                       -0.000079       0.1702
+   9      auberge                        -0.000077       0.0988
+   10     épargner                       -0.000073       0.0989
+   11     souhaite                       -0.000071       0.0760
+   12     différent                      -0.000062       0.0675
+   13     parlent                        -0.000060       0.0761
+   14     nourrir                        -0.000059       0.0739
+   15     identité                       -0.000054       0.0764
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      dessina                        +0.002717       0.1387
+   2      filante                        +0.002523       0.2165
+   3      inaperçus                      +0.001965       0.1849
+   4      confort                        +0.001767       0.0870
+   5      recherche                      +0.001542       0.0598
+   6      sarcastique                    +0.001525       0.1343
+   7      voeu                           +0.001378       0.1082
+   8      suppliant                      +0.001313       0.1109
+   9      préféré                        +0.001215       0.0621
+   10     veilleurs                      +0.001125       0.2082
+   11     aimerais                       +0.001080       0.0641
+   12     informations                   +0.001069       0.0855
+   13     précieuses                     +0.000995       0.0934
+   14     bibliothèque                   +0.000986       0.0760
+   15     joindre                        +0.000928       0.0779
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      matériel                       -0.002760       0.1565
+   2      gide                           -0.001882       0.2095
+   3      ouest                          -0.001842       0.0815
+   4      apprentie                      -0.001795       0.1989
+   5      promenant                      -0.001678       0.1208
+   6      directions                     -0.001466       0.1294
+   7      fol                            -0.001435       0.1781
+   8      oraisons                       -0.001186       0.1948
+   9      lune                           -0.001041       0.1249
+   10     revint                         -0.001031       0.0710
+   11     spécifique                     -0.001003       0.1788
+   12     fendu                          -0.000977       0.1311
+   13     horizon                        -0.000932       0.0660
+   14     étoiles                        -0.000885       0.1385
+   15     cité                           -0.000842       0.0774
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      dessina                        +0.109901       0.1387
+   2      filante                        +0.081905       0.2165
+   3      recherche                      +0.061523       0.0598
+   4      inaperçus                      +0.061221       0.1849
+   5      confort                        +0.060800       0.0870
+   6      sarcastique                    +0.055967       0.1343
+   7      voeu                           +0.052695       0.1082
+   8      suppliant                      +0.052102       0.1109
+   9      préféré                        +0.051554       0.0621
+   10     informations                   +0.047973       0.0855
+   11     royaumes                       +0.047362       0.1702
+   12     totalité                       +0.042681       0.1136
+   13     aimerais                       +0.039664       0.0641
+   14     veilleurs                      +0.039562       0.2082
+   15     bibliothèque                   +0.037374       0.0760
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      matériel                       -0.094890       0.1565
+   2      promenant                      -0.080525       0.1208
+   3      apprentie                      -0.071849       0.1989
+   4      gide                           -0.063616       0.2095
+   5      ouest                          -0.063023       0.0815
+   6      fol                            -0.056050       0.1781
+   7      directions                     -0.054497       0.1294
+   8      spécifique                     -0.053755       0.1788
+   9      oraisons                       -0.049869       0.1948
+   10     étoiles                        -0.045900       0.1385
+   11     revint                         -0.044500       0.0710
+   12     lune                           -0.044288       0.1249
+   13     horizon                        -0.040373       0.0660
+   14     fendu                          -0.028913       0.1311
+   15     soirs                          -0.026457       0.0734
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+gide                      +0.000000     +0.000130     +0.000130     0.2095
+promenant                 +0.000000     +0.000073     +0.000073     0.1208
+implique                  +0.000000     +0.000071     +0.000071     0.1510
+fendu                     +0.000000     +0.000067     +0.000067     0.1311
+disponibles               +0.000000     +0.000061     +0.000061     0.1349
+vents                     +0.000097     +0.000056     +0.000056     0.1003
+matériel                  +0.000000     +0.000048     +0.000048     0.1565
+oraison                   +0.000000     +0.000044     +0.000044     0.1607
+comportent                +0.000000     +0.000036     +0.000036     0.1661
+créer                     +0.000000     +0.000033     +0.000033     0.0790
+voler                     +0.000000     +0.000028     +0.000028     0.0697
+apprentie                 +0.000000     +0.000027     +0.000027     0.1989
+cité                      +0.000000     +0.000026     +0.000026     0.0774
+ouest                     +0.000000     +0.000022     +0.000022     0.0815
+oraisons                  +0.000000     +0.000019     +0.000019     0.1948
+intéressant               +0.000005     +0.000018     +0.000018     0.0747
+facilement                +0.000000     +0.000016     +0.000016     0.0633
+mettrais                  +0.000580     +0.000015     +0.000015     0.1346
+devons                    +0.000126     +0.000014     +0.000014     0.0782
+paisible                  +0.000000     +0.000010     +0.000010     0.0733
+logit final pour 'femme': 1.0991
+# analyse pour la classe: HOMME
+# logit: -0.8328
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gide                           +0.000046       0.2095
+   2      mettrais                       +0.000038       0.1346
+   3      fendu                          +0.000036       0.1311
+   4      implique                       +0.000035       0.1510
+   5      comportent                     +0.000032       0.1661
+   6      affiche                        +0.000029       0.1052
+   7      disponibles                    +0.000029       0.1349
+   8      fol                            +0.000027       0.1781
+   9      promenant                      +0.000023       0.1208
+   10     vents                          +0.000019       0.1003
+   11     créer                          +0.000018       0.0790
+   12     suppliant                      +0.000015       0.1109
+   13     ouest                          +0.000014       0.0815
+   14     devons                         +0.000013       0.0782
+   15     voler                          +0.000013       0.0697
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      veilleurs                      -0.000113       0.2082
+   2      spécifique                     -0.000091       0.1788
+   3      filante                        -0.000084       0.2165
+   4      apprentie                      -0.000055       0.1989
+   5      inaperçus                      -0.000043       0.1849
+   6      étoiles                        -0.000040       0.1385
+   7      identité                       -0.000039       0.0764
+   8      précieuses                     -0.000037       0.0934
+   9      auberge                        -0.000033       0.0988
+   10     nourrir                        -0.000033       0.0739
+   11     recherche                      -0.000033       0.0598
+   12     monts                          -0.000033       0.1368
+   13     royaumes                       -0.000031       0.1702
+   14     dessina                        -0.000031       0.1387
+   15     permettre                      -0.000030       0.0660
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gide                           +0.000046       0.2095
+   2      mettrais                       +0.000038       0.1346
+   3      fendu                          +0.000036       0.1311
+   4      implique                       +0.000035       0.1510
+   5      comportent                     +0.000032       0.1661
+   6      affiche                        +0.000029       0.1052
+   7      disponibles                    +0.000029       0.1349
+   8      fol                            +0.000027       0.1781
+   9      promenant                      +0.000023       0.1208
+   10     vents                          +0.000019       0.1003
+   11     créer                          +0.000018       0.0790
+   12     suppliant                      +0.000015       0.1109
+   13     ouest                          +0.000014       0.0815
+   14     devons                         +0.000013       0.0782
+   15     voler                          +0.000013       0.0697
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      veilleurs                      -0.000113       0.2082
+   2      spécifique                     -0.000091       0.1788
+   3      filante                        -0.000084       0.2165
+   4      apprentie                      -0.000055       0.1989
+   5      inaperçus                      -0.000043       0.1849
+   6      étoiles                        -0.000040       0.1385
+   7      identité                       -0.000039       0.0764
+   8      précieuses                     -0.000037       0.0934
+   9      auberge                        -0.000033       0.0988
+   10     nourrir                        -0.000033       0.0739
+   11     recherche                      -0.000033       0.0598
+   12     monts                          -0.000033       0.1368
+   13     royaumes                       -0.000031       0.1702
+   14     dessina                        -0.000031       0.1387
+   15     permettre                      -0.000030       0.0660
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      matériel                       +0.001900       0.1565
+   2      apprentie                      +0.001835       0.1989
+   3      ouest                          +0.001264       0.0815
+   4      promenant                      +0.001222       0.1208
+   5      gide                           +0.001184       0.2095
+   6      oraisons                       +0.001076       0.1948
+   7      fol                            +0.000961       0.1781
+   8      fendu                          +0.000762       0.1311
+   9      revint                         +0.000761       0.0710
+   10     directions                     +0.000746       0.1294
+   11     lune                           +0.000744       0.1249
+   12     spécifique                     +0.000718       0.1788
+   13     cité                           +0.000631       0.0774
+   14     horizon                        +0.000589       0.0660
+   15     étoiles                        +0.000486       0.1385
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      dessina                        -0.001877       0.1387
+   2      filante                        -0.001842       0.2165
+   3      inaperçus                      -0.001680       0.1849
+   4      confort                        -0.001166       0.0870
+   5      suppliant                      -0.001050       0.1109
+   6      sarcastique                    -0.001021       0.1343
+   7      recherche                      -0.000961       0.0598
+   8      voeu                           -0.000908       0.1082
+   9      préféré                        -0.000831       0.0621
+   10     précieuses                     -0.000787       0.0934
+   11     emblème                        -0.000717       0.1532
+   12     monts                          -0.000662       0.1368
+   13     aimerais                       -0.000636       0.0641
+   14     parlent                        -0.000620       0.0761
+   15     informations                   -0.000619       0.0855
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      matériel                       +0.072063       0.1565
+   2      apprentie                      +0.070542       0.1989
+   3      promenant                      +0.054455       0.1208
+   4      oraisons                       +0.043733       0.1948
+   5      ouest                          +0.039992       0.0815
+   6      spécifique                     +0.039451       0.1788
+   7      gide                           +0.031649       0.2095
+   8      lune                           +0.030304       0.1249
+   9      revint                         +0.026276       0.0710
+   10     horizon                        +0.025428       0.0660
+   11     cité                           +0.024864       0.0774
+   12     étoiles                        +0.024632       0.1385
+   13     directions                     +0.024629       0.1294
+   14     fol                            +0.024176       0.1781
+   15     oraison                        +0.022516       0.1607
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      dessina                        -0.071773       0.1387
+   2      filante                        -0.059134       0.2165
+   3      inaperçus                      -0.051051       0.1849
+   4      suppliant                      -0.042483       0.1109
+   5      voeu                           -0.038502       0.1082
+   6      confort                        -0.037211       0.0870
+   7      recherche                      -0.035547       0.0598
+   8      préféré                        -0.034125       0.0621
+   9      sarcastique                    -0.033260       0.1343
+   10     informations                   -0.032872       0.0855
+   11     mettrais                       -0.031530       0.1346
+   12     royaumes                       -0.029936       0.1702
+   13     monts                          -0.026393       0.1368
+   14     totalité                       -0.025765       0.1136
+   15     aimerais                       -0.024063       0.0641
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+gide                      +0.001184     +0.000046     +0.000046     0.2095
+mettrais                  +0.000000     +0.000038     +0.000038     0.1346
+fendu                     +0.000762     +0.000036     +0.000036     0.1311
+implique                  +0.000486     +0.000035     +0.000035     0.1510
+comportent                +0.000387     +0.000032     +0.000032     0.1661
+affiche                   +0.000000     +0.000029     +0.000029     0.1052
+disponibles               +0.000324     +0.000029     +0.000029     0.1349
+fol                       +0.000961     +0.000027     +0.000027     0.1781
+promenant                 +0.001222     +0.000023     +0.000023     0.1208
+vents                     +0.000000     +0.000019     +0.000019     0.1003
+créer                     +0.000307     +0.000018     +0.000018     0.0790
+suppliant                 +0.000000     +0.000015     +0.000015     0.1109
+ouest                     +0.001264     +0.000014     +0.000014     0.0815
+devons                    +0.000000     +0.000013     +0.000013     0.0782
+voler                     +0.000053     +0.000013     +0.000013     0.0697
+paisible                  +0.000106     +0.000010     +0.000010     0.0733
+croissant                 +0.000000     +0.000010     +0.000010     0.1025
+évidemment                +0.000271     +0.000005     +0.000005     0.0630
+soirs                     +0.000122     +0.000005     +0.000005     0.0734
+revint                    +0.000761     +0.000004     +0.000004     0.0710
+logit final pour 'homme': -0.8328

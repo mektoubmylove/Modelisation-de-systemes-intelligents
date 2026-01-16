@@ -1,0 +1,5 @@
+filename: (ROBBE-GRILLET)(Alain)(les gommes)(1)(1953)(1922)(2008)(fr)(z)(z)(V)(R)(T).txt
+index: 260
+first_name: alain
+last_name: robbegrillet
+true_label: homme

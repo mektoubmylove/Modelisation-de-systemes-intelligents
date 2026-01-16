@@ -1,0 +1,5 @@
+filename: (GAVALDA)(Anna)(je l'aimais)(2)(2002)(1970)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 283
+first_name: anna
+last_name: gavalda
+true_label: femme

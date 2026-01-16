@@ -1,0 +1,386 @@
+texte analysé: laissa glisser à bas de son divan , revêtit ses habits encore tout trempés , et se dirigea vers la cuisine où il avait installé son autoclave . là , il ouvrit le tiroir d une vieille table , fouilla p...
+prédiction: HOMME (confiance: 76.5%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.7140
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      nestor                         +0.000201       0.4133
+   2      montrouge                      +0.000092       0.1829
+   3      négligea                       +0.000071       0.1587
+   4      proférant                      +0.000069       0.1668
+   5      escroquerie                    +0.000062       0.1398
+   6      regrettable                    +0.000056       0.1129
+   7      commissariat                   +0.000053       0.1027
+   8      terminée                       +0.000047       0.0677
+   9      commerçants                    +0.000046       0.0930
+   10     revenant                       +0.000043       0.0669
+   11     dura                           +0.000037       0.0815
+   12     dirigea                        +0.000035       0.0694
+   13     métallique                     +0.000033       0.0724
+   14     exagérait                      +0.000031       0.1361
+   15     supposer                       +0.000028       0.0781
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      divan                          -0.000115       0.1856
+   2      débrouille                     -0.000075       0.1033
+   3      exagéré                        -0.000065       0.1025
+   4      habits                         -0.000049       0.0748
+   5      rejeta                         -0.000048       0.0990
+   6      manquaient                     -0.000048       0.0812
+   7      chercha                        -0.000038       0.0683
+   8      autrefois                      -0.000037       0.0587
+   9      fournies                       -0.000036       0.1438
+   10     témoins                        -0.000036       0.0675
+   11     accusé                         -0.000036       0.0881
+   12     fier                           -0.000035       0.0531
+   13     heurter                        -0.000030       0.0905
+   14     occupons                       -0.000028       0.1594
+   15     tige                           -0.000027       0.0922
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      nestor                         +0.000201       0.4133
+   2      montrouge                      +0.000092       0.1829
+   3      négligea                       +0.000071       0.1587
+   4      proférant                      +0.000069       0.1668
+   5      escroquerie                    +0.000062       0.1398
+   6      regrettable                    +0.000056       0.1129
+   7      commissariat                   +0.000053       0.1027
+   8      terminée                       +0.000047       0.0677
+   9      commerçants                    +0.000046       0.0930
+   10     revenant                       +0.000043       0.0669
+   11     dura                           +0.000037       0.0815
+   12     dirigea                        +0.000035       0.0694
+   13     métallique                     +0.000033       0.0724
+   14     exagérait                      +0.000031       0.1361
+   15     supposer                       +0.000028       0.0781
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      divan                          -0.000115       0.1856
+   2      débrouille                     -0.000075       0.1033
+   3      exagéré                        -0.000065       0.1025
+   4      habits                         -0.000049       0.0748
+   5      rejeta                         -0.000048       0.0990
+   6      manquaient                     -0.000048       0.0812
+   7      chercha                        -0.000038       0.0683
+   8      autrefois                      -0.000037       0.0587
+   9      fournies                       -0.000036       0.1438
+   10     témoins                        -0.000036       0.0675
+   11     accusé                         -0.000036       0.0881
+   12     fier                           -0.000035       0.0531
+   13     heurter                        -0.000030       0.0905
+   14     occupons                       -0.000028       0.1594
+   15     tige                           -0.000027       0.0922
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      étagère                        +0.001321       0.0888
+   2      vaniteux                       +0.001141       0.1379
+   3      contrairement                  +0.001050       0.0682
+   4      montrouge                      +0.000919       0.1829
+   5      revêtit                        +0.000849       0.1482
+   6      chercha                        +0.000733       0.0683
+   7      rejeta                         +0.000610       0.0990
+   8      trempés                        +0.000608       0.1013
+   9      exagérait                      +0.000598       0.1361
+   10     escroc                         +0.000534       0.1383
+   11     malhonnête                     +0.000475       0.1323
+   12     témoins                        +0.000455       0.0675
+   13     autrefois                      +0.000391       0.0587
+   14     rougir                         +0.000381       0.0799
+   15     garçons                        +0.000363       0.0548
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      proférant                      -0.002375       0.1668
+   2      lime                           -0.001831       0.1558
+   3      regrettable                    -0.001384       0.1129
+   4      divan                          -0.001284       0.1856
+   5      menaces                        -0.001109       0.0714
+   6      chapitre                       -0.001093       0.0702
+   7      hideux                         -0.001040       0.1107
+   8      négligea                       -0.001020       0.1587
+   9      escroquerie                    -0.000989       0.1398
+   10     extrémité                      -0.000899       0.0700
+   11     laboratoire                    -0.000810       0.0979
+   12     nestor                         -0.000810       0.4133
+   13     police                         -0.000793       0.0574
+   14     eut                            -0.000781       0.0507
+   15     terminée                       -0.000747       0.0677
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      étagère                        +0.066527       0.0888
+   2      revêtit                        +0.057118       0.1482
+   3      montrouge                      +0.055880       0.1829
+   4      vaniteux                       +0.055132       0.1379
+   5      contrairement                  +0.052741       0.0682
+   6      chercha                        +0.046441       0.0683
+   7      rejeta                         +0.041154       0.0990
+   8      exagérait                      +0.037175       0.1361
+   9      malhonnête                     +0.032712       0.1323
+   10     trempés                        +0.031465       0.1013
+   11     débrouille                     +0.029899       0.1033
+   12     témoins                        +0.025723       0.0675
+   13     garçons                        +0.024234       0.0548
+   14     autrefois                      +0.022053       0.0587
+   15     escroc                         +0.021457       0.1383
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      proférant                      -0.121778       0.1668
+   2      lime                           -0.098901       0.1558
+   3      regrettable                    -0.074809       0.1129
+   4      chapitre                       -0.059967       0.0702
+   5      menaces                        -0.057953       0.0714
+   6      négligea                       -0.057420       0.1587
+   7      hideux                         -0.056236       0.1107
+   8      escroquerie                    -0.052298       0.1398
+   9      divan                          -0.050129       0.1856
+   10     dirons                         -0.045295       0.1465
+   11     eut                            -0.042153       0.0507
+   12     extrémité                      -0.042009       0.0700
+   13     laboratoire                    -0.039259       0.0979
+   14     police                         -0.038681       0.0574
+   15     dura                           -0.037912       0.0815
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+nestor                    +0.000000     +0.000201     +0.000201     0.4133
+montrouge                 +0.000919     +0.000092     +0.000092     0.1829
+négligea                  +0.000000     +0.000071     +0.000071     0.1587
+proférant                 +0.000000     +0.000069     +0.000069     0.1668
+escroquerie               +0.000000     +0.000062     +0.000062     0.1398
+regrettable               +0.000000     +0.000056     +0.000056     0.1129
+commissariat              +0.000000     +0.000053     +0.000053     0.1027
+terminée                  +0.000000     +0.000047     +0.000047     0.0677
+commerçants               +0.000000     +0.000046     +0.000046     0.0930
+revenant                  +0.000000     +0.000043     +0.000043     0.0669
+dura                      +0.000000     +0.000037     +0.000037     0.0815
+dirigea                   +0.000000     +0.000035     +0.000035     0.0694
+métallique                +0.000000     +0.000033     +0.000033     0.0724
+exagérait                 +0.000598     +0.000031     +0.000031     0.1361
+supposer                  +0.000000     +0.000028     +0.000028     0.0781
+devons                    +0.000252     +0.000026     +0.000026     0.0656
+crochet                   +0.000000     +0.000026     +0.000026     0.0928
+grogna                    +0.000000     +0.000025     +0.000025     0.0916
+chapitre                  +0.000000     +0.000025     +0.000025     0.0702
+arrêté                    +0.000000     +0.000024     +0.000024     0.0508
+logit final pour 'femme': -0.7140
+# analyse pour la classe: HOMME  prédite
+# logit: 0.4663
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      nestor                         +0.000156       0.4133
+   2      proférant                      +0.000104       0.1668
+   3      montrouge                      +0.000058       0.1829
+   4      escroc                         +0.000040       0.1383
+   5      fiches                         +0.000039       0.1013
+   6      dirons                         +0.000035       0.1465
+   7      commissariat                   +0.000034       0.1027
+   8      ayons                          +0.000033       0.0893
+   9      escroquerie                    +0.000030       0.1398
+   10     devons                         +0.000026       0.0656
+   11     regrettable                    +0.000026       0.1129
+   12     ouvrit                         +0.000026       0.0585
+   13     terminée                       +0.000024       0.0677
+   14     crochet                        +0.000016       0.0928
+   15     voyons                         +0.000015       0.0565
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      doutez                         -0.000059       0.1153
+   2      débrouille                     -0.000053       0.1033
+   3      fournies                       -0.000051       0.1438
+   4      occupons                       -0.000042       0.1594
+   5      exagéré                        -0.000042       0.1025
+   6      lime                           -0.000037       0.1558
+   7      manquaient                     -0.000036       0.0812
+   8      hideux                         -0.000033       0.1107
+   9      tige                           -0.000030       0.0922
+   10     chercha                        -0.000030       0.0683
+   11     accusé                         -0.000029       0.0881
+   12     rejeta                         -0.000028       0.0990
+   13     contrairement                  -0.000028       0.0682
+   14     habits                         -0.000026       0.0748
+   15     fier                           -0.000025       0.0531
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      nestor                         +0.000156       0.4133
+   2      proférant                      +0.000104       0.1668
+   3      montrouge                      +0.000058       0.1829
+   4      escroc                         +0.000040       0.1383
+   5      fiches                         +0.000039       0.1013
+   6      dirons                         +0.000035       0.1465
+   7      commissariat                   +0.000034       0.1027
+   8      ayons                          +0.000033       0.0893
+   9      escroquerie                    +0.000030       0.1398
+   10     devons                         +0.000026       0.0656
+   11     regrettable                    +0.000026       0.1129
+   12     ouvrit                         +0.000026       0.0585
+   13     terminée                       +0.000024       0.0677
+   14     crochet                        +0.000016       0.0928
+   15     voyons                         +0.000015       0.0565
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      doutez                         -0.000059       0.1153
+   2      débrouille                     -0.000053       0.1033
+   3      fournies                       -0.000051       0.1438
+   4      occupons                       -0.000042       0.1594
+   5      exagéré                        -0.000042       0.1025
+   6      lime                           -0.000037       0.1558
+   7      manquaient                     -0.000036       0.0812
+   8      hideux                         -0.000033       0.1107
+   9      tige                           -0.000030       0.0922
+   10     chercha                        -0.000030       0.0683
+   11     accusé                         -0.000029       0.0881
+   12     rejeta                         -0.000028       0.0990
+   13     contrairement                  -0.000028       0.0682
+   14     habits                         -0.000026       0.0748
+   15     fier                           -0.000025       0.0531
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      proférant                      +0.002446       0.1668
+   2      lime                           +0.001613       0.1558
+   3      divan                          +0.001221       0.1856
+   4      menaces                        +0.001127       0.0714
+   5      regrettable                    +0.001077       0.1129
+   6      hideux                         +0.001004       0.1107
+   7      chapitre                       +0.000939       0.0702
+   8      commissariat                   +0.000836       0.1027
+   9      négligea                       +0.000817       0.1587
+   10     police                         +0.000807       0.0574
+   11     eut                            +0.000796       0.0507
+   12     nestor                         +0.000782       0.4133
+   13     escroquerie                    +0.000768       0.1398
+   14     extrémité                      +0.000762       0.0700
+   15     laboratoire                    +0.000684       0.0979
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vaniteux                       -0.001373       0.1379
+   2      étagère                        -0.001286       0.0888
+   3      montrouge                      -0.001090       0.1829
+   4      contrairement                  -0.001008       0.0682
+   5      revêtit                        -0.000854       0.1482
+   6      malhonnête                     -0.000725       0.1323
+   7      rejeta                         -0.000646       0.0990
+   8      chercha                        -0.000580       0.0683
+   9      exagérait                      -0.000536       0.1361
+   10     escroc                         -0.000467       0.1383
+   11     trempés                        -0.000422       0.1013
+   12     débrouille                     -0.000375       0.1033
+   13     garçons                        -0.000367       0.0548
+   14     témoins                        -0.000362       0.0675
+   15     autrefois                      -0.000356       0.0587
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      proférant                      +0.128685       0.1668
+   2      lime                           +0.075174       0.1558
+   3      regrettable                    +0.062603       0.1129
+   4      menaces                        +0.061579       0.0714
+   5      hideux                         +0.054988       0.1107
+   6      chapitre                       +0.054663       0.0702
+   7      divan                          +0.053345       0.1856
+   8      négligea                       +0.044399       0.1587
+   9      extrémité                      +0.040402       0.0700
+   10     eut                            +0.040100       0.0507
+   11     dura                           +0.039198       0.0815
+   12     commissariat                   +0.038844       0.1027
+   13     police                         +0.038006       0.0574
+   14     laboratoire                    +0.035531       0.0979
+   15     dirons                         +0.035376       0.1465
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vaniteux                       -0.074082       0.1379
+   2      étagère                        -0.072219       0.0888
+   3      montrouge                      -0.066002       0.1829
+   4      revêtit                        -0.057836       0.1482
+   5      contrairement                  -0.054906       0.0682
+   6      malhonnête                     -0.043530       0.1323
+   7      chercha                        -0.040687       0.0683
+   8      rejeta                         -0.038930       0.0990
+   9      exagérait                      -0.035978       0.1361
+   10     débrouille                     -0.024715       0.1033
+   11     escroc                         -0.022449       0.1383
+   12     laissa                         -0.022002       0.0582
+   13     trempés                        -0.020711       0.1013
+   14     garçons                        -0.020185       0.0548
+   15     tige                           -0.020110       0.0922
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+nestor                    +0.000782     +0.000156     +0.000156     0.4133
+proférant                 +0.002446     +0.000104     +0.000104     0.1668
+montrouge                 +0.000000     +0.000058     +0.000058     0.1829
+escroc                    +0.000000     +0.000040     +0.000040     0.1383
+fiches                    +0.000665     +0.000039     +0.000039     0.1013
+dirons                    +0.000580     +0.000035     +0.000035     0.1465
+commissariat              +0.000836     +0.000034     +0.000034     0.1027
+ayons                     +0.000000     +0.000033     +0.000033     0.0893
+escroquerie               +0.000768     +0.000030     +0.000030     0.1398
+devons                    +0.000000     +0.000026     +0.000026     0.0656
+regrettable               +0.001077     +0.000026     +0.000026     0.1129
+ouvrit                    +0.000000     +0.000026     +0.000026     0.0585
+terminée                  +0.000432     +0.000024     +0.000024     0.0677
+crochet                   +0.000406     +0.000016     +0.000016     0.0928
+voyons                    +0.000035     +0.000015     +0.000015     0.0565
+terminé                   +0.000071     +0.000015     +0.000015     0.0558
+chapitre                  +0.000939     +0.000015     +0.000015     0.0702
+dirigea                   +0.000160     +0.000014     +0.000014     0.0694
+revenant                  +0.000385     +0.000014     +0.000014     0.0669
+vaniteux                  +0.000000     +0.000014     +0.000014     0.1379
+logit final pour 'homme': 0.4663

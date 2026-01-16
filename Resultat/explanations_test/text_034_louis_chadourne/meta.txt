@@ -1,0 +1,5 @@
+filename: (CHADOURNE)(Louis)(Terre de Chanaan)(1)(1921)(1890)(1925)(fr)(z)(z)(V)(R)(T).txt
+index: 34
+first_name: louis
+last_name: chadourne
+true_label: homme

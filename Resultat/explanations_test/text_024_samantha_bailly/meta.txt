@@ -1,0 +1,5 @@
+filename: (BAILLY)(Samantha)(a durée déterminée)(2)(2017)(1988)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 24
+first_name: samantha
+last_name: bailly
+true_label: femme

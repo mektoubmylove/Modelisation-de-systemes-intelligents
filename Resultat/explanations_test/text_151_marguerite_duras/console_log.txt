@@ -1,0 +1,385 @@
+texte analysé: que j aimerais le mieux le décrire . je vous remercie , monsieur , vous êtes aimable , mais , voyez vous , je n ai pas voulu dire que j étais spécialement malheureuse dans mon état , que je l étais pl...
+prédiction: FEMME (confiance: 83.5%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.9111
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      insinuer                       +0.000156       0.1790
+   2      comprenez                      +0.000130       0.1826
+   3      somme                          +0.000088       0.0752
+   4      evidemment                     +0.000077       0.2076
+   5      pleurera                       +0.000066       0.2474
+   6      mourrai                        +0.000061       0.1828
+   7      spécialement                   +0.000060       0.1209
+   8      existé                         +0.000052       0.1247
+   9      pleure                         +0.000050       0.0950
+   10     irritation                     +0.000039       0.1450
+   11     insisté                        +0.000032       0.1072
+   12     revenaient                     +0.000024       0.1078
+   13     pouviez                        +0.000020       0.1369
+   14     voyez                          +0.000018       0.0738
+   15     attrister                      +0.000017       0.2308
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      malheureuse                    -0.000272       0.3833
+   2      évanouies                      -0.000170       0.2460
+   3      mademoiselle                   -0.000128       0.1983
+   4      aimerais                       -0.000121       0.1587
+   5      serai                          -0.000109       0.1500
+   6      inconvénient                   -0.000095       0.1403
+   7      dormais                        -0.000094       0.1434
+   8      semblé                         -0.000079       0.0997
+   9      heureuse                       -0.000068       0.0751
+   10     crains                         -0.000062       0.0997
+   11     erreur                         -0.000060       0.0764
+   12     saurais                        -0.000052       0.1072
+   13     indiquée                       -0.000051       0.1591
+   14     décrire                        -0.000051       0.2165
+   15     pourrai                        -0.000049       0.0884
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      insinuer                       +0.000156       0.1790
+   2      comprenez                      +0.000130       0.1826
+   3      somme                          +0.000088       0.0752
+   4      evidemment                     +0.000077       0.2076
+   5      pleurera                       +0.000066       0.2474
+   6      mourrai                        +0.000061       0.1828
+   7      spécialement                   +0.000060       0.1209
+   8      existé                         +0.000052       0.1247
+   9      pleure                         +0.000050       0.0950
+   10     irritation                     +0.000039       0.1450
+   11     insisté                        +0.000032       0.1072
+   12     revenaient                     +0.000024       0.1078
+   13     pouviez                        +0.000020       0.1369
+   14     voyez                          +0.000018       0.0738
+   15     attrister                      +0.000017       0.2308
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      malheureuse                    -0.000272       0.3833
+   2      évanouies                      -0.000170       0.2460
+   3      mademoiselle                   -0.000128       0.1983
+   4      aimerais                       -0.000121       0.1587
+   5      serai                          -0.000109       0.1500
+   6      inconvénient                   -0.000095       0.1403
+   7      dormais                        -0.000094       0.1434
+   8      semblé                         -0.000079       0.0997
+   9      heureuse                       -0.000068       0.0751
+   10     crains                         -0.000062       0.0997
+   11     erreur                         -0.000060       0.0764
+   12     saurais                        -0.000052       0.1072
+   13     indiquée                       -0.000051       0.1591
+   14     décrire                        -0.000051       0.2165
+   15     pourrai                        -0.000049       0.0884
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mademoiselle                   +0.003671       0.1983
+   2      malheureuse                    +0.003266       0.3833
+   3      aimerais                       +0.002790       0.1587
+   4      passés                         +0.001399       0.0842
+   5      inconvénient                   +0.001227       0.1403
+   6      heureuse                       +0.001190       0.0751
+   7      pleurera                       +0.001183       0.2474
+   8      décrire                        +0.001026       0.2165
+   9      semblé                         +0.001002       0.0997
+   10     pleure                         +0.000992       0.0950
+   11     serai                          +0.000609       0.1500
+   12     évanouies                      +0.000583       0.2460
+   13     evidemment                     +0.000511       0.2076
+   14     commun                         +0.000487       0.0754
+   15     pourriez                       +0.000443       0.1028
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      comprenez                      -0.002588       0.1826
+   2      somme                          -0.001850       0.0752
+   3      imagination                    -0.001183       0.0845
+   4      existé                         -0.001076       0.1247
+   5      tromper                        -0.001037       0.0874
+   6      lointain                       -0.000845       0.0844
+   7      étiez                          -0.000775       0.0828
+   8      aimable                        -0.000735       0.0925
+   9      attrister                      -0.000723       0.2308
+   10     voyez                          -0.000712       0.0738
+   11     remercie                       -0.000702       0.0914
+   12     assure                         -0.000648       0.0873
+   13     saurais                        -0.000518       0.1072
+   14     mangeais                       -0.000468       0.1928
+   15     insinuer                       -0.000397       0.1790
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mademoiselle                   +0.182893       0.1983
+   2      aimerais                       +0.118741       0.1587
+   3      malheureuse                    +0.098783       0.3833
+   4      pleurera                       +0.075817       0.2474
+   5      passés                         +0.071856       0.0842
+   6      heureuse                       +0.060279       0.0751
+   7      mourrai                        +0.059241       0.1828
+   8      pleure                         +0.054357       0.0950
+   9      inconvénient                   +0.053162       0.1403
+   10     semblé                         +0.040866       0.0997
+   11     evidemment                     +0.034101       0.2076
+   12     serai                          +0.025364       0.1500
+   13     dormais                        +0.020541       0.1434
+   14     commun                         +0.019499       0.0754
+   15     irritation                     +0.016859       0.1450
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      comprenez                      -0.136236       0.1826
+   2      somme                          -0.083144       0.0752
+   3      imagination                    -0.069100       0.0845
+   4      attrister                      -0.052862       0.2308
+   5      tromper                        -0.052275       0.0874
+   6      étiez                          -0.050612       0.0828
+   7      remercie                       -0.049733       0.0914
+   8      aimable                        -0.045546       0.0925
+   9      existé                         -0.045230       0.1247
+   10     lointain                       -0.042737       0.0844
+   11     voyez                          -0.037885       0.0738
+   12     mangeais                       -0.037773       0.1928
+   13     insinuer                       -0.031275       0.1790
+   14     assure                         -0.027725       0.0873
+   15     saurais                        -0.024148       0.1072
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+insinuer                  +0.000000     +0.000156     +0.000156     0.1790
+comprenez                 +0.000000     +0.000130     +0.000130     0.1826
+somme                     +0.000000     +0.000088     +0.000088     0.0752
+evidemment                +0.000511     +0.000077     +0.000077     0.2076
+pleurera                  +0.001183     +0.000066     +0.000066     0.2474
+mourrai                   +0.000416     +0.000061     +0.000061     0.1828
+spécialement              +0.000000     +0.000060     +0.000060     0.1209
+existé                    +0.000000     +0.000052     +0.000052     0.1247
+pleure                    +0.000992     +0.000050     +0.000050     0.0950
+irritation                +0.000260     +0.000039     +0.000039     0.1450
+insisté                   +0.000330     +0.000032     +0.000032     0.1072
+revenaient                +0.000150     +0.000024     +0.000024     0.1078
+pouviez                   +0.000000     +0.000020     +0.000020     0.1369
+voyez                     +0.000000     +0.000018     +0.000018     0.0738
+attrister                 +0.000000     +0.000017     +0.000017     0.2308
+aimable                   +0.000000     +0.000013     +0.000013     0.0925
+étiez                     +0.000000     +0.000005     +0.000005     0.0828
+impatience                +0.000403     +0.000003     +0.000003     0.0820
+assure                    +0.000000     +0.000001     +0.000001     0.0873
+certainement              +0.000000     +0.000001     +0.000001     0.0778
+logit final pour 'femme': 0.9111
+# analyse pour la classe: HOMME
+# logit: -0.7111
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      insinuer                       +0.000098       0.1790
+   2      comprenez                      +0.000093       0.1826
+   3      somme                          +0.000051       0.0752
+   4      evidemment                     +0.000038       0.2076
+   5      mourrai                        +0.000035       0.1828
+   6      attrister                      +0.000031       0.2308
+   7      voyez                          +0.000029       0.0738
+   8      existé                         +0.000024       0.1247
+   9      insisté                        +0.000022       0.1072
+   10     prévenir                       +0.000018       0.0798
+   11     étiez                          +0.000016       0.0828
+   12     spécialement                   +0.000014       0.1209
+   13     tromper                        +0.000014       0.0874
+   14     assure                         +0.000013       0.0873
+   15     irritation                     +0.000011       0.1450
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      malheureuse                    -0.000133       0.3833
+   2      mademoiselle                   -0.000107       0.1983
+   3      évanouies                      -0.000089       0.2460
+   4      serai                          -0.000063       0.1500
+   5      dormais                        -0.000059       0.1434
+   6      aimerais                       -0.000055       0.1587
+   7      inconvénient                   -0.000054       0.1403
+   8      erreur                         -0.000052       0.0764
+   9      semblé                         -0.000049       0.0997
+   10     saurais                        -0.000039       0.1072
+   11     indiquée                       -0.000037       0.1591
+   12     difficultés                    -0.000034       0.0994
+   13     passés                         -0.000031       0.0842
+   14     lointain                       -0.000030       0.0844
+   15     heureuse                       -0.000028       0.0751
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      insinuer                       +0.000098       0.1790
+   2      comprenez                      +0.000093       0.1826
+   3      somme                          +0.000051       0.0752
+   4      evidemment                     +0.000038       0.2076
+   5      mourrai                        +0.000035       0.1828
+   6      attrister                      +0.000031       0.2308
+   7      voyez                          +0.000029       0.0738
+   8      existé                         +0.000024       0.1247
+   9      insisté                        +0.000022       0.1072
+   10     prévenir                       +0.000018       0.0798
+   11     étiez                          +0.000016       0.0828
+   12     spécialement                   +0.000014       0.1209
+   13     tromper                        +0.000014       0.0874
+   14     assure                         +0.000013       0.0873
+   15     irritation                     +0.000011       0.1450
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      malheureuse                    -0.000133       0.3833
+   2      mademoiselle                   -0.000107       0.1983
+   3      évanouies                      -0.000089       0.2460
+   4      serai                          -0.000063       0.1500
+   5      dormais                        -0.000059       0.1434
+   6      aimerais                       -0.000055       0.1587
+   7      inconvénient                   -0.000054       0.1403
+   8      erreur                         -0.000052       0.0764
+   9      semblé                         -0.000049       0.0997
+   10     saurais                        -0.000039       0.1072
+   11     indiquée                       -0.000037       0.1591
+   12     difficultés                    -0.000034       0.0994
+   13     passés                         -0.000031       0.0842
+   14     lointain                       -0.000030       0.0844
+   15     heureuse                       -0.000028       0.0751
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      comprenez                      +0.002460       0.1826
+   2      somme                          +0.001437       0.0752
+   3      existé                         +0.000880       0.1247
+   4      imagination                    +0.000816       0.0845
+   5      lointain                       +0.000703       0.0844
+   6      tromper                        +0.000695       0.0874
+   7      étiez                          +0.000691       0.0828
+   8      voyez                          +0.000587       0.0738
+   9      saurais                        +0.000538       0.1072
+   10     aimable                        +0.000453       0.0925
+   11     remercie                       +0.000452       0.0914
+   12     assure                         +0.000406       0.0873
+   13     attrister                      +0.000404       0.2308
+   14     insinuer                       +0.000366       0.1790
+   15     pouviez                        +0.000324       0.1369
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mademoiselle                   -0.002766       0.1983
+   2      malheureuse                    -0.002743       0.3833
+   3      aimerais                       -0.001774       0.1587
+   4      passés                         -0.001148       0.0842
+   5      inconvénient                   -0.000994       0.1403
+   6      décrire                        -0.000986       0.2165
+   7      heureuse                       -0.000853       0.0751
+   8      serai                          -0.000769       0.1500
+   9      pleure                         -0.000761       0.0950
+   10     semblé                         -0.000707       0.0997
+   11     évanouies                      -0.000625       0.2460
+   12     commun                         -0.000458       0.0754
+   13     evidemment                     -0.000440       0.2076
+   14     pleurera                       -0.000405       0.2474
+   15     pourriez                       -0.000381       0.1028
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      comprenez                      +0.121947       0.1826
+   2      somme                          +0.062492       0.0752
+   3      imagination                    +0.045466       0.0845
+   4      étiez                          +0.040980       0.0828
+   5      lointain                       +0.040419       0.0844
+   6      existé                         +0.036763       0.1247
+   7      tromper                        +0.035796       0.0874
+   8      remercie                       +0.034999       0.0914
+   9      attrister                      +0.032505       0.2308
+   10     voyez                          +0.029443       0.0738
+   11     aimable                        +0.028322       0.0925
+   12     saurais                        +0.026877       0.1072
+   13     insinuer                       +0.023657       0.1790
+   14     pouviez                        +0.019748       0.1369
+   15     assure                         +0.019092       0.0873
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mademoiselle                   -0.123914       0.1983
+   2      malheureuse                    -0.081591       0.3833
+   3      aimerais                       -0.077152       0.1587
+   4      passés                         -0.059582       0.0842
+   5      inconvénient                   -0.044138       0.1403
+   6      heureuse                       -0.040528       0.0751
+   7      pleure                         -0.039662       0.0950
+   8      serai                          -0.032407       0.1500
+   9      evidemment                     -0.031371       0.2076
+   10     mourrai                        -0.029398       0.1828
+   11     semblé                         -0.028752       0.0997
+   12     pleurera                       -0.027088       0.2474
+   13     décrire                        -0.018666       0.2165
+   14     commun                         -0.017596       0.0754
+   15     erreur                         -0.015796       0.0764
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+insinuer                  +0.000366     +0.000098     +0.000098     0.1790
+comprenez                 +0.002460     +0.000093     +0.000093     0.1826
+somme                     +0.001437     +0.000051     +0.000051     0.0752
+evidemment                +0.000000     +0.000038     +0.000038     0.2076
+mourrai                   +0.000000     +0.000035     +0.000035     0.1828
+attrister                 +0.000404     +0.000031     +0.000031     0.2308
+voyez                     +0.000587     +0.000029     +0.000029     0.0738
+existé                    +0.000880     +0.000024     +0.000024     0.1247
+insisté                   +0.000000     +0.000022     +0.000022     0.1072
+prévenir                  +0.000077     +0.000018     +0.000018     0.0798
+étiez                     +0.000691     +0.000016     +0.000016     0.0828
+spécialement              +0.000257     +0.000014     +0.000014     0.1209
+tromper                   +0.000695     +0.000014     +0.000014     0.0874
+assure                    +0.000406     +0.000013     +0.000013     0.0873
+irritation                +0.000000     +0.000011     +0.000011     0.1450
+pleurera                  +0.000000     +0.000009     +0.000009     0.2474
+pouviez                   +0.000324     +0.000008     +0.000008     0.1369
+pleure                    +0.000000     +0.000007     +0.000007     0.0950
+revenaient                +0.000056     +0.000002     +0.000002     0.1078
+logit final pour 'homme': -0.7111

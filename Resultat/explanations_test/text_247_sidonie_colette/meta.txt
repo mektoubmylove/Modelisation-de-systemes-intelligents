@@ -1,0 +1,5 @@
+filename: (COLETTE)(Sidonie)(La Fin de Chéri)(2)(1926)(1873)(1954)(fr)(z)(z)(V)(R)(T).txt
+index: 247
+first_name: sidonie
+last_name: colette
+true_label: femme

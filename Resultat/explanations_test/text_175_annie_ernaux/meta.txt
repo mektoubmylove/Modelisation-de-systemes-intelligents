@@ -1,0 +1,5 @@
+filename: (ERNAUX)(Annie)(l_Occupation)(2)(2002)(1940)(v)(fr)(z)(z)(V)(R)(T) (1).txt
+index: 175
+first_name: annie
+last_name: ernaux
+true_label: femme

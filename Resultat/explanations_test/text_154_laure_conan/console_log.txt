@@ -1,0 +1,386 @@
+texte analysé: courageusement s efforça de manger . comme il y tâchait . on frappa légèrement à la porte , et une religieuse entra . son visage flétri accusait les privations et les fatigues de ces jours douloureux ...
+prédiction: FEMME (confiance: 90.9%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.2877
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sortiez                        +0.000073       0.1635
+   2      frappa                         +0.000054       0.0664
+   3      calmé                          +0.000049       0.0946
+   4      dominant                       +0.000045       0.0958
+   5      lilas                          +0.000041       0.1017
+   6      tâchait                        +0.000040       0.1276
+   7      jean                           +0.000040       0.0523
+   8      écria                          +0.000037       0.0709
+   9      enseveli                       +0.000034       0.1179
+   10     blessés                        +0.000034       0.0776
+   11     roula                          +0.000029       0.0779
+   12     bataille                       +0.000026       0.0571
+   13     courageusement                 +0.000026       0.1080
+   14     instants                       +0.000025       0.0490
+   15     serviette                      +0.000024       0.0629
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      catherine                      -0.000176       0.4085
+   2      défaille                       -0.000086       0.1574
+   3      sombres                        -0.000081       0.0527
+   4      lait                           -0.000070       0.0532
+   5      ramassant                      -0.000070       0.1132
+   6      contente                       -0.000069       0.0526
+   7      privations                     -0.000067       0.1167
+   8      pleuré                         -0.000066       0.0677
+   9      affreuse                       -0.000062       0.0751
+   10     flétri                         -0.000062       0.1481
+   11     pain                           -0.000059       0.2403
+   12     altérée                        -0.000051       0.1143
+   13     québec                         -0.000046       0.1514
+   14     supporte                       -0.000043       0.0748
+   15     officier                       -0.000041       0.0710
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sortiez                        +0.000073       0.1635
+   2      frappa                         +0.000054       0.0664
+   3      calmé                          +0.000049       0.0946
+   4      dominant                       +0.000045       0.0958
+   5      lilas                          +0.000041       0.1017
+   6      tâchait                        +0.000040       0.1276
+   7      jean                           +0.000040       0.0523
+   8      écria                          +0.000037       0.0709
+   9      enseveli                       +0.000034       0.1179
+   10     blessés                        +0.000034       0.0776
+   11     roula                          +0.000029       0.0779
+   12     bataille                       +0.000026       0.0571
+   13     courageusement                 +0.000026       0.1080
+   14     instants                       +0.000025       0.0490
+   15     serviette                      +0.000024       0.0629
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      catherine                      -0.000176       0.4085
+   2      défaille                       -0.000086       0.1574
+   3      sombres                        -0.000081       0.0527
+   4      lait                           -0.000070       0.0532
+   5      ramassant                      -0.000070       0.1132
+   6      contente                       -0.000069       0.0526
+   7      privations                     -0.000067       0.1167
+   8      pleuré                         -0.000066       0.0677
+   9      affreuse                       -0.000062       0.0751
+   10     flétri                         -0.000062       0.1481
+   11     pain                           -0.000059       0.2403
+   12     altérée                        -0.000051       0.1143
+   13     québec                         -0.000046       0.1514
+   14     supporte                       -0.000043       0.0748
+   15     officier                       -0.000041       0.0710
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      accrocha                       +0.001668       0.0929
+   2      patère                         +0.001620       0.1456
+   3      catherine                      +0.001576       0.4085
+   4      dépliant                       +0.001510       0.1232
+   5      pain                           +0.001385       0.2403
+   6      saisie                         +0.001325       0.0753
+   7      efforça                        +0.001262       0.0985
+   8      sombres                        +0.001208       0.0527
+   9      religieuse                     +0.001165       0.1631
+   10     contente                       +0.001156       0.0526
+   11     supporte                       +0.001109       0.0748
+   12     embaumait                      +0.000980       0.1378
+   13     altérée                        +0.000968       0.1143
+   14     plia                           +0.000930       0.0989
+   15     serra                          +0.000891       0.0648
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tâchait                        -0.002268       0.1276
+   2      flétri                         -0.001652       0.1481
+   3      prostration                    -0.001494       0.1389
+   4      accusait                       -0.001336       0.0888
+   5      dominant                       -0.001023       0.0958
+   6      calmé                          -0.001009       0.0946
+   7      militaire                      -0.000998       0.0632
+   8      subite                         -0.000930       0.0873
+   9      bataille                       -0.000863       0.0571
+   10     roula                          -0.000763       0.0779
+   11     courageusement                 -0.000752       0.1080
+   12     rappelez                       -0.000733       0.0833
+   13     officier                       -0.000724       0.0710
+   14     toile                          -0.000607       0.0523
+   15     seriez                         -0.000600       0.0738
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      accrocha                       +0.087181       0.0929
+   2      patère                         +0.081279       0.1456
+   3      saisie                         +0.058082       0.0753
+   4      dépliant                       +0.055760       0.1232
+   5      catherine                      +0.051355       0.4085
+   6      efforça                        +0.050764       0.0985
+   7      odorantes                      +0.048081       0.1292
+   8      sombres                        +0.047786       0.0527
+   9      pain                           +0.047386       0.2403
+   10     plia                           +0.046418       0.0989
+   11     contente                       +0.045612       0.0526
+   12     supporte                       +0.041540       0.0748
+   13     laver                          +0.039842       0.0582
+   14     maîtriser                      +0.037837       0.0760
+   15     bol                            +0.037446       0.0680
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tâchait                        -0.104481       0.1276
+   2      prostration                    -0.076040       0.1389
+   3      flétri                         -0.068868       0.1481
+   4      accusait                       -0.056547       0.0888
+   5      dominant                       -0.047749       0.0958
+   6      courageusement                 -0.046595       0.1080
+   7      subite                         -0.044294       0.0873
+   8      roula                          -0.037245       0.0779
+   9      militaire                      -0.035010       0.0632
+   10     calmé                          -0.032332       0.0946
+   11     officier                       -0.031701       0.0710
+   12     toile                          -0.029828       0.0523
+   13     bataille                       -0.028774       0.0571
+   14     rappelez                       -0.028523       0.0833
+   15     rayonnante                     -0.027857       0.1068
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+sortiez                   +0.000000     +0.000073     +0.000073     0.1635
+frappa                    +0.000000     +0.000054     +0.000054     0.0664
+calmé                     +0.000000     +0.000049     +0.000049     0.0946
+dominant                  +0.000000     +0.000045     +0.000045     0.0958
+lilas                     +0.000030     +0.000041     +0.000041     0.1017
+tâchait                   +0.000000     +0.000040     +0.000040     0.1276
+jean                      +0.000000     +0.000040     +0.000040     0.0523
+écria                     +0.000002     +0.000037     +0.000037     0.0709
+enseveli                  +0.000000     +0.000034     +0.000034     0.1179
+blessés                   +0.000000     +0.000034     +0.000034     0.0776
+roula                     +0.000000     +0.000029     +0.000029     0.0779
+bataille                  +0.000000     +0.000026     +0.000026     0.0571
+courageusement            +0.000000     +0.000026     +0.000026     0.1080
+instants                  +0.000000     +0.000025     +0.000025     0.0490
+serviette                 +0.000000     +0.000024     +0.000024     0.0629
+hôpital                   +0.000515     +0.000022     +0.000022     0.0592
+aurez                     +0.000000     +0.000020     +0.000020     0.0572
+accusait                  +0.000000     +0.000019     +0.000019     0.0888
+soigneusement             +0.000336     +0.000017     +0.000017     0.0571
+mangent                   +0.000000     +0.000016     +0.000016     0.0948
+logit final pour 'femme': 1.2877
+# analyse pour la classe: HOMME
+# logit: -1.0094
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      capote                         +0.000074       0.3422
+   2      sortiez                        +0.000065       0.1635
+   3      dominant                       +0.000040       0.0958
+   4      blessés                        +0.000036       0.0776
+   5      calmé                          +0.000027       0.0946
+   6      lilas                          +0.000025       0.1017
+   7      rappelez                       +0.000024       0.0833
+   8      patère                         +0.000021       0.1456
+   9      pleura                         +0.000019       0.0966
+   10     écria                          +0.000017       0.0709
+   11     prostration                    +0.000017       0.1389
+   12     soigneusement                  +0.000015       0.0571
+   13     roula                          +0.000014       0.0779
+   14     bonjour                        +0.000014       0.0527
+   15     accusait                       +0.000014       0.0888
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pain                           -0.000076       0.2403
+   2      ramassant                      -0.000061       0.1132
+   3      catherine                      -0.000056       0.4085
+   4      défaille                       -0.000036       0.1574
+   5      lait                           -0.000034       0.0532
+   6      pleuré                         -0.000033       0.0677
+   7      sombres                        -0.000031       0.0527
+   8      supporte                       -0.000029       0.0748
+   9      privations                     -0.000028       0.1167
+   10     misère                         -0.000027       0.0603
+   11     laver                          -0.000025       0.0582
+   12     efforça                        -0.000023       0.0985
+   13     mangé                          -0.000023       0.0567
+   14     contente                       -0.000023       0.0526
+   15     pauvres                        -0.000021       0.0504
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      capote                         +0.000074       0.3422
+   2      sortiez                        +0.000065       0.1635
+   3      dominant                       +0.000040       0.0958
+   4      blessés                        +0.000036       0.0776
+   5      calmé                          +0.000027       0.0946
+   6      lilas                          +0.000025       0.1017
+   7      rappelez                       +0.000024       0.0833
+   8      patère                         +0.000021       0.1456
+   9      pleura                         +0.000019       0.0966
+   10     écria                          +0.000017       0.0709
+   11     prostration                    +0.000017       0.1389
+   12     soigneusement                  +0.000015       0.0571
+   13     roula                          +0.000014       0.0779
+   14     bonjour                        +0.000014       0.0527
+   15     accusait                       +0.000014       0.0888
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pain                           -0.000076       0.2403
+   2      ramassant                      -0.000061       0.1132
+   3      catherine                      -0.000056       0.4085
+   4      défaille                       -0.000036       0.1574
+   5      lait                           -0.000034       0.0532
+   6      pleuré                         -0.000033       0.0677
+   7      sombres                        -0.000031       0.0527
+   8      supporte                       -0.000029       0.0748
+   9      privations                     -0.000028       0.1167
+   10     misère                         -0.000027       0.0603
+   11     laver                          -0.000025       0.0582
+   12     efforça                        -0.000023       0.0985
+   13     mangé                          -0.000023       0.0567
+   14     contente                       -0.000023       0.0526
+   15     pauvres                        -0.000021       0.0504
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tâchait                        +0.001609       0.1276
+   2      flétri                         +0.001235       0.1481
+   3      prostration                    +0.001134       0.1389
+   4      accusait                       +0.000902       0.0888
+   5      calmé                          +0.000878       0.0946
+   6      affaissa                       +0.000797       0.1232
+   7      dominant                       +0.000656       0.0958
+   8      subite                         +0.000623       0.0873
+   9      militaire                      +0.000557       0.0632
+   10     bataille                       +0.000512       0.0571
+   11     frappa                         +0.000470       0.0664
+   12     toile                          +0.000469       0.0523
+   13     enseveli                       +0.000463       0.1179
+   14     rappelez                       +0.000461       0.0833
+   15     courageusement                 +0.000461       0.1080
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      capote                         -0.001430       0.3422
+   2      catherine                      -0.001290       0.4085
+   3      dépliant                       -0.001234       0.1232
+   4      patère                         -0.001222       0.1456
+   5      accrocha                       -0.001143       0.0929
+   6      pain                           -0.001118       0.2403
+   7      altérée                        -0.000978       0.1143
+   8      sombres                        -0.000946       0.0527
+   9      contente                       -0.000890       0.0526
+   10     québec                         -0.000791       0.1514
+   11     saisie                         -0.000776       0.0753
+   12     fixa                           -0.000764       0.0795
+   13     religieuse                     -0.000663       0.1631
+   14     douloureux                     -0.000646       0.0582
+   15     efforça                        -0.000645       0.0985
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tâchait                        +0.075770       0.1276
+   2      prostration                    +0.050099       0.1389
+   3      flétri                         +0.045964       0.1481
+   4      accusait                       +0.042321       0.0888
+   5      affaissa                       +0.036456       0.1232
+   6      subite                         +0.028249       0.0873
+   7      calmé                          +0.027265       0.0946
+   8      frappa                         +0.025371       0.0664
+   9      dominant                       +0.025194       0.0958
+   10     courageusement                 +0.022528       0.1080
+   11     militaire                      +0.022080       0.0632
+   12     roula                          +0.020904       0.0779
+   13     toile                          +0.019978       0.0523
+   14     bataille                       +0.017805       0.0571
+   15     enseveli                       +0.017641       0.1179
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      patère                         -0.065958       0.1456
+   2      capote                         -0.064708       0.3422
+   3      accrocha                       -0.052526       0.0929
+   4      catherine                      -0.047024       0.4085
+   5      dépliant                       -0.044149       0.1232
+   6      altérée                        -0.040864       0.1143
+   7      contente                       -0.037906       0.0526
+   8      sombres                        -0.035210       0.0527
+   9      saisie                         -0.032631       0.0753
+   10     odorantes                      -0.029316       0.1292
+   11     fixa                           -0.026803       0.0795
+   12     plia                           -0.026614       0.0989
+   13     pain                           -0.026327       0.2403
+   14     québec                         -0.026303       0.1514
+   15     bonjour                        -0.026042       0.0527
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+capote                    +0.000000     +0.000074     +0.000074     0.3422
+sortiez                   +0.000310     +0.000065     +0.000065     0.1635
+dominant                  +0.000656     +0.000040     +0.000040     0.0958
+blessés                   +0.000047     +0.000036     +0.000036     0.0776
+calmé                     +0.000878     +0.000027     +0.000027     0.0946
+lilas                     +0.000000     +0.000025     +0.000025     0.1017
+rappelez                  +0.000461     +0.000024     +0.000024     0.0833
+patère                    +0.000000     +0.000021     +0.000021     0.1456
+pleura                    +0.000000     +0.000019     +0.000019     0.0966
+écria                     +0.000027     +0.000017     +0.000017     0.0709
+prostration               +0.001134     +0.000017     +0.000017     0.1389
+soigneusement             +0.000000     +0.000015     +0.000015     0.0571
+roula                     +0.000461     +0.000014     +0.000014     0.0779
+bonjour                   +0.000000     +0.000014     +0.000014     0.0527
+accusait                  +0.000902     +0.000014     +0.000014     0.0888
+jean                      +0.000327     +0.000013     +0.000013     0.0523
+religieuse                +0.000000     +0.000012     +0.000012     0.1631
+mangent                   +0.000337     +0.000012     +0.000012     0.0948
+aurez                     +0.000039     +0.000011     +0.000011     0.0572
+apporté                   +0.000000     +0.000011     +0.000011     0.0553
+logit final pour 'homme': -1.0094

@@ -1,0 +1,5 @@
+filename: (BERNANOS)(Georges)(sous le soleil de satan)(1)(1926)(1888)(1948)(fr)(z)(z)(V)(R)(T).txt
+index: 147
+first_name: georges
+last_name: bernanos
+true_label: homme

@@ -1,0 +1,386 @@
+texte analysé: et taillons nous ! poursuivis par le bruit des mâchoires d acier arrachant les chairs et brisant les os , ils tournèrent les talons et se mirent à courir droit devant eux . ils s arrêtèrent seulement ...
+prédiction: HOMME (confiance: 90.2%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -1.2175
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ficelés                        +0.000054       0.1043
+   2      rhumatismes                    +0.000053       0.0759
+   3      dégaina                        +0.000034       0.1017
+   4      brisant                        +0.000034       0.0810
+   5      galerie                        +0.000029       0.1937
+   6      puissances                     +0.000026       0.0717
+   7      hisser                         +0.000025       0.0592
+   8      poursuivis                     +0.000024       0.0775
+   9      fit                            +0.000024       0.0651
+   10     robot                          +0.000023       0.0799
+   11     monta                          +0.000022       0.0419
+   12     sirènes                        +0.000018       0.1297
+   13     remirent                       +0.000018       0.0779
+   14     constata                       +0.000018       0.0523
+   15     devons                         +0.000017       0.0412
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bill                           -0.000174       0.4588
+   2      morane                         -0.000135       0.5609
+   3      ecossais                       -0.000065       0.1402
+   4      coincés                        -0.000059       0.0755
+   5      caverne                        -0.000055       0.0661
+   6      chèrement                      -0.000046       0.0907
+   7      ming                           -0.000045       0.1346
+   8      allions                        -0.000044       0.0987
+   9      prisonniers                    -0.000038       0.0990
+   10     plaisanta                      -0.000038       0.0757
+   11     cavernes                       -0.000031       0.0815
+   12     exister                        -0.000029       0.0448
+   13     cependant                      -0.000027       0.0316
+   14     errer                          -0.000027       0.0549
+   15     vedette                        -0.000025       0.0654
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ficelés                        +0.000054       0.1043
+   2      rhumatismes                    +0.000053       0.0759
+   3      dégaina                        +0.000034       0.1017
+   4      brisant                        +0.000034       0.0810
+   5      galerie                        +0.000029       0.1937
+   6      puissances                     +0.000026       0.0717
+   7      hisser                         +0.000025       0.0592
+   8      poursuivis                     +0.000024       0.0775
+   9      fit                            +0.000024       0.0651
+   10     robot                          +0.000023       0.0799
+   11     monta                          +0.000022       0.0419
+   12     sirènes                        +0.000018       0.1297
+   13     remirent                       +0.000018       0.0779
+   14     constata                       +0.000018       0.0523
+   15     devons                         +0.000017       0.0412
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bill                           -0.000174       0.4588
+   2      morane                         -0.000135       0.5609
+   3      ecossais                       -0.000065       0.1402
+   4      coincés                        -0.000059       0.0755
+   5      caverne                        -0.000055       0.0661
+   6      chèrement                      -0.000046       0.0907
+   7      ming                           -0.000045       0.1346
+   8      allions                        -0.000044       0.0987
+   9      prisonniers                    -0.000038       0.0990
+   10     plaisanta                      -0.000038       0.0757
+   11     cavernes                       -0.000031       0.0815
+   12     exister                        -0.000029       0.0448
+   13     cependant                      -0.000027       0.0316
+   14     errer                          -0.000027       0.0549
+   15     vedette                        -0.000025       0.0654
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      plaisanta                      +0.001024       0.0757
+   2      galerie                        +0.000844       0.1937
+   3      savions                        +0.000760       0.0597
+   4      décidée                        +0.000759       0.0448
+   5      trouverait                     +0.000677       0.0443
+   6      allions                        +0.000520       0.0987
+   7      vies                           +0.000511       0.0444
+   8      livrée                         +0.000483       0.0537
+   9      robot                          +0.000437       0.0799
+   10     joindre                        +0.000383       0.0411
+   11     repérés                        +0.000381       0.0853
+   12     dégaina                        +0.000367       0.1017
+   13     coincés                        +0.000344       0.0755
+   14     acheva                         +0.000339       0.0490
+   15     remarquer                      +0.000336       0.0338
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      morane                         -0.006723       0.5609
+   2      bill                           -0.003902       0.4588
+   3      sphère                         -0.001868       0.1555
+   4      ficelés                        -0.001563       0.1043
+   5      ballantine                     -0.001180       0.1502
+   6      permît                         -0.001147       0.0897
+   7      ecossais                       -0.001140       0.1402
+   8      revolver                       -0.001083       0.0549
+   9      gorille                        -0.001050       0.0894
+   10     puissances                     -0.000990       0.0717
+   11     ming                           -0.000967       0.1346
+   12     cavernes                       -0.000963       0.0815
+   13     remirent                       -0.000942       0.0779
+   14     risquons                       -0.000871       0.0885
+   15     mètres                         -0.000773       0.0323
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      plaisanta                      +0.041171       0.0757
+   2      savions                        +0.027628       0.0597
+   3      allions                        +0.025869       0.0987
+   4      galerie                        +0.023772       0.1937
+   5      décidée                        +0.022021       0.0448
+   6      trouverait                     +0.021290       0.0443
+   7      coincés                        +0.019957       0.0755
+   8      vies                           +0.017284       0.0444
+   9      livrée                         +0.015610       0.0537
+   10     remarquer                      +0.015358       0.0338
+   11     joindre                        +0.015241       0.0411
+   12     empêcha                        +0.013160       0.0583
+   13     repérés                        +0.013103       0.0853
+   14     restera                        +0.012815       0.0412
+   15     acheva                         +0.011252       0.0490
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      morane                         -0.208573       0.5609
+   2      bill                           -0.086924       0.4588
+   3      sphère                         -0.081458       0.1555
+   4      ficelés                        -0.056158       0.1043
+   5      revolver                       -0.037131       0.0549
+   6      gorille                        -0.035200       0.0894
+   7      remirent                       -0.029985       0.0779
+   8      ming                           -0.029881       0.1346
+   9      rhumatismes                    -0.029497       0.0759
+   10     puissances                     -0.028921       0.0717
+   11     fit                            -0.027896       0.0651
+   12     ballantine                     -0.027135       0.1502
+   13     mètres                         -0.026467       0.0323
+   14     permît                         -0.024579       0.0897
+   15     sirènes                        -0.024493       0.1297
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+ficelés                   +0.000000     +0.000054     +0.000054     0.1043
+rhumatismes               +0.000000     +0.000053     +0.000053     0.0759
+dégaina                   +0.000367     +0.000034     +0.000034     0.1017
+brisant                   +0.000000     +0.000034     +0.000034     0.0810
+galerie                   +0.000844     +0.000029     +0.000029     0.1937
+puissances                +0.000000     +0.000026     +0.000026     0.0717
+hisser                    +0.000000     +0.000025     +0.000025     0.0592
+poursuivis                +0.000000     +0.000024     +0.000024     0.0775
+fit                       +0.000000     +0.000024     +0.000024     0.0651
+robot                     +0.000437     +0.000023     +0.000023     0.0799
+monta                     +0.000000     +0.000022     +0.000022     0.0419
+sirènes                   +0.000000     +0.000018     +0.000018     0.1297
+remirent                  +0.000000     +0.000018     +0.000018     0.0779
+constata                  +0.000000     +0.000018     +0.000018     0.0523
+devons                    +0.000149     +0.000017     +0.000017     0.0412
+sphère                    +0.000000     +0.000017     +0.000017     0.1555
+fourrer                   +0.000125     +0.000016     +0.000016     0.0675
+habitués                  +0.000048     +0.000016     +0.000016     0.0477
+jaune                     +0.000000     +0.000014     +0.000014     0.0319
+prononcer                 +0.000000     +0.000010     +0.000010     0.0352
+logit final pour 'femme': -1.2175
+# analyse pour la classe: HOMME  prédite
+# logit: 1.0021
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rhumatismes                    +0.000053       0.0759
+   2      robot                          +0.000040       0.0799
+   3      sirènes                        +0.000026       0.1297
+   4      ficelés                        +0.000025       0.1043
+   5      constata                       +0.000023       0.0523
+   6      brisant                        +0.000023       0.0810
+   7      poursuivis                     +0.000021       0.0775
+   8      gorille                        +0.000020       0.0894
+   9      monta                          +0.000019       0.0419
+   10     recouvrer                      +0.000018       0.0792
+   11     puissances                     +0.000017       0.0717
+   12     devons                         +0.000017       0.0412
+   13     mangeur                        +0.000013       0.1007
+   14     trouverait                     +0.000011       0.0443
+   15     dégaina                        +0.000010       0.1017
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bill                           -0.000136       0.4588
+   2      morane                         -0.000073       0.5609
+   3      coincés                        -0.000041       0.0755
+   4      ballantine                     -0.000039       0.1502
+   5      chèrement                      -0.000034       0.0907
+   6      ecossais                       -0.000033       0.1402
+   7      ming                           -0.000027       0.1346
+   8      permît                         -0.000023       0.0897
+   9      cavernes                       -0.000023       0.0815
+   10     caverne                        -0.000022       0.0661
+   11     vedette                        -0.000021       0.0654
+   12     errer                          -0.000019       0.0549
+   13     allions                        -0.000019       0.0987
+   14     circonférence                  -0.000019       0.1027
+   15     ladite                         -0.000019       0.0784
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rhumatismes                    +0.000053       0.0759
+   2      robot                          +0.000040       0.0799
+   3      sirènes                        +0.000026       0.1297
+   4      ficelés                        +0.000025       0.1043
+   5      constata                       +0.000023       0.0523
+   6      brisant                        +0.000023       0.0810
+   7      poursuivis                     +0.000021       0.0775
+   8      gorille                        +0.000020       0.0894
+   9      monta                          +0.000019       0.0419
+   10     recouvrer                      +0.000018       0.0792
+   11     puissances                     +0.000017       0.0717
+   12     devons                         +0.000017       0.0412
+   13     mangeur                        +0.000013       0.1007
+   14     trouverait                     +0.000011       0.0443
+   15     dégaina                        +0.000010       0.1017
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bill                           -0.000136       0.4588
+   2      morane                         -0.000073       0.5609
+   3      coincés                        -0.000041       0.0755
+   4      ballantine                     -0.000039       0.1502
+   5      chèrement                      -0.000034       0.0907
+   6      ecossais                       -0.000033       0.1402
+   7      ming                           -0.000027       0.1346
+   8      permît                         -0.000023       0.0897
+   9      cavernes                       -0.000023       0.0815
+   10     caverne                        -0.000022       0.0661
+   11     vedette                        -0.000021       0.0654
+   12     errer                          -0.000019       0.0549
+   13     allions                        -0.000019       0.0987
+   14     circonférence                  -0.000019       0.1027
+   15     ladite                         -0.000019       0.0784
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      morane                         +0.004730       0.5609
+   2      bill                           +0.003599       0.4588
+   3      sphère                         +0.001331       0.1555
+   4      ficelés                        +0.001310       0.1043
+   5      permît                         +0.001117       0.0897
+   6      gorille                        +0.001084       0.0894
+   7      revolver                       +0.000965       0.0549
+   8      remirent                       +0.000929       0.0779
+   9      puissances                     +0.000854       0.0717
+   10     risquons                       +0.000810       0.0885
+   11     cavernes                       +0.000780       0.0815
+   12     ballantine                     +0.000762       0.1502
+   13     ecossais                       +0.000758       0.1402
+   14     sirènes                        +0.000731       0.1297
+   15     prisonniers                    +0.000709       0.0990
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      galerie                        -0.001064       0.1937
+   2      plaisanta                      -0.000890       0.0757
+   3      décidée                        -0.000637       0.0448
+   4      savions                        -0.000598       0.0597
+   5      trouverait                     -0.000507       0.0443
+   6      vies                           -0.000456       0.0444
+   7      dégaina                        -0.000450       0.1017
+   8      robot                          -0.000378       0.0799
+   9      livrée                         -0.000371       0.0537
+   10     allions                        -0.000364       0.0987
+   11     restera                        -0.000335       0.0412
+   12     joindre                        -0.000325       0.0411
+   13     repérés                        -0.000316       0.0853
+   14     arrachant                      -0.000293       0.0583
+   15     recouvrer                      -0.000253       0.0792
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      morane                         +0.167025       0.5609
+   2      bill                           +0.070503       0.4588
+   3      sphère                         +0.056624       0.1555
+   4      ficelés                        +0.043623       0.1043
+   5      gorille                        +0.039754       0.0894
+   6      revolver                       +0.028907       0.0549
+   7      rhumatismes                    +0.026789       0.0759
+   8      puissances                     +0.024451       0.0717
+   9      ming                           +0.024240       0.1346
+   10     remirent                       +0.023387       0.0779
+   11     sirènes                        +0.022843       0.1297
+   12     permît                         +0.022271       0.0897
+   13     fit                            +0.020686       0.0651
+   14     risquons                       +0.018916       0.0885
+   15     prisonniers                    +0.018796       0.0990
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      plaisanta                      -0.029144       0.0757
+   2      galerie                        -0.028529       0.1937
+   3      savions                        -0.021320       0.0597
+   4      allions                        -0.020233       0.0987
+   5      décidée                        -0.019490       0.0448
+   6      vies                           -0.017010       0.0444
+   7      coincés                        -0.015574       0.0755
+   8      restera                        -0.013760       0.0412
+   9      circonférence                  -0.013268       0.1027
+   10     empêcha                        -0.013062       0.0583
+   11     joindre                        -0.012035       0.0411
+   12     chèrement                      -0.012022       0.0907
+   13     trouverait                     -0.011690       0.0443
+   14     remarquer                      -0.011312       0.0338
+   15     livrée                         -0.010690       0.0537
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+rhumatismes               +0.000384     +0.000053     +0.000053     0.0759
+robot                     +0.000000     +0.000040     +0.000040     0.0799
+sirènes                   +0.000731     +0.000026     +0.000026     0.1297
+ficelés                   +0.001310     +0.000025     +0.000025     0.1043
+constata                  +0.000143     +0.000023     +0.000023     0.0523
+brisant                   +0.000231     +0.000023     +0.000023     0.0810
+poursuivis                +0.000318     +0.000021     +0.000021     0.0775
+gorille                   +0.001084     +0.000020     +0.000020     0.0894
+monta                     +0.000233     +0.000019     +0.000019     0.0419
+recouvrer                 +0.000000     +0.000018     +0.000018     0.0792
+puissances                +0.000854     +0.000017     +0.000017     0.0717
+devons                    +0.000000     +0.000017     +0.000017     0.0412
+mangeur                   +0.000456     +0.000013     +0.000013     0.1007
+trouverait                +0.000000     +0.000011     +0.000011     0.0443
+dégaina                   +0.000000     +0.000010     +0.000010     0.1017
+eurent                    +0.000375     +0.000010     +0.000010     0.0422
+hisser                    +0.000467     +0.000008     +0.000008     0.0592
+revolver                  +0.000965     +0.000008     +0.000008     0.0549
+repérés                   +0.000000     +0.000007     +0.000007     0.0853
+sphère                    +0.001331     +0.000007     +0.000007     0.1555
+logit final pour 'homme': 1.0021

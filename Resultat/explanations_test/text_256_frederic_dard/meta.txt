@@ -1,0 +1,5 @@
+filename: (DARD)(Frédéric)(pleins feux sur le tutu)(1)(1984)(1921)(2000)(fr)(z)(z)(V)(R)(T).txt
+index: 256
+first_name: frederic
+last_name: dard
+true_label: homme

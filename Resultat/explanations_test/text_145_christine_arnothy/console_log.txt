@@ -1,0 +1,386 @@
+texte analysé: il assez chaud ? c est un manteau de demi saison , monsieur . je dois vous prévenir qu il est relativement cher , pas pour ce que c est . la qualité est parfaite . elle tourna deux fois devant yves . ...
+prédiction: FEMME (confiance: 93.0%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.4848
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      astronomique                   +0.000114       0.1427
+   2      colorée                        +0.000059       0.0939
+   3      cherbourg                      +0.000058       0.3088
+   4      sirotait                       +0.000053       0.1314
+   5      chèques                        +0.000051       0.1084
+   6      somme                          +0.000048       0.0424
+   7      lundi                          +0.000033       0.0625
+   8      vérifié                        +0.000028       0.0765
+   9      ressemblerait                  +0.000027       0.2215
+   10     indiqua                        +0.000026       0.0761
+   11     tueront                        +0.000024       0.1345
+   12     irai                           +0.000022       0.0502
+   13     cygne                          +0.000016       0.1020
+   14     recommencer                    +0.000014       0.0525
+   15     descendue                      +0.000013       0.0714
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      yves                           -0.000911       0.4783
+   2      écharpe                        -0.000149       0.2109
+   3      partais                        -0.000104       0.0943
+   4      exclama                        -0.000094       0.0657
+   5      recommencera                   -0.000086       0.1326
+   6      coca                           -0.000086       0.0984
+   7      lisieux                        -0.000084       0.1593
+   8      vendeuse                       -0.000071       0.2805
+   9      manteau                        -0.000065       0.0916
+   10     familiale                      -0.000064       0.0661
+   11     récupérer                      -0.000060       0.0581
+   12     habitez                        -0.000058       0.1045
+   13     collé                          -0.000053       0.0597
+   14     gaie                           -0.000043       0.0745
+   15     exceptionnel                   -0.000042       0.0695
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      astronomique                   +0.000114       0.1427
+   2      colorée                        +0.000059       0.0939
+   3      cherbourg                      +0.000058       0.3088
+   4      sirotait                       +0.000053       0.1314
+   5      chèques                        +0.000051       0.1084
+   6      somme                          +0.000048       0.0424
+   7      lundi                          +0.000033       0.0625
+   8      vérifié                        +0.000028       0.0765
+   9      ressemblerait                  +0.000027       0.2215
+   10     indiqua                        +0.000026       0.0761
+   11     tueront                        +0.000024       0.1345
+   12     irai                           +0.000022       0.0502
+   13     cygne                          +0.000016       0.1020
+   14     recommencer                    +0.000014       0.0525
+   15     descendue                      +0.000013       0.0714
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      yves                           -0.000911       0.4783
+   2      écharpe                        -0.000149       0.2109
+   3      partais                        -0.000104       0.0943
+   4      exclama                        -0.000094       0.0657
+   5      recommencera                   -0.000086       0.1326
+   6      coca                           -0.000086       0.0984
+   7      lisieux                        -0.000084       0.1593
+   8      vendeuse                       -0.000071       0.2805
+   9      manteau                        -0.000065       0.0916
+   10     familiale                      -0.000064       0.0661
+   11     récupérer                      -0.000060       0.0581
+   12     habitez                        -0.000058       0.1045
+   13     collé                          -0.000053       0.0597
+   14     gaie                           -0.000043       0.0745
+   15     exceptionnel                   -0.000042       0.0695
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vendeuse                       +0.003031       0.2805
+   2      yves                           +0.002667       0.4783
+   3      exclama                        +0.002571       0.0657
+   4      écharpe                        +0.002493       0.2109
+   5      gaie                           +0.001708       0.0745
+   6      coca                           +0.001660       0.0984
+   7      astronomique                   +0.001622       0.1427
+   8      lisieux                        +0.001535       0.1593
+   9      familiale                      +0.001488       0.0661
+   10     manteau                        +0.001258       0.0916
+   11     cherbourg                      +0.001159       0.3088
+   12     recherche                      +0.001073       0.0417
+   13     sirotait                       +0.000856       0.1314
+   14     protège                        +0.000792       0.0636
+   15     fragment                       +0.000770       0.0946
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      recommencera                   -0.001325       0.1326
+   2      considérables                  -0.001161       0.0925
+   3      quart                          -0.001157       0.0453
+   4      tueront                        -0.001136       0.1345
+   5      cygne                          -0.000999       0.1020
+   6      somme                          -0.000986       0.0424
+   7      parut                          -0.000970       0.0503
+   8      chèques                        -0.000675       0.1084
+   9      irai                           -0.000665       0.0502
+   10     qualité                        -0.000618       0.0459
+   11     chèque                         -0.000542       0.0899
+   12     reviendrai                     -0.000540       0.0658
+   13     lundi                          -0.000494       0.0625
+   14     arc                            -0.000482       0.1062
+   15     impertinente                   -0.000398       0.1395
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vendeuse                       +0.097099       0.2805
+   2      astronomique                   +0.071758       0.1427
+   3      écharpe                        +0.071414       0.2109
+   4      exclama                        +0.070498       0.0657
+   5      gaie                           +0.055891       0.0745
+   6      lisieux                        +0.050612       0.1593
+   7      cherbourg                      +0.050540       0.3088
+   8      coca                           +0.047405       0.0984
+   9      ressemblerait                  +0.038258       0.2215
+   10     familiale                      +0.038144       0.0661
+   11     colorée                        +0.037922       0.0939
+   12     recherche                      +0.036581       0.0417
+   13     manteau                        +0.033765       0.0916
+   14     sirotait                       +0.028778       0.1314
+   15     protège                        +0.024119       0.0636
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      recommencera                   -0.050287       0.1326
+   2      considérables                  -0.050205       0.0925
+   3      quart                          -0.043218       0.0453
+   4      tueront                        -0.041208       0.1345
+   5      parut                          -0.031712       0.0503
+   6      cygne                          -0.029929       0.1020
+   7      yves                           -0.028207       0.4783
+   8      somme                          -0.027348       0.0424
+   9      reviendrai                     -0.026855       0.0658
+   10     qualité                        -0.025042       0.0459
+   11     chèque                         -0.023181       0.0899
+   12     lundi                          -0.021773       0.0625
+   13     irai                           -0.021714       0.0502
+   14     chèques                        -0.020616       0.1084
+   15     arc                            -0.017090       0.1062
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+astronomique              +0.001622     +0.000114     +0.000114     0.1427
+colorée                   +0.000740     +0.000059     +0.000059     0.0939
+cherbourg                 +0.001159     +0.000058     +0.000058     0.3088
+sirotait                  +0.000856     +0.000053     +0.000053     0.1314
+chèques                   +0.000000     +0.000051     +0.000051     0.1084
+somme                     +0.000000     +0.000048     +0.000048     0.0424
+lundi                     +0.000000     +0.000033     +0.000033     0.0625
+vérifié                   +0.000183     +0.000028     +0.000028     0.0765
+ressemblerait             +0.000159     +0.000027     +0.000027     0.2215
+indiqua                   +0.000375     +0.000026     +0.000026     0.0761
+tueront                   +0.000000     +0.000024     +0.000024     0.1345
+irai                      +0.000000     +0.000022     +0.000022     0.0502
+cygne                     +0.000000     +0.000016     +0.000016     0.1020
+recommencer               +0.000192     +0.000014     +0.000014     0.0525
+descendue                 +0.000198     +0.000013     +0.000013     0.0714
+carnet                    +0.000419     +0.000012     +0.000012     0.0625
+parut                     +0.000000     +0.000011     +0.000011     0.0503
+sortit                    +0.000000     +0.000011     +0.000011     0.0493
+faisons                   +0.000000     +0.000011     +0.000011     0.0565
+devons                    +0.000091     +0.000010     +0.000010     0.0545
+logit final pour 'femme': 1.4848
+# analyse pour la classe: HOMME
+# logit: -1.0959
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ressemblerait                  +0.000078       0.2215
+   2      colorée                        +0.000038       0.0939
+   3      astronomique                   +0.000036       0.1427
+   4      indiqua                        +0.000028       0.0761
+   5      deauville                      +0.000024       0.1296
+   6      somme                          +0.000023       0.0424
+   7      chèques                        +0.000023       0.1084
+   8      vérifié                        +0.000023       0.0765
+   9      descendue                      +0.000021       0.0714
+   10     tueront                        +0.000021       0.1345
+   11     faisons                        +0.000019       0.0565
+   12     cola                           +0.000014       0.1228
+   13     lundi                          +0.000013       0.0625
+   14     carnet                         +0.000011       0.0625
+   15     quitta                         +0.000011       0.0550
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      yves                           -0.000537       0.4783
+   2      écharpe                        -0.000081       0.2109
+   3      recommencera                   -0.000047       0.1326
+   4      coca                           -0.000044       0.0984
+   5      exclama                        -0.000042       0.0657
+   6      familiale                      -0.000038       0.0661
+   7      collé                          -0.000038       0.0597
+   8      partais                        -0.000037       0.0943
+   9      duvet                          -0.000034       0.0856
+   10     lisieux                        -0.000031       0.1593
+   11     récupérer                      -0.000030       0.0581
+   12     ornée                          -0.000028       0.0790
+   13     manteau                        -0.000026       0.0916
+   14     recherche                      -0.000023       0.0417
+   15     inférieure                     -0.000022       0.0669
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ressemblerait                  +0.000078       0.2215
+   2      colorée                        +0.000038       0.0939
+   3      astronomique                   +0.000036       0.1427
+   4      indiqua                        +0.000028       0.0761
+   5      deauville                      +0.000024       0.1296
+   6      somme                          +0.000023       0.0424
+   7      chèques                        +0.000023       0.1084
+   8      vérifié                        +0.000023       0.0765
+   9      descendue                      +0.000021       0.0714
+   10     tueront                        +0.000021       0.1345
+   11     faisons                        +0.000019       0.0565
+   12     cola                           +0.000014       0.1228
+   13     lundi                          +0.000013       0.0625
+   14     carnet                         +0.000011       0.0625
+   15     quitta                         +0.000011       0.0550
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      yves                           -0.000537       0.4783
+   2      écharpe                        -0.000081       0.2109
+   3      recommencera                   -0.000047       0.1326
+   4      coca                           -0.000044       0.0984
+   5      exclama                        -0.000042       0.0657
+   6      familiale                      -0.000038       0.0661
+   7      collé                          -0.000038       0.0597
+   8      partais                        -0.000037       0.0943
+   9      duvet                          -0.000034       0.0856
+   10     lisieux                        -0.000031       0.1593
+   11     récupérer                      -0.000030       0.0581
+   12     ornée                          -0.000028       0.0790
+   13     manteau                        -0.000026       0.0916
+   14     recherche                      -0.000023       0.0417
+   15     inférieure                     -0.000022       0.0669
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      recommencera                   +0.001060       0.1326
+   2      considérables                  +0.000928       0.0925
+   3      tueront                        +0.000880       0.1345
+   4      quart                          +0.000772       0.0453
+   5      cygne                          +0.000759       0.1020
+   6      somme                          +0.000712       0.0424
+   7      parut                          +0.000679       0.0503
+   8      impertinente                   +0.000638       0.1395
+   9      irai                           +0.000484       0.0502
+   10     chèques                        +0.000422       0.1084
+   11     chèque                         +0.000421       0.0899
+   12     qualité                        +0.000361       0.0459
+   13     sortit                         +0.000307       0.0493
+   14     deauville                      +0.000281       0.1296
+   15     possibles                      +0.000273       0.0605
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vendeuse                       -0.002045       0.2805
+   2      exclama                        -0.001745       0.0657
+   3      écharpe                        -0.001621       0.2109
+   4      yves                           -0.001577       0.4783
+   5      lisieux                        -0.001300       0.1593
+   6      gaie                           -0.001247       0.0745
+   7      coca                           -0.001169       0.0984
+   8      familiale                      -0.000941       0.0661
+   9      manteau                        -0.000919       0.0916
+   10     astronomique                   -0.000863       0.1427
+   11     fragment                       -0.000716       0.0946
+   12     sirotait                       -0.000715       0.1314
+   13     recherche                      -0.000677       0.0417
+   14     fixa                           -0.000663       0.0690
+   15     plaît                          -0.000578       0.0422
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      yves                           +0.054134       0.4783
+   2      recommencera                   +0.043140       0.1326
+   3      considérables                  +0.039993       0.0925
+   4      quart                          +0.029514       0.0453
+   5      tueront                        +0.026763       0.1345
+   6      impertinente                   +0.025851       0.1395
+   7      cygne                          +0.024452       0.1020
+   8      parut                          +0.021582       0.0503
+   9      somme                          +0.020703       0.0424
+   10     irai                           +0.017722       0.0502
+   11     chèque                         +0.016378       0.0899
+   12     qualité                        +0.015912       0.0459
+   13     collé                          +0.015801       0.0597
+   14     sortit                         +0.013884       0.0493
+   15     possibles                      +0.013200       0.0605
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vendeuse                       -0.061909       0.2805
+   2      lisieux                        -0.050515       0.1593
+   3      exclama                        -0.047068       0.0657
+   4      gaie                           -0.042157       0.0745
+   5      ressemblerait                  -0.040271       0.2215
+   6      astronomique                   -0.039394       0.1427
+   7      écharpe                        -0.039197       0.2109
+   8      coca                           -0.033090       0.0984
+   9      manteau                        -0.029347       0.0916
+   10     familiale                      -0.025254       0.0661
+   11     sirotait                       -0.022573       0.1314
+   12     fixa                           -0.022436       0.0690
+   13     recherche                      -0.021891       0.0417
+   14     colorée                        -0.021736       0.0939
+   15     cherbourg                      -0.019271       0.3088
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+ressemblerait             +0.000000     +0.000078     +0.000078     0.2215
+colorée                   +0.000000     +0.000038     +0.000038     0.0939
+astronomique              +0.000000     +0.000036     +0.000036     0.1427
+indiqua                   +0.000000     +0.000028     +0.000028     0.0761
+deauville                 +0.000281     +0.000024     +0.000024     0.1296
+somme                     +0.000712     +0.000023     +0.000023     0.0424
+chèques                   +0.000422     +0.000023     +0.000023     0.1084
+vérifié                   +0.000000     +0.000023     +0.000023     0.0765
+descendue                 +0.000000     +0.000021     +0.000021     0.0714
+tueront                   +0.000880     +0.000021     +0.000021     0.1345
+faisons                   +0.000081     +0.000019     +0.000019     0.0565
+cola                      +0.000000     +0.000014     +0.000014     0.1228
+lundi                     +0.000217     +0.000013     +0.000013     0.0625
+carnet                    +0.000000     +0.000011     +0.000011     0.0625
+quitta                    +0.000106     +0.000011     +0.000011     0.0550
+parut                     +0.000679     +0.000010     +0.000010     0.0503
+paris                     +0.000000     +0.000009     +0.000009     0.0846
+prévenir                  +0.000012     +0.000009     +0.000009     0.0450
+devons                    +0.000000     +0.000009     +0.000009     0.0545
+irai                      +0.000484     +0.000008     +0.000008     0.0502
+logit final pour 'homme': -1.0959

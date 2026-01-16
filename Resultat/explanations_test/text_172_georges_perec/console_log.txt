@@ -1,0 +1,386 @@
+texte analysé: dans un cinéma à attractions : entre les documentaires et le grand film , un rideau à paillettes venait recouvrir l écran et un haut parleur annonçait joy and hieronymus , les célèbres devins du nouve...
+prédiction: HOMME (confiance: 64.8%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.3511
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      attractions                    +0.000196       0.2136
+   2      volcan                         +0.000090       0.0860
+   3      fakir                          +0.000083       0.1315
+   4      prestations                    +0.000075       0.1140
+   5      mers                           +0.000066       0.0671
+   6      traduisait                     +0.000055       0.0830
+   7      flottante                      +0.000052       0.0884
+   8      transes                        +0.000051       0.0978
+   9      gélatine                       +0.000048       0.1158
+   10     loge                           +0.000046       0.0556
+   11     rendit                         +0.000041       0.0897
+   12     cinéma                         +0.000040       0.0488
+   13     rencontra                      +0.000039       0.0618
+   14     exhalaisons                    +0.000038       0.1197
+   15     combinaisons                   +0.000037       0.0775
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      blunt                          -0.000391       0.3576
+   2      magiciens                      -0.000140       0.1164
+   3      incantations                   -0.000125       0.1030
+   4      paillettes                     -0.000109       0.0812
+   5      orne                           -0.000108       0.1123
+   6      emblèmes                       -0.000085       0.1218
+   7      public                         -0.000078       0.0386
+   8      émerger                        -0.000075       0.0786
+   9      divination                     -0.000072       0.1097
+   10     préparations                   -0.000071       0.1204
+   11     recueil                        -0.000070       0.0853
+   12     spectacles                     -0.000067       0.0759
+   13     communiquant                   -0.000066       0.1102
+   14     exploitait                     -0.000064       0.1226
+   15     diverses                       -0.000064       0.0971
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      attractions                    +0.000196       0.2136
+   2      volcan                         +0.000090       0.0860
+   3      fakir                          +0.000083       0.1315
+   4      prestations                    +0.000075       0.1140
+   5      mers                           +0.000066       0.0671
+   6      traduisait                     +0.000055       0.0830
+   7      flottante                      +0.000052       0.0884
+   8      transes                        +0.000051       0.0978
+   9      gélatine                       +0.000048       0.1158
+   10     loge                           +0.000046       0.0556
+   11     rendit                         +0.000041       0.0897
+   12     cinéma                         +0.000040       0.0488
+   13     rencontra                      +0.000039       0.0618
+   14     exhalaisons                    +0.000038       0.1197
+   15     combinaisons                   +0.000037       0.0775
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      blunt                          -0.000391       0.3576
+   2      magiciens                      -0.000140       0.1164
+   3      incantations                   -0.000125       0.1030
+   4      paillettes                     -0.000109       0.0812
+   5      orne                           -0.000108       0.1123
+   6      emblèmes                       -0.000085       0.1218
+   7      public                         -0.000078       0.0386
+   8      émerger                        -0.000075       0.0786
+   9      divination                     -0.000072       0.1097
+   10     préparations                   -0.000071       0.1204
+   11     recueil                        -0.000070       0.0853
+   12     spectacles                     -0.000067       0.0759
+   13     communiquant                   -0.000066       0.1102
+   14     exploitait                     -0.000064       0.1226
+   15     diverses                       -0.000064       0.0971
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      blunt                          +0.004629       0.3576
+   2      préparations                   +0.001899       0.1204
+   3      divination                     +0.001617       0.1097
+   4      incantations                   +0.001407       0.1030
+   5      recueil                        +0.001342       0.0853
+   6      thomas                         +0.001221       0.0748
+   7      documentaires                  +0.001083       0.1183
+   8      emblée                         +0.001065       0.0625
+   9      volcan                         +0.000978       0.0860
+   10     classiques                     +0.000835       0.0717
+   11     habituellement                 +0.000796       0.0632
+   12     fulgurante                     +0.000736       0.0788
+   13     lumineuse                      +0.000720       0.0527
+   14     emblèmes                       +0.000686       0.1218
+   15     contrat                        +0.000586       0.0552
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bombay                         -0.001858       0.1385
+   2      combinaisons                   -0.001655       0.0775
+   3      fakir                          -0.001594       0.1315
+   4      rendit                         -0.001484       0.0897
+   5      indistincts                    -0.001400       0.1117
+   6      foraine                        -0.001362       0.1050
+   7      communiquant                   -0.001329       0.1102
+   8      exploitait                     -0.001222       0.1226
+   9      parleur                        -0.001184       0.0782
+   10     diverses                       -0.001095       0.0971
+   11     grognements                    -0.001084       0.0801
+   12     prestations                    -0.001065       0.1140
+   13     turquie                        -0.001039       0.0999
+   14     centrale                       -0.001018       0.0540
+   15     orne                           -0.001006       0.1123
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      blunt                          +0.321909       0.3576
+   2      divination                     +0.093561       0.1097
+   3      préparations                   +0.089982       0.1204
+   4      incantations                   +0.072482       0.1030
+   5      recueil                        +0.066448       0.0853
+   6      documentaires                  +0.062063       0.1183
+   7      thomas                         +0.058516       0.0748
+   8      emblée                         +0.051122       0.0625
+   9      classiques                     +0.040813       0.0717
+   10     lumineuse                      +0.039850       0.0527
+   11     spectacles                     +0.038082       0.0759
+   12     paillettes                     +0.037884       0.0812
+   13     habituellement                 +0.033400       0.0632
+   14     emblèmes                       +0.031117       0.1218
+   15     volcan                         +0.030268       0.0860
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bombay                         -0.088497       0.1385
+   2      rendit                         -0.080242       0.0897
+   3      fakir                          -0.080093       0.1315
+   4      combinaisons                   -0.076391       0.0775
+   5      indistincts                    -0.066921       0.1117
+   6      foraine                        -0.059680       0.1050
+   7      prestations                    -0.057434       0.1140
+   8      parleur                        -0.057260       0.0782
+   9      grognements                    -0.055769       0.0801
+   10     transes                        -0.052151       0.0978
+   11     sterling                       -0.049069       0.1146
+   12     communiquant                   -0.047981       0.1102
+   13     craquements                    -0.045554       0.0795
+   14     orne                           -0.045014       0.1123
+   15     diverses                       -0.044538       0.0971
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+attractions               +0.000000     +0.000196     +0.000196     0.2136
+volcan                    +0.000978     +0.000090     +0.000090     0.0860
+fakir                     +0.000000     +0.000083     +0.000083     0.1315
+prestations               +0.000000     +0.000075     +0.000075     0.1140
+mers                      +0.000000     +0.000066     +0.000066     0.0671
+traduisait                +0.000000     +0.000055     +0.000055     0.0830
+flottante                 +0.000000     +0.000052     +0.000052     0.0884
+transes                   +0.000000     +0.000051     +0.000051     0.0978
+gélatine                  +0.000000     +0.000048     +0.000048     0.1158
+loge                      +0.000000     +0.000046     +0.000046     0.0556
+rendit                    +0.000000     +0.000041     +0.000041     0.0897
+cinéma                    +0.000000     +0.000040     +0.000040     0.0488
+rencontra                 +0.000000     +0.000039     +0.000039     0.0618
+exhalaisons               +0.000313     +0.000038     +0.000038     0.1197
+combinaisons              +0.000000     +0.000037     +0.000037     0.0775
+emblée                    +0.001065     +0.000036     +0.000036     0.0625
+raffole                   +0.000553     +0.000034     +0.000034     0.0989
+craquements               +0.000000     +0.000034     +0.000034     0.0795
+numéro                    +0.000000     +0.000032     +0.000032     0.0799
+film                      +0.000296     +0.000030     +0.000030     0.0493
+logit final pour 'femme': -0.3511
+# analyse pour la classe: HOMME  prédite
+# logit: 0.2574
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      attractions                    +0.000098       0.2136
+   2      flottante                      +0.000054       0.0884
+   3      sterling                       +0.000051       0.1146
+   4      exhalaisons                    +0.000047       0.1197
+   5      raffole                        +0.000041       0.0989
+   6      mers                           +0.000040       0.0671
+   7      volcan                         +0.000031       0.0860
+   8      jeux                           +0.000029       0.0803
+   9      rendit                         +0.000029       0.0897
+   10     parements                      +0.000028       0.1276
+   11     prestations                    +0.000027       0.1140
+   12     salpêtre                       +0.000026       0.1087
+   13     bombay                         +0.000025       0.1385
+   14     cinéma                         +0.000023       0.0488
+   15     photographique                 +0.000022       0.0962
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      blunt                          -0.000173       0.3576
+   2      orne                           -0.000100       0.1123
+   3      fondé                          -0.000060       0.0639
+   4      bouddha                        -0.000058       0.0978
+   5      incantations                   -0.000055       0.1030
+   6      diverses                       -0.000051       0.0971
+   7      communiquant                   -0.000048       0.1102
+   8      classiques                     -0.000047       0.0717
+   9      recueil                        -0.000047       0.0853
+   10     préparations                   -0.000046       0.1204
+   11     paillettes                     -0.000046       0.0812
+   12     émanations                     -0.000043       0.1010
+   13     célèbres                       -0.000036       0.0659
+   14     public                         -0.000034       0.0386
+   15     attraction                     -0.000034       0.0738
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      attractions                    +0.000098       0.2136
+   2      flottante                      +0.000054       0.0884
+   3      sterling                       +0.000051       0.1146
+   4      exhalaisons                    +0.000047       0.1197
+   5      raffole                        +0.000041       0.0989
+   6      mers                           +0.000040       0.0671
+   7      volcan                         +0.000031       0.0860
+   8      jeux                           +0.000029       0.0803
+   9      rendit                         +0.000029       0.0897
+   10     parements                      +0.000028       0.1276
+   11     prestations                    +0.000027       0.1140
+   12     salpêtre                       +0.000026       0.1087
+   13     bombay                         +0.000025       0.1385
+   14     cinéma                         +0.000023       0.0488
+   15     photographique                 +0.000022       0.0962
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      blunt                          -0.000173       0.3576
+   2      orne                           -0.000100       0.1123
+   3      fondé                          -0.000060       0.0639
+   4      bouddha                        -0.000058       0.0978
+   5      incantations                   -0.000055       0.1030
+   6      diverses                       -0.000051       0.0971
+   7      communiquant                   -0.000048       0.1102
+   8      classiques                     -0.000047       0.0717
+   9      recueil                        -0.000047       0.0853
+   10     préparations                   -0.000046       0.1204
+   11     paillettes                     -0.000046       0.0812
+   12     émanations                     -0.000043       0.1010
+   13     célèbres                       -0.000036       0.0659
+   14     public                         -0.000034       0.0386
+   15     attraction                     -0.000034       0.0738
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bombay                         +0.001444       0.1385
+   2      indistincts                    +0.001335       0.1117
+   3      combinaisons                   +0.001265       0.0775
+   4      rendit                         +0.001137       0.0897
+   5      communiquant                   +0.001092       0.1102
+   6      fakir                          +0.001062       0.1315
+   7      foraine                        +0.001061       0.1050
+   8      exploitait                     +0.000987       0.1226
+   9      parleur                        +0.000914       0.0782
+   10     diverses                       +0.000908       0.0971
+   11     centrale                       +0.000882       0.0540
+   12     turquie                        +0.000879       0.0999
+   13     tourneur                       +0.000872       0.1372
+   14     grognements                    +0.000857       0.0801
+   15     orne                           +0.000833       0.1123
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      blunt                          -0.004016       0.3576
+   2      divination                     -0.001314       0.1097
+   3      préparations                   -0.001245       0.1204
+   4      recueil                        -0.001103       0.0853
+   5      thomas                         -0.000935       0.0748
+   6      incantations                   -0.000934       0.1030
+   7      volcan                         -0.000895       0.0860
+   8      emblée                         -0.000809       0.0625
+   9      documentaires                  -0.000704       0.1183
+   10     classiques                     -0.000694       0.0717
+   11     habituellement                 -0.000664       0.0632
+   12     lumineuse                      -0.000633       0.0527
+   13     tunique                        -0.000530       0.0684
+   14     emblèmes                       -0.000495       0.1218
+   15     contrat                        -0.000445       0.0552
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bombay                         +0.074021       0.1385
+   2      rendit                         +0.062933       0.0897
+   3      indistincts                    +0.058755       0.1117
+   4      attractions                    +0.056984       0.2136
+   5      combinaisons                   +0.056637       0.0775
+   6      sterling                       +0.054715       0.1146
+   7      foraine                        +0.049959       0.1050
+   8      fakir                          +0.049013       0.1315
+   9      communiquant                   +0.046340       0.1102
+   10     grognements                    +0.043762       0.0801
+   11     diverses                       +0.042247       0.0971
+   12     parleur                        +0.039610       0.0782
+   13     orne                           +0.038185       0.1123
+   14     transes                        +0.036329       0.0978
+   15     exploitait                     +0.036006       0.1226
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      blunt                          -0.249489       0.3576
+   2      divination                     -0.070860       0.1097
+   3      préparations                   -0.066728       0.1204
+   4      thomas                         -0.051023       0.0748
+   5      recueil                        -0.049755       0.0853
+   6      incantations                   -0.048731       0.1030
+   7      emblée                         -0.040766       0.0625
+   8      documentaires                  -0.036052       0.1183
+   9      classiques                     -0.035262       0.0717
+   10     lumineuse                      -0.035200       0.0527
+   11     volcan                         -0.033386       0.0860
+   12     habituellement                 -0.027888       0.0632
+   13     paillettes                     -0.025859       0.0812
+   14     spectacles                     -0.024432       0.0759
+   15     emblèmes                       -0.021338       0.1218
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+attractions               +0.000822     +0.000098     +0.000098     0.2136
+flottante                 +0.000306     +0.000054     +0.000054     0.0884
+sterling                  +0.000653     +0.000051     +0.000051     0.1146
+exhalaisons               +0.000079     +0.000047     +0.000047     0.1197
+raffole                   +0.000000     +0.000041     +0.000041     0.0989
+mers                      +0.000058     +0.000040     +0.000040     0.0671
+volcan                    +0.000000     +0.000031     +0.000031     0.0860
+jeux                      +0.000232     +0.000029     +0.000029     0.0803
+rendit                    +0.001137     +0.000029     +0.000029     0.0897
+parements                 +0.000233     +0.000028     +0.000028     0.1276
+prestations               +0.000643     +0.000027     +0.000027     0.1140
+salpêtre                  +0.000000     +0.000026     +0.000026     0.1087
+bombay                    +0.001444     +0.000025     +0.000025     0.1385
+cinéma                    +0.000168     +0.000023     +0.000023     0.0488
+photographique            +0.000022     +0.000022     +0.000022     0.0962
+naquit                    +0.000138     +0.000022     +0.000022     0.0865
+combinaisons              +0.001265     +0.000021     +0.000021     0.0775
+précisément               +0.000297     +0.000021     +0.000021     0.0429
+fakir                     +0.001062     +0.000021     +0.000021     0.1315
+loge                      +0.000285     +0.000020     +0.000020     0.0556
+logit final pour 'homme': 0.2574

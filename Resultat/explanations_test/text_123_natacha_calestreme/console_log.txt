@@ -1,0 +1,386 @@
+texte analysé: : maintenant plus de bobards , plus d énigme à la con , vous me dites tout avant que j explose . que voulez vous savoir ? dit le vieil homme , visiblement décontenancé . vous connaissiez gabriel comte...
+prédiction: FEMME (confiance: 56.4%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.0629
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marcus                         +0.000280       0.4756
+   2      quittai                        +0.000081       0.1079
+   3      nathan                         +0.000074       0.1629
+   4      comte                          +0.000072       0.2398
+   5      alibi                          +0.000057       0.0951
+   6      énigme                         +0.000055       0.0750
+   7      culpabilité                    +0.000049       0.0649
+   8      songeai                        +0.000046       0.1193
+   9      décontenancé                   +0.000041       0.0967
+   10     exact                          +0.000036       0.0510
+   11     durant                         +0.000036       0.0446
+   12     soupçonner                     +0.000034       0.0715
+   13     estimait                       +0.000027       0.0740
+   14     demandai                       +0.000026       0.0870
+   15     emprisonnement                 +0.000026       0.1221
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      guérisseur                     -0.000168       0.1327
+   2      ruches                         -0.000139       0.1315
+   3      prophétie                      -0.000101       0.1193
+   4      incarcéré                      -0.000101       0.1425
+   5      gardai                         -0.000081       0.1246
+   6      visiblement                    -0.000071       0.0537
+   7      confirma                       -0.000070       0.0814
+   8      étrangement                    -0.000070       0.0561
+   9      désigne                        -0.000070       0.0749
+   10     meurtres                       -0.000069       0.0883
+   11     occupe                         -0.000062       0.0427
+   12     hurlai                         -0.000061       0.1408
+   13     observai                       -0.000055       0.1236
+   14     menti                          -0.000052       0.0610
+   15     restai                         -0.000047       0.1997
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marcus                         +0.000280       0.4756
+   2      quittai                        +0.000081       0.1079
+   3      nathan                         +0.000074       0.1629
+   4      comte                          +0.000072       0.2398
+   5      alibi                          +0.000057       0.0951
+   6      énigme                         +0.000055       0.0750
+   7      culpabilité                    +0.000049       0.0649
+   8      songeai                        +0.000046       0.1193
+   9      décontenancé                   +0.000041       0.0967
+   10     exact                          +0.000036       0.0510
+   11     durant                         +0.000036       0.0446
+   12     soupçonner                     +0.000034       0.0715
+   13     estimait                       +0.000027       0.0740
+   14     demandai                       +0.000026       0.0870
+   15     emprisonnement                 +0.000026       0.1221
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      guérisseur                     -0.000168       0.1327
+   2      ruches                         -0.000139       0.1315
+   3      prophétie                      -0.000101       0.1193
+   4      incarcéré                      -0.000101       0.1425
+   5      gardai                         -0.000081       0.1246
+   6      visiblement                    -0.000071       0.0537
+   7      confirma                       -0.000070       0.0814
+   8      étrangement                    -0.000070       0.0561
+   9      désigne                        -0.000070       0.0749
+   10     meurtres                       -0.000069       0.0883
+   11     occupe                         -0.000062       0.0427
+   12     hurlai                         -0.000061       0.1408
+   13     observai                       -0.000055       0.1236
+   14     menti                          -0.000052       0.0610
+   15     restai                         -0.000047       0.1997
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clean                          +0.002645       0.1535
+   2      meurtres                       +0.002567       0.0883
+   3      bobards                        +0.001914       0.1501
+   4      impliqué                       +0.001706       0.1117
+   5      restai                         +0.001534       0.1997
+   6      guérisseur                     +0.001354       0.1327
+   7      visiblement                    +0.001241       0.0537
+   8      posant                         +0.001222       0.0555
+   9      exaspéré                       +0.001159       0.0770
+   10     confirma                       +0.001130       0.0814
+   11     prophétie                      +0.000982       0.1193
+   12     tremblements                   +0.000968       0.0863
+   13     passés                         +0.000895       0.0469
+   14     ajouta                         +0.000728       0.0497
+   15     reviens                        +0.000675       0.0484
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gabriel                        -0.005045       0.2115
+   2      filature                       -0.002077       0.1099
+   3      comte                          -0.001943       0.2398
+   4      nathan                         -0.001879       0.1629
+   5      marcus                         -0.001868       0.4756
+   6      médium                         -0.001274       0.1327
+   7      approchai                      -0.001113       0.1128
+   8      connaissiez                    -0.001018       0.0819
+   9      aile                           -0.000946       0.0586
+   10     soupçonner                     -0.000904       0.0715
+   11     estimait                       -0.000875       0.0740
+   12     emprisonnement                 -0.000859       0.1221
+   13     convaincu                      -0.000857       0.0539
+   14     assurait                       -0.000785       0.0701
+   15     décontenancé                   -0.000680       0.0967
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clean                          +0.129810       0.1535
+   2      meurtres                       +0.116397       0.0883
+   3      restai                         +0.094465       0.1997
+   4      guérisseur                     +0.081057       0.1327
+   5      impliqué                       +0.073870       0.1117
+   6      bobards                        +0.072058       0.1501
+   7      posant                         +0.062687       0.0555
+   8      confirma                       +0.061388       0.0814
+   9      tremblements                   +0.056942       0.0863
+   10     visiblement                    +0.056704       0.0537
+   11     prophétie                      +0.051816       0.1193
+   12     exaspéré                       +0.050074       0.0770
+   13     passés                         +0.042379       0.0469
+   14     menti                          +0.032833       0.0610
+   15     ajouta                         +0.032369       0.0497
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gabriel                        -0.286883       0.2115
+   2      filature                       -0.127136       0.1099
+   3      marcus                         -0.100783       0.4756
+   4      nathan                         -0.094183       0.1629
+   5      médium                         -0.085576       0.1327
+   6      comte                          -0.081984       0.2398
+   7      approchai                      -0.062628       0.1128
+   8      connaissiez                    -0.058503       0.0819
+   9      aile                           -0.056000       0.0586
+   10     convaincu                      -0.047643       0.0539
+   11     soupçonner                     -0.046630       0.0715
+   12     songeai                        -0.045721       0.1193
+   13     estimait                       -0.045244       0.0740
+   14     énigme                         -0.035866       0.0750
+   15     con                            -0.034827       0.0714
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+marcus                    +0.000000     +0.000280     +0.000280     0.4756
+quittai                   +0.000000     +0.000081     +0.000081     0.1079
+nathan                    +0.000000     +0.000074     +0.000074     0.1629
+comte                     +0.000000     +0.000072     +0.000072     0.2398
+alibi                     +0.000000     +0.000057     +0.000057     0.0951
+énigme                    +0.000000     +0.000055     +0.000055     0.0750
+culpabilité               +0.000306     +0.000049     +0.000049     0.0649
+songeai                   +0.000000     +0.000046     +0.000046     0.1193
+décontenancé              +0.000000     +0.000041     +0.000041     0.0967
+exact                     +0.000000     +0.000036     +0.000036     0.0510
+durant                    +0.000000     +0.000036     +0.000036     0.0446
+soupçonner                +0.000000     +0.000034     +0.000034     0.0715
+estimait                  +0.000000     +0.000027     +0.000027     0.0740
+demandai                  +0.000000     +0.000026     +0.000026     0.0870
+emprisonnement            +0.000000     +0.000026     +0.000026     0.1221
+convaincu                 +0.000000     +0.000025     +0.000025     0.0539
+habitaient                +0.000368     +0.000025     +0.000025     0.0758
+gabriel                   +0.000000     +0.000024     +0.000024     0.2115
+fous                      +0.000000     +0.000021     +0.000021     0.0435
+bobards                   +0.001914     +0.000019     +0.000019     0.1501
+logit final pour 'femme': 0.0629
+# analyse pour la classe: HOMME
+# logit: -0.1935
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marcus                         +0.000190       0.4756
+   2      bobards                        +0.000028       0.1501
+   3      habitaient                     +0.000023       0.0758
+   4      alibi                          +0.000022       0.0951
+   5      soupçonner                     +0.000021       0.0715
+   6      quittai                        +0.000021       0.1079
+   7      exact                          +0.000021       0.0510
+   8      serrai                         +0.000021       0.1251
+   9      fous                           +0.000020       0.0435
+   10     restai                         +0.000019       0.1997
+   11     reprit                         +0.000015       0.0487
+   12     décontenancé                   +0.000015       0.0967
+   13     poursuivez                     +0.000015       0.1251
+   14     asseyant                       +0.000014       0.0744
+   15     durant                         +0.000014       0.0446
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      guérisseur                     -0.000079       0.1327
+   2      ruches                         -0.000077       0.1315
+   3      incarcéré                      -0.000052       0.1425
+   4      gardai                         -0.000051       0.1246
+   5      étrangement                    -0.000045       0.0561
+   6      prophétie                      -0.000044       0.1193
+   7      moine                          -0.000042       0.0865
+   8      explose                        -0.000038       0.0898
+   9      désigne                        -0.000037       0.0749
+   10     meurtres                       -0.000034       0.0883
+   11     menti                          -0.000033       0.0610
+   12     filature                       -0.000033       0.1099
+   13     médium                         -0.000032       0.1327
+   14     confirma                       -0.000031       0.0814
+   15     reviens                        -0.000030       0.0484
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marcus                         +0.000190       0.4756
+   2      bobards                        +0.000028       0.1501
+   3      habitaient                     +0.000023       0.0758
+   4      alibi                          +0.000022       0.0951
+   5      soupçonner                     +0.000021       0.0715
+   6      quittai                        +0.000021       0.1079
+   7      exact                          +0.000021       0.0510
+   8      serrai                         +0.000021       0.1251
+   9      fous                           +0.000020       0.0435
+   10     restai                         +0.000019       0.1997
+   11     reprit                         +0.000015       0.0487
+   12     décontenancé                   +0.000015       0.0967
+   13     poursuivez                     +0.000015       0.1251
+   14     asseyant                       +0.000014       0.0744
+   15     durant                         +0.000014       0.0446
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      guérisseur                     -0.000079       0.1327
+   2      ruches                         -0.000077       0.1315
+   3      incarcéré                      -0.000052       0.1425
+   4      gardai                         -0.000051       0.1246
+   5      étrangement                    -0.000045       0.0561
+   6      prophétie                      -0.000044       0.1193
+   7      moine                          -0.000042       0.0865
+   8      explose                        -0.000038       0.0898
+   9      désigne                        -0.000037       0.0749
+   10     meurtres                       -0.000034       0.0883
+   11     menti                          -0.000033       0.0610
+   12     filature                       -0.000033       0.1099
+   13     médium                         -0.000032       0.1327
+   14     confirma                       -0.000031       0.0814
+   15     reviens                        -0.000030       0.0484
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gabriel                        +0.004079       0.2115
+   2      marcus                         +0.001808       0.4756
+   3      filature                       +0.001644       0.1099
+   4      comte                          +0.001468       0.2398
+   5      nathan                         +0.001021       0.1629
+   6      médium                         +0.000959       0.1327
+   7      approchai                      +0.000925       0.1128
+   8      décontenancé                   +0.000869       0.0967
+   9      connaissiez                    +0.000784       0.0819
+   10     estimait                       +0.000775       0.0740
+   11     soupçonner                     +0.000750       0.0715
+   12     convaincu                      +0.000644       0.0539
+   13     aile                           +0.000640       0.0586
+   14     assurait                       +0.000616       0.0701
+   15     emprisonnement                 +0.000580       0.1221
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clean                          -0.002222       0.1535
+   2      meurtres                       -0.001979       0.0883
+   3      bobards                        -0.001660       0.1501
+   4      impliqué                       -0.001251       0.1117
+   5      guérisseur                     -0.001079       0.1327
+   6      posant                         -0.000987       0.0555
+   7      visiblement                    -0.000970       0.0537
+   8      exaspéré                       -0.000940       0.0770
+   9      restai                         -0.000834       0.1997
+   10     prophétie                      -0.000831       0.1193
+   11     confirma                       -0.000767       0.0814
+   12     passés                         -0.000726       0.0469
+   13     tremblements                   -0.000691       0.0863
+   14     puissiez                       -0.000571       0.0914
+   15     reviens                        -0.000508       0.0484
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gabriel                        +0.211036       0.2115
+   2      filature                       +0.089758       0.1099
+   3      marcus                         +0.081966       0.4756
+   4      comte                          +0.077398       0.2398
+   5      médium                         +0.054038       0.1327
+   6      nathan                         +0.051345       0.1629
+   7      approchai                      +0.045375       0.1128
+   8      connaissiez                    +0.042239       0.0819
+   9      aile                           +0.036391       0.0586
+   10     convaincu                      +0.032640       0.0539
+   11     estimait                       +0.030329       0.0740
+   12     décontenancé                   +0.029493       0.0967
+   13     soupçonner                     +0.029257       0.0715
+   14     demandai                       +0.026580       0.0870
+   15     exact                          +0.025995       0.0510
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clean                          -0.091772       0.1535
+   2      meurtres                       -0.077492       0.0883
+   3      restai                         -0.060198       0.1997
+   4      bobards                        -0.057507       0.1501
+   5      impliqué                       -0.055003       0.1117
+   6      guérisseur                     -0.054671       0.1327
+   7      posant                         -0.046632       0.0555
+   8      confirma                       -0.040874       0.0814
+   9      visiblement                    -0.039364       0.0537
+   10     tremblements                   -0.036561       0.0863
+   11     exaspéré                       -0.034642       0.0770
+   12     passés                         -0.031706       0.0469
+   13     prophétie                      -0.031159       0.1193
+   14     semblé                         -0.025369       0.0555
+   15     ajouta                         -0.022117       0.0497
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+marcus                    +0.001808     +0.000190     +0.000190     0.4756
+bobards                   +0.000000     +0.000028     +0.000028     0.1501
+habitaient                +0.000000     +0.000023     +0.000023     0.0758
+alibi                     +0.000057     +0.000022     +0.000022     0.0951
+soupçonner                +0.000750     +0.000021     +0.000021     0.0715
+quittai                   +0.000385     +0.000021     +0.000021     0.1079
+exact                     +0.000480     +0.000021     +0.000021     0.0510
+serrai                    +0.000000     +0.000021     +0.000021     0.1251
+fous                      +0.000220     +0.000020     +0.000020     0.0435
+restai                    +0.000000     +0.000019     +0.000019     0.1997
+reprit                    +0.000270     +0.000015     +0.000015     0.0487
+décontenancé              +0.000869     +0.000015     +0.000015     0.0967
+poursuivez                +0.000391     +0.000015     +0.000015     0.1251
+asseyant                  +0.000000     +0.000014     +0.000014     0.0744
+durant                    +0.000214     +0.000014     +0.000014     0.0446
+culpabilité               +0.000000     +0.000011     +0.000011     0.0649
+vivons                    +0.000338     +0.000011     +0.000011     0.0757
+contenu                   +0.000000     +0.000011     +0.000011     0.0489
+vieil                     +0.000178     +0.000010     +0.000010     0.0452
+comte                     +0.001468     +0.000010     +0.000010     0.2398
+logit final pour 'homme': -0.1935

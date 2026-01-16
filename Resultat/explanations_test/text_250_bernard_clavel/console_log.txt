@@ -1,0 +1,387 @@
+texte analysé: montagnes dont les cimes touchent le ciel . la forêt commence au sud , dans la vallée où coule la rivière des outawais . elle enjambe le mont tremblant et file vers le nord jusqu aux rives de la mer o...
+prédiction: FEMME (confiance: 60.0%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.2337
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      montera                        +0.000143       0.1597
+   2      pipe                           +0.000076       0.0805
+   3      accrochent                     +0.000059       0.1325
+   4      finissent                      +0.000055       0.0839
+   5      étendue                        +0.000050       0.0616
+   6      attachés                       +0.000047       0.0890
+   7      savent                         +0.000045       0.0551
+   8      mousses                        +0.000039       0.1395
+   9      fourneau                       +0.000033       0.1147
+   10     dieux                          +0.000031       0.0790
+   11     phoques                        +0.000027       0.1739
+   12     troubler                       +0.000023       0.0793
+   13     automne                        +0.000019       0.0658
+   14     file                           +0.000017       0.0607
+   15     arrivés                        +0.000012       0.0586
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      spongieux                      -0.000181       0.1780
+   2      mont                           -0.000156       0.0920
+   3      ancêtres                       -0.000100       0.0826
+   4      enfoncent                      -0.000096       0.1353
+   5      vivront                        -0.000090       0.1597
+   6      recouvre                       -0.000083       0.1033
+   7      rouille                        -0.000080       0.1090
+   8      nord                           -0.000079       0.0566
+   9      espèrent                       -0.000077       0.1344
+   10     allumée                        -0.000076       0.0848
+   11     tempêtes                       -0.000073       0.1039
+   12     montent                        -0.000072       0.0905
+   13     nul                            -0.000070       0.0571
+   14     hurlements                     -0.000068       0.0830
+   15     sanglots                       -0.000062       0.0632
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      montera                        +0.000143       0.1597
+   2      pipe                           +0.000076       0.0805
+   3      accrochent                     +0.000059       0.1325
+   4      finissent                      +0.000055       0.0839
+   5      étendue                        +0.000050       0.0616
+   6      attachés                       +0.000047       0.0890
+   7      savent                         +0.000045       0.0551
+   8      mousses                        +0.000039       0.1395
+   9      fourneau                       +0.000033       0.1147
+   10     dieux                          +0.000031       0.0790
+   11     phoques                        +0.000027       0.1739
+   12     troubler                       +0.000023       0.0793
+   13     automne                        +0.000019       0.0658
+   14     file                           +0.000017       0.0607
+   15     arrivés                        +0.000012       0.0586
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      spongieux                      -0.000181       0.1780
+   2      mont                           -0.000156       0.0920
+   3      ancêtres                       -0.000100       0.0826
+   4      enfoncent                      -0.000096       0.1353
+   5      vivront                        -0.000090       0.1597
+   6      recouvre                       -0.000083       0.1033
+   7      rouille                        -0.000080       0.1090
+   8      nord                           -0.000079       0.0566
+   9      espèrent                       -0.000077       0.1344
+   10     allumée                        -0.000076       0.0848
+   11     tempêtes                       -0.000073       0.1039
+   12     montent                        -0.000072       0.0905
+   13     nul                            -0.000070       0.0571
+   14     hurlements                     -0.000068       0.0830
+   15     sanglots                       -0.000062       0.0632
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lichens                        +0.002587       0.1720
+   2      hiver                          +0.001777       0.1581
+   3      annoncent                      +0.001651       0.1179
+   4      mousses                        +0.001640       0.1395
+   5      accrochent                     +0.001560       0.1325
+   6      thé                            +0.001447       0.0636
+   7      enseigner                      +0.001408       0.0991
+   8      lame                           +0.001278       0.0728
+   9      allumée                        +0.001211       0.0848
+   10     forêt                          +0.001195       0.1197
+   11     recouvre                       +0.001054       0.1033
+   12     ancêtres                       +0.001037       0.0826
+   13     automne                        +0.000972       0.0658
+   14     neige                          +0.000867       0.0606
+   15     tendent                        +0.000693       0.1211
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pipe                           -0.003049       0.0805
+   2      fusils                         -0.002280       0.1053
+   3      troubler                       -0.002092       0.0793
+   4      phoques                        -0.002091       0.1739
+   5      pousser                        -0.001760       0.1050
+   6      luisent                        -0.001637       0.1612
+   7      cimes                          -0.001518       0.1158
+   8      préparent                      -0.001451       0.1174
+   9      vivront                        -0.001448       0.1597
+   10     fourneau                       -0.001418       0.1147
+   11     gaz                            -0.001171       0.0757
+   12     dizaine                        -0.001049       0.0602
+   13     sud                            -0.001040       0.0601
+   14     pièges                         -0.001030       0.1947
+   15     dieux                          -0.001009       0.0790
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lichens                        +0.112940       0.1720
+   2      accrochent                     +0.069324       0.1325
+   3      annoncent                      +0.067738       0.1179
+   4      hiver                          +0.060454       0.1581
+   5      allumée                        +0.058792       0.0848
+   6      thé                            +0.054799       0.0636
+   7      mousses                        +0.054105       0.1395
+   8      lame                           +0.053887       0.0728
+   9      forêt                          +0.051142       0.1197
+   10     reviennent                     +0.049816       0.0772
+   11     recouvre                       +0.044552       0.1033
+   12     enseigner                      +0.044179       0.0991
+   13     mont                           +0.042216       0.0920
+   14     neige                          +0.040165       0.0606
+   15     ancêtres                       +0.036171       0.0826
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pipe                           -0.123583       0.0805
+   2      troubler                       -0.084758       0.0793
+   3      phoques                        -0.082441       0.1739
+   4      fusils                         -0.080407       0.1053
+   5      pousser                        -0.065598       0.1050
+   6      fourneau                       -0.055074       0.1147
+   7      cimes                          -0.053905       0.1158
+   8      montera                        -0.053035       0.1597
+   9      préparent                      -0.052603       0.1174
+   10     dieux                          -0.051463       0.0790
+   11     luisent                        -0.046799       0.1612
+   12     dizaine                        -0.045453       0.0602
+   13     vivront                        -0.044583       0.1597
+   14     enjambe                        -0.043817       0.1423
+   15     gaz                            -0.039901       0.0757
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+montera                   +0.000000     +0.000143     +0.000143     0.1597
+pipe                      +0.000000     +0.000076     +0.000076     0.0805
+accrochent                +0.001560     +0.000059     +0.000059     0.1325
+finissent                 +0.000042     +0.000055     +0.000055     0.0839
+étendue                   +0.000000     +0.000050     +0.000050     0.0616
+attachés                  +0.000326     +0.000047     +0.000047     0.0890
+savent                    +0.000085     +0.000045     +0.000045     0.0551
+mousses                   +0.001640     +0.000039     +0.000039     0.1395
+fourneau                  +0.000000     +0.000033     +0.000033     0.1147
+dieux                     +0.000000     +0.000031     +0.000031     0.0790
+phoques                   +0.000000     +0.000027     +0.000027     0.1739
+troubler                  +0.000000     +0.000023     +0.000023     0.0793
+automne                   +0.000972     +0.000019     +0.000019     0.0658
+file                      +0.000082     +0.000017     +0.000017     0.0607
+arrivés                   +0.000505     +0.000012     +0.000012     0.0586
+arbre                     +0.000000     +0.000009     +0.000009     0.0555
+gémissements              +0.000317     +0.000009     +0.000009     0.0911
+bulles                    +0.000267     +0.000007     +0.000007     0.0999
+entretenir                +0.000000     +0.000006     +0.000006     0.0678
+prennent                  +0.000340     +0.000006     +0.000006     0.0611
+logit final pour 'femme': 0.2337
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.1709
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      montera                        +0.000099       0.1597
+   2      finissent                      +0.000060       0.0839
+   3      phoques                        +0.000050       0.1739
+   4      accrochent                     +0.000033       0.1325
+   5      pipe                           +0.000028       0.0805
+   6      automne                        +0.000028       0.0658
+   7      étendue                        +0.000027       0.0616
+   8      attachés                       +0.000025       0.0890
+   9      forêt                          +0.000021       0.1197
+   10     arrivés                        +0.000020       0.0586
+   11     prennent                       +0.000020       0.0611
+   12     thé                            +0.000012       0.0636
+   13     pièges                         +0.000010       0.1947
+   14     veulent                        +0.000010       0.0548
+   15     savent                         +0.000010       0.0551
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vivront                        -0.000107       0.1597
+   2      mont                           -0.000101       0.0920
+   3      enfoncent                      -0.000089       0.1353
+   4      ancêtres                       -0.000084       0.0826
+   5      pliant                         -0.000075       0.1108
+   6      spongieux                      -0.000073       0.1780
+   7      recouvre                       -0.000066       0.1033
+   8      nul                            -0.000053       0.0571
+   9      montent                        -0.000045       0.0905
+   10     nord                           -0.000044       0.0566
+   11     tempêtes                       -0.000042       0.1039
+   12     rives                          -0.000041       0.0928
+   13     tendent                        -0.000040       0.1211
+   14     secrets                        -0.000040       0.0601
+   15     coule                          -0.000038       0.0730
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      montera                        +0.000099       0.1597
+   2      finissent                      +0.000060       0.0839
+   3      phoques                        +0.000050       0.1739
+   4      accrochent                     +0.000033       0.1325
+   5      pipe                           +0.000028       0.0805
+   6      automne                        +0.000028       0.0658
+   7      étendue                        +0.000027       0.0616
+   8      attachés                       +0.000025       0.0890
+   9      forêt                          +0.000021       0.1197
+   10     arrivés                        +0.000020       0.0586
+   11     prennent                       +0.000020       0.0611
+   12     thé                            +0.000012       0.0636
+   13     pièges                         +0.000010       0.1947
+   14     veulent                        +0.000010       0.0548
+   15     savent                         +0.000010       0.0551
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vivront                        -0.000107       0.1597
+   2      mont                           -0.000101       0.0920
+   3      enfoncent                      -0.000089       0.1353
+   4      ancêtres                       -0.000084       0.0826
+   5      pliant                         -0.000075       0.1108
+   6      spongieux                      -0.000073       0.1780
+   7      recouvre                       -0.000066       0.1033
+   8      nul                            -0.000053       0.0571
+   9      montent                        -0.000045       0.0905
+   10     nord                           -0.000044       0.0566
+   11     tempêtes                       -0.000042       0.1039
+   12     rives                          -0.000041       0.0928
+   13     tendent                        -0.000040       0.1211
+   14     secrets                        -0.000040       0.0601
+   15     coule                          -0.000038       0.0730
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pipe                           +0.002770       0.0805
+   2      fusils                         +0.002091       0.1053
+   3      phoques                        +0.001803       0.1739
+   4      troubler                       +0.001764       0.0793
+   5      pousser                        +0.001623       0.1050
+   6      vivront                        +0.001376       0.1597
+   7      cimes                          +0.001194       0.1158
+   8      luisent                        +0.001109       0.1612
+   9      fourneau                       +0.001065       0.1147
+   10     préparent                      +0.001058       0.1174
+   11     gaz                            +0.001030       0.0757
+   12     pièges                         +0.001015       0.1947
+   13     dizaine                        +0.000922       0.0602
+   14     semblables                     +0.000884       0.0672
+   15     mortes                         +0.000855       0.0712
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lichens                        -0.002273       0.1720
+   2      hiver                          -0.001358       0.1581
+   3      accrochent                     -0.001236       0.1325
+   4      enseigner                      -0.001230       0.0991
+   5      annoncent                      -0.001213       0.1179
+   6      thé                            -0.001117       0.0636
+   7      lame                           -0.001117       0.0728
+   8      mousses                        -0.001062       0.1395
+   9      automne                        -0.000937       0.0658
+   10     ancêtres                       -0.000855       0.0826
+   11     allumée                        -0.000833       0.0848
+   12     neige                          -0.000812       0.0606
+   13     recouvre                       -0.000793       0.1033
+   14     courent                        -0.000740       0.0829
+   15     tempêtes                       -0.000647       0.1039
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pipe                           +0.102328       0.0805
+   2      phoques                        +0.070580       0.1739
+   3      fusils                         +0.068215       0.1053
+   4      troubler                       +0.066270       0.0793
+   5      pousser                        +0.060233       0.1050
+   6      cimes                          +0.044705       0.1158
+   7      vivront                        +0.044070       0.1597
+   8      préparent                      +0.041619       0.1174
+   9      fourneau                       +0.041051       0.1147
+   10     dieux                          +0.039445       0.0790
+   11     rives                          +0.038790       0.0928
+   12     dizaine                        +0.036741       0.0602
+   13     montera                        +0.036109       0.1597
+   14     mortes                         +0.034090       0.0712
+   15     luisent                        +0.032104       0.1612
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lichens                        -0.077990       0.1720
+   2      lame                           -0.047852       0.0728
+   3      hiver                          -0.047445       0.1581
+   4      accrochent                     -0.047145       0.1325
+   5      annoncent                      -0.047100       0.1179
+   6      spongieux                      -0.041361       0.1780
+   7      thé                            -0.041226       0.0636
+   8      allumée                        -0.040345       0.0848
+   9      reviennent                     -0.034931       0.0772
+   10     mont                           -0.034166       0.0920
+   11     recouvre                       -0.034147       0.1033
+   12     neige                          -0.032095       0.0606
+   13     courent                        -0.031079       0.0829
+   14     enseigner                      -0.030224       0.0991
+   15     coule                          -0.029726       0.0730
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+montera                   +0.000762     +0.000099     +0.000099     0.1597
+finissent                 +0.000122     +0.000060     +0.000060     0.0839
+phoques                   +0.001803     +0.000050     +0.000050     0.1739
+accrochent                +0.000000     +0.000033     +0.000033     0.1325
+pipe                      +0.002770     +0.000028     +0.000028     0.0805
+automne                   +0.000000     +0.000028     +0.000028     0.0658
+étendue                   +0.000582     +0.000027     +0.000027     0.0616
+attachés                  +0.000000     +0.000025     +0.000025     0.0890
+forêt                     +0.000000     +0.000021     +0.000021     0.1197
+arrivés                   +0.000000     +0.000020     +0.000020     0.0586
+prennent                  +0.000000     +0.000020     +0.000020     0.0611
+thé                       +0.000000     +0.000012     +0.000012     0.0636
+pièges                    +0.001015     +0.000010     +0.000010     0.1947
+veulent                   +0.000000     +0.000010     +0.000010     0.0548
+savent                    +0.000000     +0.000010     +0.000010     0.0551
+luisent                   +0.001109     +0.000009     +0.000009     0.1612
+cinquième                 +0.000798     +0.000009     +0.000009     0.0737
+troubler                  +0.001764     +0.000009     +0.000009     0.0793
+bulles                    +0.000000     +0.000008     +0.000008     0.0999
+furieux                   +0.000057     +0.000007     +0.000007     0.0603
+logit final pour 'homme': -0.1709

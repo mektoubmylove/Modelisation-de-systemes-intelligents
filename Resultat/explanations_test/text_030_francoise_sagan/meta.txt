@@ -1,0 +1,5 @@
+filename: (SAGAN)(Françoise)(un profil perdu)(2)(1974)(1935)(2004)(fr)(z)(z)(V)(R)(T).txt
+index: 30
+first_name: francoise
+last_name: sagan
+true_label: femme

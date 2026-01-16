@@ -1,0 +1,5 @@
+filename: (DELION)(Jean)(quand me tues tu)(1)(1965)(1918)(2007)(fr)(z)(z)(V)(R)(T).txt
+index: 187
+first_name: jean
+last_name: delion
+true_label: homme

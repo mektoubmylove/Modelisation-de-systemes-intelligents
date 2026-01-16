@@ -1,0 +1,386 @@
+texte analysé: cerné cet après midi un bar de la rue marbeuf , où , selon leurs renseignements , quelques escrocs , des anglais surtout , faisant partie d une bande internationale , ont l habitude de se réunir . ils...
+prédiction: HOMME (confiance: 81.0%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.8781
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      arsène                         +0.000230       0.4422
+   2      lupin                          +0.000138       0.5767
+   3      habilla                        +0.000056       0.0673
+   4      déclarations                   +0.000049       0.0559
+   5      momentanée                     +0.000038       0.0935
+   6      victor                         +0.000036       0.2877
+   7      défaillance                    +0.000031       0.0630
+   8      lut                            +0.000029       0.0437
+   9      donnerait                      +0.000027       0.0405
+   10     posta                          +0.000024       0.0831
+   11     employait                      +0.000023       0.0558
+   12     maîtresse                      +0.000022       0.0324
+   13     vacilla                        +0.000022       0.0754
+   14     tarda                          +0.000021       0.0625
+   15     monta                          +0.000020       0.0391
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      anglais                        -0.000148       0.2047
+   2      strasbourg                     -0.000070       0.0801
+   3      alexandra                      -0.000063       0.1133
+   4      princesse                      -0.000057       0.0449
+   5      inspecteurs                    -0.000051       0.0801
+   6      internationale                 -0.000039       0.1229
+   7      rassurer                       -0.000031       0.0368
+   8      avatar                         -0.000029       0.0995
+   9      captifs                        -0.000029       0.0823
+   10     participation                  -0.000027       0.0694
+   11     russe                          -0.000026       0.1032
+   12     rejoignit                      -0.000023       0.0443
+   13     reconnu                        -0.000022       0.0318
+   14     identité                       -0.000019       0.0376
+   15     confirmaient                   -0.000019       0.0953
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      arsène                         +0.000230       0.4422
+   2      lupin                          +0.000138       0.5767
+   3      habilla                        +0.000056       0.0673
+   4      déclarations                   +0.000049       0.0559
+   5      momentanée                     +0.000038       0.0935
+   6      victor                         +0.000036       0.2877
+   7      défaillance                    +0.000031       0.0630
+   8      lut                            +0.000029       0.0437
+   9      donnerait                      +0.000027       0.0405
+   10     posta                          +0.000024       0.0831
+   11     employait                      +0.000023       0.0558
+   12     maîtresse                      +0.000022       0.0324
+   13     vacilla                        +0.000022       0.0754
+   14     tarda                          +0.000021       0.0625
+   15     monta                          +0.000020       0.0391
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      anglais                        -0.000148       0.2047
+   2      strasbourg                     -0.000070       0.0801
+   3      alexandra                      -0.000063       0.1133
+   4      princesse                      -0.000057       0.0449
+   5      inspecteurs                    -0.000051       0.0801
+   6      internationale                 -0.000039       0.1229
+   7      rassurer                       -0.000031       0.0368
+   8      avatar                         -0.000029       0.0995
+   9      captifs                        -0.000029       0.0823
+   10     participation                  -0.000027       0.0694
+   11     russe                          -0.000026       0.1032
+   12     rejoignit                      -0.000023       0.0443
+   13     reconnu                        -0.000022       0.0318
+   14     identité                       -0.000019       0.0376
+   15     confirmaient                   -0.000019       0.0953
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rejoignit                      +0.000720       0.0443
+   2      nerveuse                       +0.000665       0.0426
+   3      ignorer                        +0.000456       0.0374
+   4      brigade                        +0.000439       0.0686
+   5      parcourut                      +0.000396       0.0526
+   6      indices                        +0.000393       0.0548
+   7      attendit                       +0.000367       0.0407
+   8      russe                          +0.000362       0.1032
+   9      récemment                      +0.000322       0.0415
+   10     journal                        +0.000314       0.0646
+   11     princesse                      +0.000287       0.0449
+   12     captifs                        +0.000287       0.0823
+   13     pensa                          +0.000286       0.0399
+   14     remarqué                       +0.000279       0.0297
+   15     avatar                         +0.000278       0.0995
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lupin                          -0.002430       0.5767
+   2      arsène                         -0.002287       0.4422
+   3      escrocs                        -0.001572       0.1926
+   4      anglais                        -0.001552       0.2047
+   5      inspecta                       -0.001098       0.0733
+   6      momentanée                     -0.000866       0.0935
+   7      vols                           -0.000813       0.0629
+   8      habilla                        -0.000772       0.0673
+   9      évadés                         -0.000772       0.1031
+   10     tarda                          -0.000722       0.0625
+   11     confirmaient                   -0.000643       0.0953
+   12     renseignements                 -0.000625       0.0401
+   13     inspecteurs                    -0.000600       0.0801
+   14     hypothèse                      -0.000568       0.0466
+   15     victor                         -0.000544       0.2877
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rejoignit                      +0.042547       0.0443
+   2      nerveuse                       +0.031147       0.0426
+   3      brigade                        +0.025900       0.0686
+   4      parcourut                      +0.024506       0.0526
+   5      indices                        +0.023519       0.0548
+   6      princesse                      +0.020148       0.0449
+   7      ignorer                        +0.019670       0.0374
+   8      russe                          +0.019578       0.1032
+   9      captifs                        +0.019266       0.0823
+   10     attendit                       +0.018667       0.0407
+   11     avatar                         +0.017714       0.0995
+   12     récemment                      +0.015720       0.0415
+   13     remarqué                       +0.015581       0.0297
+   14     pensa                          +0.014445       0.0399
+   15     alexandra                      +0.014182       0.1133
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      arsène                         -0.112803       0.4422
+   2      lupin                          -0.106975       0.5767
+   3      anglais                        -0.076436       0.2047
+   4      escrocs                        -0.076282       0.1926
+   5      momentanée                     -0.051723       0.0935
+   6      inspecta                       -0.048166       0.0733
+   7      évadés                         -0.046471       0.1031
+   8      vols                           -0.040511       0.0629
+   9      tarda                          -0.034188       0.0625
+   10     habilla                        -0.033730       0.0673
+   11     renseignements                 -0.030273       0.0401
+   12     hypothèse                      -0.027472       0.0466
+   13     internationale                 -0.026514       0.1229
+   14     put                            -0.026258       0.0346
+   15     posta                          -0.024737       0.0831
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+arsène                    +0.000000     +0.000230     +0.000230     0.4422
+lupin                     +0.000000     +0.000138     +0.000138     0.5767
+habilla                   +0.000000     +0.000056     +0.000056     0.0673
+déclarations              +0.000000     +0.000049     +0.000049     0.0559
+momentanée                +0.000000     +0.000038     +0.000038     0.0935
+victor                    +0.000000     +0.000036     +0.000036     0.2877
+défaillance               +0.000000     +0.000031     +0.000031     0.0630
+lut                       +0.000000     +0.000029     +0.000029     0.0437
+donnerait                 +0.000019     +0.000027     +0.000027     0.0405
+posta                     +0.000000     +0.000024     +0.000024     0.0831
+employait                 +0.000000     +0.000023     +0.000023     0.0558
+maîtresse                 +0.000000     +0.000022     +0.000022     0.0324
+vacilla                   +0.000002     +0.000022     +0.000022     0.0754
+tarda                     +0.000000     +0.000021     +0.000021     0.0625
+monta                     +0.000000     +0.000020     +0.000020     0.0391
+repéré                    +0.000000     +0.000020     +0.000020     0.0495
+hôtel                     +0.000000     +0.000019     +0.000019     0.0307
+vols                      +0.000000     +0.000018     +0.000018     0.0629
+damné                     +0.000000     +0.000018     +0.000018     0.0716
+évadés                    +0.000000     +0.000018     +0.000018     0.1031
+logit final pour 'femme': -0.8781
+# analyse pour la classe: HOMME  prédite
+# logit: 0.5748
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lupin                          +0.000092       0.5767
+   2      habilla                        +0.000034       0.0673
+   3      escrocs                        +0.000033       0.1926
+   4      déclarations                   +0.000027       0.0559
+   5      défaillance                    +0.000025       0.0630
+   6      victor                         +0.000020       0.2877
+   7      employait                      +0.000019       0.0558
+   8      lut                            +0.000018       0.0437
+   9      momentanée                     +0.000018       0.0935
+   10     monta                          +0.000017       0.0391
+   11     attendit                       +0.000017       0.0407
+   12     arsène                         +0.000017       0.4422
+   13     nerveuse                       +0.000014       0.0426
+   14     repéré                         +0.000014       0.0495
+   15     donnerait                      +0.000014       0.0405
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      anglais                        -0.000095       0.2047
+   2      strasbourg                     -0.000043       0.0801
+   3      évadés                         -0.000040       0.1031
+   4      princesse                      -0.000033       0.0449
+   5      participation                  -0.000028       0.0694
+   6      inspecteurs                    -0.000028       0.0801
+   7      identité                       -0.000022       0.0376
+   8      captifs                        -0.000019       0.0823
+   9      avatar                         -0.000019       0.0995
+   10     rassurer                       -0.000018       0.0368
+   11     voyaient                       -0.000018       0.0403
+   12     fiche                          -0.000016       0.0418
+   13     rejoignit                      -0.000016       0.0443
+   14     russe                          -0.000015       0.1032
+   15     capturés                       -0.000015       0.0935
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lupin                          +0.000092       0.5767
+   2      habilla                        +0.000034       0.0673
+   3      escrocs                        +0.000033       0.1926
+   4      déclarations                   +0.000027       0.0559
+   5      défaillance                    +0.000025       0.0630
+   6      victor                         +0.000020       0.2877
+   7      employait                      +0.000019       0.0558
+   8      lut                            +0.000018       0.0437
+   9      momentanée                     +0.000018       0.0935
+   10     monta                          +0.000017       0.0391
+   11     attendit                       +0.000017       0.0407
+   12     arsène                         +0.000017       0.4422
+   13     nerveuse                       +0.000014       0.0426
+   14     repéré                         +0.000014       0.0495
+   15     donnerait                      +0.000014       0.0405
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      anglais                        -0.000095       0.2047
+   2      strasbourg                     -0.000043       0.0801
+   3      évadés                         -0.000040       0.1031
+   4      princesse                      -0.000033       0.0449
+   5      participation                  -0.000028       0.0694
+   6      inspecteurs                    -0.000028       0.0801
+   7      identité                       -0.000022       0.0376
+   8      captifs                        -0.000019       0.0823
+   9      avatar                         -0.000019       0.0995
+   10     rassurer                       -0.000018       0.0368
+   11     voyaient                       -0.000018       0.0403
+   12     fiche                          -0.000016       0.0418
+   13     rejoignit                      -0.000016       0.0443
+   14     russe                          -0.000015       0.1032
+   15     capturés                       -0.000015       0.0935
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      anglais                        +0.001802       0.2047
+   2      escrocs                        +0.001372       0.1926
+   3      victor                         +0.001241       0.2877
+   4      inspecta                       +0.000907       0.0733
+   5      lupin                          +0.000876       0.5767
+   6      vols                           +0.000767       0.0629
+   7      évadés                         +0.000686       0.1031
+   8      momentanée                     +0.000664       0.0935
+   9      habilla                        +0.000624       0.0673
+   10     tarda                          +0.000582       0.0625
+   11     internationale                 +0.000576       0.1229
+   12     arsène                         +0.000545       0.4422
+   13     confirmaient                   +0.000520       0.0953
+   14     damné                          +0.000512       0.0716
+   15     parut                          +0.000512       0.0354
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rejoignit                      -0.000619       0.0443
+   2      nerveuse                       -0.000523       0.0426
+   3      russe                          -0.000453       0.1032
+   4      parcourut                      -0.000395       0.0526
+   5      ignorer                        -0.000333       0.0374
+   6      indices                        -0.000330       0.0548
+   7      avatar                         -0.000300       0.0995
+   8      journal                        -0.000291       0.0646
+   9      attendit                       -0.000288       0.0407
+   10     récemment                      -0.000254       0.0415
+   11     pensa                          -0.000243       0.0399
+   12     bar                            -0.000238       0.0804
+   13     princesse                      -0.000238       0.0449
+   14     brigade                        -0.000231       0.0686
+   15     grièvement                     -0.000229       0.0806
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      anglais                        +0.083739       0.2047
+   2      escrocs                        +0.061151       0.1926
+   3      momentanée                     +0.039910       0.0935
+   4      vols                           +0.038907       0.0629
+   5      inspecta                       +0.038868       0.0733
+   6      internationale                 +0.033218       0.1229
+   7      victor                         +0.032215       0.2877
+   8      habilla                        +0.030566       0.0673
+   9      évadés                         +0.027894       0.1031
+   10     tarda                          +0.026647       0.0625
+   11     arsène                         +0.025178       0.4422
+   12     renseignements                 +0.024925       0.0401
+   13     parut                          +0.023849       0.0354
+   14     inspecteurs                    +0.023442       0.0801
+   15     put                            +0.022039       0.0346
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rejoignit                      -0.035853       0.0443
+   2      russe                          -0.029280       0.1032
+   3      parcourut                      -0.025024       0.0526
+   4      nerveuse                       -0.023547       0.0426
+   5      indices                        -0.022726       0.0548
+   6      avatar                         -0.020477       0.0995
+   7      brigade                        -0.018873       0.0686
+   8      princesse                      -0.018636       0.0449
+   9      ignorer                        -0.014124       0.0374
+   10     pensa                          -0.013896       0.0399
+   11     remarqué                       -0.013844       0.0297
+   12     attendit                       -0.013520       0.0407
+   13     récemment                      -0.011978       0.0415
+   14     captifs                        -0.011140       0.0823
+   15     échangés                       -0.011070       0.0658
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+lupin                     +0.000876     +0.000092     +0.000092     0.5767
+habilla                   +0.000624     +0.000034     +0.000034     0.0673
+escrocs                   +0.001372     +0.000033     +0.000033     0.1926
+déclarations              +0.000328     +0.000027     +0.000027     0.0559
+défaillance               +0.000205     +0.000025     +0.000025     0.0630
+victor                    +0.001241     +0.000020     +0.000020     0.2877
+employait                 +0.000431     +0.000019     +0.000019     0.0558
+lut                       +0.000034     +0.000018     +0.000018     0.0437
+momentanée                +0.000664     +0.000018     +0.000018     0.0935
+monta                     +0.000218     +0.000017     +0.000017     0.0391
+attendit                  +0.000000     +0.000017     +0.000017     0.0407
+arsène                    +0.000545     +0.000017     +0.000017     0.4422
+nerveuse                  +0.000000     +0.000014     +0.000014     0.0426
+repéré                    +0.000265     +0.000014     +0.000014     0.0495
+donnerait                 +0.000000     +0.000014     +0.000014     0.0405
+hôtel                     +0.000147     +0.000014     +0.000014     0.0307
+journal                   +0.000000     +0.000014     +0.000014     0.0646
+ascenseur                 +0.000000     +0.000013     +0.000013     0.0475
+cerné                     +0.000171     +0.000012     +0.000012     0.0684
+négligemment              +0.000283     +0.000010     +0.000010     0.0574
+logit final pour 'homme': 0.5748

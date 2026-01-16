@@ -1,0 +1,387 @@
+texte analysé: avoir gravi l échelle de bibliothèque de la pompadour . je lui dois encore une qualité , presqu une vertu , qui ne m en est que plus chère . c est l exactitude que je veux dire . un automne que j avai...
+prédiction: FEMME (confiance: 57.2%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.1450
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      renvois                        +0.000109       0.1613
+   2      versets                        +0.000105       0.1362
+   3      libations                      +0.000096       0.1455
+   4      redevable                      +0.000085       0.1254
+   5      pape                           +0.000079       0.0879
+   6      coléreux                       +0.000075       0.1315
+   7      francs                         +0.000063       0.0588
+   8      garanti                        +0.000062       0.1174
+   9      rédaction                      +0.000061       0.0946
+   10     oraison                        +0.000056       0.2326
+   11     échelle                        +0.000053       0.0584
+   12     glorieuse                      +0.000051       0.0983
+   13     presqu                         +0.000048       0.1273
+   14     vertu                          +0.000046       0.0638
+   15     écarter                        +0.000043       0.0613
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      josselin                       -0.000361       0.2278
+   2      tardifs                        -0.000246       0.1455
+   3      impératrice                    -0.000202       0.1121
+   4      trouvai                        -0.000123       0.0917
+   5      avare                          -0.000119       0.0928
+   6      maléfices                      -0.000098       0.1315
+   7      goncourt                       -0.000082       0.1489
+   8      alliances                      -0.000077       0.1069
+   9      familles                       -0.000075       0.1041
+   10     sangloter                      -0.000075       0.0893
+   11     alimentation                   -0.000073       0.1002
+   12     rois                           -0.000072       0.0720
+   13     singes                         -0.000064       0.0955
+   14     couronnes                      -0.000062       0.0979
+   15     crêpes                         -0.000062       0.1061
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      renvois                        +0.000109       0.1613
+   2      versets                        +0.000105       0.1362
+   3      libations                      +0.000096       0.1455
+   4      redevable                      +0.000085       0.1254
+   5      pape                           +0.000079       0.0879
+   6      coléreux                       +0.000075       0.1315
+   7      francs                         +0.000063       0.0588
+   8      garanti                        +0.000062       0.1174
+   9      rédaction                      +0.000061       0.0946
+   10     oraison                        +0.000056       0.2326
+   11     échelle                        +0.000053       0.0584
+   12     glorieuse                      +0.000051       0.0983
+   13     presqu                         +0.000048       0.1273
+   14     vertu                          +0.000046       0.0638
+   15     écarter                        +0.000043       0.0613
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      josselin                       -0.000361       0.2278
+   2      tardifs                        -0.000246       0.1455
+   3      impératrice                    -0.000202       0.1121
+   4      trouvai                        -0.000123       0.0917
+   5      avare                          -0.000119       0.0928
+   6      maléfices                      -0.000098       0.1315
+   7      goncourt                       -0.000082       0.1489
+   8      alliances                      -0.000077       0.1069
+   9      familles                       -0.000075       0.1041
+   10     sangloter                      -0.000075       0.0893
+   11     alimentation                   -0.000073       0.1002
+   12     rois                           -0.000072       0.0720
+   13     singes                         -0.000064       0.0955
+   14     couronnes                      -0.000062       0.0979
+   15     crêpes                         -0.000062       0.1061
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mages                          +0.002978       0.1326
+   2      tardifs                        +0.002137       0.1455
+   3      sangloter                      +0.002121       0.0893
+   4      impératrice                    +0.002014       0.1121
+   5      josselin                       +0.001979       0.2278
+   6      familles                       +0.001886       0.1041
+   7      coléreux                       +0.001858       0.1315
+   8      équivalent                     +0.001851       0.0917
+   9      mondains                       +0.001838       0.1135
+   10     ressortent                     +0.001714       0.1356
+   11     crêpes                         +0.001383       0.1061
+   12     colorés                        +0.001357       0.0951
+   13     chandelles                     +0.001352       0.0999
+   14     interdire                      +0.001321       0.0799
+   15     invitations                    +0.001226       0.0979
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      versets                        -0.003229       0.1362
+   2      fâche                          -0.002416       0.1948
+   3      exactitude                     -0.002161       0.0992
+   4      francs                         -0.002158       0.0588
+   5      trépignant                     -0.001757       0.1480
+   6      gravi                          -0.001731       0.1145
+   7      rédaction                      -0.001702       0.0946
+   8      quart                          -0.001646       0.0470
+   9      pape                           -0.001580       0.0879
+   10     hôte                           -0.001561       0.1372
+   11     singes                         -0.001531       0.0955
+   12     glorieuse                      -0.001522       0.0983
+   13     accusait                       -0.001502       0.0799
+   14     fût                            -0.001272       0.0466
+   15     garanti                        -0.001238       0.1174
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mages                          +0.166674       0.1326
+   2      coléreux                       +0.115433       0.1315
+   3      impératrice                    +0.111794       0.1121
+   4      tardifs                        +0.110989       0.1455
+   5      équivalent                     +0.102337       0.0917
+   6      sangloter                      +0.100405       0.0893
+   7      josselin                       +0.096849       0.2278
+   8      mondains                       +0.093790       0.1135
+   9      ressortent                     +0.087627       0.1356
+   10     familles                       +0.081279       0.1041
+   11     goncourt                       +0.071325       0.1489
+   12     colorés                        +0.069841       0.0951
+   13     interdire                      +0.062407       0.0799
+   14     chandelles                     +0.062211       0.0999
+   15     crêpes                         +0.061844       0.1061
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      versets                        -0.156219       0.1362
+   2      fâche                          -0.150096       0.1948
+   3      francs                         -0.104680       0.0588
+   4      trépignant                     -0.104147       0.1480
+   5      exactitude                     -0.097982       0.0992
+   6      accusait                       -0.091936       0.0799
+   7      rédaction                      -0.085583       0.0946
+   8      gravi                          -0.084384       0.1145
+   9      pompadour                      -0.083585       0.1489
+   10     souveraines                    -0.083349       0.1601
+   11     quart                          -0.082585       0.0470
+   12     singes                         -0.079801       0.0955
+   13     garanti                        -0.072278       0.1174
+   14     fût                            -0.071000       0.0466
+   15     pape                           -0.070297       0.0879
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+renvois                   +0.000000     +0.000109     +0.000109     0.1613
+versets                   +0.000000     +0.000105     +0.000105     0.1362
+libations                 +0.000000     +0.000096     +0.000096     0.1455
+redevable                 +0.000000     +0.000085     +0.000085     0.1254
+pape                      +0.000000     +0.000079     +0.000079     0.0879
+coléreux                  +0.001858     +0.000075     +0.000075     0.1315
+francs                    +0.000000     +0.000063     +0.000063     0.0588
+garanti                   +0.000000     +0.000062     +0.000062     0.1174
+rédaction                 +0.000000     +0.000061     +0.000061     0.0946
+oraison                   +0.000000     +0.000056     +0.000056     0.2326
+échelle                   +0.000000     +0.000053     +0.000053     0.0584
+glorieuse                 +0.000000     +0.000051     +0.000051     0.0983
+presqu                    +0.000000     +0.000048     +0.000048     0.1273
+vertu                     +0.000000     +0.000046     +0.000046     0.0638
+écarter                   +0.000000     +0.000043     +0.000043     0.0613
+arrivants                 +0.000177     +0.000042     +0.000042     0.0983
+accusait                  +0.000000     +0.000040     +0.000040     0.0799
+traiteur                  +0.000224     +0.000038     +0.000038     0.1326
+odorants                  +0.000000     +0.000037     +0.000037     0.1369
+souveraines               +0.000000     +0.000036     +0.000036     0.1601
+logit final pour 'femme': 0.1450
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.1430
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      versets                        +0.000077       0.1362
+   2      coléreux                       +0.000070       0.1315
+   3      libations                      +0.000061       0.1455
+   4      renvois                        +0.000059       0.1613
+   5      spontanée                      +0.000039       0.0976
+   6      traiteur                       +0.000038       0.1326
+   7      décès                          +0.000033       0.0693
+   8      ressortent                     +0.000032       0.1356
+   9      prive                          +0.000031       0.1019
+   10     dîners                         +0.000030       0.0904
+   11     odorants                       +0.000028       0.1369
+   12     chère                          +0.000027       0.0487
+   13     échangé                        +0.000027       0.0693
+   14     exactitude                     +0.000027       0.0992
+   15     jonchée                        +0.000026       0.1149
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      josselin                       -0.000130       0.2278
+   2      impératrice                    -0.000096       0.1121
+   3      tardifs                        -0.000081       0.1455
+   4      trouvai                        -0.000077       0.0917
+   5      pompadour                      -0.000068       0.1489
+   6      maléfices                      -0.000062       0.1315
+   7      avare                          -0.000059       0.0928
+   8      alliances                      -0.000053       0.1069
+   9      crêpes                         -0.000052       0.1061
+   10     familles                       -0.000049       0.1041
+   11     rois                           -0.000048       0.0720
+   12     trépignant                     -0.000046       0.1480
+   13     singes                         -0.000045       0.0955
+   14     goncourt                       -0.000042       0.1489
+   15     formule                        -0.000032       0.0626
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      versets                        +0.000077       0.1362
+   2      coléreux                       +0.000070       0.1315
+   3      libations                      +0.000061       0.1455
+   4      renvois                        +0.000059       0.1613
+   5      spontanée                      +0.000039       0.0976
+   6      traiteur                       +0.000038       0.1326
+   7      décès                          +0.000033       0.0693
+   8      ressortent                     +0.000032       0.1356
+   9      prive                          +0.000031       0.1019
+   10     dîners                         +0.000030       0.0904
+   11     odorants                       +0.000028       0.1369
+   12     chère                          +0.000027       0.0487
+   13     échangé                        +0.000027       0.0693
+   14     exactitude                     +0.000027       0.0992
+   15     jonchée                        +0.000026       0.1149
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      josselin                       -0.000130       0.2278
+   2      impératrice                    -0.000096       0.1121
+   3      tardifs                        -0.000081       0.1455
+   4      trouvai                        -0.000077       0.0917
+   5      pompadour                      -0.000068       0.1489
+   6      maléfices                      -0.000062       0.1315
+   7      avare                          -0.000059       0.0928
+   8      alliances                      -0.000053       0.1069
+   9      crêpes                         -0.000052       0.1061
+   10     familles                       -0.000049       0.1041
+   11     rois                           -0.000048       0.0720
+   12     trépignant                     -0.000046       0.1480
+   13     singes                         -0.000045       0.0955
+   14     goncourt                       -0.000042       0.1489
+   15     formule                        -0.000032       0.0626
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      versets                        +0.002482       0.1362
+   2      fâche                          +0.001843       0.1948
+   3      francs                         +0.001486       0.0588
+   4      exactitude                     +0.001374       0.0992
+   5      singes                         +0.001262       0.0955
+   6      hôte                           +0.001234       0.1372
+   7      rédaction                      +0.001218       0.0946
+   8      garanti                        +0.001209       0.1174
+   9      accusait                       +0.001189       0.0799
+   10     quart                          +0.001149       0.0470
+   11     glorieuse                      +0.001138       0.0983
+   12     gravi                          +0.001114       0.1145
+   13     pape                           +0.001075       0.0879
+   14     trépignant                     +0.001058       0.1480
+   15     billets                        +0.001024       0.0569
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mages                          -0.002108       0.1326
+   2      tardifs                        -0.001823       0.1455
+   3      josselin                       -0.001544       0.2278
+   4      coléreux                       -0.001531       0.1315
+   5      sangloter                      -0.001476       0.0893
+   6      équivalent                     -0.001397       0.0917
+   7      mondains                       -0.001342       0.1135
+   8      impératrice                    -0.001306       0.1121
+   9      ressortent                     -0.001225       0.1356
+   10     crêpes                         -0.001203       0.1061
+   11     familles                       -0.001148       0.1041
+   12     chandelles                     -0.000992       0.0999
+   13     couronnes                      -0.000888       0.0979
+   14     interdire                      -0.000852       0.0799
+   15     invitations                    -0.000772       0.0979
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      versets                        +0.128832       0.1362
+   2      fâche                          +0.108788       0.1948
+   3      francs                         +0.077273       0.0588
+   4      accusait                       +0.076789       0.0799
+   5      exactitude                     +0.070493       0.0992
+   6      trépignant                     +0.067362       0.1480
+   7      singes                         +0.067221       0.0955
+   8      rédaction                      +0.064598       0.0946
+   9      télégramme                     +0.062382       0.0938
+   10     garanti                        +0.061137       0.1174
+   11     quart                          +0.060595       0.0470
+   12     hôte                           +0.058018       0.1372
+   13     gravi                          +0.057701       0.1145
+   14     pompadour                      +0.057141       0.1489
+   15     billets                        +0.056616       0.0569
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mages                          -0.118545       0.1326
+   2      coléreux                       -0.089086       0.1315
+   3      tardifs                        -0.083502       0.1455
+   4      josselin                       -0.082150       0.2278
+   5      équivalent                     -0.076062       0.0917
+   6      sangloter                      -0.075774       0.0893
+   7      impératrice                    -0.072747       0.1121
+   8      mondains                       -0.071745       0.1135
+   9      ressortent                     -0.068736       0.1356
+   10     crêpes                         -0.058335       0.1061
+   11     chandelles                     -0.050769       0.0999
+   12     goncourt                       -0.049946       0.1489
+   13     familles                       -0.049221       0.1041
+   14     colorés                        -0.047402       0.0951
+   15     invitations                    -0.042662       0.0979
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+versets                   +0.002482     +0.000077     +0.000077     0.1362
+coléreux                  +0.000000     +0.000070     +0.000070     0.1315
+libations                 +0.000819     +0.000061     +0.000061     0.1455
+renvois                   +0.000375     +0.000059     +0.000059     0.1613
+spontanée                 +0.000000     +0.000039     +0.000039     0.0976
+traiteur                  +0.000000     +0.000038     +0.000038     0.1326
+décès                     +0.000000     +0.000033     +0.000033     0.0693
+ressortent                +0.000000     +0.000032     +0.000032     0.1356
+prive                     +0.000000     +0.000031     +0.000031     0.1019
+dîners                    +0.000428     +0.000030     +0.000030     0.0904
+odorants                  +0.000433     +0.000028     +0.000028     0.1369
+chère                     +0.000000     +0.000027     +0.000027     0.0487
+échangé                   +0.000000     +0.000027     +0.000027     0.0693
+exactitude                +0.001374     +0.000027     +0.000027     0.0992
+jonchée                   +0.000000     +0.000026     +0.000026     0.1149
+pape                      +0.001075     +0.000025     +0.000025     0.0879
+conclut                   +0.000095     +0.000024     +0.000024     0.0565
+redevable                 +0.000403     +0.000023     +0.000023     0.1254
+équivalent                +0.000000     +0.000019     +0.000019     0.0917
+bourgeois                 +0.000760     +0.000019     +0.000019     0.0652
+logit final pour 'homme': -0.1430

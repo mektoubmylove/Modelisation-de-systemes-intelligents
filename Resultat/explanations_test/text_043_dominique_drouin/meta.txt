@@ -1,0 +1,5 @@
+filename: (DROUIN)(Dominique)(alice)(2)(2015)(1958)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 43
+first_name: dominique
+last_name: drouin
+true_label: femme

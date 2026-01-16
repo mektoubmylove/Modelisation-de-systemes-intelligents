@@ -1,0 +1,386 @@
+texte analysé: gauche retombait vers le sol où la chatte kochka se frottait contre le sommier . victor rêvait qu il déchiffrait un parchemin dont les mots s effaçaient au fur et à mesure . le vaste atelier sentait l...
+prédiction: FEMME (confiance: 88.4%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.2267
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      proverbes                      +0.000074       0.1023
+   2      rempart                        +0.000058       0.0618
+   3      tapissaient                    +0.000056       0.1023
+   4      capharnaüm                     +0.000050       0.0927
+   5      éveilla                        +0.000050       0.0651
+   6      çà                             +0.000048       0.0545
+   7      referma                        +0.000048       0.0471
+   8      résisterait                    +0.000041       0.0872
+   9      sommier                        +0.000040       0.0806
+   10     brume                          +0.000037       0.0453
+   11     frappa                         +0.000035       0.0438
+   12     favoris                        +0.000032       0.0681
+   13     disséminés                     +0.000030       0.0887
+   14     dépit                          +0.000030       0.0406
+   15     concierges                     +0.000029       0.0949
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tasha                          -0.000224       0.3242
+   2      kochka                         -0.000196       0.3342
+   3      adoptif                        -0.000156       0.0949
+   4      mori                           -0.000142       0.1338
+   5      clignotait                     -0.000122       0.1023
+   6      legris                         -0.000103       0.1543
+   7      effaçaient                     -0.000098       0.0890
+   8      kenji                          -0.000088       0.1543
+   9      eudoxie                        -0.000080       0.1543
+   10     aboiement                      -0.000078       0.1826
+   11     chatte                         -0.000067       0.0652
+   12     pignot                         -0.000067       0.1579
+   13     hérissés                       -0.000060       0.0845
+   14     buis                           -0.000051       0.0764
+   15     fierté                         -0.000048       0.0377
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      proverbes                      +0.000074       0.1023
+   2      rempart                        +0.000058       0.0618
+   3      tapissaient                    +0.000056       0.1023
+   4      capharnaüm                     +0.000050       0.0927
+   5      éveilla                        +0.000050       0.0651
+   6      çà                             +0.000048       0.0545
+   7      referma                        +0.000048       0.0471
+   8      résisterait                    +0.000041       0.0872
+   9      sommier                        +0.000040       0.0806
+   10     brume                          +0.000037       0.0453
+   11     frappa                         +0.000035       0.0438
+   12     favoris                        +0.000032       0.0681
+   13     disséminés                     +0.000030       0.0887
+   14     dépit                          +0.000030       0.0406
+   15     concierges                     +0.000029       0.0949
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tasha                          -0.000224       0.3242
+   2      kochka                         -0.000196       0.3342
+   3      adoptif                        -0.000156       0.0949
+   4      mori                           -0.000142       0.1338
+   5      clignotait                     -0.000122       0.1023
+   6      legris                         -0.000103       0.1543
+   7      effaçaient                     -0.000098       0.0890
+   8      kenji                          -0.000088       0.1543
+   9      eudoxie                        -0.000080       0.1543
+   10     aboiement                      -0.000078       0.1826
+   11     chatte                         -0.000067       0.0652
+   12     pignot                         -0.000067       0.1579
+   13     hérissés                       -0.000060       0.0845
+   14     buis                           -0.000051       0.0764
+   15     fierté                         -0.000048       0.0377
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tasha                          +0.004604       0.3242
+   2      kochka                         +0.003251       0.3342
+   3      legris                         +0.002552       0.1543
+   4      eudoxie                        +0.002231       0.1543
+   5      kenji                          +0.002127       0.1543
+   6      mori                           +0.001895       0.1338
+   7      grossesse                      +0.001846       0.0598
+   8      pignot                         +0.001817       0.1579
+   9      parchemin                      +0.001633       0.1560
+   10     euphrosine                     +0.001519       0.1511
+   11     accouchement                   +0.001255       0.0696
+   12     adoptif                        +0.001208       0.0949
+   13     bébé                           +0.001177       0.0400
+   14     chatte                         +0.001048       0.0652
+   15     fierté                         +0.000960       0.0377
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      buis                           -0.001753       0.0764
+   2      concierges                     -0.001665       0.0949
+   3      châssis                        -0.001547       0.0840
+   4      aboiement                      -0.001441       0.1826
+   5      traversin                      -0.001247       0.1092
+   6      disséminés                     -0.001191       0.0887
+   7      concierge                      -0.001160       0.0549
+   8      sommier                        -0.001114       0.0806
+   9      phare                          -0.001063       0.0679
+   10     chevalets                      -0.001039       0.1149
+   11     ferons                         -0.000942       0.0566
+   12     épi                            -0.000918       0.0930
+   13     çà                             -0.000900       0.0545
+   14     victor                         -0.000726       0.3103
+   15     obstinait                      -0.000656       0.0711
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tasha                          +0.172637       0.3242
+   2      kochka                         +0.128587       0.3342
+   3      legris                         +0.098321       0.1543
+   4      mori                           +0.093257       0.1338
+   5      eudoxie                        +0.081354       0.1543
+   6      kenji                          +0.080412       0.1543
+   7      pignot                         +0.072019       0.1579
+   8      parchemin                      +0.066628       0.1560
+   9      grossesse                      +0.059171       0.0598
+   10     euphrosine                     +0.055084       0.1511
+   11     victor                         +0.042760       0.3103
+   12     accouchement                   +0.040276       0.0696
+   13     adoptif                        +0.037657       0.0949
+   14     bébé                           +0.036247       0.0400
+   15     tapissaient                    +0.035932       0.1023
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      aboiement                      -0.080029       0.1826
+   2      concierges                     -0.073322       0.0949
+   3      châssis                        -0.070856       0.0840
+   4      buis                           -0.066648       0.0764
+   5      traversin                      -0.056398       0.1092
+   6      concierge                      -0.041052       0.0549
+   7      phare                          -0.038293       0.0679
+   8      disséminés                     -0.036740       0.0887
+   9      épi                            -0.033675       0.0930
+   10     ferons                         -0.032458       0.0566
+   11     chevalets                      -0.027363       0.1149
+   12     sommier                        -0.027280       0.0806
+   13     secourir                       -0.024285       0.0668
+   14     proverbes                      -0.021756       0.1023
+   15     çà                             -0.021382       0.0545
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+proverbes                 +0.000000     +0.000074     +0.000074     0.1023
+rempart                   +0.000179     +0.000058     +0.000058     0.0618
+tapissaient               +0.000806     +0.000056     +0.000056     0.1023
+capharnaüm                +0.000846     +0.000050     +0.000050     0.0927
+éveilla                   +0.000000     +0.000050     +0.000050     0.0651
+çà                        +0.000000     +0.000048     +0.000048     0.0545
+referma                   +0.000431     +0.000048     +0.000048     0.0471
+résisterait               +0.000000     +0.000041     +0.000041     0.0872
+sommier                   +0.000000     +0.000040     +0.000040     0.0806
+brume                     +0.000000     +0.000037     +0.000037     0.0453
+frappa                    +0.000000     +0.000035     +0.000035     0.0438
+favoris                   +0.000000     +0.000032     +0.000032     0.0681
+disséminés                +0.000000     +0.000030     +0.000030     0.0887
+dépit                     +0.000175     +0.000030     +0.000030     0.0406
+concierges                +0.000000     +0.000029     +0.000029     0.0949
+portrait                  +0.000000     +0.000028     +0.000028     0.0393
+limier                    +0.000040     +0.000026     +0.000026     0.1067
+rêvait                    +0.000109     +0.000025     +0.000025     0.0440
+chevalets                 +0.000000     +0.000024     +0.000024     0.1149
+plume                     +0.000000     +0.000021     +0.000021     0.0419
+logit final pour 'femme': 1.2267
+# analyse pour la classe: HOMME
+# logit: -0.8023
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      proverbes                      +0.000051       0.1023
+   2      ressemblerait                  +0.000030       0.0842
+   3      disséminés                     +0.000023       0.0887
+   4      éveilla                        +0.000023       0.0651
+   5      sommier                        +0.000022       0.0806
+   6      çà                             +0.000017       0.0545
+   7      composé                        +0.000015       0.0469
+   8      benjoin                        +0.000015       0.1166
+   9      referma                        +0.000015       0.0471
+   10     brume                          +0.000013       0.0453
+   11     favoris                        +0.000012       0.0681
+   12     capharnaüm                     +0.000012       0.0927
+   13     déchiffrait                    +0.000012       0.1039
+   14     supplie                        +0.000012       0.0460
+   15     concierge                      +0.000012       0.0549
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tasha                          -0.000139       0.3242
+   2      kochka                         -0.000112       0.3342
+   3      mori                           -0.000086       0.1338
+   4      adoptif                        -0.000081       0.0949
+   5      legris                         -0.000076       0.1543
+   6      kenji                          -0.000065       0.1543
+   7      pignot                         -0.000062       0.1579
+   8      clignotait                     -0.000056       0.1023
+   9      eudoxie                        -0.000038       0.1543
+   10     accouchement                   -0.000038       0.0696
+   11     parchemin                      -0.000029       0.1560
+   12     chatte                         -0.000028       0.0652
+   13     phare                          -0.000027       0.0679
+   14     euphrosine                     -0.000027       0.1511
+   15     fierté                         -0.000026       0.0377
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      proverbes                      +0.000051       0.1023
+   2      ressemblerait                  +0.000030       0.0842
+   3      disséminés                     +0.000023       0.0887
+   4      éveilla                        +0.000023       0.0651
+   5      sommier                        +0.000022       0.0806
+   6      çà                             +0.000017       0.0545
+   7      composé                        +0.000015       0.0469
+   8      benjoin                        +0.000015       0.1166
+   9      referma                        +0.000015       0.0471
+   10     brume                          +0.000013       0.0453
+   11     favoris                        +0.000012       0.0681
+   12     capharnaüm                     +0.000012       0.0927
+   13     déchiffrait                    +0.000012       0.1039
+   14     supplie                        +0.000012       0.0460
+   15     concierge                      +0.000012       0.0549
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tasha                          -0.000139       0.3242
+   2      kochka                         -0.000112       0.3342
+   3      mori                           -0.000086       0.1338
+   4      adoptif                        -0.000081       0.0949
+   5      legris                         -0.000076       0.1543
+   6      kenji                          -0.000065       0.1543
+   7      pignot                         -0.000062       0.1579
+   8      clignotait                     -0.000056       0.1023
+   9      eudoxie                        -0.000038       0.1543
+   10     accouchement                   -0.000038       0.0696
+   11     parchemin                      -0.000029       0.1560
+   12     chatte                         -0.000028       0.0652
+   13     phare                          -0.000027       0.0679
+   14     euphrosine                     -0.000027       0.1511
+   15     fierté                         -0.000026       0.0377
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      concierges                     +0.001128       0.0949
+   2      victor                         +0.001089       0.3103
+   3      buis                           +0.001086       0.0764
+   4      châssis                        +0.000971       0.0840
+   5      disséminés                     +0.000869       0.0887
+   6      concierge                      +0.000849       0.0549
+   7      sommier                        +0.000811       0.0806
+   8      traversin                      +0.000761       0.1092
+   9      ferons                         +0.000748       0.0566
+   10     çà                             +0.000728       0.0545
+   11     phare                          +0.000710       0.0679
+   12     aboiement                      +0.000687       0.1826
+   13     épi                            +0.000662       0.0930
+   14     chevalets                      +0.000639       0.1149
+   15     résisterait                    +0.000489       0.0872
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tasha                          -0.002514       0.3242
+   2      kochka                         -0.002471       0.3342
+   3      eudoxie                        -0.001450       0.1543
+   4      legris                         -0.001420       0.1543
+   5      grossesse                      -0.001203       0.0598
+   6      kenji                          -0.001157       0.1543
+   7      mori                           -0.000959       0.1338
+   8      benjoin                        -0.000951       0.1166
+   9      euphrosine                     -0.000946       0.1511
+   10     parchemin                      -0.000916       0.1560
+   11     pignot                         -0.000912       0.1579
+   12     adoptif                        -0.000811       0.0949
+   13     accouchement                   -0.000767       0.0696
+   14     clignotait                     -0.000724       0.1023
+   15     chatte                         -0.000718       0.0652
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      châssis                        +0.042404       0.0840
+   2      concierges                     +0.041244       0.0949
+   3      aboiement                      +0.038359       0.1826
+   4      buis                           +0.036075       0.0764
+   5      traversin                      +0.028269       0.1092
+   6      épi                            +0.026505       0.0930
+   7      concierge                      +0.025211       0.0549
+   8      phare                          +0.024160       0.0679
+   9      ferons                         +0.024075       0.0566
+   10     disséminés                     +0.021477       0.0887
+   11     sommier                        +0.016438       0.0806
+   12     secourir                       +0.016019       0.0668
+   13     çà                             +0.015051       0.0545
+   14     proverbes                      +0.014128       0.1023
+   15     frappa                         +0.013868       0.0438
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      kochka                         -0.085939       0.3342
+   2      tasha                          -0.081433       0.3242
+   3      mori                           -0.055994       0.1338
+   4      legris                         -0.049672       0.1543
+   5      parchemin                      -0.045298       0.1560
+   6      eudoxie                        -0.044255       0.1543
+   7      kenji                          -0.039309       0.1543
+   8      pignot                         -0.033101       0.1579
+   9      benjoin                        -0.031643       0.1166
+   10     grossesse                      -0.031092       0.0598
+   11     euphrosine                     -0.027898       0.1511
+   12     adoptif                        -0.021517       0.0949
+   13     accouchement                   -0.020956       0.0696
+   14     chatte                         -0.020733       0.0652
+   15     fierté                         -0.020044       0.0377
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+proverbes                 +0.000437     +0.000051     +0.000051     0.1023
+ressemblerait             +0.000000     +0.000030     +0.000030     0.0842
+disséminés                +0.000869     +0.000023     +0.000023     0.0887
+éveilla                   +0.000374     +0.000023     +0.000023     0.0651
+sommier                   +0.000811     +0.000022     +0.000022     0.0806
+çà                        +0.000728     +0.000017     +0.000017     0.0545
+composé                   +0.000000     +0.000015     +0.000015     0.0469
+benjoin                   +0.000000     +0.000015     +0.000015     0.1166
+referma                   +0.000000     +0.000015     +0.000015     0.0471
+brume                     +0.000212     +0.000013     +0.000013     0.0453
+favoris                   +0.000145     +0.000012     +0.000012     0.0681
+capharnaüm                +0.000000     +0.000012     +0.000012     0.0927
+déchiffrait               +0.000035     +0.000012     +0.000012     0.1039
+supplie                   +0.000000     +0.000012     +0.000012     0.0460
+concierge                 +0.000849     +0.000012     +0.000012     0.0549
+limier                    +0.000000     +0.000011     +0.000011     0.1067
+rêvait                    +0.000000     +0.000010     +0.000010     0.0440
+secourir                  +0.000430     +0.000010     +0.000010     0.0668
+retombait                 +0.000060     +0.000010     +0.000010     0.0679
+joins                     +0.000000     +0.000010     +0.000010     0.1013
+logit final pour 'homme': -0.8023

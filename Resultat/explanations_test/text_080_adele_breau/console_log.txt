@@ -1,0 +1,386 @@
+texte analysé: carton ikea éventré , qu il la prit dans la nuit , avec une douceur si inattendue qu elle sentit bientôt des larmes chaudes sur ses joues , lesquelles coulaient naturellement , emportant son chagrin e...
+prédiction: FEMME (confiance: 87.0%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.0892
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mathilde                       +0.000086       0.2051
+   2      coloris                        +0.000071       0.1156
+   3      unisson                        +0.000052       0.0807
+   4      max                            +0.000049       0.0887
+   5      réverbère                      +0.000049       0.0856
+   6      naufragés                      +0.000046       0.1042
+   7      quinzaine                      +0.000043       0.0541
+   8      anonyme                        +0.000043       0.0584
+   9      présentait                     +0.000040       0.0469
+   10     carottes                       +0.000038       0.0782
+   11     confectionner                  +0.000035       0.0778
+   12     jeudi                          +0.000035       0.0566
+   13     yaourts                        +0.000033       0.1127
+   14     grognements                    +0.000031       0.0803
+   15     jean                           +0.000029       0.0382
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      poubelle                       -0.000187       0.4369
+   2      apartheid                      -0.000097       0.1640
+   3      gavés                          -0.000093       0.1215
+   4      préférer                       -0.000070       0.0747
+   5      croissance                     -0.000068       0.0800
+   6      méconnue                       -0.000067       0.1181
+   7      périmé                         -0.000066       0.1238
+   8      jouissance                     -0.000065       0.0638
+   9      pourries                       -0.000065       0.0875
+   10     pratiques                      -0.000064       0.0597
+   11     supermarché                    -0.000061       0.0827
+   12     chômage                        -0.000060       0.0772
+   13     incombait                      -0.000059       0.1101
+   14     patates                        -0.000056       0.0892
+   15     salades                        -0.000056       0.0802
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mathilde                       +0.000086       0.2051
+   2      coloris                        +0.000071       0.1156
+   3      unisson                        +0.000052       0.0807
+   4      max                            +0.000049       0.0887
+   5      réverbère                      +0.000049       0.0856
+   6      naufragés                      +0.000046       0.1042
+   7      quinzaine                      +0.000043       0.0541
+   8      anonyme                        +0.000043       0.0584
+   9      présentait                     +0.000040       0.0469
+   10     carottes                       +0.000038       0.0782
+   11     confectionner                  +0.000035       0.0778
+   12     jeudi                          +0.000035       0.0566
+   13     yaourts                        +0.000033       0.1127
+   14     grognements                    +0.000031       0.0803
+   15     jean                           +0.000029       0.0382
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      poubelle                       -0.000187       0.4369
+   2      apartheid                      -0.000097       0.1640
+   3      gavés                          -0.000093       0.1215
+   4      préférer                       -0.000070       0.0747
+   5      croissance                     -0.000068       0.0800
+   6      méconnue                       -0.000067       0.1181
+   7      périmé                         -0.000066       0.1238
+   8      jouissance                     -0.000065       0.0638
+   9      pourries                       -0.000065       0.0875
+   10     pratiques                      -0.000064       0.0597
+   11     supermarché                    -0.000061       0.0827
+   12     chômage                        -0.000060       0.0772
+   13     incombait                      -0.000059       0.1101
+   14     patates                        -0.000056       0.0892
+   15     salades                        -0.000056       0.0802
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      poubelle                       +0.005554       0.4369
+   2      courgettes                     +0.001903       0.1223
+   3      épargnées                      +0.001543       0.1138
+   4      entrain                        +0.001152       0.0607
+   5      périmé                         +0.001141       0.1238
+   6      légumes                        +0.001088       0.0961
+   7      confectionner                  +0.001065       0.0778
+   8      intégralité                    +0.001061       0.1010
+   9      jouissance                     +0.001058       0.0638
+   10     yaourts                        +0.000967       0.1127
+   11     souffla                        +0.000939       0.0537
+   12     frigo                          +0.000905       0.0772
+   13     patates                        +0.000905       0.0892
+   14     recherche                      +0.000903       0.0351
+   15     gavés                          +0.000876       0.1215
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mathilde                       -0.002390       0.2051
+   2      apartheid                      -0.001727       0.1640
+   3      reproduite                     -0.001472       0.1201
+   4      végétal                        -0.001312       0.0915
+   5      naufragés                      -0.001228       0.1042
+   6      grognements                    -0.001212       0.0803
+   7      descente                       -0.001131       0.0527
+   8      redevenu                       -0.001092       0.0687
+   9      quinzaine                      -0.000905       0.0541
+   10     constellé                      -0.000854       0.0999
+   11     haché                          -0.000840       0.0956
+   12     max                            -0.000829       0.0887
+   13     boulettes                      -0.000717       0.0982
+   14     ivrognes                       -0.000697       0.0882
+   15     distinguait                    -0.000695       0.0534
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      poubelle                       +0.235086       0.4369
+   2      courgettes                     +0.078920       0.1223
+   3      épargnées                      +0.061207       0.1138
+   4      intégralité                    +0.054380       0.1010
+   5      jouissance                     +0.052773       0.0638
+   6      confectionner                  +0.049282       0.0778
+   7      yaourts                        +0.049062       0.1127
+   8      cohen                          +0.044225       0.1281
+   9      unisson                        +0.043280       0.0807
+   10     entrain                        +0.043105       0.0607
+   11     légumes                        +0.042661       0.0961
+   12     périmé                         +0.040716       0.1238
+   13     frigo                          +0.040153       0.0772
+   14     recherche                      +0.039723       0.0351
+   15     gavés                          +0.036132       0.1215
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      apartheid                      -0.088292       0.1640
+   2      mathilde                       -0.079131       0.2051
+   3      végétal                        -0.071625       0.0915
+   4      reproduite                     -0.065834       0.1201
+   5      redevenu                       -0.059713       0.0687
+   6      constellé                      -0.058110       0.0999
+   7      descente                       -0.050269       0.0527
+   8      naufragés                      -0.046855       0.1042
+   9      grognements                    -0.045890       0.0803
+   10     max                            -0.044262       0.0887
+   11     méconnue                       -0.038239       0.1181
+   12     gouttelettes                   -0.035773       0.0852
+   13     quinzaine                      -0.034961       0.0541
+   14     naturellement                  -0.034782       0.0395
+   15     suisses                        -0.034317       0.0877
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+mathilde                  +0.000000     +0.000086     +0.000086     0.2051
+coloris                   +0.000765     +0.000071     +0.000071     0.1156
+unisson                   +0.000757     +0.000052     +0.000052     0.0807
+max                       +0.000000     +0.000049     +0.000049     0.0887
+réverbère                 +0.000000     +0.000049     +0.000049     0.0856
+naufragés                 +0.000000     +0.000046     +0.000046     0.1042
+quinzaine                 +0.000000     +0.000043     +0.000043     0.0541
+anonyme                   +0.000000     +0.000043     +0.000043     0.0584
+présentait                +0.000000     +0.000040     +0.000040     0.0469
+carottes                  +0.000282     +0.000038     +0.000038     0.0782
+confectionner             +0.001065     +0.000035     +0.000035     0.0778
+jeudi                     +0.000000     +0.000035     +0.000035     0.0566
+yaourts                   +0.000967     +0.000033     +0.000033     0.1127
+grognements               +0.000000     +0.000031     +0.000031     0.0803
+jean                      +0.000000     +0.000029     +0.000029     0.0382
+pâtes                     +0.000000     +0.000028     +0.000028     0.0772
+naturellement             +0.000000     +0.000025     +0.000025     0.0395
+espéré                    +0.000606     +0.000025     +0.000025     0.0532
+réflexion                 +0.000000     +0.000024     +0.000024     0.0406
+cave                      +0.000000     +0.000023     +0.000023     0.0487
+logit final pour 'femme': 1.0892
+# analyse pour la classe: HOMME
+# logit: -0.8149
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mathilde                       +0.000032       0.2051
+   2      coloris                        +0.000031       0.1156
+   3      confectionner                  +0.000031       0.0778
+   4      max                            +0.000030       0.0887
+   5      unisson                        +0.000028       0.0807
+   6      quinzaine                      +0.000027       0.0541
+   7      entrain                        +0.000026       0.0607
+   8      jeudi                          +0.000023       0.0566
+   9      carottes                       +0.000021       0.0782
+   10     carrées                        +0.000021       0.0831
+   11     naufragés                      +0.000021       0.1042
+   12     pâtes                          +0.000020       0.0772
+   13     grognements                    +0.000019       0.0803
+   14     suisses                        +0.000019       0.0877
+   15     anonyme                        +0.000016       0.0584
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      incombait                      -0.000054       0.1101
+   2      méconnue                       -0.000051       0.1181
+   3      croissance                     -0.000051       0.0800
+   4      apartheid                      -0.000050       0.1640
+   5      gavés                          -0.000037       0.1215
+   6      laurence                       -0.000036       0.1174
+   7      cohen                          -0.000034       0.1281
+   8      salades                        -0.000033       0.0802
+   9      jouissance                     -0.000032       0.0638
+   10     constellé                      -0.000031       0.0999
+   11     patates                        -0.000031       0.0892
+   12     pratiques                      -0.000026       0.0597
+   13     charger                        -0.000026       0.0505
+   14     planqués                       -0.000026       0.1014
+   15     éclairé                        -0.000025       0.0465
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mathilde                       +0.000032       0.2051
+   2      coloris                        +0.000031       0.1156
+   3      confectionner                  +0.000031       0.0778
+   4      max                            +0.000030       0.0887
+   5      unisson                        +0.000028       0.0807
+   6      quinzaine                      +0.000027       0.0541
+   7      entrain                        +0.000026       0.0607
+   8      jeudi                          +0.000023       0.0566
+   9      carottes                       +0.000021       0.0782
+   10     carrées                        +0.000021       0.0831
+   11     naufragés                      +0.000021       0.1042
+   12     pâtes                          +0.000020       0.0772
+   13     grognements                    +0.000019       0.0803
+   14     suisses                        +0.000019       0.0877
+   15     anonyme                        +0.000016       0.0584
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      incombait                      -0.000054       0.1101
+   2      méconnue                       -0.000051       0.1181
+   3      croissance                     -0.000051       0.0800
+   4      apartheid                      -0.000050       0.1640
+   5      gavés                          -0.000037       0.1215
+   6      laurence                       -0.000036       0.1174
+   7      cohen                          -0.000034       0.1281
+   8      salades                        -0.000033       0.0802
+   9      jouissance                     -0.000032       0.0638
+   10     constellé                      -0.000031       0.0999
+   11     patates                        -0.000031       0.0892
+   12     pratiques                      -0.000026       0.0597
+   13     charger                        -0.000026       0.0505
+   14     planqués                       -0.000026       0.1014
+   15     éclairé                        -0.000025       0.0465
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mathilde                       +0.001564       0.2051
+   2      reproduite                     +0.001029       0.1201
+   3      végétal                        +0.000960       0.0915
+   4      apartheid                      +0.000950       0.1640
+   5      grognements                    +0.000888       0.0803
+   6      redevenu                       +0.000848       0.0687
+   7      naufragés                      +0.000764       0.1042
+   8      constellé                      +0.000763       0.0999
+   9      descente                       +0.000699       0.0527
+   10     quinzaine                      +0.000653       0.0541
+   11     ivrognes                       +0.000588       0.0882
+   12     max                            +0.000577       0.0887
+   13     boulettes                      +0.000566       0.0982
+   14     haché                          +0.000538       0.0956
+   15     ladite                         +0.000530       0.0873
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      poubelle                       -0.004222       0.4369
+   2      courgettes                     -0.001315       0.1223
+   3      périmé                         -0.001016       0.1238
+   4      épargnées                      -0.001012       0.1138
+   5      entrain                        -0.000881       0.0607
+   6      confectionner                  -0.000820       0.0778
+   7      légumes                        -0.000804       0.0961
+   8      purée                          -0.000797       0.1550
+   9      patates                        -0.000776       0.0892
+   10     intégralité                    -0.000736       0.1010
+   11     gavés                          -0.000736       0.1215
+   12     jouissance                     -0.000686       0.0638
+   13     frigo                          -0.000664       0.0772
+   14     recherche                      -0.000570       0.0351
+   15     coloris                        -0.000551       0.1156
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mathilde                       +0.052958       0.2051
+   2      reproduite                     +0.049981       0.1201
+   3      végétal                        +0.049212       0.0915
+   4      apartheid                      +0.046737       0.1640
+   5      redevenu                       +0.045599       0.0687
+   6      constellé                      +0.044020       0.0999
+   7      max                            +0.035001       0.0887
+   8      grognements                    +0.033722       0.0803
+   9      méconnue                       +0.033040       0.1181
+   10     descente                       +0.031625       0.0527
+   11     gouttelettes                   +0.030093       0.0852
+   12     quinzaine                      +0.027533       0.0541
+   13     naufragés                      +0.026193       0.1042
+   14     ivrognes                       +0.025946       0.0882
+   15     ladite                         +0.025428       0.0873
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      poubelle                       -0.182178       0.4369
+   2      courgettes                     -0.055883       0.1223
+   3      épargnées                      -0.046498       0.1138
+   4      confectionner                  -0.039508       0.0778
+   5      intégralité                    -0.038876       0.1010
+   6      entrain                        -0.038362       0.0607
+   7      périmé                         -0.036649       0.1238
+   8      jouissance                     -0.034670       0.0638
+   9      légumes                        -0.033724       0.0961
+   10     coloris                        -0.031955       0.1156
+   11     unisson                        -0.031028       0.0807
+   12     purée                          -0.030820       0.1550
+   13     gavés                          -0.029958       0.1215
+   14     frigo                          -0.029128       0.0772
+   15     recherche                      -0.026515       0.0351
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+mathilde                  +0.001564     +0.000032     +0.000032     0.2051
+coloris                   +0.000000     +0.000031     +0.000031     0.1156
+confectionner             +0.000000     +0.000031     +0.000031     0.0778
+max                       +0.000577     +0.000030     +0.000030     0.0887
+unisson                   +0.000000     +0.000028     +0.000028     0.0807
+quinzaine                 +0.000653     +0.000027     +0.000027     0.0541
+entrain                   +0.000000     +0.000026     +0.000026     0.0607
+jeudi                     +0.000139     +0.000023     +0.000023     0.0566
+carottes                  +0.000000     +0.000021     +0.000021     0.0782
+carrées                   +0.000000     +0.000021     +0.000021     0.0831
+naufragés                 +0.000764     +0.000021     +0.000021     0.1042
+pâtes                     +0.000127     +0.000020     +0.000020     0.0772
+grognements               +0.000888     +0.000019     +0.000019     0.0803
+suisses                   +0.000515     +0.000019     +0.000019     0.0877
+anonyme                   +0.000269     +0.000016     +0.000016     0.0584
+réflexion                 +0.000256     +0.000015     +0.000015     0.0406
+naturellement             +0.000479     +0.000013     +0.000013     0.0395
+fruits                    +0.000000     +0.000013     +0.000013     0.0766
+débordait                 +0.000035     +0.000013     +0.000013     0.0732
+poubelle                  +0.000000     +0.000012     +0.000012     0.4369
+logit final pour 'homme': -0.8149

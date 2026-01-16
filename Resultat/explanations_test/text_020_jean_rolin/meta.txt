@@ -1,0 +1,5 @@
+filename: (ROLIN)(Jean)(la Traversée de Bondoufle)(1)(2022)(1949)(v)(fr)(z)(z)(V)(R)(T) (1).txt
+index: 20
+first_name: jean
+last_name: rolin
+true_label: homme

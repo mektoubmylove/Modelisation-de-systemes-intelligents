@@ -1,0 +1,386 @@
+texte analysé: , zut , assez causé . décampe . vous ne passerez pas ! déclara mazeroux d un ton résolu et en étendant les bras . elle est rigolote , celle là . vous ne passerez pas . alexandre , compte jusqu à dix ....
+prédiction: HOMME (confiance: 90.6%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -1.1972
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      coïncidences                   +0.000181       0.2441
+   2      luis                           +0.000131       0.4574
+   3      disciple                       +0.000057       0.1132
+   4      articula                       +0.000051       0.0958
+   5      approuve                       +0.000040       0.0939
+   6      don                            +0.000038       0.1581
+   7      répéta                         +0.000037       0.0585
+   8      envoyant                       +0.000036       0.0925
+   9      envoya                         +0.000036       0.0691
+   10     indifférente                   +0.000031       0.0695
+   11     conservait                     +0.000030       0.0813
+   12     baissa                         +0.000028       0.0622
+   13     préfet                         +0.000025       0.2052
+   14     revolver                       +0.000025       0.1560
+   15     attachement                    +0.000022       0.0809
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      brigadier                      -0.000221       0.3538
+   2      passerez                       -0.000095       0.2441
+   3      faiblement                     -0.000059       0.0730
+   4      divan                          -0.000050       0.0830
+   5      serviteur                      -0.000050       0.0837
+   6      patron                         -0.000033       0.1077
+   7      autrefois                      -0.000032       0.0525
+   8      passionnant                    -0.000030       0.0920
+   9      dominé                         -0.000028       0.1136
+   10     ouste                          -0.000027       0.1341
+   11     braqué                         -0.000027       0.1045
+   12     causé                          -0.000026       0.0727
+   13     balle                          -0.000023       0.0595
+   14     tendu                          -0.000023       0.0486
+   15     compagnon                      -0.000021       0.0544
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      coïncidences                   +0.000181       0.2441
+   2      luis                           +0.000131       0.4574
+   3      disciple                       +0.000057       0.1132
+   4      articula                       +0.000051       0.0958
+   5      approuve                       +0.000040       0.0939
+   6      don                            +0.000038       0.1581
+   7      répéta                         +0.000037       0.0585
+   8      envoyant                       +0.000036       0.0925
+   9      envoya                         +0.000036       0.0691
+   10     indifférente                   +0.000031       0.0695
+   11     conservait                     +0.000030       0.0813
+   12     baissa                         +0.000028       0.0622
+   13     préfet                         +0.000025       0.2052
+   14     revolver                       +0.000025       0.1560
+   15     attachement                    +0.000022       0.0809
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      brigadier                      -0.000221       0.3538
+   2      passerez                       -0.000095       0.2441
+   3      faiblement                     -0.000059       0.0730
+   4      divan                          -0.000050       0.0830
+   5      serviteur                      -0.000050       0.0837
+   6      patron                         -0.000033       0.1077
+   7      autrefois                      -0.000032       0.0525
+   8      passionnant                    -0.000030       0.0920
+   9      dominé                         -0.000028       0.1136
+   10     ouste                          -0.000027       0.1341
+   11     braqué                         -0.000027       0.1045
+   12     causé                          -0.000026       0.0727
+   13     balle                          -0.000023       0.0595
+   14     tendu                          -0.000023       0.0486
+   15     compagnon                      -0.000021       0.0544
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      passerez                       +0.001069       0.2441
+   2      articula                       +0.000831       0.0958
+   3      attachement                    +0.000764       0.0809
+   4      douloureuse                    +0.000586       0.0614
+   5      faiblement                     +0.000580       0.0730
+   6      appuyant                       +0.000446       0.0677
+   7      disciple                       +0.000404       0.1132
+   8      autrefois                      +0.000342       0.0525
+   9      refrain                        +0.000334       0.0911
+   10     murmura                        +0.000322       0.0581
+   11     répéta                         +0.000312       0.0585
+   12     admiration                     +0.000303       0.0527
+   13     étendant                       +0.000291       0.1108
+   14     complice                       +0.000229       0.0579
+   15     déclara                        +0.000206       0.0628
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      brigadier                      -0.005715       0.3538
+   2      revolver                       -0.003059       0.1560
+   3      luis                           -0.002911       0.4574
+   4      préfet                         -0.002585       0.2052
+   5      demeura                        -0.001772       0.0742
+   6      canon                          -0.001368       0.0686
+   7      patron                         -0.001355       0.1077
+   8      alexandre                      -0.000941       0.0925
+   9      braqué                         -0.000914       0.1045
+   10     poing                          -0.000793       0.0480
+   11     coïncidences                   -0.000784       0.2441
+   12     balle                          -0.000739       0.0595
+   13     halte                          -0.000709       0.0783
+   14     pensif                         -0.000706       0.0869
+   15     police                         -0.000691       0.0514
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      passerez                       +0.070009       0.2441
+   2      faiblement                     +0.035938       0.0730
+   3      attachement                    +0.034178       0.0809
+   4      articula                       +0.030607       0.0958
+   5      douloureuse                    +0.023247       0.0614
+   6      autrefois                      +0.021581       0.0525
+   7      appuyant                       +0.020619       0.0677
+   8      refrain                        +0.018144       0.0911
+   9      serviteur                      +0.015229       0.0837
+   10     répéta                         +0.014959       0.0585
+   11     admiration                     +0.014051       0.0527
+   12     étendant                       +0.013839       0.1108
+   13     disciple                       +0.013495       0.1132
+   14     murmura                        +0.012903       0.0581
+   15     affectueuse                    +0.012502       0.0946
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      brigadier                      -0.224210       0.3538
+   2      revolver                       -0.127784       0.1560
+   3      préfet                         -0.107217       0.2052
+   4      luis                           -0.084766       0.4574
+   5      demeura                        -0.067321       0.0742
+   6      canon                          -0.055936       0.0686
+   7      patron                         -0.048840       0.1077
+   8      alexandre                      -0.038643       0.0925
+   9      sympathie                      -0.031895       0.0618
+   10     coïncidences                   -0.031396       0.2441
+   11     braqué                         -0.030060       0.1045
+   12     poing                          -0.029174       0.0480
+   13     ouste                          -0.027441       0.1341
+   14     balle                          -0.025102       0.0595
+   15     fit                            -0.025022       0.0463
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+coïncidences              +0.000000     +0.000181     +0.000181     0.2441
+luis                      +0.000000     +0.000131     +0.000131     0.4574
+disciple                  +0.000404     +0.000057     +0.000057     0.1132
+articula                  +0.000831     +0.000051     +0.000051     0.0958
+approuve                  +0.000036     +0.000040     +0.000040     0.0939
+don                       +0.000000     +0.000038     +0.000038     0.1581
+répéta                    +0.000312     +0.000037     +0.000037     0.0585
+envoyant                  +0.000054     +0.000036     +0.000036     0.0925
+envoya                    +0.000000     +0.000036     +0.000036     0.0691
+indifférente              +0.000000     +0.000031     +0.000031     0.0695
+conservait                +0.000192     +0.000030     +0.000030     0.0813
+baissa                    +0.000000     +0.000028     +0.000028     0.0622
+préfet                    +0.000000     +0.000025     +0.000025     0.2052
+revolver                  +0.000000     +0.000025     +0.000025     0.1560
+attachement               +0.000764     +0.000022     +0.000022     0.0809
+refrain                   +0.000334     +0.000020     +0.000020     0.0911
+stupéfait                 +0.000000     +0.000019     +0.000019     0.0734
+écria                     +0.000000     +0.000018     +0.000018     0.0661
+fit                       +0.000000     +0.000017     +0.000017     0.0463
+buter                     +0.000000     +0.000016     +0.000016     0.1071
+logit final pour 'femme': -1.1972
+# analyse pour la classe: HOMME  prédite
+# logit: 1.0629
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      luis                           +0.000118       0.4574
+   2      coïncidences                   +0.000055       0.2441
+   3      approuve                       +0.000047       0.0939
+   4      envoyant                       +0.000028       0.0925
+   5      refrain                        +0.000028       0.0911
+   6      don                            +0.000028       0.1581
+   7      zut                            +0.000024       0.1091
+   8      préfet                         +0.000024       0.2052
+   9      passionnant                    +0.000023       0.0920
+   10     ouvrit                         +0.000022       0.0523
+   11     envoya                         +0.000021       0.0691
+   12     revolver                       +0.000021       0.1560
+   13     sursauta                       +0.000018       0.0764
+   14     articula                       +0.000018       0.0958
+   15     baissa                         +0.000014       0.0622
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      brigadier                      -0.000173       0.3538
+   2      dominé                         -0.000041       0.1136
+   3      serviteur                      -0.000039       0.0837
+   4      passerez                       -0.000038       0.2441
+   5      causé                          -0.000036       0.0727
+   6      patron                         -0.000031       0.1077
+   7      osait                          -0.000027       0.0571
+   8      braqué                         -0.000026       0.1045
+   9      faiblement                     -0.000024       0.0730
+   10     buter                          -0.000023       0.1071
+   11     implacable                     -0.000022       0.0786
+   12     halte                          -0.000021       0.0783
+   13     police                         -0.000021       0.0514
+   14     étendant                       -0.000018       0.1108
+   15     répondit                       -0.000016       0.0497
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      luis                           +0.000118       0.4574
+   2      coïncidences                   +0.000055       0.2441
+   3      approuve                       +0.000047       0.0939
+   4      envoyant                       +0.000028       0.0925
+   5      refrain                        +0.000028       0.0911
+   6      don                            +0.000028       0.1581
+   7      zut                            +0.000024       0.1091
+   8      préfet                         +0.000024       0.2052
+   9      passionnant                    +0.000023       0.0920
+   10     ouvrit                         +0.000022       0.0523
+   11     envoya                         +0.000021       0.0691
+   12     revolver                       +0.000021       0.1560
+   13     sursauta                       +0.000018       0.0764
+   14     articula                       +0.000018       0.0958
+   15     baissa                         +0.000014       0.0622
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      brigadier                      -0.000173       0.3538
+   2      dominé                         -0.000041       0.1136
+   3      serviteur                      -0.000039       0.0837
+   4      passerez                       -0.000038       0.2441
+   5      causé                          -0.000036       0.0727
+   6      patron                         -0.000031       0.1077
+   7      osait                          -0.000027       0.0571
+   8      braqué                         -0.000026       0.1045
+   9      faiblement                     -0.000024       0.0730
+   10     buter                          -0.000023       0.1071
+   11     implacable                     -0.000022       0.0786
+   12     halte                          -0.000021       0.0783
+   13     police                         -0.000021       0.0514
+   14     étendant                       -0.000018       0.1108
+   15     répondit                       -0.000016       0.0497
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      brigadier                      +0.005107       0.3538
+   2      revolver                       +0.002850       0.1560
+   3      luis                           +0.002843       0.4574
+   4      préfet                         +0.002153       0.2052
+   5      demeura                        +0.001583       0.0742
+   6      patron                         +0.001266       0.1077
+   7      canon                          +0.001260       0.0686
+   8      coïncidences                   +0.000835       0.2441
+   9      alexandre                      +0.000817       0.0925
+   10     police                         +0.000667       0.0514
+   11     sympathie                      +0.000664       0.0618
+   12     braqué                         +0.000663       0.1045
+   13     halte                          +0.000659       0.0783
+   14     balle                          +0.000649       0.0595
+   15     poing                          +0.000642       0.0480
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      passerez                       -0.000761       0.2441
+   2      attachement                    -0.000701       0.0809
+   3      articula                       -0.000654       0.0958
+   4      faiblement                     -0.000540       0.0730
+   5      appuyant                       -0.000484       0.0677
+   6      disciple                       -0.000473       0.1132
+   7      douloureuse                    -0.000409       0.0614
+   8      étendant                       -0.000333       0.1108
+   9      approuve                       -0.000295       0.0939
+   10     refrain                        -0.000289       0.0911
+   11     autrefois                      -0.000287       0.0525
+   12     murmura                        -0.000261       0.0581
+   13     conservait                     -0.000250       0.0813
+   14     passionnant                    -0.000228       0.0920
+   15     serviteur                      -0.000227       0.0837
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      brigadier                      +0.187791       0.3538
+   2      luis                           +0.109745       0.4574
+   3      revolver                       +0.109528       0.1560
+   4      préfet                         +0.099169       0.2052
+   5      demeura                        +0.054766       0.0742
+   6      patron                         +0.047438       0.1077
+   7      canon                          +0.047379       0.0686
+   8      alexandre                      +0.036014       0.0925
+   9      coïncidences                   +0.028751       0.2441
+   10     sympathie                      +0.028181       0.0618
+   11     prodige                        +0.023742       0.1881
+   12     poing                          +0.023579       0.0480
+   13     pensif                         +0.023218       0.0869
+   14     don                            +0.022458       0.1581
+   15     balle                          +0.022445       0.0595
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      passerez                       -0.041080       0.2441
+   2      attachement                    -0.032260       0.0809
+   3      faiblement                     -0.026738       0.0730
+   4      articula                       -0.023561       0.0958
+   5      appuyant                       -0.021736       0.0677
+   6      disciple                       -0.019104       0.1132
+   7      douloureuse                    -0.016263       0.0614
+   8      refrain                        -0.015675       0.0911
+   9      serviteur                      -0.015475       0.0837
+   10     autrefois                      -0.015373       0.0525
+   11     étendant                       -0.014732       0.1108
+   12     répéta                         -0.012188       0.0585
+   13     murmura                        -0.010279       0.0581
+   14     tuez                           -0.009972       0.1183
+   15     admiration                     -0.008505       0.0527
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+luis                      +0.002843     +0.000118     +0.000118     0.4574
+coïncidences              +0.000835     +0.000055     +0.000055     0.2441
+approuve                  +0.000000     +0.000047     +0.000047     0.0939
+envoyant                  +0.000000     +0.000028     +0.000028     0.0925
+refrain                   +0.000000     +0.000028     +0.000028     0.0911
+don                       +0.000530     +0.000028     +0.000028     0.1581
+zut                       +0.000362     +0.000024     +0.000024     0.1091
+préfet                    +0.002153     +0.000024     +0.000024     0.2052
+passionnant               +0.000000     +0.000023     +0.000023     0.0920
+ouvrit                    +0.000001     +0.000022     +0.000022     0.0523
+envoya                    +0.000047     +0.000021     +0.000021     0.0691
+revolver                  +0.002850     +0.000021     +0.000021     0.1560
+sursauta                  +0.000134     +0.000018     +0.000018     0.0764
+articula                  +0.000000     +0.000018     +0.000018     0.0958
+baissa                    +0.000121     +0.000014     +0.000014     0.0622
+stupéfait                 +0.000283     +0.000013     +0.000013     0.0734
+animal                    +0.000158     +0.000013     +0.000013     0.0484
+indifférente              +0.000412     +0.000011     +0.000011     0.0695
+tuez                      +0.000000     +0.000010     +0.000010     0.1183
+fervent                   +0.000072     +0.000010     +0.000010     0.1136
+logit final pour 'homme': 1.0629

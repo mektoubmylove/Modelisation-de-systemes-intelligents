@@ -1,0 +1,5 @@
+filename: (KALDA)(Katrina)(le pays où les arbres n'ont pas d'ombre)(2)(2016)(1980)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 115
+first_name: katrina
+last_name: kalda
+true_label: femme

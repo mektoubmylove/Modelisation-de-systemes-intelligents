@@ -1,0 +1,5 @@
+filename: (D'OSMOND)(Adèle)(Récits d'une tante tome 3)(2)(1908)(1781)(1866)(fr)(z)(z)(P)(R)(T).txt
+index: 243
+first_name: adele
+last_name: dosmond
+true_label: femme

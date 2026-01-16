@@ -1,0 +1,386 @@
+texte analysé: qui annonçait un jour gris . ils avaient vite fait le tour du village , encore désert à cette heure très matinale , pour se retrouver devant l église . se penchant vers le garçonnet qui tenait l escon...
+prédiction: FEMME (confiance: 70.3%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.5726
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jpg                            +0.000190       0.2000
+   2      empilées                       +0.000074       0.0868
+   3      disciple                       +0.000063       0.0768
+   4      mêla                           +0.000053       0.0766
+   5      indigna                        +0.000045       0.0695
+   6      tenta                          +0.000044       0.0476
+   7      décida                         +0.000039       0.0388
+   8      basculer                       +0.000036       0.0521
+   9      alluma                         +0.000034       0.0453
+   10     délier                         +0.000033       0.0841
+   11     prêtée                         +0.000027       0.0799
+   12     durant                         +0.000027       0.0330
+   13     parvint                        +0.000025       0.0433
+   14     sortirent                      +0.000025       0.0496
+   15     fit                            +0.000024       0.0314
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      druon                          -0.000491       0.6402
+   2      forge                          -0.000092       0.1486
+   3      suggéra                        -0.000087       0.0605
+   4      profané                        -0.000076       0.1034
+   5      exclama                        -0.000068       0.0478
+   6      bander                         -0.000066       0.0792
+   7      abject                         -0.000062       0.0898
+   8      garçonnet                      -0.000062       0.0770
+   9      essayèrent                     -0.000059       0.0898
+   10     jacques                        -0.000056       0.0480
+   11     révélateur                     -0.000051       0.0833
+   12     commenta                       -0.000051       0.0659
+   13     consciencieuse                 -0.000051       0.0995
+   14     règlements                     -0.000050       0.0709
+   15     dégageait                      -0.000047       0.0508
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jpg                            +0.000190       0.2000
+   2      empilées                       +0.000074       0.0868
+   3      disciple                       +0.000063       0.0768
+   4      mêla                           +0.000053       0.0766
+   5      indigna                        +0.000045       0.0695
+   6      tenta                          +0.000044       0.0476
+   7      décida                         +0.000039       0.0388
+   8      basculer                       +0.000036       0.0521
+   9      alluma                         +0.000034       0.0453
+   10     délier                         +0.000033       0.0841
+   11     prêtée                         +0.000027       0.0799
+   12     durant                         +0.000027       0.0330
+   13     parvint                        +0.000025       0.0433
+   14     sortirent                      +0.000025       0.0496
+   15     fit                            +0.000024       0.0314
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      druon                          -0.000491       0.6402
+   2      forge                          -0.000092       0.1486
+   3      suggéra                        -0.000087       0.0605
+   4      profané                        -0.000076       0.1034
+   5      exclama                        -0.000068       0.0478
+   6      bander                         -0.000066       0.0792
+   7      abject                         -0.000062       0.0898
+   8      garçonnet                      -0.000062       0.0770
+   9      essayèrent                     -0.000059       0.0898
+   10     jacques                        -0.000056       0.0480
+   11     révélateur                     -0.000051       0.0833
+   12     commenta                       -0.000051       0.0659
+   13     consciencieuse                 -0.000051       0.0995
+   14     règlements                     -0.000050       0.0709
+   15     dégageait                      -0.000047       0.0508
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      exclama                        +0.002237       0.0478
+   2      garçonnet                      +0.002169       0.0770
+   3      commenta                       +0.001797       0.0659
+   4      sep                            +0.001757       0.3317
+   5      suggéra                        +0.001690       0.0605
+   6      détailla                       +0.001629       0.0785
+   7      acquiesça                      +0.001296       0.0536
+   8      offusqué                       +0.001275       0.0902
+   9      connivence                     +0.001073       0.0620
+   10     profané                        +0.000827       0.1034
+   11     humidité                       +0.000780       0.0455
+   12     druon                          +0.000764       0.6402
+   13     détaillait                     +0.000693       0.0749
+   14     blandine                       +0.000692       0.1192
+   15     matinale                       +0.000645       0.0569
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      forge                          -0.002378       0.1486
+   2      jpg                            -0.001526       0.2000
+   3      mêla                           -0.001354       0.0766
+   4      discerner                      -0.001302       0.0619
+   5      crucifix                       -0.001111       0.0709
+   6      pouce                          -0.001081       0.0386
+   7      fallut                         -0.001014       0.0409
+   8      ligoté                         -0.000874       0.0804
+   9      éparses                        -0.000805       0.0745
+   10     feinte                         -0.000775       0.0630
+   11     furent                         -0.000749       0.0330
+   12     mourut                         -0.000747       0.0545
+   13     village                        -0.000745       0.0651
+   14     néron                          -0.000724       0.1086
+   15     crime                          -0.000653       0.0358
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      exclama                        +0.099913       0.0478
+   2      sep                            +0.090588       0.3317
+   3      garçonnet                      +0.090231       0.0770
+   4      commenta                       +0.079852       0.0659
+   5      suggéra                        +0.074181       0.0605
+   6      détailla                       +0.062014       0.0785
+   7      acquiesça                      +0.058283       0.0536
+   8      blandine                       +0.053289       0.1192
+   9      connivence                     +0.046867       0.0620
+   10     offusqué                       +0.045397       0.0902
+   11     andré                          +0.037813       0.1748
+   12     profané                        +0.037310       0.1034
+   13     humidité                       +0.036592       0.0455
+   14     matinale                       +0.031057       0.0569
+   15     décida                         +0.027285       0.0388
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      forge                          -0.122213       0.1486
+   2      jpg                            -0.069592       0.2000
+   3      mêla                           -0.061941       0.0766
+   4      discerner                      -0.059904       0.0619
+   5      crucifix                       -0.052064       0.0709
+   6      fallut                         -0.048393       0.0409
+   7      éparses                        -0.044906       0.0745
+   8      pouce                          -0.043475       0.0386
+   9      feinte                         -0.037066       0.0630
+   10     remontèrent                    -0.037016       0.0674
+   11     village                        -0.036990       0.0651
+   12     ligoté                         -0.035703       0.0804
+   13     sortirent                      -0.034045       0.0496
+   14     furent                         -0.032389       0.0330
+   15     apprenti                       -0.030478       0.0683
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+jpg                       +0.000000     +0.000190     +0.000190     0.2000
+empilées                  +0.000544     +0.000074     +0.000074     0.0868
+disciple                  +0.000473     +0.000063     +0.000063     0.0768
+mêla                      +0.000000     +0.000053     +0.000053     0.0766
+indigna                   +0.000000     +0.000045     +0.000045     0.0695
+tenta                     +0.000000     +0.000044     +0.000044     0.0476
+décida                    +0.000508     +0.000039     +0.000039     0.0388
+basculer                  +0.000000     +0.000036     +0.000036     0.0521
+alluma                    +0.000021     +0.000034     +0.000034     0.0453
+délier                    +0.000000     +0.000033     +0.000033     0.0841
+prêtée                    +0.000000     +0.000027     +0.000027     0.0799
+durant                    +0.000000     +0.000027     +0.000027     0.0330
+parvint                   +0.000000     +0.000025     +0.000025     0.0433
+sortirent                 +0.000000     +0.000025     +0.000025     0.0496
+fit                       +0.000000     +0.000024     +0.000024     0.0314
+choeur                    +0.000030     +0.000022     +0.000022     0.0452
+située                    +0.000000     +0.000020     +0.000020     0.0481
+détaillait                +0.000693     +0.000019     +0.000019     0.0749
+assassin                  +0.000000     +0.000018     +0.000018     0.0458
+redressé                  +0.000013     +0.000017     +0.000017     0.0648
+logit final pour 'femme': 0.5726
+# analyse pour la classe: HOMME
+# logit: -0.2894
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jpg                            +0.000070       0.2000
+   2      sep                            +0.000027       0.3317
+   3      prêtée                         +0.000026       0.0799
+   4      indigna                        +0.000021       0.0695
+   5      décida                         +0.000020       0.0388
+   6      tenta                          +0.000018       0.0476
+   7      alluma                         +0.000017       0.0453
+   8      assassin                       +0.000016       0.0458
+   9      apprenti                       +0.000015       0.0683
+   10     mêla                           +0.000015       0.0766
+   11     fallut                         +0.000014       0.0409
+   12     parvint                        +0.000014       0.0433
+   13     ramassé                        +0.000013       0.0492
+   14     redressé                       +0.000013       0.0648
+   15     suggestion                     +0.000013       0.0652
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      druon                          -0.000333       0.6402
+   2      suggéra                        -0.000055       0.0605
+   3      néron                          -0.000047       0.1086
+   4      essayèrent                     -0.000043       0.0898
+   5      consciencieuse                 -0.000041       0.0995
+   6      exclama                        -0.000038       0.0478
+   7      bander                         -0.000037       0.0792
+   8      forge                          -0.000037       0.1486
+   9      commenta                       -0.000033       0.0659
+   10     détailla                       -0.000033       0.0785
+   11     profané                        -0.000032       0.1034
+   12     garçonnet                      -0.000028       0.0770
+   13     sinistre                       -0.000028       0.0393
+   14     dégageait                      -0.000027       0.0508
+   15     lieux                          -0.000027       0.0621
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jpg                            +0.000070       0.2000
+   2      sep                            +0.000027       0.3317
+   3      prêtée                         +0.000026       0.0799
+   4      indigna                        +0.000021       0.0695
+   5      décida                         +0.000020       0.0388
+   6      tenta                          +0.000018       0.0476
+   7      alluma                         +0.000017       0.0453
+   8      assassin                       +0.000016       0.0458
+   9      apprenti                       +0.000015       0.0683
+   10     mêla                           +0.000015       0.0766
+   11     fallut                         +0.000014       0.0409
+   12     parvint                        +0.000014       0.0433
+   13     ramassé                        +0.000013       0.0492
+   14     redressé                       +0.000013       0.0648
+   15     suggestion                     +0.000013       0.0652
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      druon                          -0.000333       0.6402
+   2      suggéra                        -0.000055       0.0605
+   3      néron                          -0.000047       0.1086
+   4      essayèrent                     -0.000043       0.0898
+   5      consciencieuse                 -0.000041       0.0995
+   6      exclama                        -0.000038       0.0478
+   7      bander                         -0.000037       0.0792
+   8      forge                          -0.000037       0.1486
+   9      commenta                       -0.000033       0.0659
+   10     détailla                       -0.000033       0.0785
+   11     profané                        -0.000032       0.1034
+   12     garçonnet                      -0.000028       0.0770
+   13     sinistre                       -0.000028       0.0393
+   14     dégageait                      -0.000027       0.0508
+   15     lieux                          -0.000027       0.0621
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      forge                          +0.001731       0.1486
+   2      druon                          +0.001187       0.6402
+   3      jpg                            +0.001155       0.2000
+   4      mêla                           +0.000995       0.0766
+   5      discerner                      +0.000882       0.0619
+   6      fallut                         +0.000759       0.0409
+   7      crucifix                       +0.000750       0.0709
+   8      pouce                          +0.000685       0.0386
+   9      mourut                         +0.000585       0.0545
+   10     furent                         +0.000580       0.0330
+   11     sortirent                      +0.000536       0.0496
+   12     ligoté                         +0.000535       0.0804
+   13     élevait                        +0.000480       0.0448
+   14     village                        +0.000474       0.0651
+   15     remontèrent                    +0.000470       0.0674
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      garçonnet                      -0.001593       0.0770
+   2      exclama                        -0.001459       0.0478
+   3      suggéra                        -0.001239       0.0605
+   4      détailla                       -0.001060       0.0785
+   5      commenta                       -0.001037       0.0659
+   6      acquiesça                      -0.000884       0.0536
+   7      connivence                     -0.000752       0.0620
+   8      profané                        -0.000694       0.1034
+   9      offusqué                       -0.000617       0.0902
+   10     humidité                       -0.000546       0.0455
+   11     blandine                       -0.000502       0.1192
+   12     émit                           -0.000493       0.0600
+   13     disciple                       -0.000399       0.0768
+   14     jésus                          -0.000381       0.0497
+   15     détaillait                     -0.000360       0.0749
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      forge                          +0.076901       0.1486
+   2      jpg                            +0.053359       0.2000
+   3      mêla                           +0.044710       0.0766
+   4      druon                          +0.037705       0.6402
+   5      discerner                      +0.034043       0.0619
+   6      fallut                         +0.032191       0.0409
+   7      crucifix                       +0.030735       0.0709
+   8      pouce                          +0.027851       0.0386
+   9      sortirent                      +0.023980       0.0496
+   10     remontèrent                    +0.023597       0.0674
+   11     furent                         +0.022946       0.0330
+   12     éparses                        +0.021958       0.0745
+   13     mourut                         +0.020557       0.0545
+   14     élevait                        +0.019852       0.0448
+   15     village                        +0.019708       0.0651
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      garçonnet                      -0.067930       0.0770
+   2      exclama                        -0.062845       0.0478
+   3      suggéra                        -0.053226       0.0605
+   4      commenta                       -0.044885       0.0659
+   5      détailla                       -0.041674       0.0785
+   6      blandine                       -0.038228       0.1192
+   7      acquiesça                      -0.037945       0.0536
+   8      profané                        -0.035282       0.1034
+   9      connivence                     -0.034894       0.0620
+   10     offusqué                       -0.026625       0.0902
+   11     humidité                       -0.023522       0.0455
+   12     lieux                          -0.020770       0.0621
+   13     matinale                       -0.020661       0.0569
+   14     émit                           -0.018201       0.0600
+   15     dégageait                      -0.016877       0.0508
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+jpg                       +0.001155     +0.000070     +0.000070     0.2000
+sep                       +0.000450     +0.000027     +0.000027     0.3317
+prêtée                    +0.000127     +0.000026     +0.000026     0.0799
+indigna                   +0.000453     +0.000021     +0.000021     0.0695
+décida                    +0.000000     +0.000020     +0.000020     0.0388
+tenta                     +0.000052     +0.000018     +0.000018     0.0476
+alluma                    +0.000089     +0.000017     +0.000017     0.0453
+assassin                  +0.000304     +0.000016     +0.000016     0.0458
+apprenti                  +0.000361     +0.000015     +0.000015     0.0683
+mêla                      +0.000995     +0.000015     +0.000015     0.0766
+fallut                    +0.000759     +0.000014     +0.000014     0.0409
+parvint                   +0.000371     +0.000014     +0.000014     0.0433
+ramassé                   +0.000000     +0.000013     +0.000013     0.0492
+redressé                  +0.000000     +0.000013     +0.000013     0.0648
+suggestion                +0.000195     +0.000013     +0.000013     0.0652
+révélateur                +0.000341     +0.000012     +0.000012     0.0833
+empilées                  +0.000000     +0.000011     +0.000011     0.0868
+durant                    +0.000140     +0.000011     +0.000011     0.0330
+discerner                 +0.000882     +0.000011     +0.000011     0.0619
+basculer                  +0.000000     +0.000009     +0.000009     0.0521
+logit final pour 'homme': -0.2894

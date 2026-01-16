@@ -1,0 +1,387 @@
+texte analysé: lèvres de ceux qui en parlent . le bourreau . . . cathy rabattit ses genoux contre son torse . le bourreau ? c était pas . . . chut ! attends , attends ! je ne vous ferai pas l affront de vous le prés...
+prédiction: FEMME (confiance: 87.0%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.9827
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cathy                          +0.000224       0.3670
+   2      thème                          +0.000146       0.2709
+   3      paysages                       +0.000073       0.0778
+   4      rabattit                       +0.000062       0.1016
+   5      ténébreux                      +0.000050       0.1061
+   6      affreusement                   +0.000044       0.0836
+   7      traiter                        +0.000037       0.0591
+   8      plume                          +0.000030       0.0588
+   9      bourreau                       +0.000027       0.2374
+   10     roman                          +0.000027       0.0523
+   11     élança                         +0.000025       0.0851
+   12     violente                       +0.000023       0.0567
+   13     aventures                      +0.000022       0.0595
+   14     franchement                    +0.000022       0.0553
+   15     connaissez                     +0.000020       0.0509
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      david                          -0.000096       0.2866
+   2      prédateur                      -0.000083       0.1197
+   3      sacrément                      -0.000082       0.1182
+   4      race                           -0.000068       0.0614
+   5      séduisant                      -0.000064       0.0795
+   6      confronté                      -0.000060       0.1089
+   7      replia                         -0.000055       0.1053
+   8      délicatement                   -0.000055       0.0641
+   9      ambiance                       -0.000053       0.0686
+   10     plaisanta                      -0.000053       0.1069
+   11     paradis                        -0.000049       0.0574
+   12     possibilités                   -0.000049       0.0794
+   13     souhaite                       -0.000047       0.0566
+   14     idéale                         -0.000044       0.0766
+   15     parlent                        -0.000042       0.0567
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cathy                          +0.000224       0.3670
+   2      thème                          +0.000146       0.2709
+   3      paysages                       +0.000073       0.0778
+   4      rabattit                       +0.000062       0.1016
+   5      ténébreux                      +0.000050       0.1061
+   6      affreusement                   +0.000044       0.0836
+   7      traiter                        +0.000037       0.0591
+   8      plume                          +0.000030       0.0588
+   9      bourreau                       +0.000027       0.2374
+   10     roman                          +0.000027       0.0523
+   11     élança                         +0.000025       0.0851
+   12     violente                       +0.000023       0.0567
+   13     aventures                      +0.000022       0.0595
+   14     franchement                    +0.000022       0.0553
+   15     connaissez                     +0.000020       0.0509
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      david                          -0.000096       0.2866
+   2      prédateur                      -0.000083       0.1197
+   3      sacrément                      -0.000082       0.1182
+   4      race                           -0.000068       0.0614
+   5      séduisant                      -0.000064       0.0795
+   6      confronté                      -0.000060       0.1089
+   7      replia                         -0.000055       0.1053
+   8      délicatement                   -0.000055       0.0641
+   9      ambiance                       -0.000053       0.0686
+   10     plaisanta                      -0.000053       0.1069
+   11     paradis                        -0.000049       0.0574
+   12     possibilités                   -0.000049       0.0794
+   13     souhaite                       -0.000047       0.0566
+   14     idéale                         -0.000044       0.0766
+   15     parlent                        -0.000042       0.0567
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      séduisant                      +0.001978       0.0795
+   2      plaisanta                      +0.001881       0.1069
+   3      cathy                          +0.001784       0.3670
+   4      arthur                         +0.001339       0.3160
+   5      replia                         +0.001236       0.1053
+   6      idéale                         +0.000910       0.0766
+   7      lame                           +0.000840       0.0630
+   8      emboîta                        +0.000824       0.1241
+   9      affront                        +0.000812       0.0978
+   10     internet                       +0.000794       0.0980
+   11     reposa                         +0.000761       0.0830
+   12     gai                            +0.000751       0.0675
+   13     interdits                      +0.000744       0.0894
+   14     possibilités                   +0.000736       0.0794
+   15     vacances                       +0.000715       0.1052
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      flic                           -0.001611       0.1838
+   2      glauque                        -0.001190       0.1086
+   3      type                           -0.001038       0.0964
+   4      adversaire                     -0.000983       0.0659
+   5      suicidé                        -0.000794       0.1147
+   6      rayon                          -0.000782       0.0548
+   7      thème                          -0.000747       0.2709
+   8      aventures                      -0.000746       0.0595
+   9      bourreau                       -0.000723       0.2374
+   10     abuse                          -0.000699       0.1189
+   11     feuille                        -0.000681       0.0487
+   12     matière                        -0.000646       0.0507
+   13     mystère                        -0.000644       0.0482
+   14     imagination                    -0.000625       0.0509
+   15     flics                          -0.000624       0.0854
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cathy                          +0.100021       0.3670
+   2      plaisanta                      +0.083035       0.1069
+   3      séduisant                      +0.076541       0.0795
+   4      arthur                         +0.067387       0.3160
+   5      replia                         +0.047481       0.1053
+   6      emboîta                        +0.043868       0.1241
+   7      idéale                         +0.040203       0.0766
+   8      ambiance                       +0.038488       0.0686
+   9      prédateur                      +0.036445       0.1197
+   10     interdits                      +0.036277       0.0894
+   11     vacances                       +0.033628       0.1052
+   12     internet                       +0.030594       0.0980
+   13     possibilités                   +0.030480       0.0794
+   14     gai                            +0.030224       0.0675
+   15     parlent                        +0.029723       0.0567
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      flic                           -0.057732       0.1838
+   2      adversaire                     -0.046387       0.0659
+   3      type                           -0.042492       0.0964
+   4      glauque                        -0.041616       0.1086
+   5      ténébreux                      -0.036893       0.1061
+   6      feuille                        -0.033062       0.0487
+   7      thème                          -0.032442       0.2709
+   8      suicidé                        -0.029161       0.1147
+   9      tas                            -0.028396       0.0477
+   10     plume                          -0.027967       0.0588
+   11     imagination                    -0.026949       0.0509
+   12     aventures                      -0.026525       0.0595
+   13     conscient                      -0.026096       0.0699
+   14     connaissez                     -0.025498       0.0509
+   15     matière                        -0.025249       0.0507
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+cathy                     +0.001784     +0.000224     +0.000224     0.3670
+thème                     +0.000000     +0.000146     +0.000146     0.2709
+paysages                  +0.000000     +0.000073     +0.000073     0.0778
+rabattit                  +0.000000     +0.000062     +0.000062     0.1016
+ténébreux                 +0.000000     +0.000050     +0.000050     0.1061
+affreusement              +0.000052     +0.000044     +0.000044     0.0836
+traiter                   +0.000000     +0.000037     +0.000037     0.0591
+plume                     +0.000000     +0.000030     +0.000030     0.0588
+bourreau                  +0.000000     +0.000027     +0.000027     0.2374
+roman                     +0.000000     +0.000027     +0.000027     0.0523
+élança                    +0.000197     +0.000025     +0.000025     0.0851
+violente                  +0.000000     +0.000023     +0.000023     0.0567
+aventures                 +0.000000     +0.000022     +0.000022     0.0595
+franchement               +0.000000     +0.000022     +0.000022     0.0553
+connaissez                +0.000000     +0.000020     +0.000020     0.0509
+secours                   +0.000000     +0.000019     +0.000019     0.0466
+isolé                     +0.000000     +0.000019     +0.000019     0.0773
+randonnées                +0.000372     +0.000016     +0.000016     0.1359
+leva                      +0.000084     +0.000013     +0.000013     0.0520
+présenter                 +0.000121     +0.000013     +0.000013     0.0471
+logit final pour 'femme': 0.9827
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.9143
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cathy                          +0.000163       0.3670
+   2      thème                          +0.000120       0.2709
+   3      bourreau                       +0.000087       0.2374
+   4      glauque                        +0.000048       0.1086
+   5      paysages                       +0.000041       0.0778
+   6      rabattit                       +0.000033       0.1016
+   7      ténébreux                      +0.000029       0.1061
+   8      conscient                      +0.000026       0.0699
+   9      interdits                      +0.000021       0.0894
+   10     élança                         +0.000021       0.0851
+   11     isolé                          +0.000017       0.0773
+   12     traiter                        +0.000017       0.0591
+   13     aventures                      +0.000015       0.0595
+   14     franchement                    +0.000014       0.0553
+   15     trucs                          +0.000014       0.0732
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      confronté                      -0.000052       0.1089
+   2      prédateur                      -0.000044       0.1197
+   3      david                          -0.000044       0.2866
+   4      délicatement                   -0.000043       0.0641
+   5      plaisanta                      -0.000039       0.1069
+   6      séduisant                      -0.000038       0.0795
+   7      race                           -0.000035       0.0614
+   8      sacrément                      -0.000033       0.1182
+   9      internet                       -0.000033       0.0980
+   10     suicidé                        -0.000028       0.1147
+   11     ambiance                       -0.000027       0.0686
+   12     stop                           -0.000027       0.0936
+   13     super                          -0.000025       0.0865
+   14     tueurs                         -0.000024       0.1043
+   15     flic                           -0.000024       0.1838
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cathy                          +0.000163       0.3670
+   2      thème                          +0.000120       0.2709
+   3      bourreau                       +0.000087       0.2374
+   4      glauque                        +0.000048       0.1086
+   5      paysages                       +0.000041       0.0778
+   6      rabattit                       +0.000033       0.1016
+   7      ténébreux                      +0.000029       0.1061
+   8      conscient                      +0.000026       0.0699
+   9      interdits                      +0.000021       0.0894
+   10     élança                         +0.000021       0.0851
+   11     isolé                          +0.000017       0.0773
+   12     traiter                        +0.000017       0.0591
+   13     aventures                      +0.000015       0.0595
+   14     franchement                    +0.000014       0.0553
+   15     trucs                          +0.000014       0.0732
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      confronté                      -0.000052       0.1089
+   2      prédateur                      -0.000044       0.1197
+   3      david                          -0.000044       0.2866
+   4      délicatement                   -0.000043       0.0641
+   5      plaisanta                      -0.000039       0.1069
+   6      séduisant                      -0.000038       0.0795
+   7      race                           -0.000035       0.0614
+   8      sacrément                      -0.000033       0.1182
+   9      internet                       -0.000033       0.0980
+   10     suicidé                        -0.000028       0.1147
+   11     ambiance                       -0.000027       0.0686
+   12     stop                           -0.000027       0.0936
+   13     super                          -0.000025       0.0865
+   14     tueurs                         -0.000024       0.1043
+   15     flic                           -0.000024       0.1838
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      flic                           +0.001077       0.1838
+   2      type                           +0.000847       0.0964
+   3      glauque                        +0.000766       0.1086
+   4      bourreau                       +0.000735       0.2374
+   5      adversaire                     +0.000673       0.0659
+   6      david                          +0.000621       0.2866
+   7      aventures                      +0.000592       0.0595
+   8      rayon                          +0.000557       0.0548
+   9      thème                          +0.000553       0.2709
+   10     matière                        +0.000533       0.0507
+   11     feuille                        +0.000490       0.0487
+   12     mystère                        +0.000473       0.0482
+   13     suicidé                        +0.000464       0.1147
+   14     imagination                    +0.000428       0.0509
+   15     flics                          +0.000427       0.0854
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      arthur                         -0.001523       0.3160
+   2      séduisant                      -0.001438       0.0795
+   3      plaisanta                      -0.001166       0.1069
+   4      cathy                          -0.001006       0.3670
+   5      replia                         -0.000895       0.1053
+   6      interdits                      -0.000839       0.0894
+   7      vacances                       -0.000818       0.1052
+   8      lame                           -0.000727       0.0630
+   9      internet                       -0.000717       0.0980
+   10     reposa                         -0.000695       0.0830
+   11     prédateur                      -0.000678       0.1197
+   12     idéale                         -0.000670       0.0766
+   13     gai                            -0.000604       0.0675
+   14     emboîta                        -0.000575       0.1241
+   15     délicatement                   -0.000564       0.0641
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      flic                           +0.045051       0.1838
+   2      adversaire                     +0.034937       0.0659
+   3      type                           +0.034117       0.0964
+   4      glauque                        +0.025371       0.1086
+   5      feuille                        +0.023014       0.0487
+   6      ténébreux                      +0.022840       0.1061
+   7      matière                        +0.021683       0.0507
+   8      aventures                      +0.020471       0.0595
+   9      thème                          +0.018922       0.2709
+   10     plume                          +0.018628       0.0588
+   11     suicidé                        +0.018499       0.1147
+   12     rayon                          +0.018193       0.0548
+   13     imagination                    +0.017834       0.0509
+   14     mystère                        +0.017737       0.0482
+   15     bourreau                       +0.017294       0.2374
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      arthur                         -0.066316       0.3160
+   2      cathy                          -0.058142       0.3670
+   3      séduisant                      -0.056252       0.0795
+   4      interdits                      -0.043875       0.0894
+   5      plaisanta                      -0.042714       0.1069
+   6      vacances                       -0.041471       0.1052
+   7      prédateur                      -0.040082       0.1197
+   8      replia                         -0.040068       0.1053
+   9      emboîta                        -0.034263       0.1241
+   10     idéale                         -0.030613       0.0766
+   11     ambiance                       -0.029029       0.0686
+   12     lame                           -0.027489       0.0630
+   13     internet                       -0.027142       0.0980
+   14     gai                            -0.026822       0.0675
+   15     randonnées                     -0.026601       0.1359
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+cathy                     +0.000000     +0.000163     +0.000163     0.3670
+thème                     +0.000553     +0.000120     +0.000120     0.2709
+bourreau                  +0.000735     +0.000087     +0.000087     0.2374
+glauque                   +0.000766     +0.000048     +0.000048     0.1086
+paysages                  +0.000000     +0.000041     +0.000041     0.0778
+rabattit                  +0.000000     +0.000033     +0.000033     0.1016
+ténébreux                 +0.000386     +0.000029     +0.000029     0.1061
+conscient                 +0.000370     +0.000026     +0.000026     0.0699
+interdits                 +0.000000     +0.000021     +0.000021     0.0894
+élança                    +0.000000     +0.000021     +0.000021     0.0851
+isolé                     +0.000348     +0.000017     +0.000017     0.0773
+traiter                   +0.000066     +0.000017     +0.000017     0.0591
+aventures                 +0.000592     +0.000015     +0.000015     0.0595
+franchement               +0.000000     +0.000014     +0.000014     0.0553
+trucs                     +0.000000     +0.000014     +0.000014     0.0732
+secours                   +0.000233     +0.000014     +0.000014     0.0466
+vieil                     +0.000089     +0.000013     +0.000013     0.0489
+affreusement              +0.000000     +0.000013     +0.000013     0.0836
+gai                       +0.000000     +0.000012     +0.000012     0.0675
+violente                  +0.000399     +0.000012     +0.000012     0.0567
+logit final pour 'homme': -0.9143

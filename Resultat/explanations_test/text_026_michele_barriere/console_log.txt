@@ -1,0 +1,386 @@
+texte analysé: je le connais . mais ce n est plus un manuscrit , c est un livre . il a été imprimé . non , il s agit d un manuscrit . écrit par mon mar commença constance . elle fut immédiatement interrompue par un ...
+prédiction: FEMME (confiance: 91.0%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.3364
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      constance                      +0.000117       0.0927
+   2      rédigées                       +0.000104       0.1364
+   3      domenico                       +0.000101       0.1905
+   4      dictait                        +0.000090       0.1024
+   5      illustre                       +0.000071       0.0771
+   6      aventuré                       +0.000067       0.1167
+   7      imprimé                        +0.000067       0.0766
+   8      interrompue                    +0.000048       0.0746
+   9      secrétaire                     +0.000047       0.0517
+   10     initiation                     +0.000045       0.1012
+   11     italiens                       +0.000038       0.0787
+   12     cuisinier                      +0.000038       0.2670
+   13     interrompit                    +0.000038       0.0553
+   14     rides                          +0.000036       0.0584
+   15     sillonné                       +0.000036       0.1162
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lancelot                       -0.000315       0.4650
+   2      françois                       -0.000135       0.2653
+   3      trouvera                       -0.000104       0.1163
+   4      dépenses                       -0.000096       0.1607
+   5      cessent                        -0.000092       0.0872
+   6      quentin                        -0.000090       0.1364
+   7      recueil                        -0.000084       0.0955
+   8      mar                            -0.000076       0.1317
+   9      art                            -0.000061       0.0851
+   10     reproché                       -0.000058       0.0812
+   11     admiratif                      -0.000055       0.0830
+   12     embarras                       -0.000053       0.0565
+   13     comparer                       -0.000052       0.0679
+   14     fautes                         -0.000051       0.0672
+   15     rédiger                        -0.000049       0.1475
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      constance                      +0.000117       0.0927
+   2      rédigées                       +0.000104       0.1364
+   3      domenico                       +0.000101       0.1905
+   4      dictait                        +0.000090       0.1024
+   5      illustre                       +0.000071       0.0771
+   6      aventuré                       +0.000067       0.1167
+   7      imprimé                        +0.000067       0.0766
+   8      interrompue                    +0.000048       0.0746
+   9      secrétaire                     +0.000047       0.0517
+   10     initiation                     +0.000045       0.1012
+   11     italiens                       +0.000038       0.0787
+   12     cuisinier                      +0.000038       0.2670
+   13     interrompit                    +0.000038       0.0553
+   14     rides                          +0.000036       0.0584
+   15     sillonné                       +0.000036       0.1162
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lancelot                       -0.000315       0.4650
+   2      françois                       -0.000135       0.2653
+   3      trouvera                       -0.000104       0.1163
+   4      dépenses                       -0.000096       0.1607
+   5      cessent                        -0.000092       0.0872
+   6      quentin                        -0.000090       0.1364
+   7      recueil                        -0.000084       0.0955
+   8      mar                            -0.000076       0.1317
+   9      art                            -0.000061       0.0851
+   10     reproché                       -0.000058       0.0812
+   11     admiratif                      -0.000055       0.0830
+   12     embarras                       -0.000053       0.0565
+   13     comparer                       -0.000052       0.0679
+   14     fautes                         -0.000051       0.0672
+   15     rédiger                        -0.000049       0.1475
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lancelot                       +0.005795       0.4650
+   2      recettes                       +0.003801       0.2388
+   3      quentin                        +0.001835       0.1364
+   4      admiratif                      +0.001674       0.0830
+   5      sillonné                       +0.001553       0.1162
+   6      lança                          +0.001491       0.1038
+   7      recueil                        +0.001266       0.0955
+   8      compliment                     +0.001141       0.0652
+   9      mar                            +0.001133       0.1317
+   10     écrits                         +0.000757       0.0684
+   11     bienveillance                  +0.000750       0.0657
+   12     fautes                         +0.000642       0.0672
+   13     initiation                     +0.000628       0.1012
+   14     émit                           +0.000625       0.0773
+   15     désiré                         +0.000590       0.0671
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      domenico                       -0.002471       0.1905
+   2      françois                       -0.001754       0.2653
+   3      rédigées                       -0.001351       0.1364
+   4      constance                      -0.001086       0.0927
+   5      montra                         -0.000824       0.0522
+   6      cessent                        -0.000822       0.0872
+   7      secrétaire                     -0.000720       0.0517
+   8      attendez                       -0.000695       0.0496
+   9      revint                         -0.000680       0.0465
+   10     italiens                       -0.000609       0.0787
+   11     cuisinier                      -0.000507       0.2670
+   12     renseigner                     -0.000481       0.0619
+   13     manuscrit                      -0.000442       0.1660
+   14     provoquer                      -0.000420       0.0538
+   15     lueur                          -0.000408       0.0445
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lancelot                       +0.204460       0.4650
+   2      recettes                       +0.174319       0.2388
+   3      sillonné                       +0.082154       0.1162
+   4      quentin                        +0.069996       0.1364
+   5      admiratif                      +0.063738       0.0830
+   6      lança                          +0.060170       0.1038
+   7      recueil                        +0.052633       0.0955
+   8      compliment                     +0.041989       0.0652
+   9      mar                            +0.041215       0.1317
+   10     bienveillance                  +0.034262       0.0657
+   11     dictait                        +0.030269       0.1024
+   12     interrompue                    +0.029055       0.0746
+   13     initiation                     +0.027447       0.1012
+   14     immensément                    +0.027020       0.1148
+   15     reproché                       +0.026936       0.0812
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      domenico                       -0.123602       0.1905
+   2      françois                       -0.101452       0.2653
+   3      rédigées                       -0.050314       0.1364
+   4      montra                         -0.039952       0.0522
+   5      cessent                        -0.033389       0.0872
+   6      constance                      -0.031419       0.0927
+   7      secrétaire                     -0.031405       0.0517
+   8      italiens                       -0.031374       0.0787
+   9      manuscrit                      -0.028212       0.1660
+   10     revint                         -0.028090       0.0465
+   11     attendez                       -0.027328       0.0496
+   12     cuisinier                      -0.021939       0.2670
+   13     imprimé                        -0.020158       0.0766
+   14     renseigner                     -0.020123       0.0619
+   15     provoquer                      -0.017146       0.0538
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+constance                 +0.000000     +0.000117     +0.000117     0.0927
+rédigées                  +0.000000     +0.000104     +0.000104     0.1364
+domenico                  +0.000000     +0.000101     +0.000101     0.1905
+dictait                   +0.000302     +0.000090     +0.000090     0.1024
+illustre                  +0.000000     +0.000071     +0.000071     0.0771
+aventuré                  +0.000000     +0.000067     +0.000067     0.1167
+imprimé                   +0.000000     +0.000067     +0.000067     0.0766
+interrompue               +0.000351     +0.000048     +0.000048     0.0746
+secrétaire                +0.000000     +0.000047     +0.000047     0.0517
+initiation                +0.000628     +0.000045     +0.000045     0.1012
+italiens                  +0.000000     +0.000038     +0.000038     0.0787
+cuisinier                 +0.000000     +0.000038     +0.000038     0.2670
+interrompit               +0.000000     +0.000038     +0.000038     0.0553
+rides                     +0.000000     +0.000036     +0.000036     0.0584
+sillonné                  +0.001553     +0.000036     +0.000036     0.1162
+inspiré                   +0.000000     +0.000036     +0.000036     0.0645
+bologne                   +0.000142     +0.000033     +0.000033     0.1522
+commença                  +0.000000     +0.000033     +0.000033     0.0474
+compliment                +0.001141     +0.000030     +0.000030     0.0652
+précisa                   +0.000249     +0.000029     +0.000029     0.0700
+logit final pour 'femme': 1.3364
+# analyse pour la classe: HOMME
+# logit: -0.9726
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      constance                      +0.000067       0.0927
+   2      dictait                        +0.000045       0.1024
+   3      domenico                       +0.000040       0.1905
+   4      rosit                          +0.000039       0.1269
+   5      interrompue                    +0.000034       0.0746
+   6      précisa                        +0.000031       0.0700
+   7      cuisinier                      +0.000028       0.2670
+   8      rédigées                       +0.000028       0.1364
+   9      illustre                       +0.000025       0.0771
+   10     sillonné                       +0.000025       0.1162
+   11     recettes                       +0.000024       0.2388
+   12     aventuré                       +0.000022       0.1167
+   13     gentilles                      +0.000022       0.0934
+   14     rides                          +0.000021       0.0584
+   15     imprimé                        +0.000019       0.0766
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lancelot                       -0.000202       0.4650
+   2      dépenses                       -0.000073       0.1607
+   3      recueil                        -0.000065       0.0955
+   4      trouvera                       -0.000064       0.1163
+   5      cessent                        -0.000062       0.0872
+   6      quentin                        -0.000056       0.1364
+   7      françois                       -0.000046       0.2653
+   8      indiquées                      -0.000044       0.1356
+   9      admiratif                      -0.000039       0.0830
+   10     comparer                       -0.000038       0.0679
+   11     fautes                         -0.000038       0.0672
+   12     mar                            -0.000037       0.1317
+   13     art                            -0.000033       0.0851
+   14     manuscrit                      -0.000025       0.1660
+   15     immensément                    -0.000023       0.1148
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      constance                      +0.000067       0.0927
+   2      dictait                        +0.000045       0.1024
+   3      domenico                       +0.000040       0.1905
+   4      rosit                          +0.000039       0.1269
+   5      interrompue                    +0.000034       0.0746
+   6      précisa                        +0.000031       0.0700
+   7      cuisinier                      +0.000028       0.2670
+   8      rédigées                       +0.000028       0.1364
+   9      illustre                       +0.000025       0.0771
+   10     sillonné                       +0.000025       0.1162
+   11     recettes                       +0.000024       0.2388
+   12     aventuré                       +0.000022       0.1167
+   13     gentilles                      +0.000022       0.0934
+   14     rides                          +0.000021       0.0584
+   15     imprimé                        +0.000019       0.0766
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lancelot                       -0.000202       0.4650
+   2      dépenses                       -0.000073       0.1607
+   3      recueil                        -0.000065       0.0955
+   4      trouvera                       -0.000064       0.1163
+   5      cessent                        -0.000062       0.0872
+   6      quentin                        -0.000056       0.1364
+   7      françois                       -0.000046       0.2653
+   8      indiquées                      -0.000044       0.1356
+   9      admiratif                      -0.000039       0.0830
+   10     comparer                       -0.000038       0.0679
+   11     fautes                         -0.000038       0.0672
+   12     mar                            -0.000037       0.1317
+   13     art                            -0.000033       0.0851
+   14     manuscrit                      -0.000025       0.1660
+   15     immensément                    -0.000023       0.1148
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      domenico                       +0.001947       0.1905
+   2      rédigées                       +0.001029       0.1364
+   3      françois                       +0.001012       0.2653
+   4      constance                      +0.000839       0.0927
+   5      montra                         +0.000576       0.0522
+   6      cuisinier                      +0.000537       0.2670
+   7      attendez                       +0.000518       0.0496
+   8      secrétaire                     +0.000497       0.0517
+   9      revint                         +0.000490       0.0465
+   10     cessent                        +0.000473       0.0872
+   11     rédiger                        +0.000388       0.1475
+   12     renseigner                     +0.000370       0.0619
+   13     provoquer                      +0.000361       0.0538
+   14     lueur                          +0.000344       0.0445
+   15     italiens                       +0.000333       0.0787
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lancelot                       -0.004019       0.4650
+   2      recettes                       -0.002454       0.2388
+   3      quentin                        -0.001431       0.1364
+   4      admiratif                      -0.001310       0.0830
+   5      lança                          -0.001073       0.1038
+   6      sillonné                       -0.000974       0.1162
+   7      recueil                        -0.000873       0.0955
+   8      compliment                     -0.000724       0.0652
+   9      mar                            -0.000715       0.1317
+   10     bienveillance                  -0.000503       0.0657
+   11     écrits                         -0.000502       0.0684
+   12     émit                           -0.000463       0.0773
+   13     sifflement                     -0.000446       0.0664
+   14     initiation                     -0.000420       0.1012
+   15     reproché                       -0.000417       0.0812
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      domenico                       +0.090642       0.1905
+   2      françois                       +0.058173       0.2653
+   3      rédigées                       +0.038866       0.1364
+   4      montra                         +0.027083       0.0522
+   5      cessent                        +0.024731       0.0872
+   6      constance                      +0.023862       0.0927
+   7      italiens                       +0.020976       0.0787
+   8      secrétaire                     +0.020654       0.0517
+   9      attendez                       +0.019361       0.0496
+   10     cuisinier                      +0.018317       0.2670
+   11     manuscrit                      +0.017675       0.1660
+   12     revint                         +0.017043       0.0465
+   13     imprimé                        +0.016313       0.0766
+   14     renseigner                     +0.015959       0.0619
+   15     dépenses                       +0.015524       0.1607
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lancelot                       -0.119207       0.4650
+   2      recettes                       -0.104840       0.2388
+   3      quentin                        -0.054709       0.1364
+   4      admiratif                      -0.048975       0.0830
+   5      sillonné                       -0.045955       0.1162
+   6      lança                          -0.039334       0.1038
+   7      recueil                        -0.030112       0.0955
+   8      mar                            -0.027234       0.1317
+   9      compliment                     -0.024769       0.0652
+   10     rosit                          -0.023690       0.1269
+   11     bienveillance                  -0.023067       0.0657
+   12     reproché                       -0.020361       0.0812
+   13     interrompue                    -0.019209       0.0746
+   14     initiation                     -0.018618       0.1012
+   15     cuisiniers                     -0.018477       0.1191
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+constance                 +0.000839     +0.000067     +0.000067     0.0927
+dictait                   +0.000000     +0.000045     +0.000045     0.1024
+domenico                  +0.001947     +0.000040     +0.000040     0.1905
+rosit                     +0.000000     +0.000039     +0.000039     0.1269
+interrompue               +0.000000     +0.000034     +0.000034     0.0746
+précisa                   +0.000000     +0.000031     +0.000031     0.0700
+cuisinier                 +0.000537     +0.000028     +0.000028     0.2670
+rédigées                  +0.001029     +0.000028     +0.000028     0.1364
+illustre                  +0.000177     +0.000025     +0.000025     0.0771
+sillonné                  +0.000000     +0.000025     +0.000025     0.1162
+recettes                  +0.000000     +0.000024     +0.000024     0.2388
+aventuré                  +0.000039     +0.000022     +0.000022     0.1167
+gentilles                 +0.000000     +0.000022     +0.000022     0.0934
+rides                     +0.000093     +0.000021     +0.000021     0.0584
+imprimé                   +0.000292     +0.000019     +0.000019     0.0766
+initiation                +0.000000     +0.000017     +0.000017     0.1012
+secrétaire                +0.000497     +0.000016     +0.000016     0.0517
+inspiré                   +0.000175     +0.000016     +0.000016     0.0645
+participer                +0.000000     +0.000013     +0.000013     0.0580
+secoua                    +0.000000     +0.000012     +0.000012     0.0550
+logit final pour 'homme': -0.9726

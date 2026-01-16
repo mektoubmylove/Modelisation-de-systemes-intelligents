@@ -1,0 +1,5 @@
+filename: (FOUCHET)(Lorraine)(24 heures de trop)(2)(2001)(1956)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 17
+first_name: lorraine
+last_name: fouchet
+true_label: femme

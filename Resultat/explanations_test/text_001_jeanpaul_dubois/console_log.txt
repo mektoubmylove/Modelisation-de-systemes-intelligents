@@ -1,0 +1,387 @@
+texte analysé: un héritier spolié . j appris donc à vivre seul avec un chien , du tabac et suffisamment de souvenirs pour éprouver toutes sortes de regrets . le départ d anna me confrontait à ma solitude , à mon iso...
+prédiction: FEMME (confiance: 54.3%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.1096
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      création                       +0.000129       0.0743
+   2      portugal                       +0.000113       0.1372
+   3      vancouver                      +0.000089       0.1651
+   4      natif                          +0.000084       0.1313
+   5      exiler                         +0.000083       0.1323
+   6      mortier                        +0.000073       0.1232
+   7      obstination                    +0.000070       0.0812
+   8      chaleurs                       +0.000061       0.1129
+   9      illumination                   +0.000056       0.1139
+   10     outils                         +0.000052       0.0696
+   11     assurance                      +0.000051       0.0528
+   12     fumer                          +0.000049       0.0629
+   13     enduit                         +0.000048       0.1165
+   14     éprouvé                        +0.000043       0.0643
+   15     chaises                        +0.000043       0.0551
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      humbles                        -0.000126       0.0999
+   2      enduits                        -0.000114       0.1464
+   3      extravagantes                  -0.000104       0.1328
+   4      proches                        -0.000102       0.0546
+   5      fondations                     -0.000102       0.1108
+   6      traitait                       -0.000102       0.0773
+   7      onctueux                       -0.000097       0.1313
+   8      thèses                         -0.000083       0.1436
+   9      inspiration                    -0.000072       0.0643
+   10     souviens                       -0.000067       0.0456
+   11     assombri                       -0.000066       0.1111
+   12     maçon                          -0.000059       0.1168
+   13     université                     -0.000058       0.0790
+   14     pénibles                       -0.000057       0.0853
+   15     chaux                          -0.000056       0.0961
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      création                       +0.000129       0.0743
+   2      portugal                       +0.000113       0.1372
+   3      vancouver                      +0.000089       0.1651
+   4      natif                          +0.000084       0.1313
+   5      exiler                         +0.000083       0.1323
+   6      mortier                        +0.000073       0.1232
+   7      obstination                    +0.000070       0.0812
+   8      chaleurs                       +0.000061       0.1129
+   9      illumination                   +0.000056       0.1139
+   10     outils                         +0.000052       0.0696
+   11     assurance                      +0.000051       0.0528
+   12     fumer                          +0.000049       0.0629
+   13     enduit                         +0.000048       0.1165
+   14     éprouvé                        +0.000043       0.0643
+   15     chaises                        +0.000043       0.0551
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      humbles                        -0.000126       0.0999
+   2      enduits                        -0.000114       0.1464
+   3      extravagantes                  -0.000104       0.1328
+   4      proches                        -0.000102       0.0546
+   5      fondations                     -0.000102       0.1108
+   6      traitait                       -0.000102       0.0773
+   7      onctueux                       -0.000097       0.1313
+   8      thèses                         -0.000083       0.1436
+   9      inspiration                    -0.000072       0.0643
+   10     souviens                       -0.000067       0.0456
+   11     assombri                       -0.000066       0.1111
+   12     maçon                          -0.000059       0.1168
+   13     université                     -0.000058       0.0790
+   14     pénibles                       -0.000057       0.0853
+   15     chaux                          -0.000056       0.0961
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      onctueux                       +0.002012       0.1313
+   2      vancouver                      +0.001987       0.1651
+   3      anna                           +0.001774       0.1117
+   4      individuels                    +0.001563       0.1416
+   5      assombri                       +0.001535       0.1111
+   6      fondations                     +0.001461       0.1108
+   7      regrets                        +0.001390       0.0678
+   8      féminines                      +0.001261       0.1001
+   9      proches                        +0.001237       0.0546
+   10     détestait                      +0.001102       0.0680
+   11     université                     +0.001041       0.0790
+   12     laver                          +0.001003       0.0544
+   13     héritier                       +0.000991       0.0815
+   14     mortier                        +0.000911       0.1232
+   15     délicats                       +0.000858       0.1650
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      briques                        -0.002992       0.1527
+   2      portugal                       -0.002544       0.1372
+   3      truelle                        -0.002542       0.1565
+   4      manoeuvre                      -0.002190       0.0680
+   5      espagnols                      -0.002027       0.1069
+   6      exiler                         -0.001700       0.1323
+   7      dresser                        -0.001391       0.0642
+   8      obscure                        -0.001310       0.0664
+   9      processus                      -0.001267       0.0961
+   10     travaux                        -0.001230       0.1021
+   11     fumer                          -0.001150       0.0629
+   12     tiré                           -0.001141       0.0472
+   13     illumination                   -0.001118       0.1139
+   14     pavillons                      -0.001114       0.1080
+   15     natif                          -0.001060       0.1313
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      onctueux                       +0.108811       0.1313
+   2      vancouver                      +0.090554       0.1651
+   3      assombri                       +0.088247       0.1111
+   4      anna                           +0.086906       0.1117
+   5      fondations                     +0.078906       0.1108
+   6      regrets                        +0.074586       0.0678
+   7      individuels                    +0.073424       0.1416
+   8      proches                        +0.066404       0.0546
+   9      mortier                        +0.058763       0.1232
+   10     université                     +0.057422       0.0790
+   11     détestait                      +0.055403       0.0680
+   12     héritier                       +0.050251       0.0815
+   13     laver                          +0.050023       0.0544
+   14     respectais                     +0.048566       0.1520
+   15     délicats                       +0.047831       0.1650
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      briques                        -0.148424       0.1527
+   2      portugal                       -0.142287       0.1372
+   3      truelle                        -0.130350       0.1565
+   4      manoeuvre                      -0.107978       0.0680
+   5      espagnols                      -0.099682       0.1069
+   6      exiler                         -0.086411       0.1323
+   7      dresser                        -0.075772       0.0642
+   8      travaux                        -0.070224       0.1021
+   9      obscure                        -0.067059       0.0664
+   10     pavillons                      -0.057368       0.1080
+   11     fumer                          -0.054203       0.0629
+   12     natif                          -0.053658       0.1313
+   13     tiré                           -0.051881       0.0472
+   14     espagnol                       -0.050094       0.0856
+   15     maçon                          -0.049954       0.1168
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+création                  +0.000000     +0.000129     +0.000129     0.0743
+portugal                  +0.000000     +0.000113     +0.000113     0.1372
+vancouver                 +0.001987     +0.000089     +0.000089     0.1651
+natif                     +0.000000     +0.000084     +0.000084     0.1313
+exiler                    +0.000000     +0.000083     +0.000083     0.1323
+mortier                   +0.000911     +0.000073     +0.000073     0.1232
+obstination               +0.000000     +0.000070     +0.000070     0.0812
+chaleurs                  +0.000000     +0.000061     +0.000061     0.1129
+illumination              +0.000000     +0.000056     +0.000056     0.1139
+outils                    +0.000000     +0.000052     +0.000052     0.0696
+assurance                 +0.000000     +0.000051     +0.000051     0.0528
+fumer                     +0.000000     +0.000049     +0.000049     0.0629
+enduit                    +0.000000     +0.000048     +0.000048     0.1165
+éprouvé                   +0.000000     +0.000043     +0.000043     0.0643
+chaises                   +0.000000     +0.000043     +0.000043     0.0551
+espagnol                  +0.000000     +0.000041     +0.000041     0.0856
+délicats                  +0.000858     +0.000039     +0.000039     0.1650
+individuels               +0.001563     +0.000039     +0.000039     0.1416
+tiré                      +0.000000     +0.000038     +0.000038     0.0472
+complexité                +0.000325     +0.000037     +0.000037     0.1172
+logit final pour 'femme': 0.1096
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.0621
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      exiler                         +0.000120       0.1323
+   2      individuels                    +0.000095       0.1416
+   3      chaleurs                       +0.000080       0.1129
+   4      nettoyés                       +0.000074       0.1429
+   5      natif                          +0.000064       0.1313
+   6      espagnol                       +0.000064       0.0856
+   7      mortier                        +0.000060       0.1232
+   8      vancouver                      +0.000048       0.1651
+   9      éprouvé                        +0.000046       0.0643
+   10     atteler                        +0.000045       0.1162
+   11     portugal                       +0.000043       0.1372
+   12     création                       +0.000040       0.0743
+   13     obstination                    +0.000034       0.0812
+   14     enduit                         +0.000033       0.1165
+   15     outils                         +0.000032       0.0696
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      da                             -0.000138       0.2372
+   2      fondations                     -0.000117       0.1108
+   3      onctueux                       -0.000106       0.1313
+   4      humbles                        -0.000088       0.0999
+   5      enduits                        -0.000068       0.1464
+   6      extravagantes                  -0.000068       0.1328
+   7      proches                        -0.000061       0.0546
+   8      maçon                          -0.000058       0.1168
+   9      manoeuvre                      -0.000056       0.0680
+   10     truelle                        -0.000055       0.1565
+   11     devenaient                     -0.000052       0.0671
+   12     pénibles                       -0.000047       0.0853
+   13     préparait                      -0.000047       0.0583
+   14     conseils                       -0.000045       0.0553
+   15     féminines                      -0.000043       0.1001
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      exiler                         +0.000120       0.1323
+   2      individuels                    +0.000095       0.1416
+   3      chaleurs                       +0.000080       0.1129
+   4      nettoyés                       +0.000074       0.1429
+   5      natif                          +0.000064       0.1313
+   6      espagnol                       +0.000064       0.0856
+   7      mortier                        +0.000060       0.1232
+   8      vancouver                      +0.000048       0.1651
+   9      éprouvé                        +0.000046       0.0643
+   10     atteler                        +0.000045       0.1162
+   11     portugal                       +0.000043       0.1372
+   12     création                       +0.000040       0.0743
+   13     obstination                    +0.000034       0.0812
+   14     enduit                         +0.000033       0.1165
+   15     outils                         +0.000032       0.0696
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      da                             -0.000138       0.2372
+   2      fondations                     -0.000117       0.1108
+   3      onctueux                       -0.000106       0.1313
+   4      humbles                        -0.000088       0.0999
+   5      enduits                        -0.000068       0.1464
+   6      extravagantes                  -0.000068       0.1328
+   7      proches                        -0.000061       0.0546
+   8      maçon                          -0.000058       0.1168
+   9      manoeuvre                      -0.000056       0.0680
+   10     truelle                        -0.000055       0.1565
+   11     devenaient                     -0.000052       0.0671
+   12     pénibles                       -0.000047       0.0853
+   13     préparait                      -0.000047       0.0583
+   14     conseils                       -0.000045       0.0553
+   15     féminines                      -0.000043       0.1001
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      briques                        +0.002726       0.1527
+   2      portugal                       +0.002442       0.1372
+   3      truelle                        +0.002406       0.1565
+   4      manoeuvre                      +0.002118       0.0680
+   5      exiler                         +0.001655       0.1323
+   6      espagnols                      +0.001554       0.1069
+   7      fumer                          +0.001259       0.0629
+   8      obscure                        +0.001248       0.0664
+   9      processus                      +0.001218       0.0961
+   10     dresser                        +0.001162       0.0642
+   11     pavillons                      +0.001094       0.1080
+   12     tiré                           +0.001090       0.0472
+   13     illumination                   +0.001079       0.1139
+   14     natif                          +0.001076       0.1313
+   15     travaux                        +0.000924       0.1021
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      onctueux                       -0.001912       0.1313
+   2      assombri                       -0.001774       0.1111
+   3      individuels                    -0.001677       0.1416
+   4      anna                           -0.001666       0.1117
+   5      vancouver                      -0.001446       0.1651
+   6      fondations                     -0.001364       0.1108
+   7      mortier                        -0.001201       0.1232
+   8      féminines                      -0.001116       0.1001
+   9      regrets                        -0.001065       0.0678
+   10     proches                        -0.001061       0.0546
+   11     détestait                      -0.001054       0.0680
+   12     université                     -0.000940       0.0790
+   13     laver                          -0.000888       0.0544
+   14     respectais                     -0.000843       0.1520
+   15     héritier                       -0.000793       0.0815
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      portugal                       +0.134070       0.1372
+   2      briques                        +0.132357       0.1527
+   3      truelle                        +0.116000       0.1565
+   4      manoeuvre                      +0.098477       0.0680
+   5      exiler                         +0.082830       0.1323
+   6      espagnols                      +0.074808       0.1069
+   7      dresser                        +0.064350       0.0642
+   8      fumer                          +0.055740       0.0629
+   9      obscure                        +0.052535       0.0664
+   10     pavillons                      +0.051342       0.1080
+   11     natif                          +0.049321       0.1313
+   12     tiré                           +0.046752       0.0472
+   13     travaux                        +0.046634       0.1021
+   14     bâti                           +0.046075       0.0802
+   15     minérale                       +0.045173       0.1094
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      onctueux                       -0.095286       0.1313
+   2      assombri                       -0.094267       0.1111
+   3      anna                           -0.083937       0.1117
+   4      individuels                    -0.077441       0.1416
+   5      mortier                        -0.075448       0.1232
+   6      fondations                     -0.065976       0.1108
+   7      vancouver                      -0.064678       0.1651
+   8      proches                        -0.056177       0.0546
+   9      regrets                        -0.055863       0.0678
+   10     respectais                     -0.054429       0.1520
+   11     détestait                      -0.051074       0.0680
+   12     université                     -0.049180       0.0790
+   13     héritier                       -0.044959       0.0815
+   14     extravagantes                  -0.040633       0.1328
+   15     néanmoins                      -0.040275       0.0558
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+exiler                    +0.001655     +0.000120     +0.000120     0.1323
+individuels               +0.000000     +0.000095     +0.000095     0.1416
+chaleurs                  +0.000702     +0.000080     +0.000080     0.1129
+nettoyés                  +0.000000     +0.000074     +0.000074     0.1429
+natif                     +0.001076     +0.000064     +0.000064     0.1313
+espagnol                  +0.000807     +0.000064     +0.000064     0.0856
+mortier                   +0.000000     +0.000060     +0.000060     0.1232
+vancouver                 +0.000000     +0.000048     +0.000048     0.1651
+éprouvé                   +0.000574     +0.000046     +0.000046     0.0643
+atteler                   +0.000000     +0.000045     +0.000045     0.1162
+portugal                  +0.002442     +0.000043     +0.000043     0.1372
+création                  +0.000526     +0.000040     +0.000040     0.0743
+obstination               +0.000151     +0.000034     +0.000034     0.0812
+enduit                    +0.000130     +0.000033     +0.000033     0.1165
+outils                    +0.000000     +0.000032     +0.000032     0.0696
+arrivais                  +0.000000     +0.000030     +0.000030     0.0803
+répétait                  +0.000179     +0.000028     +0.000028     0.0568
+suivais                   +0.000021     +0.000028     +0.000028     0.0951
+telles                    +0.000051     +0.000027     +0.000027     0.0557
+illumination              +0.001079     +0.000024     +0.000024     0.1139
+logit final pour 'homme': -0.0621

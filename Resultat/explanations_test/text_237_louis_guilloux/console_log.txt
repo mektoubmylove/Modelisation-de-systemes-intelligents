@@ -1,0 +1,387 @@
+texte analysé: tu m entends ? sinon , c est le coeur qui souffre , les poumons , le foie , tout l organisme . c est ce que je me tue à leur dire , acheva t il en se plantant devant nabucet , les jambes écartées . à ...
+prédiction: FEMME (confiance: 68.6%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.4006
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      capitaine                      +0.000180       0.3678
+   2      paravent                       +0.000169       0.2302
+   3      tenons                         +0.000105       0.1097
+   4      redescendit                    +0.000085       0.1020
+   5      porto                          +0.000067       0.1236
+   6      hon                            +0.000062       0.1939
+   7      grognement                     +0.000060       0.0978
+   8      versa                          +0.000060       0.0814
+   9      étonnamment                    +0.000060       0.0978
+   10     acrobates                      +0.000052       0.1573
+   11     tue                            +0.000045       0.1090
+   12     jambe                          +0.000043       0.1696
+   13     latérale                       +0.000042       0.1233
+   14     brève                          +0.000041       0.0667
+   15     once                           +0.000036       0.1236
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vieillesse                     -0.000123       0.0858
+   2      hanches                        -0.000111       0.1299
+   3      commencez                      -0.000102       0.2263
+   4      gaie                           -0.000100       0.1733
+   5      horizontale                    -0.000083       0.1083
+   6      verticale                      -0.000080       0.1000
+   7      écartées                       -0.000074       0.0953
+   8      plantant                       -0.000073       0.1202
+   9      suffira                        -0.000064       0.0855
+   10     dérange                        -0.000056       0.0716
+   11     souffre                        -0.000054       0.0626
+   12     mettant                        -0.000052       0.0587
+   13     diem                           -0.000050       0.2158
+   14     respire                        -0.000047       0.0697
+   15     culture                        -0.000046       0.0681
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      capitaine                      +0.000180       0.3678
+   2      paravent                       +0.000169       0.2302
+   3      tenons                         +0.000105       0.1097
+   4      redescendit                    +0.000085       0.1020
+   5      porto                          +0.000067       0.1236
+   6      hon                            +0.000062       0.1939
+   7      grognement                     +0.000060       0.0978
+   8      versa                          +0.000060       0.0814
+   9      étonnamment                    +0.000060       0.0978
+   10     acrobates                      +0.000052       0.1573
+   11     tue                            +0.000045       0.1090
+   12     jambe                          +0.000043       0.1696
+   13     latérale                       +0.000042       0.1233
+   14     brève                          +0.000041       0.0667
+   15     once                           +0.000036       0.1236
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vieillesse                     -0.000123       0.0858
+   2      hanches                        -0.000111       0.1299
+   3      commencez                      -0.000102       0.2263
+   4      gaie                           -0.000100       0.1733
+   5      horizontale                    -0.000083       0.1083
+   6      verticale                      -0.000080       0.1000
+   7      écartées                       -0.000074       0.0953
+   8      plantant                       -0.000073       0.1202
+   9      suffira                        -0.000064       0.0855
+   10     dérange                        -0.000056       0.0716
+   11     souffre                        -0.000054       0.0626
+   12     mettant                        -0.000052       0.0587
+   13     diem                           -0.000050       0.2158
+   14     respire                        -0.000047       0.0697
+   15     culture                        -0.000046       0.0681
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gaie                           +0.004503       0.1733
+   2      pouf                           +0.002328       0.1391
+   3      poumons                        +0.001714       0.1389
+   4      once                           +0.001595       0.1236
+   5      exécutèrent                    +0.001147       0.1614
+   6      étonnamment                    +0.001142       0.0978
+   7      suédoise                       +0.001020       0.1589
+   8      conservé                       +0.000968       0.0722
+   9      acrobates                      +0.000961       0.1573
+   10     respire                        +0.000942       0.0697
+   11     craint                         +0.000883       0.0630
+   12     vieillesse                     +0.000829       0.0858
+   13     rarement                       +0.000818       0.0536
+   14     hanches                        +0.000813       0.1299
+   15     hum                            +0.000804       0.1006
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      capitaine                      -0.005592       0.3678
+   2      diem                           -0.002846       0.2158
+   3      commencez                      -0.002195       0.2263
+   4      tenons                         -0.002029       0.1097
+   5      organisme                      -0.001592       0.1030
+   6      verticale                      -0.001544       0.1000
+   7      pareils                        -0.001490       0.0690
+   8      halte                          -0.001091       0.0847
+   9      permets                        -0.000996       0.0865
+   10     horizontale                    -0.000921       0.1083
+   11     méthode                        -0.000811       0.0747
+   12     souffre                        -0.000777       0.0626
+   13     second                         -0.000753       0.0494
+   14     foie                           -0.000744       0.0838
+   15     hein                           -0.000700       0.1171
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gaie                           +0.234056       0.1733
+   2      pouf                           +0.130346       0.1391
+   3      once                           +0.093271       0.1236
+   4      poumons                        +0.078296       0.1389
+   5      suédoise                       +0.063739       0.1589
+   6      exécutèrent                    +0.063016       0.1614
+   7      acrobates                      +0.059863       0.1573
+   8      conservé                       +0.059456       0.0722
+   9      étonnamment                    +0.054897       0.0978
+   10     paravent                       +0.049573       0.2302
+   11     vieillesse                     +0.048615       0.0858
+   12     craint                         +0.046888       0.0630
+   13     chargée                        +0.044757       0.0625
+   14     élevèrent                      +0.044495       0.1151
+   15     respire                        +0.044069       0.0697
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      capitaine                      -0.264941       0.3678
+   2      diem                           -0.158314       0.2158
+   3      tenons                         -0.110763       0.1097
+   4      commencez                      -0.106274       0.2263
+   5      pareils                        -0.080527       0.0690
+   6      organisme                      -0.078185       0.1030
+   7      verticale                      -0.070817       0.1000
+   8      halte                          -0.056626       0.0847
+   9      permets                        -0.052917       0.0865
+   10     foie                           -0.048344       0.0838
+   11     second                         -0.046171       0.0494
+   12     souffre                        -0.045712       0.0626
+   13     méthode                        -0.039369       0.0747
+   14     versa                          -0.039197       0.0814
+   15     horizontale                    -0.038872       0.1083
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+capitaine                 +0.000000     +0.000180     +0.000180     0.3678
+paravent                  +0.000773     +0.000169     +0.000169     0.2302
+tenons                    +0.000000     +0.000105     +0.000105     0.1097
+redescendit               +0.000000     +0.000085     +0.000085     0.1020
+porto                     +0.000000     +0.000067     +0.000067     0.1236
+hon                       +0.000255     +0.000062     +0.000062     0.1939
+grognement                +0.000000     +0.000060     +0.000060     0.0978
+versa                     +0.000000     +0.000060     +0.000060     0.0814
+étonnamment               +0.001142     +0.000060     +0.000060     0.0978
+acrobates                 +0.000961     +0.000052     +0.000052     0.1573
+tue                       +0.000287     +0.000045     +0.000045     0.1090
+jambe                     +0.000000     +0.000043     +0.000043     0.1696
+latérale                  +0.000371     +0.000042     +0.000042     0.1233
+brève                     +0.000000     +0.000041     +0.000041     0.0667
+once                      +0.001595     +0.000036     +0.000036     0.1236
+exécutèrent               +0.001147     +0.000019     +0.000019     0.1614
+reprit                    +0.000000     +0.000017     +0.000017     0.0574
+habille                   +0.000000     +0.000014     +0.000014     0.0924
+poussa                    +0.000000     +0.000013     +0.000013     0.0609
+précisément               +0.000000     +0.000013     +0.000013     0.0594
+logit final pour 'femme': 0.4006
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.3794
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      capitaine                      +0.000079       0.3678
+   2      tenons                         +0.000056       0.1097
+   3      paravent                       +0.000048       0.2302
+   4      hon                            +0.000032       0.1939
+   5      exécutèrent                    +0.000026       0.1614
+   6      porto                          +0.000024       0.1236
+   7      brève                          +0.000023       0.0667
+   8      tue                            +0.000017       0.1090
+   9      suédoise                       +0.000017       0.1589
+   10     étonnamment                    +0.000016       0.0978
+   11     grognement                     +0.000011       0.0978
+   12     once                           +0.000011       0.1236
+   13     acrobates                      +0.000010       0.1573
+   14     reprit                         +0.000009       0.0574
+   15     versa                          +0.000009       0.0814
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      commencez                      -0.000055       0.2263
+   2      vieillesse                     -0.000053       0.0858
+   3      hanches                        -0.000048       0.1299
+   4      écartées                       -0.000044       0.0953
+   5      verticale                      -0.000043       0.1000
+   6      diem                           -0.000042       0.2158
+   7      carpe                          -0.000034       0.1216
+   8      gaie                           -0.000034       0.1733
+   9      hum                            -0.000032       0.1006
+   10     croisa                         -0.000031       0.0795
+   11     plantant                       -0.000030       0.1202
+   12     élevèrent                      -0.000028       0.1151
+   13     souffre                        -0.000026       0.0626
+   14     permettre                      -0.000026       0.0536
+   15     suffira                        -0.000026       0.0855
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      capitaine                      +0.000079       0.3678
+   2      tenons                         +0.000056       0.1097
+   3      paravent                       +0.000048       0.2302
+   4      hon                            +0.000032       0.1939
+   5      exécutèrent                    +0.000026       0.1614
+   6      porto                          +0.000024       0.1236
+   7      brève                          +0.000023       0.0667
+   8      tue                            +0.000017       0.1090
+   9      suédoise                       +0.000017       0.1589
+   10     étonnamment                    +0.000016       0.0978
+   11     grognement                     +0.000011       0.0978
+   12     once                           +0.000011       0.1236
+   13     acrobates                      +0.000010       0.1573
+   14     reprit                         +0.000009       0.0574
+   15     versa                          +0.000009       0.0814
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      commencez                      -0.000055       0.2263
+   2      vieillesse                     -0.000053       0.0858
+   3      hanches                        -0.000048       0.1299
+   4      écartées                       -0.000044       0.0953
+   5      verticale                      -0.000043       0.1000
+   6      diem                           -0.000042       0.2158
+   7      carpe                          -0.000034       0.1216
+   8      gaie                           -0.000034       0.1733
+   9      hum                            -0.000032       0.1006
+   10     croisa                         -0.000031       0.0795
+   11     plantant                       -0.000030       0.1202
+   12     élevèrent                      -0.000028       0.1151
+   13     souffre                        -0.000026       0.0626
+   14     permettre                      -0.000026       0.0536
+   15     suffira                        -0.000026       0.0855
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      capitaine                      +0.003296       0.3678
+   2      diem                           +0.001885       0.2158
+   3      tenons                         +0.001021       0.1097
+   4      commencez                      +0.000948       0.2263
+   5      pareils                        +0.000827       0.0690
+   6      verticale                      +0.000793       0.1000
+   7      organisme                      +0.000775       0.1030
+   8      permets                        +0.000635       0.0865
+   9      horizontale                    +0.000588       0.1083
+   10     halte                          +0.000551       0.0847
+   11     versa                          +0.000491       0.0814
+   12     second                         +0.000476       0.0494
+   13     pouvons                        +0.000474       0.0615
+   14     foie                           +0.000450       0.0838
+   15     souffre                        +0.000424       0.0626
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gaie                           -0.002744       0.1733
+   2      pouf                           -0.001439       0.1391
+   3      poumons                        -0.001046       0.1389
+   4      acrobates                      -0.000985       0.1573
+   5      exécutèrent                    -0.000906       0.1614
+   6      once                           -0.000899       0.1236
+   7      conservé                       -0.000649       0.0722
+   8      suédoise                       -0.000594       0.1589
+   9      étonnamment                    -0.000576       0.0978
+   10     respire                        -0.000560       0.0697
+   11     craint                         -0.000553       0.0630
+   12     chargée                        -0.000532       0.0625
+   13     élevèrent                      -0.000502       0.1151
+   14     vieillesse                     -0.000462       0.0858
+   15     hum                            -0.000440       0.1006
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      capitaine                      +0.148929       0.3678
+   2      diem                           +0.095985       0.2158
+   3      commencez                      +0.059842       0.2263
+   4      tenons                         +0.056024       0.1097
+   5      pareils                        +0.047289       0.0690
+   6      organisme                      +0.042081       0.1030
+   7      verticale                      +0.041649       0.1000
+   8      permets                        +0.035859       0.0865
+   9      versa                          +0.032024       0.0814
+   10     second                         +0.029954       0.0494
+   11     halte                          +0.029678       0.0847
+   12     horizontale                    +0.027597       0.1083
+   13     foie                           +0.026739       0.0838
+   14     redescendit                    +0.025904       0.1020
+   15     souffre                        +0.025891       0.0626
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gaie                           -0.145137       0.1733
+   2      pouf                           -0.081318       0.1391
+   3      once                           -0.057274       0.1236
+   4      acrobates                      -0.049981       0.1573
+   5      poumons                        -0.045782       0.1389
+   6      exécutèrent                    -0.042714       0.1614
+   7      conservé                       -0.035155       0.0722
+   8      étonnamment                    -0.032908       0.0978
+   9      suédoise                       -0.032843       0.1589
+   10     craint                         -0.031312       0.0630
+   11     chargée                        -0.030795       0.0625
+   12     respire                        -0.029169       0.0697
+   13     acheva                         -0.024862       0.0754
+   14     élevèrent                      -0.022166       0.1151
+   15     vieillesse                     -0.022083       0.0858
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+capitaine                 +0.003296     +0.000079     +0.000079     0.3678
+tenons                    +0.001021     +0.000056     +0.000056     0.1097
+paravent                  +0.000000     +0.000048     +0.000048     0.2302
+hon                       +0.000000     +0.000032     +0.000032     0.1939
+exécutèrent               +0.000000     +0.000026     +0.000026     0.1614
+porto                     +0.000333     +0.000024     +0.000024     0.1236
+brève                     +0.000253     +0.000023     +0.000023     0.0667
+tue                       +0.000000     +0.000017     +0.000017     0.1090
+suédoise                  +0.000000     +0.000017     +0.000017     0.1589
+étonnamment               +0.000000     +0.000016     +0.000016     0.0978
+grognement                +0.000315     +0.000011     +0.000011     0.0978
+once                      +0.000000     +0.000011     +0.000011     0.1236
+acrobates                 +0.000000     +0.000010     +0.000010     0.1573
+reprit                    +0.000179     +0.000009     +0.000009     0.0574
+versa                     +0.000491     +0.000009     +0.000009     0.0814
+précisément               +0.000308     +0.000008     +0.000008     0.0594
+commanda                  +0.000405     +0.000008     +0.000008     0.0839
+demanda                   +0.000000     +0.000007     +0.000007     0.0534
+latérale                  +0.000000     +0.000007     +0.000007     0.1233
+jambe                     +0.000000     +0.000006     +0.000006     0.1696
+logit final pour 'homme': -0.3794

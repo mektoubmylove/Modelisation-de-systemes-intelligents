@@ -1,0 +1,387 @@
+texte analysé: au bord de la crise hystérique . vous m entendrez , que cela vous plaise ou non ! pour protéger votre situation , pour assurer votre avenir , vous prenez le parti de l assassin ! marie ne compte pas e...
+prédiction: FEMME (confiance: 83.2%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.8541
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      julie                          +0.000212       0.3531
+   2      demoiselle                     +0.000147       0.1360
+   3      entendrez                      +0.000053       0.1181
+   4      plaise                         +0.000052       0.0913
+   5      traqué                         +0.000049       0.0985
+   6      affirmations                   +0.000032       0.1107
+   7      policier                       +0.000031       0.1377
+   8      brossé                         +0.000031       0.1209
+   9      portrait                       +0.000030       0.0506
+   10     verrue                         +0.000028       0.1353
+   11     révélé                         +0.000025       0.0622
+   12     probité                        +0.000025       0.1156
+   13     fumait                         +0.000024       0.0635
+   14     narine                         +0.000022       0.1199
+   15     irritation                     +0.000022       0.0802
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marie                          -0.000265       0.3948
+   2      sortez                         -0.000230       0.2153
+   3      alcide                         -0.000114       0.1911
+   4      mademoiselle                   -0.000085       0.1097
+   5      mentait                        -0.000083       0.1609
+   6      privilège                      -0.000070       0.0680
+   7      calomnies                      -0.000065       0.1107
+   8      protéger                       -0.000063       0.0443
+   9      contente                       -0.000059       0.0447
+   10     énervée                        -0.000057       0.0998
+   11     subjuguée                      -0.000056       0.1160
+   12     idéal                          -0.000055       0.0540
+   13     naïve                          -0.000054       0.0726
+   14     ouais                          -0.000051       0.0753
+   15     imaginez                       -0.000049       0.0640
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      julie                          +0.000212       0.3531
+   2      demoiselle                     +0.000147       0.1360
+   3      entendrez                      +0.000053       0.1181
+   4      plaise                         +0.000052       0.0913
+   5      traqué                         +0.000049       0.0985
+   6      affirmations                   +0.000032       0.1107
+   7      policier                       +0.000031       0.1377
+   8      brossé                         +0.000031       0.1209
+   9      portrait                       +0.000030       0.0506
+   10     verrue                         +0.000028       0.1353
+   11     révélé                         +0.000025       0.0622
+   12     probité                        +0.000025       0.1156
+   13     fumait                         +0.000024       0.0635
+   14     narine                         +0.000022       0.1199
+   15     irritation                     +0.000022       0.0802
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marie                          -0.000265       0.3948
+   2      sortez                         -0.000230       0.2153
+   3      alcide                         -0.000114       0.1911
+   4      mademoiselle                   -0.000085       0.1097
+   5      mentait                        -0.000083       0.1609
+   6      privilège                      -0.000070       0.0680
+   7      calomnies                      -0.000065       0.1107
+   8      protéger                       -0.000063       0.0443
+   9      contente                       -0.000059       0.0447
+   10     énervée                        -0.000057       0.0998
+   11     subjuguée                      -0.000056       0.1160
+   12     idéal                          -0.000055       0.0540
+   13     naïve                          -0.000054       0.0726
+   14     ouais                          -0.000051       0.0753
+   15     imaginez                       -0.000049       0.0640
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marie                          +0.006281       0.3948
+   2      alcide                         +0.001984       0.1911
+   3      mademoiselle                   +0.001900       0.1097
+   4      mentait                        +0.001628       0.1609
+   5      rejoignez                      +0.001366       0.1265
+   6      sortez                         +0.001282       0.2153
+   7      protéger                       +0.001201       0.0443
+   8      énervée                        +0.001181       0.0998
+   9      entêtée                        +0.001107       0.1254
+   10     crue                           +0.001030       0.0593
+   11     contente                       +0.000984       0.0447
+   12     refusant                       +0.000913       0.0699
+   13     féminin                        +0.000799       0.0663
+   14     haineux                        +0.000792       0.0945
+   15     souhaitait                     +0.000784       0.0602
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      julie                          -0.004951       0.3531
+   2      considérer                     -0.001798       0.1095
+   3      entendrez                      -0.001375       0.1181
+   4      policier                       -0.001307       0.1377
+   5      fumait                         -0.001233       0.0635
+   6      obéit                          -0.001176       0.0640
+   7      demoiselle                     -0.001060       0.1360
+   8      abominables                    -0.001026       0.1022
+   9      glapit                         -0.000931       0.0963
+   10     narine                         -0.000919       0.1199
+   11     probité                        -0.000821       0.1156
+   12     proie                          -0.000768       0.0485
+   13     traqué                         -0.000671       0.0985
+   14     hôte                           -0.000638       0.0649
+   15     exprimait                      -0.000531       0.0635
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marie                          +0.218175       0.3948
+   2      alcide                         +0.115304       0.1911
+   3      mademoiselle                   +0.087577       0.1097
+   4      mentait                        +0.062540       0.1609
+   5      rejoignez                      +0.054694       0.1265
+   6      sortez                         +0.054075       0.2153
+   7      entêtée                        +0.052351       0.1254
+   8      protéger                       +0.052198       0.0443
+   9      refusant                       +0.051443       0.0699
+   10     haineux                        +0.046169       0.0945
+   11     crue                           +0.043032       0.0593
+   12     contente                       +0.040183       0.0447
+   13     rancoeur                       +0.035012       0.0825
+   14     souhaitait                     +0.034837       0.0602
+   15     féminin                        +0.032000       0.0663
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      julie                          -0.188829       0.3531
+   2      considérer                     -0.074307       0.1095
+   3      obéit                          -0.066825       0.0640
+   4      fumait                         -0.057085       0.0635
+   5      policier                       -0.055908       0.1377
+   6      entendrez                      -0.052349       0.1181
+   7      abominables                    -0.044172       0.1022
+   8      demoiselle                     -0.043829       0.1360
+   9      glapit                         -0.041934       0.0963
+   10     probité                        -0.041001       0.1156
+   11     traqué                         -0.038447       0.0985
+   12     narine                         -0.037829       0.1199
+   13     hôte                           -0.036650       0.0649
+   14     plaise                         -0.028141       0.0913
+   15     assassin                       -0.028090       0.0617
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+julie                     +0.000000     +0.000212     +0.000212     0.3531
+demoiselle                +0.000000     +0.000147     +0.000147     0.1360
+entendrez                 +0.000000     +0.000053     +0.000053     0.1181
+plaise                    +0.000000     +0.000052     +0.000052     0.0913
+traqué                    +0.000000     +0.000049     +0.000049     0.0985
+affirmations              +0.000310     +0.000032     +0.000032     0.1107
+policier                  +0.000000     +0.000031     +0.000031     0.1377
+brossé                    +0.000000     +0.000031     +0.000031     0.1209
+portrait                  +0.000000     +0.000030     +0.000030     0.0506
+verrue                    +0.000062     +0.000028     +0.000028     0.1353
+révélé                    +0.000000     +0.000025     +0.000025     0.0622
+probité                   +0.000000     +0.000025     +0.000025     0.1156
+fumait                    +0.000000     +0.000024     +0.000024     0.0635
+narine                    +0.000000     +0.000022     +0.000022     0.1199
+irritation                +0.000154     +0.000022     +0.000022     0.0802
+sentit                    +0.000055     +0.000021     +0.000021     0.0536
+refusant                  +0.000913     +0.000020     +0.000020     0.0699
+abominables               +0.000000     +0.000020     +0.000020     0.1022
+intention                 +0.000000     +0.000020     +0.000020     0.0416
+considérer                +0.000000     +0.000019     +0.000019     0.1095
+logit final pour 'femme': 0.8541
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.7473
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      julie                          +0.000166       0.3531
+   2      demoiselle                     +0.000066       0.1360
+   3      considérer                     +0.000036       0.1095
+   4      policier                       +0.000031       0.1377
+   5      résumait                       +0.000030       0.1028
+   6      chère                          +0.000020       0.0461
+   7      entêtée                        +0.000018       0.1254
+   8      fumait                         +0.000018       0.0635
+   9      plaise                         +0.000017       0.0913
+   10     avancement                     +0.000017       0.1000
+   11     oubliant                       +0.000016       0.0646
+   12     assassin                       +0.000016       0.0617
+   13     idiote                         +0.000016       0.0685
+   14     verrue                         +0.000016       0.1353
+   15     cigarette                      +0.000015       0.1034
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sortez                         -0.000114       0.2153
+   2      marie                          -0.000088       0.3948
+   3      alcide                         -0.000072       0.1911
+   4      mentait                        -0.000060       0.1609
+   5      calomnies                      -0.000055       0.1107
+   6      mademoiselle                   -0.000043       0.1097
+   7      énervée                        -0.000038       0.0998
+   8      privilège                      -0.000036       0.0680
+   9      imaginez                       -0.000034       0.0640
+   10     subjuguée                      -0.000034       0.1160
+   11     idéal                          -0.000031       0.0540
+   12     protéger                       -0.000031       0.0443
+   13     ouais                          -0.000026       0.0753
+   14     puissants                      -0.000026       0.0645
+   15     témoin                         -0.000025       0.0483
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      julie                          +0.000166       0.3531
+   2      demoiselle                     +0.000066       0.1360
+   3      considérer                     +0.000036       0.1095
+   4      policier                       +0.000031       0.1377
+   5      résumait                       +0.000030       0.1028
+   6      chère                          +0.000020       0.0461
+   7      entêtée                        +0.000018       0.1254
+   8      fumait                         +0.000018       0.0635
+   9      plaise                         +0.000017       0.0913
+   10     avancement                     +0.000017       0.1000
+   11     oubliant                       +0.000016       0.0646
+   12     assassin                       +0.000016       0.0617
+   13     idiote                         +0.000016       0.0685
+   14     verrue                         +0.000016       0.1353
+   15     cigarette                      +0.000015       0.1034
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sortez                         -0.000114       0.2153
+   2      marie                          -0.000088       0.3948
+   3      alcide                         -0.000072       0.1911
+   4      mentait                        -0.000060       0.1609
+   5      calomnies                      -0.000055       0.1107
+   6      mademoiselle                   -0.000043       0.1097
+   7      énervée                        -0.000038       0.0998
+   8      privilège                      -0.000036       0.0680
+   9      imaginez                       -0.000034       0.0640
+   10     subjuguée                      -0.000034       0.1160
+   11     idéal                          -0.000031       0.0540
+   12     protéger                       -0.000031       0.0443
+   13     ouais                          -0.000026       0.0753
+   14     puissants                      -0.000026       0.0645
+   15     témoin                         -0.000025       0.0483
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      julie                          +0.003422       0.3531
+   2      considérer                     +0.001153       0.1095
+   3      entendrez                      +0.001000       0.1181
+   4      demoiselle                     +0.000894       0.1360
+   5      narine                         +0.000853       0.1199
+   6      fumait                         +0.000824       0.0635
+   7      obéit                          +0.000823       0.0640
+   8      probité                        +0.000685       0.1156
+   9      policier                       +0.000679       0.1377
+   10     traqué                         +0.000539       0.0985
+   11     abominables                    +0.000533       0.1022
+   12     plaise                         +0.000478       0.0913
+   13     proie                          +0.000467       0.0485
+   14     glapit                         +0.000452       0.0963
+   15     rauque                         +0.000395       0.0593
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marie                          -0.005310       0.3948
+   2      alcide                         -0.001515       0.1911
+   3      mademoiselle                   -0.001422       0.1097
+   4      mentait                        -0.001278       0.1609
+   5      rejoignez                      -0.001046       0.1265
+   6      entêtée                        -0.000894       0.1254
+   7      énervée                        -0.000794       0.0998
+   8      contente                       -0.000757       0.0447
+   9      protéger                       -0.000747       0.0443
+   10     sortez                         -0.000706       0.2153
+   11     rancoeur                       -0.000678       0.0825
+   12     crue                           -0.000630       0.0593
+   13     souhaitait                     -0.000577       0.0602
+   14     refusant                       -0.000558       0.0699
+   15     féminin                        -0.000441       0.0663
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      julie                          +0.140511       0.3531
+   2      obéit                          +0.049971       0.0640
+   3      considérer                     +0.045762       0.1095
+   4      entendrez                      +0.038909       0.1181
+   5      demoiselle                     +0.038482       0.1360
+   6      fumait                         +0.036927       0.0635
+   7      probité                        +0.035874       0.1156
+   8      narine                         +0.035680       0.1199
+   9      traqué                         +0.028724       0.0985
+   10     hystérique                     +0.026985       0.0917
+   11     plaise                         +0.026562       0.0913
+   12     hôte                           +0.023246       0.0649
+   13     policier                       +0.023015       0.1377
+   14     glapit                         +0.020552       0.0963
+   15     abominables                    +0.019667       0.1022
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marie                          -0.205914       0.3948
+   2      alcide                         -0.082771       0.1911
+   3      mademoiselle                   -0.059644       0.1097
+   4      mentait                        -0.047667       0.1609
+   5      rejoignez                      -0.044355       0.1265
+   6      entêtée                        -0.042796       0.1254
+   7      refusant                       -0.031048       0.0699
+   8      contente                       -0.030704       0.0447
+   9      protéger                       -0.030338       0.0443
+   10     souhaitait                     -0.028635       0.0602
+   11     rancoeur                       -0.027898       0.0825
+   12     crue                           -0.024740       0.0593
+   13     sortez                         -0.023521       0.2153
+   14     haineux                        -0.022389       0.0945
+   15     interroge                      -0.021824       0.0644
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+julie                     +0.003422     +0.000166     +0.000166     0.3531
+demoiselle                +0.000894     +0.000066     +0.000066     0.1360
+considérer                +0.001153     +0.000036     +0.000036     0.1095
+policier                  +0.000679     +0.000031     +0.000031     0.1377
+résumait                  +0.000000     +0.000030     +0.000030     0.1028
+chère                     +0.000000     +0.000020     +0.000020     0.0461
+entêtée                   +0.000000     +0.000018     +0.000018     0.1254
+fumait                    +0.000824     +0.000018     +0.000018     0.0635
+plaise                    +0.000478     +0.000017     +0.000017     0.0913
+avancement                +0.000000     +0.000017     +0.000017     0.1000
+oubliant                  +0.000000     +0.000016     +0.000016     0.0646
+assassin                  +0.000242     +0.000016     +0.000016     0.0617
+idiote                    +0.000000     +0.000016     +0.000016     0.0685
+verrue                    +0.000000     +0.000016     +0.000016     0.1353
+cigarette                 +0.000000     +0.000015     +0.000015     0.1034
+mlle                      +0.000074     +0.000014     +0.000014     0.0779
+souhaitait                +0.000000     +0.000013     +0.000013     0.0602
+sentit                    +0.000000     +0.000013     +0.000013     0.0536
+narine                    +0.000853     +0.000012     +0.000012     0.1199
+contrôler                 +0.000309     +0.000012     +0.000012     0.0695
+logit final pour 'homme': -0.7473

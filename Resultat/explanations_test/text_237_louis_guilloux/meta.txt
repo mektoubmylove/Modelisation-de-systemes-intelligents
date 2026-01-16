@@ -1,0 +1,5 @@
+filename: (GUILLOUX)(Louis)(le sang noir)(1)(1935)(1899)(1980)(fr)(z)(z)(V)(R)(T).txt
+index: 237
+first_name: louis
+last_name: guilloux
+true_label: homme

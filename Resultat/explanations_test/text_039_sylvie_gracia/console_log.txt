@@ -1,0 +1,387 @@
+texte analysé: dans la salle de bains , en train de s enduire les cheveux d huile , suivant un conseil de beauté relevé dans un magazine féminin . ce n était pas n importe laquelle , mais une huile d olive palestini...
+prédiction: HOMME (confiance: 55.1%)
+vérité terrain: FEMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  vraie classe
+# logit: -0.1243
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      espagne                        +0.000185       0.1458
+   2      garagiste                      +0.000133       0.1227
+   3      supermarchés                   +0.000111       0.1410
+   4      création                       +0.000098       0.0689
+   5      déconcerte                     +0.000092       0.1332
+   6      palestinienne                  +0.000086       0.3560
+   7      pastis                         +0.000065       0.1200
+   8      olive                          +0.000064       0.1949
+   9      radin                          +0.000062       0.1500
+   10     joueurs                        +0.000051       0.0791
+   11     constituait                    +0.000048       0.0772
+   12     dérisoire                      +0.000042       0.0751
+   13     mélanger                       +0.000041       0.0999
+   14     traité                         +0.000040       0.0603
+   15     emmerdé                        +0.000036       0.1461
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      blousons                       -0.000175       0.1490
+   2      mouillés                       -0.000099       0.0724
+   3      copains                        -0.000096       0.1365
+   4      confiné                        -0.000095       0.1232
+   5      asséné                         -0.000093       0.1426
+   6      supermarché                    -0.000091       0.0982
+   7      tentant                        -0.000082       0.0739
+   8      chômage                        -0.000076       0.0916
+   9      écharpes                       -0.000073       0.1031
+   10     oliviers                       -0.000070       0.1094
+   11     finale                         -0.000067       0.0814
+   12     ordonné                        -0.000067       0.0641
+   13     fragiles                       -0.000066       0.0694
+   14     comprenais                     -0.000064       0.0712
+   15     remonté                        -0.000061       0.0673
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      espagne                        +0.000185       0.1458
+   2      garagiste                      +0.000133       0.1227
+   3      supermarchés                   +0.000111       0.1410
+   4      création                       +0.000098       0.0689
+   5      déconcerte                     +0.000092       0.1332
+   6      palestinienne                  +0.000086       0.3560
+   7      pastis                         +0.000065       0.1200
+   8      olive                          +0.000064       0.1949
+   9      radin                          +0.000062       0.1500
+   10     joueurs                        +0.000051       0.0791
+   11     constituait                    +0.000048       0.0772
+   12     dérisoire                      +0.000042       0.0751
+   13     mélanger                       +0.000041       0.0999
+   14     traité                         +0.000040       0.0603
+   15     emmerdé                        +0.000036       0.1461
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      blousons                       -0.000175       0.1490
+   2      mouillés                       -0.000099       0.0724
+   3      copains                        -0.000096       0.1365
+   4      confiné                        -0.000095       0.1232
+   5      asséné                         -0.000093       0.1426
+   6      supermarché                    -0.000091       0.0982
+   7      tentant                        -0.000082       0.0739
+   8      chômage                        -0.000076       0.0916
+   9      écharpes                       -0.000073       0.1031
+   10     oliviers                       -0.000070       0.1094
+   11     finale                         -0.000067       0.0814
+   12     ordonné                        -0.000067       0.0641
+   13     fragiles                       -0.000066       0.0694
+   14     comprenais                     -0.000064       0.0712
+   15     remonté                        -0.000061       0.0673
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      embrouillé                     +0.002229       0.1279
+   2      solidarité                     +0.001640       0.0817
+   3      bains                          +0.001401       0.1056
+   4      fragiles                       +0.001400       0.0694
+   5      asséné                         +0.001360       0.1426
+   6      enduire                        +0.001345       0.1352
+   7      enroulés                       +0.001337       0.1252
+   8      emmêlés                        +0.001277       0.1002
+   9      volubile                       +0.001208       0.1100
+   10     tentant                        +0.001153       0.0739
+   11     pollution                      +0.001106       0.1132
+   12     radin                          +0.000970       0.1500
+   13     féminin                        +0.000887       0.0676
+   14     joyeuse                        +0.000882       0.0555
+   15     écharpes                       +0.000880       0.1031
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cartouches                     -0.002935       0.1009
+   2      vidange                        -0.002148       0.1452
+   3      pastis                         -0.002073       0.1200
+   4      mercedes                       -0.001886       0.1158
+   5      palestinienne                  -0.001881       0.3560
+   6      espagnols                      -0.001683       0.0992
+   7      gratis                         -0.001661       0.1284
+   8      espagne                        -0.001644       0.1458
+   9      cents                          -0.001615       0.0443
+   10     israélienne                    -0.001584       0.1650
+   11     joueurs                        -0.001558       0.0791
+   12     descente                       -0.001488       0.0626
+   13     huile                          -0.001478       0.1576
+   14     garagiste                      -0.001469       0.1227
+   15     blousons                       -0.001373       0.1490
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      embrouillé                     +0.117324       0.1279
+   2      bains                          +0.069364       0.1056
+   3      fragiles                       +0.068713       0.0694
+   4      solidarité                     +0.065577       0.0817
+   5      pollution                      +0.061160       0.1132
+   6      enroulés                       +0.060874       0.1252
+   7      emmêlés                        +0.059997       0.1002
+   8      enduire                        +0.058982       0.1352
+   9      asséné                         +0.056678       0.1426
+   10     écharpes                       +0.056071       0.1031
+   11     tentant                        +0.053781       0.0739
+   12     volubile                       +0.052129       0.1100
+   13     radin                          +0.049809       0.1500
+   14     joyeuse                        +0.044437       0.0555
+   15     mouillés                       +0.038133       0.0724
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cartouches                     -0.136559       0.1009
+   2      vidange                        -0.087728       0.1452
+   3      mercedes                       -0.087003       0.1158
+   4      palestinienne                  -0.085694       0.3560
+   5      espagne                        -0.085360       0.1458
+   6      pastis                         -0.082514       0.1200
+   7      gratis                         -0.074846       0.1284
+   8      garagiste                      -0.072260       0.1227
+   9      joueurs                        -0.069460       0.0791
+   10     israélienne                    -0.068999       0.1650
+   11     symboliques                    -0.068343       0.1338
+   12     cents                          -0.065403       0.0443
+   13     descente                       -0.059928       0.0626
+   14     espagnols                      -0.057655       0.0992
+   15     dérisoire                      -0.053802       0.0751
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+espagne                   +0.000000     +0.000185     +0.000185     0.1458
+garagiste                 +0.000000     +0.000133     +0.000133     0.1227
+supermarchés              +0.000614     +0.000111     +0.000111     0.1410
+création                  +0.000000     +0.000098     +0.000098     0.0689
+déconcerte                +0.000000     +0.000092     +0.000092     0.1332
+palestinienne             +0.000000     +0.000086     +0.000086     0.3560
+pastis                    +0.000000     +0.000065     +0.000065     0.1200
+olive                     +0.000000     +0.000064     +0.000064     0.1949
+radin                     +0.000970     +0.000062     +0.000062     0.1500
+joueurs                   +0.000000     +0.000051     +0.000051     0.0791
+constituait               +0.000323     +0.000048     +0.000048     0.0772
+dérisoire                 +0.000000     +0.000042     +0.000042     0.0751
+mélanger                  +0.000278     +0.000041     +0.000041     0.0999
+traité                    +0.000000     +0.000040     +0.000040     0.0603
+emmerdé                   +0.000786     +0.000036     +0.000036     0.1461
+cartes                    +0.000000     +0.000031     +0.000031     0.0470
+cuir                      +0.000000     +0.000029     +0.000029     0.0441
+magazine                  +0.000000     +0.000029     +0.000029     0.0816
+conseil                   +0.000000     +0.000027     +0.000027     0.0466
+mercedes                  +0.000000     +0.000027     +0.000027     0.1158
+logit final pour 'femme': -0.1243
+# analyse pour la classe: HOMME  prédite
+# logit: 0.0787
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      garagiste                      +0.000095       0.1227
+   2      palestinienne                  +0.000082       0.3560
+   3      déconcerte                     +0.000060       0.1332
+   4      supermarchés                   +0.000054       0.1410
+   5      magazine                       +0.000036       0.0816
+   6      joueurs                        +0.000032       0.0791
+   7      espagne                        +0.000030       0.1458
+   8      pollution                      +0.000030       0.1132
+   9      bains                          +0.000029       0.1056
+   10     radin                          +0.000027       0.1500
+   11     doivent                        +0.000025       0.0441
+   12     constituait                    +0.000024       0.0772
+   13     olive                          +0.000023       0.1949
+   14     dérisoire                      +0.000023       0.0751
+   15     création                       +0.000021       0.0689
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      confiné                        -0.000077       0.1232
+   2      blousons                       -0.000077       0.1490
+   3      copains                        -0.000072       0.1365
+   4      mouillés                       -0.000050       0.0724
+   5      finale                         -0.000045       0.0814
+   6      arrachés                       -0.000043       0.0866
+   7      huile                          -0.000043       0.1576
+   8      oliviers                       -0.000042       0.1094
+   9      gratis                         -0.000036       0.1284
+   10     vidange                        -0.000035       0.1452
+   11     écharpes                       -0.000032       0.1031
+   12     cents                          -0.000032       0.0443
+   13     remonté                        -0.000031       0.0673
+   14     savaient                       -0.000031       0.0494
+   15     finalement                     -0.000031       0.0465
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      garagiste                      +0.000095       0.1227
+   2      palestinienne                  +0.000082       0.3560
+   3      déconcerte                     +0.000060       0.1332
+   4      supermarchés                   +0.000054       0.1410
+   5      magazine                       +0.000036       0.0816
+   6      joueurs                        +0.000032       0.0791
+   7      espagne                        +0.000030       0.1458
+   8      pollution                      +0.000030       0.1132
+   9      bains                          +0.000029       0.1056
+   10     radin                          +0.000027       0.1500
+   11     doivent                        +0.000025       0.0441
+   12     constituait                    +0.000024       0.0772
+   13     olive                          +0.000023       0.1949
+   14     dérisoire                      +0.000023       0.0751
+   15     création                       +0.000021       0.0689
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      confiné                        -0.000077       0.1232
+   2      blousons                       -0.000077       0.1490
+   3      copains                        -0.000072       0.1365
+   4      mouillés                       -0.000050       0.0724
+   5      finale                         -0.000045       0.0814
+   6      arrachés                       -0.000043       0.0866
+   7      huile                          -0.000043       0.1576
+   8      oliviers                       -0.000042       0.1094
+   9      gratis                         -0.000036       0.1284
+   10     vidange                        -0.000035       0.1452
+   11     écharpes                       -0.000032       0.1031
+   12     cents                          -0.000032       0.0443
+   13     remonté                        -0.000031       0.0673
+   14     savaient                       -0.000031       0.0494
+   15     finalement                     -0.000031       0.0465
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cartouches                     +0.002194       0.1009
+   2      palestinienne                  +0.001762       0.3560
+   3      mercedes                       +0.001383       0.1158
+   4      pastis                         +0.001381       0.1200
+   5      vidange                        +0.001312       0.1452
+   6      israélienne                    +0.001249       0.1650
+   7      blousons                       +0.001239       0.1490
+   8      gratis                         +0.001239       0.1284
+   9      cents                          +0.001144       0.0443
+   10     joueurs                        +0.001074       0.0791
+   11     descente                       +0.001055       0.0626
+   12     espagnols                      +0.001027       0.0992
+   13     symboliques                    +0.001026       0.1338
+   14     espagne                        +0.000944       0.1458
+   15     fixé                           +0.000878       0.0517
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      embrouillé                     -0.001658       0.1279
+   2      asséné                         -0.001289       0.1426
+   3      bains                          -0.001057       0.1056
+   4      fragiles                       -0.000996       0.0694
+   5      volubile                       -0.000975       0.1100
+   6      tentant                        -0.000921       0.0739
+   7      solidarité                     -0.000911       0.0817
+   8      enroulés                       -0.000844       0.1252
+   9      emmêlés                        -0.000767       0.1002
+   10     pollution                      -0.000745       0.1132
+   11     enduire                        -0.000732       0.1352
+   12     écharpes                       -0.000705       0.1031
+   13     emmerdé                        -0.000642       0.1461
+   14     autoroute                      -0.000607       0.0903
+   15     radin                          -0.000598       0.1500
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cartouches                     +0.105241       0.1009
+   2      palestinienne                  +0.075584       0.3560
+   3      mercedes                       +0.061081       0.1158
+   4      gratis                         +0.058305       0.1284
+   5      israélienne                    +0.055513       0.1650
+   6      symboliques                    +0.055140       0.1338
+   7      vidange                        +0.054499       0.1452
+   8      pastis                         +0.054483       0.1200
+   9      cents                          +0.047008       0.0443
+   10     joueurs                        +0.046718       0.0791
+   11     garagiste                      +0.041998       0.1227
+   12     fixé                           +0.041861       0.0517
+   13     dérisoire                      +0.040557       0.0751
+   14     descente                       +0.039804       0.0626
+   15     espagne                        +0.038855       0.1458
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      embrouillé                     -0.083996       0.1279
+   2      bains                          -0.051995       0.1056
+   3      asséné                         -0.050876       0.1426
+   4      fragiles                       -0.050273       0.0694
+   5      pollution                      -0.043713       0.1132
+   6      tentant                        -0.043349       0.0739
+   7      volubile                       -0.041869       0.1100
+   8      écharpes                       -0.039244       0.1031
+   9      solidarité                     -0.037589       0.0817
+   10     enroulés                       -0.035008       0.1252
+   11     emmêlés                        -0.034341       0.1002
+   12     radin                          -0.029391       0.1500
+   13     joyeuse                        -0.029346       0.0555
+   14     enduire                        -0.027141       0.1352
+   15     emmerdé                        -0.026060       0.1461
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+garagiste                 +0.000803     +0.000095     +0.000095     0.1227
+palestinienne             +0.001762     +0.000082     +0.000082     0.3560
+déconcerte                +0.000281     +0.000060     +0.000060     0.1332
+supermarchés              +0.000000     +0.000054     +0.000054     0.1410
+magazine                  +0.000059     +0.000036     +0.000036     0.0816
+joueurs                   +0.001074     +0.000032     +0.000032     0.0791
+espagne                   +0.000944     +0.000030     +0.000030     0.1458
+pollution                 +0.000000     +0.000030     +0.000030     0.1132
+bains                     +0.000000     +0.000029     +0.000029     0.1056
+radin                     +0.000000     +0.000027     +0.000027     0.1500
+doivent                   +0.000082     +0.000025     +0.000025     0.0441
+constituait               +0.000000     +0.000024     +0.000024     0.0772
+olive                     +0.000481     +0.000023     +0.000023     0.1949
+dérisoire                 +0.000856     +0.000023     +0.000023     0.0751
+création                  +0.000195     +0.000021     +0.000021     0.0689
+fixé                      +0.000878     +0.000017     +0.000017     0.0517
+leçon                     +0.000000     +0.000017     +0.000017     0.0545
+emmêlés                   +0.000000     +0.000016     +0.000016     0.1002
+odeurs                    +0.000000     +0.000016     +0.000016     0.0569
+conseil                   +0.000495     +0.000016     +0.000016     0.0466
+logit final pour 'homme': 0.0787

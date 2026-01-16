@@ -1,0 +1,386 @@
+texte analysé: toone reconnut parfaitement siska de geest . continuez vous voyez où il est ce banc du voorhavenlaan , monsieur l inspecteur ? oui , oui , allez entre le grillage qui longe le quai et le banc il y a u...
+prédiction: HOMME (confiance: 60.3%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.2556
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      inspecteur                     +0.000127       0.1943
+   2      appliqua                       +0.000074       0.0743
+   3      demoiselle                     +0.000063       0.0553
+   4      enquêter                       +0.000062       0.0812
+   5      acquit                         +0.000049       0.0780
+   6      portefeuille                   +0.000048       0.0553
+   7      jef                            +0.000048       0.3007
+   8      sûrement                       +0.000041       0.0349
+   9      billet                         +0.000037       0.0427
+   10     franchement                    +0.000030       0.0414
+   11     policier                       +0.000030       0.1121
+   12     espéré                         +0.000028       0.0504
+   13     finiraient                     +0.000028       0.0879
+   14     quai                           +0.000024       0.0435
+   15     emmènerait                     +0.000024       0.0931
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      banc                           -0.000109       0.0768
+   2      greta                          -0.000093       0.5375
+   3      chignon                        -0.000087       0.0551
+   4      joris                          -0.000087       0.5261
+   5      encouragea                     -0.000084       0.0816
+   6      engueuler                      -0.000066       0.0827
+   7      exclama                        -0.000056       0.0524
+   8      puzzle                         -0.000054       0.0769
+   9      hilda                          -0.000053       0.1657
+   10     espérant                       -0.000039       0.0454
+   11     hein                           -0.000039       0.0804
+   12     mentait                        -0.000038       0.0655
+   13     répliquer                      -0.000037       0.0683
+   14     arrangeait                     -0.000033       0.0604
+   15     santé                          -0.000030       0.0337
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      inspecteur                     +0.000127       0.1943
+   2      appliqua                       +0.000074       0.0743
+   3      demoiselle                     +0.000063       0.0553
+   4      enquêter                       +0.000062       0.0812
+   5      acquit                         +0.000049       0.0780
+   6      portefeuille                   +0.000048       0.0553
+   7      jef                            +0.000048       0.3007
+   8      sûrement                       +0.000041       0.0349
+   9      billet                         +0.000037       0.0427
+   10     franchement                    +0.000030       0.0414
+   11     policier                       +0.000030       0.1121
+   12     espéré                         +0.000028       0.0504
+   13     finiraient                     +0.000028       0.0879
+   14     quai                           +0.000024       0.0435
+   15     emmènerait                     +0.000024       0.0931
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      banc                           -0.000109       0.0768
+   2      greta                          -0.000093       0.5375
+   3      chignon                        -0.000087       0.0551
+   4      joris                          -0.000087       0.5261
+   5      encouragea                     -0.000084       0.0816
+   6      engueuler                      -0.000066       0.0827
+   7      exclama                        -0.000056       0.0524
+   8      puzzle                         -0.000054       0.0769
+   9      hilda                          -0.000053       0.1657
+   10     espérant                       -0.000039       0.0454
+   11     hein                           -0.000039       0.0804
+   12     mentait                        -0.000038       0.0655
+   13     répliquer                      -0.000037       0.0683
+   14     arrangeait                     -0.000033       0.0604
+   15     santé                          -0.000030       0.0337
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      exclama                        +0.002355       0.0524
+   2      encouragea                     +0.002218       0.0816
+   3      chignon                        +0.001710       0.0551
+   4      jubilait                       +0.001637       0.0884
+   5      jupe                           +0.000845       0.0443
+   6      devrait                        +0.000814       0.0340
+   7      emmènerait                     +0.000807       0.0931
+   8      grillage                       +0.000767       0.0753
+   9      espéré                         +0.000738       0.0504
+   10     mentait                        +0.000728       0.0655
+   11     arrangeait                     +0.000653       0.0604
+   12     désappointement                +0.000637       0.0962
+   13     enlève                         +0.000585       0.0517
+   14     amie                           +0.000566       0.0340
+   15     protesta                       +0.000558       0.0546
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jef                            -0.003994       0.3007
+   2      inspecteur                     -0.002853       0.1943
+   3      acquit                         -0.002466       0.0780
+   4      triompher                      -0.001944       0.0743
+   5      appliqua                       -0.001737       0.0743
+   6      francs                         -0.001617       0.0452
+   7      croyable                       -0.001310       0.0898
+   8      intéresserait                  -0.001222       0.0887
+   9      policier                       -0.001055       0.1121
+   10     enquêter                       -0.001007       0.0812
+   11     longe                          -0.000971       0.0690
+   12     tint                           -0.000970       0.0488
+   13     reconnut                       -0.000892       0.0447
+   14     continuez                      -0.000857       0.0609
+   15     pesait                         -0.000840       0.0483
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      exclama                        +0.127191       0.0524
+   2      encouragea                     +0.114591       0.0816
+   3      chignon                        +0.084245       0.0551
+   4      jubilait                       +0.079197       0.0884
+   5      greta                          +0.071643       0.5375
+   6      grillage                       +0.046043       0.0753
+   7      arrangeait                     +0.041599       0.0604
+   8      jupe                           +0.040901       0.0443
+   9      devrait                        +0.037812       0.0340
+   10     emmènerait                     +0.037196       0.0931
+   11     espéré                         +0.036906       0.0504
+   12     mentait                        +0.034316       0.0655
+   13     désappointement                +0.031858       0.0962
+   14     amie                           +0.029306       0.0340
+   15     protesta                       +0.027302       0.0546
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jef                            -0.220499       0.3007
+   2      inspecteur                     -0.143346       0.1943
+   3      acquit                         -0.118865       0.0780
+   4      triompher                      -0.095863       0.0743
+   5      francs                         -0.086648       0.0452
+   6      appliqua                       -0.080331       0.0743
+   7      croyable                       -0.068830       0.0898
+   8      enquêter                       -0.061740       0.0812
+   9      intéresserait                  -0.060976       0.0887
+   10     tint                           -0.057475       0.0488
+   11     reconnut                       -0.051243       0.0447
+   12     policier                       -0.049890       0.1121
+   13     continuez                      -0.046313       0.0609
+   14     eut                            -0.044817       0.0337
+   15     souliers                       -0.043782       0.0514
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+inspecteur                +0.000000     +0.000127     +0.000127     0.1943
+appliqua                  +0.000000     +0.000074     +0.000074     0.0743
+demoiselle                +0.000000     +0.000063     +0.000063     0.0553
+enquêter                  +0.000000     +0.000062     +0.000062     0.0812
+acquit                    +0.000000     +0.000049     +0.000049     0.0780
+portefeuille              +0.000000     +0.000048     +0.000048     0.0553
+jef                       +0.000000     +0.000048     +0.000048     0.3007
+sûrement                  +0.000204     +0.000041     +0.000041     0.0349
+billet                    +0.000000     +0.000037     +0.000037     0.0427
+franchement               +0.000123     +0.000030     +0.000030     0.0414
+policier                  +0.000000     +0.000030     +0.000030     0.1121
+espéré                    +0.000738     +0.000028     +0.000028     0.0504
+finiraient                +0.000539     +0.000028     +0.000028     0.0879
+quai                      +0.000000     +0.000024     +0.000024     0.0435
+emmènerait                +0.000807     +0.000024     +0.000024     0.0931
+fit                       +0.000000     +0.000022     +0.000022     0.0344
+francs                    +0.000000     +0.000021     +0.000021     0.0452
+bosquet                   +0.000000     +0.000021     +0.000021     0.0755
+disparition               +0.000000     +0.000020     +0.000020     0.0407
+tournait                  +0.000000     +0.000020     +0.000020     0.0366
+logit final pour 'femme': -0.2556
+# analyse pour la classe: HOMME  prédite
+# logit: 0.1604
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      inspecteur                     +0.000089       0.1943
+   2      demoiselle                     +0.000036       0.0553
+   3      portefeuille                   +0.000034       0.0553
+   4      appliqua                       +0.000033       0.0743
+   5      acquit                         +0.000029       0.0780
+   6      intéresserait                  +0.000024       0.0887
+   7      bosquet                        +0.000021       0.0755
+   8      amie                           +0.000020       0.0340
+   9      voyez                          +0.000019       0.0332
+   10     greta                          +0.000018       0.5375
+   11     battues                        +0.000018       0.0901
+   12     franchement                    +0.000017       0.0414
+   13     sûrement                       +0.000016       0.0349
+   14     policier                       +0.000016       0.1121
+   15     billet                         +0.000014       0.0427
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      banc                           -0.000075       0.0768
+   2      encouragea                     -0.000058       0.0816
+   3      engueuler                      -0.000057       0.0827
+   4      hilda                          -0.000052       0.1657
+   5      chignon                        -0.000047       0.0551
+   6      mentait                        -0.000043       0.0655
+   7      exclama                        -0.000032       0.0524
+   8      espérant                       -0.000030       0.0454
+   9      santé                          -0.000029       0.0337
+   10     porté                          -0.000027       0.0346
+   11     puzzle                         -0.000024       0.0769
+   12     suivraient                     -0.000024       0.1039
+   13     arrangeait                     -0.000023       0.0604
+   14     continuez                      -0.000020       0.0609
+   15     néanmoins                      -0.000019       0.0414
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      inspecteur                     +0.000089       0.1943
+   2      demoiselle                     +0.000036       0.0553
+   3      portefeuille                   +0.000034       0.0553
+   4      appliqua                       +0.000033       0.0743
+   5      acquit                         +0.000029       0.0780
+   6      intéresserait                  +0.000024       0.0887
+   7      bosquet                        +0.000021       0.0755
+   8      amie                           +0.000020       0.0340
+   9      voyez                          +0.000019       0.0332
+   10     greta                          +0.000018       0.5375
+   11     battues                        +0.000018       0.0901
+   12     franchement                    +0.000017       0.0414
+   13     sûrement                       +0.000016       0.0349
+   14     policier                       +0.000016       0.1121
+   15     billet                         +0.000014       0.0427
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      banc                           -0.000075       0.0768
+   2      encouragea                     -0.000058       0.0816
+   3      engueuler                      -0.000057       0.0827
+   4      hilda                          -0.000052       0.1657
+   5      chignon                        -0.000047       0.0551
+   6      mentait                        -0.000043       0.0655
+   7      exclama                        -0.000032       0.0524
+   8      espérant                       -0.000030       0.0454
+   9      santé                          -0.000029       0.0337
+   10     porté                          -0.000027       0.0346
+   11     puzzle                         -0.000024       0.0769
+   12     suivraient                     -0.000024       0.1039
+   13     arrangeait                     -0.000023       0.0604
+   14     continuez                      -0.000020       0.0609
+   15     néanmoins                      -0.000019       0.0414
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jef                            +0.002991       0.3007
+   2      inspecteur                     +0.002579       0.1943
+   3      acquit                         +0.001896       0.0780
+   4      triompher                      +0.001648       0.0743
+   5      francs                         +0.001370       0.0452
+   6      appliqua                       +0.001197       0.0743
+   7      intéresserait                  +0.001021       0.0887
+   8      croyable                       +0.000986       0.0898
+   9      policier                       +0.000972       0.1121
+   10     reconnut                       +0.000877       0.0447
+   11     tint                           +0.000766       0.0488
+   12     joris                          +0.000749       0.5261
+   13     enquêter                       +0.000694       0.0812
+   14     eut                            +0.000681       0.0337
+   15     souliers                       +0.000656       0.0514
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      exclama                        -0.001830       0.0524
+   2      encouragea                     -0.001797       0.0816
+   3      chignon                        -0.001382       0.0551
+   4      jubilait                       -0.001168       0.0884
+   5      grillage                       -0.000736       0.0753
+   6      jupe                           -0.000670       0.0443
+   7      espéré                         -0.000611       0.0504
+   8      devrait                        -0.000599       0.0340
+   9      mentait                        -0.000572       0.0655
+   10     emmènerait                     -0.000519       0.0931
+   11     arrangeait                     -0.000481       0.0604
+   12     protesta                       -0.000458       0.0546
+   13     finiraient                     -0.000417       0.0879
+   14     amie                           -0.000414       0.0340
+   15     enlève                         -0.000413       0.0517
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jef                            +0.162748       0.3007
+   2      inspecteur                     +0.124967       0.1943
+   3      acquit                         +0.087345       0.0780
+   4      triompher                      +0.077878       0.0743
+   5      francs                         +0.069267       0.0452
+   6      appliqua                       +0.058840       0.0743
+   7      croyable                       +0.054462       0.0898
+   8      intéresserait                  +0.048417       0.0887
+   9      policier                       +0.047872       0.1121
+   10     enquêter                       +0.047510       0.0812
+   11     tint                           +0.044044       0.0488
+   12     reconnut                       +0.042364       0.0447
+   13     eut                            +0.032985       0.0337
+   14     souliers                       +0.032726       0.0514
+   15     continuez                      +0.031431       0.0609
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      exclama                        -0.095884       0.0524
+   2      encouragea                     -0.091511       0.0816
+   3      chignon                        -0.066143       0.0551
+   4      jubilait                       -0.059738       0.0884
+   5      jupe                           -0.035529       0.0443
+   6      grillage                       -0.032821       0.0753
+   7      greta                          -0.031344       0.5375
+   8      arrangeait                     -0.030991       0.0604
+   9      espéré                         -0.030519       0.0504
+   10     devrait                        -0.027230       0.0340
+   11     mentait                        -0.026633       0.0655
+   12     répliquer                      -0.024276       0.0683
+   13     suivraient                     -0.023444       0.1039
+   14     soupir                         -0.021678       0.0374
+   15     amie                           -0.021335       0.0340
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+inspecteur                +0.002579     +0.000089     +0.000089     0.1943
+demoiselle                +0.000400     +0.000036     +0.000036     0.0553
+portefeuille              +0.000546     +0.000034     +0.000034     0.0553
+appliqua                  +0.001197     +0.000033     +0.000033     0.0743
+acquit                    +0.001896     +0.000029     +0.000029     0.0780
+intéresserait             +0.001021     +0.000024     +0.000024     0.0887
+bosquet                   +0.000140     +0.000021     +0.000021     0.0755
+amie                      +0.000000     +0.000020     +0.000020     0.0340
+voyez                     +0.000298     +0.000019     +0.000019     0.0332
+greta                     +0.000075     +0.000018     +0.000018     0.5375
+battues                   +0.000000     +0.000018     +0.000018     0.0901
+franchement               +0.000000     +0.000017     +0.000017     0.0414
+sûrement                  +0.000000     +0.000016     +0.000016     0.0349
+policier                  +0.000972     +0.000016     +0.000016     0.1121
+billet                    +0.000310     +0.000014     +0.000014     0.0427
+espéré                    +0.000000     +0.000012     +0.000012     0.0504
+disparition               +0.000115     +0.000012     +0.000012     0.0407
+jubilait                  +0.000000     +0.000011     +0.000011     0.0884
+désirait                  +0.000000     +0.000010     +0.000010     0.0492
+grillage                  +0.000000     +0.000010     +0.000010     0.0753
+logit final pour 'homme': 0.1604

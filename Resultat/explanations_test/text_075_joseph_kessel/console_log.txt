@@ -1,0 +1,386 @@
+texte analysé: lequel philippe était étendu , mordhom le sentit au silence qui s établit de nouveau . alors il se mit à descendre très vite vers le gubbet kharab , parce que philippe dévalait la pente devant lui , c...
+prédiction: HOMME (confiance: 84.4%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.9284
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      philippe                       +0.000194       0.3051
+   2      ibn                            +0.000163       0.3162
+   3      moussa                         +0.000056       0.1689
+   4      fit                            +0.000045       0.1225
+   5      hyènes                         +0.000041       0.1331
+   6      aridité                        +0.000041       0.1370
+   7      débouchait                     +0.000035       0.0879
+   8      tomba                          +0.000030       0.0502
+   9      évanoui                        +0.000029       0.0790
+   10     dirigea                        +0.000028       0.0548
+   11     arabe                          +0.000026       0.0807
+   12     pente                          +0.000024       0.0522
+   13     couchette                      +0.000023       0.0934
+   14     îlots                          +0.000020       0.1054
+   15     noires                         +0.000020       0.0426
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      houri                          -0.000250       0.3573
+   2      matelots                       -0.000173       0.2045
+   3      el                             -0.000060       0.1859
+   4      voulurent                      -0.000059       0.1025
+   5      récifs                         -0.000050       0.1208
+   6      golfe                          -0.000047       0.1008
+   7      jumeaux                        -0.000043       0.0812
+   8      séparait                       -0.000041       0.0581
+   9      sembla                         -0.000038       0.0522
+   10     attendaient                    -0.000036       0.0447
+   11     mystique                       -0.000034       0.0827
+   12     sensation                      -0.000034       0.0439
+   13     ruisselant                     -0.000031       0.0864
+   14     manoeuvre                      -0.000028       0.0598
+   15     goulet                         -0.000025       0.1423
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      philippe                       +0.000194       0.3051
+   2      ibn                            +0.000163       0.3162
+   3      moussa                         +0.000056       0.1689
+   4      fit                            +0.000045       0.1225
+   5      hyènes                         +0.000041       0.1331
+   6      aridité                        +0.000041       0.1370
+   7      débouchait                     +0.000035       0.0879
+   8      tomba                          +0.000030       0.0502
+   9      évanoui                        +0.000029       0.0790
+   10     dirigea                        +0.000028       0.0548
+   11     arabe                          +0.000026       0.0807
+   12     pente                          +0.000024       0.0522
+   13     couchette                      +0.000023       0.0934
+   14     îlots                          +0.000020       0.1054
+   15     noires                         +0.000020       0.0426
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      houri                          -0.000250       0.3573
+   2      matelots                       -0.000173       0.2045
+   3      el                             -0.000060       0.1859
+   4      voulurent                      -0.000059       0.1025
+   5      récifs                         -0.000050       0.1208
+   6      golfe                          -0.000047       0.1008
+   7      jumeaux                        -0.000043       0.0812
+   8      séparait                       -0.000041       0.0581
+   9      sembla                         -0.000038       0.0522
+   10     attendaient                    -0.000036       0.0447
+   11     mystique                       -0.000034       0.0827
+   12     sensation                      -0.000034       0.0439
+   13     ruisselant                     -0.000031       0.0864
+   14     manoeuvre                      -0.000028       0.0598
+   15     goulet                         -0.000025       0.1423
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      houri                          +0.003038       0.3573
+   2      chuchota                       +0.001555       0.0691
+   3      philippe                       +0.001366       0.3051
+   4      remplissait                    +0.000653       0.0670
+   5      défoncer                       +0.000641       0.1023
+   6      ramener                        +0.000614       0.0454
+   7      arrachait                      +0.000578       0.0744
+   8      aridité                        +0.000519       0.1370
+   9      serra                          +0.000490       0.0533
+   10     sembla                         +0.000444       0.0522
+   11     el                             +0.000409       0.1859
+   12     brûlante                       +0.000388       0.0616
+   13     sensation                      +0.000378       0.0439
+   14     libérée                        +0.000364       0.0774
+   15     parfaite                       +0.000353       0.0444
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ibn                            -0.002966       0.3162
+   2      chenal                         -0.001886       0.1370
+   3      matelots                       -0.001453       0.2045
+   4      barre                          -0.001439       0.1076
+   5      appareillage                   -0.001411       0.1240
+   6      fit                            -0.001326       0.1225
+   7      évanoui                        -0.001191       0.0790
+   8      manoeuvre                      -0.001070       0.0598
+   9      voulurent                      -0.000989       0.1025
+   10     récifs                         -0.000986       0.1208
+   11     détroit                        -0.000982       0.1289
+   12     arrêta                         -0.000901       0.0950
+   13     cabine                         -0.000891       0.0576
+   14     débouchait                     -0.000878       0.0879
+   15     îles                           -0.000872       0.0708
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      houri                          +0.174632       0.3573
+   2      chuchota                       +0.064061       0.0691
+   3      philippe                       +0.052831       0.3051
+   4      arrachait                      +0.027817       0.0744
+   5      ramener                        +0.027205       0.0454
+   6      remplissait                    +0.026866       0.0670
+   7      défoncer                       +0.023670       0.1023
+   8      serra                          +0.021747       0.0533
+   9      sembla                         +0.019331       0.0522
+   10     grimpa                         +0.017965       0.0786
+   11     sensation                      +0.016736       0.0439
+   12     léthargie                      +0.016362       0.1005
+   13     rigide                         +0.015073       0.0731
+   14     el                             +0.014900       0.1859
+   15     respect                        +0.014315       0.0822
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ibn                            -0.127120       0.3162
+   2      chenal                         -0.066582       0.1370
+   3      fit                            -0.058059       0.1225
+   4      barre                          -0.056403       0.1076
+   5      appareillage                   -0.055881       0.1240
+   6      évanoui                        -0.044770       0.0790
+   7      récifs                         -0.044621       0.1208
+   8      manoeuvre                      -0.043927       0.0598
+   9      matelots                       -0.039349       0.2045
+   10     cabine                         -0.037286       0.0576
+   11     tint                           -0.035472       0.0580
+   12     goulet                         -0.034838       0.1423
+   13     débouchait                     -0.034814       0.0879
+   14     îles                           -0.034314       0.0708
+   15     arrêta                         -0.033885       0.0950
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+philippe                  +0.001366     +0.000194     +0.000194     0.3051
+ibn                       +0.000000     +0.000163     +0.000163     0.3162
+moussa                    +0.000138     +0.000056     +0.000056     0.1689
+fit                       +0.000000     +0.000045     +0.000045     0.1225
+hyènes                    +0.000128     +0.000041     +0.000041     0.1331
+aridité                   +0.000519     +0.000041     +0.000041     0.1370
+débouchait                +0.000000     +0.000035     +0.000035     0.0879
+tomba                     +0.000000     +0.000030     +0.000030     0.0502
+évanoui                   +0.000000     +0.000029     +0.000029     0.0790
+dirigea                   +0.000000     +0.000028     +0.000028     0.0548
+arabe                     +0.000000     +0.000026     +0.000026     0.0807
+pente                     +0.000000     +0.000024     +0.000024     0.0522
+couchette                 +0.000000     +0.000023     +0.000023     0.0934
+îlots                     +0.000000     +0.000020     +0.000020     0.1054
+noires                    +0.000000     +0.000020     +0.000020     0.0426
+dangereuse                +0.000004     +0.000019     +0.000019     0.0555
+obscur                    +0.000000     +0.000019     +0.000019     0.0550
+gouvernail                +0.000000     +0.000018     +0.000018     0.1147
+tint                      +0.000000     +0.000018     +0.000018     0.0580
+voile                     +0.000000     +0.000017     +0.000017     0.0948
+logit final pour 'femme': -0.9284
+# analyse pour la classe: HOMME  prédite
+# logit: 0.7593
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      philippe                       +0.000060       0.3051
+   2      moussa                         +0.000053       0.1689
+   3      ibn                            +0.000049       0.3162
+   4      îlots                          +0.000036       0.1054
+   5      débouchait                     +0.000032       0.0879
+   6      barre                          +0.000030       0.1076
+   7      el                             +0.000023       0.1859
+   8      eût                            +0.000022       0.0443
+   9      aridité                        +0.000022       0.1370
+   10     appareillage                   +0.000017       0.1240
+   11     libérée                        +0.000017       0.0774
+   12     évanoui                        +0.000014       0.0790
+   13     descendit                      +0.000013       0.0535
+   14     obscur                         +0.000013       0.0550
+   15     dirigea                        +0.000013       0.0548
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      houri                          -0.000128       0.3573
+   2      matelots                       -0.000080       0.2045
+   3      manoeuvre                      -0.000040       0.0598
+   4      détroit                        -0.000035       0.1289
+   5      arrachait                      -0.000030       0.0744
+   6      mit                            -0.000030       0.0866
+   7      séparait                       -0.000029       0.0581
+   8      jumeaux                        -0.000028       0.0812
+   9      voulurent                      -0.000026       0.1025
+   10     précision                      -0.000025       0.0548
+   11     sembla                         -0.000024       0.0522
+   12     golfe                          -0.000023       0.1008
+   13     récifs                         -0.000021       0.1208
+   14     osait                          -0.000021       0.0504
+   15     orient                         -0.000020       0.0676
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      philippe                       +0.000060       0.3051
+   2      moussa                         +0.000053       0.1689
+   3      ibn                            +0.000049       0.3162
+   4      îlots                          +0.000036       0.1054
+   5      débouchait                     +0.000032       0.0879
+   6      barre                          +0.000030       0.1076
+   7      el                             +0.000023       0.1859
+   8      eût                            +0.000022       0.0443
+   9      aridité                        +0.000022       0.1370
+   10     appareillage                   +0.000017       0.1240
+   11     libérée                        +0.000017       0.0774
+   12     évanoui                        +0.000014       0.0790
+   13     descendit                      +0.000013       0.0535
+   14     obscur                         +0.000013       0.0550
+   15     dirigea                        +0.000013       0.0548
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      houri                          -0.000128       0.3573
+   2      matelots                       -0.000080       0.2045
+   3      manoeuvre                      -0.000040       0.0598
+   4      détroit                        -0.000035       0.1289
+   5      arrachait                      -0.000030       0.0744
+   6      mit                            -0.000030       0.0866
+   7      séparait                       -0.000029       0.0581
+   8      jumeaux                        -0.000028       0.0812
+   9      voulurent                      -0.000026       0.1025
+   10     précision                      -0.000025       0.0548
+   11     sembla                         -0.000024       0.0522
+   12     golfe                          -0.000023       0.1008
+   13     récifs                         -0.000021       0.1208
+   14     osait                          -0.000021       0.0504
+   15     orient                         -0.000020       0.0676
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ibn                            +0.002205       0.3162
+   2      matelots                       +0.001637       0.2045
+   3      chenal                         +0.001573       0.1370
+   4      barre                          +0.001214       0.1076
+   5      appareillage                   +0.001202       0.1240
+   6      fit                            +0.001088       0.1225
+   7      détroit                        +0.001045       0.1289
+   8      manoeuvre                      +0.000998       0.0598
+   9      récifs                         +0.000922       0.1208
+   10     évanoui                        +0.000898       0.0790
+   11     îlots                          +0.000896       0.1054
+   12     voulurent                      +0.000884       0.1025
+   13     arrêta                         +0.000882       0.0950
+   14     îles                           +0.000768       0.0708
+   15     débouchait                     +0.000749       0.0879
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      houri                          -0.003003       0.3573
+   2      chuchota                       -0.001312       0.0691
+   3      philippe                       -0.001171       0.3051
+   4      défoncer                       -0.000672       0.1023
+   5      serra                          -0.000534       0.0533
+   6      remplissait                    -0.000499       0.0670
+   7      el                             -0.000486       0.1859
+   8      ramener                        -0.000460       0.0454
+   9      arrachait                      -0.000440       0.0744
+   10     libérée                        -0.000369       0.0774
+   11     aridité                        -0.000365       0.1370
+   12     sembla                         -0.000312       0.0522
+   13     sensation                      -0.000278       0.0439
+   14     parfaite                       -0.000274       0.0444
+   15     rigide                         -0.000271       0.0731
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ibn                            +0.096791       0.3162
+   2      chenal                         +0.055001       0.1370
+   3      matelots                       +0.051023       0.2045
+   4      barre                          +0.049667       0.1076
+   5      fit                            +0.043588       0.1225
+   6      appareillage                   +0.043389       0.1240
+   7      récifs                         +0.036191       0.1208
+   8      manoeuvre                      +0.034212       0.0598
+   9      évanoui                        +0.033297       0.0790
+   10     débouchait                     +0.032924       0.0879
+   11     voulurent                      +0.031452       0.1025
+   12     îles                           +0.030395       0.0708
+   13     eût                            +0.028994       0.0443
+   14     îlots                          +0.028969       0.1054
+   15     arrêta                         +0.028193       0.0950
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      houri                          -0.147763       0.3573
+   2      philippe                       -0.061267       0.3051
+   3      chuchota                       -0.051310       0.0691
+   4      défoncer                       -0.025256       0.1023
+   5      arrachait                      -0.021861       0.0744
+   6      serra                          -0.020765       0.0533
+   7      remplissait                    -0.020471       0.0670
+   8      ramener                        -0.019674       0.0454
+   9      léthargie                      -0.016853       0.1005
+   10     sembla                         -0.016217       0.0522
+   11     respect                        -0.013779       0.0822
+   12     démence                        -0.013179       0.0871
+   13     aridité                        -0.012121       0.1370
+   14     grimpa                         -0.011703       0.0786
+   15     el                             -0.011291       0.1859
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+philippe                  +0.000000     +0.000060     +0.000060     0.3051
+moussa                    +0.000089     +0.000053     +0.000053     0.1689
+ibn                       +0.002205     +0.000049     +0.000049     0.3162
+îlots                     +0.000896     +0.000036     +0.000036     0.1054
+débouchait                +0.000749     +0.000032     +0.000032     0.0879
+barre                     +0.001214     +0.000030     +0.000030     0.1076
+el                        +0.000000     +0.000023     +0.000023     0.1859
+eût                       +0.000700     +0.000022     +0.000022     0.0443
+aridité                   +0.000000     +0.000022     +0.000022     0.1370
+appareillage              +0.001202     +0.000017     +0.000017     0.1240
+libérée                   +0.000000     +0.000017     +0.000017     0.0774
+évanoui                   +0.000898     +0.000014     +0.000014     0.0790
+descendit                 +0.000354     +0.000013     +0.000013     0.0535
+obscur                    +0.000614     +0.000013     +0.000013     0.0550
+dirigea                   +0.000108     +0.000013     +0.000013     0.0548
+hyènes                    +0.000000     +0.000012     +0.000012     0.1331
+pente                     +0.000273     +0.000012     +0.000012     0.0522
+tomba                     +0.000363     +0.000012     +0.000012     0.0502
+arabe                     +0.000163     +0.000011     +0.000011     0.0807
+démence                   +0.000000     +0.000011     +0.000011     0.0871
+logit final pour 'homme': 0.7593

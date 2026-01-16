@@ -1,0 +1,387 @@
+texte analysé: des activités de guillaume pendant la guerre , puis elle s efforça d oublier tout cela pour ne songer qu à la tâche à laquelle elle consacrait ses journées : rapprocher son fils et son mari . cependan...
+prédiction: FEMME (confiance: 84.6%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.9886
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      louise                         +0.000116       0.3095
+   2      gambetta                       +0.000092       0.1319
+   3      philomène                      +0.000090       0.6130
+   4      balayait                       +0.000058       0.0789
+   5      interrompu                     +0.000057       0.0589
+   6      accoucher                      +0.000047       0.0769
+   7      put                            +0.000040       0.0845
+   8      pessimiste                     +0.000036       0.0922
+   9      consacrait                     +0.000032       0.0858
+   10     parvenu                        +0.000031       0.0531
+   11     prétendait                     +0.000028       0.0528
+   12     arrivant                       +0.000023       0.0428
+   13     accablante                     +0.000023       0.0936
+   14     arrêté                         +0.000019       0.0364
+   15     refusant                       +0.000018       0.0614
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marie                          -0.000174       0.2599
+   2      masses                         -0.000105       0.0680
+   3      crût                           -0.000070       0.1045
+   4      rapprocher                     -0.000067       0.0528
+   5      pronostic                      -0.000067       0.1250
+   6      cahors                         -0.000064       0.1434
+   7      cependant                      -0.000063       0.0719
+   8      sage                           -0.000061       0.0811
+   9      accouchement                   -0.000056       0.0787
+   10     préoccupée                     -0.000052       0.0805
+   11     diminuer                       -0.000038       0.0787
+   12     martel                         -0.000036       0.1169
+   13     attendaient                    -0.000035       0.0405
+   14     trouva                         -0.000035       0.0843
+   15     interminable                   -0.000034       0.0524
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      louise                         +0.000116       0.3095
+   2      gambetta                       +0.000092       0.1319
+   3      philomène                      +0.000090       0.6130
+   4      balayait                       +0.000058       0.0789
+   5      interrompu                     +0.000057       0.0589
+   6      accoucher                      +0.000047       0.0769
+   7      put                            +0.000040       0.0845
+   8      pessimiste                     +0.000036       0.0922
+   9      consacrait                     +0.000032       0.0858
+   10     parvenu                        +0.000031       0.0531
+   11     prétendait                     +0.000028       0.0528
+   12     arrivant                       +0.000023       0.0428
+   13     accablante                     +0.000023       0.0936
+   14     arrêté                         +0.000019       0.0364
+   15     refusant                       +0.000018       0.0614
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marie                          -0.000174       0.2599
+   2      masses                         -0.000105       0.0680
+   3      crût                           -0.000070       0.1045
+   4      rapprocher                     -0.000067       0.0528
+   5      pronostic                      -0.000067       0.1250
+   6      cahors                         -0.000064       0.1434
+   7      cependant                      -0.000063       0.0719
+   8      sage                           -0.000061       0.0811
+   9      accouchement                   -0.000056       0.0787
+   10     préoccupée                     -0.000052       0.0805
+   11     diminuer                       -0.000038       0.0787
+   12     martel                         -0.000036       0.1169
+   13     attendaient                    -0.000035       0.0405
+   14     trouva                         -0.000035       0.0843
+   15     interminable                   -0.000034       0.0524
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marie                          +0.004134       0.2599
+   2      louise                         +0.002047       0.3095
+   3      grossesse                      +0.001979       0.0676
+   4      martel                         +0.001418       0.1169
+   5      préoccupée                     +0.001364       0.0805
+   6      épuisée                        +0.001296       0.0540
+   7      accouchement                   +0.001252       0.0787
+   8      consacrait                     +0.001092       0.0858
+   9      redonna                        +0.001080       0.1136
+   10     activités                      +0.000988       0.0581
+   11     juliette                       +0.000949       0.0869
+   12     efforça                        +0.000939       0.0735
+   13     emmener                        +0.000821       0.0415
+   14     refusant                       +0.000801       0.0614
+   15     accepté                        +0.000733       0.0383
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      philomène                      -0.004718       0.6130
+   2      put                            -0.001592       0.0845
+   3      rétablit                       -0.001173       0.0962
+   4      parvenu                        -0.001031       0.0531
+   5      interrompu                     -0.001012       0.0589
+   6      crût                           -0.000913       0.1045
+   7      brise                          -0.000890       0.0437
+   8      onze                           -0.000727       0.0418
+   9      dut                            -0.000689       0.0439
+   10     paraissait                     -0.000629       0.0375
+   11     michel                         -0.000611       0.0565
+   12     combat                         -0.000585       0.0423
+   13     trouva                         -0.000576       0.0843
+   14     vendanges                      -0.000514       0.1096
+   15     ébloui                         -0.000471       0.0688
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marie                          +0.173545       0.2599
+   2      louise                         +0.116809       0.3095
+   3      grossesse                      +0.081042       0.0676
+   4      épuisée                        +0.060657       0.0540
+   5      redonna                        +0.060066       0.1136
+   6      martel                         +0.058878       0.1169
+   7      préoccupée                     +0.053278       0.0805
+   8      accouchement                   +0.052376       0.0787
+   9      consacrait                     +0.052026       0.0858
+   10     activités                      +0.046031       0.0581
+   11     refusant                       +0.039335       0.0614
+   12     juliette                       +0.039137       0.0869
+   13     emmener                        +0.038714       0.0415
+   14     efforça                        +0.035853       0.0735
+   15     accepté                        +0.032827       0.0383
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      philomène                      -0.227578       0.6130
+   2      put                            -0.081066       0.0845
+   3      crût                           -0.045799       0.1045
+   4      parvenu                        -0.045230       0.0531
+   5      rétablit                       -0.044939       0.0962
+   6      interrompu                     -0.044251       0.0589
+   7      brise                          -0.039609       0.0437
+   8      onze                           -0.033287       0.0418
+   9      dut                            -0.030332       0.0439
+   10     combat                         -0.028230       0.0423
+   11     ébloui                         -0.028218       0.0688
+   12     diminuer                       -0.026333       0.0787
+   13     trouva                         -0.025465       0.0843
+   14     michel                         -0.025179       0.0565
+   15     paraissait                     -0.024995       0.0375
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+louise                    +0.002047     +0.000116     +0.000116     0.3095
+gambetta                  +0.000186     +0.000092     +0.000092     0.1319
+philomène                 +0.000000     +0.000090     +0.000090     0.6130
+balayait                  +0.000000     +0.000058     +0.000058     0.0789
+interrompu                +0.000000     +0.000057     +0.000057     0.0589
+accoucher                 +0.000660     +0.000047     +0.000047     0.0769
+put                       +0.000000     +0.000040     +0.000040     0.0845
+pessimiste                +0.000000     +0.000036     +0.000036     0.0922
+consacrait                +0.001092     +0.000032     +0.000032     0.0858
+parvenu                   +0.000000     +0.000031     +0.000031     0.0531
+prétendait                +0.000000     +0.000028     +0.000028     0.0528
+arrivant                  +0.000000     +0.000023     +0.000023     0.0428
+accablante                +0.000168     +0.000023     +0.000023     0.0936
+arrêté                    +0.000000     +0.000019     +0.000019     0.0364
+refusant                  +0.000801     +0.000018     +0.000018     0.0614
+précédente                +0.000045     +0.000017     +0.000017     0.0486
+auparavant                +0.000269     +0.000016     +0.000016     0.0392
+paraissait                +0.000000     +0.000016     +0.000016     0.0375
+lycée                     +0.000109     +0.000015     +0.000015     0.0599
+dut                       +0.000000     +0.000014     +0.000014     0.0439
+logit final pour 'femme': 0.9886
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.7131
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      louise                         +0.000080       0.3095
+   2      gambetta                       +0.000052       0.1319
+   3      interrompu                     +0.000042       0.0589
+   4      consacrait                     +0.000033       0.0858
+   5      accoucher                      +0.000026       0.0769
+   6      arrivant                       +0.000017       0.0428
+   7      accablante                     +0.000014       0.0936
+   8      balayait                       +0.000014       0.0789
+   9      échec                          +0.000012       0.0511
+   10     pessimiste                     +0.000011       0.0922
+   11     vendanges                      +0.000011       0.1096
+   12     put                            +0.000011       0.0845
+   13     parvenu                        +0.000010       0.0531
+   14     refusant                       +0.000008       0.0614
+   15     repartit                       +0.000008       0.0628
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      masses                         -0.000058       0.0680
+   2      marie                          -0.000058       0.2599
+   3      pronostic                      -0.000050       0.1250
+   4      accouchement                   -0.000042       0.0787
+   5      moissons                       -0.000040       0.1004
+   6      rapprocher                     -0.000035       0.0528
+   7      andré                          -0.000035       0.1377
+   8      cependant                      -0.000031       0.0719
+   9      jumeaux                        -0.000029       0.0737
+   10     trouva                         -0.000024       0.0843
+   11     préoccupée                     -0.000024       0.0805
+   12     grossesse                      -0.000023       0.0676
+   13     rentrée                        -0.000022       0.0424
+   14     santé                          -0.000021       0.0364
+   15     ébloui                         -0.000021       0.0688
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      louise                         +0.000080       0.3095
+   2      gambetta                       +0.000052       0.1319
+   3      interrompu                     +0.000042       0.0589
+   4      consacrait                     +0.000033       0.0858
+   5      accoucher                      +0.000026       0.0769
+   6      arrivant                       +0.000017       0.0428
+   7      accablante                     +0.000014       0.0936
+   8      balayait                       +0.000014       0.0789
+   9      échec                          +0.000012       0.0511
+   10     pessimiste                     +0.000011       0.0922
+   11     vendanges                      +0.000011       0.1096
+   12     put                            +0.000011       0.0845
+   13     parvenu                        +0.000010       0.0531
+   14     refusant                       +0.000008       0.0614
+   15     repartit                       +0.000008       0.0628
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      masses                         -0.000058       0.0680
+   2      marie                          -0.000058       0.2599
+   3      pronostic                      -0.000050       0.1250
+   4      accouchement                   -0.000042       0.0787
+   5      moissons                       -0.000040       0.1004
+   6      rapprocher                     -0.000035       0.0528
+   7      andré                          -0.000035       0.1377
+   8      cependant                      -0.000031       0.0719
+   9      jumeaux                        -0.000029       0.0737
+   10     trouva                         -0.000024       0.0843
+   11     préoccupée                     -0.000024       0.0805
+   12     grossesse                      -0.000023       0.0676
+   13     rentrée                        -0.000022       0.0424
+   14     santé                          -0.000021       0.0364
+   15     ébloui                         -0.000021       0.0688
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      philomène                      +0.003675       0.6130
+   2      put                            +0.001201       0.0845
+   3      rétablit                       +0.000835       0.0962
+   4      parvenu                        +0.000609       0.0531
+   5      interrompu                     +0.000577       0.0589
+   6      brise                          +0.000569       0.0437
+   7      paraissait                     +0.000544       0.0375
+   8      crût                           +0.000541       0.1045
+   9      dut                            +0.000525       0.0439
+   10     onze                           +0.000499       0.0418
+   11     trouva                         +0.000473       0.0843
+   12     balayait                       +0.000464       0.0789
+   13     combat                         +0.000440       0.0423
+   14     adrien                         +0.000440       0.2231
+   15     michel                         +0.000414       0.0565
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marie                          -0.003496       0.2599
+   2      louise                         -0.001578       0.3095
+   3      grossesse                      -0.001342       0.0676
+   4      préoccupée                     -0.000972       0.0805
+   5      martel                         -0.000967       0.1169
+   6      accouchement                   -0.000819       0.0787
+   7      épuisée                        -0.000788       0.0540
+   8      activités                      -0.000750       0.0581
+   9      consacrait                     -0.000750       0.0858
+   10     redonna                        -0.000728       0.1136
+   11     juliette                       -0.000645       0.0869
+   12     emmener                        -0.000557       0.0415
+   13     sage                           -0.000494       0.0811
+   14     refusant                       -0.000489       0.0614
+   15     efforça                        -0.000488       0.0735
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      philomène                      +0.188760       0.6130
+   2      put                            +0.057908       0.0845
+   3      rétablit                       +0.035552       0.0962
+   4      brise                          +0.028648       0.0437
+   5      parvenu                        +0.027017       0.0531
+   6      trouva                         +0.025336       0.0843
+   7      dut                            +0.024877       0.0439
+   8      onze                           +0.024443       0.0418
+   9      crût                           +0.023743       0.1045
+   10     interrompu                     +0.023014       0.0589
+   11     paraissait                     +0.022014       0.0375
+   12     diminuer                       +0.020913       0.0787
+   13     voulut                         +0.020451       0.0449
+   14     combat                         +0.019814       0.0423
+   15     ébloui                         +0.019630       0.0688
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marie                          -0.147839       0.2599
+   2      louise                         -0.086633       0.3095
+   3      grossesse                      -0.054117       0.0676
+   4      martel                         -0.044819       0.1169
+   5      redonna                        -0.044120       0.1136
+   6      consacrait                     -0.040637       0.0858
+   7      préoccupée                     -0.037990       0.0805
+   8      épuisée                        -0.036633       0.0540
+   9      activités                      -0.035534       0.0581
+   10     accouchement                   -0.035141       0.0787
+   11     juliette                       -0.027049       0.0869
+   12     emmener                        -0.027001       0.0415
+   13     refusant                       -0.025555       0.0614
+   14     sage                           -0.024213       0.0811
+   15     efforça                        -0.022380       0.0735
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+louise                    +0.000000     +0.000080     +0.000080     0.3095
+gambetta                  +0.000097     +0.000052     +0.000052     0.1319
+interrompu                +0.000577     +0.000042     +0.000042     0.0589
+consacrait                +0.000000     +0.000033     +0.000033     0.0858
+accoucher                 +0.000000     +0.000026     +0.000026     0.0769
+arrivant                  +0.000190     +0.000017     +0.000017     0.0428
+accablante                +0.000000     +0.000014     +0.000014     0.0936
+balayait                  +0.000464     +0.000014     +0.000014     0.0789
+échec                     +0.000047     +0.000012     +0.000012     0.0511
+pessimiste                +0.000372     +0.000011     +0.000011     0.0922
+vendanges                 +0.000234     +0.000011     +0.000011     0.1096
+put                       +0.001201     +0.000011     +0.000011     0.0845
+parvenu                   +0.000609     +0.000010     +0.000010     0.0531
+refusant                  +0.000000     +0.000008     +0.000008     0.0614
+repartit                  +0.000062     +0.000008     +0.000008     0.0628
+précédente                +0.000028     +0.000008     +0.000008     0.0486
+songer                    +0.000142     +0.000007     +0.000007     0.0482
+ouvrage                   +0.000000     +0.000007     +0.000007     0.0463
+auparavant                +0.000000     +0.000007     +0.000007     0.0392
+arrêté                    +0.000203     +0.000005     +0.000005     0.0364
+logit final pour 'homme': -0.7131

@@ -1,0 +1,387 @@
+texte analysé: , le soir venu , la baiser sans angoisse dans le bas du ventre . je lui souris : oui , je te le jure . mais tu es sûre de toi ? tu es sûre que tu peux me garantir une chose pareille ? tu t en sens cap...
+prédiction: FEMME (confiance: 93.5%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.5435
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      paré                           +0.000082       0.0862
+   2      correction                     +0.000079       0.0796
+   3      réprobatrice                   +0.000074       0.1311
+   4      my                             +0.000063       0.0924
+   5      never                          +0.000056       0.2834
+   6      paumée                         +0.000054       0.1360
+   7      sonnée                         +0.000044       0.1002
+   8      you                            +0.000034       0.1684
+   9      please                         +0.000031       0.1232
+   10     and                            +0.000025       0.0769
+   11     sms                            +0.000022       0.1203
+   12     évidente                       +0.000021       0.0594
+   13     reçois                         +0.000020       0.0719
+   14     bouton                         +0.000019       0.0528
+   15     février                        +0.000019       0.0597
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      alex                           -0.000250       0.5103
+   2      message                        -0.000122       0.1811
+   3      rassemble                      -0.000103       0.0874
+   4      sorry                          -0.000086       0.2876
+   5      revivre                        -0.000064       0.0658
+   6      love                           -0.000061       0.0971
+   7      alice                          -0.000055       0.3998
+   8      texto                          -0.000051       0.1232
+   9      souris                         -0.000043       0.0958
+   10     ferais                         -0.000042       0.0460
+   11     renoncement                    -0.000042       0.0872
+   12     sourires                       -0.000035       0.0520
+   13     tente                          -0.000034       0.0462
+   14     insultes                       -0.000032       0.0683
+   15     présente                       -0.000032       0.0392
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      paré                           +0.000082       0.0862
+   2      correction                     +0.000079       0.0796
+   3      réprobatrice                   +0.000074       0.1311
+   4      my                             +0.000063       0.0924
+   5      never                          +0.000056       0.2834
+   6      paumée                         +0.000054       0.1360
+   7      sonnée                         +0.000044       0.1002
+   8      you                            +0.000034       0.1684
+   9      please                         +0.000031       0.1232
+   10     and                            +0.000025       0.0769
+   11     sms                            +0.000022       0.1203
+   12     évidente                       +0.000021       0.0594
+   13     reçois                         +0.000020       0.0719
+   14     bouton                         +0.000019       0.0528
+   15     février                        +0.000019       0.0597
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      alex                           -0.000250       0.5103
+   2      message                        -0.000122       0.1811
+   3      rassemble                      -0.000103       0.0874
+   4      sorry                          -0.000086       0.2876
+   5      revivre                        -0.000064       0.0658
+   6      love                           -0.000061       0.0971
+   7      alice                          -0.000055       0.3998
+   8      texto                          -0.000051       0.1232
+   9      souris                         -0.000043       0.0958
+   10     ferais                         -0.000042       0.0460
+   11     renoncement                    -0.000042       0.0872
+   12     sourires                       -0.000035       0.0520
+   13     tente                          -0.000034       0.0462
+   14     insultes                       -0.000032       0.0683
+   15     présente                       -0.000032       0.0392
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      alex                           +0.007822       0.5103
+   2      réprobatrice                   +0.001548       0.1311
+   3      it                             +0.001497       0.0891
+   4      légèreté                       +0.001397       0.0631
+   5      texto                          +0.001274       0.1232
+   6      message                        +0.001272       0.1811
+   7      you                            +0.001216       0.1684
+   8      rassemble                      +0.001063       0.0874
+   9      ajoutant                       +0.001053       0.0691
+   10     love                           +0.000980       0.0971
+   11     renoncement                    +0.000945       0.0872
+   12     portable                       +0.000944       0.0791
+   13     never                          +0.000858       0.2834
+   14     rajouter                       +0.000773       0.0912
+   15     essayant                       +0.000603       0.0511
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      correction                     -0.001696       0.0796
+   2      envoi                          -0.001069       0.0851
+   3      pareille                       -0.000877       0.0416
+   4      paré                           -0.000770       0.0862
+   5      souris                         -0.000621       0.0958
+   6      bouton                         -0.000618       0.0528
+   7      jure                           -0.000602       0.0464
+   8      una                            -0.000593       0.1387
+   9      garantir                       -0.000529       0.0853
+   10     excuser                        -0.000489       0.0529
+   11     please                         -0.000488       0.1232
+   12     concevoir                      -0.000453       0.0674
+   13     prouver                        -0.000341       0.0456
+   14     presse                         -0.000290       0.0440
+   15     février                        -0.000283       0.0597
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      alex                           +0.292018       0.5103
+   2      you                            +0.076576       0.1684
+   3      réprobatrice                   +0.069734       0.1311
+   4      it                             +0.068227       0.0891
+   5      never                          +0.060972       0.2834
+   6      légèreté                       +0.056975       0.0631
+   7      ajoutant                       +0.047340       0.0691
+   8      rassemble                      +0.039770       0.0874
+   9      renoncement                    +0.036334       0.0872
+   10     love                           +0.036314       0.0971
+   11     portable                       +0.036122       0.0791
+   12     rajouter                       +0.036107       0.0912
+   13     message                        +0.032452       0.1811
+   14     texto                          +0.030021       0.1232
+   15     essayant                       +0.028807       0.0511
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      correction                     -0.074670       0.0796
+   2      pareille                       -0.044240       0.0416
+   3      envoi                          -0.042604       0.0851
+   4      jure                           -0.033930       0.0464
+   5      una                            -0.029761       0.1387
+   6      paré                           -0.027766       0.0862
+   7      bouton                         -0.023959       0.0528
+   8      excuser                        -0.023880       0.0529
+   9      concevoir                      -0.023825       0.0674
+   10     souris                         -0.020101       0.0958
+   11     efface                         -0.015884       0.0703
+   12     please                         -0.014221       0.1232
+   13     presse                         -0.013177       0.0440
+   14     envoyé                         -0.008634       0.0410
+   15     revivre                        -0.008598       0.0658
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+paré                      +0.000000     +0.000082     +0.000082     0.0862
+correction                +0.000000     +0.000079     +0.000079     0.0796
+réprobatrice              +0.001548     +0.000074     +0.000074     0.1311
+my                        +0.000000     +0.000063     +0.000063     0.0924
+never                     +0.000858     +0.000056     +0.000056     0.2834
+paumée                    +0.000356     +0.000054     +0.000054     0.1360
+sonnée                    +0.000443     +0.000044     +0.000044     0.1002
+you                       +0.001216     +0.000034     +0.000034     0.1684
+please                    +0.000000     +0.000031     +0.000031     0.1232
+and                       +0.000000     +0.000025     +0.000025     0.0769
+sms                       +0.000000     +0.000022     +0.000022     0.1203
+évidente                  +0.000159     +0.000021     +0.000021     0.0594
+reçois                    +0.000176     +0.000020     +0.000020     0.0719
+bouton                    +0.000000     +0.000019     +0.000019     0.0528
+février                   +0.000000     +0.000019     +0.000019     0.0597
+reprenne                  +0.000062     +0.000014     +0.000014     0.0799
+una                       +0.000000     +0.000013     +0.000013     0.1387
+italie                    +0.000024     +0.000010     +0.000010     0.0614
+envoyer                   +0.000146     +0.000009     +0.000009     0.0394
+pareille                  +0.000000     +0.000006     +0.000006     0.0416
+logit final pour 'femme': 1.5435
+# analyse pour la classe: HOMME  vraie classe
+# logit: -1.1164
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      never                          +0.000102       0.2834
+   2      réprobatrice                   +0.000030       0.1311
+   3      correction                     +0.000030       0.0796
+   4      sorry                          +0.000023       0.2876
+   5      paré                           +0.000022       0.0862
+   6      paumée                         +0.000021       0.1360
+   7      please                         +0.000020       0.1232
+   8      my                             +0.000020       0.0924
+   9      évidente                       +0.000019       0.0594
+   10     reprenne                       +0.000013       0.0799
+   11     sonnée                         +0.000012       0.1002
+   12     rajouter                       +0.000012       0.0912
+   13     profondément                   +0.000009       0.0399
+   14     bouton                         +0.000008       0.0528
+   15     sms                            +0.000008       0.1203
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      alex                           -0.000142       0.5103
+   2      message                        -0.000044       0.1811
+   3      souris                         -0.000025       0.0958
+   4      texto                          -0.000024       0.1232
+   5      renoncement                    -0.000023       0.0872
+   6      una                            -0.000022       0.1387
+   7      portable                       -0.000022       0.0791
+   8      texte                          -0.000022       0.0525
+   9      sourires                       -0.000020       0.0520
+   10     rassemble                      -0.000020       0.0874
+   11     envoyé                         -0.000019       0.0410
+   12     tente                          -0.000019       0.0462
+   13     alice                          -0.000018       0.3998
+   14     ferais                         -0.000017       0.0460
+   15     revivre                        -0.000016       0.0658
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      never                          +0.000102       0.2834
+   2      réprobatrice                   +0.000030       0.1311
+   3      correction                     +0.000030       0.0796
+   4      sorry                          +0.000023       0.2876
+   5      paré                           +0.000022       0.0862
+   6      paumée                         +0.000021       0.1360
+   7      please                         +0.000020       0.1232
+   8      my                             +0.000020       0.0924
+   9      évidente                       +0.000019       0.0594
+   10     reprenne                       +0.000013       0.0799
+   11     sonnée                         +0.000012       0.1002
+   12     rajouter                       +0.000012       0.0912
+   13     profondément                   +0.000009       0.0399
+   14     bouton                         +0.000008       0.0528
+   15     sms                            +0.000008       0.1203
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      alex                           -0.000142       0.5103
+   2      message                        -0.000044       0.1811
+   3      souris                         -0.000025       0.0958
+   4      texto                          -0.000024       0.1232
+   5      renoncement                    -0.000023       0.0872
+   6      una                            -0.000022       0.1387
+   7      portable                       -0.000022       0.0791
+   8      texte                          -0.000022       0.0525
+   9      sourires                       -0.000020       0.0520
+   10     rassemble                      -0.000020       0.0874
+   11     envoyé                         -0.000019       0.0410
+   12     tente                          -0.000019       0.0462
+   13     alice                          -0.000018       0.3998
+   14     ferais                         -0.000017       0.0460
+   15     revivre                        -0.000016       0.0658
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      correction                     +0.001162       0.0796
+   2      paré                           +0.000665       0.0862
+   3      pareille                       +0.000586       0.0416
+   4      souris                         +0.000564       0.0958
+   5      envoi                          +0.000495       0.0851
+   6      una                            +0.000492       0.1387
+   7      bouton                         +0.000471       0.0528
+   8      garantir                       +0.000465       0.0853
+   9      jure                           +0.000401       0.0464
+   10     excuser                        +0.000339       0.0529
+   11     sorry                          +0.000325       0.2876
+   12     please                         +0.000289       0.1232
+   13     sms                            +0.000278       0.1203
+   14     concevoir                      +0.000268       0.0674
+   15     février                        +0.000256       0.0597
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      alex                           -0.005027       0.5103
+   2      texto                          -0.001031       0.1232
+   3      légèreté                       -0.000990       0.0631
+   4      you                            -0.000945       0.1684
+   5      réprobatrice                   -0.000894       0.1311
+   6      it                             -0.000874       0.0891
+   7      rassemble                      -0.000827       0.0874
+   8      ajoutant                       -0.000813       0.0691
+   9      rajouter                       -0.000808       0.0912
+   10     never                          -0.000806       0.2834
+   11     message                        -0.000782       0.1811
+   12     love                           -0.000704       0.0971
+   13     portable                       -0.000683       0.0791
+   14     renoncement                    -0.000678       0.0872
+   15     paumée                         -0.000503       0.1360
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      correction                     +0.052755       0.0796
+   2      paré                           +0.029938       0.0862
+   3      pareille                       +0.028344       0.0416
+   4      una                            +0.024053       0.1387
+   5      jure                           +0.021839       0.0464
+   6      souris                         +0.020387       0.0958
+   7      bouton                         +0.017872       0.0528
+   8      envoi                          +0.017028       0.0851
+   9      excuser                        +0.013714       0.0529
+   10     concevoir                      +0.013189       0.0674
+   11     garantir                       +0.011163       0.0853
+   12     please                         +0.010240       0.1232
+   13     efface                         +0.010215       0.0703
+   14     my                             +0.010175       0.0924
+   15     février                        +0.009919       0.0597
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      alex                           -0.163584       0.5103
+   2      never                          -0.061411       0.2834
+   3      you                            -0.053297       0.1684
+   4      réprobatrice                   -0.045401       0.1311
+   5      it                             -0.039184       0.0891
+   6      légèreté                       -0.038824       0.0631
+   7      rajouter                       -0.036285       0.0912
+   8      ajoutant                       -0.035468       0.0691
+   9      rassemble                      -0.029439       0.0874
+   10     texto                          -0.028303       0.1232
+   11     love                           -0.027998       0.0971
+   12     portable                       -0.024977       0.0791
+   13     renoncement                    -0.024150       0.0872
+   14     essayant                       -0.022052       0.0511
+   15     affichant                      -0.019262       0.0982
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+never                     +0.000000     +0.000102     +0.000102     0.2834
+réprobatrice              +0.000000     +0.000030     +0.000030     0.1311
+correction                +0.001162     +0.000030     +0.000030     0.0796
+sorry                     +0.000325     +0.000023     +0.000023     0.2876
+paré                      +0.000665     +0.000022     +0.000022     0.0862
+paumée                    +0.000000     +0.000021     +0.000021     0.1360
+please                    +0.000289     +0.000020     +0.000020     0.1232
+my                        +0.000244     +0.000020     +0.000020     0.0924
+évidente                  +0.000000     +0.000019     +0.000019     0.0594
+reprenne                  +0.000000     +0.000013     +0.000013     0.0799
+sonnée                    +0.000000     +0.000012     +0.000012     0.1002
+rajouter                  +0.000000     +0.000012     +0.000012     0.0912
+profondément              +0.000000     +0.000009     +0.000009     0.0399
+bouton                    +0.000471     +0.000008     +0.000008     0.0528
+sms                       +0.000278     +0.000008     +0.000008     0.1203
+envoyer                   +0.000000     +0.000007     +0.000007     0.0394
+envoi                     +0.000495     +0.000007     +0.000007     0.0851
+essayant                  +0.000000     +0.000006     +0.000006     0.0511
+enthousiasme              +0.000000     +0.000006     +0.000006     0.0458
+pareille                  +0.000586     +0.000005     +0.000005     0.0416
+logit final pour 'homme': -1.1164

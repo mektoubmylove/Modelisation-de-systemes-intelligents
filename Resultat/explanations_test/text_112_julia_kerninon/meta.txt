@@ -1,0 +1,5 @@
+filename: (KERNINON)(Julia)(le dernier amour d'attila kiss)(2)(2016)(1987)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 112
+first_name: julia
+last_name: kerninon
+true_label: femme

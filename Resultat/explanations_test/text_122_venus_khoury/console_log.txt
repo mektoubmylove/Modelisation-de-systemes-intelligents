@@ -1,0 +1,386 @@
+texte analysé: l oued du ksar s était retiré sous terre pendant plus d un mois avant de réapparaître dans un lieu où personne ne l attendait . les livres ne servent qu à l instituteur et au baligh qui ne s était jam...
+prédiction: FEMME (confiance: 85.9%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.9728
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      raisonnables                   +0.000108       0.1008
+   2      digéré                         +0.000104       0.1248
+   3      fouettait                      +0.000093       0.1286
+   4      extinction                     +0.000075       0.1179
+   5      infirmerie                     +0.000068       0.1106
+   6      chèvres                        +0.000068       0.1008
+   7      corne                          +0.000062       0.0941
+   8      policiers                      +0.000059       0.0744
+   9      remplacée                      +0.000056       0.1017
+   10     réapparaître                   +0.000051       0.1109
+   11     fouet                          +0.000049       0.0714
+   12     roulements                     +0.000046       0.1322
+   13     chèvre                         +0.000045       0.0848
+   14     imaginaient                    +0.000042       0.1214
+   15     oued                           +0.000029       0.1726
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      décapiter                      -0.000228       0.2915
+   2      translucides                   -0.000140       0.1260
+   3      rattrapés                      -0.000132       0.1548
+   4      donnent                        -0.000098       0.1144
+   5      décident                       -0.000091       0.1079
+   6      grêle                          -0.000087       0.0957
+   7      tordait                        -0.000087       0.0897
+   8      referment                      -0.000085       0.1286
+   9      plante                         -0.000084       0.1357
+   10     sombres                        -0.000077       0.0507
+   11     cubes                          -0.000074       0.1059
+   12     protégée                       -0.000072       0.0719
+   13     tambour                        -0.000070       0.0842
+   14     flocons                        -0.000068       0.0963
+   15     neige                          -0.000063       0.2727
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      raisonnables                   +0.000108       0.1008
+   2      digéré                         +0.000104       0.1248
+   3      fouettait                      +0.000093       0.1286
+   4      extinction                     +0.000075       0.1179
+   5      infirmerie                     +0.000068       0.1106
+   6      chèvres                        +0.000068       0.1008
+   7      corne                          +0.000062       0.0941
+   8      policiers                      +0.000059       0.0744
+   9      remplacée                      +0.000056       0.1017
+   10     réapparaître                   +0.000051       0.1109
+   11     fouet                          +0.000049       0.0714
+   12     roulements                     +0.000046       0.1322
+   13     chèvre                         +0.000045       0.0848
+   14     imaginaient                    +0.000042       0.1214
+   15     oued                           +0.000029       0.1726
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      décapiter                      -0.000228       0.2915
+   2      translucides                   -0.000140       0.1260
+   3      rattrapés                      -0.000132       0.1548
+   4      donnent                        -0.000098       0.1144
+   5      décident                       -0.000091       0.1079
+   6      grêle                          -0.000087       0.0957
+   7      tordait                        -0.000087       0.0897
+   8      referment                      -0.000085       0.1286
+   9      plante                         -0.000084       0.1357
+   10     sombres                        -0.000077       0.0507
+   11     cubes                          -0.000074       0.1059
+   12     protégée                       -0.000072       0.0719
+   13     tambour                        -0.000070       0.0842
+   14     flocons                        -0.000068       0.0963
+   15     neige                          -0.000063       0.2727
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      neige                          +0.003149       0.2727
+   2      frigidaire                     +0.002516       0.1419
+   3      protégée                       +0.001992       0.0719
+   4      rattrapés                      +0.001708       0.1548
+   5      recherche                      +0.001339       0.0463
+   6      sombres                        +0.001240       0.0507
+   7      remplacée                      +0.001141       0.1017
+   8      translucides                   +0.001127       0.1260
+   9      flocons                        +0.001103       0.0963
+   10     referment                      +0.001090       0.1286
+   11     sien                           +0.001087       0.0480
+   12     correctement                   +0.000973       0.0800
+   13     imaginaient                    +0.000930       0.1214
+   14     ri                             +0.000919       0.0684
+   15     finissait                      +0.000904       0.0620
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      épeler                         -0.002726       0.1548
+   2      grêle                          -0.001930       0.0957
+   3      démangeaisons                  -0.001870       0.1565
+   4      roulements                     -0.001599       0.1322
+   5      fourmis                        -0.001431       0.0917
+   6      décapiter                      -0.001350       0.2915
+   7      réapparaître                   -0.001284       0.1109
+   8      armé                           -0.001184       0.0692
+   9      condamné                       -0.001059       0.0650
+   10     intervention                   -0.001041       0.0678
+   11     impertinent                    -0.001020       0.1478
+   12     extinction                     -0.001006       0.1179
+   13     cubes                          -0.000993       0.1059
+   14     policiers                      -0.000910       0.0744
+   15     supplice                       -0.000684       0.0742
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      neige                          +0.113781       0.2727
+   2      frigidaire                     +0.102615       0.1419
+   3      protégée                       +0.058860       0.0719
+   4      rattrapés                      +0.057305       0.1548
+   5      recherche                      +0.045386       0.0463
+   6      imaginaient                    +0.042340       0.1214
+   7      remplacée                      +0.040190       0.1017
+   8      ri                             +0.039549       0.0684
+   9      sombres                        +0.037034       0.0507
+   10     referment                      +0.033687       0.1286
+   11     finissait                      +0.031189       0.0620
+   12     sien                           +0.031177       0.0480
+   13     correctement                   +0.030152       0.0800
+   14     translucides                   +0.027533       0.1260
+   15     effacer                        +0.026655       0.0608
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      épeler                         -0.114997       0.1548
+   2      grêle                          -0.092457       0.0957
+   3      démangeaisons                  -0.076938       0.1565
+   4      roulements                     -0.064004       0.1322
+   5      décapiter                      -0.061530       0.2915
+   6      fourmis                        -0.053460       0.0917
+   7      condamné                       -0.049298       0.0650
+   8      armé                           -0.043242       0.0692
+   9      cubes                          -0.041119       0.1059
+   10     réapparaître                   -0.039144       0.1109
+   11     impertinent                    -0.039091       0.1478
+   12     intervention                   -0.036020       0.0678
+   13     extinction                     -0.032569       0.1179
+   14     tordait                        -0.028676       0.0897
+   15     supplice                       -0.026445       0.0742
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+raisonnables              +0.000000     +0.000108     +0.000108     0.1008
+digéré                    +0.000323     +0.000104     +0.000104     0.1248
+fouettait                 +0.000000     +0.000093     +0.000093     0.1286
+extinction                +0.000000     +0.000075     +0.000075     0.1179
+infirmerie                +0.000075     +0.000068     +0.000068     0.1106
+chèvres                   +0.000050     +0.000068     +0.000068     0.1008
+corne                     +0.000000     +0.000062     +0.000062     0.0941
+policiers                 +0.000000     +0.000059     +0.000059     0.0744
+remplacée                 +0.001141     +0.000056     +0.000056     0.1017
+réapparaître              +0.000000     +0.000051     +0.000051     0.1109
+fouet                     +0.000000     +0.000049     +0.000049     0.0714
+roulements                +0.000000     +0.000046     +0.000046     0.1322
+chèvre                    +0.000000     +0.000045     +0.000045     0.0848
+imaginaient               +0.000930     +0.000042     +0.000042     0.1214
+oued                      +0.000306     +0.000029     +0.000029     0.1726
+noires                    +0.000000     +0.000026     +0.000026     0.0498
+armé                      +0.000000     +0.000025     +0.000025     0.0692
+intervention              +0.000000     +0.000023     +0.000023     0.0678
+papillon                  +0.000000     +0.000022     +0.000022     0.0801
+chatouillait              +0.000000     +0.000019     +0.000019     0.1451
+logit final pour 'femme': 0.9728
+# analyse pour la classe: HOMME
+# logit: -0.8307
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      extinction                     +0.000055       0.1179
+   2      remplacée                      +0.000052       0.1017
+   3      impertinent                    +0.000051       0.1478
+   4      raisonnables                   +0.000048       0.1008
+   5      infirmerie                     +0.000047       0.1106
+   6      fouettait                      +0.000045       0.1286
+   7      corne                          +0.000039       0.0941
+   8      policiers                      +0.000038       0.0744
+   9      papillon                       +0.000033       0.0801
+   10     digéré                         +0.000033       0.1248
+   11     neige                          +0.000029       0.2727
+   12     réapparaître                   +0.000028       0.1109
+   13     frigidaire                     +0.000026       0.1419
+   14     chèvres                        +0.000026       0.1008
+   15     noires                         +0.000025       0.0498
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      décapiter                      -0.000069       0.2915
+   2      plante                         -0.000054       0.1357
+   3      décident                       -0.000054       0.1079
+   4      rattrapés                      -0.000054       0.1548
+   5      tambour                        -0.000047       0.0842
+   6      flocons                        -0.000042       0.0963
+   7      crottes                        -0.000040       0.1384
+   8      grisaille                      -0.000040       0.1037
+   9      translucides                   -0.000039       0.1260
+   10     décapitation                   -0.000039       0.1768
+   11     referment                      -0.000038       0.1286
+   12     protégée                       -0.000038       0.0719
+   13     cubes                          -0.000037       0.1059
+   14     sombres                        -0.000032       0.0507
+   15     grêle                          -0.000031       0.0957
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      extinction                     +0.000055       0.1179
+   2      remplacée                      +0.000052       0.1017
+   3      impertinent                    +0.000051       0.1478
+   4      raisonnables                   +0.000048       0.1008
+   5      infirmerie                     +0.000047       0.1106
+   6      fouettait                      +0.000045       0.1286
+   7      corne                          +0.000039       0.0941
+   8      policiers                      +0.000038       0.0744
+   9      papillon                       +0.000033       0.0801
+   10     digéré                         +0.000033       0.1248
+   11     neige                          +0.000029       0.2727
+   12     réapparaître                   +0.000028       0.1109
+   13     frigidaire                     +0.000026       0.1419
+   14     chèvres                        +0.000026       0.1008
+   15     noires                         +0.000025       0.0498
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      décapiter                      -0.000069       0.2915
+   2      plante                         -0.000054       0.1357
+   3      décident                       -0.000054       0.1079
+   4      rattrapés                      -0.000054       0.1548
+   5      tambour                        -0.000047       0.0842
+   6      flocons                        -0.000042       0.0963
+   7      crottes                        -0.000040       0.1384
+   8      grisaille                      -0.000040       0.1037
+   9      translucides                   -0.000039       0.1260
+   10     décapitation                   -0.000039       0.1768
+   11     referment                      -0.000038       0.1286
+   12     protégée                       -0.000038       0.0719
+   13     cubes                          -0.000037       0.1059
+   14     sombres                        -0.000032       0.0507
+   15     grêle                          -0.000031       0.0957
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      épeler                         +0.001859       0.1548
+   2      grêle                          +0.001323       0.0957
+   3      démangeaisons                  +0.001233       0.1565
+   4      fourmis                        +0.001090       0.0917
+   5      réapparaître                   +0.001003       0.1109
+   6      roulements                     +0.000975       0.1322
+   7      décapiter                      +0.000864       0.2915
+   8      intervention                   +0.000781       0.0678
+   9      impertinent                    +0.000772       0.1478
+   10     cubes                          +0.000763       0.1059
+   11     condamné                       +0.000744       0.0650
+   12     armé                           +0.000690       0.0692
+   13     extinction                     +0.000649       0.1179
+   14     supplice                       +0.000576       0.0742
+   15     policiers                      +0.000545       0.0744
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      neige                          -0.002754       0.2727
+   2      frigidaire                     -0.002081       0.1419
+   3      protégée                       -0.001382       0.0719
+   4      rattrapés                      -0.001077       0.1548
+   5      sombres                        -0.000958       0.0507
+   6      translucides                   -0.000917       0.1260
+   7      referment                      -0.000890       0.1286
+   8      recherche                      -0.000816       0.0463
+   9      flocons                        -0.000813       0.0963
+   10     remplacée                      -0.000771       0.1017
+   11     correctement                   -0.000738       0.0800
+   12     gratte                         -0.000691       0.0860
+   13     imaginaient                    -0.000688       0.1214
+   14     sien                           -0.000686       0.0480
+   15     finissait                      -0.000676       0.0620
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      épeler                         +0.073309       0.1548
+   2      grêle                          +0.061601       0.0957
+   3      démangeaisons                  +0.048593       0.1565
+   4      fourmis                        +0.045589       0.0917
+   5      cubes                          +0.036421       0.1059
+   6      roulements                     +0.035777       0.1322
+   7      décapiter                      +0.032734       0.2915
+   8      condamné                       +0.032409       0.0650
+   9      intervention                   +0.031242       0.0678
+   10     impertinent                    +0.028993       0.1478
+   11     réapparaître                   +0.028075       0.1109
+   12     armé                           +0.024159       0.0692
+   13     crottes                        +0.020988       0.1384
+   14     supplice                       +0.018922       0.0742
+   15     sortis                         +0.018332       0.0573
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      neige                          -0.115553       0.2727
+   2      frigidaire                     -0.092307       0.1419
+   3      protégée                       -0.042423       0.0719
+   4      rattrapés                      -0.039963       0.1548
+   5      referment                      -0.031397       0.1286
+   6      remplacée                      -0.031100       0.1017
+   7      translucides                   -0.030393       0.1260
+   8      imaginaient                    -0.030370       0.1214
+   9      sombres                        -0.030043       0.0507
+   10     ri                             -0.028425       0.0684
+   11     finissait                      -0.027691       0.0620
+   12     gratte                         -0.027003       0.0860
+   13     recherche                      -0.025375       0.0463
+   14     courent                        -0.024102       0.0746
+   15     riait                          -0.021361       0.0593
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+extinction                +0.000649     +0.000055     +0.000055     0.1179
+remplacée                 +0.000000     +0.000052     +0.000052     0.1017
+impertinent               +0.000772     +0.000051     +0.000051     0.1478
+raisonnables              +0.000370     +0.000048     +0.000048     0.1008
+infirmerie                +0.000000     +0.000047     +0.000047     0.1106
+fouettait                 +0.000067     +0.000045     +0.000045     0.1286
+corne                     +0.000370     +0.000039     +0.000039     0.0941
+policiers                 +0.000545     +0.000038     +0.000038     0.0744
+papillon                  +0.000000     +0.000033     +0.000033     0.0801
+digéré                    +0.000000     +0.000033     +0.000033     0.1248
+neige                     +0.000000     +0.000029     +0.000029     0.2727
+réapparaître              +0.001003     +0.000028     +0.000028     0.1109
+frigidaire                +0.000000     +0.000026     +0.000026     0.1419
+chèvres                   +0.000000     +0.000026     +0.000026     0.1008
+noires                    +0.000028     +0.000025     +0.000025     0.0498
+chatouillait              +0.000000     +0.000025     +0.000025     0.1451
+épeler                    +0.001859     +0.000024     +0.000024     0.1548
+armé                      +0.000690     +0.000021     +0.000021     0.0692
+riait                     +0.000000     +0.000021     +0.000021     0.0593
+ottomane                  +0.000000     +0.000019     +0.000019     0.1740
+logit final pour 'homme': -0.8307

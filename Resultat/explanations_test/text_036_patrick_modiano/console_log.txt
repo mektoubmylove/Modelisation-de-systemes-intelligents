@@ -1,0 +1,386 @@
+texte analysé: jusquiames ne se formalisera pas de ses origines . il usurpera l identité de son ami des essarts pour s introduire plus rapidement auprès d elle . lui aussi , il lui parlera de ses ancêtres , de ce ca...
+prédiction: HOMME (confiance: 53.4%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.0764
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      juif                           +0.000168       0.2974
+   2      risquait                       +0.000098       0.0492
+   3      grog                           +0.000092       0.1194
+   4      cardinal                       +0.000082       0.0949
+   5      étendit                        +0.000077       0.0664
+   6      admirait                       +0.000074       0.0615
+   7      château                        +0.000072       0.1399
+   8      freins                         +0.000072       0.0878
+   9      juifs                          +0.000068       0.1464
+   10     punition                       +0.000047       0.0676
+   11     snob                           +0.000043       0.1006
+   12     promenaient                    +0.000042       0.0809
+   13     massacre                       +0.000041       0.0624
+   14     portrait                       +0.000040       0.0447
+   15     pervenche                      +0.000038       0.1170
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marquise                       -0.000108       0.4312
+   2      princesse                      -0.000108       0.0551
+   3      lebrun                         -0.000107       0.1257
+   4      distant                        -0.000095       0.0766
+   5      aristocratie                   -0.000089       0.0909
+   6      aliénor                        -0.000074       0.1428
+   7      ancêtres                       -0.000073       0.0580
+   8      collabo                        -0.000070       0.1415
+   9      crisser                        -0.000066       0.0952
+   10     autographe                     -0.000059       0.1175
+   11     perçait                        -0.000054       0.0783
+   12     chandelles                     -0.000053       0.0833
+   13     gérard                         -0.000051       0.1793
+   14     cents                          -0.000048       0.0383
+   15     eaux                           -0.000043       0.0444
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      juif                           +0.000168       0.2974
+   2      risquait                       +0.000098       0.0492
+   3      grog                           +0.000092       0.1194
+   4      cardinal                       +0.000082       0.0949
+   5      étendit                        +0.000077       0.0664
+   6      admirait                       +0.000074       0.0615
+   7      château                        +0.000072       0.1399
+   8      freins                         +0.000072       0.0878
+   9      juifs                          +0.000068       0.1464
+   10     punition                       +0.000047       0.0676
+   11     snob                           +0.000043       0.1006
+   12     promenaient                    +0.000042       0.0809
+   13     massacre                       +0.000041       0.0624
+   14     portrait                       +0.000040       0.0447
+   15     pervenche                      +0.000038       0.1170
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marquise                       -0.000108       0.4312
+   2      princesse                      -0.000108       0.0551
+   3      lebrun                         -0.000107       0.1257
+   4      distant                        -0.000095       0.0766
+   5      aristocratie                   -0.000089       0.0909
+   6      aliénor                        -0.000074       0.1428
+   7      ancêtres                       -0.000073       0.0580
+   8      collabo                        -0.000070       0.1415
+   9      crisser                        -0.000066       0.0952
+   10     autographe                     -0.000059       0.1175
+   11     perçait                        -0.000054       0.0783
+   12     chandelles                     -0.000053       0.0833
+   13     gérard                         -0.000051       0.1793
+   14     cents                          -0.000048       0.0383
+   15     eaux                           -0.000043       0.0444
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lebrun                         +0.002647       0.1257
+   2      aliénor                        +0.002140       0.1428
+   3      foulques                       +0.001245       0.3259
+   4      parlera                        +0.001225       0.0701
+   5      blonds                         +0.001207       0.0508
+   6      russie                         +0.001100       0.0752
+   7      chandelles                     +0.001056       0.0833
+   8      teint                          +0.001023       0.0420
+   9      glissait                       +0.000940       0.0511
+   10     rudesse                        +0.000920       0.0837
+   11     parfum                         +0.000912       0.0397
+   12     distant                        +0.000899       0.0766
+   13     malaise                        +0.000828       0.0438
+   14     rentraient                     +0.000792       0.0736
+   15     aristocratie                   +0.000771       0.0909
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marquise                       -0.005686       0.4312
+   2      juif                           -0.004355       0.2974
+   3      gérard                         -0.002940       0.1793
+   4      cents                          -0.001551       0.0383
+   5      mètres                         -0.001507       0.0370
+   6      armures                        -0.001386       0.1075
+   7      juifs                          -0.001238       0.1464
+   8      grog                           -0.001063       0.1194
+   9      inflexions                     -0.001036       0.0902
+   10     fixèrent                       -0.001011       0.0924
+   11     introduire                     -0.000992       0.0592
+   12     capitaine                      -0.000962       0.0547
+   13     gueules                        -0.000962       0.0774
+   14     azur                           -0.000929       0.0603
+   15     fidèles                        -0.000833       0.0538
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lebrun                         +0.160744       0.1257
+   2      aliénor                        +0.114321       0.1428
+   3      parlera                        +0.066496       0.0701
+   4      blonds                         +0.059502       0.0508
+   5      chandelles                     +0.054206       0.0833
+   6      aristocratie                   +0.052994       0.0909
+   7      russie                         +0.052567       0.0752
+   8      foulques                       +0.052326       0.3259
+   9      parfum                         +0.051454       0.0397
+   10     limousine                      +0.051422       0.1978
+   11     ancêtres                       +0.049796       0.0580
+   12     glissait                       +0.049068       0.0511
+   13     teint                          +0.047915       0.0420
+   14     collabo                        +0.047709       0.1415
+   15     malaise                        +0.042956       0.0438
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      juif                           -0.256071       0.2974
+   2      marquise                       -0.206137       0.4312
+   3      gérard                         -0.128618       0.1793
+   4      mètres                         -0.078066       0.0370
+   5      cents                          -0.076794       0.0383
+   6      armures                        -0.069664       0.1075
+   7      juifs                          -0.066217       0.1464
+   8      fixèrent                       -0.061192       0.0924
+   9      introduire                     -0.051299       0.0592
+   10     grog                           -0.049960       0.1194
+   11     azur                           -0.046796       0.0603
+   12     fidèles                        -0.045323       0.0538
+   13     xiv                            -0.044393       0.0680
+   14     traversa                       -0.041836       0.0510
+   15     capitaine                      -0.040361       0.0547
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+juif                      +0.000000     +0.000168     +0.000168     0.2974
+risquait                  +0.000000     +0.000098     +0.000098     0.0492
+grog                      +0.000000     +0.000092     +0.000092     0.1194
+cardinal                  +0.000145     +0.000082     +0.000082     0.0949
+étendit                   +0.000000     +0.000077     +0.000077     0.0664
+admirait                  +0.000000     +0.000074     +0.000074     0.0615
+château                   +0.000019     +0.000072     +0.000072     0.1399
+freins                    +0.000000     +0.000072     +0.000072     0.0878
+juifs                     +0.000000     +0.000068     +0.000068     0.1464
+punition                  +0.000000     +0.000047     +0.000047     0.0676
+snob                      +0.000000     +0.000043     +0.000043     0.1006
+promenaient               +0.000000     +0.000042     +0.000042     0.0809
+massacre                  +0.000000     +0.000041     +0.000041     0.0624
+portrait                  +0.000000     +0.000040     +0.000040     0.0447
+pervenche                 +0.000448     +0.000038     +0.000038     0.1170
+rêvait                    +0.000294     +0.000038     +0.000038     0.0500
+fixèrent                  +0.000000     +0.000037     +0.000037     0.0924
+parlera                   +0.001225     +0.000036     +0.000036     0.0701
+subjugué                  +0.000000     +0.000036     +0.000036     0.0961
+capitaine                 +0.000000     +0.000036     +0.000036     0.0547
+logit final pour 'femme': -0.0764
+# analyse pour la classe: HOMME  prédite
+# logit: 0.0590
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      foulques                       +0.000099       0.3259
+   2      risquait                       +0.000056       0.0492
+   3      snob                           +0.000056       0.1006
+   4      étendit                        +0.000039       0.0664
+   5      grog                           +0.000037       0.1194
+   6      blonds                         +0.000037       0.0508
+   7      dévotion                       +0.000033       0.0739
+   8      fixèrent                       +0.000032       0.0924
+   9      juif                           +0.000030       0.2974
+   10     admirait                       +0.000030       0.0615
+   11     subjugué                       +0.000029       0.0961
+   12     punition                       +0.000027       0.0676
+   13     violettes                      +0.000027       0.0696
+   14     rudesse                        +0.000021       0.0837
+   15     devinait                       +0.000020       0.0521
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marquise                       -0.000187       0.4312
+   2      gérard                         -0.000122       0.1793
+   3      collabo                        -0.000076       0.1415
+   4      ancêtres                       -0.000066       0.0580
+   5      princesse                      -0.000064       0.0551
+   6      aristocratie                   -0.000062       0.0909
+   7      distant                        -0.000059       0.0766
+   8      identité                       -0.000042       0.0461
+   9      cruelle                        -0.000040       0.0535
+   10     lebrun                         -0.000039       0.1257
+   11     perçait                        -0.000035       0.0783
+   12     cents                          -0.000034       0.0383
+   13     évanouissement                 -0.000032       0.0848
+   14     enchantait                     -0.000031       0.0899
+   15     messe                          -0.000030       0.0540
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      foulques                       +0.000099       0.3259
+   2      risquait                       +0.000056       0.0492
+   3      snob                           +0.000056       0.1006
+   4      étendit                        +0.000039       0.0664
+   5      grog                           +0.000037       0.1194
+   6      blonds                         +0.000037       0.0508
+   7      dévotion                       +0.000033       0.0739
+   8      fixèrent                       +0.000032       0.0924
+   9      juif                           +0.000030       0.2974
+   10     admirait                       +0.000030       0.0615
+   11     subjugué                       +0.000029       0.0961
+   12     punition                       +0.000027       0.0676
+   13     violettes                      +0.000027       0.0696
+   14     rudesse                        +0.000021       0.0837
+   15     devinait                       +0.000020       0.0521
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marquise                       -0.000187       0.4312
+   2      gérard                         -0.000122       0.1793
+   3      collabo                        -0.000076       0.1415
+   4      ancêtres                       -0.000066       0.0580
+   5      princesse                      -0.000064       0.0551
+   6      aristocratie                   -0.000062       0.0909
+   7      distant                        -0.000059       0.0766
+   8      identité                       -0.000042       0.0461
+   9      cruelle                        -0.000040       0.0535
+   10     lebrun                         -0.000039       0.1257
+   11     perçait                        -0.000035       0.0783
+   12     cents                          -0.000034       0.0383
+   13     évanouissement                 -0.000032       0.0848
+   14     enchantait                     -0.000031       0.0899
+   15     messe                          -0.000030       0.0540
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marquise                       +0.003782       0.4312
+   2      juif                           +0.003667       0.2974
+   3      gérard                         +0.002560       0.1793
+   4      cents                          +0.001300       0.0383
+   5      mètres                         +0.001127       0.0370
+   6      armures                        +0.001029       0.1075
+   7      juifs                          +0.001028       0.1464
+   8      inflexions                     +0.001020       0.0902
+   9      gueules                        +0.000907       0.0774
+   10     murmurait                      +0.000891       0.0621
+   11     introduire                     +0.000870       0.0592
+   12     capitaine                      +0.000779       0.0547
+   13     fidèles                        +0.000739       0.0538
+   14     enchantait                     +0.000732       0.0899
+   15     azur                           +0.000714       0.0603
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lebrun                         -0.002102       0.1257
+   2      aliénor                        -0.001800       0.1428
+   3      blonds                         -0.001026       0.0508
+   4      parlera                        -0.000927       0.0701
+   5      russie                         -0.000894       0.0752
+   6      teint                          -0.000840       0.0420
+   7      glissait                       -0.000788       0.0511
+   8      parfum                         -0.000784       0.0397
+   9      chandelles                     -0.000762       0.0833
+   10     malaise                        -0.000743       0.0438
+   11     foulques                       -0.000707       0.3259
+   12     rudesse                        -0.000664       0.0837
+   13     jeta                           -0.000600       0.0439
+   14     ancêtres                       -0.000581       0.0580
+   15     limousine                      -0.000533       0.1978
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      juif                           +0.192051       0.2974
+   2      marquise                       +0.131196       0.4312
+   3      gérard                         +0.095830       0.1793
+   4      cents                          +0.061323       0.0383
+   5      mètres                         +0.058579       0.0370
+   6      juifs                          +0.049033       0.1464
+   7      murmurait                      +0.045954       0.0621
+   8      armures                        +0.045170       0.1075
+   9      introduire                     +0.042478       0.0592
+   10     snob                           +0.039866       0.1006
+   11     fixèrent                       +0.039672       0.0924
+   12     xiv                            +0.038037       0.0680
+   13     inflexions                     +0.036705       0.0902
+   14     enchantait                     +0.034966       0.0899
+   15     fidèles                        +0.034805       0.0538
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lebrun                         -0.127235       0.1257
+   2      aliénor                        -0.098654       0.1428
+   3      limousine                      -0.055717       0.1978
+   4      parlera                        -0.049133       0.0701
+   5      blonds                         -0.046924       0.0508
+   6      chandelles                     -0.046232       0.0833
+   7      russie                         -0.044828       0.0752
+   8      glissait                       -0.044820       0.0511
+   9      ancêtres                       -0.041471       0.0580
+   10     parfum                         -0.040505       0.0397
+   11     aristocratie                   -0.036654       0.0909
+   12     collabo                        -0.036209       0.1415
+   13     malaise                        -0.035778       0.0438
+   14     teint                          -0.035096       0.0420
+   15     pervenche                      -0.033415       0.1170
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+foulques                  +0.000000     +0.000099     +0.000099     0.3259
+risquait                  +0.000440     +0.000056     +0.000056     0.0492
+snob                      +0.000339     +0.000056     +0.000056     0.1006
+étendit                   +0.000467     +0.000039     +0.000039     0.0664
+grog                      +0.000621     +0.000037     +0.000037     0.1194
+blonds                    +0.000000     +0.000037     +0.000037     0.0508
+dévotion                  +0.000000     +0.000033     +0.000033     0.0739
+fixèrent                  +0.000691     +0.000032     +0.000032     0.0924
+juif                      +0.003667     +0.000030     +0.000030     0.2974
+admirait                  +0.000445     +0.000030     +0.000030     0.0615
+subjugué                  +0.000027     +0.000029     +0.000029     0.0961
+punition                  +0.000432     +0.000027     +0.000027     0.0676
+violettes                 +0.000631     +0.000027     +0.000027     0.0696
+rudesse                   +0.000000     +0.000021     +0.000021     0.0837
+devinait                  +0.000557     +0.000020     +0.000020     0.0521
+entendit                  +0.000443     +0.000020     +0.000020     0.0455
+rêvait                    +0.000000     +0.000019     +0.000019     0.0500
+parlera                   +0.000000     +0.000019     +0.000019     0.0701
+bouillir                  +0.000069     +0.000018     +0.000018     0.0730
+sacré                     +0.000494     +0.000016     +0.000016     0.0425
+logit final pour 'homme': 0.0590

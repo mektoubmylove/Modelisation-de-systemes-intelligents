@@ -1,0 +1,386 @@
+texte analysé: suis à la droite de lady helena . elle fait un très grand honneur au champagne extra dry . elle tient tête à mrs . burlington . harry nous raconte le dernier scandale de la plage : une terrible prise ...
+prédiction: HOMME (confiance: 60.8%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.2315
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mrs                            +0.000074       0.2545
+   2      annamite                       +0.000066       0.1196
+   3      maillot                        +0.000064       0.1580
+   4      latente                        +0.000059       0.0782
+   5      miss                           +0.000051       0.1745
+   6      rayonnant                      +0.000049       0.0615
+   7      mr                             +0.000039       0.0841
+   8      reconquis                      +0.000032       0.0824
+   9      jovial                         +0.000032       0.0612
+   10     versets                        +0.000032       0.0871
+   11     obéissent                      +0.000031       0.0723
+   12     brassait                       +0.000029       0.0884
+   13     subitement                     +0.000024       0.0413
+   14     avides                         +0.000023       0.0545
+   15     extra                          +0.000023       0.0661
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      helena                         -0.000378       0.6728
+   2      lady                           -0.000137       0.1382
+   3      atour                          -0.000095       0.1196
+   4      décemment                      -0.000071       0.0675
+   5      énigmatique                    -0.000052       0.0522
+   6      lawrence                       -0.000049       0.1002
+   7      éclate                         -0.000049       0.0880
+   8      ligue                          -0.000044       0.0768
+   9      souligne                       -0.000043       0.0744
+   10     imaginai                       -0.000043       0.0879
+   11     présidente                     -0.000042       0.0888
+   12     immenses                       -0.000041       0.0370
+   13     expire                         -0.000041       0.0884
+   14     passif                         -0.000039       0.0763
+   15     dégagée                        -0.000038       0.0601
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mrs                            +0.000074       0.2545
+   2      annamite                       +0.000066       0.1196
+   3      maillot                        +0.000064       0.1580
+   4      latente                        +0.000059       0.0782
+   5      miss                           +0.000051       0.1745
+   6      rayonnant                      +0.000049       0.0615
+   7      mr                             +0.000039       0.0841
+   8      reconquis                      +0.000032       0.0824
+   9      jovial                         +0.000032       0.0612
+   10     versets                        +0.000032       0.0871
+   11     obéissent                      +0.000031       0.0723
+   12     brassait                       +0.000029       0.0884
+   13     subitement                     +0.000024       0.0413
+   14     avides                         +0.000023       0.0545
+   15     extra                          +0.000023       0.0661
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      helena                         -0.000378       0.6728
+   2      lady                           -0.000137       0.1382
+   3      atour                          -0.000095       0.1196
+   4      décemment                      -0.000071       0.0675
+   5      énigmatique                    -0.000052       0.0522
+   6      lawrence                       -0.000049       0.1002
+   7      éclate                         -0.000049       0.0880
+   8      ligue                          -0.000044       0.0768
+   9      souligne                       -0.000043       0.0744
+   10     imaginai                       -0.000043       0.0879
+   11     présidente                     -0.000042       0.0888
+   12     immenses                       -0.000041       0.0370
+   13     expire                         -0.000041       0.0884
+   14     passif                         -0.000039       0.0763
+   15     dégagée                        -0.000038       0.0601
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jazz                           +0.001899       0.1422
+   2      expire                         +0.001305       0.0884
+   3      lady                           +0.001010       0.1382
+   4      lawrence                       +0.000859       0.1002
+   5      arrachaient                    +0.000837       0.0691
+   6      magicienne                     +0.000793       0.0856
+   7      charleston                     +0.000781       0.1116
+   8      whitechapel                    +0.000768       0.1230
+   9      devienne                       +0.000741       0.0465
+   10     lame                           +0.000595       0.0392
+   11     coupes                         +0.000587       0.0503
+   12     champagne                      +0.000564       0.0382
+   13     atour                          +0.000545       0.1196
+   14     parfum                         +0.000533       0.0304
+   15     respire                        +0.000521       0.0397
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mrs                            -0.002812       0.2545
+   2      dolly                          -0.002440       0.1293
+   3      miss                           -0.001664       0.1745
+   4      versets                        -0.001597       0.0871
+   5      helena                         -0.001346       0.6728
+   6      pipe                           -0.001330       0.0433
+   7      reconquis                      -0.001200       0.0824
+   8      harry                          -0.001098       0.0863
+   9      extra                          -0.001043       0.0661
+   10     francs                         -0.001037       0.0376
+   11     imaginai                       -0.000962       0.0879
+   12     annamite                       -0.000932       0.1196
+   13     tatouer                        -0.000895       0.1017
+   14     soulier                        -0.000875       0.0707
+   15     honorable                      -0.000866       0.0477
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jazz                           +0.103092       0.1422
+   2      expire                         +0.078534       0.0884
+   3      helena                         +0.070562       0.6728
+   4      lawrence                       +0.053362       0.1002
+   5      magicienne                     +0.050008       0.0856
+   6      charleston                     +0.049744       0.1116
+   7      atour                          +0.046581       0.1196
+   8      arrachaient                    +0.045636       0.0691
+   9      lady                           +0.044781       0.1382
+   10     whitechapel                    +0.039834       0.1230
+   11     devienne                       +0.037078       0.0465
+   12     lame                           +0.033675       0.0392
+   13     champagne                      +0.032279       0.0382
+   14     respire                        +0.031436       0.0397
+   15     parfum                         +0.030376       0.0304
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mrs                            -0.139307       0.2545
+   2      dolly                          -0.133443       0.1293
+   3      miss                           -0.095060       0.1745
+   4      versets                        -0.086528       0.0871
+   5      pipe                           -0.073018       0.0433
+   6      reconquis                      -0.067753       0.0824
+   7      harry                          -0.063610       0.0863
+   8      francs                         -0.058104       0.0376
+   9      tatouer                        -0.055983       0.1017
+   10     annamite                       -0.055151       0.1196
+   11     extra                          -0.053536       0.0661
+   12     soulier                        -0.048533       0.0707
+   13     imaginai                       -0.047844       0.0879
+   14     présidente                     -0.046537       0.0888
+   15     cabine                         -0.045362       0.0403
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+mrs                       +0.000000     +0.000074     +0.000074     0.2545
+annamite                  +0.000000     +0.000066     +0.000066     0.1196
+maillot                   +0.000000     +0.000064     +0.000064     0.1580
+latente                   +0.000051     +0.000059     +0.000059     0.0782
+miss                      +0.000000     +0.000051     +0.000051     0.1745
+rayonnant                 +0.000000     +0.000049     +0.000049     0.0615
+mr                        +0.000320     +0.000039     +0.000039     0.0841
+reconquis                 +0.000000     +0.000032     +0.000032     0.0824
+jovial                    +0.000000     +0.000032     +0.000032     0.0612
+versets                   +0.000000     +0.000032     +0.000032     0.0871
+obéissent                 +0.000040     +0.000031     +0.000031     0.0723
+brassait                  +0.000000     +0.000029     +0.000029     0.0884
+subitement                +0.000000     +0.000024     +0.000024     0.0413
+avides                    +0.000000     +0.000023     +0.000023     0.0545
+extra                     +0.000000     +0.000023     +0.000023     0.0661
+pipe                      +0.000000     +0.000022     +0.000022     0.0433
+bible                     +0.000000     +0.000022     +0.000022     0.0550
+ex                        +0.000000     +0.000021     +0.000021     0.0402
+prononçait                +0.000000     +0.000018     +0.000018     0.0493
+apportés                  +0.000151     +0.000017     +0.000017     0.0622
+logit final pour 'femme': -0.2315
+# analyse pour la classe: HOMME  prédite
+# logit: 0.2094
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mrs                            +0.000068       0.2545
+   2      obéissent                      +0.000037       0.0723
+   3      charleston                     +0.000035       0.1116
+   4      brassait                       +0.000032       0.0884
+   5      jovial                         +0.000032       0.0612
+   6      maillot                        +0.000027       0.1580
+   7      danseuse                       +0.000026       0.1161
+   8      reconquis                      +0.000024       0.0824
+   9      versets                        +0.000022       0.0871
+   10     latente                        +0.000020       0.0782
+   11     rayonnant                      +0.000020       0.0615
+   12     miss                           +0.000018       0.1745
+   13     ex                             +0.000016       0.0402
+   14     avides                         +0.000013       0.0545
+   15     dry                            +0.000013       0.1032
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      helena                         -0.000310       0.6728
+   2      atour                          -0.000071       0.1196
+   3      présidente                     -0.000062       0.0888
+   4      décemment                      -0.000042       0.0675
+   5      lawrence                       -0.000041       0.1002
+   6      dégagée                        -0.000037       0.0601
+   7      souligne                       -0.000034       0.0744
+   8      jazz                           -0.000033       0.1422
+   9      éclate                         -0.000031       0.0880
+   10     lady                           -0.000029       0.1382
+   11     énigmatique                    -0.000027       0.0522
+   12     nègres                         -0.000025       0.0671
+   13     immenses                       -0.000022       0.0370
+   14     scandale                       -0.000022       0.0389
+   15     arrachaient                    -0.000021       0.0691
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mrs                            +0.000068       0.2545
+   2      obéissent                      +0.000037       0.0723
+   3      charleston                     +0.000035       0.1116
+   4      brassait                       +0.000032       0.0884
+   5      jovial                         +0.000032       0.0612
+   6      maillot                        +0.000027       0.1580
+   7      danseuse                       +0.000026       0.1161
+   8      reconquis                      +0.000024       0.0824
+   9      versets                        +0.000022       0.0871
+   10     latente                        +0.000020       0.0782
+   11     rayonnant                      +0.000020       0.0615
+   12     miss                           +0.000018       0.1745
+   13     ex                             +0.000016       0.0402
+   14     avides                         +0.000013       0.0545
+   15     dry                            +0.000013       0.1032
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      helena                         -0.000310       0.6728
+   2      atour                          -0.000071       0.1196
+   3      présidente                     -0.000062       0.0888
+   4      décemment                      -0.000042       0.0675
+   5      lawrence                       -0.000041       0.1002
+   6      dégagée                        -0.000037       0.0601
+   7      souligne                       -0.000034       0.0744
+   8      jazz                           -0.000033       0.1422
+   9      éclate                         -0.000031       0.0880
+   10     lady                           -0.000029       0.1382
+   11     énigmatique                    -0.000027       0.0522
+   12     nègres                         -0.000025       0.0671
+   13     immenses                       -0.000022       0.0370
+   14     scandale                       -0.000022       0.0389
+   15     arrachaient                    -0.000021       0.0691
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mrs                            +0.002281       0.2545
+   2      dolly                          +0.001870       0.1293
+   3      miss                           +0.001328       0.1745
+   4      versets                        +0.001308       0.0871
+   5      pipe                           +0.001192       0.0433
+   6      reconquis                      +0.000998       0.0824
+   7      francs                         +0.000967       0.0376
+   8      harry                          +0.000955       0.0863
+   9      extra                          +0.000888       0.0661
+   10     imaginai                       +0.000886       0.0879
+   11     helena                         +0.000802       0.6728
+   12     tatouer                        +0.000773       0.1017
+   13     jovial                         +0.000723       0.0612
+   14     ligue                          +0.000713       0.0768
+   15     honorable                      +0.000708       0.0477
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jazz                           -0.001357       0.1422
+   2      lady                           -0.000897       0.1382
+   3      expire                         -0.000794       0.0884
+   4      arrachaient                    -0.000698       0.0691
+   5      atour                          -0.000654       0.1196
+   6      devienne                       -0.000606       0.0465
+   7      whitechapel                    -0.000565       0.1230
+   8      lawrence                       -0.000490       0.1002
+   9      parfum                         -0.000463       0.0304
+   10     magicienne                     -0.000460       0.0856
+   11     charleston                     -0.000454       0.1116
+   12     lame                           -0.000440       0.0392
+   13     coupes                         -0.000414       0.0503
+   14     champagne                      -0.000412       0.0382
+   15     mr                             -0.000410       0.0841
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mrs                            +0.103874       0.2545
+   2      dolly                          +0.098365       0.1293
+   3      versets                        +0.071114       0.0871
+   4      miss                           +0.070495       0.1745
+   5      pipe                           +0.064223       0.0433
+   6      harry                          +0.055792       0.0863
+   7      reconquis                      +0.052476       0.0824
+   8      francs                         +0.051304       0.0376
+   9      extra                          +0.048882       0.0661
+   10     tatouer                        +0.047976       0.1017
+   11     imaginai                       +0.044760       0.0879
+   12     annamite                       +0.040598       0.1196
+   13     passif                         +0.040088       0.0763
+   14     jovial                         +0.037057       0.0612
+   15     ligue                          +0.035247       0.0768
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      helena                         -0.094125       0.6728
+   2      jazz                           -0.079601       0.1422
+   3      atour                          -0.053118       0.1196
+   4      expire                         -0.048857       0.0884
+   5      arrachaient                    -0.039449       0.0691
+   6      lady                           -0.038346       0.1382
+   7      lawrence                       -0.036547       0.1002
+   8      magicienne                     -0.030224       0.0856
+   9      whitechapel                    -0.028599       0.1230
+   10     devienne                       -0.028042       0.0465
+   11     charleston                     -0.026421       0.1116
+   12     danseuse                       -0.026334       0.1161
+   13     lame                           -0.025009       0.0392
+   14     parfum                         -0.023991       0.0304
+   15     respire                        -0.023649       0.0397
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+mrs                       +0.002281     +0.000068     +0.000068     0.2545
+obéissent                 +0.000043     +0.000037     +0.000037     0.0723
+charleston                +0.000000     +0.000035     +0.000035     0.1116
+brassait                  +0.000331     +0.000032     +0.000032     0.0884
+jovial                    +0.000723     +0.000032     +0.000032     0.0612
+maillot                   +0.000291     +0.000027     +0.000027     0.1580
+danseuse                  +0.000000     +0.000026     +0.000026     0.1161
+reconquis                 +0.000998     +0.000024     +0.000024     0.0824
+versets                   +0.001308     +0.000022     +0.000022     0.0871
+latente                   +0.000047     +0.000020     +0.000020     0.0782
+rayonnant                 +0.000218     +0.000020     +0.000020     0.0615
+miss                      +0.001328     +0.000018     +0.000018     0.1745
+ex                        +0.000072     +0.000016     +0.000016     0.0402
+avides                    +0.000040     +0.000013     +0.000013     0.0545
+dry                       +0.000235     +0.000013     +0.000013     0.1032
+écailles                  +0.000000     +0.000012     +0.000012     0.0661
+pipe                      +0.001192     +0.000012     +0.000012     0.0433
+mr                        +0.000000     +0.000011     +0.000011     0.0841
+prononçait                +0.000223     +0.000009     +0.000009     0.0493
+annamite                  +0.000665     +0.000009     +0.000009     0.1196
+logit final pour 'homme': 0.2094

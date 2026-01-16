@@ -1,0 +1,386 @@
+texte analysé: pas faire plop , mais plutôt frouitch . la lente descente de noir dans mon atmosphère se faisait ressentir aussi . il a regardé les radios et a ajouté : les dents de sagesse du bas , il faut les faire...
+prédiction: HOMME (confiance: 68.0%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.4127
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      redoublant                     +0.000094       0.1481
+   2      scie                           +0.000090       0.2903
+   3      rectifier                      +0.000065       0.1109
+   4      reconstitue                    +0.000064       0.1439
+   5      plaques                        +0.000058       0.1301
+   6      osseux                         +0.000047       0.1022
+   7      horizontalement                +0.000044       0.1439
+   8      mâchoire                       +0.000041       0.3836
+   9      trajet                         +0.000031       0.0534
+   10     inhabitée                      +0.000027       0.1317
+   11     électrique                     +0.000027       0.0556
+   12     appartenu                      +0.000026       0.0816
+   13     trait                          +0.000025       0.0484
+   14     saucisson                      +0.000021       0.1046
+   15     carbure                        +0.000020       0.1583
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      survolait                      -0.000132       0.1490
+   2      plateau                        -0.000095       0.2011
+   3      sagesse                        -0.000093       0.1165
+   4      chirurgiens                    -0.000087       0.1192
+   5      avancée                        -0.000060       0.1266
+   6      ressentir                      -0.000058       0.0647
+   7      enlever                        -0.000055       0.1004
+   8      lente                          -0.000053       0.0576
+   9      supérieure                     -0.000052       0.1123
+   10     supérieures                    -0.000052       0.0961
+   11     millimètres                    -0.000052       0.1176
+   12     euh                            -0.000051       0.0871
+   13     pause                          -0.000051       0.0636
+   14     crâne                          -0.000050       0.0922
+   15     atterri                        -0.000046       0.1000
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      redoublant                     +0.000094       0.1481
+   2      scie                           +0.000090       0.2903
+   3      rectifier                      +0.000065       0.1109
+   4      reconstitue                    +0.000064       0.1439
+   5      plaques                        +0.000058       0.1301
+   6      osseux                         +0.000047       0.1022
+   7      horizontalement                +0.000044       0.1439
+   8      mâchoire                       +0.000041       0.3836
+   9      trajet                         +0.000031       0.0534
+   10     inhabitée                      +0.000027       0.1317
+   11     électrique                     +0.000027       0.0556
+   12     appartenu                      +0.000026       0.0816
+   13     trait                          +0.000025       0.0484
+   14     saucisson                      +0.000021       0.1046
+   15     carbure                        +0.000020       0.1583
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      survolait                      -0.000132       0.1490
+   2      plateau                        -0.000095       0.2011
+   3      sagesse                        -0.000093       0.1165
+   4      chirurgiens                    -0.000087       0.1192
+   5      avancée                        -0.000060       0.1266
+   6      ressentir                      -0.000058       0.0647
+   7      enlever                        -0.000055       0.1004
+   8      lente                          -0.000053       0.0576
+   9      supérieure                     -0.000052       0.1123
+   10     supérieures                    -0.000052       0.0961
+   11     millimètres                    -0.000052       0.1176
+   12     euh                            -0.000051       0.0871
+   13     pause                          -0.000051       0.0636
+   14     crâne                          -0.000050       0.0922
+   15     atterri                        -0.000046       0.1000
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      supérieure                     +0.001871       0.1123
+   2      plateau                        +0.001456       0.2011
+   3      radios                         +0.001284       0.1143
+   4      broches                        +0.001150       0.1439
+   5      enlève                         +0.001034       0.1327
+   6      enlever                        +0.001024       0.1004
+   7      calcule                        +0.000897       0.1143
+   8      chirurgiens                    +0.000840       0.1192
+   9      appartenu                      +0.000840       0.0816
+   10     rectifier                      +0.000770       0.1109
+   11     survolait                      +0.000703       0.1490
+   12     pause                          +0.000678       0.0636
+   13     souriant                       +0.000664       0.0454
+   14     atterri                        +0.000527       0.1000
+   15     résistant                      +0.000458       0.0926
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      horizontalement                -0.002892       0.1439
+   2      scie                           -0.002693       0.2903
+   3      redoublant                     -0.001869       0.1481
+   4      bascule                        -0.001795       0.1715
+   5      scier                          -0.001618       0.1279
+   6      supérieur                      -0.001329       0.1652
+   7      descente                       -0.001203       0.0642
+   8      carbure                        -0.001028       0.1583
+   9      osseux                         -0.000998       0.1022
+   10     mâchoire                       -0.000915       0.3836
+   11     électrique                     -0.000841       0.0556
+   12     trait                          -0.000825       0.0484
+   13     reconstitue                    -0.000811       0.1439
+   14     inhabitée                      -0.000803       0.1317
+   15     voyez                          -0.000757       0.0853
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      plateau                        +0.094141       0.2011
+   2      supérieure                     +0.076981       0.1123
+   3      radios                         +0.057885       0.1143
+   4      broches                        +0.055426       0.1439
+   5      enlève                         +0.054456       0.1327
+   6      calcule                        +0.041100       0.1143
+   7      enlever                        +0.039837       0.1004
+   8      survolait                      +0.037668       0.1490
+   9      chirurgiens                    +0.036518       0.1192
+   10     pause                          +0.032656       0.0636
+   11     souriant                       +0.031076       0.0454
+   12     atterri                        +0.027948       0.1000
+   13     avancée                        +0.025865       0.1266
+   14     rectifier                      +0.022592       0.1109
+   15     ira                            +0.022255       0.0485
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      scie                           -0.140748       0.2903
+   2      horizontalement                -0.130037       0.1439
+   3      redoublant                     -0.083775       0.1481
+   4      scier                          -0.083392       0.1279
+   5      bascule                        -0.065303       0.1715
+   6      supérieur                      -0.057614       0.1652
+   7      descente                       -0.050700       0.0642
+   8      osseux                         -0.046486       0.1022
+   9      inhabitée                      -0.046309       0.1317
+   10     carbure                        -0.041643       0.1583
+   11     trait                          -0.036427       0.0484
+   12     électrique                     -0.035878       0.0556
+   13     millimètres                    -0.035572       0.1176
+   14     reconstitue                    -0.034443       0.1439
+   15     voyez                          -0.033469       0.0853
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+redoublant                +0.000000     +0.000094     +0.000094     0.1481
+scie                      +0.000000     +0.000090     +0.000090     0.2903
+rectifier                 +0.000770     +0.000065     +0.000065     0.1109
+reconstitue               +0.000000     +0.000064     +0.000064     0.1439
+plaques                   +0.000000     +0.000058     +0.000058     0.1301
+osseux                    +0.000000     +0.000047     +0.000047     0.1022
+horizontalement           +0.000000     +0.000044     +0.000044     0.1439
+mâchoire                  +0.000000     +0.000041     +0.000041     0.3836
+trajet                    +0.000365     +0.000031     +0.000031     0.0534
+inhabitée                 +0.000000     +0.000027     +0.000027     0.1317
+électrique                +0.000000     +0.000027     +0.000027     0.0556
+appartenu                 +0.000840     +0.000026     +0.000026     0.0816
+trait                     +0.000000     +0.000025     +0.000025     0.0484
+saucisson                 +0.000000     +0.000021     +0.000021     0.1046
+carbure                   +0.000000     +0.000020     +0.000020     0.1583
+déséquilibre              +0.000000     +0.000016     +0.000016     0.1129
+ajuste                    +0.000000     +0.000016     +0.000016     0.1301
+plantées                  +0.000268     +0.000015     +0.000015     0.1025
+bi                        +0.000000     +0.000015     +0.000015     0.1447
+satisfait                 +0.000000     +0.000015     +0.000015     0.0505
+logit final pour 'femme': -0.4127
+# analyse pour la classe: HOMME  prédite
+# logit: 0.3417
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      plaques                        +0.000055       0.1301
+   2      voyez                          +0.000046       0.0853
+   3      redoublant                     +0.000045       0.1481
+   4      trajet                         +0.000042       0.0534
+   5      carbure                        +0.000039       0.1583
+   6      rectifier                      +0.000025       0.1109
+   7      reconstitue                    +0.000024       0.1439
+   8      appartenu                      +0.000020       0.0816
+   9      habitées                       +0.000019       0.1245
+   10     osseux                         +0.000019       0.1022
+   11     horizontalement                +0.000017       0.1439
+   12     bi                             +0.000016       0.1447
+   13     inhabitée                      +0.000016       0.1317
+   14     docteur                        +0.000015       0.0535
+   15     racine                         +0.000014       0.0684
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      survolait                      -0.000114       0.1490
+   2      plateau                        -0.000085       0.2011
+   3      sagesse                        -0.000074       0.1165
+   4      avancée                        -0.000057       0.1266
+   5      supérieures                    -0.000044       0.0961
+   6      crâne                          -0.000041       0.0922
+   7      opération                      -0.000039       0.0513
+   8      broches                        -0.000037       0.1439
+   9      descente                       -0.000036       0.0642
+   10     chirurgiens                    -0.000033       0.1192
+   11     lente                          -0.000030       0.0576
+   12     pause                          -0.000030       0.0636
+   13     enlever                        -0.000028       0.1004
+   14     pensez                         -0.000026       0.0467
+   15     repensé                        -0.000022       0.1161
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      plaques                        +0.000055       0.1301
+   2      voyez                          +0.000046       0.0853
+   3      redoublant                     +0.000045       0.1481
+   4      trajet                         +0.000042       0.0534
+   5      carbure                        +0.000039       0.1583
+   6      rectifier                      +0.000025       0.1109
+   7      reconstitue                    +0.000024       0.1439
+   8      appartenu                      +0.000020       0.0816
+   9      habitées                       +0.000019       0.1245
+   10     osseux                         +0.000019       0.1022
+   11     horizontalement                +0.000017       0.1439
+   12     bi                             +0.000016       0.1447
+   13     inhabitée                      +0.000016       0.1317
+   14     docteur                        +0.000015       0.0535
+   15     racine                         +0.000014       0.0684
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      survolait                      -0.000114       0.1490
+   2      plateau                        -0.000085       0.2011
+   3      sagesse                        -0.000074       0.1165
+   4      avancée                        -0.000057       0.1266
+   5      supérieures                    -0.000044       0.0961
+   6      crâne                          -0.000041       0.0922
+   7      opération                      -0.000039       0.0513
+   8      broches                        -0.000037       0.1439
+   9      descente                       -0.000036       0.0642
+   10     chirurgiens                    -0.000033       0.1192
+   11     lente                          -0.000030       0.0576
+   12     pause                          -0.000030       0.0636
+   13     enlever                        -0.000028       0.1004
+   14     pensez                         -0.000026       0.0467
+   15     repensé                        -0.000022       0.1161
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      scie                           +0.002765       0.2903
+   2      horizontalement                +0.002640       0.1439
+   3      bascule                        +0.001779       0.1715
+   4      scier                          +0.001457       0.1279
+   5      redoublant                     +0.001422       0.1481
+   6      supérieur                      +0.001297       0.1652
+   7      descente                       +0.001088       0.0642
+   8      bi                             +0.000847       0.1447
+   9      osseux                         +0.000823       0.1022
+   10     carbure                        +0.000786       0.1583
+   11     inhabitée                      +0.000773       0.1317
+   12     millimètres                    +0.000770       0.1176
+   13     électrique                     +0.000765       0.0556
+   14     mâchoire                       +0.000756       0.3836
+   15     trait                          +0.000732       0.0484
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      radios                         -0.001591       0.1143
+   2      supérieure                     -0.001566       0.1123
+   3      broches                        -0.001255       0.1439
+   4      plateau                        -0.000992       0.2011
+   5      enlève                         -0.000904       0.1327
+   6      rectifier                      -0.000888       0.1109
+   7      appartenu                      -0.000884       0.0816
+   8      enlever                        -0.000742       0.1004
+   9      calcule                        -0.000699       0.1143
+   10     souriant                       -0.000586       0.0454
+   11     pause                          -0.000578       0.0636
+   12     chirurgiens                    -0.000490       0.1192
+   13     résistant                      -0.000378       0.0926
+   14     plantées                       -0.000375       0.1025
+   15     atterri                        -0.000366       0.1000
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      scie                           +0.123508       0.2903
+   2      horizontalement                +0.108588       0.1439
+   3      scier                          +0.074337       0.1279
+   4      redoublant                     +0.063583       0.1481
+   5      bascule                        +0.059323       0.1715
+   6      supérieur                      +0.053243       0.1652
+   7      descente                       +0.046797       0.0642
+   8      inhabitée                      +0.042470       0.1317
+   9      millimètres                    +0.041294       0.1176
+   10     osseux                         +0.038248       0.1022
+   11     carbure                        +0.033914       0.1583
+   12     voyez                          +0.029018       0.0853
+   13     trait                          +0.028143       0.0484
+   14     électrique                     +0.027600       0.0556
+   15     reconstitue                    +0.026599       0.1439
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      plateau                        -0.065761       0.2011
+   2      radios                         -0.064915       0.1143
+   3      broches                        -0.057363       0.1439
+   4      supérieure                     -0.056000       0.1123
+   5      enlève                         -0.040139       0.1327
+   6      rectifier                      -0.030829       0.1109
+   7      pause                          -0.027016       0.0636
+   8      calcule                        -0.025948       0.1143
+   9      enlever                        -0.025872       0.1004
+   10     souriant                       -0.025143       0.0454
+   11     avancée                        -0.021599       0.1266
+   12     chirurgiens                    -0.021364       0.1192
+   13     appartenu                      -0.021121       0.0816
+   14     survolait                      -0.020536       0.1490
+   15     atterri                        -0.019021       0.1000
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+plaques                   +0.000516     +0.000055     +0.000055     0.1301
+voyez                     +0.000637     +0.000046     +0.000046     0.0853
+redoublant                +0.001422     +0.000045     +0.000045     0.1481
+trajet                    +0.000000     +0.000042     +0.000042     0.0534
+carbure                   +0.000786     +0.000039     +0.000039     0.1583
+rectifier                 +0.000000     +0.000025     +0.000025     0.1109
+reconstitue               +0.000638     +0.000024     +0.000024     0.1439
+appartenu                 +0.000000     +0.000020     +0.000020     0.0816
+habitées                  +0.000000     +0.000019     +0.000019     0.1245
+osseux                    +0.000823     +0.000019     +0.000019     0.1022
+horizontalement           +0.002640     +0.000017     +0.000017     0.1439
+bi                        +0.000847     +0.000016     +0.000016     0.1447
+inhabitée                 +0.000773     +0.000016     +0.000016     0.1317
+docteur                   +0.000221     +0.000015     +0.000015     0.0535
+racine                    +0.000304     +0.000014     +0.000014     0.0684
+scie                      +0.002765     +0.000013     +0.000013     0.2903
+décontraction             +0.000000     +0.000013     +0.000013     0.1373
+saucisson                 +0.000575     +0.000011     +0.000011     0.1046
+certainement              +0.000049     +0.000010     +0.000010     0.0900
+plantées                  +0.000000     +0.000009     +0.000009     0.1025
+logit final pour 'homme': 0.3417

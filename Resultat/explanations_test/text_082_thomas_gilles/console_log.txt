@@ -1,0 +1,386 @@
+texte analysé: rond . de la discussion jaillit la lumière . mon oeil ! ça n en devenait que plus confus . on agrémentait nos discours de belles gesticulations . because les mouches . une invasion ! ça arrivait par l...
+prédiction: FEMME (confiance: 72.8%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.5814
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      éviction                       +0.000099       0.1457
+   2      balafré                        +0.000086       0.1317
+   3      savent                         +0.000079       0.0862
+   4      expédié                        +0.000078       0.0872
+   5      invasion                       +0.000073       0.0825
+   6      remarquée                      +0.000065       0.0814
+   7      verrous                        +0.000060       0.0934
+   8      suant                          +0.000054       0.1058
+   9      mouches                        +0.000051       0.0618
+   10     intervenait                    +0.000051       0.1102
+   11     jaillit                        +0.000049       0.0634
+   12     diabolique                     +0.000047       0.0822
+   13     bonhomme                       +0.000043       0.0551
+   14     brutale                        +0.000042       0.0600
+   15     brave                          +0.000036       0.0513
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      alex                           -0.000229       0.3993
+   2      grandement                     -0.000137       0.1881
+   3      ca                             -0.000125       0.3580
+   4      sales                          -0.000122       0.1077
+   5      gérald                         -0.000114       0.1789
+   6      supporté                       -0.000094       0.0723
+   7      arrangeaient                   -0.000071       0.1338
+   8      thomas                         -0.000064       0.1719
+   9      concerné                       -0.000062       0.0992
+   10     indiscrètes                    -0.000054       0.1121
+   11     aimer                          -0.000053       0.0404
+   12     esclavage                      -0.000052       0.0882
+   13     souffrait                      -0.000044       0.0542
+   14     ultra                          -0.000044       0.0929
+   15     devez                          -0.000043       0.0516
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      éviction                       +0.000099       0.1457
+   2      balafré                        +0.000086       0.1317
+   3      savent                         +0.000079       0.0862
+   4      expédié                        +0.000078       0.0872
+   5      invasion                       +0.000073       0.0825
+   6      remarquée                      +0.000065       0.0814
+   7      verrous                        +0.000060       0.0934
+   8      suant                          +0.000054       0.1058
+   9      mouches                        +0.000051       0.0618
+   10     intervenait                    +0.000051       0.1102
+   11     jaillit                        +0.000049       0.0634
+   12     diabolique                     +0.000047       0.0822
+   13     bonhomme                       +0.000043       0.0551
+   14     brutale                        +0.000042       0.0600
+   15     brave                          +0.000036       0.0513
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      alex                           -0.000229       0.3993
+   2      grandement                     -0.000137       0.1881
+   3      ca                             -0.000125       0.3580
+   4      sales                          -0.000122       0.1077
+   5      gérald                         -0.000114       0.1789
+   6      supporté                       -0.000094       0.0723
+   7      arrangeaient                   -0.000071       0.1338
+   8      thomas                         -0.000064       0.1719
+   9      concerné                       -0.000062       0.0992
+   10     indiscrètes                    -0.000054       0.1121
+   11     aimer                          -0.000053       0.0404
+   12     esclavage                      -0.000052       0.0882
+   13     souffrait                      -0.000044       0.0542
+   14     ultra                          -0.000044       0.0929
+   15     devez                          -0.000043       0.0516
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      alex                           +0.008004       0.3993
+   2      gérald                         +0.003903       0.1789
+   3      thomas                         +0.002726       0.1719
+   4      remarquée                      +0.001962       0.0814
+   5      concerné                       +0.001689       0.0992
+   6      gesticulations                 +0.001610       0.1338
+   7      bestioles                      +0.001600       0.1019
+   8      arrangeaient                   +0.001595       0.1338
+   9      faille                         +0.001334       0.0653
+   10     balafré                        +0.001227       0.1317
+   11     grandement                     +0.001150       0.1881
+   12     excitées                       +0.001105       0.1310
+   13     indiscrètes                    +0.000621       0.1121
+   14     joliment                       +0.000583       0.0796
+   15     supporté                       +0.000580       0.0723
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      imbéciles                      -0.001794       0.0713
+   2      hans                           -0.001738       0.3700
+   3      invasion                       -0.001585       0.0825
+   4      interruption                   -0.001529       0.0847
+   5      jurons                         -0.001491       0.0871
+   6      diabolique                     -0.001372       0.0822
+   7      verrous                        -0.001268       0.0934
+   8      saloperie                      -0.001183       0.0872
+   9      esclavage                      -0.001153       0.0882
+   10     persuader                      -0.001145       0.0650
+   11     because                        -0.001145       0.1345
+   12     jaillit                        -0.001128       0.0634
+   13     éviction                       -0.001106       0.1457
+   14     tantinet                       -0.001079       0.1184
+   15     brave                          -0.001059       0.0513
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      alex                           +0.431947       0.3993
+   2      gérald                         +0.194431       0.1789
+   3      thomas                         +0.130567       0.1719
+   4      concerné                       +0.105603       0.0992
+   5      remarquée                      +0.102124       0.0814
+   6      arrangeaient                   +0.101212       0.1338
+   7      bestioles                      +0.079599       0.1019
+   8      gesticulations                 +0.076649       0.1338
+   9      excitées                       +0.072224       0.1310
+   10     balafré                        +0.067921       0.1317
+   11     faille                         +0.064815       0.0653
+   12     indiscrètes                    +0.055993       0.1121
+   13     grandement                     +0.054785       0.1881
+   14     supporté                       +0.037887       0.0723
+   15     bleue                          +0.028689       0.0443
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      imbéciles                      -0.103191       0.0713
+   2      interruption                   -0.086391       0.0847
+   3      jurons                         -0.080433       0.0871
+   4      diabolique                     -0.079188       0.0822
+   5      invasion                       -0.079021       0.0825
+   6      esclavage                      -0.069359       0.0882
+   7      persuader                      -0.065078       0.0650
+   8      tantinet                       -0.063701       0.1184
+   9      because                        -0.062858       0.1345
+   10     hans                           -0.060985       0.3700
+   11     verrous                        -0.058193       0.0934
+   12     jaillit                        -0.057565       0.0634
+   13     frappé                         -0.054722       0.0445
+   14     pesait                         -0.052805       0.0583
+   15     éviction                       -0.048523       0.1457
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+éviction                  +0.000000     +0.000099     +0.000099     0.1457
+balafré                   +0.001227     +0.000086     +0.000086     0.1317
+savent                    +0.000226     +0.000079     +0.000079     0.0862
+expédié                   +0.000289     +0.000078     +0.000078     0.0872
+invasion                  +0.000000     +0.000073     +0.000073     0.0825
+remarquée                 +0.001962     +0.000065     +0.000065     0.0814
+verrous                   +0.000000     +0.000060     +0.000060     0.0934
+suant                     +0.000000     +0.000054     +0.000054     0.1058
+mouches                   +0.000000     +0.000051     +0.000051     0.0618
+intervenait               +0.000000     +0.000051     +0.000051     0.1102
+jaillit                   +0.000000     +0.000049     +0.000049     0.0634
+diabolique                +0.000000     +0.000047     +0.000047     0.0822
+bonhomme                  +0.000000     +0.000043     +0.000043     0.0551
+brutale                   +0.000000     +0.000042     +0.000042     0.0600
+brave                     +0.000000     +0.000036     +0.000036     0.0513
+soupçons                  +0.000000     +0.000029     +0.000029     0.0632
+démarré                   +0.000000     +0.000028     +0.000028     0.1022
+because                   +0.000000     +0.000026     +0.000026     0.1345
+pesait                    +0.000000     +0.000026     +0.000026     0.0583
+interruption              +0.000000     +0.000024     +0.000024     0.0847
+logit final pour 'femme': 0.5814
+# analyse pour la classe: HOMME
+# logit: -0.4030
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      balafré                        +0.000082       0.1317
+   2      invasion                       +0.000046       0.0825
+   3      suant                          +0.000042       0.1058
+   4      hans                           +0.000035       0.3700
+   5      soupçons                       +0.000035       0.0632
+   6      ca                             +0.000033       0.3580
+   7      bonhomme                       +0.000031       0.0551
+   8      diabolique                     +0.000030       0.0822
+   9      verrous                        +0.000029       0.0934
+   10     brave                          +0.000027       0.0513
+   11     imbéciles                      +0.000027       0.0713
+   12     mouches                        +0.000027       0.0618
+   13     général                        +0.000024       0.0412
+   14     brutale                        +0.000024       0.0600
+   15     remarquée                      +0.000024       0.0814
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      alex                           -0.000202       0.3993
+   2      grandement                     -0.000065       0.1881
+   3      gérald                         -0.000064       0.1789
+   4      arrangeaient                   -0.000064       0.1338
+   5      sales                          -0.000055       0.1077
+   6      intervenait                    -0.000043       0.1102
+   7      thomas                         -0.000036       0.1719
+   8      bestioles                      -0.000030       0.1019
+   9      essayais                       -0.000030       0.0746
+   10     savaient                       -0.000029       0.0476
+   11     admis                          -0.000028       0.0656
+   12     optimiste                      -0.000027       0.0898
+   13     souffrait                      -0.000026       0.0542
+   14     égaré                          -0.000025       0.0682
+   15     devez                          -0.000025       0.0516
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      balafré                        +0.000082       0.1317
+   2      invasion                       +0.000046       0.0825
+   3      suant                          +0.000042       0.1058
+   4      hans                           +0.000035       0.3700
+   5      soupçons                       +0.000035       0.0632
+   6      ca                             +0.000033       0.3580
+   7      bonhomme                       +0.000031       0.0551
+   8      diabolique                     +0.000030       0.0822
+   9      verrous                        +0.000029       0.0934
+   10     brave                          +0.000027       0.0513
+   11     imbéciles                      +0.000027       0.0713
+   12     mouches                        +0.000027       0.0618
+   13     général                        +0.000024       0.0412
+   14     brutale                        +0.000024       0.0600
+   15     remarquée                      +0.000024       0.0814
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      alex                           -0.000202       0.3993
+   2      grandement                     -0.000065       0.1881
+   3      gérald                         -0.000064       0.1789
+   4      arrangeaient                   -0.000064       0.1338
+   5      sales                          -0.000055       0.1077
+   6      intervenait                    -0.000043       0.1102
+   7      thomas                         -0.000036       0.1719
+   8      bestioles                      -0.000030       0.1019
+   9      essayais                       -0.000030       0.0746
+   10     savaient                       -0.000029       0.0476
+   11     admis                          -0.000028       0.0656
+   12     optimiste                      -0.000027       0.0898
+   13     souffrait                      -0.000026       0.0542
+   14     égaré                          -0.000025       0.0682
+   15     devez                          -0.000025       0.0516
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      imbéciles                      +0.001460       0.0713
+   2      hans                           +0.001377       0.3700
+   3      interruption                   +0.001255       0.0847
+   4      diabolique                     +0.001186       0.0822
+   5      invasion                       +0.001174       0.0825
+   6      jurons                         +0.001033       0.0871
+   7      verrous                        +0.001012       0.0934
+   8      persuader                      +0.000959       0.0650
+   9      because                        +0.000914       0.1345
+   10     jaillit                        +0.000905       0.0634
+   11     esclavage                      +0.000882       0.0882
+   12     saloperie                      +0.000868       0.0872
+   13     frappé                         +0.000819       0.0445
+   14     éviction                       +0.000808       0.1457
+   15     pesait                         +0.000785       0.0583
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      alex                           -0.005357       0.3993
+   2      gérald                         -0.002771       0.1789
+   3      thomas                         -0.002392       0.1719
+   4      remarquée                      -0.001466       0.0814
+   5      arrangeaient                   -0.001138       0.1338
+   6      faille                         -0.001058       0.0653
+   7      gesticulations                 -0.001051       0.1338
+   8      concerné                       -0.001047       0.0992
+   9      balafré                        -0.001020       0.1317
+   10     grandement                     -0.000918       0.1881
+   11     bestioles                      -0.000797       0.1019
+   12     excitées                       -0.000744       0.1310
+   13     indiscrètes                    -0.000618       0.1121
+   14     supporté                       -0.000443       0.0723
+   15     joliment                       -0.000405       0.0796
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      imbéciles                      +0.082225       0.0713
+   2      diabolique                     +0.068316       0.0822
+   3      interruption                   +0.068163       0.0847
+   4      invasion                       +0.061199       0.0825
+   5      jurons                         +0.053924       0.0871
+   6      esclavage                      +0.052904       0.0882
+   7      persuader                      +0.052107       0.0650
+   8      verrous                        +0.051839       0.0934
+   9      because                        +0.048819       0.1345
+   10     jaillit                        +0.044727       0.0634
+   11     frappé                         +0.043714       0.0445
+   12     pesait                         +0.041358       0.0583
+   13     mouches                        +0.038797       0.0618
+   14     bonhomme                       +0.036345       0.0551
+   15     saloperie                      +0.036149       0.0872
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      alex                           -0.314435       0.3993
+   2      gérald                         -0.138526       0.1789
+   3      thomas                         -0.123089       0.1719
+   4      remarquée                      -0.074504       0.0814
+   5      arrangeaient                   -0.073641       0.1338
+   6      concerné                       -0.067678       0.0992
+   7      balafré                        -0.059745       0.1317
+   8      faille                         -0.052443       0.0653
+   9      indiscrètes                    -0.050821       0.1121
+   10     gesticulations                 -0.048576       0.1338
+   11     excitées                       -0.047577       0.1310
+   12     bestioles                      -0.043996       0.1019
+   13     grandement                     -0.040084       0.1881
+   14     supporté                       -0.030712       0.0723
+   15     bleue                          -0.017592       0.0443
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+balafré                   +0.000000     +0.000082     +0.000082     0.1317
+invasion                  +0.001174     +0.000046     +0.000046     0.0825
+suant                     +0.000706     +0.000042     +0.000042     0.1058
+hans                      +0.001377     +0.000035     +0.000035     0.3700
+soupçons                  +0.000505     +0.000035     +0.000035     0.0632
+ca                        +0.000000     +0.000033     +0.000033     0.3580
+bonhomme                  +0.000737     +0.000031     +0.000031     0.0551
+diabolique                +0.001186     +0.000030     +0.000030     0.0822
+verrous                   +0.001012     +0.000029     +0.000029     0.0934
+brave                     +0.000747     +0.000027     +0.000027     0.0513
+imbéciles                 +0.001460     +0.000027     +0.000027     0.0713
+mouches                   +0.000683     +0.000027     +0.000027     0.0618
+général                   +0.000240     +0.000024     +0.000024     0.0412
+brutale                   +0.000179     +0.000024     +0.000024     0.0600
+remarquée                 +0.000000     +0.000024     +0.000024     0.0814
+éviction                  +0.000808     +0.000023     +0.000023     0.1457
+jaillit                   +0.000905     +0.000022     +0.000022     0.0634
+démarré                   +0.000214     +0.000021     +0.000021     0.1022
+savent                    +0.000055     +0.000018     +0.000018     0.0862
+because                   +0.000914     +0.000017     +0.000017     0.1345
+logit final pour 'homme': -0.4030

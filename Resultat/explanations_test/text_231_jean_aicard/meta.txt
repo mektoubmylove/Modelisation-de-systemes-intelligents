@@ -1,0 +1,5 @@
+filename: (AICARD)(Jean)(l_illustre maurin)(1)(1900)(1848)(1921)(fr)(z)(z)(V)(R)(T).txt
+index: 231
+first_name: jean
+last_name: aicard
+true_label: homme

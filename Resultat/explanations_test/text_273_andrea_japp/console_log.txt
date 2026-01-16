@@ -1,0 +1,386 @@
+texte analysé: pas prévu que la jeune femme se sacrifierait pour sauver une vie dont il ne voulait plus . cagney déglutit et répondit d un ton presque cassant : en effet . je ne souhaite plus qu il fasse partie de l...
+prédiction: FEMME (confiance: 85.7%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.9975
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mr                             +0.000143       0.2168
+   2      justification                  +0.000060       0.0581
+   3      porterait                      +0.000047       0.0520
+   4      abritaient                     +0.000046       0.0625
+   5      guéridon                       +0.000042       0.0482
+   6      aspirait                       +0.000041       0.0492
+   7      décoraient                     +0.000037       0.0726
+   8      extra                          +0.000033       0.0568
+   9      colorée                        +0.000033       0.0535
+   10     mrs                            +0.000029       0.0729
+   11     cognac                         +0.000024       0.0519
+   12     reparler                       +0.000022       0.0641
+   13     présenté                       +0.000022       0.0311
+   14     imposée                        +0.000019       0.0479
+   15     imprégner                      +0.000019       0.0597
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cagney                         -0.000125       0.7510
+   2      onyx                           -0.000108       0.0813
+   3      stevenson                      -0.000084       0.3727
+   4      distributeur                   -0.000058       0.0654
+   5      grêle                          -0.000053       0.0492
+   6      hublot                         -0.000051       0.0614
+   7      cassant                        -0.000047       0.0562
+   8      plateau                        -0.000044       0.0559
+   9      luisaient                      -0.000041       0.0558
+   10     séchés                         -0.000039       0.0702
+   11     optimistes                     -0.000038       0.0714
+   12     finale                         -0.000038       0.0464
+   13     orné                           -0.000037       0.0433
+   14     répétant                       -0.000037       0.0401
+   15     accoudoirs                     -0.000035       0.0618
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mr                             +0.000143       0.2168
+   2      justification                  +0.000060       0.0581
+   3      porterait                      +0.000047       0.0520
+   4      abritaient                     +0.000046       0.0625
+   5      guéridon                       +0.000042       0.0482
+   6      aspirait                       +0.000041       0.0492
+   7      décoraient                     +0.000037       0.0726
+   8      extra                          +0.000033       0.0568
+   9      colorée                        +0.000033       0.0535
+   10     mrs                            +0.000029       0.0729
+   11     cognac                         +0.000024       0.0519
+   12     reparler                       +0.000022       0.0641
+   13     présenté                       +0.000022       0.0311
+   14     imposée                        +0.000019       0.0479
+   15     imprégner                      +0.000019       0.0597
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cagney                         -0.000125       0.7510
+   2      onyx                           -0.000108       0.0813
+   3      stevenson                      -0.000084       0.3727
+   4      distributeur                   -0.000058       0.0654
+   5      grêle                          -0.000053       0.0492
+   6      hublot                         -0.000051       0.0614
+   7      cassant                        -0.000047       0.0562
+   8      plateau                        -0.000044       0.0559
+   9      luisaient                      -0.000041       0.0558
+   10     séchés                         -0.000039       0.0702
+   11     optimistes                     -0.000038       0.0714
+   12     finale                         -0.000038       0.0464
+   13     orné                           -0.000037       0.0433
+   14     répétant                       -0.000037       0.0401
+   15     accoudoirs                     -0.000035       0.0618
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cagney                         +0.004189       0.7510
+   2      merisier                       +0.001455       0.0833
+   3      stevenson                      +0.001152       0.3727
+   4      morris                         +0.001005       0.0908
+   5      déglutit                       +0.000863       0.0631
+   6      rapetisser                     +0.000789       0.0813
+   7      trônait                        +0.000724       0.0471
+   8      séchés                         +0.000723       0.0702
+   9      fragile                        +0.000679       0.0274
+   10     mr                             +0.000586       0.2168
+   11     récente                        +0.000579       0.0419
+   12     âcre                           +0.000503       0.0439
+   13     colorée                        +0.000482       0.0535
+   14     plateau                        +0.000481       0.0559
+   15     étincelants                    +0.000457       0.0550
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      guéridon                       -0.001142       0.0482
+   2      mrs                            -0.001134       0.0729
+   3      grêle                          -0.000975       0.0492
+   4      extra                          -0.000937       0.0568
+   5      luisaient                      -0.000848       0.0558
+   6      hublot                         -0.000739       0.0614
+   7      poulets                        -0.000696       0.0523
+   8      justification                  -0.000651       0.0581
+   9      éloge                          -0.000621       0.0520
+   10     coquille                       -0.000620       0.0450
+   11     fixé                           -0.000606       0.0295
+   12     prié                           -0.000508       0.0401
+   13     décoraient                     -0.000501       0.0726
+   14     propreté                       -0.000443       0.0448
+   15     huîtres                        -0.000427       0.0595
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cagney                         +0.329098       0.7510
+   2      merisier                       +0.070245       0.0833
+   3      morris                         +0.059371       0.0908
+   4      mr                             +0.049774       0.2168
+   5      rapetisser                     +0.046079       0.0813
+   6      déglutit                       +0.044676       0.0631
+   7      séchés                         +0.038701       0.0702
+   8      fragile                        +0.034660       0.0274
+   9      colorée                        +0.033373       0.0535
+   10     reparler                       +0.030266       0.0641
+   11     trônait                        +0.029671       0.0471
+   12     âcre                           +0.029533       0.0439
+   13     plateau                        +0.028037       0.0559
+   14     récente                        +0.025456       0.0419
+   15     étincelants                    +0.024373       0.0550
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mrs                            -0.058702       0.0729
+   2      guéridon                       -0.050840       0.0482
+   3      luisaient                      -0.049776       0.0558
+   4      extra                          -0.047498       0.0568
+   5      grêle                          -0.046568       0.0492
+   6      hublot                         -0.040332       0.0614
+   7      poulets                        -0.039328       0.0523
+   8      coquille                       -0.031027       0.0450
+   9      éloge                          -0.030133       0.0520
+   10     fixé                           -0.029188       0.0295
+   11     justification                  -0.028523       0.0581
+   12     huîtres                        -0.025947       0.0595
+   13     prié                           -0.025891       0.0401
+   14     propreté                       -0.023322       0.0448
+   15     introduction                   -0.021961       0.0592
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+mr                        +0.000586     +0.000143     +0.000143     0.2168
+justification             +0.000000     +0.000060     +0.000060     0.0581
+porterait                 +0.000000     +0.000047     +0.000047     0.0520
+abritaient                +0.000000     +0.000046     +0.000046     0.0625
+guéridon                  +0.000000     +0.000042     +0.000042     0.0482
+aspirait                  +0.000000     +0.000041     +0.000041     0.0492
+décoraient                +0.000000     +0.000037     +0.000037     0.0726
+extra                     +0.000000     +0.000033     +0.000033     0.0568
+colorée                   +0.000482     +0.000033     +0.000033     0.0535
+mrs                       +0.000000     +0.000029     +0.000029     0.0729
+cognac                    +0.000000     +0.000024     +0.000024     0.0519
+reparler                  +0.000425     +0.000022     +0.000022     0.0641
+présenté                  +0.000000     +0.000022     +0.000022     0.0311
+imposée                   +0.000283     +0.000019     +0.000019     0.0479
+imprégner                 +0.000181     +0.000019     +0.000019     0.0597
+durant                    +0.000000     +0.000018     +0.000018     0.0258
+merisier                  +0.001455     +0.000016     +0.000016     0.0833
+sachent                   +0.000122     +0.000016     +0.000016     0.0580
+whisky                    +0.000000     +0.000015     +0.000015     0.0416
+influencé                 +0.000172     +0.000014     +0.000014     0.0674
+logit final pour 'femme': 0.9975
+# analyse pour la classe: HOMME
+# logit: -0.7924
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cagney                         +0.000053       0.7510
+   2      justification                  +0.000039       0.0581
+   3      reparler                       +0.000027       0.0641
+   4      porterait                      +0.000023       0.0520
+   5      colorée                        +0.000022       0.0535
+   6      extra                          +0.000021       0.0568
+   7      aspirait                       +0.000019       0.0492
+   8      cognac                         +0.000017       0.0519
+   9      guéridon                       +0.000015       0.0482
+   10     abritaient                     +0.000013       0.0625
+   11     présenté                       +0.000013       0.0311
+   12     propreté                       +0.000013       0.0448
+   13     décoraient                     +0.000012       0.0726
+   14     entières                       +0.000011       0.0363
+   15     imprégner                      +0.000010       0.0597
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      onyx                           -0.000051       0.0813
+   2      stevenson                      -0.000048       0.3727
+   3      distributeur                   -0.000038       0.0654
+   4      sujets                         -0.000024       0.0656
+   5      luisaient                      -0.000023       0.0558
+   6      optimistes                     -0.000022       0.0714
+   7      orné                           -0.000022       0.0433
+   8      grêle                          -0.000020       0.0492
+   9      cassant                        -0.000019       0.0562
+   10     éternité                       -0.000018       0.0323
+   11     hublot                         -0.000018       0.0614
+   12     suivrait                       -0.000017       0.0571
+   13     porcelaine                     -0.000017       0.0391
+   14     télévision                     -0.000017       0.0395
+   15     professionnels                 -0.000015       0.0474
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cagney                         +0.000053       0.7510
+   2      justification                  +0.000039       0.0581
+   3      reparler                       +0.000027       0.0641
+   4      porterait                      +0.000023       0.0520
+   5      colorée                        +0.000022       0.0535
+   6      extra                          +0.000021       0.0568
+   7      aspirait                       +0.000019       0.0492
+   8      cognac                         +0.000017       0.0519
+   9      guéridon                       +0.000015       0.0482
+   10     abritaient                     +0.000013       0.0625
+   11     présenté                       +0.000013       0.0311
+   12     propreté                       +0.000013       0.0448
+   13     décoraient                     +0.000012       0.0726
+   14     entières                       +0.000011       0.0363
+   15     imprégner                      +0.000010       0.0597
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      onyx                           -0.000051       0.0813
+   2      stevenson                      -0.000048       0.3727
+   3      distributeur                   -0.000038       0.0654
+   4      sujets                         -0.000024       0.0656
+   5      luisaient                      -0.000023       0.0558
+   6      optimistes                     -0.000022       0.0714
+   7      orné                           -0.000022       0.0433
+   8      grêle                          -0.000020       0.0492
+   9      cassant                        -0.000019       0.0562
+   10     éternité                       -0.000018       0.0323
+   11     hublot                         -0.000018       0.0614
+   12     suivrait                       -0.000017       0.0571
+   13     porcelaine                     -0.000017       0.0391
+   14     télévision                     -0.000017       0.0395
+   15     professionnels                 -0.000015       0.0474
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      guéridon                       +0.000803       0.0482
+   2      mrs                            +0.000709       0.0729
+   3      grêle                          +0.000673       0.0492
+   4      luisaient                      +0.000592       0.0558
+   5      hublot                         +0.000558       0.0614
+   6      extra                          +0.000530       0.0568
+   7      justification                  +0.000488       0.0581
+   8      fixé                           +0.000420       0.0295
+   9      poulets                        +0.000410       0.0523
+   10     éloge                          +0.000401       0.0520
+   11     prié                           +0.000375       0.0401
+   12     décoraient                     +0.000352       0.0726
+   13     sujets                         +0.000312       0.0656
+   14     coquille                       +0.000309       0.0450
+   15     pâte                           +0.000291       0.0362
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cagney                         -0.003876       0.7510
+   2      merisier                       -0.000925       0.0833
+   3      stevenson                      -0.000906       0.3727
+   4      morris                         -0.000835       0.0908
+   5      déglutit                       -0.000572       0.0631
+   6      séchés                         -0.000565       0.0702
+   7      rapetisser                     -0.000474       0.0813
+   8      trônait                        -0.000425       0.0471
+   9      fragile                        -0.000417       0.0274
+   10     récente                        -0.000397       0.0419
+   11     plateau                        -0.000377       0.0559
+   12     fixa                           -0.000372       0.0393
+   13     âcre                           -0.000344       0.0439
+   14     orné                           -0.000320       0.0433
+   15     canapé                         -0.000292       0.0338
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      luisaient                      +0.036783       0.0558
+   2      guéridon                       +0.036587       0.0482
+   3      mrs                            +0.035190       0.0729
+   4      grêle                          +0.034270       0.0492
+   5      hublot                         +0.028401       0.0614
+   6      extra                          +0.025525       0.0568
+   7      justification                  +0.023208       0.0581
+   8      fixé                           +0.022367       0.0295
+   9      poulets                        +0.022008       0.0523
+   10     éloge                          +0.021320       0.0520
+   11     sujets                         +0.019748       0.0656
+   12     prié                           +0.018048       0.0401
+   13     coquille                       +0.017072       0.0450
+   14     introduction                   +0.015775       0.0592
+   15     propreté                       +0.015225       0.0448
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cagney                         -0.252946       0.7510
+   2      merisier                       -0.049326       0.0833
+   3      morris                         -0.045268       0.0908
+   4      déglutit                       -0.031721       0.0631
+   5      séchés                         -0.030879       0.0702
+   6      rapetisser                     -0.025239       0.0813
+   7      fragile                        -0.021754       0.0274
+   8      plateau                        -0.020944       0.0559
+   9      reparler                       -0.020876       0.0641
+   10     âcre                           -0.020727       0.0439
+   11     récente                        -0.019031       0.0419
+   12     orné                           -0.019010       0.0433
+   13     colorée                        -0.018371       0.0535
+   14     trônait                        -0.018328       0.0471
+   15     étincelants                    -0.015165       0.0550
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+cagney                    +0.000000     +0.000053     +0.000053     0.7510
+justification             +0.000488     +0.000039     +0.000039     0.0581
+reparler                  +0.000000     +0.000027     +0.000027     0.0641
+porterait                 +0.000063     +0.000023     +0.000023     0.0520
+colorée                   +0.000000     +0.000022     +0.000022     0.0535
+extra                     +0.000530     +0.000021     +0.000021     0.0568
+aspirait                  +0.000225     +0.000019     +0.000019     0.0492
+cognac                    +0.000047     +0.000017     +0.000017     0.0519
+guéridon                  +0.000803     +0.000015     +0.000015     0.0482
+abritaient                +0.000081     +0.000013     +0.000013     0.0625
+présenté                  +0.000168     +0.000013     +0.000013     0.0311
+propreté                  +0.000239     +0.000013     +0.000013     0.0448
+décoraient                +0.000352     +0.000012     +0.000012     0.0726
+entières                  +0.000000     +0.000011     +0.000011     0.0363
+imprégner                 +0.000000     +0.000010     +0.000010     0.0597
+argenté                   +0.000000     +0.000010     +0.000010     0.0521
+bûches                    +0.000024     +0.000009     +0.000009     0.0522
+pâte                      +0.000291     +0.000009     +0.000009     0.0362
+fixé                      +0.000420     +0.000009     +0.000009     0.0295
+durant                    +0.000100     +0.000008     +0.000008     0.0258
+logit final pour 'homme': -0.7924

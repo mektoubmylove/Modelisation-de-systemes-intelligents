@@ -1,0 +1,5 @@
+filename: (GIDE)(André)(Les Caves du Vatican)(1)(1914)(1869)(1951)(fr)(z)(z)(V)(R)(T).txt
+index: 117
+first_name: andre
+last_name: gide
+true_label: homme

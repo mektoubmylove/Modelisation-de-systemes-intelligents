@@ -1,0 +1,386 @@
+texte analysé: qu on lui avait jouée et réclama à tobias les nuitées non réglées . fais moi un procès , railla celui ci en disparaissant , abandonnant l homme à sa colère . remontant en voiture , il fila vers le poi...
+prédiction: FEMME (confiance: 92.7%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.4172
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mary                           +0.000325       0.5042
+   2      sitôt                          +0.000063       0.0881
+   3      prétextant                     +0.000055       0.0622
+   4      exposa                         +0.000052       0.0691
+   5      rondelette                     +0.000049       0.0870
+   6      rattaché                       +0.000041       0.0911
+   7      soupesa                        +0.000038       0.0946
+   8      remontant                      +0.000038       0.0439
+   9      abandonnant                    +0.000036       0.0462
+   10     somme                          +0.000032       0.0286
+   11     chapitre                       +0.000029       0.0394
+   12     tenta                          +0.000029       0.0440
+   13     décida                         +0.000029       0.0359
+   14     réglées                        +0.000025       0.0907
+   15     ralliement                     +0.000020       0.0776
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cecily                         -0.000439       0.4812
+   2      read                           -0.000184       0.2735
+   3      jade                           -0.000156       0.3135
+   4      pendentif                      -0.000119       0.0815
+   5      lady                           -0.000059       0.0702
+   6      bijou                          -0.000058       0.1447
+   7      étudia                         -0.000052       0.0729
+   8      perles                         -0.000049       0.0416
+   9      railla                         -0.000047       0.0749
+   10     tobias                         -0.000047       0.1314
+   11     réclama                        -0.000045       0.0619
+   12     décréta                        -0.000042       0.0662
+   13     rapporte                       -0.000038       0.0457
+   14     trouverai                      -0.000036       0.0518
+   15     caressant                      -0.000034       0.0426
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mary                           +0.000325       0.5042
+   2      sitôt                          +0.000063       0.0881
+   3      prétextant                     +0.000055       0.0622
+   4      exposa                         +0.000052       0.0691
+   5      rondelette                     +0.000049       0.0870
+   6      rattaché                       +0.000041       0.0911
+   7      soupesa                        +0.000038       0.0946
+   8      remontant                      +0.000038       0.0439
+   9      abandonnant                    +0.000036       0.0462
+   10     somme                          +0.000032       0.0286
+   11     chapitre                       +0.000029       0.0394
+   12     tenta                          +0.000029       0.0440
+   13     décida                         +0.000029       0.0359
+   14     réglées                        +0.000025       0.0907
+   15     ralliement                     +0.000020       0.0776
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cecily                         -0.000439       0.4812
+   2      read                           -0.000184       0.2735
+   3      jade                           -0.000156       0.3135
+   4      pendentif                      -0.000119       0.0815
+   5      lady                           -0.000059       0.0702
+   6      bijou                          -0.000058       0.1447
+   7      étudia                         -0.000052       0.0729
+   8      perles                         -0.000049       0.0416
+   9      railla                         -0.000047       0.0749
+   10     tobias                         -0.000047       0.1314
+   11     réclama                        -0.000045       0.0619
+   12     décréta                        -0.000042       0.0662
+   13     rapporte                       -0.000038       0.0457
+   14     trouverai                      -0.000036       0.0518
+   15     caressant                      -0.000034       0.0426
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cecily                         +0.004633       0.4812
+   2      read                           +0.002973       0.2735
+   3      entichée                       +0.001282       0.0951
+   4      constat                        +0.001154       0.0609
+   5      bijou                          +0.001089       0.1447
+   6      soupira                        +0.001083       0.0385
+   7      railla                         +0.001081       0.0749
+   8      enserrait                      +0.001065       0.0792
+   9      décréta                        +0.000987       0.0662
+   10     pendentif                      +0.000925       0.0815
+   11     rondelette                     +0.000865       0.0870
+   12     joaillier                      +0.000821       0.0930
+   13     réclama                        +0.000814       0.0619
+   14     vendre                         +0.000721       0.0679
+   15     lady                           +0.000663       0.0702
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tobias                         -0.001234       0.1314
+   2      sitôt                          -0.001085       0.0881
+   3      jouée                          -0.001022       0.0645
+   4      lunette                        -0.000996       0.0751
+   5      exposa                         -0.000882       0.0691
+   6      réglées                        -0.000860       0.0907
+   7      chapitre                       -0.000680       0.0394
+   8      somme                          -0.000664       0.0286
+   9      besogne                        -0.000653       0.0467
+   10     disparaissant                  -0.000606       0.0688
+   11     examina                        -0.000599       0.0483
+   12     eurent                         -0.000541       0.0376
+   13     rendit                         -0.000534       0.0361
+   14     poussière                      -0.000390       0.0579
+   15     glas                           -0.000354       0.0682
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      read                           +0.121541       0.2735
+   2      cecily                         +0.117195       0.4812
+   3      bijou                          +0.053870       0.1447
+   4      mary                           +0.053274       0.5042
+   5      entichée                       +0.050486       0.0951
+   6      constat                        +0.043531       0.0609
+   7      railla                         +0.039949       0.0749
+   8      rondelette                     +0.039779       0.0870
+   9      soupira                        +0.039626       0.0385
+   10     décréta                        +0.036112       0.0662
+   11     joaillier                      +0.035132       0.0930
+   12     lady                           +0.030411       0.0702
+   13     récupéra                       +0.029037       0.0716
+   14     pendentif                      +0.028589       0.0815
+   15     enserrait                      +0.027833       0.0792
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tobias                         -0.085723       0.1314
+   2      réglées                        -0.044973       0.0907
+   3      lunette                        -0.041825       0.0751
+   4      jouée                          -0.041189       0.0645
+   5      exposa                         -0.031936       0.0691
+   6      disparaissant                  -0.031733       0.0688
+   7      sitôt                          -0.031730       0.0881
+   8      besogne                        -0.028325       0.0467
+   9      chapitre                       -0.026776       0.0394
+   10     somme                          -0.024156       0.0286
+   11     examina                        -0.024119       0.0483
+   12     rendit                         -0.021389       0.0361
+   13     avança                         -0.017713       0.0386
+   14     eurent                         -0.016574       0.0376
+   15     fila                           -0.016339       0.0567
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+mary                      +0.000291     +0.000325     +0.000325     0.5042
+sitôt                     +0.000000     +0.000063     +0.000063     0.0881
+prétextant                +0.000105     +0.000055     +0.000055     0.0622
+exposa                    +0.000000     +0.000052     +0.000052     0.0691
+rondelette                +0.000865     +0.000049     +0.000049     0.0870
+rattaché                  +0.000000     +0.000041     +0.000041     0.0911
+soupesa                   +0.000000     +0.000038     +0.000038     0.0946
+remontant                 +0.000260     +0.000038     +0.000038     0.0439
+abandonnant               +0.000000     +0.000036     +0.000036     0.0462
+somme                     +0.000000     +0.000032     +0.000032     0.0286
+chapitre                  +0.000000     +0.000029     +0.000029     0.0394
+tenta                     +0.000000     +0.000029     +0.000029     0.0440
+décida                    +0.000343     +0.000029     +0.000029     0.0359
+réglées                   +0.000000     +0.000025     +0.000025     0.0907
+ralliement                +0.000000     +0.000020     +0.000020     0.0776
+diamant                   +0.000532     +0.000019     +0.000019     0.0570
+récupéra                  +0.000594     +0.000018     +0.000018     0.0716
+eurent                    +0.000000     +0.000017     +0.000017     0.0376
+située                    +0.000000     +0.000017     +0.000017     0.0445
+glisser                   +0.000158     +0.000014     +0.000014     0.0282
+logit final pour 'femme': 1.4172
+# analyse pour la classe: HOMME
+# logit: -1.1191
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mary                           +0.000228       0.5042
+   2      prétextant                     +0.000035       0.0622
+   3      rondelette                     +0.000032       0.0870
+   4      exposa                         +0.000030       0.0691
+   5      sitôt                          +0.000028       0.0881
+   6      entichée                       +0.000024       0.0951
+   7      décida                         +0.000018       0.0359
+   8      tenta                          +0.000017       0.0440
+   9      somme                          +0.000016       0.0286
+   10     chapitre                       +0.000015       0.0394
+   11     remontant                      +0.000015       0.0439
+   12     rattaché                       +0.000015       0.0911
+   13     glas                           +0.000014       0.0682
+   14     lassitude                      +0.000013       0.0386
+   15     eurent                         +0.000010       0.0376
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cecily                         -0.000228       0.4812
+   2      pendentif                      -0.000092       0.0815
+   3      read                           -0.000062       0.2735
+   4      tobias                         -0.000061       0.1314
+   5      jade                           -0.000040       0.3135
+   6      enserrait                      -0.000036       0.0792
+   7      attirent                       -0.000028       0.0675
+   8      perles                         -0.000026       0.0416
+   9      collier                        -0.000025       0.0421
+   10     étudia                         -0.000025       0.0729
+   11     trouverai                      -0.000021       0.0518
+   12     décréta                        -0.000021       0.0662
+   13     resurgir                       -0.000020       0.0858
+   14     bibelots                       -0.000020       0.0560
+   15     retrouve                       -0.000018       0.0292
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mary                           +0.000228       0.5042
+   2      prétextant                     +0.000035       0.0622
+   3      rondelette                     +0.000032       0.0870
+   4      exposa                         +0.000030       0.0691
+   5      sitôt                          +0.000028       0.0881
+   6      entichée                       +0.000024       0.0951
+   7      décida                         +0.000018       0.0359
+   8      tenta                          +0.000017       0.0440
+   9      somme                          +0.000016       0.0286
+   10     chapitre                       +0.000015       0.0394
+   11     remontant                      +0.000015       0.0439
+   12     rattaché                       +0.000015       0.0911
+   13     glas                           +0.000014       0.0682
+   14     lassitude                      +0.000013       0.0386
+   15     eurent                         +0.000010       0.0376
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cecily                         -0.000228       0.4812
+   2      pendentif                      -0.000092       0.0815
+   3      read                           -0.000062       0.2735
+   4      tobias                         -0.000061       0.1314
+   5      jade                           -0.000040       0.3135
+   6      enserrait                      -0.000036       0.0792
+   7      attirent                       -0.000028       0.0675
+   8      perles                         -0.000026       0.0416
+   9      collier                        -0.000025       0.0421
+   10     étudia                         -0.000025       0.0729
+   11     trouverai                      -0.000021       0.0518
+   12     décréta                        -0.000021       0.0662
+   13     resurgir                       -0.000020       0.0858
+   14     bibelots                       -0.000020       0.0560
+   15     retrouve                       -0.000018       0.0292
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jouée                          +0.000888       0.0645
+   2      sitôt                          +0.000824       0.0881
+   3      lunette                        +0.000674       0.0751
+   4      exposa                         +0.000593       0.0691
+   5      réglées                        +0.000579       0.0907
+   6      tobias                         +0.000572       0.1314
+   7      somme                          +0.000480       0.0286
+   8      besogne                        +0.000469       0.0467
+   9      chapitre                       +0.000454       0.0394
+   10     eurent                         +0.000422       0.0376
+   11     disparaissant                  +0.000411       0.0688
+   12     examina                        +0.000402       0.0483
+   13     rendit                         +0.000384       0.0361
+   14     située                         +0.000284       0.0445
+   15     avança                         +0.000282       0.0386
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cecily                         -0.003384       0.4812
+   2      read                           -0.002373       0.2735
+   3      bijou                          -0.001208       0.1447
+   4      entichée                       -0.000945       0.0951
+   5      jade                           -0.000850       0.3135
+   6      constat                        -0.000808       0.0609
+   7      soupira                        -0.000797       0.0385
+   8      railla                         -0.000787       0.0749
+   9      joaillier                      -0.000729       0.0930
+   10     décréta                        -0.000723       0.0662
+   11     réclama                        -0.000660       0.0619
+   12     enserrait                      -0.000621       0.0792
+   13     rondelette                     -0.000543       0.0870
+   14     facture                        -0.000518       0.0615
+   15     diamant                        -0.000494       0.0570
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tobias                         +0.048213       0.1314
+   2      jouée                          +0.035132       0.0645
+   3      réglées                        +0.033016       0.0907
+   4      lunette                        +0.031226       0.0751
+   5      sitôt                          +0.025349       0.0881
+   6      disparaissant                  +0.020873       0.0688
+   7      exposa                         +0.020536       0.0691
+   8      besogne                        +0.018069       0.0467
+   9      somme                          +0.017002       0.0286
+   10     bibelots                       +0.016849       0.0560
+   11     chapitre                       +0.016249       0.0394
+   12     rendit                         +0.015282       0.0361
+   13     examina                        +0.014787       0.0483
+   14     avança                         +0.014193       0.0386
+   15     fila                           +0.013283       0.0567
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cecily                         -0.087858       0.4812
+   2      read                           -0.080030       0.2735
+   3      bijou                          -0.050607       0.1447
+   4      mary                           -0.040137       0.5042
+   5      entichée                       -0.039288       0.0951
+   6      joaillier                      -0.033937       0.0930
+   7      constat                        -0.031186       0.0609
+   8      railla                         -0.029611       0.0749
+   9      soupira                        -0.029560       0.0385
+   10     rondelette                     -0.027076       0.0870
+   11     décréta                        -0.025632       0.0662
+   12     réclama                        -0.022701       0.0619
+   13     diamant                        -0.022232       0.0570
+   14     récupéra                       -0.021652       0.0716
+   15     lady                           -0.021526       0.0702
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+mary                      +0.000000     +0.000228     +0.000228     0.5042
+prétextant                +0.000000     +0.000035     +0.000035     0.0622
+rondelette                +0.000000     +0.000032     +0.000032     0.0870
+exposa                    +0.000593     +0.000030     +0.000030     0.0691
+sitôt                     +0.000824     +0.000028     +0.000028     0.0881
+entichée                  +0.000000     +0.000024     +0.000024     0.0951
+décida                    +0.000000     +0.000018     +0.000018     0.0359
+tenta                     +0.000080     +0.000017     +0.000017     0.0440
+somme                     +0.000480     +0.000016     +0.000016     0.0286
+chapitre                  +0.000454     +0.000015     +0.000015     0.0394
+remontant                 +0.000000     +0.000015     +0.000015     0.0439
+rattaché                  +0.000270     +0.000015     +0.000015     0.0911
+glas                      +0.000174     +0.000014     +0.000014     0.0682
+lassitude                 +0.000000     +0.000013     +0.000013     0.0386
+eurent                    +0.000422     +0.000010     +0.000010     0.0376
+examina                   +0.000402     +0.000010     +0.000010     0.0483
+joaillier                 +0.000000     +0.000010     +0.000010     0.0930
+diamant                   +0.000000     +0.000007     +0.000007     0.0570
+éclat                     +0.000000     +0.000007     +0.000007     0.0294
+rendit                    +0.000384     +0.000007     +0.000007     0.0361
+logit final pour 'homme': -1.1191

@@ -1,0 +1,386 @@
+texte analysé: , il attrape la nouveauté avec ses dents , la mâche mais ce n est pas nécessaire , ça fond sur la langue , ça tapisse le palais , il en a plein la bouche , et le miracle a lieu . la volupté lui monte ...
+prédiction: FEMME (confiance: 83.4%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.8760
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      traduisait                     +0.000108       0.1449
+   2      retentir                       +0.000095       0.1552
+   3      disparaissait                  +0.000095       0.0961
+   4      virent                         +0.000082       0.1020
+   5      défunte                        +0.000077       0.1357
+   6      ouvrais                        +0.000071       0.1598
+   7      nouveauté                      +0.000064       0.1271
+   8      stupéfaits                     +0.000050       0.1483
+   9      rugissant                      +0.000050       0.1990
+   10     énormes                        +0.000042       0.0763
+   11     mâche                          +0.000041       0.1715
+   12     molle                          +0.000040       0.0933
+   13     bâton                          +0.000038       0.1832
+   14     février                        +0.000030       0.0947
+   15     cage                           +0.000027       0.0764
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      devras                         -0.000190       0.3122
+   2      chocolat                       -0.000187       0.2664
+   3      fus                            -0.000126       0.1060
+   4      bienveillant                   -0.000122       0.1191
+   5      bouchée                        -0.000114       0.2109
+   6      onctueux                       -0.000100       0.1785
+   7      soulevèrent                    -0.000098       0.1658
+   8      sucré                          -0.000089       0.1204
+   9      contente                       -0.000088       0.0668
+   10     volupté                        -0.000080       0.2165
+   11     ressens                        -0.000079       0.1119
+   12     attrape                        -0.000067       0.1023
+   13     bloc                           -0.000052       0.0795
+   14     sage                           -0.000052       0.0691
+   15     présente                       -0.000051       0.0621
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      traduisait                     +0.000108       0.1449
+   2      retentir                       +0.000095       0.1552
+   3      disparaissait                  +0.000095       0.0961
+   4      virent                         +0.000082       0.1020
+   5      défunte                        +0.000077       0.1357
+   6      ouvrais                        +0.000071       0.1598
+   7      nouveauté                      +0.000064       0.1271
+   8      stupéfaits                     +0.000050       0.1483
+   9      rugissant                      +0.000050       0.1990
+   10     énormes                        +0.000042       0.0763
+   11     mâche                          +0.000041       0.1715
+   12     molle                          +0.000040       0.0933
+   13     bâton                          +0.000038       0.1832
+   14     février                        +0.000030       0.0947
+   15     cage                           +0.000027       0.0764
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      devras                         -0.000190       0.3122
+   2      chocolat                       -0.000187       0.2664
+   3      fus                            -0.000126       0.1060
+   4      bienveillant                   -0.000122       0.1191
+   5      bouchée                        -0.000114       0.2109
+   6      onctueux                       -0.000100       0.1785
+   7      soulevèrent                    -0.000098       0.1658
+   8      sucré                          -0.000089       0.1204
+   9      contente                       -0.000088       0.0668
+   10     volupté                        -0.000080       0.2165
+   11     ressens                        -0.000079       0.1119
+   12     attrape                        -0.000067       0.1023
+   13     bloc                           -0.000052       0.0795
+   14     sage                           -0.000052       0.0691
+   15     présente                       -0.000051       0.0621
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chocolat                       +0.004014       0.2664
+   2      bouchée                        +0.002558       0.2109
+   3      attrape                        +0.001859       0.1023
+   4      onctueux                       +0.001774       0.1785
+   5      bienveillant                   +0.001670       0.1191
+   6      soulevèrent                    +0.001560       0.1658
+   7      devras                         +0.001560       0.3122
+   8      sucré                          +0.001474       0.1204
+   9      contente                       +0.001469       0.0668
+   10     inconnus                       +0.000970       0.0820
+   11     apprend                        +0.000742       0.0822
+   12     apporté                        +0.000714       0.0703
+   13     amie                           +0.000653       0.0624
+   14     trace                          +0.000621       0.0617
+   15     miracle                        +0.000607       0.0691
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      retentir                       -0.003295       0.1552
+   2      molle                          -0.001932       0.0933
+   3      volupté                        -0.001865       0.2165
+   4      inventée                       -0.001727       0.1479
+   5      entré                          -0.001375       0.0684
+   6      traduisait                     -0.001182       0.1449
+   7      bâton                          -0.001065       0.1832
+   8      cage                           -0.001016       0.0764
+   9      ouvrais                        -0.000875       0.1598
+   10     village                        -0.000684       0.0655
+   11     énormes                        -0.000656       0.0763
+   12     virent                         -0.000644       0.1020
+   13     disparaissait                  -0.000637       0.0961
+   14     enthousiastes                  -0.000620       0.1506
+   15     aperçus                        -0.000557       0.1036
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chocolat                       +0.164897       0.2664
+   2      bouchée                        +0.116356       0.2109
+   3      attrape                        +0.077467       0.1023
+   4      onctueux                       +0.071798       0.1785
+   5      bienveillant                   +0.065382       0.1191
+   6      contente                       +0.065129       0.0668
+   7      devras                         +0.057685       0.3122
+   8      sucré                          +0.049676       0.1204
+   9      inconnus                       +0.046365       0.0820
+   10     soulevèrent                    +0.043219       0.1658
+   11     nouveauté                      +0.041373       0.1271
+   12     apporté                        +0.041009       0.0703
+   13     amie                           +0.032546       0.0624
+   14     apprend                        +0.031331       0.0822
+   15     miracle                        +0.029922       0.0691
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      retentir                       -0.143797       0.1552
+   2      volupté                        -0.105681       0.2165
+   3      inventée                       -0.084451       0.1479
+   4      molle                          -0.083978       0.0933
+   5      ouvrais                        -0.057543       0.1598
+   6      entré                          -0.057419       0.0684
+   7      cage                           -0.050140       0.0764
+   8      bâton                          -0.044398       0.1832
+   9      traduisait                     -0.042104       0.1449
+   10     village                        -0.032616       0.0655
+   11     virent                         -0.031736       0.1020
+   12     disparaissait                  -0.029998       0.0961
+   13     énormes                        -0.029346       0.0763
+   14     friandise                      -0.027336       0.1785
+   15     sonores                        -0.027312       0.1300
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+traduisait                +0.000000     +0.000108     +0.000108     0.1449
+retentir                  +0.000000     +0.000095     +0.000095     0.1552
+disparaissait             +0.000000     +0.000095     +0.000095     0.0961
+virent                    +0.000000     +0.000082     +0.000082     0.1020
+défunte                   +0.000093     +0.000077     +0.000077     0.1357
+ouvrais                   +0.000000     +0.000071     +0.000071     0.1598
+nouveauté                 +0.000534     +0.000064     +0.000064     0.1271
+stupéfaits                +0.000268     +0.000050     +0.000050     0.1483
+rugissant                 +0.000000     +0.000050     +0.000050     0.1990
+énormes                   +0.000000     +0.000042     +0.000042     0.0763
+mâche                     +0.000000     +0.000041     +0.000041     0.1715
+molle                     +0.000000     +0.000040     +0.000040     0.0933
+bâton                     +0.000000     +0.000038     +0.000038     0.1832
+février                   +0.000000     +0.000030     +0.000030     0.0947
+cage                      +0.000000     +0.000027     +0.000027     0.0764
+vive                      +0.000000     +0.000025     +0.000025     0.0621
+aperçus                   +0.000000     +0.000023     +0.000023     0.1036
+paternelle                +0.000039     +0.000019     +0.000019     0.1155
+entendue                  +0.000000     +0.000018     +0.000018     0.0807
+merveille                 +0.000020     +0.000017     +0.000017     0.0861
+logit final pour 'femme': 0.8760
+# analyse pour la classe: HOMME
+# logit: -0.7398
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ouvrais                        +0.000082       0.1598
+   2      retentir                       +0.000053       0.1552
+   3      disparaissait                  +0.000052       0.0961
+   4      nouveauté                      +0.000040       0.1271
+   5      virent                         +0.000038       0.1020
+   6      entendue                       +0.000031       0.0807
+   7      traduisait                     +0.000024       0.1449
+   8      rugissant                      +0.000023       0.1990
+   9      aperçus                        +0.000022       0.1036
+   10     amie                           +0.000019       0.0624
+   11     vive                           +0.000017       0.0621
+   12     formidable                     +0.000016       0.0822
+   13     mâche                          +0.000015       0.1715
+   14     apporté                        +0.000014       0.0703
+   15     défunte                        +0.000014       0.1357
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      devras                         -0.000122       0.3122
+   2      bouchée                        -0.000108       0.2109
+   3      soulevèrent                    -0.000103       0.1658
+   4      fus                            -0.000089       0.1060
+   5      onctueux                       -0.000071       0.1785
+   6      chocolat                       -0.000060       0.2664
+   7      inventée                       -0.000039       0.1479
+   8      bienveillant                   -0.000039       0.1191
+   9      attrape                        -0.000033       0.1023
+   10     monte                          -0.000032       0.0647
+   11     sentais                        -0.000032       0.0832
+   12     ressens                        -0.000031       0.1119
+   13     sucré                          -0.000030       0.1204
+   14     bâton                          -0.000029       0.1832
+   15     contente                       -0.000029       0.0668
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ouvrais                        +0.000082       0.1598
+   2      retentir                       +0.000053       0.1552
+   3      disparaissait                  +0.000052       0.0961
+   4      nouveauté                      +0.000040       0.1271
+   5      virent                         +0.000038       0.1020
+   6      entendue                       +0.000031       0.0807
+   7      traduisait                     +0.000024       0.1449
+   8      rugissant                      +0.000023       0.1990
+   9      aperçus                        +0.000022       0.1036
+   10     amie                           +0.000019       0.0624
+   11     vive                           +0.000017       0.0621
+   12     formidable                     +0.000016       0.0822
+   13     mâche                          +0.000015       0.1715
+   14     apporté                        +0.000014       0.0703
+   15     défunte                        +0.000014       0.1357
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      devras                         -0.000122       0.3122
+   2      bouchée                        -0.000108       0.2109
+   3      soulevèrent                    -0.000103       0.1658
+   4      fus                            -0.000089       0.1060
+   5      onctueux                       -0.000071       0.1785
+   6      chocolat                       -0.000060       0.2664
+   7      inventée                       -0.000039       0.1479
+   8      bienveillant                   -0.000039       0.1191
+   9      attrape                        -0.000033       0.1023
+   10     monte                          -0.000032       0.0647
+   11     sentais                        -0.000032       0.0832
+   12     ressens                        -0.000031       0.1119
+   13     sucré                          -0.000030       0.1204
+   14     bâton                          -0.000029       0.1832
+   15     contente                       -0.000029       0.0668
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      retentir                       +0.002340       0.1552
+   2      inventée                       +0.001270       0.1479
+   3      molle                          +0.001236       0.0933
+   4      volupté                        +0.001230       0.2165
+   5      traduisait                     +0.000996       0.1449
+   6      bâton                          +0.000889       0.1832
+   7      entré                          +0.000877       0.0684
+   8      cage                           +0.000562       0.0764
+   9      énormes                        +0.000436       0.0763
+   10     cerveau                        +0.000432       0.1435
+   11     février                        +0.000406       0.0947
+   12     fus                            +0.000398       0.1060
+   13     village                        +0.000381       0.0655
+   14     virent                         +0.000364       0.1020
+   15     sonores                        +0.000343       0.1300
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chocolat                       -0.003074       0.2664
+   2      onctueux                       -0.001553       0.1785
+   3      bouchée                        -0.001334       0.2109
+   4      attrape                        -0.001326       0.1023
+   5      sucré                          -0.001284       0.1204
+   6      devras                         -0.001210       0.3122
+   7      bienveillant                   -0.001142       0.1191
+   8      contente                       -0.001131       0.0668
+   9      soulevèrent                    -0.000959       0.1658
+   10     inconnus                       -0.000588       0.0820
+   11     amie                           -0.000516       0.0624
+   12     apprend                        -0.000504       0.0822
+   13     déchire                        -0.000500       0.1167
+   14     apporté                        -0.000497       0.0703
+   15     miracle                        -0.000418       0.0691
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      retentir                       +0.101247       0.1552
+   2      volupté                        +0.065160       0.2165
+   3      inventée                       +0.060758       0.1479
+   4      molle                          +0.055723       0.0933
+   5      bâton                          +0.049231       0.1832
+   6      entré                          +0.035557       0.0684
+   7      traduisait                     +0.035326       0.1449
+   8      cage                           +0.026748       0.0764
+   9      fus                            +0.026023       0.1060
+   10     sonores                        +0.019993       0.1300
+   11     énormes                        +0.017303       0.0763
+   12     village                        +0.016566       0.0655
+   13     ouvrais                        +0.016347       0.1598
+   14     virent                         +0.015897       0.1020
+   15     cerveau                        +0.013827       0.1435
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chocolat                       -0.122097       0.2664
+   2      onctueux                       -0.058640       0.1785
+   3      attrape                        -0.049944       0.1023
+   4      bouchée                        -0.049908       0.2109
+   5      contente                       -0.049772       0.0668
+   6      bienveillant                   -0.047928       0.1191
+   7      sucré                          -0.045659       0.1204
+   8      devras                         -0.035604       0.3122
+   9      nouveauté                      -0.029634       0.1271
+   10     amie                           -0.025915       0.0624
+   11     apporté                        -0.025892       0.0703
+   12     inconnus                       -0.025385       0.0820
+   13     déchire                        -0.021904       0.1167
+   14     miracle                        -0.021207       0.0691
+   15     apprend                        -0.019656       0.0822
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+ouvrais                   +0.000228     +0.000082     +0.000082     0.1598
+retentir                  +0.002340     +0.000053     +0.000053     0.1552
+disparaissait             +0.000222     +0.000052     +0.000052     0.0961
+nouveauté                 +0.000000     +0.000040     +0.000040     0.1271
+virent                    +0.000364     +0.000038     +0.000038     0.1020
+entendue                  +0.000041     +0.000031     +0.000031     0.0807
+traduisait                +0.000996     +0.000024     +0.000024     0.1449
+rugissant                 +0.000131     +0.000023     +0.000023     0.1990
+aperçus                   +0.000252     +0.000022     +0.000022     0.1036
+amie                      +0.000000     +0.000019     +0.000019     0.0624
+vive                      +0.000101     +0.000017     +0.000017     0.0621
+formidable                +0.000251     +0.000016     +0.000016     0.0822
+mâche                     +0.000099     +0.000015     +0.000015     0.1715
+apporté                   +0.000000     +0.000014     +0.000014     0.0703
+défunte                   +0.000139     +0.000014     +0.000014     0.1357
+gardait                   +0.000000     +0.000013     +0.000013     0.0713
+enthousiastes             +0.000233     +0.000013     +0.000013     0.1506
+énormes                   +0.000436     +0.000012     +0.000012     0.0763
+paternelle                +0.000000     +0.000010     +0.000010     0.1155
+cage                      +0.000562     +0.000009     +0.000009     0.0764
+logit final pour 'homme': -0.7398

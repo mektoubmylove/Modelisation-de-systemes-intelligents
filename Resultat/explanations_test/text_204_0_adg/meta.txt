@@ -1,0 +1,5 @@
+filename: (A.D.G.)(0)(juste un rigolo)(1)(1977)(1947)(2004)(fr)(z)(z)(V)(R)(T).txt
+index: 204
+first_name: 0
+last_name: adg
+true_label: homme

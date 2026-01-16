@@ -1,0 +1,386 @@
+texte analysé: et du mousquetaire ayant jeté leur crottin , les perdreaux y coururent , évitant les sabots qui , de temps en temps , secouaient les mouches . conte moi donc une de tes chasses au lion , dit saulnier ...
+prédiction: HOMME (confiance: 85.3%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.9467
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      épouvanter                     +0.000094       0.1541
+   2      chèvre                         +0.000093       0.1611
+   3      attendis                       +0.000067       0.1123
+   4      touffe                         +0.000066       0.2050
+   5      natif                          +0.000065       0.1284
+   6      assirent                       +0.000058       0.0940
+   7      vignes                         +0.000047       0.1008
+   8      rugissait                      +0.000044       0.1455
+   9      sainte                         +0.000038       0.0533
+   10     célèbre                        +0.000028       0.0579
+   11     afrique                        +0.000025       0.0758
+   12     bride                          +0.000024       0.0895
+   13     commençait                     +0.000022       0.0446
+   14     coururent                      +0.000020       0.1095
+   15     entier                         +0.000020       0.0444
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lion                           -0.000120       0.3752
+   2      déboule                        -0.000116       0.2708
+   3      ménagerie                      -0.000108       0.1225
+   4      secouaient                     -0.000091       0.1090
+   5      gueuler                        -0.000089       0.1101
+   6      appât                          -0.000085       0.1081
+   7      gérard                         -0.000065       0.2185
+   8      bêtes                          -0.000050       0.1015
+   9      solides                        -0.000048       0.0624
+   10     quille                         -0.000047       0.1411
+   11     perdreaux                      -0.000046       0.1582
+   12     cantonnier                     -0.000045       0.1615
+   13     cavernes                       -0.000042       0.1136
+   14     lions                          -0.000038       0.1011
+   15     cages                          -0.000036       0.1001
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      épouvanter                     +0.000094       0.1541
+   2      chèvre                         +0.000093       0.1611
+   3      attendis                       +0.000067       0.1123
+   4      touffe                         +0.000066       0.2050
+   5      natif                          +0.000065       0.1284
+   6      assirent                       +0.000058       0.0940
+   7      vignes                         +0.000047       0.1008
+   8      rugissait                      +0.000044       0.1455
+   9      sainte                         +0.000038       0.0533
+   10     célèbre                        +0.000028       0.0579
+   11     afrique                        +0.000025       0.0758
+   12     bride                          +0.000024       0.0895
+   13     commençait                     +0.000022       0.0446
+   14     coururent                      +0.000020       0.1095
+   15     entier                         +0.000020       0.0444
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lion                           -0.000120       0.3752
+   2      déboule                        -0.000116       0.2708
+   3      ménagerie                      -0.000108       0.1225
+   4      secouaient                     -0.000091       0.1090
+   5      gueuler                        -0.000089       0.1101
+   6      appât                          -0.000085       0.1081
+   7      gérard                         -0.000065       0.2185
+   8      bêtes                          -0.000050       0.1015
+   9      solides                        -0.000048       0.0624
+   10     quille                         -0.000047       0.1411
+   11     perdreaux                      -0.000046       0.1582
+   12     cantonnier                     -0.000045       0.1615
+   13     cavernes                       -0.000042       0.1136
+   14     lions                          -0.000038       0.1011
+   15     cages                          -0.000036       0.1001
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      déboule                        +0.001646       0.2708
+   2      lion                           +0.001547       0.3752
+   3      tueur                          +0.000805       0.0928
+   4      conte                          +0.000739       0.0742
+   5      couverte                       +0.000682       0.0579
+   6      solides                        +0.000682       0.0624
+   7      secouaient                     +0.000658       0.1090
+   8      rugissait                      +0.000640       0.1455
+   9      rugir                          +0.000430       0.1279
+   10     sauvage                        +0.000427       0.0499
+   11     partis                         +0.000312       0.0477
+   12     montrée                        +0.000273       0.0796
+   13     bride                          +0.000270       0.0895
+   14     ca                             +0.000193       0.1304
+   15     chasser                        +0.000164       0.0521
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cantonnier                     -0.002967       0.1615
+   2      quille                         -0.002337       0.1411
+   3      gérard                         -0.002160       0.2185
+   4      perdreaux                      -0.001656       0.1582
+   5      cavernes                       -0.001335       0.1136
+   6      fussent                        -0.001236       0.0683
+   7      lapin                          -0.001046       0.1413
+   8      coururent                      -0.000978       0.1095
+   9      prêtant                        -0.000945       0.1087
+   10     touffe                         -0.000877       0.2050
+   11     cages                          -0.000861       0.1001
+   12     contrée                        -0.000801       0.1020
+   13     tombant                        -0.000756       0.0668
+   14     ménagerie                      -0.000726       0.1225
+   15     halte                          -0.000695       0.0768
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      déboule                        +0.080479       0.2708
+   2      lion                           +0.072741       0.3752
+   3      secouaient                     +0.036369       0.1090
+   4      tueur                          +0.033147       0.0928
+   5      solides                        +0.031564       0.0624
+   6      conte                          +0.029947       0.0742
+   7      rugir                          +0.024524       0.1279
+   8      couverte                       +0.020957       0.0579
+   9      sauvage                        +0.020219       0.0499
+   10     ca                             +0.013197       0.1304
+   11     partis                         +0.012538       0.0477
+   12     comptais                       +0.011497       0.0815
+   13     rugissait                      +0.010522       0.1455
+   14     appât                          +0.010203       0.1081
+   15     montrée                        +0.009932       0.0796
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cantonnier                     -0.111850       0.1615
+   2      quille                         -0.075480       0.1411
+   3      gérard                         -0.063955       0.2185
+   4      perdreaux                      -0.051313       0.1582
+   5      coururent                      -0.048009       0.1095
+   6      chèvre                         -0.039985       0.1611
+   7      fussent                        -0.038203       0.0683
+   8      cavernes                       -0.038072       0.1136
+   9      touffe                         -0.036545       0.2050
+   10     prêtant                        -0.029417       0.1087
+   11     contrée                        -0.028755       0.1020
+   12     natif                          -0.027484       0.1284
+   13     épouvanter                     -0.027228       0.1541
+   14     cages                          -0.026388       0.1001
+   15     lapin                          -0.026096       0.1413
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+épouvanter                +0.000000     +0.000094     +0.000094     0.1541
+chèvre                    +0.000000     +0.000093     +0.000093     0.1611
+attendis                  +0.000000     +0.000067     +0.000067     0.1123
+touffe                    +0.000000     +0.000066     +0.000066     0.2050
+natif                     +0.000000     +0.000065     +0.000065     0.1284
+assirent                  +0.000146     +0.000058     +0.000058     0.0940
+vignes                    +0.000000     +0.000047     +0.000047     0.1008
+rugissait                 +0.000640     +0.000044     +0.000044     0.1455
+sainte                    +0.000130     +0.000038     +0.000038     0.0533
+célèbre                   +0.000000     +0.000028     +0.000028     0.0579
+afrique                   +0.000000     +0.000025     +0.000025     0.0758
+bride                     +0.000270     +0.000024     +0.000024     0.0895
+commençait                +0.000000     +0.000022     +0.000022     0.0446
+coururent                 +0.000000     +0.000020     +0.000020     0.1095
+entier                    +0.000017     +0.000020     +0.000020     0.0444
+mouches                   +0.000000     +0.000018     +0.000018     0.0675
+écria                     +0.000000     +0.000018     +0.000018     0.0648
+chevaux                   +0.000002     +0.000018     +0.000018     0.0557
+arbre                     +0.000000     +0.000014     +0.000014     0.1423
+cheval                    +0.000000     +0.000012     +0.000012     0.0473
+logit final pour 'femme': -0.9467
+# analyse pour la classe: HOMME  prédite
+# logit: 0.8119
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      épouvanter                     +0.000063       0.1541
+   2      chèvre                         +0.000060       0.1611
+   3      attendis                       +0.000054       0.1123
+   4      touffe                         +0.000046       0.2050
+   5      bride                          +0.000033       0.0895
+   6      natif                          +0.000033       0.1284
+   7      assirent                       +0.000031       0.0940
+   8      crottin                        +0.000029       0.1309
+   9      carriole                       +0.000027       0.1087
+   10     couverte                       +0.000024       0.0579
+   11     sainte                         +0.000023       0.0533
+   12     luisait                        +0.000022       0.0979
+   13     mouches                        +0.000022       0.0675
+   14     cages                          +0.000021       0.1001
+   15     rugissait                      +0.000019       0.1455
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gérard                         -0.000121       0.2185
+   2      ménagerie                      -0.000094       0.1225
+   3      quille                         -0.000068       0.1411
+   4      gueuler                        -0.000067       0.1101
+   5      maxime                         -0.000058       0.1182
+   6      cantonnier                     -0.000057       0.1615
+   7      bêtes                          -0.000051       0.1015
+   8      appât                          -0.000049       0.1081
+   9      secouaient                     -0.000047       0.1090
+   10     lions                          -0.000046       0.1011
+   11     lion                           -0.000043       0.3752
+   12     prêtant                        -0.000039       0.1087
+   13     cavernes                       -0.000033       0.1136
+   14     solides                        -0.000033       0.0624
+   15     quoique                        -0.000027       0.0652
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      épouvanter                     +0.000063       0.1541
+   2      chèvre                         +0.000060       0.1611
+   3      attendis                       +0.000054       0.1123
+   4      touffe                         +0.000046       0.2050
+   5      bride                          +0.000033       0.0895
+   6      natif                          +0.000033       0.1284
+   7      assirent                       +0.000031       0.0940
+   8      crottin                        +0.000029       0.1309
+   9      carriole                       +0.000027       0.1087
+   10     couverte                       +0.000024       0.0579
+   11     sainte                         +0.000023       0.0533
+   12     luisait                        +0.000022       0.0979
+   13     mouches                        +0.000022       0.0675
+   14     cages                          +0.000021       0.1001
+   15     rugissait                      +0.000019       0.1455
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gérard                         -0.000121       0.2185
+   2      ménagerie                      -0.000094       0.1225
+   3      quille                         -0.000068       0.1411
+   4      gueuler                        -0.000067       0.1101
+   5      maxime                         -0.000058       0.1182
+   6      cantonnier                     -0.000057       0.1615
+   7      bêtes                          -0.000051       0.1015
+   8      appât                          -0.000049       0.1081
+   9      secouaient                     -0.000047       0.1090
+   10     lions                          -0.000046       0.1011
+   11     lion                           -0.000043       0.3752
+   12     prêtant                        -0.000039       0.1087
+   13     cavernes                       -0.000033       0.1136
+   14     solides                        -0.000033       0.0624
+   15     quoique                        -0.000027       0.0652
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cantonnier                     +0.002652       0.1615
+   2      quille                         +0.002199       0.1411
+   3      gérard                         +0.001887       0.2185
+   4      perdreaux                      +0.001268       0.1582
+   5      fussent                        +0.001241       0.0683
+   6      cavernes                       +0.001125       0.1136
+   7      coururent                      +0.000994       0.1095
+   8      prêtant                        +0.000969       0.1087
+   9      lapin                          +0.000957       0.1413
+   10     cages                          +0.000948       0.1001
+   11     tombant                        +0.000792       0.0668
+   12     gueuler                        +0.000746       0.1101
+   13     touffe                         +0.000709       0.2050
+   14     contrée                        +0.000680       0.1020
+   15     halte                          +0.000646       0.0768
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lion                           -0.002212       0.3752
+   2      déboule                        -0.001347       0.2708
+   3      conte                          -0.000725       0.0742
+   4      couverte                       -0.000603       0.0579
+   5      tueur                          -0.000578       0.0928
+   6      solides                        -0.000557       0.0624
+   7      secouaient                     -0.000519       0.1090
+   8      crottin                        -0.000343       0.1309
+   9      partis                         -0.000286       0.0477
+   10     sauvage                        -0.000255       0.0499
+   11     chasser                        -0.000180       0.0521
+   12     rugir                          -0.000178       0.1279
+   13     chevaux                        -0.000136       0.0557
+   14     montrée                        -0.000107       0.0796
+   15     rugissait                      -0.000100       0.1455
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cantonnier                     +0.093834       0.1615
+   2      quille                         +0.072323       0.1411
+   3      gérard                         +0.046725       0.2185
+   4      coururent                      +0.045760       0.1095
+   5      fussent                        +0.044555       0.0683
+   6      perdreaux                      +0.037325       0.1582
+   7      cages                          +0.034328       0.1001
+   8      cavernes                       +0.032849       0.1136
+   9      tombant                        +0.028839       0.0668
+   10     mouches                        +0.026727       0.0675
+   11     prêtant                        +0.026700       0.1087
+   12     natif                          +0.023750       0.1284
+   13     chasses                        +0.022058       0.1067
+   14     chèvre                         +0.021280       0.1611
+   15     contrée                        +0.020898       0.1020
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lion                           -0.068787       0.3752
+   2      déboule                        -0.068001       0.2708
+   3      secouaient                     -0.029276       0.1090
+   4      conte                          -0.026834       0.0742
+   5      solides                        -0.024812       0.0624
+   6      tueur                          -0.021178       0.0928
+   7      sauvage                        -0.017080       0.0499
+   8      couverte                       -0.015567       0.0579
+   9      partis                         -0.014499       0.0477
+   10     ménagerie                      -0.012419       0.1225
+   11     lions                          -0.009371       0.1011
+   12     appât                          -0.008193       0.1081
+   13     montrée                        -0.007790       0.0796
+   14     chasser                        -0.006294       0.0521
+   15     maxime                         -0.005020       0.1182
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+épouvanter                +0.000563     +0.000063     +0.000063     0.1541
+chèvre                    +0.000099     +0.000060     +0.000060     0.1611
+attendis                  +0.000242     +0.000054     +0.000054     0.1123
+touffe                    +0.000709     +0.000046     +0.000046     0.2050
+bride                     +0.000000     +0.000033     +0.000033     0.0895
+natif                     +0.000579     +0.000033     +0.000033     0.1284
+assirent                  +0.000000     +0.000031     +0.000031     0.0940
+crottin                   +0.000000     +0.000029     +0.000029     0.1309
+carriole                  +0.000111     +0.000027     +0.000027     0.1087
+couverte                  +0.000000     +0.000024     +0.000024     0.0579
+sainte                    +0.000000     +0.000023     +0.000023     0.0533
+luisait                   +0.000617     +0.000022     +0.000022     0.0979
+mouches                   +0.000599     +0.000022     +0.000022     0.0675
+cages                     +0.000948     +0.000021     +0.000021     0.1001
+rugissait                 +0.000000     +0.000019     +0.000019     0.1455
+rugir                     +0.000000     +0.000019     +0.000019     0.1279
+ca                        +0.000065     +0.000015     +0.000015     0.1304
+coururent                 +0.000994     +0.000015     +0.000015     0.1095
+chevaux                   +0.000000     +0.000015     +0.000015     0.0557
+tueur                     +0.000000     +0.000014     +0.000014     0.0928
+logit final pour 'homme': 0.8119

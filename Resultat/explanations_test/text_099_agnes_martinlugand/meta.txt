@@ -1,0 +1,5 @@
+filename: (MARTIN-LUGAND)(Agnès)(les gens heureux lisent et boivent du café)(2)(2013)(1979)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 99
+first_name: agnes
+last_name: martinlugand
+true_label: femme

@@ -1,0 +1,386 @@
+texte analysé: , un tibétain et une chinoise en uniforme de la sécurité publique . entrés là par hasard . ils n en revenaient pas de trouver un étranger sous ces toiles . ils m ont confisqué mon passeport et ont ten...
+prédiction: HOMME (confiance: 56.2%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.1250
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      propagation                    +0.000070       0.1385
+   2      mr                             +0.000069       0.1259
+   3      interprète                     +0.000058       0.1617
+   4      turne                          +0.000055       0.1442
+   5      méfiants                       +0.000039       0.1079
+   6      comprenez                      +0.000038       0.0511
+   7      confisqué                      +0.000037       0.1158
+   8      entretien                      +0.000034       0.0516
+   9      servira                        +0.000033       0.0819
+   10     trahir                         +0.000032       0.1233
+   11     conduire                       +0.000030       0.0847
+   12     américain                      +0.000028       0.0647
+   13     mène                           +0.000027       0.0515
+   14     ennuis                         +0.000026       0.0566
+   15     accompagné                     +0.000025       0.0514
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      wang                           -0.000413       0.3376
+   2      illégale                       -0.000335       0.2658
+   3      chinois                        -0.000142       0.2015
+   4      anglais                        -0.000121       0.1440
+   5      conciliabule                   -0.000119       0.1120
+   6      auberge                        -0.000104       0.1368
+   7      comprenaient                   -0.000089       0.0809
+   8      réponses                       -0.000089       0.1614
+   9      sécurité                       -0.000084       0.0901
+   10     scalpel                        -0.000082       0.1254
+   11     faillir                        -0.000081       0.1096
+   12     mister                         -0.000071       0.1281
+   13     menteurs                       -0.000068       0.1113
+   14     tibétain                       -0.000068       0.1746
+   15     interpellé                     -0.000055       0.1000
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      propagation                    +0.000070       0.1385
+   2      mr                             +0.000069       0.1259
+   3      interprète                     +0.000058       0.1617
+   4      turne                          +0.000055       0.1442
+   5      méfiants                       +0.000039       0.1079
+   6      comprenez                      +0.000038       0.0511
+   7      confisqué                      +0.000037       0.1158
+   8      entretien                      +0.000034       0.0516
+   9      servira                        +0.000033       0.0819
+   10     trahir                         +0.000032       0.1233
+   11     conduire                       +0.000030       0.0847
+   12     américain                      +0.000028       0.0647
+   13     mène                           +0.000027       0.0515
+   14     ennuis                         +0.000026       0.0566
+   15     accompagné                     +0.000025       0.0514
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      wang                           -0.000413       0.3376
+   2      illégale                       -0.000335       0.2658
+   3      chinois                        -0.000142       0.2015
+   4      anglais                        -0.000121       0.1440
+   5      conciliabule                   -0.000119       0.1120
+   6      auberge                        -0.000104       0.1368
+   7      comprenaient                   -0.000089       0.0809
+   8      réponses                       -0.000089       0.1614
+   9      sécurité                       -0.000084       0.0901
+   10     scalpel                        -0.000082       0.1254
+   11     faillir                        -0.000081       0.1096
+   12     mister                         -0.000071       0.1281
+   13     menteurs                       -0.000068       0.1113
+   14     tibétain                       -0.000068       0.1746
+   15     interpellé                     -0.000055       0.1000
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      superbement                    +0.001984       0.1064
+   2      décliné                        +0.001678       0.1103
+   3      interprète                     +0.001609       0.1617
+   4      retrouverai                    +0.001294       0.0952
+   5      scalpel                        +0.000939       0.1254
+   6      faillir                        +0.000905       0.1096
+   7      hospitalité                    +0.000849       0.0788
+   8      offert                         +0.000662       0.0458
+   9      riz                            +0.000603       0.0726
+   10     identités                      +0.000585       0.1259
+   11     wang                           +0.000547       0.3376
+   12     mr                             +0.000527       0.1259
+   13     perce                          +0.000526       0.0952
+   14     conversations                  +0.000446       0.0505
+   15     soigneusement                  +0.000441       0.0492
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      trahir                         -0.001746       0.1233
+   2      anglais                        -0.001573       0.1440
+   3      interpellé                     -0.001472       0.1000
+   4      convoqué                       -0.001380       0.0850
+   5      tibétain                       -0.001336       0.1746
+   6      interrogatoire                 -0.001172       0.1457
+   7      fâcheuse                       -0.001138       0.0898
+   8      conciliabule                   -0.001102       0.1120
+   9      publique                       -0.001040       0.1138
+   10     américain                      -0.001009       0.0647
+   11     ennuis                         -0.000910       0.0566
+   12     anglo                          -0.000876       0.1021
+   13     allé                           -0.000839       0.0424
+   14     aggraver                       -0.000827       0.1013
+   15     réponses                       -0.000780       0.1614
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      superbement                    +0.104168       0.1064
+   2      décliné                        +0.075276       0.1103
+   3      interprète                     +0.072178       0.1617
+   4      retrouverai                    +0.060402       0.0952
+   5      hospitalité                    +0.047102       0.0788
+   6      identités                      +0.043927       0.1259
+   7      scalpel                        +0.040792       0.1254
+   8      offert                         +0.035789       0.0458
+   9      riz                            +0.032555       0.0726
+   10     faillir                        +0.032546       0.1096
+   11     mr                             +0.032260       0.1259
+   12     soigneusement                  +0.030164       0.0492
+   13     perce                          +0.024962       0.0952
+   14     venez                          +0.023409       0.0438
+   15     propagation                    +0.020868       0.1385
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      trahir                         -0.091539       0.1233
+   2      anglais                        -0.081913       0.1440
+   3      convoqué                       -0.064038       0.0850
+   4      interpellé                     -0.060153       0.1000
+   5      fâcheuse                       -0.058665       0.0898
+   6      conciliabule                   -0.056889       0.1120
+   7      tibétain                       -0.053084       0.1746
+   8      interrogatoire                 -0.049655       0.1457
+   9      publique                       -0.049321       0.1138
+   10     américain                      -0.048696       0.0647
+   11     ennuis                         -0.043267       0.0566
+   12     allé                           -0.042374       0.0424
+   13     aggraver                       -0.038749       0.1013
+   14     mondiale                       -0.036370       0.0870
+   15     comprenez                      -0.035839       0.0511
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+propagation               +0.000213     +0.000070     +0.000070     0.1385
+mr                        +0.000527     +0.000069     +0.000069     0.1259
+interprète                +0.001609     +0.000058     +0.000058     0.1617
+turne                     +0.000000     +0.000055     +0.000055     0.1442
+méfiants                  +0.000000     +0.000039     +0.000039     0.1079
+comprenez                 +0.000000     +0.000038     +0.000038     0.0511
+confisqué                 +0.000222     +0.000037     +0.000037     0.1158
+entretien                 +0.000000     +0.000034     +0.000034     0.0516
+servira                   +0.000196     +0.000033     +0.000033     0.0819
+trahir                    +0.000000     +0.000032     +0.000032     0.1233
+conduire                  +0.000000     +0.000030     +0.000030     0.0847
+américain                 +0.000000     +0.000028     +0.000028     0.0647
+mène                      +0.000000     +0.000027     +0.000027     0.0515
+ennuis                    +0.000000     +0.000026     +0.000026     0.0566
+accompagné                +0.000000     +0.000025     +0.000025     0.0514
+superbement               +0.001984     +0.000024     +0.000024     0.1064
+identités                 +0.000585     +0.000021     +0.000021     0.1259
+matinée                   +0.000000     +0.000019     +0.000019     0.0487
+lassés                    +0.000000     +0.000017     +0.000017     0.1286
+soigneusement             +0.000441     +0.000016     +0.000016     0.0492
+logit final pour 'femme': -0.1250
+# analyse pour la classe: HOMME  prédite
+# logit: 0.1229
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      propagation                    +0.000066       0.1385
+   2      méfiants                       +0.000050       0.1079
+   3      turne                          +0.000042       0.1442
+   4      mène                           +0.000041       0.0515
+   5      superbement                    +0.000037       0.1064
+   6      trahir                         +0.000030       0.1233
+   7      soigneusement                  +0.000027       0.0492
+   8      mr                             +0.000026       0.1259
+   9      confisqué                      +0.000025       0.1158
+   10     employé                        +0.000024       0.0543
+   11     poisson                        +0.000024       0.0537
+   12     américain                      +0.000023       0.0647
+   13     interrogatoire                 +0.000021       0.1457
+   14     lassés                         +0.000019       0.1286
+   15     riz                            +0.000019       0.0726
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      wang                           -0.000294       0.3376
+   2      illégale                       -0.000265       0.2658
+   3      anglais                        -0.000102       0.1440
+   4      tibétain                       -0.000102       0.1746
+   5      conciliabule                   -0.000097       0.1120
+   6      mister                         -0.000097       0.1281
+   7      faillir                        -0.000087       0.1096
+   8      comprenaient                   -0.000086       0.0809
+   9      réponses                       -0.000076       0.1614
+   10     menteurs                       -0.000062       0.1113
+   11     auberge                        -0.000060       0.1368
+   12     interpellé                     -0.000055       0.1000
+   13     anglo                          -0.000053       0.1021
+   14     sécurité                       -0.000051       0.0901
+   15     serrées                        -0.000040       0.0551
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      propagation                    +0.000066       0.1385
+   2      méfiants                       +0.000050       0.1079
+   3      turne                          +0.000042       0.1442
+   4      mène                           +0.000041       0.0515
+   5      superbement                    +0.000037       0.1064
+   6      trahir                         +0.000030       0.1233
+   7      soigneusement                  +0.000027       0.0492
+   8      mr                             +0.000026       0.1259
+   9      confisqué                      +0.000025       0.1158
+   10     employé                        +0.000024       0.0543
+   11     poisson                        +0.000024       0.0537
+   12     américain                      +0.000023       0.0647
+   13     interrogatoire                 +0.000021       0.1457
+   14     lassés                         +0.000019       0.1286
+   15     riz                            +0.000019       0.0726
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      wang                           -0.000294       0.3376
+   2      illégale                       -0.000265       0.2658
+   3      anglais                        -0.000102       0.1440
+   4      tibétain                       -0.000102       0.1746
+   5      conciliabule                   -0.000097       0.1120
+   6      mister                         -0.000097       0.1281
+   7      faillir                        -0.000087       0.1096
+   8      comprenaient                   -0.000086       0.0809
+   9      réponses                       -0.000076       0.1614
+   10     menteurs                       -0.000062       0.1113
+   11     auberge                        -0.000060       0.1368
+   12     interpellé                     -0.000055       0.1000
+   13     anglo                          -0.000053       0.1021
+   14     sécurité                       -0.000051       0.0901
+   15     serrées                        -0.000040       0.0551
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      trahir                         +0.002027       0.1233
+   2      anglais                        +0.001706       0.1440
+   3      interpellé                     +0.001442       0.1000
+   4      tibétain                       +0.001286       0.1746
+   5      conciliabule                   +0.001245       0.1120
+   6      convoqué                       +0.001236       0.0850
+   7      interrogatoire                 +0.001222       0.1457
+   8      anglo                          +0.001106       0.1021
+   9      fâcheuse                       +0.001105       0.0898
+   10     idiots                         +0.000877       0.0932
+   11     américain                      +0.000862       0.0647
+   12     allé                           +0.000815       0.0424
+   13     publique                       +0.000780       0.1138
+   14     ennuis                         +0.000766       0.0566
+   15     comprenez                      +0.000765       0.0511
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      superbement                    -0.001891       0.1064
+   2      décliné                        -0.001460       0.1103
+   3      interprète                     -0.001409       0.1617
+   4      scalpel                        -0.001208       0.1254
+   5      wang                           -0.001179       0.3376
+   6      faillir                        -0.001032       0.1096
+   7      retrouverai                    -0.000884       0.0952
+   8      hospitalité                    -0.000712       0.0788
+   9      offert                         -0.000660       0.0458
+   10     perce                          -0.000579       0.0952
+   11     riz                            -0.000541       0.0726
+   12     habitez                        -0.000519       0.2075
+   13     soigneusement                  -0.000422       0.0492
+   14     mr                             -0.000411       0.1259
+   15     froide                         -0.000398       0.0423
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      trahir                         +0.101600       0.1233
+   2      anglais                        +0.079873       0.1440
+   3      conciliabule                   +0.069926       0.1120
+   4      tibétain                       +0.059143       0.1746
+   5      interpellé                     +0.058009       0.1000
+   6      fâcheuse                       +0.056223       0.0898
+   7      interrogatoire                 +0.054178       0.1457
+   8      convoqué                       +0.049829       0.0850
+   9      publique                       +0.042034       0.1138
+   10     anglo                          +0.041462       0.1021
+   11     mondiale                       +0.041017       0.0870
+   12     allé                           +0.040877       0.0424
+   13     américain                      +0.040586       0.0647
+   14     menteurs                       +0.038779       0.1113
+   15     ennuis                         +0.037073       0.0566
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      superbement                    -0.097464       0.1064
+   2      décliné                        -0.061219       0.1103
+   3      interprète                     -0.054710       0.1617
+   4      scalpel                        -0.048738       0.1254
+   5      retrouverai                    -0.043335       0.0952
+   6      hospitalité                    -0.040879       0.0788
+   7      faillir                        -0.039900       0.1096
+   8      wang                           -0.038356       0.3376
+   9      habitez                        -0.038001       0.2075
+   10     identités                      -0.034440       0.1259
+   11     offert                         -0.033068       0.0458
+   12     riz                            -0.029237       0.0726
+   13     soigneusement                  -0.027758       0.0492
+   14     résulte                        -0.022883       0.1275
+   15     propagation                    -0.022112       0.1385
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+propagation               +0.000000     +0.000066     +0.000066     0.1385
+méfiants                  +0.000438     +0.000050     +0.000050     0.1079
+turne                     +0.000466     +0.000042     +0.000042     0.1442
+mène                      +0.000139     +0.000041     +0.000041     0.0515
+superbement               +0.000000     +0.000037     +0.000037     0.1064
+trahir                    +0.002027     +0.000030     +0.000030     0.1233
+soigneusement             +0.000000     +0.000027     +0.000027     0.0492
+mr                        +0.000000     +0.000026     +0.000026     0.1259
+confisqué                 +0.000000     +0.000025     +0.000025     0.1158
+employé                   +0.000375     +0.000024     +0.000024     0.0543
+poisson                   +0.000000     +0.000024     +0.000024     0.0537
+américain                 +0.000862     +0.000023     +0.000023     0.0647
+interrogatoire            +0.001222     +0.000021     +0.000021     0.1457
+lassés                    +0.000191     +0.000019     +0.000019     0.1286
+riz                       +0.000000     +0.000019     +0.000019     0.0726
+passeport                 +0.000000     +0.000019     +0.000019     0.0858
+comprenez                 +0.000765     +0.000018     +0.000018     0.0511
+condamner                 +0.000377     +0.000017     +0.000017     0.0785
+perce                     +0.000000     +0.000016     +0.000016     0.0952
+conduire                  +0.000300     +0.000016     +0.000016     0.0847
+logit final pour 'homme': 0.1229

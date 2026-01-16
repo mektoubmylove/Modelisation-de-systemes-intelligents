@@ -1,0 +1,5 @@
+filename: (BARBERY)(Muriel)(une gourmandise)(2)(2000)(1969)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 102
+first_name: muriel
+last_name: barbery
+true_label: femme

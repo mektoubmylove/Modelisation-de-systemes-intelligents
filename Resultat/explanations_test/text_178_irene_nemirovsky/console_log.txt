@@ -1,0 +1,386 @@
+texte analysé: vie comme elle est , si courte , si triste sans amour , sans le désir des hommes , et cette longue et horrible vieillesse ! tandis que toi , tu es jeune , toi tu oublieras ton olivier je ne demandais ...
+prédiction: FEMME (confiance: 87.5%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.1120
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      allât                          +0.000084       0.1262
+   2      enfonçait                      +0.000080       0.0766
+   3      efforçait                      +0.000071       0.0761
+   4      oublieras                      +0.000071       0.1405
+   5      connaisse                      +0.000067       0.0819
+   6      attende                        +0.000065       0.1028
+   7      évita                          +0.000057       0.0951
+   8      caressait                      +0.000043       0.0735
+   9      rides                          +0.000042       0.0677
+   10     immobile                       +0.000038       0.0469
+   11     blonde                         +0.000034       0.0529
+   12     entier                         +0.000028       0.0459
+   13     nue                            +0.000024       0.0537
+   14     cendre                         +0.000022       0.0834
+   15     curiosité                      +0.000020       0.0461
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gladys                         -0.000419       0.5748
+   2      lily                           -0.000296       0.3706
+   3      vieillesse                     -0.000123       0.0804
+   4      tracées                        -0.000106       0.1103
+   5      garderas                       -0.000072       0.1488
+   6      accoutumée                     -0.000070       0.0963
+   7      soupire                        -0.000070       0.0902
+   8      insulte                        -0.000067       0.0781
+   9      apaisée                        -0.000065       0.0887
+   10     horrible                       -0.000065       0.0566
+   11     ennemies                       -0.000057       0.1100
+   12     insomnie                       -0.000050       0.0949
+   13     garderai                       -0.000050       0.1057
+   14     aimerai                        -0.000049       0.1106
+   15     nice                           -0.000049       0.1052
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      allât                          +0.000084       0.1262
+   2      enfonçait                      +0.000080       0.0766
+   3      efforçait                      +0.000071       0.0761
+   4      oublieras                      +0.000071       0.1405
+   5      connaisse                      +0.000067       0.0819
+   6      attende                        +0.000065       0.1028
+   7      évita                          +0.000057       0.0951
+   8      caressait                      +0.000043       0.0735
+   9      rides                          +0.000042       0.0677
+   10     immobile                       +0.000038       0.0469
+   11     blonde                         +0.000034       0.0529
+   12     entier                         +0.000028       0.0459
+   13     nue                            +0.000024       0.0537
+   14     cendre                         +0.000022       0.0834
+   15     curiosité                      +0.000020       0.0461
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gladys                         -0.000419       0.5748
+   2      lily                           -0.000296       0.3706
+   3      vieillesse                     -0.000123       0.0804
+   4      tracées                        -0.000106       0.1103
+   5      garderas                       -0.000072       0.1488
+   6      accoutumée                     -0.000070       0.0963
+   7      soupire                        -0.000070       0.0902
+   8      insulte                        -0.000067       0.0781
+   9      apaisée                        -0.000065       0.0887
+   10     horrible                       -0.000065       0.0566
+   11     ennemies                       -0.000057       0.1100
+   12     insomnie                       -0.000050       0.0949
+   13     garderai                       -0.000050       0.1057
+   14     aimerai                        -0.000049       0.1106
+   15     nice                           -0.000049       0.1052
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gladys                         +0.007724       0.5748
+   2      lily                           +0.003385       0.3706
+   3      intacte                        +0.001328       0.0772
+   4      garderai                       +0.001203       0.1057
+   5      fragile                        +0.001190       0.0524
+   6      jolie                          +0.000940       0.0454
+   7      apaisée                        +0.000887       0.0887
+   8      naissance                      +0.000882       0.0462
+   9      marie                          +0.000872       0.0548
+   10     sienne                         +0.000809       0.0455
+   11     rivale                         +0.000728       0.1009
+   12     triomphante                    +0.000689       0.0971
+   13     amies                          +0.000648       0.0581
+   14     accoutumée                     +0.000638       0.0963
+   15     vieillesse                     +0.000637       0.0804
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      allât                          -0.002458       0.1262
+   2      thérèse                        -0.001336       0.1154
+   3      éteignent                      -0.001159       0.1206
+   4      efforçait                      -0.001094       0.0761
+   5      parla                          -0.001088       0.1239
+   6      ennemies                       -0.000976       0.1100
+   7      voisin                         -0.000908       0.0465
+   8      garderas                       -0.000882       0.1488
+   9      éveillait                      -0.000872       0.0915
+   10     sourde                         -0.000742       0.0554
+   11     verras                         -0.000739       0.1243
+   12     feux                           -0.000713       0.0561
+   13     pitié                          -0.000668       0.0459
+   14     immobile                       -0.000632       0.0469
+   15     nice                           -0.000612       0.1052
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gladys                         +0.266678       0.5748
+   2      lily                           +0.106073       0.3706
+   3      intacte                        +0.064918       0.0772
+   4      fragile                        +0.053509       0.0524
+   5      garderai                       +0.051747       0.1057
+   6      marie                          +0.042302       0.0548
+   7      jolie                          +0.039292       0.0454
+   8      connaisse                      +0.036811       0.0819
+   9      olivier                        +0.036304       0.1083
+   10     apaisée                        +0.033934       0.0887
+   11     naissance                      +0.033458       0.0462
+   12     sienne                         +0.033284       0.0455
+   13     attende                        +0.032622       0.1028
+   14     blonde                         +0.030657       0.0529
+   15     rivale                         +0.028130       0.1009
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      allât                          -0.096210       0.1262
+   2      garderas                       -0.067587       0.1488
+   3      éteignent                      -0.067444       0.1206
+   4      efforçait                      -0.060776       0.0761
+   5      thérèse                        -0.058305       0.1154
+   6      éveillait                      -0.051674       0.0915
+   7      ennemies                       -0.049018       0.1100
+   8      voisin                         -0.040667       0.0465
+   9      verras                         -0.037295       0.1243
+   10     éternité                       -0.036178       0.0617
+   11     sourde                         -0.034706       0.0554
+   12     pitié                          -0.034592       0.0459
+   13     parla                          -0.033094       0.1239
+   14     feux                           -0.029025       0.0561
+   15     insomnie                       -0.028497       0.0949
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+allât                     +0.000000     +0.000084     +0.000084     0.1262
+enfonçait                 +0.000036     +0.000080     +0.000080     0.0766
+efforçait                 +0.000000     +0.000071     +0.000071     0.0761
+oublieras                 +0.000013     +0.000071     +0.000071     0.1405
+connaisse                 +0.000513     +0.000067     +0.000067     0.0819
+attende                   +0.000496     +0.000065     +0.000065     0.1028
+évita                     +0.000098     +0.000057     +0.000057     0.0951
+caressait                 +0.000006     +0.000043     +0.000043     0.0735
+rides                     +0.000000     +0.000042     +0.000042     0.0677
+immobile                  +0.000000     +0.000038     +0.000038     0.0469
+blonde                    +0.000411     +0.000034     +0.000034     0.0529
+entier                    +0.000000     +0.000028     +0.000028     0.0459
+nue                       +0.000000     +0.000024     +0.000024     0.0537
+cendre                    +0.000057     +0.000022     +0.000022     0.0834
+curiosité                 +0.000000     +0.000020     +0.000020     0.0461
+thérèse                   +0.000000     +0.000016     +0.000016     0.1154
+hôtels                    +0.000271     +0.000015     +0.000015     0.0776
+courte                    +0.000000     +0.000012     +0.000012     0.0496
+voyons                    +0.000000     +0.000011     +0.000011     0.0512
+murmure                   +0.000000     +0.000010     +0.000010     0.0522
+logit final pour 'femme': 1.1120
+# analyse pour la classe: HOMME
+# logit: -0.8347
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      attende                        +0.000059       0.1028
+   2      oublieras                      +0.000045       0.1405
+   3      connaisse                      +0.000041       0.0819
+   4      blonde                         +0.000040       0.0529
+   5      efforçait                      +0.000040       0.0761
+   6      allât                          +0.000033       0.1262
+   7      caressait                      +0.000033       0.0735
+   8      parla                          +0.000032       0.1239
+   9      enfonçait                      +0.000027       0.0766
+   10     rides                          +0.000025       0.0677
+   11     immobile                       +0.000023       0.0469
+   12     voisin                         +0.000016       0.0465
+   13     hôtels                         +0.000014       0.0776
+   14     entier                         +0.000014       0.0459
+   15     curiosité                      +0.000014       0.0461
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gladys                         -0.000265       0.5748
+   2      lily                           -0.000164       0.3706
+   3      vieillesse                     -0.000063       0.0804
+   4      ennemies                       -0.000058       0.1100
+   5      tracées                        -0.000049       0.1103
+   6      insulte                        -0.000035       0.0781
+   7      aimerai                        -0.000035       0.1106
+   8      éternité                       -0.000033       0.0617
+   9      horrible                       -0.000032       0.0566
+   10     garderas                       -0.000032       0.1488
+   11     auras                          -0.000029       0.0548
+   12     accoutumée                     -0.000026       0.0963
+   13     triomphante                    -0.000024       0.0971
+   14     soupire                        -0.000023       0.0902
+   15     rivale                         -0.000023       0.1009
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      attende                        +0.000059       0.1028
+   2      oublieras                      +0.000045       0.1405
+   3      connaisse                      +0.000041       0.0819
+   4      blonde                         +0.000040       0.0529
+   5      efforçait                      +0.000040       0.0761
+   6      allât                          +0.000033       0.1262
+   7      caressait                      +0.000033       0.0735
+   8      parla                          +0.000032       0.1239
+   9      enfonçait                      +0.000027       0.0766
+   10     rides                          +0.000025       0.0677
+   11     immobile                       +0.000023       0.0469
+   12     voisin                         +0.000016       0.0465
+   13     hôtels                         +0.000014       0.0776
+   14     entier                         +0.000014       0.0459
+   15     curiosité                      +0.000014       0.0461
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gladys                         -0.000265       0.5748
+   2      lily                           -0.000164       0.3706
+   3      vieillesse                     -0.000063       0.0804
+   4      ennemies                       -0.000058       0.1100
+   5      tracées                        -0.000049       0.1103
+   6      insulte                        -0.000035       0.0781
+   7      aimerai                        -0.000035       0.1106
+   8      éternité                       -0.000033       0.0617
+   9      horrible                       -0.000032       0.0566
+   10     garderas                       -0.000032       0.1488
+   11     auras                          -0.000029       0.0548
+   12     accoutumée                     -0.000026       0.0963
+   13     triomphante                    -0.000024       0.0971
+   14     soupire                        -0.000023       0.0902
+   15     rivale                         -0.000023       0.1009
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      allât                          +0.001552       0.1262
+   2      éteignent                      +0.000975       0.1206
+   3      garderas                       +0.000922       0.1488
+   4      thérèse                        +0.000838       0.1154
+   5      efforçait                      +0.000824       0.0761
+   6      ennemies                       +0.000736       0.1100
+   7      sourde                         +0.000651       0.0554
+   8      verras                         +0.000595       0.1243
+   9      voisin                         +0.000582       0.0465
+   10     éveillait                      +0.000558       0.0915
+   11     pitié                          +0.000489       0.0459
+   12     nice                           +0.000475       0.1052
+   13     parla                          +0.000448       0.1239
+   14     éternité                       +0.000418       0.0617
+   15     quittât                        +0.000403       0.1573
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gladys                         -0.004717       0.5748
+   2      lily                           -0.002184       0.3706
+   3      intacte                        -0.000957       0.0772
+   4      fragile                        -0.000756       0.0524
+   5      marie                          -0.000737       0.0548
+   6      garderai                       -0.000671       0.1057
+   7      naissance                      -0.000601       0.0462
+   8      sienne                         -0.000571       0.0455
+   9      jolie                          -0.000570       0.0454
+   10     apaisée                        -0.000511       0.0887
+   11     blonde                         -0.000478       0.0529
+   12     triomphante                    -0.000473       0.0971
+   13     rivale                         -0.000470       0.1009
+   14     rejeta                         -0.000460       0.0897
+   15     connaisse                      -0.000445       0.0819
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      allât                          +0.062394       0.1262
+   2      garderas                       +0.054569       0.1488
+   3      éteignent                      +0.048483       0.1206
+   4      efforçait                      +0.042705       0.0761
+   5      ennemies                       +0.039803       0.1100
+   6      thérèse                        +0.037694       0.1154
+   7      verras                         +0.033055       0.1243
+   8      sourde                         +0.030386       0.0554
+   9      éternité                       +0.028504       0.0617
+   10     éveillait                      +0.027597       0.0915
+   11     voisin                         +0.024032       0.0465
+   12     pitié                          +0.022847       0.0459
+   13     approchait                     +0.020115       0.0588
+   14     nice                           +0.017307       0.1052
+   15     insomnie                       +0.016358       0.0949
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gladys                         -0.148012       0.5748
+   2      lily                           -0.067431       0.3706
+   3      intacte                        -0.048158       0.0772
+   4      marie                          -0.036641       0.0548
+   5      fragile                        -0.035048       0.0524
+   6      blonde                         -0.029392       0.0529
+   7      attende                        -0.028616       0.1028
+   8      garderai                       -0.027835       0.1057
+   9      olivier                        -0.026892       0.1083
+   10     connaisse                      -0.025593       0.0819
+   11     jolie                          -0.022644       0.0454
+   12     naissance                      -0.022444       0.0462
+   13     apaisée                        -0.022269       0.0887
+   14     sienne                         -0.022141       0.0455
+   15     accoutumée                     -0.021452       0.0963
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+attende                   +0.000000     +0.000059     +0.000059     0.1028
+oublieras                 +0.000167     +0.000045     +0.000045     0.1405
+connaisse                 +0.000000     +0.000041     +0.000041     0.0819
+blonde                    +0.000000     +0.000040     +0.000040     0.0529
+efforçait                 +0.000824     +0.000040     +0.000040     0.0761
+allât                     +0.001552     +0.000033     +0.000033     0.1262
+caressait                 +0.000000     +0.000033     +0.000033     0.0735
+parla                     +0.000448     +0.000032     +0.000032     0.1239
+enfonçait                 +0.000000     +0.000027     +0.000027     0.0766
+rides                     +0.000107     +0.000025     +0.000025     0.0677
+immobile                  +0.000398     +0.000023     +0.000023     0.0469
+voisin                    +0.000582     +0.000016     +0.000016     0.0465
+hôtels                    +0.000000     +0.000014     +0.000014     0.0776
+entier                    +0.000083     +0.000014     +0.000014     0.0459
+curiosité                 +0.000058     +0.000014     +0.000014     0.0461
+murmure                   +0.000169     +0.000012     +0.000012     0.0522
+voyons                    +0.000000     +0.000012     +0.000012     0.0512
+cendre                    +0.000000     +0.000011     +0.000011     0.0834
+appartement               +0.000000     +0.000010     +0.000010     0.0499
+quittât                   +0.000403     +0.000007     +0.000007     0.1573
+logit final pour 'homme': -0.8347

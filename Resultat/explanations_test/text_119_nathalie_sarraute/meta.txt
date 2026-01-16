@@ -1,0 +1,5 @@
+filename: (SARRAUTE)(Nathalie)(ouvrez)(2)(1997)(1900)(1999)(fr)(z)(z)(V)(R)(T).txt
+index: 119
+first_name: nathalie
+last_name: sarraute
+true_label: femme

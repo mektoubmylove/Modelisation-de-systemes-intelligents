@@ -1,0 +1,5 @@
+filename: (DE LENS)(A.R.)(Le Harem entr_ouvert)(2)(1919)(1881)(1925)(fr)(z)(z)(V)(R)(T).txt
+index: 182
+first_name: ar
+last_name: de_lens
+true_label: femme

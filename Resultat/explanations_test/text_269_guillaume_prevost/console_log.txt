@@ -1,0 +1,386 @@
+texte analysé: doivent pas savoir que je travaille pour le populaire , murmura félix . tu connais la censure et ce qu ils pensent des journalistes . ils ne me lâcheraient plus d une semelle . invente n importe quoi ...
+prédiction: HOMME (confiance: 54.2%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.1373
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      policiers                      +0.000226       0.1830
+   2      inspecteur                     +0.000186       0.2215
+   3      jules                          +0.000172       0.3606
+   4      manifestaient                  +0.000123       0.1080
+   5      justification                  +0.000113       0.0928
+   6      pistolet                       +0.000093       0.0687
+   7      saillaient                     +0.000072       0.1236
+   8      cinquantaine                   +0.000064       0.0538
+   9      képi                           +0.000062       0.1058
+   10     réfléchissait                  +0.000060       0.0659
+   11     assisté                        +0.000050       0.0503
+   12     taillé                         +0.000043       0.0667
+   13     irruption                      +0.000041       0.0607
+   14     tricolores                     +0.000041       0.1269
+   15     soie                           +0.000040       0.0438
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gordon                         -0.000219       0.2789
+   2      réalisant                      -0.000105       0.0964
+   3      agencement                     -0.000103       0.1092
+   4      perçants                       -0.000095       0.0943
+   5      matthieu                       -0.000094       0.1291
+   6      intervint                      -0.000090       0.0640
+   7      grossière                      -0.000077       0.0754
+   8      responsable                    -0.000074       0.0438
+   9      proches                        -0.000074       0.0461
+   10     franges                        -0.000068       0.0912
+   11     soulagement                    -0.000063       0.0439
+   12     écharpe                        -0.000062       0.0640
+   13     récupérer                      -0.000058       0.0529
+   14     orné                           -0.000056       0.0692
+   15     fâcheux                        -0.000056       0.1545
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      policiers                      +0.000226       0.1830
+   2      inspecteur                     +0.000186       0.2215
+   3      jules                          +0.000172       0.3606
+   4      manifestaient                  +0.000123       0.1080
+   5      justification                  +0.000113       0.0928
+   6      pistolet                       +0.000093       0.0687
+   7      saillaient                     +0.000072       0.1236
+   8      cinquantaine                   +0.000064       0.0538
+   9      képi                           +0.000062       0.1058
+   10     réfléchissait                  +0.000060       0.0659
+   11     assisté                        +0.000050       0.0503
+   12     taillé                         +0.000043       0.0667
+   13     irruption                      +0.000041       0.0607
+   14     tricolores                     +0.000041       0.1269
+   15     soie                           +0.000040       0.0438
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gordon                         -0.000219       0.2789
+   2      réalisant                      -0.000105       0.0964
+   3      agencement                     -0.000103       0.1092
+   4      perçants                       -0.000095       0.0943
+   5      matthieu                       -0.000094       0.1291
+   6      intervint                      -0.000090       0.0640
+   7      grossière                      -0.000077       0.0754
+   8      responsable                    -0.000074       0.0438
+   9      proches                        -0.000074       0.0461
+   10     franges                        -0.000068       0.0912
+   11     soulagement                    -0.000063       0.0439
+   12     écharpe                        -0.000062       0.0640
+   13     récupérer                      -0.000058       0.0529
+   14     orné                           -0.000056       0.0692
+   15     fâcheux                        -0.000056       0.1545
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      félix                          +0.003348       0.3131
+   2      soulagement                    +0.002114       0.0439
+   3      gordon                         +0.002006       0.2789
+   4      fronça                         +0.001751       0.0673
+   5      réalisant                      +0.001609       0.0964
+   6      toisant                        +0.001562       0.1140
+   7      empressa                       +0.001481       0.0736
+   8      matthieu                       +0.001379       0.1291
+   9      saillaient                     +0.001295       0.1236
+   10     responsable                    +0.001252       0.0438
+   11     grossière                      +0.001036       0.0754
+   12     agencement                     +0.001028       0.1092
+   13     franges                        +0.001024       0.0912
+   14     orné                           +0.000978       0.0692
+   15     brigade                        +0.000969       0.0885
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jules                          -0.006738       0.3606
+   2      inspecteur                     -0.003055       0.2215
+   3      officier                       -0.002791       0.2240
+   4      policiers                      -0.002715       0.1830
+   5      képi                           -0.002573       0.1058
+   6      bouc                           -0.002176       0.0845
+   7      bicorne                        -0.002011       0.1405
+   8      pistolet                       -0.001736       0.0687
+   9      sûreté                         -0.001519       0.0629
+   10     obéit                          -0.001503       0.0594
+   11     douzaine                       -0.001336       0.0554
+   12     avança                         -0.001250       0.1042
+   13     justification                  -0.001200       0.0928
+   14     examina                        -0.000998       0.0652
+   15     environ                        -0.000936       0.0467
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      félix                          +0.161306       0.3131
+   2      gordon                         +0.143565       0.2789
+   3      soulagement                    +0.103620       0.0439
+   4      réalisant                      +0.092632       0.0964
+   5      fronça                         +0.091236       0.0673
+   6      toisant                        +0.088981       0.1140
+   7      saillaient                     +0.074358       0.1236
+   8      empressa                       +0.073612       0.0736
+   9      matthieu                       +0.068957       0.1291
+   10     responsable                    +0.062675       0.0438
+   11     orné                           +0.059061       0.0692
+   12     brigade                        +0.050933       0.0885
+   13     agencement                     +0.050543       0.1092
+   14     grossière                      +0.049602       0.0754
+   15     écharpe                        +0.049191       0.0640
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jules                          -0.327863       0.3606
+   2      képi                           -0.137088       0.1058
+   3      policiers                      -0.136174       0.1830
+   4      inspecteur                     -0.128169       0.2215
+   5      bouc                           -0.094350       0.0845
+   6      officier                       -0.087423       0.2240
+   7      pistolet                       -0.087080       0.0687
+   8      bicorne                        -0.086802       0.1405
+   9      obéit                          -0.074223       0.0594
+   10     sûreté                         -0.068308       0.0629
+   11     justification                  -0.062496       0.0928
+   12     douzaine                       -0.056649       0.0554
+   13     avança                         -0.053520       0.1042
+   14     constatations                  -0.050519       0.1092
+   15     environ                        -0.050237       0.0467
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+policiers                 +0.000000     +0.000226     +0.000226     0.1830
+inspecteur                +0.000000     +0.000186     +0.000186     0.2215
+jules                     +0.000000     +0.000172     +0.000172     0.3606
+manifestaient             +0.000000     +0.000123     +0.000123     0.1080
+justification             +0.000000     +0.000113     +0.000113     0.0928
+pistolet                  +0.000000     +0.000093     +0.000093     0.0687
+saillaient                +0.001295     +0.000072     +0.000072     0.1236
+cinquantaine              +0.000000     +0.000064     +0.000064     0.0538
+képi                      +0.000000     +0.000062     +0.000062     0.1058
+réfléchissait             +0.000267     +0.000060     +0.000060     0.0659
+assisté                   +0.000000     +0.000050     +0.000050     0.0503
+taillé                    +0.000735     +0.000043     +0.000043     0.0667
+irruption                 +0.000000     +0.000041     +0.000041     0.0607
+tricolores                +0.000000     +0.000041     +0.000041     0.1269
+soie                      +0.000581     +0.000040     +0.000040     0.0438
+censure                   +0.000683     +0.000037     +0.000037     0.1092
+constatations             +0.000000     +0.000036     +0.000036     0.1092
+hurla                     +0.000000     +0.000036     +0.000036     0.0587
+instantanément            +0.000000     +0.000035     +0.000035     0.0654
+pommettes                 +0.000000     +0.000035     +0.000035     0.0635
+logit final pour 'femme': -0.1373
+# analyse pour la classe: HOMME  prédite
+# logit: 0.0296
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      inspecteur                     +0.000148       0.2215
+   2      justification                  +0.000113       0.0928
+   3      policiers                      +0.000084       0.1830
+   4      manifestaient                  +0.000081       0.1080
+   5      tricolores                     +0.000077       0.1269
+   6      jules                          +0.000051       0.3606
+   7      pistolet                       +0.000037       0.0687
+   8      conclut                        +0.000035       0.0496
+   9      toisant                        +0.000033       0.1140
+   10     réfléchissait                  +0.000033       0.0659
+   11     soie                           +0.000029       0.0438
+   12     cinquantaine                   +0.000028       0.0538
+   13     doivent                        +0.000026       0.0402
+   14     fermait                        +0.000026       0.0554
+   15     sergents                       +0.000023       0.1144
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gordon                         -0.000211       0.2789
+   2      agencement                     -0.000103       0.1092
+   3      officier                       -0.000092       0.2240
+   4      réalisant                      -0.000074       0.0964
+   5      soulagement                    -0.000067       0.0439
+   6      perçants                       -0.000066       0.0943
+   7      franges                        -0.000066       0.0912
+   8      responsable                    -0.000063       0.0438
+   9      grossière                      -0.000062       0.0754
+   10     orné                           -0.000057       0.0692
+   11     fâcheux                        -0.000056       0.1545
+   12     récupérer                      -0.000055       0.0529
+   13     intervint                      -0.000055       0.0640
+   14     fronça                         -0.000046       0.0673
+   15     erreur                         -0.000046       0.0392
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      inspecteur                     +0.000148       0.2215
+   2      justification                  +0.000113       0.0928
+   3      policiers                      +0.000084       0.1830
+   4      manifestaient                  +0.000081       0.1080
+   5      tricolores                     +0.000077       0.1269
+   6      jules                          +0.000051       0.3606
+   7      pistolet                       +0.000037       0.0687
+   8      conclut                        +0.000035       0.0496
+   9      toisant                        +0.000033       0.1140
+   10     réfléchissait                  +0.000033       0.0659
+   11     soie                           +0.000029       0.0438
+   12     cinquantaine                   +0.000028       0.0538
+   13     doivent                        +0.000026       0.0402
+   14     fermait                        +0.000026       0.0554
+   15     sergents                       +0.000023       0.1144
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gordon                         -0.000211       0.2789
+   2      agencement                     -0.000103       0.1092
+   3      officier                       -0.000092       0.2240
+   4      réalisant                      -0.000074       0.0964
+   5      soulagement                    -0.000067       0.0439
+   6      perçants                       -0.000066       0.0943
+   7      franges                        -0.000066       0.0912
+   8      responsable                    -0.000063       0.0438
+   9      grossière                      -0.000062       0.0754
+   10     orné                           -0.000057       0.0692
+   11     fâcheux                        -0.000056       0.1545
+   12     récupérer                      -0.000055       0.0529
+   13     intervint                      -0.000055       0.0640
+   14     fronça                         -0.000046       0.0673
+   15     erreur                         -0.000046       0.0392
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jules                          +0.006681       0.3606
+   2      inspecteur                     +0.003476       0.2215
+   3      officier                       +0.003079       0.2240
+   4      policiers                      +0.002597       0.1830
+   5      képi                           +0.002492       0.1058
+   6      bouc                           +0.001903       0.0845
+   7      bicorne                        +0.001879       0.1405
+   8      pistolet                       +0.001666       0.0687
+   9      douzaine                       +0.001564       0.0554
+   10     sûreté                         +0.001480       0.0629
+   11     obéit                          +0.001464       0.0594
+   12     justification                  +0.001376       0.0928
+   13     avança                         +0.001219       0.1042
+   14     examina                        +0.000944       0.0652
+   15     constatations                  +0.000928       0.1092
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      félix                          -0.002708       0.3131
+   2      gordon                         -0.002305       0.2789
+   3      soulagement                    -0.002042       0.0439
+   4      fronça                         -0.001734       0.0673
+   5      réalisant                      -0.001441       0.0964
+   6      empressa                       -0.001408       0.0736
+   7      saillaient                     -0.001405       0.1236
+   8      toisant                        -0.001365       0.1140
+   9      matthieu                       -0.001346       0.1291
+   10     responsable                    -0.001223       0.0438
+   11     orné                           -0.000995       0.0692
+   12     ceint                          -0.000954       0.1011
+   13     écharpe                        -0.000917       0.0640
+   14     désignant                      -0.000826       0.0529
+   15     proches                        -0.000818       0.0461
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jules                          +0.296265       0.3606
+   2      inspecteur                     +0.126853       0.2215
+   3      képi                           +0.125133       0.1058
+   4      officier                       +0.108958       0.2240
+   5      policiers                      +0.107536       0.1830
+   6      pistolet                       +0.079498       0.0687
+   7      bouc                           +0.076530       0.0845
+   8      bicorne                        +0.076388       0.1405
+   9      obéit                          +0.075006       0.0594
+   10     justification                  +0.064485       0.0928
+   11     sûreté                         +0.061488       0.0629
+   12     douzaine                       +0.061466       0.0554
+   13     constatations                  +0.047428       0.1092
+   14     environ                        +0.047292       0.0467
+   15     avança                         +0.044304       0.1042
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gordon                         -0.149659       0.2789
+   2      félix                          -0.134883       0.3131
+   3      soulagement                    -0.100437       0.0439
+   4      fronça                         -0.087039       0.0673
+   5      réalisant                      -0.083197       0.0964
+   6      toisant                        -0.083170       0.1140
+   7      saillaient                     -0.082778       0.1236
+   8      empressa                       -0.066842       0.0736
+   9      matthieu                       -0.060721       0.1291
+   10     responsable                    -0.057978       0.0438
+   11     orné                           -0.054419       0.0692
+   12     écharpe                        -0.050421       0.0640
+   13     désignant                      -0.046789       0.0529
+   14     ceint                          -0.046351       0.1011
+   15     agencement                     -0.045026       0.1092
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+inspecteur                +0.003476     +0.000148     +0.000148     0.2215
+justification             +0.001376     +0.000113     +0.000113     0.0928
+policiers                 +0.002597     +0.000084     +0.000084     0.1830
+manifestaient             +0.000846     +0.000081     +0.000081     0.1080
+tricolores                +0.000097     +0.000077     +0.000077     0.1269
+jules                     +0.006681     +0.000051     +0.000051     0.3606
+pistolet                  +0.001666     +0.000037     +0.000037     0.0687
+conclut                   +0.000203     +0.000035     +0.000035     0.0496
+toisant                   +0.000000     +0.000033     +0.000033     0.1140
+réfléchissait             +0.000000     +0.000033     +0.000033     0.0659
+soie                      +0.000000     +0.000029     +0.000029     0.0438
+cinquantaine              +0.000385     +0.000028     +0.000028     0.0538
+doivent                   +0.000154     +0.000026     +0.000026     0.0402
+fermait                   +0.000824     +0.000026     +0.000026     0.0554
+sergents                  +0.000752     +0.000023     +0.000023     0.1144
+examina                   +0.000944     +0.000023     +0.000023     0.0652
+désignant                 +0.000000     +0.000022     +0.000022     0.0529
+ramassait                 +0.000000     +0.000021     +0.000021     0.0889
+instantanément            +0.000081     +0.000020     +0.000020     0.0654
+pommettes                 +0.000263     +0.000019     +0.000019     0.0635
+logit final pour 'homme': 0.0296

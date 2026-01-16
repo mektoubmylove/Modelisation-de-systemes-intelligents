@@ -1,0 +1,387 @@
+texte analysé: leur nombre ils n avaient pas l avantage , mélissa glissa la main dans la poche de son manteau et pressa sur le chiffre de la recomposition automatique de son téléphone cellulaire , ce qui eut pour ré...
+prédiction: HOMME (confiance: 50.9%)
+vérité terrain: FEMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  vraie classe
+# logit: -0.0516
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      desjardins                     +0.000184       0.3876
+   2      toasts                         +0.000181       0.1153
+   3      enquêtes                       +0.000098       0.1977
+   4      disciple                       +0.000092       0.1117
+   5      forteresse                     +0.000078       0.0871
+   6      exemplaire                     +0.000077       0.0701
+   7      fonça                          +0.000074       0.0987
+   8      automatique                    +0.000072       0.0818
+   9      centimètre                     +0.000069       0.0943
+   10     surprendre                     +0.000066       0.0593
+   11     détacha                        +0.000063       0.0834
+   12     vaincre                        +0.000058       0.0719
+   13     intelligence                   +0.000053       0.0516
+   14     justice                        +0.000049       0.0504
+   15     christian                      +0.000048       0.1263
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sorcier                        -0.000259       0.1947
+   2      danielle                       -0.000244       0.3323
+   3      sylvain                        -0.000199       0.1549
+   4      cellulaire                     -0.000176       0.1327
+   5      laisserai                      -0.000144       0.0786
+   6      mélissa                        -0.000113       0.2201
+   7      permettront                    -0.000093       0.1301
+   8      téléphone                      -0.000088       0.1037
+   9      immédiat                       -0.000081       0.0706
+   10     foudre                         -0.000081       0.0703
+   11     foncèrent                      -0.000080       0.1512
+   12     accusé                         -0.000069       0.0777
+   13     magie                          -0.000068       0.0670
+   14     avertit                        -0.000067       0.0865
+   15     arrêtes                        -0.000066       0.1123
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      desjardins                     +0.000184       0.3876
+   2      toasts                         +0.000181       0.1153
+   3      enquêtes                       +0.000098       0.1977
+   4      disciple                       +0.000092       0.1117
+   5      forteresse                     +0.000078       0.0871
+   6      exemplaire                     +0.000077       0.0701
+   7      fonça                          +0.000074       0.0987
+   8      automatique                    +0.000072       0.0818
+   9      centimètre                     +0.000069       0.0943
+   10     surprendre                     +0.000066       0.0593
+   11     détacha                        +0.000063       0.0834
+   12     vaincre                        +0.000058       0.0719
+   13     intelligence                   +0.000053       0.0516
+   14     justice                        +0.000049       0.0504
+   15     christian                      +0.000048       0.1263
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sorcier                        -0.000259       0.1947
+   2      danielle                       -0.000244       0.3323
+   3      sylvain                        -0.000199       0.1549
+   4      cellulaire                     -0.000176       0.1327
+   5      laisserai                      -0.000144       0.0786
+   6      mélissa                        -0.000113       0.2201
+   7      permettront                    -0.000093       0.1301
+   8      téléphone                      -0.000088       0.1037
+   9      immédiat                       -0.000081       0.0706
+   10     foudre                         -0.000081       0.0703
+   11     foncèrent                      -0.000080       0.1512
+   12     accusé                         -0.000069       0.0777
+   13     magie                          -0.000068       0.0670
+   14     avertit                        -0.000067       0.0865
+   15     arrêtes                        -0.000066       0.1123
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      danielle                       +0.004426       0.3323
+   2      sylvain                        +0.002252       0.1549
+   3      courroucé                      +0.001706       0.1114
+   4      cellulaire                     +0.001669       0.1327
+   5      foncèrent                      +0.001560       0.1512
+   6      mélissa                        +0.001509       0.2201
+   7      arrêtes                        +0.001400       0.1123
+   8      altruiste                      +0.001249       0.1521
+   9      téléphone                      +0.001186       0.1037
+   10     magie                          +0.001182       0.0670
+   11     ténacité                       +0.001161       0.1126
+   12     permettront                    +0.001067       0.1301
+   13     ajouta                         +0.001017       0.0533
+   14     tendit                         +0.000973       0.0555
+   15     sorcier                        +0.000945       0.1947
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      desjardins                     -0.003894       0.3876
+   2      automatique                    -0.003095       0.0818
+   3      provenir                       -0.001878       0.1224
+   4      phénomènes                     -0.001816       0.1038
+   5      vaincre                        -0.001490       0.0719
+   6      chiffre                        -0.001445       0.0725
+   7      enquêtes                       -0.001411       0.1977
+   8      jaguar                         -0.001299       0.1495
+   9      condamné                       -0.001277       0.0621
+   10     police                         -0.001267       0.0506
+   11     centaines                      -0.001194       0.0538
+   12     eut                            -0.001160       0.0447
+   13     surprendre                     -0.001126       0.0593
+   14     christian                      -0.001090       0.1263
+   15     forteresse                     -0.000972       0.0871
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      danielle                       +0.250837       0.3323
+   2      sylvain                        +0.122509       0.1549
+   3      cellulaire                     +0.098643       0.1327
+   4      foncèrent                      +0.091449       0.1512
+   5      mélissa                        +0.086886       0.2201
+   6      altruiste                      +0.077279       0.1521
+   7      courroucé                      +0.073964       0.1114
+   8      téléphone                      +0.073113       0.1037
+   9      arrêtes                        +0.068590       0.1123
+   10     magie                          +0.065630       0.0670
+   11     sorcier                        +0.056022       0.1947
+   12     ténacité                       +0.055344       0.1126
+   13     ajouta                         +0.049304       0.0533
+   14     manteau                        +0.047750       0.0485
+   15     permettront                    +0.047041       0.1301
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      desjardins                     -0.183380       0.3876
+   2      automatique                    -0.160800       0.0818
+   3      phénomènes                     -0.092861       0.1038
+   4      provenir                       -0.090079       0.1224
+   5      vaincre                        -0.079197       0.0719
+   6      chiffre                        -0.071117       0.0725
+   7      enquêtes                       -0.064479       0.1977
+   8      condamné                       -0.063433       0.0621
+   9      jaguar                         -0.061325       0.1495
+   10     eut                            -0.060907       0.0447
+   11     surprendre                     -0.058307       0.0593
+   12     centaines                      -0.058230       0.0538
+   13     forteresse                     -0.054203       0.0871
+   14     police                         -0.053291       0.0506
+   15     éclairs                        -0.044609       0.0706
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+desjardins                +0.000000     +0.000184     +0.000184     0.3876
+toasts                    +0.000890     +0.000181     +0.000181     0.1153
+enquêtes                  +0.000000     +0.000098     +0.000098     0.1977
+disciple                  +0.000648     +0.000092     +0.000092     0.1117
+forteresse                +0.000000     +0.000078     +0.000078     0.0871
+exemplaire                +0.000000     +0.000077     +0.000077     0.0701
+fonça                     +0.000000     +0.000074     +0.000074     0.0987
+automatique               +0.000000     +0.000072     +0.000072     0.0818
+centimètre                +0.000000     +0.000069     +0.000069     0.0943
+surprendre                +0.000000     +0.000066     +0.000066     0.0593
+détacha                   +0.000139     +0.000063     +0.000063     0.0834
+vaincre                   +0.000000     +0.000058     +0.000058     0.0719
+intelligence              +0.000000     +0.000053     +0.000053     0.0516
+justice                   +0.000000     +0.000049     +0.000049     0.0504
+christian                 +0.000000     +0.000048     +0.000048     0.1263
+glissa                    +0.000086     +0.000034     +0.000034     0.0605
+courroucé                 +0.001706     +0.000034     +0.000034     0.1114
+jaguar                    +0.000000     +0.000034     +0.000034     0.1495
+pressa                    +0.000200     +0.000033     +0.000033     0.0774
+fit                       +0.000000     +0.000033     +0.000033     0.0456
+logit final pour 'femme': -0.0516
+# analyse pour la classe: HOMME  prédite
+# logit: -0.0138
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      desjardins                     +0.000099       0.3876
+   2      toasts                         +0.000085       0.1153
+   3      altruiste                      +0.000046       0.1521
+   4      centimètre                     +0.000045       0.0943
+   5      enquêtes                       +0.000044       0.1977
+   6      exemplaire                     +0.000041       0.0701
+   7      mené                           +0.000040       0.0656
+   8      entendue                       +0.000038       0.0584
+   9      fonça                          +0.000036       0.0987
+   10     détacha                        +0.000036       0.0834
+   11     ténacité                       +0.000033       0.1126
+   12     couvrit                        +0.000027       0.0871
+   13     automatique                    +0.000027       0.0818
+   14     intelligence                   +0.000026       0.0516
+   15     surprendre                     +0.000026       0.0593
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mélissa                        -0.000182       0.2201
+   2      danielle                       -0.000159       0.3323
+   3      sylvain                        -0.000129       0.1549
+   4      sorcier                        -0.000120       0.1947
+   5      cellulaire                     -0.000105       0.1327
+   6      laisserai                      -0.000091       0.0786
+   7      permettront                    -0.000077       0.1301
+   8      décharges                      -0.000076       0.1282
+   9      menottes                       -0.000061       0.0913
+   10     foudre                         -0.000060       0.0703
+   11     magie                          -0.000056       0.0670
+   12     intérieurement                 -0.000053       0.0766
+   13     nul                            -0.000046       0.0491
+   14     téléphone                      -0.000045       0.1037
+   15     chiffre                        -0.000044       0.0725
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      desjardins                     +0.000099       0.3876
+   2      toasts                         +0.000085       0.1153
+   3      altruiste                      +0.000046       0.1521
+   4      centimètre                     +0.000045       0.0943
+   5      enquêtes                       +0.000044       0.1977
+   6      exemplaire                     +0.000041       0.0701
+   7      mené                           +0.000040       0.0656
+   8      entendue                       +0.000038       0.0584
+   9      fonça                          +0.000036       0.0987
+   10     détacha                        +0.000036       0.0834
+   11     ténacité                       +0.000033       0.1126
+   12     couvrit                        +0.000027       0.0871
+   13     automatique                    +0.000027       0.0818
+   14     intelligence                   +0.000026       0.0516
+   15     surprendre                     +0.000026       0.0593
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mélissa                        -0.000182       0.2201
+   2      danielle                       -0.000159       0.3323
+   3      sylvain                        -0.000129       0.1549
+   4      sorcier                        -0.000120       0.1947
+   5      cellulaire                     -0.000105       0.1327
+   6      laisserai                      -0.000091       0.0786
+   7      permettront                    -0.000077       0.1301
+   8      décharges                      -0.000076       0.1282
+   9      menottes                       -0.000061       0.0913
+   10     foudre                         -0.000060       0.0703
+   11     magie                          -0.000056       0.0670
+   12     intérieurement                 -0.000053       0.0766
+   13     nul                            -0.000046       0.0491
+   14     téléphone                      -0.000045       0.1037
+   15     chiffre                        -0.000044       0.0725
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      desjardins                     +0.002792       0.3876
+   2      automatique                    +0.002728       0.0818
+   3      phénomènes                     +0.001900       0.1038
+   4      provenir                       +0.001864       0.1224
+   5      enquêtes                       +0.001527       0.1977
+   6      vaincre                        +0.001287       0.0719
+   7      chiffre                        +0.001255       0.0725
+   8      condamné                       +0.001175       0.0621
+   9      eut                            +0.001154       0.0447
+   10     police                         +0.001070       0.0506
+   11     centaines                      +0.001068       0.0538
+   12     surprendre                     +0.001038       0.0593
+   13     menottes                       +0.001006       0.0913
+   14     christian                      +0.000968       0.1263
+   15     éternellement                  +0.000956       0.0828
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      danielle                       -0.003876       0.3323
+   2      sylvain                        -0.002238       0.1549
+   3      cellulaire                     -0.001720       0.1327
+   4      courroucé                      -0.001438       0.1114
+   5      mélissa                        -0.001327       0.2201
+   6      arrêtes                        -0.001307       0.1123
+   7      altruiste                      -0.001217       0.1521
+   8      ténacité                       -0.001168       0.1126
+   9      téléphone                      -0.001053       0.1037
+   10     foncèrent                      -0.001004       0.1512
+   11     toasts                         -0.000990       0.1153
+   12     magie                          -0.000921       0.0670
+   13     manteau                        -0.000816       0.0485
+   14     disciple                       -0.000813       0.1117
+   15     tendit                         -0.000774       0.0555
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      automatique                    +0.141882       0.0818
+   2      desjardins                     +0.106377       0.3876
+   3      phénomènes                     +0.092655       0.1038
+   4      provenir                       +0.086445       0.1224
+   5      vaincre                        +0.069654       0.0719
+   6      enquêtes                       +0.068039       0.1977
+   7      chiffre                        +0.060202       0.0725
+   8      condamné                       +0.058377       0.0621
+   9      eut                            +0.057790       0.0447
+   10     surprendre                     +0.052718       0.0593
+   11     forteresse                     +0.047098       0.0871
+   12     centaines                      +0.046243       0.0538
+   13     fonça                          +0.044699       0.0987
+   14     également                      +0.042794       0.0470
+   15     police                         +0.042703       0.0506
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      danielle                       -0.197225       0.3323
+   2      cellulaire                     -0.106731       0.1327
+   3      sylvain                        -0.100346       0.1549
+   4      altruiste                      -0.073777       0.1521
+   5      téléphone                      -0.064547       0.1037
+   6      arrêtes                        -0.063154       0.1123
+   7      foncèrent                      -0.061353       0.1512
+   8      courroucé                      -0.058813       0.1114
+   9      ténacité                       -0.055316       0.1126
+   10     mélissa                        -0.050397       0.2201
+   11     magie                          -0.049305       0.0670
+   12     sorcier                        -0.048092       0.1947
+   13     manteau                        -0.046509       0.0485
+   14     toasts                         -0.045782       0.1153
+   15     disciple                       -0.039807       0.1117
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+desjardins                +0.002792     +0.000099     +0.000099     0.3876
+toasts                    +0.000000     +0.000085     +0.000085     0.1153
+altruiste                 +0.000000     +0.000046     +0.000046     0.1521
+centimètre                +0.000515     +0.000045     +0.000045     0.0943
+enquêtes                  +0.001527     +0.000044     +0.000044     0.1977
+exemplaire                +0.000434     +0.000041     +0.000041     0.0701
+mené                      +0.000000     +0.000040     +0.000040     0.0656
+entendue                  +0.000009     +0.000038     +0.000038     0.0584
+fonça                     +0.000942     +0.000036     +0.000036     0.0987
+détacha                   +0.000000     +0.000036     +0.000036     0.0834
+ténacité                  +0.000000     +0.000033     +0.000033     0.1126
+couvrit                   +0.000000     +0.000027     +0.000027     0.0871
+automatique               +0.002728     +0.000027     +0.000027     0.0818
+intelligence              +0.000638     +0.000026     +0.000026     0.0516
+surprendre                +0.001038     +0.000026     +0.000026     0.0593
+procéder                  +0.000903     +0.000025     +0.000025     0.0752
+centaines                 +0.001068     +0.000023     +0.000023     0.0538
+christian                 +0.000968     +0.000022     +0.000022     0.1263
+étiez                     +0.000637     +0.000022     +0.000022     0.0495
+phénomènes                +0.001900     +0.000021     +0.000021     0.1038
+logit final pour 'homme': -0.0138

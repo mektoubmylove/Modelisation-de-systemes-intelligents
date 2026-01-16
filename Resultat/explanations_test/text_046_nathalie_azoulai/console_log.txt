@@ -1,0 +1,387 @@
+texte analysé: decrescendo , ne connaît que les autres . il va mourir , il l appelle , il l attend . et bérénice , qui brûle encore pour titus , cède à l idée qu on ne doit pas éteindre ce feu là . plutôt crever . a...
+prédiction: HOMME (confiance: 66.5%)
+vérité terrain: FEMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  vraie classe
+# logit: -0.3734
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      punit                          +0.000052       0.0840
+   2      reconstitue                    +0.000044       0.0952
+   3      titus                          +0.000044       0.5548
+   4      pleurera                       +0.000037       0.0946
+   5      détachent                      +0.000036       0.0773
+   6      ligoter                        +0.000033       0.0968
+   7      déplacements                   +0.000028       0.0544
+   8      hanche                         +0.000025       0.0499
+   9      blonde                         +0.000024       0.0329
+   10     chevet                         +0.000023       0.0388
+   11     maîtresse                      +0.000022       0.0311
+   12     baissent                       +0.000019       0.0830
+   13     savent                         +0.000018       0.0303
+   14     brune                          +0.000017       0.0338
+   15     extremis                       +0.000017       0.0719
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bérénice                       -0.000387       0.6657
+   2      maudire                        -0.000063       0.0698
+   3      désoler                        -0.000058       0.0968
+   4      changements                    -0.000053       0.0514
+   5      duel                           -0.000037       0.0610
+   6      muettes                        -0.000033       0.1260
+   7      ressentir                      -0.000031       0.0428
+   8      attendaient                    -0.000027       0.0319
+   9      marque                         -0.000025       0.0626
+   10     découvrira                     -0.000023       0.0836
+   11     catastrophe                    -0.000022       0.0369
+   12     ouvre                          -0.000021       0.0285
+   13     drames                         -0.000020       0.0553
+   14     arrivent                       -0.000019       0.0373
+   15     détacher                       -0.000019       0.0400
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      punit                          +0.000052       0.0840
+   2      reconstitue                    +0.000044       0.0952
+   3      titus                          +0.000044       0.5548
+   4      pleurera                       +0.000037       0.0946
+   5      détachent                      +0.000036       0.0773
+   6      ligoter                        +0.000033       0.0968
+   7      déplacements                   +0.000028       0.0544
+   8      hanche                         +0.000025       0.0499
+   9      blonde                         +0.000024       0.0329
+   10     chevet                         +0.000023       0.0388
+   11     maîtresse                      +0.000022       0.0311
+   12     baissent                       +0.000019       0.0830
+   13     savent                         +0.000018       0.0303
+   14     brune                          +0.000017       0.0338
+   15     extremis                       +0.000017       0.0719
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bérénice                       -0.000387       0.6657
+   2      maudire                        -0.000063       0.0698
+   3      désoler                        -0.000058       0.0968
+   4      changements                    -0.000053       0.0514
+   5      duel                           -0.000037       0.0610
+   6      muettes                        -0.000033       0.1260
+   7      ressentir                      -0.000031       0.0428
+   8      attendaient                    -0.000027       0.0319
+   9      marque                         -0.000025       0.0626
+   10     découvrira                     -0.000023       0.0836
+   11     catastrophe                    -0.000022       0.0369
+   12     ouvre                          -0.000021       0.0285
+   13     drames                         -0.000020       0.0553
+   14     arrivent                       -0.000019       0.0373
+   15     détacher                       -0.000019       0.0400
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      regardera                      +0.000800       0.0830
+   2      chorégraphie                   +0.000758       0.0853
+   3      chercherait                    +0.000628       0.0658
+   4      mélange                        +0.000613       0.0343
+   5      craint                         +0.000440       0.0368
+   6      profitera                      +0.000424       0.0917
+   7      fouetter                       +0.000421       0.0605
+   8      pleurera                       +0.000414       0.0946
+   9      photos                         +0.000388       0.0390
+   10     ravise                         +0.000379       0.0864
+   11     blonde                         +0.000346       0.0329
+   12     détacher                       +0.000325       0.0400
+   13     vues                           +0.000323       0.0397
+   14     choisir                        +0.000315       0.0297
+   15     restera                        +0.000307       0.0370
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bérénice                       -0.007108       0.6657
+   2      titus                          -0.006596       0.5548
+   3      punit                          -0.000651       0.0840
+   4      tantôt                         -0.000541       0.0393
+   5      maudire                        -0.000528       0.0698
+   6      venger                         -0.000504       0.0395
+   7      reconstitue                    -0.000439       0.0952
+   8      machinalement                  -0.000435       0.0383
+   9      substance                      -0.000430       0.0524
+   10     touché                         -0.000428       0.0307
+   11     sauts                          -0.000403       0.0717
+   12     indécis                        -0.000368       0.0559
+   13     in                             -0.000353       0.0424
+   14     plume                          -0.000339       0.0374
+   15     confus                         -0.000336       0.0407
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      regardera                      +0.047467       0.0830
+   2      chorégraphie                   +0.031486       0.0853
+   3      mélange                        +0.029321       0.0343
+   4      chercherait                    +0.026200       0.0658
+   5      ravise                         +0.024349       0.0864
+   6      fouetter                       +0.021887       0.0605
+   7      craint                         +0.019866       0.0368
+   8      blonde                         +0.019228       0.0329
+   9      profitera                      +0.018640       0.0917
+   10     désoler                        +0.018235       0.0968
+   11     photos                         +0.017154       0.0390
+   12     détacher                       +0.016738       0.0400
+   13     arrivent                       +0.015691       0.0373
+   14     restera                        +0.015375       0.0370
+   15     pleurera                       +0.014219       0.0946
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      titus                          -0.359745       0.5548
+   2      bérénice                       -0.296526       0.6657
+   3      punit                          -0.039091       0.0840
+   4      sauts                          -0.024174       0.0717
+   5      tantôt                         -0.023733       0.0393
+   6      reconstitue                    -0.023057       0.0952
+   7      venger                         -0.023026       0.0395
+   8      marque                         -0.021769       0.0626
+   9      machinalement                  -0.021251       0.0383
+   10     substance                      -0.019982       0.0524
+   11     touché                         -0.019790       0.0307
+   12     in                             -0.019673       0.0424
+   13     maudire                        -0.017016       0.0698
+   14     étendu                         -0.016798       0.0386
+   15     indécis                        -0.015851       0.0559
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+punit                     +0.000000     +0.000052     +0.000052     0.0840
+reconstitue               +0.000000     +0.000044     +0.000044     0.0952
+titus                     +0.000000     +0.000044     +0.000044     0.5548
+pleurera                  +0.000414     +0.000037     +0.000037     0.0946
+détachent                 +0.000225     +0.000036     +0.000036     0.0773
+ligoter                   +0.000000     +0.000033     +0.000033     0.0968
+déplacements              +0.000005     +0.000028     +0.000028     0.0544
+hanche                    +0.000000     +0.000025     +0.000025     0.0499
+blonde                    +0.000346     +0.000024     +0.000024     0.0329
+chevet                    +0.000160     +0.000023     +0.000023     0.0388
+maîtresse                 +0.000000     +0.000022     +0.000022     0.0311
+baissent                  +0.000000     +0.000019     +0.000019     0.0830
+savent                    +0.000037     +0.000018     +0.000018     0.0303
+brune                     +0.000289     +0.000017     +0.000017     0.0338
+extremis                  +0.000000     +0.000017     +0.000017     0.0719
+trajectoire               +0.000000     +0.000016     +0.000016     0.0607
+fondu                     +0.000000     +0.000016     +0.000016     0.0490
+profitera                 +0.000424     +0.000014     +0.000014     0.0917
+venger                    +0.000000     +0.000012     +0.000012     0.0395
+ravise                    +0.000379     +0.000012     +0.000012     0.0864
+logit final pour 'femme': -0.3734
+# analyse pour la classe: HOMME  prédite
+# logit: 0.3132
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ravise                         +0.000031       0.0864
+   2      détachent                      +0.000029       0.0773
+   3      blonde                         +0.000029       0.0329
+   4      punit                          +0.000027       0.0840
+   5      trajectoire                    +0.000025       0.0607
+   6      veulent                        +0.000021       0.0603
+   7      brune                          +0.000021       0.0338
+   8      déplacements                   +0.000019       0.0544
+   9      fondu                          +0.000016       0.0490
+   10     pleurera                       +0.000015       0.0946
+   11     chevet                         +0.000012       0.0388
+   12     tantôt                         +0.000012       0.0393
+   13     reconstitue                    +0.000011       0.0952
+   14     profitera                      +0.000010       0.0917
+   15     crever                         +0.000009       0.0413
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bérénice                       -0.000259       0.6657
+   2      titus                          -0.000112       0.5548
+   3      désoler                        -0.000050       0.0968
+   4      maudire                        -0.000043       0.0698
+   5      changements                    -0.000029       0.0514
+   6      haïr                           -0.000026       0.0537
+   7      découvrira                     -0.000025       0.0836
+   8      catastrophe                    -0.000022       0.0369
+   9      in                             -0.000022       0.0424
+   10     marque                         -0.000017       0.0626
+   11     restera                        -0.000015       0.0370
+   12     ouvre                          -0.000015       0.0285
+   13     attendaient                    -0.000014       0.0319
+   14     sauts                          -0.000014       0.0717
+   15     cède                           -0.000014       0.0505
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ravise                         +0.000031       0.0864
+   2      détachent                      +0.000029       0.0773
+   3      blonde                         +0.000029       0.0329
+   4      punit                          +0.000027       0.0840
+   5      trajectoire                    +0.000025       0.0607
+   6      veulent                        +0.000021       0.0603
+   7      brune                          +0.000021       0.0338
+   8      déplacements                   +0.000019       0.0544
+   9      fondu                          +0.000016       0.0490
+   10     pleurera                       +0.000015       0.0946
+   11     chevet                         +0.000012       0.0388
+   12     tantôt                         +0.000012       0.0393
+   13     reconstitue                    +0.000011       0.0952
+   14     profitera                      +0.000010       0.0917
+   15     crever                         +0.000009       0.0413
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bérénice                       -0.000259       0.6657
+   2      titus                          -0.000112       0.5548
+   3      désoler                        -0.000050       0.0968
+   4      maudire                        -0.000043       0.0698
+   5      changements                    -0.000029       0.0514
+   6      haïr                           -0.000026       0.0537
+   7      découvrira                     -0.000025       0.0836
+   8      catastrophe                    -0.000022       0.0369
+   9      in                             -0.000022       0.0424
+   10     marque                         -0.000017       0.0626
+   11     restera                        -0.000015       0.0370
+   12     ouvre                          -0.000015       0.0285
+   13     attendaient                    -0.000014       0.0319
+   14     sauts                          -0.000014       0.0717
+   15     cède                           -0.000014       0.0505
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bérénice                       +0.006229       0.6657
+   2      titus                          +0.004463       0.5548
+   3      punit                          +0.000583       0.0840
+   4      baissent                       +0.000475       0.0830
+   5      tantôt                         +0.000455       0.0393
+   6      venger                         +0.000454       0.0395
+   7      substance                      +0.000446       0.0524
+   8      maudire                        +0.000398       0.0698
+   9      machinalement                  +0.000378       0.0383
+   10     touché                         +0.000374       0.0307
+   11     sauts                          +0.000360       0.0717
+   12     domine                         +0.000325       0.0534
+   13     confus                         +0.000315       0.0407
+   14     indécis                        +0.000304       0.0559
+   15     reconstitue                    +0.000290       0.0952
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      chorégraphie                   -0.000589       0.0853
+   2      chercherait                    -0.000552       0.0658
+   3      mélange                        -0.000490       0.0343
+   4      regardera                      -0.000440       0.0830
+   5      profitera                      -0.000427       0.0917
+   6      ravise                         -0.000415       0.0864
+   7      détacher                       -0.000353       0.0400
+   8      découvrira                     -0.000343       0.0836
+   9      blonde                         -0.000343       0.0329
+   10     restera                        -0.000341       0.0370
+   11     fouetter                       -0.000334       0.0605
+   12     choisir                        -0.000321       0.0297
+   13     craint                         -0.000319       0.0368
+   14     vues                           -0.000311       0.0397
+   15     brune                          -0.000278       0.0338
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bérénice                       +0.292306       0.6657
+   2      titus                          +0.227915       0.5548
+   3      punit                          +0.035775       0.0840
+   4      substance                      +0.021740       0.0524
+   5      venger                         +0.020947       0.0395
+   6      sauts                          +0.020203       0.0717
+   7      tantôt                         +0.020186       0.0393
+   8      reconstitue                    +0.018438       0.0952
+   9      machinalement                  +0.017748       0.0383
+   10     baissent                       +0.016669       0.0830
+   11     domine                         +0.016224       0.0534
+   12     touché                         +0.015534       0.0307
+   13     maudire                        +0.014971       0.0698
+   14     muettes                        +0.014242       0.1260
+   15     in                             +0.013686       0.0424
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ravise                         -0.029593       0.0864
+   2      regardera                      -0.025821       0.0830
+   3      mélange                        -0.022990       0.0343
+   4      chercherait                    -0.019783       0.0658
+   5      chorégraphie                   -0.018254       0.0853
+   6      détacher                       -0.018198       0.0400
+   7      profitera                      -0.018135       0.0917
+   8      blonde                         -0.017886       0.0329
+   9      fouetter                       -0.017685       0.0605
+   10     découvrira                     -0.017369       0.0836
+   11     restera                        -0.016595       0.0370
+   12     désoler                        -0.014769       0.0968
+   13     craint                         -0.014143       0.0368
+   14     photos                         -0.013122       0.0390
+   15     choisir                        -0.013101       0.0297
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+ravise                    +0.000000     +0.000031     +0.000031     0.0864
+détachent                 +0.000000     +0.000029     +0.000029     0.0773
+blonde                    +0.000000     +0.000029     +0.000029     0.0329
+punit                     +0.000583     +0.000027     +0.000027     0.0840
+trajectoire               +0.000000     +0.000025     +0.000025     0.0607
+veulent                   +0.000000     +0.000021     +0.000021     0.0603
+brune                     +0.000000     +0.000021     +0.000021     0.0338
+déplacements              +0.000000     +0.000019     +0.000019     0.0544
+fondu                     +0.000089     +0.000016     +0.000016     0.0490
+pleurera                  +0.000000     +0.000015     +0.000015     0.0946
+chevet                    +0.000000     +0.000012     +0.000012     0.0388
+tantôt                    +0.000455     +0.000012     +0.000012     0.0393
+reconstitue               +0.000290     +0.000011     +0.000011     0.0952
+profitera                 +0.000000     +0.000010     +0.000010     0.0917
+crever                    +0.000072     +0.000009     +0.000009     0.0413
+anticiper                 +0.000151     +0.000007     +0.000007     0.0761
+domine                    +0.000325     +0.000007     +0.000007     0.0534
+danser                    +0.000000     +0.000006     +0.000006     0.0356
+maîtresse                 +0.000069     +0.000006     +0.000006     0.0311
+extremis                  +0.000048     +0.000006     +0.000006     0.0719
+logit final pour 'homme': 0.3132

@@ -1,0 +1,5 @@
+filename: (ARNOTHY)(Christine)(le jardin noir)(2)(1966)(1930)(2015)(fr)(z)(z)(V)(R)(T).txt
+index: 145
+first_name: christine
+last_name: arnothy
+true_label: femme

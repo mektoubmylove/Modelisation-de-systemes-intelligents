@@ -1,0 +1,5 @@
+filename: (DOFF)(Neel)(Keetje Trottin)(2)(1921)(1858)(1942)(fr)(z)(z)(V)(R)(T).txt
+index: 166
+first_name: neel
+last_name: doff
+true_label: femme

@@ -1,0 +1,386 @@
+texte analysé: responsables des actes répréhensibles de leurs ancêtres , résonna la voix de santo dans sa tête . elle vit que le chevalier aux boucles noires s était retourné sur sa selle pour l observer . il cligna...
+prédiction: FEMME (confiance: 83.4%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.8548
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      inclinèrent                    +0.000064       0.0813
+   2      tenta                          +0.000053       0.0796
+   3      risquait                       +0.000051       0.0347
+   4      foulées                        +0.000050       0.0693
+   5      roulement                      +0.000043       0.0520
+   6      émerveilla                     +0.000025       0.0780
+   7      planchers                      +0.000024       0.0724
+   8      apparurent                     +0.000023       0.0508
+   9      balcons                        +0.000023       0.0579
+   10     forteresse                     +0.000022       0.0501
+   11     identifia                      +0.000020       0.0770
+   12     estomac                        +0.000018       0.0306
+   13     actes                          +0.000017       0.0333
+   14     bleus                          +0.000015       0.0280
+   15     craintivement                  +0.000015       0.0809
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      kira                           -0.000529       0.6699
+   2      hadrian                        -0.000337       0.2600
+   3      wellan                         -0.000206       0.2680
+   4      chevalier                      -0.000157       0.0926
+   5      bridgess                       -0.000136       0.2680
+   6      santo                          -0.000125       0.1037
+   7      ancêtres                       -0.000102       0.0818
+   8      sholienne                      -0.000096       0.1340
+   9      chevaliers                     -0.000089       0.1184
+   10     adolescente                    -0.000070       0.0443
+   11     occupèrent                     -0.000051       0.0833
+   12     entourée                       -0.000050       0.0347
+   13     polis                          -0.000045       0.0577
+   14     rassurer                       -0.000042       0.0318
+   15     trembler                       -0.000036       0.0316
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      inclinèrent                    +0.000064       0.0813
+   2      tenta                          +0.000053       0.0796
+   3      risquait                       +0.000051       0.0347
+   4      foulées                        +0.000050       0.0693
+   5      roulement                      +0.000043       0.0520
+   6      émerveilla                     +0.000025       0.0780
+   7      planchers                      +0.000024       0.0724
+   8      apparurent                     +0.000023       0.0508
+   9      balcons                        +0.000023       0.0579
+   10     forteresse                     +0.000022       0.0501
+   11     identifia                      +0.000020       0.0770
+   12     estomac                        +0.000018       0.0306
+   13     actes                          +0.000017       0.0333
+   14     bleus                          +0.000015       0.0280
+   15     craintivement                  +0.000015       0.0809
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      kira                           -0.000529       0.6699
+   2      hadrian                        -0.000337       0.2600
+   3      wellan                         -0.000206       0.2680
+   4      chevalier                      -0.000157       0.0926
+   5      bridgess                       -0.000136       0.2680
+   6      santo                          -0.000125       0.1037
+   7      ancêtres                       -0.000102       0.0818
+   8      sholienne                      -0.000096       0.1340
+   9      chevaliers                     -0.000089       0.1184
+   10     adolescente                    -0.000070       0.0443
+   11     occupèrent                     -0.000051       0.0833
+   12     entourée                       -0.000050       0.0347
+   13     polis                          -0.000045       0.0577
+   14     rassurer                       -0.000042       0.0318
+   15     trembler                       -0.000036       0.0316
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hadrian                        +0.003107       0.2600
+   2      kira                           +0.002865       0.6699
+   3      wellan                         +0.001490       0.2680
+   4      bridgess                       +0.001217       0.2680
+   5      arborant                       +0.001118       0.0648
+   6      viril                          +0.000982       0.0579
+   7      boucles                        +0.000939       0.0359
+   8      ancêtres                       +0.000937       0.0818
+   9      adolescente                    +0.000901       0.0443
+   10     empressa                       +0.000881       0.0493
+   11     chevalier                      +0.000702       0.0926
+   12     chevaliers                     +0.000683       0.1184
+   13     bercer                         +0.000672       0.0492
+   14     interdiction                   +0.000641       0.0479
+   15     entourée                       +0.000596       0.0347
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jadis                          -0.002474       0.1034
+   2      muraille                       -0.001165       0.0453
+   3      craintivement                  -0.000992       0.0809
+   4      pénétra                        -0.000806       0.0400
+   5      occupèrent                     -0.000732       0.0833
+   6      cligna                         -0.000705       0.0593
+   7      consola                        -0.000673       0.0693
+   8      contrée                        -0.000576       0.0590
+   9      dalles                         -0.000555       0.0489
+   10     roulement                      -0.000513       0.0520
+   11     nouer                          -0.000499       0.0497
+   12     franc                          -0.000482       0.0345
+   13     pénétrer                       -0.000480       0.0303
+   14     songeait                       -0.000469       0.0379
+   15     trouvèrent                     -0.000464       0.0426
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hadrian                        +0.066633       0.2600
+   2      kira                           +0.055657       0.6699
+   3      bridgess                       +0.042988       0.2680
+   4      arborant                       +0.042938       0.0648
+   5      boucles                        +0.036748       0.0359
+   6      viril                          +0.033642       0.0579
+   7      wellan                         +0.031793       0.2680
+   8      empressa                       +0.029919       0.0493
+   9      interdiction                   +0.023655       0.0479
+   10     adolescente                    +0.023166       0.0443
+   11     ancêtres                       +0.022122       0.0818
+   12     bercer                         +0.021059       0.0492
+   13     reculaient                     +0.020026       0.0820
+   14     passés                         +0.017214       0.0290
+   15     entourée                       +0.016723       0.0347
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jadis                          -0.083482       0.1034
+   2      muraille                       -0.044744       0.0453
+   3      craintivement                  -0.041121       0.0809
+   4      occupèrent                     -0.035750       0.0833
+   5      cligna                         -0.033188       0.0593
+   6      pénétra                        -0.029546       0.0400
+   7      consola                        -0.026186       0.0693
+   8      nouer                          -0.022186       0.0497
+   9      dalles                         -0.021699       0.0489
+   10     contrée                        -0.020618       0.0590
+   11     franc                          -0.020529       0.0345
+   12     respectueusement               -0.019771       0.0539
+   13     songeait                       -0.018013       0.0379
+   14     sentinelles                    -0.017677       0.0608
+   15     selle                          -0.017419       0.0483
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+inclinèrent               +0.000000     +0.000064     +0.000064     0.0813
+tenta                     +0.000000     +0.000053     +0.000053     0.0796
+risquait                  +0.000000     +0.000051     +0.000051     0.0347
+foulées                   +0.000000     +0.000050     +0.000050     0.0693
+roulement                 +0.000000     +0.000043     +0.000043     0.0520
+émerveilla                +0.000000     +0.000025     +0.000025     0.0780
+planchers                 +0.000180     +0.000024     +0.000024     0.0724
+apparurent                +0.000000     +0.000023     +0.000023     0.0508
+balcons                   +0.000262     +0.000023     +0.000023     0.0579
+forteresse                +0.000000     +0.000022     +0.000022     0.0501
+identifia                 +0.000000     +0.000020     +0.000020     0.0770
+estomac                   +0.000000     +0.000018     +0.000018     0.0306
+actes                     +0.000000     +0.000017     +0.000017     0.0333
+bleus                     +0.000000     +0.000015     +0.000015     0.0280
+craintivement             +0.000000     +0.000015     +0.000015     0.0809
+guider                    +0.000350     +0.000014     +0.000014     0.0418
+sentit                    +0.000034     +0.000013     +0.000013     0.0333
+noires                    +0.000000     +0.000013     +0.000013     0.0274
+reculaient                +0.000399     +0.000012     +0.000012     0.0820
+cligna                    +0.000000     +0.000012     +0.000012     0.0593
+logit final pour 'femme': 0.8548
+# analyse pour la classe: HOMME
+# logit: -0.7573
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tenta                          +0.000031       0.0796
+   2      inclinèrent                    +0.000030       0.0813
+   3      risquait                       +0.000030       0.0347
+   4      roulement                      +0.000028       0.0520
+   5      foulées                        +0.000024       0.0693
+   6      émerveilla                     +0.000017       0.0780
+   7      jadis                          +0.000015       0.1034
+   8      informa                        +0.000015       0.0572
+   9      noires                         +0.000014       0.0274
+   10     bleus                          +0.000011       0.0280
+   11     gonfla                         +0.000010       0.0673
+   12     immaculé                       +0.000010       0.0627
+   13     paternels                      +0.000010       0.0773
+   14     apparurent                     +0.000009       0.0508
+   15     balcons                        +0.000009       0.0579
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      kira                           -0.000267       0.6699
+   2      hadrian                        -0.000157       0.2600
+   3      wellan                         -0.000101       0.2680
+   4      bridgess                       -0.000085       0.2680
+   5      chevalier                      -0.000079       0.0926
+   6      santo                          -0.000072       0.1037
+   7      ancêtres                       -0.000065       0.0818
+   8      chevaliers                     -0.000053       0.1184
+   9      sholienne                      -0.000048       0.1340
+   10     occupèrent                     -0.000040       0.0833
+   11     adolescente                    -0.000039       0.0443
+   12     palefreniers                   -0.000035       0.0837
+   13     entourée                       -0.000029       0.0347
+   14     palais                         -0.000026       0.0899
+   15     royale                         -0.000025       0.0447
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tenta                          +0.000031       0.0796
+   2      inclinèrent                    +0.000030       0.0813
+   3      risquait                       +0.000030       0.0347
+   4      roulement                      +0.000028       0.0520
+   5      foulées                        +0.000024       0.0693
+   6      émerveilla                     +0.000017       0.0780
+   7      jadis                          +0.000015       0.1034
+   8      informa                        +0.000015       0.0572
+   9      noires                         +0.000014       0.0274
+   10     bleus                          +0.000011       0.0280
+   11     gonfla                         +0.000010       0.0673
+   12     immaculé                       +0.000010       0.0627
+   13     paternels                      +0.000010       0.0773
+   14     apparurent                     +0.000009       0.0508
+   15     balcons                        +0.000009       0.0579
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      kira                           -0.000267       0.6699
+   2      hadrian                        -0.000157       0.2600
+   3      wellan                         -0.000101       0.2680
+   4      bridgess                       -0.000085       0.2680
+   5      chevalier                      -0.000079       0.0926
+   6      santo                          -0.000072       0.1037
+   7      ancêtres                       -0.000065       0.0818
+   8      chevaliers                     -0.000053       0.1184
+   9      sholienne                      -0.000048       0.1340
+   10     occupèrent                     -0.000040       0.0833
+   11     adolescente                    -0.000039       0.0443
+   12     palefreniers                   -0.000035       0.0837
+   13     entourée                       -0.000029       0.0347
+   14     palais                         -0.000026       0.0899
+   15     royale                         -0.000025       0.0447
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jadis                          +0.001622       0.1034
+   2      craintivement                  +0.000809       0.0809
+   3      muraille                       +0.000766       0.0453
+   4      occupèrent                     +0.000665       0.0833
+   5      pénétra                        +0.000613       0.0400
+   6      consola                        +0.000500       0.0693
+   7      cligna                         +0.000433       0.0593
+   8      contrée                        +0.000403       0.0590
+   9      respectueusement               +0.000394       0.0539
+   10     nouer                          +0.000387       0.0497
+   11     sentinelles                    +0.000340       0.0608
+   12     trouvèrent                     +0.000332       0.0426
+   13     palais                         +0.000316       0.0899
+   14     informa                        +0.000308       0.0572
+   15     identifia                      +0.000297       0.0770
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      kira                           -0.003856       0.6699
+   2      hadrian                        -0.002540       0.2600
+   3      wellan                         -0.001646       0.2680
+   4      bridgess                       -0.001397       0.2680
+   5      arborant                       -0.000697       0.0648
+   6      boucles                        -0.000680       0.0359
+   7      chevalier                      -0.000656       0.0926
+   8      viril                          -0.000632       0.0579
+   9      chevaliers                     -0.000626       0.1184
+   10     ancêtres                       -0.000603       0.0818
+   11     adolescente                    -0.000548       0.0443
+   12     empressa                       -0.000546       0.0493
+   13     bercer                         -0.000478       0.0492
+   14     sholienne                      -0.000476       0.1340
+   15     interdiction                   -0.000441       0.0479
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jadis                          +0.059252       0.1034
+   2      craintivement                  +0.035177       0.0809
+   3      muraille                       +0.033494       0.0453
+   4      occupèrent                     +0.028849       0.0833
+   5      pénétra                        +0.023588       0.0400
+   6      cligna                         +0.022635       0.0593
+   7      respectueusement               +0.020173       0.0539
+   8      consola                        +0.019877       0.0693
+   9      palais                         +0.019778       0.0899
+   10     nouer                          +0.018826       0.0497
+   11     sentinelles                    +0.017373       0.0608
+   12     contrée                        +0.015321       0.0590
+   13     dalles                         +0.014913       0.0489
+   14     franc                          +0.014222       0.0345
+   15     identifia                      +0.013895       0.0770
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      kira                           -0.077183       0.6699
+   2      hadrian                        -0.068105       0.2600
+   3      bridgess                       -0.038973       0.2680
+   4      wellan                         -0.036905       0.2680
+   5      arborant                       -0.030472       0.0648
+   6      boucles                        -0.027635       0.0359
+   7      viril                          -0.025947       0.0579
+   8      empressa                       -0.020065       0.0493
+   9      bercer                         -0.017005       0.0492
+   10     interdiction                   -0.016041       0.0479
+   11     chevaliers                     -0.015496       0.1184
+   12     reculaient                     -0.015285       0.0820
+   13     adolescente                    -0.014405       0.0443
+   14     passés                         -0.013461       0.0290
+   15     ancêtres                       -0.013092       0.0818
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+tenta                     +0.000144     +0.000031     +0.000031     0.0796
+inclinèrent               +0.000103     +0.000030     +0.000030     0.0813
+risquait                  +0.000154     +0.000030     +0.000030     0.0347
+roulement                 +0.000230     +0.000028     +0.000028     0.0520
+foulées                   +0.000088     +0.000024     +0.000024     0.0693
+émerveilla                +0.000070     +0.000017     +0.000017     0.0780
+jadis                     +0.001622     +0.000015     +0.000015     0.1034
+informa                   +0.000308     +0.000015     +0.000015     0.0572
+noires                    +0.000009     +0.000014     +0.000014     0.0274
+bleus                     +0.000046     +0.000011     +0.000011     0.0280
+gonfla                    +0.000237     +0.000010     +0.000010     0.0673
+immaculé                  +0.000000     +0.000010     +0.000010     0.0627
+paternels                 +0.000000     +0.000010     +0.000010     0.0773
+apparurent                +0.000252     +0.000009     +0.000009     0.0508
+balcons                   +0.000000     +0.000009     +0.000009     0.0579
+curieusement              +0.000000     +0.000009     +0.000009     0.0410
+sentit                    +0.000000     +0.000008     +0.000008     0.0333
+arborant                  +0.000000     +0.000008     +0.000008     0.0648
+trouvèrent                +0.000332     +0.000007     +0.000007     0.0426
+histoires                 +0.000054     +0.000005     +0.000005     0.0254
+logit final pour 'homme': -0.7573

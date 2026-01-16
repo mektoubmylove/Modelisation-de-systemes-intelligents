@@ -1,0 +1,387 @@
+texte analysé: à la même chose que lui : s extirper d un tel marasme révélait en tout cas une personnalité hors du commun . ce foutu régiment est un ramassis de voyous , de larves et de tire au cul ! asséna un offic...
+prédiction: HOMME (confiance: 70.3%)
+vérité terrain: FEMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  vraie classe
+# logit: -0.4753
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      craig                          +0.000154       0.3252
+   2      automatiques                   +0.000073       0.0905
+   3      pistolets                      +0.000055       0.0879
+   4      épauler                        +0.000049       0.1077
+   5      américain                      +0.000046       0.1088
+   6      mental                         +0.000043       0.0696
+   7      autorisation                   +0.000040       0.0540
+   8      cavités                        +0.000038       0.1152
+   9      fantassins                     +0.000034       0.1045
+   10     ralliement                     +0.000034       0.1921
+   11     menant                         +0.000032       0.0608
+   12     précisa                        +0.000029       0.0622
+   13     opacité                        +0.000028       0.1037
+   14     personnalité                   +0.000028       0.0498
+   15     favorisé                       +0.000028       0.0954
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      permissions                    -0.000174       0.2316
+   2      aménagement                    -0.000092       0.0877
+   3      larves                         -0.000089       0.0984
+   4      pointés                        -0.000082       0.1101
+   5      refusèrent                     -0.000081       0.0994
+   6      abris                          -0.000077       0.1854
+   7      grottes                        -0.000059       0.0927
+   8      empêchèrent                    -0.000056       0.2203
+   9      retrait                        -0.000053       0.0580
+   10     isolées                        -0.000049       0.0856
+   11     vase                           -0.000049       0.0498
+   12     survivants                     -0.000044       0.0736
+   13     soldats                        -0.000042       0.1453
+   14     asséna                         -0.000040       0.1091
+   15     contestation                   -0.000039       0.1017
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      craig                          +0.000154       0.3252
+   2      automatiques                   +0.000073       0.0905
+   3      pistolets                      +0.000055       0.0879
+   4      épauler                        +0.000049       0.1077
+   5      américain                      +0.000046       0.1088
+   6      mental                         +0.000043       0.0696
+   7      autorisation                   +0.000040       0.0540
+   8      cavités                        +0.000038       0.1152
+   9      fantassins                     +0.000034       0.1045
+   10     ralliement                     +0.000034       0.1921
+   11     menant                         +0.000032       0.0608
+   12     précisa                        +0.000029       0.0622
+   13     opacité                        +0.000028       0.1037
+   14     personnalité                   +0.000028       0.0498
+   15     favorisé                       +0.000028       0.0954
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      permissions                    -0.000174       0.2316
+   2      aménagement                    -0.000092       0.0877
+   3      larves                         -0.000089       0.0984
+   4      pointés                        -0.000082       0.1101
+   5      refusèrent                     -0.000081       0.0994
+   6      abris                          -0.000077       0.1854
+   7      grottes                        -0.000059       0.0927
+   8      empêchèrent                    -0.000056       0.2203
+   9      retrait                        -0.000053       0.0580
+   10     isolées                        -0.000049       0.0856
+   11     vase                           -0.000049       0.0498
+   12     survivants                     -0.000044       0.0736
+   13     soldats                        -0.000042       0.1453
+   14     asséna                         -0.000040       0.1091
+   15     contestation                   -0.000039       0.1017
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      asséna                         +0.001733       0.1091
+   2      ri                             +0.001727       0.1543
+   3      permissions                    +0.001620       0.2316
+   4      permission                     +0.001433       0.0980
+   5      barrages                       +0.001060       0.0916
+   6      ramassis                       +0.000983       0.1005
+   7      contrairement                  +0.000928       0.0473
+   8      retirées                       +0.000925       0.1058
+   9      bataillon                      +0.000883       0.0867
+   10     rejoignait                     +0.000828       0.0675
+   11     bougies                        +0.000762       0.0562
+   12     sien                           +0.000712       0.0361
+   13     admit                          +0.000663       0.0752
+   14     opacité                        +0.000654       0.1037
+   15     isolées                        +0.000605       0.0856
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      division                       -0.003271       0.1564
+   2      craig                          -0.002379       0.3252
+   3      commissaire                    -0.002098       0.1273
+   4      pistolets                      -0.001647       0.0879
+   5      munis                          -0.001610       0.0834
+   6      dressa                         -0.001480       0.0596
+   7      américain                      -0.001391       0.1088
+   8      favorisé                       -0.001198       0.0954
+   9      fantassins                     -0.001158       0.1045
+   10     abris                          -0.001114       0.1854
+   11     souterrains                    -0.000865       0.0824
+   12     automatiques                   -0.000846       0.0905
+   13     fixé                           -0.000828       0.0432
+   14     major                          -0.000746       0.0721
+   15     bordure                        -0.000709       0.0647
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      asséna                         +0.097126       0.1091
+   2      ri                             +0.085985       0.1543
+   3      permission                     +0.060325       0.0980
+   4      permissions                    +0.059630       0.2316
+   5      rejoignait                     +0.045894       0.0675
+   6      bataillon                      +0.044525       0.0867
+   7      ramassis                       +0.043323       0.1005
+   8      retirées                       +0.040011       0.1058
+   9      barrages                       +0.039307       0.0916
+   10     contrairement                  +0.037214       0.0473
+   11     soldats                        +0.034541       0.1453
+   12     sien                           +0.033854       0.0361
+   13     opacité                        +0.033388       0.1037
+   14     bougies                        +0.031686       0.0562
+   15     admit                          +0.030384       0.0752
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      division                       -0.159256       0.1564
+   2      craig                          -0.139689       0.3252
+   3      commissaire                    -0.095194       0.1273
+   4      munis                          -0.074840       0.0834
+   5      pistolets                      -0.073321       0.0879
+   6      américain                      -0.071704       0.1088
+   7      dressa                         -0.066588       0.0596
+   8      contestation                   -0.044242       0.1017
+   9      favorisé                       -0.041997       0.0954
+   10     souterrains                    -0.035141       0.0824
+   11     déterminés                     -0.035091       0.0964
+   12     fantassins                     -0.034394       0.1045
+   13     automatiques                   -0.032579       0.0905
+   14     fixé                           -0.032525       0.0432
+   15     malin                          -0.031928       0.0478
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+craig                     +0.000000     +0.000154     +0.000154     0.3252
+automatiques              +0.000000     +0.000073     +0.000073     0.0905
+pistolets                 +0.000000     +0.000055     +0.000055     0.0879
+épauler                   +0.000000     +0.000049     +0.000049     0.1077
+américain                 +0.000000     +0.000046     +0.000046     0.1088
+mental                    +0.000000     +0.000043     +0.000043     0.0696
+autorisation              +0.000411     +0.000040     +0.000040     0.0540
+cavités                   +0.000000     +0.000038     +0.000038     0.1152
+fantassins                +0.000000     +0.000034     +0.000034     0.1045
+ralliement                +0.000000     +0.000034     +0.000034     0.1921
+menant                    +0.000000     +0.000032     +0.000032     0.0608
+précisa                   +0.000192     +0.000029     +0.000029     0.0622
+opacité                   +0.000654     +0.000028     +0.000028     0.1037
+personnalité              +0.000000     +0.000028     +0.000028     0.0498
+favorisé                  +0.000000     +0.000028     +0.000028     0.0954
+actes                     +0.000000     +0.000025     +0.000025     0.0456
+division                  +0.000000     +0.000025     +0.000025     0.1564
+remarqua                  +0.000068     +0.000024     +0.000024     0.0488
+bougies                   +0.000762     +0.000016     +0.000016     0.0562
+physique                  +0.000000     +0.000016     +0.000016     0.0377
+logit final pour 'femme': -0.4753
+# analyse pour la classe: HOMME  prédite
+# logit: 0.3848
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      craig                          +0.000050       0.3252
+   2      automatiques                   +0.000043       0.0905
+   3      pistolets                      +0.000042       0.0879
+   4      cavités                        +0.000040       0.1152
+   5      américain                      +0.000039       0.1088
+   6      mental                         +0.000034       0.0696
+   7      autorisation                   +0.000030       0.0540
+   8      opacité                        +0.000029       0.1037
+   9      rassemblèrent                  +0.000028       0.1146
+   10     précisa                        +0.000024       0.0622
+   11     voyous                         +0.000019       0.0826
+   12     personnalité                   +0.000019       0.0498
+   13     discussions                    +0.000018       0.0562
+   14     commandant                     +0.000017       0.0622
+   15     remarqua                       +0.000016       0.0488
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      permissions                    -0.000146       0.2316
+   2      abris                          -0.000074       0.1854
+   3      soldats                        -0.000067       0.1453
+   4      pointés                        -0.000066       0.1101
+   5      larves                         -0.000064       0.0984
+   6      aménagement                    -0.000054       0.0877
+   7      retrait                        -0.000050       0.0580
+   8      barrages                       -0.000045       0.0916
+   9      ralliement                     -0.000040       0.1921
+   10     refusèrent                     -0.000034       0.0994
+   11     prolongé                       -0.000030       0.0709
+   12     isolées                        -0.000030       0.0856
+   13     annulation                     -0.000028       0.1091
+   14     juin                           -0.000028       0.0483
+   15     vase                           -0.000027       0.0498
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      craig                          +0.000050       0.3252
+   2      automatiques                   +0.000043       0.0905
+   3      pistolets                      +0.000042       0.0879
+   4      cavités                        +0.000040       0.1152
+   5      américain                      +0.000039       0.1088
+   6      mental                         +0.000034       0.0696
+   7      autorisation                   +0.000030       0.0540
+   8      opacité                        +0.000029       0.1037
+   9      rassemblèrent                  +0.000028       0.1146
+   10     précisa                        +0.000024       0.0622
+   11     voyous                         +0.000019       0.0826
+   12     personnalité                   +0.000019       0.0498
+   13     discussions                    +0.000018       0.0562
+   14     commandant                     +0.000017       0.0622
+   15     remarqua                       +0.000016       0.0488
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      permissions                    -0.000146       0.2316
+   2      abris                          -0.000074       0.1854
+   3      soldats                        -0.000067       0.1453
+   4      pointés                        -0.000066       0.1101
+   5      larves                         -0.000064       0.0984
+   6      aménagement                    -0.000054       0.0877
+   7      retrait                        -0.000050       0.0580
+   8      barrages                       -0.000045       0.0916
+   9      ralliement                     -0.000040       0.1921
+   10     refusèrent                     -0.000034       0.0994
+   11     prolongé                       -0.000030       0.0709
+   12     isolées                        -0.000030       0.0856
+   13     annulation                     -0.000028       0.1091
+   14     juin                           -0.000028       0.0483
+   15     vase                           -0.000027       0.0498
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      division                       +0.002916       0.1564
+   2      commissaire                    +0.001453       0.1273
+   3      dressa                         +0.001310       0.0596
+   4      munis                          +0.001286       0.0834
+   5      pistolets                      +0.001286       0.0879
+   6      américain                      +0.001115       0.1088
+   7      abris                          +0.001067       0.1854
+   8      fantassins                     +0.000876       0.1045
+   9      favorisé                       +0.000876       0.0954
+   10     craig                          +0.000751       0.3252
+   11     commandant                     +0.000697       0.0622
+   12     fixé                           +0.000669       0.0432
+   13     cavités                        +0.000637       0.1152
+   14     commandement                   +0.000613       0.0652
+   15     voyous                         +0.000598       0.0826
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      asséna                         -0.001526       0.1091
+   2      permissions                    -0.001454       0.2316
+   3      ri                             -0.001302       0.1543
+   4      barrages                       -0.001091       0.0916
+   5      permission                     -0.000973       0.0980
+   6      retirées                       -0.000830       0.1058
+   7      contrairement                  -0.000755       0.0473
+   8      ramassis                       -0.000665       0.1005
+   9      bougies                        -0.000548       0.0562
+   10     opacité                        -0.000546       0.1037
+   11     sien                           -0.000525       0.0361
+   12     rejoignait                     -0.000515       0.0675
+   13     bataillon                      -0.000488       0.0867
+   14     isolées                        -0.000462       0.0856
+   15     répandit                       -0.000451       0.0750
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      division                       +0.132808       0.1564
+   2      commissaire                    +0.059964       0.1273
+   3      munis                          +0.059169       0.0834
+   4      dressa                         +0.057444       0.0596
+   5      américain                      +0.053514       0.1088
+   6      craig                          +0.051664       0.3252
+   7      pistolets                      +0.049535       0.0879
+   8      abris                          +0.038539       0.1854
+   9      commandant                     +0.030392       0.0622
+   10     favorisé                       +0.028281       0.0954
+   11     déterminés                     +0.027616       0.0964
+   12     bordure                        +0.026572       0.0647
+   13     voyous                         +0.025591       0.0826
+   14     contestation                   +0.025021       0.1017
+   15     fantassins                     +0.024980       0.1045
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      asséna                         -0.077638       0.1091
+   2      ri                             -0.061445       0.1543
+   3      permissions                    -0.059707       0.2316
+   4      permission                     -0.043328       0.0980
+   5      barrages                       -0.042409       0.0916
+   6      retirées                       -0.031042       0.1058
+   7      rejoignait                     -0.030254       0.0675
+   8      contrairement                  -0.028014       0.0473
+   9      ramassis                       -0.024851       0.1005
+   10     opacité                        -0.024685       0.1037
+   11     sien                           -0.024567       0.0361
+   12     soldats                        -0.022272       0.1453
+   13     bougies                        -0.021798       0.0562
+   14     bataillon                      -0.021793       0.0867
+   15     annulation                     -0.020944       0.1091
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+craig                     +0.000751     +0.000050     +0.000050     0.3252
+automatiques              +0.000530     +0.000043     +0.000043     0.0905
+pistolets                 +0.001286     +0.000042     +0.000042     0.0879
+cavités                   +0.000637     +0.000040     +0.000040     0.1152
+américain                 +0.001115     +0.000039     +0.000039     0.1088
+mental                    +0.000002     +0.000034     +0.000034     0.0696
+autorisation              +0.000000     +0.000030     +0.000030     0.0540
+opacité                   +0.000000     +0.000029     +0.000029     0.1037
+rassemblèrent             +0.000573     +0.000028     +0.000028     0.1146
+précisa                   +0.000000     +0.000024     +0.000024     0.0622
+voyous                    +0.000598     +0.000019     +0.000019     0.0826
+personnalité              +0.000343     +0.000019     +0.000019     0.0498
+discussions               +0.000000     +0.000018     +0.000018     0.0562
+commandant                +0.000697     +0.000017     +0.000017     0.0622
+remarqua                  +0.000030     +0.000016     +0.000016     0.0488
+réclamaient               +0.000000     +0.000015     +0.000015     0.0793
+tournure                  +0.000390     +0.000015     +0.000015     0.0603
+général                   +0.000148     +0.000014     +0.000014     0.0356
+division                  +0.002916     +0.000014     +0.000014     0.1564
+révoltes                  +0.000000     +0.000012     +0.000012     0.0921
+logit final pour 'homme': 0.3848

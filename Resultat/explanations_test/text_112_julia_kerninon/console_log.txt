@@ -1,0 +1,386 @@
+texte analysé: embrasant les vignobles et les arbres . ce n est même pas si plat . je vois des collines au loin . d accord , dit theo . d accord . ce n est pas si mal . on pourra y revenir quand tu veux , mais est c...
+prédiction: FEMME (confiance: 80.5%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.8108
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vignobles                      +0.000149       0.1810
+   2      reprirent                      +0.000096       0.1016
+   3      défaisait                      +0.000091       0.1537
+   4      détaillée                      +0.000078       0.1511
+   5      dorée                          +0.000068       0.0763
+   6      historiques                    +0.000065       0.1188
+   7      taquiner                       +0.000055       0.1300
+   8      arrosé                         +0.000048       0.1190
+   9      usine                          +0.000047       0.0945
+   10     fallut                         +0.000043       0.0732
+   11     peintre                        +0.000039       0.0945
+   12     naufragé                       +0.000038       0.1521
+   13     poussins                       +0.000038       0.1698
+   14     plaine                         +0.000036       0.0893
+   15     cessé                          +0.000030       0.0567
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      attila                         -0.000246       0.4090
+   2      budapest                       -0.000170       0.1944
+   3      désolée                        -0.000169       0.0768
+   4      tapant                         -0.000117       0.1039
+   5      promise                        -0.000109       0.1021
+   6      tâches                         -0.000106       0.0950
+   7      allers                         -0.000106       0.1386
+   8      retrouvée                      -0.000102       0.0748
+   9      séculaire                      -0.000098       0.1521
+   10     foutue                         -0.000086       0.1128
+   11     mariage                        -0.000079       0.0579
+   12     attachait                      -0.000077       0.1049
+   13     éteigne                        -0.000071       0.1690
+   14     finalement                     -0.000061       0.0607
+   15     plat                           -0.000057       0.1085
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vignobles                      +0.000149       0.1810
+   2      reprirent                      +0.000096       0.1016
+   3      défaisait                      +0.000091       0.1537
+   4      détaillée                      +0.000078       0.1511
+   5      dorée                          +0.000068       0.0763
+   6      historiques                    +0.000065       0.1188
+   7      taquiner                       +0.000055       0.1300
+   8      arrosé                         +0.000048       0.1190
+   9      usine                          +0.000047       0.0945
+   10     fallut                         +0.000043       0.0732
+   11     peintre                        +0.000039       0.0945
+   12     naufragé                       +0.000038       0.1521
+   13     poussins                       +0.000038       0.1698
+   14     plaine                         +0.000036       0.0893
+   15     cessé                          +0.000030       0.0567
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      attila                         -0.000246       0.4090
+   2      budapest                       -0.000170       0.1944
+   3      désolée                        -0.000169       0.0768
+   4      tapant                         -0.000117       0.1039
+   5      promise                        -0.000109       0.1021
+   6      tâches                         -0.000106       0.0950
+   7      allers                         -0.000106       0.1386
+   8      retrouvée                      -0.000102       0.0748
+   9      séculaire                      -0.000098       0.1521
+   10     foutue                         -0.000086       0.1128
+   11     mariage                        -0.000079       0.0579
+   12     attachait                      -0.000077       0.1049
+   13     éteigne                        -0.000071       0.1690
+   14     finalement                     -0.000061       0.0607
+   15     plat                           -0.000057       0.1085
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      désolée                        +0.002404       0.0768
+   2      allers                         +0.002240       0.1386
+   3      boucles                        +0.002239       0.0768
+   4      agressée                       +0.001927       0.1706
+   5      argumenter                     +0.001726       0.1601
+   6      foutue                         +0.001578       0.1128
+   7      retrouvée                      +0.001391       0.0748
+   8      dorée                          +0.001346       0.0763
+   9      mariage                        +0.001296       0.0579
+   10     taquiner                       +0.001168       0.1300
+   11     prince                         +0.001103       0.0727
+   12     tâches                         +0.001045       0.0950
+   13     jeta                           +0.001035       0.0661
+   14     plat                           +0.000989       0.1085
+   15     retours                        +0.000934       0.1060
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      peinture                       -0.002220       0.1526
+   2      vignobles                      -0.002202       0.1810
+   3      fallut                         -0.001758       0.0732
+   4      naufragé                       -0.001665       0.1521
+   5      prouve                         -0.001657       0.0833
+   6      peintre                        -0.001545       0.0945
+   7      éteigne                        -0.001527       0.1690
+   8      imbécile                       -0.001409       0.0745
+   9      défaisait                      -0.001302       0.1537
+   10     eut                            -0.001261       0.0550
+   11     conneries                      -0.001145       0.1106
+   12     cria                           -0.001012       0.0701
+   13     engager                        -0.001011       0.0685
+   14     historiques                    -0.000896       0.1188
+   15     plaine                         -0.000792       0.0893
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      désolée                        +0.114840       0.0768
+   2      boucles                        +0.104895       0.0768
+   3      allers                         +0.103901       0.1386
+   4      argumenter                     +0.092293       0.1601
+   5      agressée                       +0.091673       0.1706
+   6      dorée                          +0.067004       0.0763
+   7      mariage                        +0.066287       0.0579
+   8      retrouvée                      +0.064844       0.0748
+   9      foutue                         +0.064023       0.1128
+   10     plat                           +0.056136       0.1085
+   11     taquiner                       +0.055564       0.1300
+   12     retours                        +0.053267       0.1060
+   13     jeta                           +0.053130       0.0661
+   14     tâches                         +0.050486       0.0950
+   15     automne                        +0.049824       0.0696
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vignobles                      -0.121367       0.1810
+   2      peinture                       -0.113983       0.1526
+   3      attila                         -0.112302       0.4090
+   4      prouve                         -0.079103       0.0833
+   5      fallut                         -0.076896       0.0732
+   6      éteigne                        -0.074875       0.1690
+   7      imbécile                       -0.073831       0.0745
+   8      peintre                        -0.067593       0.0945
+   9      naufragé                       -0.067568       0.1521
+   10     eut                            -0.061511       0.0550
+   11     défaisait                      -0.057326       0.1537
+   12     conneries                      -0.047710       0.1106
+   13     historiques                    -0.042086       0.1188
+   14     engager                        -0.038341       0.0685
+   15     cria                           -0.038144       0.0701
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+vignobles                 +0.000000     +0.000149     +0.000149     0.1810
+reprirent                 +0.000000     +0.000096     +0.000096     0.1016
+défaisait                 +0.000000     +0.000091     +0.000091     0.1537
+détaillée                 +0.000000     +0.000078     +0.000078     0.1511
+dorée                     +0.001346     +0.000068     +0.000068     0.0763
+historiques               +0.000000     +0.000065     +0.000065     0.1188
+taquiner                  +0.001168     +0.000055     +0.000055     0.1300
+arrosé                    +0.000574     +0.000048     +0.000048     0.1190
+usine                     +0.000570     +0.000047     +0.000047     0.0945
+fallut                    +0.000000     +0.000043     +0.000043     0.0732
+peintre                   +0.000000     +0.000039     +0.000039     0.0945
+naufragé                  +0.000000     +0.000038     +0.000038     0.1521
+poussins                  +0.000000     +0.000038     +0.000038     0.1698
+plaine                    +0.000000     +0.000036     +0.000036     0.0893
+cessé                     +0.000000     +0.000030     +0.000030     0.0567
+changèrent                +0.000000     +0.000028     +0.000028     0.1627
+raconta                   +0.000000     +0.000026     +0.000026     0.0832
+fout                      +0.000000     +0.000023     +0.000023     0.0970
+cria                      +0.000000     +0.000021     +0.000021     0.0701
+imperceptiblement         +0.000000     +0.000017     +0.000017     0.1158
+logit final pour 'femme': 0.8108
+# analyse pour la classe: HOMME
+# logit: -0.6052
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vignobles                      +0.000123       0.1810
+   2      défaisait                      +0.000080       0.1537
+   3      reprirent                      +0.000058       0.1016
+   4      dorée                          +0.000057       0.0763
+   5      détaillée                      +0.000055       0.1511
+   6      poussins                       +0.000037       0.1698
+   7      changèrent                     +0.000036       0.1627
+   8      argumenter                     +0.000033       0.1601
+   9      usine                          +0.000031       0.0945
+   10     effondrement                   +0.000027       0.1260
+   11     cessé                          +0.000020       0.0567
+   12     quitta                         +0.000019       0.0718
+   13     taquiner                       +0.000017       0.1300
+   14     trouves                        +0.000017       0.0779
+   15     historiques                    +0.000016       0.1188
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      budapest                       -0.000119       0.1944
+   2      désolée                        -0.000097       0.0768
+   3      attila                         -0.000088       0.4090
+   4      allers                         -0.000086       0.1386
+   5      ornements                      -0.000070       0.1303
+   6      séculaire                      -0.000063       0.1521
+   7      tapant                         -0.000062       0.1039
+   8      conneries                      -0.000056       0.1106
+   9      tâches                         -0.000055       0.0950
+   10     foutue                         -0.000053       0.1128
+   11     promise                        -0.000047       0.1021
+   12     contours                       -0.000046       0.0953
+   13     éteigne                        -0.000042       0.1690
+   14     classe                         -0.000041       0.1248
+   15     finalement                     -0.000039       0.0607
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vignobles                      +0.000123       0.1810
+   2      défaisait                      +0.000080       0.1537
+   3      reprirent                      +0.000058       0.1016
+   4      dorée                          +0.000057       0.0763
+   5      détaillée                      +0.000055       0.1511
+   6      poussins                       +0.000037       0.1698
+   7      changèrent                     +0.000036       0.1627
+   8      argumenter                     +0.000033       0.1601
+   9      usine                          +0.000031       0.0945
+   10     effondrement                   +0.000027       0.1260
+   11     cessé                          +0.000020       0.0567
+   12     quitta                         +0.000019       0.0718
+   13     taquiner                       +0.000017       0.1300
+   14     trouves                        +0.000017       0.0779
+   15     historiques                    +0.000016       0.1188
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      budapest                       -0.000119       0.1944
+   2      désolée                        -0.000097       0.0768
+   3      attila                         -0.000088       0.4090
+   4      allers                         -0.000086       0.1386
+   5      ornements                      -0.000070       0.1303
+   6      séculaire                      -0.000063       0.1521
+   7      tapant                         -0.000062       0.1039
+   8      conneries                      -0.000056       0.1106
+   9      tâches                         -0.000055       0.0950
+   10     foutue                         -0.000053       0.1128
+   11     promise                        -0.000047       0.1021
+   12     contours                       -0.000046       0.0953
+   13     éteigne                        -0.000042       0.1690
+   14     classe                         -0.000041       0.1248
+   15     finalement                     -0.000039       0.0607
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      peinture                       +0.001493       0.1526
+   2      prouve                         +0.001459       0.0833
+   3      naufragé                       +0.001356       0.1521
+   4      vignobles                      +0.001354       0.1810
+   5      fallut                         +0.001345       0.0732
+   6      peintre                        +0.001214       0.0945
+   7      eut                            +0.001059       0.0550
+   8      imbécile                       +0.000943       0.0745
+   9      conneries                      +0.000912       0.1106
+   10     défaisait                      +0.000841       0.1537
+   11     engager                        +0.000722       0.0685
+   12     cria                           +0.000666       0.0701
+   13     éteigne                        +0.000627       0.1690
+   14     plaine                         +0.000622       0.0893
+   15     historiques                    +0.000576       0.1188
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      boucles                        -0.001752       0.0768
+   2      désolée                        -0.001699       0.0768
+   3      allers                         -0.001605       0.1386
+   4      agressée                       -0.001498       0.1706
+   5      argumenter                     -0.001350       0.1601
+   6      foutue                         -0.001148       0.1128
+   7      retrouvée                      -0.001132       0.0748
+   8      dorée                          -0.001064       0.0763
+   9      mariage                        -0.001025       0.0579
+   10     ignorent                       -0.000987       0.1134
+   11     automne                        -0.000831       0.0696
+   12     jeta                           -0.000800       0.0661
+   13     retours                        -0.000764       0.1060
+   14     prince                         -0.000754       0.0727
+   15     tapant                         -0.000699       0.1039
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      peinture                       +0.084990       0.1526
+   2      vignobles                      +0.080993       0.1810
+   3      prouve                         +0.073156       0.0833
+   4      fallut                         +0.068871       0.0732
+   5      naufragé                       +0.054813       0.1521
+   6      eut                            +0.053455       0.0550
+   7      défaisait                      +0.051616       0.1537
+   8      imbécile                       +0.048365       0.0745
+   9      attila                         +0.046637       0.4090
+   10     peintre                        +0.045428       0.0945
+   11     éteigne                        +0.043312       0.1690
+   12     ornements                      +0.041405       0.1303
+   13     conneries                      +0.039776       0.1106
+   14     engager                        +0.030163       0.0685
+   15     cria                           +0.030075       0.0701
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      désolée                        -0.088304       0.0768
+   2      boucles                        -0.082254       0.0768
+   3      agressée                       -0.071844       0.1706
+   4      allers                         -0.071218       0.1386
+   5      argumenter                     -0.062658       0.1601
+   6      mariage                        -0.055322       0.0579
+   7      retrouvée                      -0.054642       0.0748
+   8      dorée                          -0.053999       0.0763
+   9      foutue                         -0.046424       0.1128
+   10     automne                        -0.042886       0.0696
+   11     plat                           -0.040823       0.1085
+   12     ignorent                       -0.039847       0.1134
+   13     jeta                           -0.039342       0.0661
+   14     retours                        -0.037566       0.1060
+   15     taquiner                       -0.035524       0.1300
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+vignobles                 +0.001354     +0.000123     +0.000123     0.1810
+défaisait                 +0.000841     +0.000080     +0.000080     0.1537
+reprirent                 +0.000422     +0.000058     +0.000058     0.1016
+dorée                     +0.000000     +0.000057     +0.000057     0.0763
+détaillée                 +0.000239     +0.000055     +0.000055     0.1511
+poussins                  +0.000266     +0.000037     +0.000037     0.1698
+changèrent                +0.000214     +0.000036     +0.000036     0.1627
+argumenter                +0.000000     +0.000033     +0.000033     0.1601
+usine                     +0.000000     +0.000031     +0.000031     0.0945
+effondrement              +0.000000     +0.000027     +0.000027     0.1260
+cessé                     +0.000183     +0.000020     +0.000020     0.0567
+quitta                    +0.000191     +0.000019     +0.000019     0.0718
+taquiner                  +0.000000     +0.000017     +0.000017     0.1300
+trouves                   +0.000000     +0.000017     +0.000017     0.0779
+historiques               +0.000576     +0.000016     +0.000016     0.1188
+automne                   +0.000000     +0.000016     +0.000016     0.0696
+suffisait                 +0.000511     +0.000012     +0.000012     0.0615
+collines                  +0.000426     +0.000012     +0.000012     0.0926
+fallut                    +0.001345     +0.000010     +0.000010     0.0732
+plaine                    +0.000622     +0.000010     +0.000010     0.0893
+logit final pour 'homme': -0.6052

@@ -1,0 +1,5 @@
+filename: (MALET)(Léo)(les eaux troubles de javel)(1)(1957)(1909)(1996)(fr)(z)(z)(V)(R)(T).txt
+index: 241
+first_name: leo
+last_name: malet
+true_label: homme

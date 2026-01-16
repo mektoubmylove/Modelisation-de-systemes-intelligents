@@ -1,0 +1,387 @@
+texte analysé: toujours un peu étonné . j ai couvé un canard , pensait il parfois . sandrine avec la vivacité naturelle , l aisance des gens très sûrs d eux et une sorte d élégante élasticité aussi bien physique que...
+prédiction: FEMME (confiance: 65.7%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.3612
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ecoute                         +0.000064       0.0610
+   2      pistolet                       +0.000055       0.0397
+   3      confidentiels                  +0.000044       0.0760
+   4      gisèle                         +0.000041       0.0812
+   5      désinvolture                   +0.000033       0.0426
+   6      revivait                       +0.000032       0.0569
+   7      ricane                         +0.000026       0.0527
+   8      langage                        +0.000025       0.0263
+   9      couvé                          +0.000024       0.0730
+   10     sabre                          +0.000022       0.0470
+   11     imperméable                    +0.000019       0.0433
+   12     salaud                         +0.000018       0.0383
+   13     ravissante                     +0.000018       0.0401
+   14     dérisoire                      +0.000015       0.0395
+   15     canard                         +0.000014       0.0400
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sandrine                       -0.000550       0.4475
+   2      fabre                          -0.000354       0.7746
+   3      emmerde                        -0.000108       0.1026
+   4      soulageait                     -0.000099       0.1191
+   5      petto                          -0.000075       0.0694
+   6      consul                         -0.000069       0.1835
+   7      affranchi                      -0.000042       0.0646
+   8      joyeusement                    -0.000038       0.0364
+   9      inspirant                      -0.000036       0.0600
+   10     dégagée                        -0.000035       0.0477
+   11     constamment                    -0.000034       0.0363
+   12     morale                         -0.000032       0.0287
+   13     insolente                      -0.000029       0.0466
+   14     sors                           -0.000028       0.0576
+   15     crises                         -0.000028       0.0376
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ecoute                         +0.000064       0.0610
+   2      pistolet                       +0.000055       0.0397
+   3      confidentiels                  +0.000044       0.0760
+   4      gisèle                         +0.000041       0.0812
+   5      désinvolture                   +0.000033       0.0426
+   6      revivait                       +0.000032       0.0569
+   7      ricane                         +0.000026       0.0527
+   8      langage                        +0.000025       0.0263
+   9      couvé                          +0.000024       0.0730
+   10     sabre                          +0.000022       0.0470
+   11     imperméable                    +0.000019       0.0433
+   12     salaud                         +0.000018       0.0383
+   13     ravissante                     +0.000018       0.0401
+   14     dérisoire                      +0.000015       0.0395
+   15     canard                         +0.000014       0.0400
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sandrine                       -0.000550       0.4475
+   2      fabre                          -0.000354       0.7746
+   3      emmerde                        -0.000108       0.1026
+   4      soulageait                     -0.000099       0.1191
+   5      petto                          -0.000075       0.0694
+   6      consul                         -0.000069       0.1835
+   7      affranchi                      -0.000042       0.0646
+   8      joyeusement                    -0.000038       0.0364
+   9      inspirant                      -0.000036       0.0600
+   10     dégagée                        -0.000035       0.0477
+   11     constamment                    -0.000034       0.0363
+   12     morale                         -0.000032       0.0287
+   13     insolente                      -0.000029       0.0466
+   14     sors                           -0.000028       0.0576
+   15     crises                         -0.000028       0.0376
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sandrine                       +0.004101       0.4475
+   2      soulageait                     +0.001085       0.1191
+   3      ravissante                     +0.000833       0.0401
+   4      élégante                       +0.000630       0.0319
+   5      réceptions                     +0.000613       0.0535
+   6      aidait                         +0.000583       0.0349
+   7      laurent                        +0.000560       0.0490
+   8      confidentiels                  +0.000523       0.0760
+   9      exaspérait                     +0.000496       0.0503
+   10     désinvolture                   +0.000463       0.0426
+   11     envers                         +0.000460       0.0230
+   12     vivacité                       +0.000404       0.0416
+   13     générations                    +0.000376       0.0347
+   14     héritage                       +0.000376       0.0340
+   15     insolente                      +0.000355       0.0466
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fabre                          -0.004608       0.7746
+   2      colonel                        -0.001431       0.0915
+   3      ecoute                         -0.001185       0.0610
+   4      pistolet                       -0.000875       0.0397
+   5      préoccupé                      -0.000817       0.0730
+   6      renseignements                 -0.000611       0.0299
+   7      consul                         -0.000609       0.1835
+   8      rapports                       -0.000582       0.0287
+   9      salaud                         -0.000519       0.0383
+   10     dérisoire                      -0.000508       0.0395
+   11     obligé                         -0.000496       0.0237
+   12     railleries                     -0.000462       0.0659
+   13     élasticité                     -0.000436       0.0694
+   14     paraissait                     -0.000420       0.0229
+   15     coquin                         -0.000365       0.0535
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sandrine                       +0.236117       0.4475
+   2      soulageait                     +0.056121       0.1191
+   3      ravissante                     +0.037844       0.0401
+   4      laurent                        +0.031233       0.0490
+   5      réceptions                     +0.030120       0.0535
+   6      élégante                       +0.027035       0.0319
+   7      aidait                         +0.025109       0.0349
+   8      désinvolture                   +0.023302       0.0426
+   9      exaspérait                     +0.020616       0.0503
+   10     envers                         +0.019860       0.0230
+   11     insolente                      +0.019819       0.0466
+   12     héritage                       +0.018293       0.0340
+   13     vivacité                       +0.017096       0.0416
+   14     élans                          +0.016988       0.0470
+   15     couvé                          +0.016250       0.0730
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fabre                          -0.219597       0.7746
+   2      ecoute                         -0.066111       0.0610
+   3      colonel                        -0.051383       0.0915
+   4      pistolet                       -0.038154       0.0397
+   5      préoccupé                      -0.031990       0.0730
+   6      salaud                         -0.029370       0.0383
+   7      renseignements                 -0.028180       0.0299
+   8      rapports                       -0.025534       0.0287
+   9      obligé                         -0.022587       0.0237
+   10     paraissait                     -0.021947       0.0229
+   11     dérisoire                      -0.020105       0.0395
+   12     affranchi                      -0.019232       0.0646
+   13     élasticité                     -0.018727       0.0694
+   14     carrière                       -0.016237       0.0538
+   15     imperméable                    -0.015883       0.0433
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+ecoute                    +0.000000     +0.000064     +0.000064     0.0610
+pistolet                  +0.000000     +0.000055     +0.000055     0.0397
+confidentiels             +0.000523     +0.000044     +0.000044     0.0760
+gisèle                    +0.000000     +0.000041     +0.000041     0.0812
+désinvolture              +0.000463     +0.000033     +0.000033     0.0426
+revivait                  +0.000000     +0.000032     +0.000032     0.0569
+ricane                    +0.000000     +0.000026     +0.000026     0.0527
+langage                   +0.000000     +0.000025     +0.000025     0.0263
+couvé                     +0.000231     +0.000024     +0.000024     0.0730
+sabre                     +0.000155     +0.000022     +0.000022     0.0470
+imperméable               +0.000000     +0.000019     +0.000019     0.0433
+salaud                    +0.000000     +0.000018     +0.000018     0.0383
+ravissante                +0.000833     +0.000018     +0.000018     0.0401
+dérisoire                 +0.000000     +0.000015     +0.000015     0.0395
+canard                    +0.000137     +0.000014     +0.000014     0.0400
+aisance                   +0.000091     +0.000013     +0.000013     0.0332
+obligé                    +0.000000     +0.000011     +0.000011     0.0237
+violente                  +0.000000     +0.000010     +0.000010     0.0279
+paraissait                +0.000000     +0.000009     +0.000009     0.0229
+physique                  +0.000000     +0.000009     +0.000009     0.0238
+logit final pour 'femme': 0.3612
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.2908
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      confidentiels                  +0.000031       0.0760
+   2      désinvolture                   +0.000031       0.0426
+   3      ricane                         +0.000028       0.0527
+   4      colonel                        +0.000027       0.0915
+   5      préoccupé                      +0.000021       0.0730
+   6      ecoute                         +0.000021       0.0610
+   7      bride                          +0.000020       0.0447
+   8      railleries                     +0.000018       0.0659
+   9      pistolet                       +0.000014       0.0397
+   10     dérisoire                      +0.000014       0.0395
+   11     salaud                         +0.000012       0.0383
+   12     réalise                        +0.000010       0.0442
+   13     aisance                        +0.000010       0.0332
+   14     langage                        +0.000009       0.0263
+   15     élans                          +0.000009       0.0470
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sandrine                       -0.000274       0.4475
+   2      fabre                          -0.000169       0.7746
+   3      consul                         -0.000094       0.1835
+   4      emmerde                        -0.000056       0.1026
+   5      soulageait                     -0.000055       0.1191
+   6      petto                          -0.000050       0.0694
+   7      dégagée                        -0.000026       0.0477
+   8      in                             -0.000024       0.0329
+   9      joyeusement                    -0.000023       0.0364
+   10     constamment                    -0.000017       0.0363
+   11     morale                         -0.000017       0.0287
+   12     inspirant                      -0.000015       0.0600
+   13     crises                         -0.000015       0.0376
+   14     envers                         -0.000014       0.0230
+   15     rapports                       -0.000013       0.0287
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      confidentiels                  +0.000031       0.0760
+   2      désinvolture                   +0.000031       0.0426
+   3      ricane                         +0.000028       0.0527
+   4      colonel                        +0.000027       0.0915
+   5      préoccupé                      +0.000021       0.0730
+   6      ecoute                         +0.000021       0.0610
+   7      bride                          +0.000020       0.0447
+   8      railleries                     +0.000018       0.0659
+   9      pistolet                       +0.000014       0.0397
+   10     dérisoire                      +0.000014       0.0395
+   11     salaud                         +0.000012       0.0383
+   12     réalise                        +0.000010       0.0442
+   13     aisance                        +0.000010       0.0332
+   14     langage                        +0.000009       0.0263
+   15     élans                          +0.000009       0.0470
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sandrine                       -0.000274       0.4475
+   2      fabre                          -0.000169       0.7746
+   3      consul                         -0.000094       0.1835
+   4      emmerde                        -0.000056       0.1026
+   5      soulageait                     -0.000055       0.1191
+   6      petto                          -0.000050       0.0694
+   7      dégagée                        -0.000026       0.0477
+   8      in                             -0.000024       0.0329
+   9      joyeusement                    -0.000023       0.0364
+   10     constamment                    -0.000017       0.0363
+   11     morale                         -0.000017       0.0287
+   12     inspirant                      -0.000015       0.0600
+   13     crises                         -0.000015       0.0376
+   14     envers                         -0.000014       0.0230
+   15     rapports                       -0.000013       0.0287
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fabre                          +0.005260       0.7746
+   2      ecoute                         +0.001046       0.0610
+   3      colonel                        +0.000987       0.0915
+   4      pistolet                       +0.000650       0.0397
+   5      préoccupé                      +0.000624       0.0730
+   6      rapports                       +0.000491       0.0287
+   7      dérisoire                      +0.000490       0.0395
+   8      salaud                         +0.000483       0.0383
+   9      renseignements                 +0.000482       0.0299
+   10     obligé                         +0.000410       0.0237
+   11     paraissait                     +0.000393       0.0229
+   12     railleries                     +0.000388       0.0659
+   13     affranchi                      +0.000380       0.0646
+   14     consul                         +0.000318       0.1835
+   15     élasticité                     +0.000276       0.0694
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sandrine                       -0.004140       0.4475
+   2      soulageait                     -0.001049       0.1191
+   3      ravissante                     -0.000661       0.0401
+   4      confidentiels                  -0.000524       0.0760
+   5      réceptions                     -0.000501       0.0535
+   6      aidait                         -0.000454       0.0349
+   7      laurent                        -0.000416       0.0490
+   8      désinvolture                   -0.000388       0.0426
+   9      élégante                       -0.000361       0.0319
+   10     vivacité                       -0.000331       0.0416
+   11     exaspérait                     -0.000296       0.0503
+   12     joli                           -0.000288       0.0240
+   13     envers                         -0.000286       0.0230
+   14     générations                    -0.000282       0.0347
+   15     sors                           -0.000268       0.0576
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fabre                          +0.201777       0.7746
+   2      ecoute                         +0.054643       0.0610
+   3      colonel                        +0.042720       0.0915
+   4      pistolet                       +0.028588       0.0397
+   5      affranchi                      +0.026175       0.0646
+   6      salaud                         +0.025535       0.0383
+   7      rapports                       +0.024917       0.0287
+   8      préoccupé                      +0.024203       0.0730
+   9      renseignements                 +0.022424       0.0299
+   10     paraissait                     +0.022067       0.0229
+   11     dérisoire                      +0.020219       0.0395
+   12     obligé                         +0.018164       0.0237
+   13     railleries                     +0.015585       0.0659
+   14     emmerde                        +0.015572       0.1026
+   15     consul                         +0.014758       0.1835
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sandrine                       -0.164803       0.4475
+   2      soulageait                     -0.053616       0.1191
+   3      ravissante                     -0.033180       0.0401
+   4      réceptions                     -0.024946       0.0535
+   5      désinvolture                   -0.022865       0.0426
+   6      aidait                         -0.022804       0.0349
+   7      laurent                        -0.022280       0.0490
+   8      élégante                       -0.020005       0.0319
+   9      confidentiels                  -0.018458       0.0760
+   10     élans                          -0.016793       0.0470
+   11     vivacité                       -0.015868       0.0416
+   12     sors                           -0.015631       0.0576
+   13     couvé                          -0.015024       0.0730
+   14     exaspérait                     -0.014379       0.0503
+   15     joli                           -0.014135       0.0240
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+confidentiels             +0.000000     +0.000031     +0.000031     0.0760
+désinvolture              +0.000000     +0.000031     +0.000031     0.0426
+ricane                    +0.000238     +0.000028     +0.000028     0.0527
+colonel                   +0.000987     +0.000027     +0.000027     0.0915
+préoccupé                 +0.000624     +0.000021     +0.000021     0.0730
+ecoute                    +0.001046     +0.000021     +0.000021     0.0610
+bride                     +0.000075     +0.000020     +0.000020     0.0447
+railleries                +0.000388     +0.000018     +0.000018     0.0659
+pistolet                  +0.000650     +0.000014     +0.000014     0.0397
+dérisoire                 +0.000490     +0.000014     +0.000014     0.0395
+salaud                    +0.000483     +0.000012     +0.000012     0.0383
+réalise                   +0.000000     +0.000010     +0.000010     0.0442
+aisance                   +0.000005     +0.000010     +0.000010     0.0332
+langage                   +0.000176     +0.000009     +0.000009     0.0263
+élans                     +0.000000     +0.000009     +0.000009     0.0470
+imperméable               +0.000242     +0.000009     +0.000009     0.0433
+physique                  +0.000071     +0.000008     +0.000008     0.0238
+canard                    +0.000000     +0.000008     +0.000008     0.0400
+ravissante                +0.000000     +0.000008     +0.000008     0.0401
+fous                      +0.000169     +0.000007     +0.000007     0.0232
+logit final pour 'homme': -0.2908

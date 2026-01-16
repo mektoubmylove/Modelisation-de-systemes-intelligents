@@ -1,0 +1,382 @@
+texte analysé: fus jamais . elle parle sans prendre le temps de respirer , le temps lui est compté . sa voix est claire et son visage apaisé . adieu , beaux rêves souriants du passé , les roses de mes joues sont déj...
+prédiction: FEMME (confiance: 87.7%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.1142
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      violetta                       +0.000049       0.1922
+   2      sitôt                          +0.000044       0.0620
+   3      terminée                       +0.000042       0.0533
+   4      photographie                   +0.000033       0.0660
+   5      égarée                         +0.000025       0.0822
+   6      reçois                         +0.000020       0.0737
+   7      allemagne                      +0.000012       0.0694
+   8      élève                          +0.000010       0.0478
+   9      devons                         +0.000010       0.0517
+   10     fanées                         +0.000009       0.1043
+   11     retrouverons                   +0.000009       0.1933
+   12     levant                         +0.000008       0.0433
+   13     tenant                         +0.000007       0.0418
+   14     paris                          +0.000004       0.0401
+   15     seigneur                       +0.000003       0.0507
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lise                           -0.000354       0.2813
+   2      eva                            -0.000134       0.7158
+   3      ernesto                        -0.000107       0.1882
+   4      fus                            -0.000081       0.0686
+   5      verra                          -0.000070       0.0986
+   6      survivra                       -0.000047       0.1269
+   7      souviens                       -0.000045       0.0401
+   8      attendrai                      -0.000045       0.0763
+   9      pourras                        -0.000044       0.0578
+   10     consolation                    -0.000042       0.1362
+   11     pardonne                       -0.000034       0.0574
+   12     étrangère                      -0.000034       0.0484
+   13     couchant                       -0.000034       0.0611
+   14     caresse                        -0.000033       0.0518
+   15     mourra                         -0.000031       0.0882
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      violetta                       +0.000049       0.1922
+   2      sitôt                          +0.000044       0.0620
+   3      terminée                       +0.000042       0.0533
+   4      photographie                   +0.000033       0.0660
+   5      égarée                         +0.000025       0.0822
+   6      reçois                         +0.000020       0.0737
+   7      allemagne                      +0.000012       0.0694
+   8      élève                          +0.000010       0.0478
+   9      devons                         +0.000010       0.0517
+   10     fanées                         +0.000009       0.1043
+   11     retrouverons                   +0.000009       0.1933
+   12     levant                         +0.000008       0.0433
+   13     tenant                         +0.000007       0.0418
+   14     paris                          +0.000004       0.0401
+   15     seigneur                       +0.000003       0.0507
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lise                           -0.000354       0.2813
+   2      eva                            -0.000134       0.7158
+   3      ernesto                        -0.000107       0.1882
+   4      fus                            -0.000081       0.0686
+   5      verra                          -0.000070       0.0986
+   6      survivra                       -0.000047       0.1269
+   7      souviens                       -0.000045       0.0401
+   8      attendrai                      -0.000045       0.0763
+   9      pourras                        -0.000044       0.0578
+   10     consolation                    -0.000042       0.1362
+   11     pardonne                       -0.000034       0.0574
+   12     étrangère                      -0.000034       0.0484
+   13     couchant                       -0.000034       0.0611
+   14     caresse                        -0.000033       0.0518
+   15     mourra                         -0.000031       0.0882
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      eva                            +0.002710       0.7158
+   2      ernesto                        +0.001468       0.1882
+   3      berceuse                       +0.001041       0.1066
+   4      lasse                          +0.001002       0.0544
+   5      emmener                        +0.000905       0.0457
+   6      oublie                         +0.000792       0.0408
+   7      verra                          +0.000789       0.0986
+   8      protège                        +0.000750       0.0603
+   9      respirer                       +0.000648       0.0423
+   10     étrangère                      +0.000639       0.0484
+   11     caresse                        +0.000633       0.0518
+   12     roses                          +0.000581       0.0439
+   13     seront                         +0.000550       0.0836
+   14     devrais                        +0.000519       0.0449
+   15     mourra                         +0.000513       0.0882
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      violetta                       -0.001431       0.1922
+   2      pouce                          -0.001000       0.0502
+   3      sitôt                          -0.000762       0.0620
+   4      photographie                   -0.000681       0.0660
+   5      achevé                         -0.000649       0.0597
+   6      terminée                       -0.000638       0.0533
+   7      camp                           -0.000534       0.0461
+   8      élève                          -0.000515       0.0478
+   9      durer                          -0.000433       0.0508
+   10     consolation                    -0.000414       0.1362
+   11     quelles                        -0.000409       0.0431
+   12     pires                          -0.000352       0.0567
+   13     couchant                       -0.000324       0.0611
+   14     tenant                         -0.000323       0.0418
+   15     souris                         -0.000319       0.0491
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      eva                            +0.146153       0.7158
+   2      lasse                          +0.035398       0.0544
+   3      berceuse                       +0.035216       0.1066
+   4      ernesto                        +0.033122       0.1882
+   5      verra                          +0.032857       0.0986
+   6      emmener                        +0.031897       0.0457
+   7      oublie                         +0.028763       0.0408
+   8      caresse                        +0.025867       0.0518
+   9      étrangère                      +0.025346       0.0484
+   10     soutien                        +0.025227       0.1157
+   11     protège                        +0.024706       0.0603
+   12     libérée                        +0.023991       0.0773
+   13     roses                          +0.021721       0.0439
+   14     devrais                        +0.020810       0.0449
+   15     seront                         +0.019376       0.0836
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      violetta                       -0.071852       0.1922
+   2      pouce                          -0.038634       0.0502
+   3      sitôt                          -0.030819       0.0620
+   4      achevé                         -0.030581       0.0597
+   5      retrouverons                   -0.029186       0.1933
+   6      consolation                    -0.026390       0.1362
+   7      élève                          -0.020997       0.0478
+   8      terminée                       -0.019376       0.0533
+   9      couchant                       -0.017999       0.0611
+   10     quelles                        -0.016434       0.0431
+   11     camp                           -0.016002       0.0461
+   12     conditions                     -0.015638       0.0464
+   13     lourdes                        -0.015623       0.0497
+   14     pires                          -0.015080       0.0567
+   15     adieu                          -0.014884       0.0487
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+violetta                  +0.000000     +0.000049     +0.000049     0.1922
+sitôt                     +0.000000     +0.000044     +0.000044     0.0620
+terminée                  +0.000000     +0.000042     +0.000042     0.0533
+photographie              +0.000000     +0.000033     +0.000033     0.0660
+égarée                    +0.000427     +0.000025     +0.000025     0.0822
+reçois                    +0.000180     +0.000020     +0.000020     0.0737
+allemagne                 +0.000034     +0.000012     +0.000012     0.0694
+élève                     +0.000000     +0.000010     +0.000010     0.0478
+devons                    +0.000086     +0.000010     +0.000010     0.0517
+fanées                    +0.000000     +0.000009     +0.000009     0.1043
+retrouverons              +0.000000     +0.000009     +0.000009     0.1933
+levant                    +0.000004     +0.000008     +0.000008     0.0433
+tenant                    +0.000000     +0.000007     +0.000007     0.0418
+paris                     +0.000031     +0.000004     +0.000004     0.0401
+seigneur                  +0.000000     +0.000003     +0.000003     0.0507
+soutien                   +0.000371     +0.000002     +0.000002     0.1157
+logit final pour 'femme': 1.1142
+# analyse pour la classe: HOMME
+# logit: -0.8464
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      violetta                       +0.000041       0.1922
+   2      photographie                   +0.000025       0.0660
+   3      chante                         +0.000021       0.1141
+   4      terminée                       +0.000021       0.0533
+   5      sitôt                          +0.000019       0.0620
+   6      allemagne                      +0.000017       0.0694
+   7      coulent                        +0.000010       0.0911
+   8      devons                         +0.000008       0.0517
+   9      seront                         +0.000008       0.0836
+   10     souriants                      +0.000008       0.1030
+   11     seigneur                       +0.000006       0.0507
+   12     retrouverons                   +0.000006       0.1933
+   13     égarée                         +0.000006       0.0822
+   14     paris                          +0.000004       0.0401
+   15     fanées                         +0.000004       0.1043
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lise                           -0.000091       0.2813
+   2      eva                            -0.000060       0.7158
+   3      fus                            -0.000057       0.0686
+   4      ernesto                        -0.000055       0.1882
+   5      pourras                        -0.000038       0.0578
+   6      survivra                       -0.000033       0.1269
+   7      compté                         -0.000030       0.0626
+   8      mourra                         -0.000026       0.0882
+   9      verra                          -0.000026       0.0986
+   10     soutien                        -0.000021       0.1157
+   11     porté                          -0.000021       0.0411
+   12     pardonne                       -0.000020       0.0574
+   13     entendrai                      -0.000019       0.1121
+   14     étrangère                      -0.000019       0.0484
+   15     berceuse                       -0.000017       0.1066
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      violetta                       +0.000041       0.1922
+   2      photographie                   +0.000025       0.0660
+   3      chante                         +0.000021       0.1141
+   4      terminée                       +0.000021       0.0533
+   5      sitôt                          +0.000019       0.0620
+   6      allemagne                      +0.000017       0.0694
+   7      coulent                        +0.000010       0.0911
+   8      devons                         +0.000008       0.0517
+   9      seront                         +0.000008       0.0836
+   10     souriants                      +0.000008       0.1030
+   11     seigneur                       +0.000006       0.0507
+   12     retrouverons                   +0.000006       0.1933
+   13     égarée                         +0.000006       0.0822
+   14     paris                          +0.000004       0.0401
+   15     fanées                         +0.000004       0.1043
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lise                           -0.000091       0.2813
+   2      eva                            -0.000060       0.7158
+   3      fus                            -0.000057       0.0686
+   4      ernesto                        -0.000055       0.1882
+   5      pourras                        -0.000038       0.0578
+   6      survivra                       -0.000033       0.1269
+   7      compté                         -0.000030       0.0626
+   8      mourra                         -0.000026       0.0882
+   9      verra                          -0.000026       0.0986
+   10     soutien                        -0.000021       0.1157
+   11     porté                          -0.000021       0.0411
+   12     pardonne                       -0.000020       0.0574
+   13     entendrai                      -0.000019       0.1121
+   14     étrangère                      -0.000019       0.0484
+   15     berceuse                       -0.000017       0.1066
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      violetta                       +0.001275       0.1922
+   2      pouce                          +0.000707       0.0502
+   3      sitôt                          +0.000579       0.0620
+   4      achevé                         +0.000491       0.0597
+   5      terminée                       +0.000469       0.0533
+   6      photographie                   +0.000439       0.0660
+   7      durer                          +0.000339       0.0508
+   8      quelles                        +0.000336       0.0431
+   9      souris                         +0.000289       0.0491
+   10     camp                           +0.000280       0.0461
+   11     élève                          +0.000277       0.0478
+   12     tenant                         +0.000277       0.0418
+   13     survivra                       +0.000270       0.1269
+   14     lise                           +0.000267       0.2813
+   15     fus                            +0.000257       0.0686
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      eva                            -0.002274       0.7158
+   2      lasse                          -0.000822       0.0544
+   3      ernesto                        -0.000762       0.1882
+   4      verra                          -0.000695       0.0986
+   5      emmener                        -0.000611       0.0457
+   6      berceuse                       -0.000592       0.1066
+   7      oublie                         -0.000532       0.0408
+   8      protège                        -0.000530       0.0603
+   9      caresse                        -0.000503       0.0518
+   10     respirer                       -0.000476       0.0423
+   11     étrangère                      -0.000445       0.0484
+   12     souriants                      -0.000444       0.1030
+   13     seront                         -0.000402       0.0836
+   14     devrais                        -0.000391       0.0449
+   15     roses                          -0.000362       0.0439
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      violetta                       +0.049860       0.1922
+   2      pouce                          +0.028307       0.0502
+   3      sitôt                          +0.023854       0.0620
+   4      achevé                         +0.021428       0.0597
+   5      terminée                       +0.015428       0.0533
+   6      retrouverons                   +0.012933       0.1933
+   7      survivra                       +0.012442       0.1269
+   8      élève                          +0.011842       0.0478
+   9      fus                            +0.011816       0.0686
+   10     quelles                        +0.011597       0.0431
+   11     adieu                          +0.011032       0.0487
+   12     tenant                         +0.010745       0.0418
+   13     consolation                    +0.010482       0.1362
+   14     compté                         +0.010478       0.0626
+   15     durer                          +0.009846       0.0508
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      eva                            -0.078215       0.7158
+   2      lasse                          -0.031608       0.0544
+   3      verra                          -0.026796       0.0986
+   4      emmener                        -0.022207       0.0457
+   5      souriants                      -0.021053       0.1030
+   6      protège                        -0.020199       0.0603
+   7      oublie                         -0.019870       0.0408
+   8      ernesto                        -0.018979       0.1882
+   9      berceuse                       -0.018659       0.1066
+   10     libérée                        -0.016636       0.0773
+   11     seront                         -0.016350       0.0836
+   12     étrangère                      -0.015894       0.0484
+   13     caresse                        -0.015856       0.0518
+   14     souviens                       -0.015234       0.0401
+   15     chante                         -0.015198       0.1141
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+violetta                  +0.001275     +0.000041     +0.000041     0.1922
+photographie              +0.000439     +0.000025     +0.000025     0.0660
+chante                    +0.000000     +0.000021     +0.000021     0.1141
+terminée                  +0.000469     +0.000021     +0.000021     0.0533
+sitôt                     +0.000579     +0.000019     +0.000019     0.0620
+allemagne                 +0.000000     +0.000017     +0.000017     0.0694
+coulent                   +0.000000     +0.000010     +0.000010     0.0911
+devons                    +0.000000     +0.000008     +0.000008     0.0517
+seront                    +0.000000     +0.000008     +0.000008     0.0836
+souriants                 +0.000000     +0.000008     +0.000008     0.1030
+seigneur                  +0.000000     +0.000006     +0.000006     0.0507
+retrouverons              +0.000000     +0.000006     +0.000006     0.1933
+égarée                    +0.000000     +0.000006     +0.000006     0.0822
+paris                     +0.000000     +0.000004     +0.000004     0.0401
+fanées                    +0.000000     +0.000004     +0.000004     0.1043
+protège                   +0.000000     +0.000004     +0.000004     0.0603
+adieu                     +0.000193     +0.000004     +0.000004     0.0487
+prévoir                   +0.000000     +0.000003     +0.000003     0.0568
+camp                      +0.000280     +0.000003     +0.000003     0.0461
+apaisé                    +0.000000     +0.000002     +0.000002     0.0751
+logit final pour 'homme': -0.8464

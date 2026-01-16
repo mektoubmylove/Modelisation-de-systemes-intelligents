@@ -1,0 +1,386 @@
+texte analysé: faire par visiophone son rédacteur en chef , bob girbel . l homme était de ceux qui savaient reconnaître un scoop lorsqu un de ses reporters le lui apportait . mais là , celui de sten ravna dépassait ...
+prédiction: FEMME (confiance: 93.7%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.6100
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tiendras                       +0.000086       0.0908
+   2      fourmilière                    +0.000071       0.0780
+   3      bob                            +0.000059       0.2296
+   4      délégué                        +0.000053       0.0756
+   5      mac                            +0.000047       0.0730
+   6      opposait                       +0.000044       0.0595
+   7      flottait                       +0.000034       0.0430
+   8      partaient                      +0.000029       0.0494
+   9      appareil                       +0.000022       0.0351
+   10     antenne                        +0.000022       0.0698
+   11     reporters                      +0.000021       0.0857
+   12     alluma                         +0.000020       0.0426
+   13     vaisseau                       +0.000019       0.0606
+   14     rapidement                     +0.000018       0.0293
+   15     crever                         +0.000018       0.0417
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sten                           -0.000740       0.6671
+   2      agora                          -0.000264       0.2540
+   3      rés                            -0.000236       0.3008
+   4      mel                            -0.000149       0.1289
+   5      réal                           -0.000095       0.1289
+   6      infos                          -0.000089       0.0819
+   7      réalisant                      -0.000085       0.0725
+   8      divulguer                      -0.000072       0.0868
+   9      branché                        -0.000072       0.0693
+   10     exclama                        -0.000067       0.0450
+   11     organiques                     -0.000065       0.0950
+   12     improvisé                      -0.000064       0.0636
+   13     conseillers                    -0.000060       0.0751
+   14     fragiles                       -0.000052       0.0475
+   15     politicien                     -0.000047       0.0899
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tiendras                       +0.000086       0.0908
+   2      fourmilière                    +0.000071       0.0780
+   3      bob                            +0.000059       0.2296
+   4      délégué                        +0.000053       0.0756
+   5      mac                            +0.000047       0.0730
+   6      opposait                       +0.000044       0.0595
+   7      flottait                       +0.000034       0.0430
+   8      partaient                      +0.000029       0.0494
+   9      appareil                       +0.000022       0.0351
+   10     antenne                        +0.000022       0.0698
+   11     reporters                      +0.000021       0.0857
+   12     alluma                         +0.000020       0.0426
+   13     vaisseau                       +0.000019       0.0606
+   14     rapidement                     +0.000018       0.0293
+   15     crever                         +0.000018       0.0417
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sten                           -0.000740       0.6671
+   2      agora                          -0.000264       0.2540
+   3      rés                            -0.000236       0.3008
+   4      mel                            -0.000149       0.1289
+   5      réal                           -0.000095       0.1289
+   6      infos                          -0.000089       0.0819
+   7      réalisant                      -0.000085       0.0725
+   8      divulguer                      -0.000072       0.0868
+   9      branché                        -0.000072       0.0693
+   10     exclama                        -0.000067       0.0450
+   11     organiques                     -0.000065       0.0950
+   12     improvisé                      -0.000064       0.0636
+   13     conseillers                    -0.000060       0.0751
+   14     fragiles                       -0.000052       0.0475
+   15     politicien                     -0.000047       0.0899
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sten                           +0.012609       0.6671
+   2      rés                            +0.003795       0.3008
+   3      réal                           +0.002037       0.1289
+   4      agora                          +0.002001       0.2540
+   5      exclama                        +0.001907       0.0450
+   6      mel                            +0.001832       0.1289
+   7      com                            +0.001478       0.0810
+   8      ironisa                        +0.001463       0.0688
+   9      infos                          +0.001378       0.0819
+   10     organiques                     +0.000916       0.0950
+   11     conseilla                      +0.000905       0.0569
+   12     réalisant                      +0.000869       0.0725
+   13     fragiles                       +0.000798       0.0475
+   14     scoop                          +0.000765       0.0912
+   15     otage                          +0.000758       0.0689
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bob                            -0.003755       0.2296
+   2      émission                       -0.001034       0.1216
+   3      mac                            -0.000788       0.0730
+   4      délégué                        -0.000674       0.0756
+   5      reporters                      -0.000660       0.0857
+   6      antenne                        -0.000632       0.0698
+   7      station                        -0.000603       0.0420
+   8      fourmilière                    -0.000473       0.0780
+   9      gosse                          -0.000470       0.0450
+   10     appareil                       -0.000467       0.0351
+   11     politicien                     -0.000429       0.0899
+   12     système                        -0.000427       0.0369
+   13     gars                           -0.000422       0.0409
+   14     puits                          -0.000413       0.0439
+   15     équipes                        -0.000401       0.0603
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sten                           +0.338761       0.6671
+   2      rés                            +0.093386       0.3008
+   3      réal                           +0.054383       0.1289
+   4      exclama                        +0.052431       0.0450
+   5      mel                            +0.044963       0.1289
+   6      com                            +0.044205       0.0810
+   7      ironisa                        +0.042012       0.0688
+   8      agora                          +0.032073       0.2540
+   9      organiques                     +0.030590       0.0950
+   10     infos                          +0.029074       0.0819
+   11     hill                           +0.022265       0.1020
+   12     scoop                          +0.021259       0.0912
+   13     terreux                        +0.020992       0.0785
+   14     otage                          +0.020560       0.0689
+   15     conseilla                      +0.019591       0.0569
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bob                            -0.101165       0.2296
+   2      mac                            -0.025875       0.0730
+   3      émission                       -0.019980       0.1216
+   4      station                        -0.019034       0.0420
+   5      gars                           -0.014432       0.0409
+   6      embarque                       -0.013763       0.0643
+   7      gosse                          -0.013714       0.0450
+   8      suspendu                       -0.013233       0.0420
+   9      système                        -0.012438       0.0369
+   10     équipes                        -0.012246       0.0603
+   11     politicien                     -0.012171       0.0899
+   12     reporter                       -0.011735       0.0573
+   13     vêtu                           -0.011548       0.0359
+   14     spéciale                       -0.011524       0.0468
+   15     puits                          -0.011174       0.0439
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+tiendras                  +0.000000     +0.000086     +0.000086     0.0908
+fourmilière               +0.000000     +0.000071     +0.000071     0.0780
+bob                       +0.000000     +0.000059     +0.000059     0.2296
+délégué                   +0.000000     +0.000053     +0.000053     0.0756
+mac                       +0.000000     +0.000047     +0.000047     0.0730
+opposait                  +0.000000     +0.000044     +0.000044     0.0595
+flottait                  +0.000000     +0.000034     +0.000034     0.0430
+partaient                 +0.000125     +0.000029     +0.000029     0.0494
+appareil                  +0.000000     +0.000022     +0.000022     0.0351
+antenne                   +0.000000     +0.000022     +0.000022     0.0698
+reporters                 +0.000000     +0.000021     +0.000021     0.0857
+alluma                    +0.000000     +0.000020     +0.000020     0.0426
+vaisseau                  +0.000000     +0.000019     +0.000019     0.0606
+rapidement                +0.000004     +0.000018     +0.000018     0.0293
+crever                    +0.000000     +0.000018     +0.000018     0.0417
+émission                  +0.000000     +0.000017     +0.000017     0.1216
+film                      +0.000060     +0.000017     +0.000017     0.0402
+raté                      +0.000202     +0.000017     +0.000017     0.0432
+parvenir                  +0.000114     +0.000015     +0.000015     0.0342
+sacré                     +0.000000     +0.000012     +0.000012     0.0337
+logit final pour 'femme': 1.6100
+# analyse pour la classe: HOMME
+# logit: -1.0848
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fourmilière                    +0.000035       0.0780
+   2      délégué                        +0.000033       0.0756
+   3      reporters                      +0.000026       0.0857
+   4      tiendras                       +0.000025       0.0908
+   5      raté                           +0.000018       0.0432
+   6      flottait                       +0.000016       0.0430
+   7      film                           +0.000015       0.0402
+   8      opposait                       +0.000015       0.0595
+   9      alluma                         +0.000014       0.0426
+   10     émission                       +0.000013       0.1216
+   11     sacré                          +0.000012       0.0337
+   12     parvenir                       +0.000011       0.0342
+   13     partaient                      +0.000009       0.0494
+   14     antenne                        +0.000007       0.0698
+   15     jouant                         +0.000006       0.0386
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sten                           -0.000486       0.6671
+   2      agora                          -0.000129       0.2540
+   3      rés                            -0.000107       0.3008
+   4      mel                            -0.000072       0.1289
+   5      réal                           -0.000065       0.1289
+   6      infos                          -0.000037       0.0819
+   7      réalisant                      -0.000036       0.0725
+   8      branché                        -0.000036       0.0693
+   9      exclama                        -0.000030       0.0450
+   10     organiques                     -0.000025       0.0950
+   11     divulguer                      -0.000025       0.0868
+   12     solutions                      -0.000024       0.0536
+   13     filmé                          -0.000024       0.0847
+   14     intervint                      -0.000024       0.0481
+   15     scoop                          -0.000023       0.0912
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fourmilière                    +0.000035       0.0780
+   2      délégué                        +0.000033       0.0756
+   3      reporters                      +0.000026       0.0857
+   4      tiendras                       +0.000025       0.0908
+   5      raté                           +0.000018       0.0432
+   6      flottait                       +0.000016       0.0430
+   7      film                           +0.000015       0.0402
+   8      opposait                       +0.000015       0.0595
+   9      alluma                         +0.000014       0.0426
+   10     émission                       +0.000013       0.1216
+   11     sacré                          +0.000012       0.0337
+   12     parvenir                       +0.000011       0.0342
+   13     partaient                      +0.000009       0.0494
+   14     antenne                        +0.000007       0.0698
+   15     jouant                         +0.000006       0.0386
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sten                           -0.000486       0.6671
+   2      agora                          -0.000129       0.2540
+   3      rés                            -0.000107       0.3008
+   4      mel                            -0.000072       0.1289
+   5      réal                           -0.000065       0.1289
+   6      infos                          -0.000037       0.0819
+   7      réalisant                      -0.000036       0.0725
+   8      branché                        -0.000036       0.0693
+   9      exclama                        -0.000030       0.0450
+   10     organiques                     -0.000025       0.0950
+   11     divulguer                      -0.000025       0.0868
+   12     solutions                      -0.000024       0.0536
+   13     filmé                          -0.000024       0.0847
+   14     intervint                      -0.000024       0.0481
+   15     scoop                          -0.000023       0.0912
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bob                            +0.002413       0.2296
+   2      mac                            +0.000630       0.0730
+   3      émission                       +0.000604       0.1216
+   4      fourmilière                    +0.000389       0.0780
+   5      station                        +0.000381       0.0420
+   6      reporters                      +0.000374       0.0857
+   7      délégué                        +0.000338       0.0756
+   8      équipes                        +0.000328       0.0603
+   9      appareil                       +0.000325       0.0351
+   10     antenne                        +0.000323       0.0698
+   11     susceptibles                   +0.000289       0.0612
+   12     système                        +0.000269       0.0369
+   13     tiendras                       +0.000264       0.0908
+   14     paul                           +0.000259       0.0426
+   15     puits                          +0.000259       0.0439
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sten                           -0.006683       0.6671
+   2      rés                            -0.002718       0.3008
+   3      exclama                        -0.001252       0.0450
+   4      mel                            -0.001236       0.1289
+   5      réal                           -0.001092       0.1289
+   6      infos                          -0.001046       0.0819
+   7      com                            -0.000963       0.0810
+   8      ironisa                        -0.000835       0.0688
+   9      agora                          -0.000757       0.2540
+   10     conseilla                      -0.000677       0.0569
+   11     réalisant                      -0.000650       0.0725
+   12     fragiles                       -0.000564       0.0475
+   13     otage                          -0.000557       0.0689
+   14     organiques                     -0.000487       0.0950
+   15     improvisé                      -0.000450       0.0636
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bob                            +0.061848       0.2296
+   2      mac                            +0.021533       0.0730
+   3      embarque                       +0.011454       0.0643
+   4      station                        +0.011109       0.0420
+   5      paul                           +0.010816       0.0426
+   6      branché                        +0.009326       0.0693
+   7      solutions                      +0.009072       0.0536
+   8      susceptibles                   +0.008778       0.0612
+   9      appareil                       +0.008413       0.0351
+   10     équipes                        +0.008182       0.0603
+   11     vêtu                           +0.007889       0.0359
+   12     puits                          +0.007590       0.0439
+   13     gars                           +0.007423       0.0409
+   14     politicien                     +0.007406       0.0899
+   15     suspendu                       +0.006450       0.0420
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sten                           -0.127373       0.6671
+   2      rés                            -0.072956       0.3008
+   3      exclama                        -0.032397       0.0450
+   4      com                            -0.028132       0.0810
+   5      réal                           -0.027061       0.1289
+   6      mel                            -0.026993       0.1289
+   7      ironisa                        -0.024541       0.0688
+   8      infos                          -0.019957       0.0819
+   9      hill                           -0.017311       0.1020
+   10     organiques                     -0.016019       0.0950
+   11     scoop                          -0.015937       0.0912
+   12     fragiles                       -0.015849       0.0475
+   13     otage                          -0.015418       0.0689
+   14     conseilla                      -0.014431       0.0569
+   15     vues                           -0.012571       0.0401
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+fourmilière               +0.000389     +0.000035     +0.000035     0.0780
+délégué                   +0.000338     +0.000033     +0.000033     0.0756
+reporters                 +0.000374     +0.000026     +0.000026     0.0857
+tiendras                  +0.000264     +0.000025     +0.000025     0.0908
+raté                      +0.000000     +0.000018     +0.000018     0.0432
+flottait                  +0.000088     +0.000016     +0.000016     0.0430
+film                      +0.000000     +0.000015     +0.000015     0.0402
+opposait                  +0.000124     +0.000015     +0.000015     0.0595
+alluma                    +0.000087     +0.000014     +0.000014     0.0426
+émission                  +0.000604     +0.000013     +0.000013     0.1216
+sacré                     +0.000172     +0.000012     +0.000012     0.0337
+parvenir                  +0.000000     +0.000011     +0.000011     0.0342
+partaient                 +0.000000     +0.000009     +0.000009     0.0494
+antenne                   +0.000323     +0.000007     +0.000007     0.0698
+jouant                    +0.000011     +0.000006     +0.000006     0.0386
+vaisseau                  +0.000161     +0.000006     +0.000006     0.0606
+demanda                   +0.000000     +0.000006     +0.000006     0.0314
+rapidement                +0.000006     +0.000006     +0.000006     0.0293
+reporter                  +0.000201     +0.000005     +0.000005     0.0573
+conflit                   +0.000238     +0.000004     +0.000004     0.0516
+logit final pour 'homme': -1.0848

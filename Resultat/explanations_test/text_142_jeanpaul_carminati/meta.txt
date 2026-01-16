@@ -1,0 +1,5 @@
+filename: (CARMINATI)(Jean-Paul)(la concordance des dents)(1)(2001)(1965)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 142
+first_name: jeanpaul
+last_name: carminati
+true_label: homme

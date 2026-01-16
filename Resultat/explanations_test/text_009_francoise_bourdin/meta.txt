@@ -1,0 +1,5 @@
+filename: (BOURDIN)(Françoise)(la promesse de l_océan)(2)(2012)(1952)(2022)(fr)(z)(z)(V)(R)(T).txt
+index: 9
+first_name: francoise
+last_name: bourdin
+true_label: femme

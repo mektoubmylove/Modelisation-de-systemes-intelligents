@@ -1,0 +1,386 @@
+texte analysé: était . elle me traitait comme une princesse , à l époque j appelais ça une très bonne copine . il est possible que j aie parfois manqué de délicatesse . tu m excuseras auprès d elle si c est le cas ....
+prédiction: FEMME (confiance: 92.6%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.4740
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      corinne                        +0.000198       0.6046
+   2      chiant                         +0.000087       0.1560
+   3      caves                          +0.000085       0.1027
+   4      appelais                       +0.000079       0.1023
+   5      achetait                       +0.000055       0.1054
+   6      connues                        +0.000054       0.0901
+   7      mecs                           +0.000053       0.1118
+   8      maurice                        +0.000050       0.1113
+   9      usine                          +0.000042       0.0876
+   10     déployaient                    +0.000040       0.1521
+   11     musiciens                      +0.000033       0.0957
+   12     parlais                        +0.000032       0.0733
+   13     souffrais                      +0.000030       0.1271
+   14     songé                          +0.000023       0.0721
+   15     bref                           +0.000023       0.0510
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      princesse                      -0.000134       0.0770
+   2      aimais                         -0.000100       0.1187
+   3      supporté                       -0.000093       0.0907
+   4      mères                          -0.000083       0.1342
+   5      traitait                       -0.000073       0.0868
+   6      oscar                          -0.000072       0.1515
+   7      manqué                         -0.000068       0.0584
+   8      aie                            -0.000067       0.1089
+   9      manquaient                     -0.000065       0.0817
+   10     nancy                          -0.000063       0.1596
+   11     souviens                       -0.000058       0.0512
+   12     retourne                       -0.000054       0.0559
+   13     appartements                   -0.000051       0.0796
+   14     province                       -0.000050       0.0750
+   15     concerts                       -0.000047       0.1141
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      corinne                        +0.000198       0.6046
+   2      chiant                         +0.000087       0.1560
+   3      caves                          +0.000085       0.1027
+   4      appelais                       +0.000079       0.1023
+   5      achetait                       +0.000055       0.1054
+   6      connues                        +0.000054       0.0901
+   7      mecs                           +0.000053       0.1118
+   8      maurice                        +0.000050       0.1113
+   9      usine                          +0.000042       0.0876
+   10     déployaient                    +0.000040       0.1521
+   11     musiciens                      +0.000033       0.0957
+   12     parlais                        +0.000032       0.0733
+   13     souffrais                      +0.000030       0.1271
+   14     songé                          +0.000023       0.0721
+   15     bref                           +0.000023       0.0510
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      princesse                      -0.000134       0.0770
+   2      aimais                         -0.000100       0.1187
+   3      supporté                       -0.000093       0.0907
+   4      mères                          -0.000083       0.1342
+   5      traitait                       -0.000073       0.0868
+   6      oscar                          -0.000072       0.1515
+   7      manqué                         -0.000068       0.0584
+   8      aie                            -0.000067       0.1089
+   9      manquaient                     -0.000065       0.0817
+   10     nancy                          -0.000063       0.1596
+   11     souviens                       -0.000058       0.0512
+   12     retourne                       -0.000054       0.0559
+   13     appartements                   -0.000051       0.0796
+   14     province                       -0.000050       0.0750
+   15     concerts                       -0.000047       0.1141
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      corinne                        +0.006946       0.6046
+   2      déployaient                    +0.002067       0.1521
+   3      coquettes                      +0.002067       0.1441
+   4      spacieux                       +0.001577       0.1457
+   5      mères                          +0.001541       0.1342
+   6      achetait                       +0.001454       0.1054
+   7      aimais                         +0.001220       0.1187
+   8      chiant                         +0.001168       0.1560
+   9      plaisaient                     +0.001028       0.1197
+   10     prénom                         +0.001000       0.0620
+   11     délicatesse                    +0.000998       0.0738
+   12     pères                          +0.000857       0.0761
+   13     concerts                       +0.000817       0.1141
+   14     récemment                      +0.000761       0.0712
+   15     princesse                      +0.000698       0.0770
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      square                         -0.001394       0.1074
+   2      mecs                           -0.001387       0.1118
+   3      oscar                          -0.001153       0.1515
+   4      quartier                       -0.001031       0.1039
+   5      connues                        -0.001019       0.0901
+   6      vivait                         -0.000933       0.1068
+   7      province                       -0.000851       0.0750
+   8      cage                           -0.000838       0.0631
+   9      con                            -0.000750       0.0875
+   10     gueule                         -0.000674       0.0606
+   11     vivaient                       -0.000558       0.0715
+   12     maurice                        -0.000501       0.1113
+   13     songé                          -0.000490       0.0721
+   14     laid                           -0.000404       0.0842
+   15     bref                           -0.000394       0.0510
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      corinne                        +0.214099       0.6046
+   2      déployaient                    +0.101274       0.1521
+   3      coquettes                      +0.082574       0.1441
+   4      achetait                       +0.065939       0.1054
+   5      mères                          +0.058679       0.1342
+   6      spacieux                       +0.058393       0.1457
+   7      chiant                         +0.046904       0.1560
+   8      plaisaient                     +0.042382       0.1197
+   9      délicatesse                    +0.041261       0.0738
+   10     prénom                         +0.038831       0.0620
+   11     concerts                       +0.034485       0.1141
+   12     pères                          +0.032768       0.0761
+   13     aimais                         +0.028060       0.1187
+   14     princesse                      +0.026027       0.0770
+   15     humour                         +0.025944       0.0798
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      square                         -0.077697       0.1074
+   2      oscar                          -0.058856       0.1515
+   3      mecs                           -0.049823       0.1118
+   4      province                       -0.047353       0.0750
+   5      quartier                       -0.046924       0.1039
+   6      vivait                         -0.040105       0.1068
+   7      connues                        -0.033814       0.0901
+   8      cage                           -0.032796       0.0631
+   9      vivaient                       -0.026288       0.0715
+   10     gueule                         -0.025360       0.0606
+   11     maurice                        -0.025052       0.1113
+   12     laid                           -0.024351       0.0842
+   13     con                            -0.024319       0.0875
+   14     construits                     -0.024016       0.1264
+   15     entrant                        -0.020230       0.0687
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+corinne                   +0.006946     +0.000198     +0.000198     0.6046
+chiant                    +0.001168     +0.000087     +0.000087     0.1560
+caves                     +0.000009     +0.000085     +0.000085     0.1027
+appelais                  +0.000000     +0.000079     +0.000079     0.1023
+achetait                  +0.001454     +0.000055     +0.000055     0.1054
+connues                   +0.000000     +0.000054     +0.000054     0.0901
+mecs                      +0.000000     +0.000053     +0.000053     0.1118
+maurice                   +0.000000     +0.000050     +0.000050     0.1113
+usine                     +0.000472     +0.000042     +0.000042     0.0876
+déployaient               +0.002067     +0.000040     +0.000040     0.1521
+musiciens                 +0.000000     +0.000033     +0.000033     0.0957
+parlais                   +0.000000     +0.000032     +0.000032     0.0733
+souffrais                 +0.000013     +0.000030     +0.000030     0.1271
+songé                     +0.000000     +0.000023     +0.000023     0.0721
+bref                      +0.000000     +0.000023     +0.000023     0.0510
+lycée                     +0.000162     +0.000022     +0.000022     0.0842
+cage                      +0.000000     +0.000022     +0.000022     0.0631
+fout                      +0.000000     +0.000022     +0.000022     0.0900
+quartier                  +0.000000     +0.000019     +0.000019     0.1039
+délicatesse               +0.000998     +0.000013     +0.000013     0.0738
+logit final pour 'femme': 1.4740
+# analyse pour la classe: HOMME
+# logit: -1.0556
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      corinne                        +0.000100       0.6046
+   2      chiant                         +0.000057       0.1560
+   3      appelais                       +0.000043       0.1023
+   4      quartier                       +0.000038       0.1039
+   5      maurice                        +0.000032       0.1113
+   6      mecs                           +0.000031       0.1118
+   7      parlais                        +0.000028       0.0733
+   8      songé                          +0.000027       0.0721
+   9      spacieux                       +0.000025       0.1457
+   10     déployaient                    +0.000022       0.1521
+   11     usine                          +0.000021       0.0876
+   12     caves                          +0.000016       0.1027
+   13     californie                     +0.000015       0.1323
+   14     nostalgie                      +0.000015       0.0751
+   15     copine                         +0.000013       0.1027
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      princesse                      -0.000070       0.0770
+   2      concerts                       -0.000051       0.1141
+   3      manqué                         -0.000043       0.0584
+   4      aimais                         -0.000043       0.1187
+   5      londres                        -0.000036       0.0800
+   6      manquaient                     -0.000032       0.0817
+   7      aie                            -0.000031       0.1089
+   8      misère                         -0.000028       0.0633
+   9      grandi                         -0.000026       0.0717
+   10     intervalle                     -0.000024       0.1019
+   11     prénom                         -0.000024       0.0620
+   12     coquettes                      -0.000021       0.1441
+   13     appartements                   -0.000019       0.0796
+   14     retourne                       -0.000019       0.0559
+   15     laid                           -0.000017       0.0842
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      corinne                        +0.000100       0.6046
+   2      chiant                         +0.000057       0.1560
+   3      appelais                       +0.000043       0.1023
+   4      quartier                       +0.000038       0.1039
+   5      maurice                        +0.000032       0.1113
+   6      mecs                           +0.000031       0.1118
+   7      parlais                        +0.000028       0.0733
+   8      songé                          +0.000027       0.0721
+   9      spacieux                       +0.000025       0.1457
+   10     déployaient                    +0.000022       0.1521
+   11     usine                          +0.000021       0.0876
+   12     caves                          +0.000016       0.1027
+   13     californie                     +0.000015       0.1323
+   14     nostalgie                      +0.000015       0.0751
+   15     copine                         +0.000013       0.1027
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      princesse                      -0.000070       0.0770
+   2      concerts                       -0.000051       0.1141
+   3      manqué                         -0.000043       0.0584
+   4      aimais                         -0.000043       0.1187
+   5      londres                        -0.000036       0.0800
+   6      manquaient                     -0.000032       0.0817
+   7      aie                            -0.000031       0.1089
+   8      misère                         -0.000028       0.0633
+   9      grandi                         -0.000026       0.0717
+   10     intervalle                     -0.000024       0.1019
+   11     prénom                         -0.000024       0.0620
+   12     coquettes                      -0.000021       0.1441
+   13     appartements                   -0.000019       0.0796
+   14     retourne                       -0.000019       0.0559
+   15     laid                           -0.000017       0.0842
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      square                         +0.001013       0.1074
+   2      mecs                           +0.000919       0.1118
+   3      connues                        +0.000863       0.0901
+   4      vivait                         +0.000743       0.1068
+   5      oscar                          +0.000665       0.1515
+   6      con                            +0.000606       0.0875
+   7      quartier                       +0.000590       0.1039
+   8      cage                           +0.000464       0.0631
+   9      songé                          +0.000440       0.0721
+   10     province                       +0.000439       0.0750
+   11     musiciens                      +0.000416       0.0957
+   12     gueule                         +0.000380       0.0606
+   13     construits                     +0.000376       0.1264
+   14     vivaient                       +0.000307       0.0715
+   15     bref                           +0.000300       0.0510
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      corinne                        -0.003482       0.6046
+   2      déployaient                    -0.001438       0.1521
+   3      coquettes                      -0.001249       0.1441
+   4      mères                          -0.001153       0.1342
+   5      spacieux                       -0.001013       0.1457
+   6      achetait                       -0.000825       0.1054
+   7      californie                     -0.000789       0.1323
+   8      prénom                         -0.000754       0.0620
+   9      aimais                         -0.000745       0.1187
+   10     plaisaient                     -0.000712       0.1197
+   11     chiant                         -0.000642       0.1560
+   12     pères                          -0.000565       0.0761
+   13     délicatesse                    -0.000550       0.0738
+   14     récemment                      -0.000513       0.0712
+   15     grandir                        -0.000442       0.0756
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      square                         +0.051200       0.1074
+   2      mecs                           +0.033296       0.1118
+   3      connues                        +0.032819       0.0901
+   4      vivait                         +0.031439       0.1068
+   5      oscar                          +0.030916       0.1515
+   6      musiciens                      +0.024717       0.0957
+   7      province                       +0.024438       0.0750
+   8      quartier                       +0.024174       0.1039
+   9      con                            +0.024140       0.0875
+   10     construits                     +0.022014       0.1264
+   11     cage                           +0.016112       0.0631
+   12     vivaient                       +0.014813       0.0715
+   13     bref                           +0.014403       0.0510
+   14     gueule                         +0.013676       0.0606
+   15     songé                          +0.013635       0.0721
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      corinne                        -0.108710       0.6046
+   2      déployaient                    -0.069437       0.1521
+   3      mères                          -0.050311       0.1342
+   4      coquettes                      -0.046650       0.1441
+   5      spacieux                       -0.041270       0.1457
+   6      achetait                       -0.037810       0.1054
+   7      plaisaient                     -0.031821       0.1197
+   8      prénom                         -0.029622       0.0620
+   9      chiant                         -0.028923       0.1560
+   10     californie                     -0.028532       0.1323
+   11     délicatesse                    -0.025349       0.0738
+   12     pères                          -0.022614       0.0761
+   13     supporté                       -0.022142       0.0907
+   14     aimais                         -0.020589       0.1187
+   15     nancy                          -0.020398       0.1596
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+corinne                   +0.000000     +0.000100     +0.000100     0.6046
+chiant                    +0.000000     +0.000057     +0.000057     0.1560
+appelais                  +0.000017     +0.000043     +0.000043     0.1023
+quartier                  +0.000590     +0.000038     +0.000038     0.1039
+maurice                   +0.000285     +0.000032     +0.000032     0.1113
+mecs                      +0.000919     +0.000031     +0.000031     0.1118
+parlais                   +0.000071     +0.000028     +0.000028     0.0733
+songé                     +0.000440     +0.000027     +0.000027     0.0721
+spacieux                  +0.000000     +0.000025     +0.000025     0.1457
+déployaient               +0.000000     +0.000022     +0.000022     0.1521
+usine                     +0.000000     +0.000021     +0.000021     0.0876
+caves                     +0.000054     +0.000016     +0.000016     0.1027
+californie                +0.000000     +0.000015     +0.000015     0.1323
+nostalgie                 +0.000000     +0.000015     +0.000015     0.0751
+copine                    +0.000000     +0.000013     +0.000013     0.1027
+achetait                  +0.000000     +0.000013     +0.000013     0.1054
+entrant                   +0.000184     +0.000012     +0.000012     0.0687
+grandir                   +0.000000     +0.000012     +0.000012     0.0756
+mienne                    +0.000000     +0.000012     +0.000012     0.0560
+délicatesse               +0.000000     +0.000011     +0.000011     0.0738
+logit final pour 'homme': -1.0556

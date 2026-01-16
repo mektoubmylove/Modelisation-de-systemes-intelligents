@@ -1,0 +1,386 @@
+texte analysé: mouvements brutaux et désordonnés ont réveillé un démon , la vie qui se met à dérailler en elle . il est entendu que vivre c est réduire peu à peu les possibilités mêmes de la vie mais il est bien tôt...
+prédiction: FEMME (confiance: 88.0%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.2144
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      xxe                            +0.000123       0.1748
+   2      modelé                         +0.000078       0.0947
+   3      improvisa                      +0.000073       0.1157
+   4      muté                           +0.000071       0.2097
+   5      dilate                         +0.000068       0.1114
+   6      suspecte                       +0.000062       0.0699
+   7      héréditaire                    +0.000044       0.0928
+   8      imaginaire                     +0.000042       0.0540
+   9      évolution                      +0.000041       0.1295
+   10     désordonnés                    +0.000040       0.0813
+   11     intelligence                   +0.000038       0.0400
+   12     bac                            +0.000037       0.0617
+   13     arbre                          +0.000037       0.1107
+   14     brune                          +0.000034       0.0817
+   15     roulent                        +0.000028       0.0722
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ninon                          -0.000498       0.5702
+   2      esther                         -0.000200       0.2382
+   3      siècle                         -0.000076       0.1482
+   4      adapte                         -0.000070       0.1040
+   5      ancêtres                       -0.000069       0.0550
+   6      restent                        -0.000066       0.0439
+   7      préservée                      -0.000061       0.1011
+   8      brutaux                        -0.000057       0.0950
+   9      sorcellerie                    -0.000053       0.0900
+   10     épousent                       -0.000051       0.1126
+   11     sembla                         -0.000050       0.0451
+   12     installe                       -0.000048       0.0507
+   13     inouïes                        -0.000048       0.0999
+   14     possibilités                   -0.000046       0.0610
+   15     sortilège                      -0.000044       0.0852
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      xxe                            +0.000123       0.1748
+   2      modelé                         +0.000078       0.0947
+   3      improvisa                      +0.000073       0.1157
+   4      muté                           +0.000071       0.2097
+   5      dilate                         +0.000068       0.1114
+   6      suspecte                       +0.000062       0.0699
+   7      héréditaire                    +0.000044       0.0928
+   8      imaginaire                     +0.000042       0.0540
+   9      évolution                      +0.000041       0.1295
+   10     désordonnés                    +0.000040       0.0813
+   11     intelligence                   +0.000038       0.0400
+   12     bac                            +0.000037       0.0617
+   13     arbre                          +0.000037       0.1107
+   14     brune                          +0.000034       0.0817
+   15     roulent                        +0.000028       0.0722
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ninon                          -0.000498       0.5702
+   2      esther                         -0.000200       0.2382
+   3      siècle                         -0.000076       0.1482
+   4      adapte                         -0.000070       0.1040
+   5      ancêtres                       -0.000069       0.0550
+   6      restent                        -0.000066       0.0439
+   7      préservée                      -0.000061       0.1011
+   8      brutaux                        -0.000057       0.0950
+   9      sorcellerie                    -0.000053       0.0900
+   10     épousent                       -0.000051       0.1126
+   11     sembla                         -0.000050       0.0451
+   12     installe                       -0.000048       0.0507
+   13     inouïes                        -0.000048       0.0999
+   14     possibilités                   -0.000046       0.0610
+   15     sortilège                      -0.000044       0.0852
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ninon                          +0.006000       0.5702
+   2      esther                         +0.003034       0.2382
+   3      muté                           +0.001517       0.2097
+   4      familial                       +0.001218       0.0549
+   5      cousine                        +0.001150       0.0573
+   6      préservée                      +0.001029       0.1011
+   7      devienne                       +0.000965       0.0575
+   8      brune                          +0.000918       0.0817
+   9      vendeuse                       +0.000828       0.0767
+   10     remarquable                    +0.000796       0.0535
+   11     théorie                        +0.000747       0.0563
+   12     dilate                         +0.000738       0.1114
+   13     recoin                         +0.000717       0.0706
+   14     bac                            +0.000705       0.0617
+   15     sorcellerie                    +0.000675       0.0900
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      improvisa                      -0.001237       0.1157
+   2      paralysé                       -0.001222       0.0699
+   3      évolution                      -0.001139       0.1295
+   4      xxe                            -0.001026       0.1748
+   5      brutaux                        -0.000851       0.0950
+   6      prosaïque                      -0.000818       0.1177
+   7      lèpre                          -0.000815       0.0967
+   8      frappé                         -0.000750       0.0378
+   9      réveillé                       -0.000744       0.0451
+   10     espèces                        -0.000722       0.0590
+   11     eut                            -0.000698       0.0346
+   12     biologie                       -0.000638       0.1027
+   13     épreuves                       -0.000566       0.0555
+   14     succession                     -0.000530       0.0560
+   15     endurées                       -0.000482       0.1144
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ninon                          +0.173846       0.5702
+   2      esther                         +0.080368       0.2382
+   3      muté                           +0.070622       0.2097
+   4      familial                       +0.053288       0.0549
+   5      brune                          +0.052338       0.0817
+   6      cousine                        +0.045758       0.0573
+   7      bac                            +0.042696       0.0617
+   8      préservée                      +0.041297       0.1011
+   9      devienne                       +0.038332       0.0575
+   10     vendeuse                       +0.036408       0.0767
+   11     dilate                         +0.035151       0.1114
+   12     théorie                        +0.035068       0.0563
+   13     remarquable                    +0.032934       0.0535
+   14     recoin                         +0.027939       0.0706
+   15     marie                          +0.027844       0.0413
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      xxe                            -0.059328       0.1748
+   2      paralysé                       -0.055681       0.0699
+   3      brutaux                        -0.046211       0.0950
+   4      improvisa                      -0.043882       0.1157
+   5      évolution                      -0.043559       0.1295
+   6      prosaïque                      -0.038968       0.1177
+   7      frappé                         -0.038824       0.0378
+   8      réveillé                       -0.035439       0.0451
+   9      lèpre                          -0.033748       0.0967
+   10     eut                            -0.032502       0.0346
+   11     endurées                       -0.032367       0.1144
+   12     espèces                        -0.030562       0.0590
+   13     scrupuleuse                    -0.025989       0.1053
+   14     épreuves                       -0.025674       0.0555
+   15     succession                     -0.025189       0.0560
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+xxe                       +0.000000     +0.000123     +0.000123     0.1748
+modelé                    +0.000323     +0.000078     +0.000078     0.0947
+improvisa                 +0.000000     +0.000073     +0.000073     0.1157
+muté                      +0.001517     +0.000071     +0.000071     0.2097
+dilate                    +0.000738     +0.000068     +0.000068     0.1114
+suspecte                  +0.000000     +0.000062     +0.000062     0.0699
+héréditaire               +0.000000     +0.000044     +0.000044     0.0928
+imaginaire                +0.000000     +0.000042     +0.000042     0.0540
+évolution                 +0.000000     +0.000041     +0.000041     0.1295
+désordonnés               +0.000211     +0.000040     +0.000040     0.0813
+intelligence              +0.000000     +0.000038     +0.000038     0.0400
+bac                       +0.000705     +0.000037     +0.000037     0.0617
+arbre                     +0.000000     +0.000037     +0.000037     0.1107
+brune                     +0.000918     +0.000034     +0.000034     0.0817
+roulent                   +0.000000     +0.000028     +0.000028     0.0722
+brûlée                    +0.000000     +0.000028     +0.000028     0.0610
+organe                    +0.000127     +0.000026     +0.000026     0.0765
+récit                     +0.000000     +0.000025     +0.000025     0.0389
+délavés                   +0.000182     +0.000024     +0.000024     0.1053
+ancêtre                   +0.000000     +0.000023     +0.000023     0.0748
+logit final pour 'femme': 1.2144
+# analyse pour la classe: HOMME
+# logit: -0.7786
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      xxe                            +0.000062       0.1748
+   2      évolution                      +0.000051       0.1295
+   3      dilate                         +0.000050       0.1114
+   4      brune                          +0.000042       0.0817
+   5      désordonnés                    +0.000036       0.0813
+   6      improvisa                      +0.000033       0.1157
+   7      délavés                        +0.000032       0.1053
+   8      imaginaire                     +0.000029       0.0540
+   9      organe                         +0.000020       0.0765
+   10     modelé                         +0.000019       0.0947
+   11     épreuves                       +0.000019       0.0555
+   12     ancêtre                        +0.000018       0.0748
+   13     roulent                        +0.000017       0.0722
+   14     fumeuse                        +0.000016       0.1049
+   15     arbre                          +0.000016       0.1107
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ninon                          -0.000288       0.5702
+   2      esther                         -0.000102       0.2382
+   3      siècle                         -0.000048       0.1482
+   4      épousent                       -0.000047       0.1126
+   5      évolue                         -0.000044       0.0984
+   6      ancêtres                       -0.000043       0.0550
+   7      brutaux                        -0.000042       0.0950
+   8      restent                        -0.000037       0.0439
+   9      sortilège                      -0.000033       0.0852
+   10     recoin                         -0.000029       0.0706
+   11     épanouissent                   -0.000028       0.1206
+   12     inouïes                        -0.000027       0.0999
+   13     libertés                       -0.000027       0.0857
+   14     généalogique                   -0.000027       0.1077
+   15     préservée                      -0.000025       0.1011
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      xxe                            +0.000062       0.1748
+   2      évolution                      +0.000051       0.1295
+   3      dilate                         +0.000050       0.1114
+   4      brune                          +0.000042       0.0817
+   5      désordonnés                    +0.000036       0.0813
+   6      improvisa                      +0.000033       0.1157
+   7      délavés                        +0.000032       0.1053
+   8      imaginaire                     +0.000029       0.0540
+   9      organe                         +0.000020       0.0765
+   10     modelé                         +0.000019       0.0947
+   11     épreuves                       +0.000019       0.0555
+   12     ancêtre                        +0.000018       0.0748
+   13     roulent                        +0.000017       0.0722
+   14     fumeuse                        +0.000016       0.1049
+   15     arbre                          +0.000016       0.1107
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ninon                          -0.000288       0.5702
+   2      esther                         -0.000102       0.2382
+   3      siècle                         -0.000048       0.1482
+   4      épousent                       -0.000047       0.1126
+   5      évolue                         -0.000044       0.0984
+   6      ancêtres                       -0.000043       0.0550
+   7      brutaux                        -0.000042       0.0950
+   8      restent                        -0.000037       0.0439
+   9      sortilège                      -0.000033       0.0852
+   10     recoin                         -0.000029       0.0706
+   11     épanouissent                   -0.000028       0.1206
+   12     inouïes                        -0.000027       0.0999
+   13     libertés                       -0.000027       0.0857
+   14     généalogique                   -0.000027       0.1077
+   15     préservée                      -0.000025       0.1011
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      improvisa                      +0.000963       0.1157
+   2      paralysé                       +0.000878       0.0699
+   3      brutaux                        +0.000668       0.0950
+   4      lèpre                          +0.000634       0.0967
+   5      xxe                            +0.000627       0.1748
+   6      biologie                       +0.000622       0.1027
+   7      évolution                      +0.000621       0.1295
+   8      prosaïque                      +0.000613       0.1177
+   9      frappé                         +0.000541       0.0378
+   10     eut                            +0.000534       0.0346
+   11     espèces                        +0.000532       0.0590
+   12     réveillé                       +0.000448       0.0451
+   13     épreuves                       +0.000420       0.0555
+   14     succession                     +0.000379       0.0560
+   15     suspecte                       +0.000350       0.0699
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ninon                          -0.002948       0.5702
+   2      esther                         -0.002191       0.2382
+   3      familial                       -0.000857       0.0549
+   4      cousine                        -0.000822       0.0573
+   5      muté                           -0.000815       0.2097
+   6      préservée                      -0.000668       0.1011
+   7      devienne                       -0.000665       0.0575
+   8      remarquable                    -0.000631       0.0535
+   9      dilate                         -0.000567       0.1114
+   10     vendeuse                       -0.000559       0.0767
+   11     brune                          -0.000555       0.0817
+   12     marie                          -0.000550       0.0413
+   13     théorie                        -0.000534       0.0563
+   14     inouïes                        -0.000475       0.0999
+   15     naissance                      -0.000450       0.0348
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      paralysé                       +0.040802       0.0699
+   2      xxe                            +0.038145       0.1748
+   3      brutaux                        +0.035553       0.0950
+   4      improvisa                      +0.033389       0.1157
+   5      frappé                         +0.026822       0.0378
+   6      lèpre                          +0.026469       0.0967
+   7      scrupuleuse                    +0.025504       0.1053
+   8      prosaïque                      +0.024604       0.1177
+   9      eut                            +0.023854       0.0346
+   10     évolution                      +0.022994       0.1295
+   11     réveillé                       +0.021760       0.0451
+   12     endurées                       +0.021577       0.1144
+   13     espèces                        +0.021161       0.0590
+   14     succession                     +0.017586       0.0560
+   15     biologie                       +0.017107       0.1027
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      esther                         -0.058845       0.2382
+   2      ninon                          -0.041544       0.5702
+   3      familial                       -0.036826       0.0549
+   4      muté                           -0.033789       0.2097
+   5      brune                          -0.033728       0.0817
+   6      cousine                        -0.030072       0.0573
+   7      préservée                      -0.029212       0.1011
+   8      devienne                       -0.028166       0.0575
+   9      remarquable                    -0.027268       0.0535
+   10     marie                          -0.024616       0.0413
+   11     théorie                        -0.024602       0.0563
+   12     bac                            -0.024575       0.0617
+   13     vendeuse                       -0.022801       0.0767
+   14     dilate                         -0.022155       0.1114
+   15     marchés                        -0.021593       0.0755
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+xxe                       +0.000627     +0.000062     +0.000062     0.1748
+évolution                 +0.000621     +0.000051     +0.000051     0.1295
+dilate                    +0.000000     +0.000050     +0.000050     0.1114
+brune                     +0.000000     +0.000042     +0.000042     0.0817
+désordonnés               +0.000000     +0.000036     +0.000036     0.0813
+improvisa                 +0.000963     +0.000033     +0.000033     0.1157
+délavés                   +0.000000     +0.000032     +0.000032     0.1053
+imaginaire                +0.000258     +0.000029     +0.000029     0.0540
+organe                    +0.000034     +0.000020     +0.000020     0.0765
+modelé                    +0.000000     +0.000019     +0.000019     0.0947
+épreuves                  +0.000420     +0.000019     +0.000019     0.0555
+ancêtre                   +0.000193     +0.000018     +0.000018     0.0748
+roulent                   +0.000129     +0.000017     +0.000017     0.0722
+fumeuse                   +0.000175     +0.000016     +0.000016     0.1049
+arbre                     +0.000200     +0.000016     +0.000016     0.1107
+intelligence              +0.000285     +0.000016     +0.000016     0.0400
+transformations           +0.000267     +0.000016     +0.000016     0.0925
+humeur                    +0.000138     +0.000015     +0.000015     0.0343
+brûlée                    +0.000069     +0.000014     +0.000014     0.0610
+décevante                 +0.000195     +0.000013     +0.000013     0.0991
+logit final pour 'homme': -0.7786

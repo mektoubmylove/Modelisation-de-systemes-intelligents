@@ -1,0 +1,386 @@
+texte analysé: est pas si truquée que cela ! une seconde fois je m approche du piano et je laisse courir mes doigts de fée sur le clavier . j aime bien jouer ; a vot bon coeur , m sieur . bien que n entravant que le...
+prédiction: HOMME (confiance: 72.5%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.5990
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      piano                          +0.000101       0.5335
+   2      exclamation                    +0.000048       0.0707
+   3      pneumatiques                   +0.000048       0.1357
+   4      instrument                     +0.000045       0.1660
+   5      pupitre                        +0.000038       0.0896
+   6      rat                            +0.000035       0.0716
+   7      truqué                         +0.000033       0.1312
+   8      sieur                          +0.000025       0.0874
+   9      glissent                       +0.000023       0.0857
+   10     semblable                      +0.000019       0.0483
+   11     nue                            +0.000018       0.0466
+   12     fonctionner                    +0.000017       0.0763
+   13     room                           +0.000015       0.1170
+   14     hormis                         +0.000014       0.0715
+   15     gabarit                        +0.000014       0.1231
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      partition                      -0.000153       0.2009
+   2      bouclée                        -0.000063       0.0854
+   3      aimés                          -0.000061       0.0734
+   4      socle                          -0.000058       0.0829
+   5      découvre                       -0.000046       0.0506
+   6      verticale                      -0.000046       0.0813
+   7      bigle                          -0.000045       0.1561
+   8      parois                         -0.000044       0.0637
+   9      vot                            -0.000037       0.1135
+   10     engage                         -0.000033       0.0625
+   11     furieusement                   -0.000031       0.0719
+   12     briquet                        -0.000031       0.0760
+   13     acheteur                       -0.000030       0.1081
+   14     blue                           -0.000026       0.1170
+   15     clavier                        -0.000024       0.0767
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      piano                          +0.000101       0.5335
+   2      exclamation                    +0.000048       0.0707
+   3      pneumatiques                   +0.000048       0.1357
+   4      instrument                     +0.000045       0.1660
+   5      pupitre                        +0.000038       0.0896
+   6      rat                            +0.000035       0.0716
+   7      truqué                         +0.000033       0.1312
+   8      sieur                          +0.000025       0.0874
+   9      glissent                       +0.000023       0.0857
+   10     semblable                      +0.000019       0.0483
+   11     nue                            +0.000018       0.0466
+   12     fonctionner                    +0.000017       0.0763
+   13     room                           +0.000015       0.1170
+   14     hormis                         +0.000014       0.0715
+   15     gabarit                        +0.000014       0.1231
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      partition                      -0.000153       0.2009
+   2      bouclée                        -0.000063       0.0854
+   3      aimés                          -0.000061       0.0734
+   4      socle                          -0.000058       0.0829
+   5      découvre                       -0.000046       0.0506
+   6      verticale                      -0.000046       0.0813
+   7      bigle                          -0.000045       0.1561
+   8      parois                         -0.000044       0.0637
+   9      vot                            -0.000037       0.1135
+   10     engage                         -0.000033       0.0625
+   11     furieusement                   -0.000031       0.0719
+   12     briquet                        -0.000031       0.0760
+   13     acheteur                       -0.000030       0.1081
+   14     blue                           -0.000026       0.1170
+   15     clavier                        -0.000024       0.0767
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      piano                          +0.001841       0.5335
+   2      autoritaire                    +0.001356       0.0692
+   3      bouclée                        +0.001103       0.0854
+   4      hormis                         +0.001076       0.0715
+   5      vot                            +0.001041       0.1135
+   6      glissent                       +0.000998       0.0857
+   7      souplesse                      +0.000523       0.0678
+   8      épais                          +0.000484       0.0425
+   9      glisse                         +0.000426       0.1123
+   10     instrument                     +0.000412       0.1660
+   11     recouvertes                    +0.000402       0.0836
+   12     fée                            +0.000379       0.0762
+   13     tapoter                        +0.000334       0.1054
+   14     aimés                          +0.000308       0.0734
+   15     local                          +0.000301       0.0626
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      caoutchouc                     -0.002088       0.1463
+   2      truqué                         -0.001831       0.1312
+   3      pif                            -0.001264       0.1161
+   4      sieur                          -0.001230       0.0874
+   5      living                         -0.000982       0.1305
+   6      mètres                         -0.000953       0.0404
+   7      oblique                        -0.000877       0.0861
+   8      bigle                          -0.000854       0.1561
+   9      poulets                        -0.000810       0.0869
+   10     pneumatiques                   -0.000807       0.1357
+   11     verticale                      -0.000731       0.0813
+   12     centimètres                    -0.000729       0.0559
+   13     partition                      -0.000720       0.2009
+   14     socle                          -0.000693       0.0829
+   15     bascule                        -0.000672       0.0791
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      piano                          +0.067900       0.5335
+   2      autoritaire                    +0.056579       0.0692
+   3      vot                            +0.049646       0.1135
+   4      bouclée                        +0.049532       0.0854
+   5      hormis                         +0.042999       0.0715
+   6      glissent                       +0.040212       0.0857
+   7      tapoter                        +0.024661       0.1054
+   8      glisse                         +0.023300       0.1123
+   9      fée                            +0.022881       0.0762
+   10     épais                          +0.022128       0.0425
+   11     aimés                          +0.018604       0.0734
+   12     réprime                        +0.018318       0.1199
+   13     clavier                        +0.016218       0.0767
+   14     souplesse                      +0.016101       0.0678
+   15     recouvertes                    +0.015380       0.0836
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      caoutchouc                     -0.079120       0.1463
+   2      truqué                         -0.075860       0.1312
+   3      sieur                          -0.068091       0.0874
+   4      pif                            -0.054877       0.1161
+   5      poulets                        -0.043113       0.0869
+   6      pneumatiques                   -0.042419       0.1357
+   7      mètres                         -0.040676       0.0404
+   8      living                         -0.040152       0.1305
+   9      oblique                        -0.038453       0.0861
+   10     centimètres                    -0.034077       0.0559
+   11     diamètre                       -0.030853       0.0994
+   12     room                           -0.029398       0.1170
+   13     verticale                      -0.026786       0.0813
+   14     bascule                        -0.026220       0.0791
+   15     socle                          -0.025699       0.0829
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+piano                     +0.001841     +0.000101     +0.000101     0.5335
+exclamation               +0.000000     +0.000048     +0.000048     0.0707
+pneumatiques              +0.000000     +0.000048     +0.000048     0.1357
+instrument                +0.000412     +0.000045     +0.000045     0.1660
+pupitre                   +0.000073     +0.000038     +0.000038     0.0896
+rat                       +0.000000     +0.000035     +0.000035     0.0716
+truqué                    +0.000000     +0.000033     +0.000033     0.1312
+sieur                     +0.000000     +0.000025     +0.000025     0.0874
+glissent                  +0.000998     +0.000023     +0.000023     0.0857
+semblable                 +0.000000     +0.000019     +0.000019     0.0483
+nue                       +0.000000     +0.000018     +0.000018     0.0466
+fonctionner               +0.000000     +0.000017     +0.000017     0.0763
+room                      +0.000000     +0.000015     +0.000015     0.1170
+hormis                    +0.001076     +0.000014     +0.000014     0.0715
+gabarit                   +0.000000     +0.000014     +0.000014     0.1231
+local                     +0.000301     +0.000013     +0.000013     0.0626
+conserve                  +0.000000     +0.000013     +0.000013     0.0622
+tapis                     +0.000297     +0.000012     +0.000012     0.0818
+terminé                   +0.000000     +0.000011     +0.000011     0.0439
+située                    +0.000000     +0.000011     +0.000011     0.0625
+logit final pour 'femme': -0.5990
+# analyse pour la classe: HOMME  prédite
+# logit: 0.3727
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      piano                          +0.000058       0.5335
+   2      instrument                     +0.000044       0.1660
+   3      exclamation                    +0.000025       0.0707
+   4      tapis                          +0.000021       0.0818
+   5      gabarit                        +0.000017       0.1231
+   6      recouvertes                    +0.000016       0.0836
+   7      hormis                         +0.000016       0.0715
+   8      achète                         +0.000015       0.0612
+   9      glisse                         +0.000014       0.1123
+   10     glissent                       +0.000013       0.0857
+   11     pupitre                        +0.000012       0.0896
+   12     morceau                        +0.000011       0.0809
+   13     soulève                        +0.000011       0.0655
+   14     pneumatiques                   +0.000011       0.1357
+   15     cherchais                      +0.000010       0.0622
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      partition                      -0.000116       0.2009
+   2      bigle                          -0.000050       0.1561
+   3      verticale                      -0.000046       0.0813
+   4      aimés                          -0.000043       0.0734
+   5      briquet                        -0.000043       0.0760
+   6      socle                          -0.000037       0.0829
+   7      réprime                        -0.000034       0.1199
+   8      trappe                         -0.000034       0.0861
+   9      zig                            -0.000032       0.1305
+   10     découvre                       -0.000031       0.0506
+   11     oblique                        -0.000028       0.0861
+   12     bouclée                        -0.000025       0.0854
+   13     in                             -0.000024       0.0591
+   14     piège                          -0.000023       0.0501
+   15     caoutchouc                     -0.000022       0.1463
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      piano                          +0.000058       0.5335
+   2      instrument                     +0.000044       0.1660
+   3      exclamation                    +0.000025       0.0707
+   4      tapis                          +0.000021       0.0818
+   5      gabarit                        +0.000017       0.1231
+   6      recouvertes                    +0.000016       0.0836
+   7      hormis                         +0.000016       0.0715
+   8      achète                         +0.000015       0.0612
+   9      glisse                         +0.000014       0.1123
+   10     glissent                       +0.000013       0.0857
+   11     pupitre                        +0.000012       0.0896
+   12     morceau                        +0.000011       0.0809
+   13     soulève                        +0.000011       0.0655
+   14     pneumatiques                   +0.000011       0.1357
+   15     cherchais                      +0.000010       0.0622
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      partition                      -0.000116       0.2009
+   2      bigle                          -0.000050       0.1561
+   3      verticale                      -0.000046       0.0813
+   4      aimés                          -0.000043       0.0734
+   5      briquet                        -0.000043       0.0760
+   6      socle                          -0.000037       0.0829
+   7      réprime                        -0.000034       0.1199
+   8      trappe                         -0.000034       0.0861
+   9      zig                            -0.000032       0.1305
+   10     découvre                       -0.000031       0.0506
+   11     oblique                        -0.000028       0.0861
+   12     bouclée                        -0.000025       0.0854
+   13     in                             -0.000024       0.0591
+   14     piège                          -0.000023       0.0501
+   15     caoutchouc                     -0.000022       0.1463
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      truqué                         +0.001477       0.1312
+   2      caoutchouc                     +0.001427       0.1463
+   3      sieur                          +0.001086       0.0874
+   4      living                         +0.000944       0.1305
+   5      pif                            +0.000811       0.1161
+   6      oblique                        +0.000691       0.0861
+   7      verticale                      +0.000678       0.0813
+   8      mètres                         +0.000654       0.0404
+   9      bigle                          +0.000618       0.1561
+   10     bascule                        +0.000603       0.0791
+   11     room                           +0.000595       0.1170
+   12     partition                      +0.000566       0.2009
+   13     poulets                        +0.000556       0.0869
+   14     diamètre                       +0.000513       0.0994
+   15     centimètres                    +0.000500       0.0559
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      autoritaire                    -0.001063       0.0692
+   2      glissent                       -0.000890       0.0857
+   3      bouclée                        -0.000889       0.0854
+   4      piano                          -0.000859       0.5335
+   5      vot                            -0.000833       0.1135
+   6      hormis                         -0.000809       0.0715
+   7      glisse                         -0.000436       0.1123
+   8      épais                          -0.000413       0.0425
+   9      souplesse                      -0.000405       0.0678
+   10     achète                         -0.000307       0.0612
+   11     instrument                     -0.000281       0.1660
+   12     tapis                          -0.000267       0.0818
+   13     fée                            -0.000264       0.0762
+   14     tapoter                        -0.000260       0.1054
+   15     clavier                        -0.000257       0.0767
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      truqué                         +0.057457       0.1312
+   2      sieur                          +0.054678       0.0874
+   3      caoutchouc                     +0.048114       0.1463
+   4      living                         +0.033760       0.1305
+   5      pif                            +0.031949       0.1161
+   6      poulets                        +0.027705       0.0869
+   7      mètres                         +0.025609       0.0404
+   8      oblique                        +0.024732       0.0861
+   9      room                           +0.024458       0.1170
+   10     verticale                      +0.021764       0.0813
+   11     pneumatiques                   +0.021329       0.1357
+   12     centimètres                    +0.021306       0.0559
+   13     bascule                        +0.020943       0.0791
+   14     bats                           +0.020510       0.1005
+   15     diamètre                       +0.020457       0.0994
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vot                            -0.046750       0.1135
+   2      autoritaire                    -0.044502       0.0692
+   3      glissent                       -0.037685       0.0857
+   4      bouclée                        -0.036041       0.0854
+   5      hormis                         -0.030189       0.0715
+   6      piano                          -0.022779       0.5335
+   7      glisse                         -0.021389       0.1123
+   8      épais                          -0.018993       0.0425
+   9      réprime                        -0.018802       0.1199
+   10     tapoter                        -0.016633       0.1054
+   11     fée                            -0.016036       0.0762
+   12     souplesse                      -0.014185       0.0678
+   13     clavier                        -0.010932       0.0767
+   14     recouvertes                    -0.010110       0.0836
+   15     partition                      -0.010016       0.2009
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+piano                     +0.000000     +0.000058     +0.000058     0.5335
+instrument                +0.000000     +0.000044     +0.000044     0.1660
+exclamation               +0.000379     +0.000025     +0.000025     0.0707
+tapis                     +0.000000     +0.000021     +0.000021     0.0818
+gabarit                   +0.000173     +0.000017     +0.000017     0.1231
+recouvertes               +0.000000     +0.000016     +0.000016     0.0836
+hormis                    +0.000000     +0.000016     +0.000016     0.0715
+achète                    +0.000000     +0.000015     +0.000015     0.0612
+glisse                    +0.000000     +0.000014     +0.000014     0.1123
+glissent                  +0.000000     +0.000013     +0.000013     0.0857
+pupitre                   +0.000000     +0.000012     +0.000012     0.0896
+morceau                   +0.000129     +0.000011     +0.000011     0.0809
+soulève                   +0.000000     +0.000011     +0.000011     0.0655
+pneumatiques              +0.000455     +0.000011     +0.000011     0.1357
+cherchais                 +0.000001     +0.000010     +0.000010     0.0622
+rat                       +0.000401     +0.000010     +0.000010     0.0716
+local                     +0.000000     +0.000008     +0.000008     0.0626
+remarque                  +0.000000     +0.000008     +0.000008     0.0438
+terminé                   +0.000061     +0.000008     +0.000008     0.0439
+parties                   +0.000000     +0.000007     +0.000007     0.0475
+logit final pour 'homme': 0.3727

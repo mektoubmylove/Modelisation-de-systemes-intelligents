@@ -1,0 +1,387 @@
+texte analysé: à roues , la foule s était précipitée vers lui en hurlant ; des femmes s étaient jetées à ses genoux et avaient baisé le bord de son froc couvert de boue . tout le jour , à travers les murs du palais ...
+prédiction: HOMME (confiance: 84.4%)
+vérité terrain: FEMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  vraie classe
+# logit: -0.9571
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      orateurs                       +0.000091       0.1228
+   2      tolérance                      +0.000055       0.0835
+   3      sacrements                     +0.000047       0.0994
+   4      pape                           +0.000045       0.0689
+   5      raisonnables                   +0.000042       0.0738
+   6      refermai                       +0.000040       0.1121
+   7      anxieusement                   +0.000037       0.0920
+   8      soutenaient                    +0.000037       0.0831
+   9      zèle                           +0.000036       0.0603
+   10     ban                            +0.000033       0.0889
+   11     inoffensif                     +0.000033       0.0772
+   12     fédération                     +0.000031       0.1110
+   13     charles                        +0.000030       0.1069
+   14     diète                          +0.000030       0.2292
+   15     perchés                        +0.000026       0.0948
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      luther                         -0.000169       0.4559
+   2      irrita                         -0.000065       0.0965
+   3      insensées                      -0.000065       0.1035
+   4      empire                         -0.000062       0.1496
+   5      défendez                       -0.000043       0.1044
+   6      constitution                   -0.000043       0.0724
+   7      discutait                      -0.000042       0.0685
+   8      tonneaux                       -0.000040       0.0796
+   9      empereur                       -0.000036       0.1932
+   10     alliance                       -0.000036       0.0526
+   11     conseillers                    -0.000036       0.0892
+   12     persécutions                   -0.000035       0.1009
+   13     insistance                     -0.000034       0.0489
+   14     rebords                        -0.000033       0.1153
+   15     miracles                       -0.000032       0.0638
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      orateurs                       +0.000091       0.1228
+   2      tolérance                      +0.000055       0.0835
+   3      sacrements                     +0.000047       0.0994
+   4      pape                           +0.000045       0.0689
+   5      raisonnables                   +0.000042       0.0738
+   6      refermai                       +0.000040       0.1121
+   7      anxieusement                   +0.000037       0.0920
+   8      soutenaient                    +0.000037       0.0831
+   9      zèle                           +0.000036       0.0603
+   10     ban                            +0.000033       0.0889
+   11     inoffensif                     +0.000033       0.0772
+   12     fédération                     +0.000031       0.1110
+   13     charles                        +0.000030       0.1069
+   14     diète                          +0.000030       0.2292
+   15     perchés                        +0.000026       0.0948
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      luther                         -0.000169       0.4559
+   2      irrita                         -0.000065       0.0965
+   3      insensées                      -0.000065       0.1035
+   4      empire                         -0.000062       0.1496
+   5      défendez                       -0.000043       0.1044
+   6      constitution                   -0.000043       0.0724
+   7      discutait                      -0.000042       0.0685
+   8      tonneaux                       -0.000040       0.0796
+   9      empereur                       -0.000036       0.1932
+   10     alliance                       -0.000036       0.0526
+   11     conseillers                    -0.000036       0.0892
+   12     persécutions                   -0.000035       0.1009
+   13     insistance                     -0.000034       0.0489
+   14     rebords                        -0.000033       0.1153
+   15     miracles                       -0.000032       0.0638
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      dégagés                        +0.000816       0.1134
+   2      tavernes                       +0.000802       0.1009
+   3      martyr                         +0.000722       0.0829
+   4      discutait                      +0.000708       0.0685
+   5      tolérance                      +0.000672       0.0835
+   6      portais                        +0.000601       0.0645
+   7      persécutions                   +0.000562       0.1009
+   8      carnaval                       +0.000537       0.0792
+   9      insensées                      +0.000490       0.1035
+   10     retournai                      +0.000479       0.0863
+   11     refusant                       +0.000473       0.0579
+   12     empereur                       +0.000421       0.1932
+   13     miracles                       +0.000421       0.0638
+   14     oeuvres                        +0.000398       0.0489
+   15     alliance                       +0.000331       0.0526
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      luther                         -0.003942       0.4559
+   2      empire                         -0.002156       0.1496
+   3      hérétique                      -0.001665       0.1146
+   4      orateurs                       -0.001304       0.1228
+   5      fanfares                       -0.001233       0.1195
+   6      anxieusement                   -0.001123       0.0920
+   7      clameurs                       -0.001114       0.0761
+   8      morel                          -0.001065       0.1306
+   9      estimaient                     -0.001049       0.0951
+   10     ban                            -0.000971       0.0889
+   11     insipides                      -0.000779       0.1058
+   12     convoqué                       -0.000767       0.0696
+   13     soutenaient                    -0.000747       0.0831
+   14     inoffensif                     -0.000722       0.0772
+   15     signifiaient                   -0.000715       0.0923
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      dégagés                        +0.037351       0.1134
+   2      tavernes                       +0.034590       0.1009
+   3      martyr                         +0.034537       0.0829
+   4      discutait                      +0.032549       0.0685
+   5      carnaval                       +0.028240       0.0792
+   6      refusant                       +0.024599       0.0579
+   7      etait                          +0.024230       0.0914
+   8      retournai                      +0.023907       0.0863
+   9      portais                        +0.023857       0.0645
+   10     miracles                       +0.023827       0.0638
+   11     persécutions                   +0.021565       0.1009
+   12     insensées                      +0.021460       0.1035
+   13     tolérance                      +0.020484       0.0835
+   14     oeuvres                        +0.018907       0.0489
+   15     allions                        +0.017197       0.0530
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      luther                         -0.159553       0.4559
+   2      empire                         -0.080351       0.1496
+   3      hérétique                      -0.065854       0.1146
+   4      fanfares                       -0.055489       0.1195
+   5      orateurs                       -0.054433       0.1228
+   6      anxieusement                   -0.050694       0.0920
+   7      morel                          -0.043842       0.1306
+   8      clameurs                       -0.042656       0.0761
+   9      estimaient                     -0.040995       0.0951
+   10     soutenaient                    -0.040283       0.0831
+   11     insipides                      -0.038070       0.1058
+   12     ban                            -0.036643       0.0889
+   13     fédération                     -0.034762       0.1110
+   14     pape                           -0.032915       0.0689
+   15     signifiaient                   -0.029439       0.0923
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+orateurs                  +0.000000     +0.000091     +0.000091     0.1228
+tolérance                 +0.000672     +0.000055     +0.000055     0.0835
+sacrements                +0.000216     +0.000047     +0.000047     0.0994
+pape                      +0.000000     +0.000045     +0.000045     0.0689
+raisonnables              +0.000000     +0.000042     +0.000042     0.0738
+refermai                  +0.000000     +0.000040     +0.000040     0.1121
+anxieusement              +0.000000     +0.000037     +0.000037     0.0920
+soutenaient               +0.000000     +0.000037     +0.000037     0.0831
+zèle                      +0.000000     +0.000036     +0.000036     0.0603
+ban                       +0.000000     +0.000033     +0.000033     0.0889
+inoffensif                +0.000000     +0.000033     +0.000033     0.0772
+fédération                +0.000000     +0.000031     +0.000031     0.1110
+charles                   +0.000000     +0.000030     +0.000030     0.1069
+diète                     +0.000000     +0.000030     +0.000030     0.2292
+perchés                   +0.000206     +0.000026     +0.000026     0.0948
+indifférence              +0.000035     +0.000023     +0.000023     0.0409
+roues                     +0.000000     +0.000022     +0.000022     0.0467
+fiévreusement             +0.000191     +0.000022     +0.000022     0.0800
+demeurera                 +0.000321     +0.000021     +0.000021     0.1063
+froc                      +0.000000     +0.000021     +0.000021     0.1039
+logit final pour 'femme': -0.9571
+# analyse pour la classe: HOMME  prédite
+# logit: 0.7282
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      orateurs                       +0.000055       0.1228
+   2      refermai                       +0.000041       0.1121
+   3      perchés                        +0.000040       0.0948
+   4      morel                          +0.000031       0.1306
+   5      insipides                      +0.000028       0.1058
+   6      raisonnables                   +0.000026       0.0738
+   7      ban                            +0.000024       0.0889
+   8      pape                           +0.000023       0.0689
+   9      carnaval                       +0.000020       0.0792
+   10     tolérance                      +0.000019       0.0835
+   11     charles                        +0.000019       0.1069
+   12     soutenaient                    +0.000018       0.0831
+   13     discussions                    +0.000015       0.0547
+   14     estimaient                     +0.000015       0.0951
+   15     inoffensif                     +0.000014       0.0772
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      luther                         -0.000123       0.4559
+   2      empire                         -0.000071       0.1496
+   3      insensées                      -0.000049       0.1035
+   4      empereur                       -0.000049       0.1932
+   5      partisans                      -0.000047       0.0765
+   6      tonneaux                       -0.000044       0.0796
+   7      diète                          -0.000039       0.2292
+   8      palais                         -0.000034       0.0799
+   9      parcouraient                   -0.000031       0.0847
+   10     rebords                        -0.000029       0.1153
+   11     conseillers                    -0.000029       0.0892
+   12     baisé                          -0.000028       0.0873
+   13     irrita                         -0.000028       0.0965
+   14     chantaient                     -0.000026       0.1293
+   15     insistance                     -0.000024       0.0489
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      orateurs                       +0.000055       0.1228
+   2      refermai                       +0.000041       0.1121
+   3      perchés                        +0.000040       0.0948
+   4      morel                          +0.000031       0.1306
+   5      insipides                      +0.000028       0.1058
+   6      raisonnables                   +0.000026       0.0738
+   7      ban                            +0.000024       0.0889
+   8      pape                           +0.000023       0.0689
+   9      carnaval                       +0.000020       0.0792
+   10     tolérance                      +0.000019       0.0835
+   11     charles                        +0.000019       0.1069
+   12     soutenaient                    +0.000018       0.0831
+   13     discussions                    +0.000015       0.0547
+   14     estimaient                     +0.000015       0.0951
+   15     inoffensif                     +0.000014       0.0772
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      luther                         -0.000123       0.4559
+   2      empire                         -0.000071       0.1496
+   3      insensées                      -0.000049       0.1035
+   4      empereur                       -0.000049       0.1932
+   5      partisans                      -0.000047       0.0765
+   6      tonneaux                       -0.000044       0.0796
+   7      diète                          -0.000039       0.2292
+   8      palais                         -0.000034       0.0799
+   9      parcouraient                   -0.000031       0.0847
+   10     rebords                        -0.000029       0.1153
+   11     conseillers                    -0.000029       0.0892
+   12     baisé                          -0.000028       0.0873
+   13     irrita                         -0.000028       0.0965
+   14     chantaient                     -0.000026       0.1293
+   15     insistance                     -0.000024       0.0489
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      luther                         +0.002229       0.4559
+   2      empire                         +0.001963       0.1496
+   3      orateurs                       +0.001199       0.1228
+   4      anxieusement                   +0.001138       0.0920
+   5      estimaient                     +0.001105       0.0951
+   6      clameurs                       +0.001075       0.0761
+   7      morel                          +0.001042       0.1306
+   8      hérétique                      +0.001020       0.1146
+   9      ban                            +0.000987       0.0889
+   10     insipides                      +0.000970       0.1058
+   11     signifiaient                   +0.000849       0.0923
+   12     fanfares                       +0.000786       0.1195
+   13     soutenaient                    +0.000779       0.0831
+   14     inoffensif                     +0.000778       0.0772
+   15     exaltés                        +0.000725       0.1005
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      empereur                       -0.000905       0.1932
+   2      discutait                      -0.000758       0.0685
+   3      dégagés                        -0.000726       0.1134
+   4      tavernes                       -0.000636       0.1009
+   5      tolérance                      -0.000505       0.0835
+   6      refusant                       -0.000479       0.0579
+   7      martyr                         -0.000474       0.0829
+   8      portais                        -0.000421       0.0645
+   9      persécutions                   -0.000416       0.1009
+   10     carnaval                       -0.000380       0.0792
+   11     miracles                       -0.000353       0.0638
+   12     oeuvres                        -0.000302       0.0489
+   13     demeurera                      -0.000298       0.1063
+   14     retournai                      -0.000289       0.0863
+   15     jetées                         -0.000275       0.0729
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      luther                         +0.078995       0.4559
+   2      empire                         +0.070207       0.1496
+   3      morel                          +0.051248       0.1306
+   4      orateurs                       +0.044709       0.1228
+   5      estimaient                     +0.040986       0.0951
+   6      insipides                      +0.039392       0.1058
+   7      clameurs                       +0.039192       0.0761
+   8      fanfares                       +0.036681       0.1195
+   9      anxieusement                   +0.034354       0.0920
+   10     hérétique                      +0.033245       0.1146
+   11     soutenaient                    +0.032290       0.0831
+   12     ban                            +0.029860       0.0889
+   13     froc                           +0.029615       0.1039
+   14     inoffensif                     +0.027885       0.0772
+   15     signifiaient                   +0.026567       0.0923
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      discutait                      -0.030992       0.0685
+   2      tavernes                       -0.028325       0.1009
+   3      refusant                       -0.022188       0.0579
+   4      dégagés                        -0.020552       0.1134
+   5      martyr                         -0.019653       0.0829
+   6      persécutions                   -0.017721       0.1009
+   7      miracles                       -0.016530       0.0638
+   8      etait                          -0.016145       0.0914
+   9      carnaval                       -0.015938       0.0792
+   10     portais                        -0.015427       0.0645
+   11     tolérance                      -0.015003       0.0835
+   12     jetées                         -0.013828       0.0729
+   13     allions                        -0.013638       0.0530
+   14     troublait                      -0.013205       0.0656
+   15     diète                          -0.013142       0.2292
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+orateurs                  +0.001199     +0.000055     +0.000055     0.1228
+refermai                  +0.000023     +0.000041     +0.000041     0.1121
+perchés                   +0.000122     +0.000040     +0.000040     0.0948
+morel                     +0.001042     +0.000031     +0.000031     0.1306
+insipides                 +0.000970     +0.000028     +0.000028     0.1058
+raisonnables              +0.000243     +0.000026     +0.000026     0.0738
+ban                       +0.000987     +0.000024     +0.000024     0.0889
+pape                      +0.000493     +0.000023     +0.000023     0.0689
+carnaval                  +0.000000     +0.000020     +0.000020     0.0792
+tolérance                 +0.000000     +0.000019     +0.000019     0.0835
+charles                   +0.000250     +0.000019     +0.000019     0.1069
+soutenaient               +0.000779     +0.000018     +0.000018     0.0831
+discussions               +0.000000     +0.000015     +0.000015     0.0547
+estimaient                +0.001105     +0.000015     +0.000015     0.0951
+inoffensif                +0.000778     +0.000014     +0.000014     0.0772
+retournai                 +0.000000     +0.000014     +0.000014     0.0863
+portais                   +0.000000     +0.000011     +0.000011     0.0645
+convoquer                 +0.000391     +0.000011     +0.000011     0.0796
+précieux                  +0.000000     +0.000010     +0.000010     0.0384
+exaltés                   +0.000725     +0.000009     +0.000009     0.1005
+logit final pour 'homme': 0.7282

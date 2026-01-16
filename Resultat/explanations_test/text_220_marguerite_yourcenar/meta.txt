@@ -1,0 +1,5 @@
+filename: (YOURCENAR)(Marguerite)(alexis ou le traité du vain combat)(2)(1971)(1903)(1987)(fr)(z)(z)(V)(R)(T).txt
+index: 220
+first_name: marguerite
+last_name: yourcenar
+true_label: femme

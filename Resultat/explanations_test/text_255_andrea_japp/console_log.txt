@@ -1,0 +1,386 @@
+texte analysé: mobile est en complet désaccord avec la typologie classique des tueurs en série , même si certains tentent de faire croire , ou croient , le contraire . un tueur en série tue pour lui , parce que ça l...
+prédiction: FEMME (confiance: 74.0%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.5857
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gary                           +0.000306       0.2745
+   2      subjective                     +0.000188       0.1426
+   3      justifiait                     +0.000152       0.1726
+   4      parvenez                       +0.000129       0.1280
+   5      conclusion                     +0.000121       0.1094
+   6      nathan                         +0.000070       0.1489
+   7      hunter                         +0.000070       0.1606
+   8      mike                           +0.000061       0.1437
+   9      habillé                        +0.000055       0.0528
+   10     crucial                        +0.000044       0.1011
+   11     recours                        +0.000042       0.0630
+   12     présentant                     +0.000033       0.0691
+   13     sélectionne                    +0.000032       0.1280
+   14     insisté                        +0.000022       0.0545
+   15     outils                         +0.000022       0.0583
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      diane                          -0.000209       0.2036
+   2      série                          -0.000134       0.1752
+   3      confrontés                     -0.000120       0.1149
+   4      silver                         -0.000113       0.1606
+   5      tueur                          -0.000109       0.2383
+   6      pourris                        -0.000076       0.0863
+   7      incohérence                    -0.000055       0.1091
+   8      classiques                     -0.000049       0.0771
+   9      copains                        -0.000046       0.0616
+   10     victimes                       -0.000045       0.1002
+   11     meurtres                       -0.000044       0.0808
+   12     partons                        -0.000044       0.0641
+   13     acheter                        -0.000043       0.0382
+   14     fortuné                        -0.000037       0.1154
+   15     prénom                         -0.000037       0.0463
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gary                           +0.000306       0.2745
+   2      subjective                     +0.000188       0.1426
+   3      justifiait                     +0.000152       0.1726
+   4      parvenez                       +0.000129       0.1280
+   5      conclusion                     +0.000121       0.1094
+   6      nathan                         +0.000070       0.1489
+   7      hunter                         +0.000070       0.1606
+   8      mike                           +0.000061       0.1437
+   9      habillé                        +0.000055       0.0528
+   10     crucial                        +0.000044       0.1011
+   11     recours                        +0.000042       0.0630
+   12     présentant                     +0.000033       0.0691
+   13     sélectionne                    +0.000032       0.1280
+   14     insisté                        +0.000022       0.0545
+   15     outils                         +0.000022       0.0583
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      diane                          -0.000209       0.2036
+   2      série                          -0.000134       0.1752
+   3      confrontés                     -0.000120       0.1149
+   4      silver                         -0.000113       0.1606
+   5      tueur                          -0.000109       0.2383
+   6      pourris                        -0.000076       0.0863
+   7      incohérence                    -0.000055       0.1091
+   8      classiques                     -0.000049       0.0771
+   9      copains                        -0.000046       0.0616
+   10     victimes                       -0.000045       0.1002
+   11     meurtres                       -0.000044       0.0808
+   12     partons                        -0.000044       0.0641
+   13     acheter                        -0.000043       0.0382
+   14     fortuné                        -0.000037       0.1154
+   15     prénom                         -0.000037       0.0463
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tueur                          +0.003373       0.2383
+   2      diane                          +0.003229       0.2036
+   3      meurtres                       +0.002275       0.0808
+   4      viols                          +0.001872       0.1185
+   5      hunter                         +0.001747       0.1606
+   6      sélectionne                    +0.001431       0.1280
+   7      critères                       +0.001315       0.0943
+   8      silver                         +0.001183       0.1606
+   9      familiarité                    +0.001054       0.0724
+   10     partons                        +0.000956       0.0641
+   11     étonna                         +0.000933       0.0575
+   12     classiques                     +0.000914       0.0771
+   13     appartenance                   +0.000879       0.0935
+   14     prénom                         +0.000843       0.0463
+   15     choisies                       +0.000751       0.0940
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      armstrong                      -0.004144       0.4210
+   2      justifiait                     -0.002317       0.1726
+   3      nathan                         -0.001746       0.1489
+   4      pourris                        -0.001506       0.0863
+   5      mike                           -0.001413       0.1437
+   6      subjective                     -0.001247       0.1426
+   7      moyens                         -0.001162       0.0772
+   8      parvenez                       -0.001055       0.1280
+   9      fameux                         -0.001054       0.0456
+   10     fortuné                        -0.001048       0.1154
+   11     visiteur                       -0.001014       0.0612
+   12     financiers                     -0.000976       0.0863
+   13     assuré                         -0.000911       0.0460
+   14     surcroît                       -0.000891       0.0667
+   15     mobile                         -0.000847       0.0632
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      diane                          +0.187383       0.2036
+   2      tueur                          +0.182697       0.2383
+   3      meurtres                       +0.135034       0.0808
+   4      hunter                         +0.103933       0.1606
+   5      viols                          +0.103657       0.1185
+   6      silver                         +0.082004       0.1606
+   7      critères                       +0.069286       0.0943
+   8      sélectionne                    +0.065511       0.1280
+   9      familiarité                    +0.060245       0.0724
+   10     classiques                     +0.059808       0.0771
+   11     partons                        +0.051769       0.0641
+   12     étonna                         +0.048807       0.0575
+   13     prénom                         +0.047341       0.0463
+   14     appartenance                   +0.044484       0.0935
+   15     stanley                        +0.042376       0.1414
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      armstrong                      -0.213614       0.4210
+   2      justifiait                     -0.136602       0.1726
+   3      nathan                         -0.084892       0.1489
+   4      pourris                        -0.082961       0.0863
+   5      mike                           -0.078748       0.1437
+   6      subjective                     -0.068709       0.1426
+   7      parvenez                       -0.066319       0.1280
+   8      visiteur                       -0.062720       0.0612
+   9      moyens                         -0.062215       0.0772
+   10     fameux                         -0.056567       0.0456
+   11     financiers                     -0.055565       0.0863
+   12     fortuné                        -0.053310       0.1154
+   13     assuré                         -0.052145       0.0460
+   14     convaincu                      -0.046542       0.0493
+   15     mobile                         -0.045151       0.0632
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+gary                      +0.000000     +0.000306     +0.000306     0.2745
+subjective                +0.000000     +0.000188     +0.000188     0.1426
+justifiait                +0.000000     +0.000152     +0.000152     0.1726
+parvenez                  +0.000000     +0.000129     +0.000129     0.1280
+conclusion                +0.000232     +0.000121     +0.000121     0.1094
+nathan                    +0.000000     +0.000070     +0.000070     0.1489
+hunter                    +0.001747     +0.000070     +0.000070     0.1606
+mike                      +0.000000     +0.000061     +0.000061     0.1437
+habillé                   +0.000000     +0.000055     +0.000055     0.0528
+crucial                   +0.000583     +0.000044     +0.000044     0.1011
+recours                   +0.000000     +0.000042     +0.000042     0.0630
+présentant                +0.000000     +0.000033     +0.000033     0.0691
+sélectionne               +0.001431     +0.000032     +0.000032     0.1280
+insisté                   +0.000225     +0.000022     +0.000022     0.0545
+outils                    +0.000000     +0.000022     +0.000022     0.0583
+moyens                    +0.000000     +0.000019     +0.000019     0.0772
+convaincu                 +0.000000     +0.000019     +0.000019     0.0493
+épouvantable              +0.000000     +0.000019     +0.000019     0.0610
+habituel                  +0.000000     +0.000019     +0.000019     0.0541
+portier                   +0.000000     +0.000018     +0.000018     0.0863
+logit final pour 'femme': 0.5857
+# analyse pour la classe: HOMME
+# logit: -0.4605
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gary                           +0.000175       0.2745
+   2      subjective                     +0.000095       0.1426
+   3      justifiait                     +0.000087       0.1726
+   4      parvenez                       +0.000080       0.1280
+   5      armstrong                      +0.000067       0.4210
+   6      conclusion                     +0.000051       0.1094
+   7      mike                           +0.000046       0.1437
+   8      crucial                        +0.000041       0.1011
+   9      recours                        +0.000030       0.0630
+   10     habillé                        +0.000026       0.0528
+   11     insisté                        +0.000015       0.0545
+   12     angoissant                     +0.000014       0.0999
+   13     moyens                         +0.000014       0.0772
+   14     tentent                        +0.000013       0.0873
+   15     guère                          +0.000012       0.0392
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      série                          -0.000094       0.1752
+   2      silver                         -0.000093       0.1606
+   3      diane                          -0.000079       0.2036
+   4      classiques                     -0.000053       0.0771
+   5      confrontés                     -0.000049       0.1149
+   6      meurtres                       -0.000045       0.0808
+   7      fortuné                        -0.000042       0.1154
+   8      stanley                        -0.000038       0.1414
+   9      intellectuels                  -0.000038       0.0888
+   10     principe                       -0.000031       0.0493
+   11     prénom                         -0.000030       0.0463
+   12     copains                        -0.000029       0.0616
+   13     appartenance                   -0.000026       0.0935
+   14     incohérence                    -0.000024       0.1091
+   15     acheter                        -0.000022       0.0382
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gary                           +0.000175       0.2745
+   2      subjective                     +0.000095       0.1426
+   3      justifiait                     +0.000087       0.1726
+   4      parvenez                       +0.000080       0.1280
+   5      armstrong                      +0.000067       0.4210
+   6      conclusion                     +0.000051       0.1094
+   7      mike                           +0.000046       0.1437
+   8      crucial                        +0.000041       0.1011
+   9      recours                        +0.000030       0.0630
+   10     habillé                        +0.000026       0.0528
+   11     insisté                        +0.000015       0.0545
+   12     angoissant                     +0.000014       0.0999
+   13     moyens                         +0.000014       0.0772
+   14     tentent                        +0.000013       0.0873
+   15     guère                          +0.000012       0.0392
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      série                          -0.000094       0.1752
+   2      silver                         -0.000093       0.1606
+   3      diane                          -0.000079       0.2036
+   4      classiques                     -0.000053       0.0771
+   5      confrontés                     -0.000049       0.1149
+   6      meurtres                       -0.000045       0.0808
+   7      fortuné                        -0.000042       0.1154
+   8      stanley                        -0.000038       0.1414
+   9      intellectuels                  -0.000038       0.0888
+   10     principe                       -0.000031       0.0493
+   11     prénom                         -0.000030       0.0463
+   12     copains                        -0.000029       0.0616
+   13     appartenance                   -0.000026       0.0935
+   14     incohérence                    -0.000024       0.1091
+   15     acheter                        -0.000022       0.0382
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      armstrong                      +0.002504       0.4210
+   2      justifiait                     +0.001905       0.1726
+   3      mike                           +0.001166       0.1437
+   4      pourris                        +0.001038       0.0863
+   5      subjective                     +0.000976       0.1426
+   6      fortuné                        +0.000942       0.1154
+   7      nathan                         +0.000931       0.1489
+   8      moyens                         +0.000836       0.0772
+   9      visiteur                       +0.000815       0.0612
+   10     série                          +0.000788       0.1752
+   11     parvenez                       +0.000736       0.1280
+   12     portier                        +0.000660       0.0863
+   13     assuré                         +0.000649       0.0460
+   14     fameux                         +0.000596       0.0456
+   15     surcroît                       +0.000595       0.0667
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      diane                          -0.002309       0.2036
+   2      tueur                          -0.001934       0.2383
+   3      meurtres                       -0.001608       0.0808
+   4      hunter                         -0.001203       0.1606
+   5      viols                          -0.001113       0.1185
+   6      sélectionne                    -0.000853       0.1280
+   7      critères                       -0.000823       0.0943
+   8      classiques                     -0.000696       0.0771
+   9      partons                        -0.000694       0.0641
+   10     familiarité                    -0.000692       0.0724
+   11     prénom                         -0.000638       0.0463
+   12     étonna                         -0.000621       0.0575
+   13     silver                         -0.000615       0.1606
+   14     appartenance                   -0.000549       0.0935
+   15     victimes                       -0.000524       0.1002
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      armstrong                      +0.144572       0.4210
+   2      justifiait                     +0.113733       0.1726
+   3      mike                           +0.072651       0.1437
+   4      pourris                        +0.061483       0.0863
+   5      subjective                     +0.052527       0.1426
+   6      fortuné                        +0.050924       0.1154
+   7      visiteur                       +0.050497       0.0612
+   8      nathan                         +0.050338       0.1489
+   9      parvenez                       +0.047408       0.1280
+   10     moyens                         +0.045739       0.0772
+   11     portier                        +0.039205       0.0863
+   12     assuré                         +0.036852       0.0460
+   13     fameux                         +0.034467       0.0456
+   14     convaincu                      +0.030147       0.0493
+   15     financiers                     +0.029000       0.0863
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      diane                          -0.130561       0.2036
+   2      tueur                          -0.113158       0.2383
+   3      meurtres                       -0.098090       0.0808
+   4      hunter                         -0.063393       0.1606
+   5      viols                          -0.061817       0.1185
+   6      sélectionne                    -0.047380       0.1280
+   7      critères                       -0.047375       0.0943
+   8      classiques                     -0.044997       0.0771
+   9      familiarité                    -0.041689       0.0724
+   10     silver                         -0.038609       0.1606
+   11     partons                        -0.037436       0.0641
+   12     prénom                         -0.037058       0.0463
+   13     étonna                         -0.036075       0.0575
+   14     stanley                        -0.031791       0.1414
+   15     appartenance                   -0.029885       0.0935
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+gary                      +0.000107     +0.000175     +0.000175     0.2745
+subjective                +0.000976     +0.000095     +0.000095     0.1426
+justifiait                +0.001905     +0.000087     +0.000087     0.1726
+parvenez                  +0.000736     +0.000080     +0.000080     0.1280
+armstrong                 +0.002504     +0.000067     +0.000067     0.4210
+conclusion                +0.000000     +0.000051     +0.000051     0.1094
+mike                      +0.001166     +0.000046     +0.000046     0.1437
+crucial                   +0.000000     +0.000041     +0.000041     0.1011
+recours                   +0.000334     +0.000030     +0.000030     0.0630
+habillé                   +0.000371     +0.000026     +0.000026     0.0528
+insisté                   +0.000000     +0.000015     +0.000015     0.0545
+angoissant                +0.000515     +0.000014     +0.000014     0.0999
+moyens                    +0.000836     +0.000014     +0.000014     0.0772
+tentent                   +0.000000     +0.000013     +0.000013     0.0873
+guère                     +0.000169     +0.000012     +0.000012     0.0392
+sélectionne               +0.000000     +0.000012     +0.000012     0.1280
+présentant                +0.000131     +0.000011     +0.000011     0.0691
+nathan                    +0.000931     +0.000011     +0.000011     0.1489
+convaincu                 +0.000509     +0.000011     +0.000011     0.0493
+habituel                  +0.000202     +0.000010     +0.000010     0.0541
+logit final pour 'homme': -0.4605

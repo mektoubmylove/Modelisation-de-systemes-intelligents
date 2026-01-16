@@ -1,0 +1,386 @@
+texte analysé: , à l aéroport . j étais hagarde de souffrance . ce n était pas la première fois de ma vie que c était l apocalypse . mais il n y avait pour de tels arrachements aucun mécanisme d habitude , rien qu u...
+prédiction: FEMME (confiance: 83.1%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.9301
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rendît                         +0.000105       0.1212
+   2      soprano                        +0.000091       0.1512
+   3      bunker                         +0.000085       0.1530
+   4      décollage                      +0.000082       0.1288
+   5      surgissant                     +0.000065       0.1145
+   6      éprouvais                      +0.000059       0.0949
+   7      flacon                         +0.000053       0.0731
+   8      avions                         +0.000045       0.0915
+   9      new                            +0.000045       0.1483
+   10     fallut                         +0.000037       0.0591
+   11     étreinte                       +0.000035       0.0595
+   12     conservait                     +0.000033       0.0797
+   13     disparition                    +0.000033       0.0538
+   14     estomac                        +0.000031       0.0529
+   15     subitement                     +0.000030       0.0656
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      kent                           -0.000188       0.5077
+   2      envoyée                        -0.000102       0.0717
+   3      élixir                         -0.000086       0.1347
+   4      décombres                      -0.000074       0.0959
+   5      quitterait                     -0.000067       0.1015
+   6      statut                         -0.000066       0.0806
+   7      juliette                       -0.000059       0.2127
+   8      humains                        -0.000056       0.0573
+   9      immenses                       -0.000056       0.0588
+   10     prévenu                        -0.000055       0.0580
+   11     favorites                      -0.000054       0.1242
+   12     enivré                         -0.000054       0.1220
+   13     montra                         -0.000053       0.0586
+   14     aéroport                       -0.000051       0.0869
+   15     omniprésente                   -0.000047       0.1530
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rendît                         +0.000105       0.1212
+   2      soprano                        +0.000091       0.1512
+   3      bunker                         +0.000085       0.1530
+   4      décollage                      +0.000082       0.1288
+   5      surgissant                     +0.000065       0.1145
+   6      éprouvais                      +0.000059       0.0949
+   7      flacon                         +0.000053       0.0731
+   8      avions                         +0.000045       0.0915
+   9      new                            +0.000045       0.1483
+   10     fallut                         +0.000037       0.0591
+   11     étreinte                       +0.000035       0.0595
+   12     conservait                     +0.000033       0.0797
+   13     disparition                    +0.000033       0.0538
+   14     estomac                        +0.000031       0.0529
+   15     subitement                     +0.000030       0.0656
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      kent                           -0.000188       0.5077
+   2      envoyée                        -0.000102       0.0717
+   3      élixir                         -0.000086       0.1347
+   4      décombres                      -0.000074       0.0959
+   5      quitterait                     -0.000067       0.1015
+   6      statut                         -0.000066       0.0806
+   7      juliette                       -0.000059       0.2127
+   8      humains                        -0.000056       0.0573
+   9      immenses                       -0.000056       0.0588
+   10     prévenu                        -0.000055       0.0580
+   11     favorites                      -0.000054       0.1242
+   12     enivré                         -0.000054       0.1220
+   13     montra                         -0.000053       0.0586
+   14     aéroport                       -0.000051       0.0869
+   15     omniprésente                   -0.000047       0.1530
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      kent                           +0.003338       0.5077
+   2      juliette                       +0.002323       0.2127
+   3      écarquillèrent                 +0.001846       0.1494
+   4      moignons                       +0.001427       0.1390
+   5      compassion                     +0.001346       0.0647
+   6      envoyée                        +0.001334       0.0717
+   7      aéroport                       +0.001222       0.0869
+   8      statut                         +0.001055       0.0806
+   9      omniprésente                   +0.000926       0.1530
+   10     magie                          +0.000888       0.0666
+   11     registre                       +0.000830       0.0858
+   12     favorites                      +0.000787       0.1242
+   13     responsabilité                 +0.000783       0.0612
+   14     précédent                      +0.000757       0.0633
+   15     incongruité                    +0.000752       0.1303
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fallut                         -0.001280       0.0591
+   2      épouvante                      -0.001049       0.0716
+   3      parut                          -0.001016       0.0529
+   4      population                     -0.000948       0.0680
+   5      rendît                         -0.000919       0.1212
+   6      montra                         -0.000912       0.0586
+   7      onze                           -0.000890       0.0511
+   8      agonie                         -0.000817       0.0712
+   9      accumulation                   -0.000815       0.1269
+   10     bataille                       -0.000786       0.0522
+   11     sanglant                       -0.000737       0.0931
+   12     géant                          -0.000671       0.0659
+   13     accomplit                      -0.000669       0.1022
+   14     prévenu                        -0.000650       0.0580
+   15     bouclier                       -0.000646       0.0967
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      juliette                       +0.091882       0.2127
+   2      moignons                       +0.071333       0.1390
+   3      écarquillèrent                 +0.061135       0.1494
+   4      compassion                     +0.056034       0.0647
+   5      envoyée                        +0.045456       0.0717
+   6      statut                         +0.045301       0.0806
+   7      aéroport                       +0.045008       0.0869
+   8      omniprésente                   +0.042043       0.1530
+   9      favorites                      +0.040369       0.1242
+   10     magie                          +0.036173       0.0666
+   11     précédent                      +0.033482       0.0633
+   12     kent                           +0.030504       0.5077
+   13     moche                          +0.028981       0.0850
+   14     manches                        +0.028600       0.0562
+   15     responsabilité                 +0.026562       0.0612
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fallut                         -0.055913       0.0591
+   2      population                     -0.047840       0.0680
+   3      rendît                         -0.045029       0.1212
+   4      parut                          -0.043411       0.0529
+   5      épouvante                      -0.042100       0.0716
+   6      montra                         -0.040956       0.0586
+   7      onze                           -0.039657       0.0511
+   8      prévenu                        -0.039430       0.0580
+   9      agonie                         -0.035143       0.0712
+   10     accumulation                   -0.034256       0.1269
+   11     géant                          -0.032387       0.0659
+   12     sanglant                       -0.032204       0.0931
+   13     action                         -0.030393       0.0493
+   14     quarante                       -0.028902       0.0440
+   15     accomplit                      -0.025379       0.1022
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+rendît                    +0.000000     +0.000105     +0.000105     0.1212
+soprano                   +0.000000     +0.000091     +0.000091     0.1512
+bunker                    +0.000320     +0.000085     +0.000085     0.1530
+décollage                 +0.000046     +0.000082     +0.000082     0.1288
+surgissant                +0.000000     +0.000065     +0.000065     0.1145
+éprouvais                 +0.000000     +0.000059     +0.000059     0.0949
+flacon                    +0.000000     +0.000053     +0.000053     0.0731
+avions                    +0.000158     +0.000045     +0.000045     0.0915
+new                       +0.000000     +0.000045     +0.000045     0.1483
+fallut                    +0.000000     +0.000037     +0.000037     0.0591
+étreinte                  +0.000192     +0.000035     +0.000035     0.0595
+conservait                +0.000237     +0.000033     +0.000033     0.0797
+disparition               +0.000000     +0.000033     +0.000033     0.0538
+estomac                   +0.000000     +0.000031     +0.000031     0.0529
+subitement                +0.000000     +0.000030     +0.000030     0.0656
+prit                      +0.000000     +0.000028     +0.000028     0.0479
+moignons                  +0.001427     +0.000025     +0.000025     0.1390
+bataille                  +0.000000     +0.000025     +0.000025     0.0522
+sanglant                  +0.000000     +0.000025     +0.000025     0.0931
+accumulation              +0.000000     +0.000023     +0.000023     0.1269
+logit final pour 'femme': 0.9301
+# analyse pour la classe: HOMME
+# logit: -0.6646
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      soprano                        +0.000051       0.1512
+   2      éprouvais                      +0.000043       0.0949
+   3      bunker                         +0.000041       0.1530
+   4      décollage                      +0.000035       0.1288
+   5      surgissant                     +0.000034       0.1145
+   6      rendît                         +0.000032       0.1212
+   7      recevais                       +0.000025       0.1156
+   8      flacon                         +0.000023       0.0731
+   9      étreinte                       +0.000023       0.0595
+   10     subitement                     +0.000023       0.0656
+   11     moignons                       +0.000019       0.1390
+   12     apocalypse                     +0.000014       0.1045
+   13     avions                         +0.000013       0.0915
+   14     disparition                    +0.000013       0.0538
+   15     conservait                     +0.000012       0.0797
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      kent                           -0.000207       0.5077
+   2      envoyée                        -0.000074       0.0717
+   3      élixir                         -0.000045       0.1347
+   4      statut                         -0.000044       0.0806
+   5      partagea                       -0.000039       0.1255
+   6      york                           -0.000036       0.1524
+   7      juliette                       -0.000035       0.2127
+   8      prévenu                        -0.000035       0.0580
+   9      précédent                      -0.000035       0.0633
+   10     quitterait                     -0.000029       0.1015
+   11     magie                          -0.000029       0.0666
+   12     enlever                        -0.000028       0.0516
+   13     montra                         -0.000026       0.0586
+   14     aéroport                       -0.000025       0.0869
+   15     effroi                         -0.000025       0.0609
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      soprano                        +0.000051       0.1512
+   2      éprouvais                      +0.000043       0.0949
+   3      bunker                         +0.000041       0.1530
+   4      décollage                      +0.000035       0.1288
+   5      surgissant                     +0.000034       0.1145
+   6      rendît                         +0.000032       0.1212
+   7      recevais                       +0.000025       0.1156
+   8      flacon                         +0.000023       0.0731
+   9      étreinte                       +0.000023       0.0595
+   10     subitement                     +0.000023       0.0656
+   11     moignons                       +0.000019       0.1390
+   12     apocalypse                     +0.000014       0.1045
+   13     avions                         +0.000013       0.0915
+   14     disparition                    +0.000013       0.0538
+   15     conservait                     +0.000012       0.0797
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      kent                           -0.000207       0.5077
+   2      envoyée                        -0.000074       0.0717
+   3      élixir                         -0.000045       0.1347
+   4      statut                         -0.000044       0.0806
+   5      partagea                       -0.000039       0.1255
+   6      york                           -0.000036       0.1524
+   7      juliette                       -0.000035       0.2127
+   8      prévenu                        -0.000035       0.0580
+   9      précédent                      -0.000035       0.0633
+   10     quitterait                     -0.000029       0.1015
+   11     magie                          -0.000029       0.0666
+   12     enlever                        -0.000028       0.0516
+   13     montra                         -0.000026       0.0586
+   14     aéroport                       -0.000025       0.0869
+   15     effroi                         -0.000025       0.0609
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fallut                         +0.000925       0.0591
+   2      rendît                         +0.000835       0.1212
+   3      accumulation                   +0.000757       0.1269
+   4      parut                          +0.000727       0.0529
+   5      montra                         +0.000670       0.0586
+   6      onze                           +0.000611       0.0511
+   7      épouvante                      +0.000583       0.0716
+   8      agonie                         +0.000574       0.0712
+   9      population                     +0.000531       0.0680
+   10     soprano                        +0.000497       0.1512
+   11     hagarde                        +0.000481       0.1069
+   12     bataille                       +0.000472       0.0522
+   13     accomplit                      +0.000469       0.1022
+   14     sanglant                       +0.000451       0.0931
+   15     bouclier                       +0.000445       0.0967
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      kent                           -0.002429       0.5077
+   2      juliette                       -0.001579       0.2127
+   3      moignons                       -0.001257       0.1390
+   4      écarquillèrent                 -0.001162       0.1494
+   5      compassion                     -0.000935       0.0647
+   6      aéroport                       -0.000850       0.0869
+   7      omniprésente                   -0.000826       0.1530
+   8      envoyée                        -0.000787       0.0717
+   9      statut                         -0.000643       0.0806
+   10     tus                            -0.000578       0.1020
+   11     magie                          -0.000568       0.0666
+   12     responsabilité                 -0.000561       0.0612
+   13     incongruité                    -0.000538       0.1303
+   14     registre                       -0.000514       0.0858
+   15     moche                          -0.000475       0.0850
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rendît                         +0.043501       0.1212
+   2      fallut                         +0.040018       0.0591
+   3      accumulation                   +0.034008       0.1269
+   4      parut                          +0.028752       0.0529
+   5      montra                         +0.028241       0.0586
+   6      onze                           +0.028195       0.0511
+   7      population                     +0.026073       0.0680
+   8      prévenu                        +0.025159       0.0580
+   9      agonie                         +0.022387       0.0712
+   10     sanglant                       +0.021350       0.0931
+   11     soprano                        +0.021200       0.1512
+   12     hagarde                        +0.020456       0.1069
+   13     accomplit                      +0.020312       0.1022
+   14     épouvante                      +0.020204       0.0716
+   15     quarante                       +0.020136       0.0440
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      juliette                       -0.055333       0.2127
+   2      moignons                       -0.051910       0.1390
+   3      omniprésente                   -0.039445       0.1530
+   4      compassion                     -0.039035       0.0647
+   5      écarquillèrent                 -0.035833       0.1494
+   6      tus                            -0.029852       0.1020
+   7      aéroport                       -0.029029       0.0869
+   8      favorites                      -0.024549       0.1242
+   9      statut                         -0.024307       0.0806
+   10     bunker                         -0.022243       0.1530
+   11     envoyée                        -0.022067       0.0717
+   12     magie                          -0.021261       0.0666
+   13     responsabilité                 -0.021224       0.0612
+   14     manches                        -0.019240       0.0562
+   15     moche                          -0.016485       0.0850
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+soprano                   +0.000497     +0.000051     +0.000051     0.1512
+éprouvais                 +0.000142     +0.000043     +0.000043     0.0949
+bunker                    +0.000000     +0.000041     +0.000041     0.1530
+décollage                 +0.000000     +0.000035     +0.000035     0.1288
+surgissant                +0.000236     +0.000034     +0.000034     0.1145
+rendît                    +0.000835     +0.000032     +0.000032     0.1212
+recevais                  +0.000000     +0.000025     +0.000025     0.1156
+flacon                    +0.000340     +0.000023     +0.000023     0.0731
+étreinte                  +0.000000     +0.000023     +0.000023     0.0595
+subitement                +0.000169     +0.000023     +0.000023     0.0656
+moignons                  +0.000000     +0.000019     +0.000019     0.1390
+apocalypse                +0.000000     +0.000014     +0.000014     0.1045
+avions                    +0.000000     +0.000013     +0.000013     0.0915
+disparition               +0.000220     +0.000013     +0.000013     0.0538
+conservait                +0.000000     +0.000012     +0.000012     0.0797
+parut                     +0.000727     +0.000011     +0.000011     0.0529
+fallut                    +0.000925     +0.000010     +0.000010     0.0591
+avion                     +0.000263     +0.000009     +0.000009     0.0647
+baisers                   +0.000139     +0.000009     +0.000009     0.0611
+égal                      +0.000139     +0.000008     +0.000008     0.0558
+logit final pour 'homme': -0.6646

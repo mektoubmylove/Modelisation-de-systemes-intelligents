@@ -1,0 +1,386 @@
+texte analysé: . monsieur le commissaire a certainement un mandat de perquisition , fait l escogriffe d un ton judas . heureusement , le précieux béru m évite de répondre . m . le commissaire a tous les mandats que ...
+prédiction: HOMME (confiance: 82.8%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.8667
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      niche                          +0.000078       0.0730
+   2      escogriffe                     +0.000040       0.1132
+   3      burlingue                      +0.000039       0.1263
+   4      brusquer                       +0.000037       0.0839
+   5      larbin                         +0.000036       0.1052
+   6      meublée                        +0.000036       0.0695
+   7      dollars                        +0.000032       0.0695
+   8      maldonne                       +0.000030       0.1263
+   9      murmure                        +0.000030       0.0778
+   10     tirelire                       +0.000026       0.1082
+   11     francs                         +0.000023       0.0920
+   12     maillot                        +0.000022       0.0645
+   13     traviole                       +0.000022       0.1244
+   14     métallique                     +0.000021       0.0489
+   15     turf                           +0.000021       0.1235
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ouvre                          -0.000072       0.1024
+   2      rebondie                       -0.000070       0.1179
+   3      agrafe                         -0.000068       0.1092
+   4      dextre                         -0.000061       0.1158
+   5      gueuse                         -0.000060       0.1047
+   6      aloi                           -0.000041       0.1001
+   7      traire                         -0.000039       0.1013
+   8      devises                        -0.000038       0.1158
+   9      xvi                            -0.000038       0.0670
+   10     arbitraire                     -0.000037       0.0925
+   11     liées                          -0.000036       0.0650
+   12     répète                         -0.000036       0.0380
+   13     récalcitrante                  -0.000036       0.1187
+   14     pote                           -0.000035       0.0811
+   15     rêver                          -0.000035       0.0398
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      niche                          +0.000078       0.0730
+   2      escogriffe                     +0.000040       0.1132
+   3      burlingue                      +0.000039       0.1263
+   4      brusquer                       +0.000037       0.0839
+   5      larbin                         +0.000036       0.1052
+   6      meublée                        +0.000036       0.0695
+   7      dollars                        +0.000032       0.0695
+   8      maldonne                       +0.000030       0.1263
+   9      murmure                        +0.000030       0.0778
+   10     tirelire                       +0.000026       0.1082
+   11     francs                         +0.000023       0.0920
+   12     maillot                        +0.000022       0.0645
+   13     traviole                       +0.000022       0.1244
+   14     métallique                     +0.000021       0.0489
+   15     turf                           +0.000021       0.1235
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ouvre                          -0.000072       0.1024
+   2      rebondie                       -0.000070       0.1179
+   3      agrafe                         -0.000068       0.1092
+   4      dextre                         -0.000061       0.1158
+   5      gueuse                         -0.000060       0.1047
+   6      aloi                           -0.000041       0.1001
+   7      traire                         -0.000039       0.1013
+   8      devises                        -0.000038       0.1158
+   9      xvi                            -0.000038       0.0670
+   10     arbitraire                     -0.000037       0.0925
+   11     liées                          -0.000036       0.0650
+   12     répète                         -0.000036       0.0380
+   13     récalcitrante                  -0.000036       0.1187
+   14     pote                           -0.000035       0.0811
+   15     rêver                          -0.000035       0.0398
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      préférée                       +0.000891       0.0607
+   2      liées                          +0.000846       0.0650
+   3      avide                          +0.000543       0.0576
+   4      siennes                        +0.000536       0.0490
+   5      ouvre                          +0.000525       0.1024
+   6      ramène                         +0.000499       0.0477
+   7      bâle                           +0.000440       0.1179
+   8      remarques                      +0.000418       0.0643
+   9      bijou                          +0.000407       0.0581
+   10     devrais                        +0.000387       0.0385
+   11     agrafe                         +0.000382       0.1092
+   12     tiroirs                        +0.000369       0.0564
+   13     bain                           +0.000352       0.0386
+   14     récalcitrante                  +0.000334       0.1187
+   15     vendre                         +0.000320       0.0409
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      béru                           -0.004153       0.5412
+   2      mandats                        -0.002656       0.2059
+   3      francs                         -0.002059       0.0920
+   4      commissaire                    -0.001526       0.1239
+   5      escogriffe                     -0.001329       0.1132
+   6      burlingue                      -0.001188       0.1263
+   7      dollars                        -0.001087       0.0695
+   8      mandat                         -0.000994       0.0734
+   9      pote                           -0.000835       0.0811
+   10     fourmis                        -0.000807       0.0671
+   11     dextre                         -0.000788       0.1158
+   12     turf                           -0.000748       0.1235
+   13     suisses                        -0.000682       0.0846
+   14     devises                        -0.000675       0.1158
+   15     miches                         -0.000649       0.1082
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      liées                          +0.038055       0.0650
+   2      préférée                       +0.037660       0.0607
+   3      ouvre                          +0.037397       0.1024
+   4      ramène                         +0.026014       0.0477
+   5      siennes                        +0.024809       0.0490
+   6      avide                          +0.024522       0.0576
+   7      contrats                       +0.020729       0.0809
+   8      agrafe                         +0.020433       0.1092
+   9      remarques                      +0.019846       0.0643
+   10     rebondie                       +0.017940       0.1179
+   11     bijou                          +0.016825       0.0581
+   12     récalcitrante                  +0.016674       0.1187
+   13     luxueuse                       +0.016487       0.0805
+   14     bain                           +0.015187       0.0386
+   15     vendre                         +0.014854       0.0409
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      béru                           -0.195408       0.5412
+   2      mandats                        -0.102659       0.2059
+   3      francs                         -0.088557       0.0920
+   4      commissaire                    -0.072029       0.1239
+   5      burlingue                      -0.049384       0.1263
+   6      escogriffe                     -0.048479       0.1132
+   7      mandat                         -0.044099       0.0734
+   8      dollars                        -0.041957       0.0695
+   9      suisses                        -0.038842       0.0846
+   10     turf                           -0.038741       0.1235
+   11     pote                           -0.037894       0.0811
+   12     guillotine                     -0.032438       0.0841
+   13     fourmis                        -0.032255       0.0671
+   14     contiennent                    -0.028619       0.0837
+   15     bérurier                       -0.026908       0.1304
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+niche                     +0.000022     +0.000078     +0.000078     0.0730
+escogriffe                +0.000000     +0.000040     +0.000040     0.1132
+burlingue                 +0.000000     +0.000039     +0.000039     0.1263
+brusquer                  +0.000307     +0.000037     +0.000037     0.0839
+larbin                    +0.000000     +0.000036     +0.000036     0.1052
+meublée                   +0.000048     +0.000036     +0.000036     0.0695
+dollars                   +0.000000     +0.000032     +0.000032     0.0695
+maldonne                  +0.000000     +0.000030     +0.000030     0.1263
+murmure                   +0.000000     +0.000030     +0.000030     0.0778
+tirelire                  +0.000000     +0.000026     +0.000026     0.1082
+francs                    +0.000000     +0.000023     +0.000023     0.0920
+maillot                   +0.000000     +0.000022     +0.000022     0.0645
+traviole                  +0.000000     +0.000022     +0.000022     0.1244
+métallique                +0.000000     +0.000021     +0.000021     0.0489
+turf                      +0.000000     +0.000021     +0.000021     0.1235
+commissaire               +0.000000     +0.000021     +0.000021     0.1239
+cygne                     +0.000000     +0.000021     +0.000021     0.0828
+bérurier                  +0.000000     +0.000020     +0.000020     0.1304
+secrétaire                +0.000000     +0.000019     +0.000019     0.0447
+suisses                   +0.000000     +0.000018     +0.000018     0.0846
+logit final pour 'femme': -0.8667
+# analyse pour la classe: HOMME  prédite
+# logit: 0.7068
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      niche                          +0.000039       0.0730
+   2      larbin                         +0.000024       0.1052
+   3      proclame                       +0.000023       0.0899
+   4      escogriffe                     +0.000023       0.1132
+   5      brusquer                       +0.000019       0.0839
+   6      maldonne                       +0.000018       0.1263
+   7      perquisition                   +0.000018       0.0964
+   8      meublée                        +0.000016       0.0695
+   9      tirelire                       +0.000015       0.1082
+   10     mandats                        +0.000014       0.2059
+   11     murmure                        +0.000014       0.0778
+   12     maillot                        +0.000014       0.0645
+   13     suisses                        +0.000012       0.0846
+   14     cygne                          +0.000012       0.0828
+   15     précieux                       +0.000010       0.0384
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      béru                           -0.000139       0.5412
+   2      dextre                         -0.000062       0.1158
+   3      récalcitrante                  -0.000052       0.1187
+   4      huis                           -0.000049       0.0868
+   5      ouvre                          -0.000047       0.1024
+   6      bérurier                       -0.000042       0.1304
+   7      devises                        -0.000038       0.1158
+   8      agrafe                         -0.000036       0.1092
+   9      impec                          -0.000036       0.1263
+   10     pote                           -0.000030       0.0811
+   11     arbitraire                     -0.000030       0.0925
+   12     suites                         -0.000025       0.0719
+   13     mandat                         -0.000025       0.0734
+   14     atelier                        -0.000024       0.0531
+   15     gueuse                         -0.000024       0.1047
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      niche                          +0.000039       0.0730
+   2      larbin                         +0.000024       0.1052
+   3      proclame                       +0.000023       0.0899
+   4      escogriffe                     +0.000023       0.1132
+   5      brusquer                       +0.000019       0.0839
+   6      maldonne                       +0.000018       0.1263
+   7      perquisition                   +0.000018       0.0964
+   8      meublée                        +0.000016       0.0695
+   9      tirelire                       +0.000015       0.1082
+   10     mandats                        +0.000014       0.2059
+   11     murmure                        +0.000014       0.0778
+   12     maillot                        +0.000014       0.0645
+   13     suisses                        +0.000012       0.0846
+   14     cygne                          +0.000012       0.0828
+   15     précieux                       +0.000010       0.0384
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      béru                           -0.000139       0.5412
+   2      dextre                         -0.000062       0.1158
+   3      récalcitrante                  -0.000052       0.1187
+   4      huis                           -0.000049       0.0868
+   5      ouvre                          -0.000047       0.1024
+   6      bérurier                       -0.000042       0.1304
+   7      devises                        -0.000038       0.1158
+   8      agrafe                         -0.000036       0.1092
+   9      impec                          -0.000036       0.1263
+   10     pote                           -0.000030       0.0811
+   11     arbitraire                     -0.000030       0.0925
+   12     suites                         -0.000025       0.0719
+   13     mandat                         -0.000025       0.0734
+   14     atelier                        -0.000024       0.0531
+   15     gueuse                         -0.000024       0.1047
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      béru                           +0.003524       0.5412
+   2      mandats                        +0.002333       0.2059
+   3      francs                         +0.002062       0.0920
+   4      commissaire                    +0.001219       0.1239
+   5      escogriffe                     +0.001194       0.1132
+   6      dollars                        +0.000966       0.0695
+   7      burlingue                      +0.000940       0.1263
+   8      devises                        +0.000886       0.1158
+   9      fourmis                        +0.000800       0.0671
+   10     mandat                         +0.000755       0.0734
+   11     turf                           +0.000715       0.1235
+   12     miches                         +0.000669       0.1082
+   13     pote                           +0.000668       0.0811
+   14     suisses                        +0.000636       0.0846
+   15     bérurier                       +0.000635       0.1304
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      préférée                       -0.000737       0.0607
+   2      liées                          -0.000616       0.0650
+   3      enveloppes                     -0.000445       0.0734
+   4      avide                          -0.000399       0.0576
+   5      ouvre                          -0.000398       0.1024
+   6      ramène                         -0.000385       0.0477
+   7      rebondie                       -0.000377       0.1179
+   8      récalcitrante                  -0.000373       0.1187
+   9      siennes                        -0.000348       0.0490
+   10     bâle                           -0.000326       0.1179
+   11     bijou                          -0.000324       0.0581
+   12     remarques                      -0.000324       0.0643
+   13     bain                           -0.000310       0.0386
+   14     brusquer                       -0.000305       0.0839
+   15     arbitraire                     -0.000296       0.0925
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      béru                           +0.152830       0.5412
+   2      mandats                        +0.084201       0.2059
+   3      francs                         +0.073667       0.0920
+   4      commissaire                    +0.048157       0.1239
+   5      burlingue                      +0.042661       0.1263
+   6      escogriffe                     +0.042319       0.1132
+   7      dollars                        +0.034682       0.0695
+   8      fourmis                        +0.033041       0.0671
+   9      turf                           +0.031886       0.1235
+   10     suisses                        +0.029377       0.0846
+   11     mandat                         +0.028780       0.0734
+   12     contiennent                    +0.026092       0.0837
+   13     bérurier                       +0.025860       0.1304
+   14     pote                           +0.024781       0.0811
+   15     cygne                          +0.024644       0.0828
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      préférée                       -0.029802       0.0607
+   2      liées                          -0.028960       0.0650
+   3      ouvre                          -0.025657       0.1024
+   4      ramène                         -0.020685       0.0477
+   5      contrats                       -0.018776       0.0809
+   6      remarques                      -0.017409       0.0643
+   7      dégât                          -0.015167       0.1047
+   8      récalcitrante                  -0.015026       0.1187
+   9      siennes                        -0.014184       0.0490
+   10     rebondie                       -0.013563       0.1179
+   11     tiroirs                        -0.013528       0.0564
+   12     serment                        -0.013317       0.0581
+   13     enveloppes                     -0.013032       0.0734
+   14     avide                          -0.012981       0.0576
+   15     brusquer                       -0.011227       0.0839
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+niche                     +0.000000     +0.000039     +0.000039     0.0730
+larbin                    +0.000249     +0.000024     +0.000024     0.1052
+proclame                  +0.000000     +0.000023     +0.000023     0.0899
+escogriffe                +0.001194     +0.000023     +0.000023     0.1132
+brusquer                  +0.000000     +0.000019     +0.000019     0.0839
+maldonne                  +0.000279     +0.000018     +0.000018     0.1263
+perquisition              +0.000384     +0.000018     +0.000018     0.0964
+meublée                   +0.000136     +0.000016     +0.000016     0.0695
+tirelire                  +0.000531     +0.000015     +0.000015     0.1082
+mandats                   +0.002333     +0.000014     +0.000014     0.2059
+murmure                   +0.000301     +0.000014     +0.000014     0.0778
+maillot                   +0.000041     +0.000014     +0.000014     0.0645
+suisses                   +0.000636     +0.000012     +0.000012     0.0846
+cygne                     +0.000562     +0.000012     +0.000012     0.0828
+précieux                  +0.000000     +0.000010     +0.000010     0.0384
+biche                     +0.000026     +0.000008     +0.000008     0.0739
+secrétaire                +0.000438     +0.000008     +0.000008     0.0447
+disposer                  +0.000107     +0.000008     +0.000008     0.0521
+avancement                +0.000000     +0.000008     +0.000008     0.0828
+soulève                   +0.000000     +0.000008     +0.000008     0.0562
+logit final pour 'homme': 0.7068

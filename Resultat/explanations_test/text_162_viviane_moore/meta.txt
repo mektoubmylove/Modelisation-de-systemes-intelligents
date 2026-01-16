@@ -1,0 +1,5 @@
+filename: (MOORE)(Viviane)(les dieux dévoreurs)(2)(2009)(1960)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 162
+first_name: viviane
+last_name: moore
+true_label: femme

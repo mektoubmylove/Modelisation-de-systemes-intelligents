@@ -1,0 +1,5 @@
+filename: (FALLET)(René)(charleston)(1)(1967)(1927)(1983)(fr)(z)(z)(V)(R)(T).txt
+index: 163
+first_name: rene
+last_name: fallet
+true_label: homme

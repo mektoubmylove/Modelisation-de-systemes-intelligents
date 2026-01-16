@@ -1,0 +1,386 @@
+texte analysé: éclipser discrètement ? valentine ouvrit de grands yeux . je vais faire mine de descendre me laver les mains . tu me rejoins par l escalier dans cinq minutes ? ça n était jamais arrivé . pab devait êt...
+prédiction: FEMME (confiance: 94.6%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.6309
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      valentine                      +0.000560       0.6493
+   2      berg                           +0.000139       0.1609
+   3      rothschild                     +0.000079       0.1264
+   4      sommelier                      +0.000075       0.1362
+   5      exposa                         +0.000071       0.0949
+   6      max                            +0.000054       0.0975
+   7      vaincre                        +0.000043       0.0628
+   8      prévenant                      +0.000039       0.0916
+   9      caressait                      +0.000036       0.0624
+   10     allusion                       +0.000036       0.0535
+   11     oublia                         +0.000035       0.0710
+   12     taquin                         +0.000030       0.1137
+   13     naturellement                  +0.000028       0.0435
+   14     claquement                     +0.000026       0.0691
+   15     antoine                        +0.000025       0.0714
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      éclipser                       -0.000137       0.0925
+   2      étole                          -0.000104       0.2421
+   3      montra                         -0.000094       0.1030
+   4      acheter                        -0.000074       0.0784
+   5      ouh                            -0.000056       0.1321
+   6      fraîchement                    -0.000049       0.0692
+   7      couverts                       -0.000043       0.0469
+   8      scintillements                 -0.000043       0.1271
+   9      délicieux                      -0.000041       0.0517
+   10     tendresse                      -0.000041       0.0422
+   11     achetée                        -0.000041       0.0721
+   12     donnerez                       -0.000040       0.0989
+   13     songea                         -0.000034       0.0609
+   14     sienne                         -0.000034       0.0386
+   15     val                            -0.000034       0.0986
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      valentine                      +0.000560       0.6493
+   2      berg                           +0.000139       0.1609
+   3      rothschild                     +0.000079       0.1264
+   4      sommelier                      +0.000075       0.1362
+   5      exposa                         +0.000071       0.0949
+   6      max                            +0.000054       0.0975
+   7      vaincre                        +0.000043       0.0628
+   8      prévenant                      +0.000039       0.0916
+   9      caressait                      +0.000036       0.0624
+   10     allusion                       +0.000036       0.0535
+   11     oublia                         +0.000035       0.0710
+   12     taquin                         +0.000030       0.1137
+   13     naturellement                  +0.000028       0.0435
+   14     claquement                     +0.000026       0.0691
+   15     antoine                        +0.000025       0.0714
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      éclipser                       -0.000137       0.0925
+   2      étole                          -0.000104       0.2421
+   3      montra                         -0.000094       0.1030
+   4      acheter                        -0.000074       0.0784
+   5      ouh                            -0.000056       0.1321
+   6      fraîchement                    -0.000049       0.0692
+   7      couverts                       -0.000043       0.0469
+   8      scintillements                 -0.000043       0.1271
+   9      délicieux                      -0.000041       0.0517
+   10     tendresse                      -0.000041       0.0422
+   11     achetée                        -0.000041       0.0721
+   12     donnerez                       -0.000040       0.0989
+   13     songea                         -0.000034       0.0609
+   14     sienne                         -0.000034       0.0386
+   15     val                            -0.000034       0.0986
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      valentine                      +0.005606       0.6493
+   2      étole                          +0.003946       0.2421
+   3      mara                           +0.002413       0.1693
+   4      enveloppante                   +0.002332       0.1278
+   5      scintillements                 +0.001560       0.1271
+   6      détendu                        +0.001454       0.0776
+   7      souper                         +0.001117       0.0735
+   8      formulation                    +0.001083       0.1239
+   9      rejoins                        +0.000924       0.0746
+   10     dorés                          +0.000912       0.0609
+   11     éclipser                       +0.000899       0.0925
+   12     coupa                          +0.000898       0.0564
+   13     jolie                          +0.000794       0.0386
+   14     craqué                         +0.000793       0.0992
+   15     délicieux                      +0.000788       0.0517
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      montra                         -0.001632       0.1030
+   2      allusion                       -0.001430       0.0535
+   3      exposa                         -0.001218       0.0949
+   4      rothschild                     -0.000988       0.1264
+   5      réellement                     -0.000952       0.0483
+   6      vaincre                        -0.000941       0.0628
+   7      max                            -0.000915       0.0975
+   8      oublia                         -0.000907       0.0710
+   9      rudement                       -0.000869       0.0700
+   10     antoine                        -0.000784       0.0714
+   11     naturellement                  -0.000746       0.0435
+   12     berg                           -0.000713       0.1609
+   13     taquin                         -0.000707       0.1137
+   14     minute                         -0.000704       0.0387
+   15     descendirent                   -0.000649       0.0680
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      valentine                      +0.325489       0.6493
+   2      étole                          +0.157107       0.2421
+   3      mara                           +0.121031       0.1693
+   4      enveloppante                   +0.092022       0.1278
+   5      scintillements                 +0.075557       0.1271
+   6      formulation                    +0.063200       0.1239
+   7      détendu                        +0.061864       0.0776
+   8      souper                         +0.055487       0.0735
+   9      craqué                         +0.048434       0.0992
+   10     rejoins                        +0.045943       0.0746
+   11     détournée                      +0.040886       0.0916
+   12     dorés                          +0.036781       0.0609
+   13     jolie                          +0.035258       0.0386
+   14     coupa                          +0.032815       0.0564
+   15     sienne                         +0.031604       0.0386
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      montra                         -0.091424       0.1030
+   2      allusion                       -0.068757       0.0535
+   3      exposa                         -0.060425       0.0949
+   4      rudement                       -0.050724       0.0700
+   5      oublia                         -0.048304       0.0710
+   6      réellement                     -0.045043       0.0483
+   7      vaincre                        -0.043921       0.0628
+   8      rothschild                     -0.043808       0.1264
+   9      max                            -0.039373       0.0975
+   10     berg                           -0.036814       0.1609
+   11     naturellement                  -0.034361       0.0435
+   12     antoine                        -0.031280       0.0714
+   13     inutiles                       -0.029253       0.0568
+   14     minute                         -0.027654       0.0387
+   15     descendirent                   -0.027290       0.0680
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+valentine                 +0.005606     +0.000560     +0.000560     0.6493
+berg                      +0.000000     +0.000139     +0.000139     0.1609
+rothschild                +0.000000     +0.000079     +0.000079     0.1264
+sommelier                 +0.000000     +0.000075     +0.000075     0.1362
+exposa                    +0.000000     +0.000071     +0.000071     0.0949
+max                       +0.000000     +0.000054     +0.000054     0.0975
+vaincre                   +0.000000     +0.000043     +0.000043     0.0628
+prévenant                 +0.000000     +0.000039     +0.000039     0.0916
+caressait                 +0.000004     +0.000036     +0.000036     0.0624
+allusion                  +0.000000     +0.000036     +0.000036     0.0535
+oublia                    +0.000000     +0.000035     +0.000035     0.0710
+taquin                    +0.000000     +0.000030     +0.000030     0.1137
+naturellement             +0.000000     +0.000028     +0.000028     0.0435
+claquement                +0.000000     +0.000026     +0.000026     0.0691
+antoine                   +0.000000     +0.000025     +0.000025     0.0714
+eiffel                    +0.000236     +0.000023     +0.000023     0.0967
+ouvrit                    +0.000094     +0.000022     +0.000022     0.0901
+inutiles                  +0.000000     +0.000021     +0.000021     0.0568
+réellement                +0.000000     +0.000021     +0.000021     0.0483
+rejoins                   +0.000924     +0.000020     +0.000020     0.0746
+logit final pour 'femme': 1.6309
+# analyse pour la classe: HOMME
+# logit: -1.2328
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      valentine                      +0.000375       0.6493
+   2      rothschild                     +0.000072       0.1264
+   3      berg                           +0.000068       0.1609
+   4      sommelier                      +0.000045       0.1362
+   5      exposa                         +0.000044       0.0949
+   6      prévenant                      +0.000038       0.0916
+   7      taquin                         +0.000036       0.1137
+   8      max                            +0.000034       0.0975
+   9      oublia                         +0.000032       0.0710
+   10     caressait                      +0.000028       0.0624
+   11     antoine                        +0.000024       0.0714
+   12     formulation                    +0.000024       0.1239
+   13     eiffel                         +0.000021       0.0967
+   14     ouvrit                         +0.000020       0.0901
+   15     voilée                         +0.000017       0.0785
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      éclipser                       -0.000088       0.0925
+   2      montra                         -0.000040       0.1030
+   3      acheter                        -0.000035       0.0784
+   4      scintillements                 -0.000032       0.1271
+   5      fraîchement                    -0.000031       0.0692
+   6      ouh                            -0.000030       0.1321
+   7      donnerez                       -0.000025       0.0989
+   8      hegel                          -0.000022       0.1514
+   9      songea                         -0.000021       0.0609
+   10     laver                          -0.000021       0.0468
+   11     sienne                         -0.000020       0.0386
+   12     délicieux                      -0.000019       0.0517
+   13     cliché                         -0.000019       0.0780
+   14     couverts                       -0.000019       0.0469
+   15     rappela                        -0.000018       0.0542
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      valentine                      +0.000375       0.6493
+   2      rothschild                     +0.000072       0.1264
+   3      berg                           +0.000068       0.1609
+   4      sommelier                      +0.000045       0.1362
+   5      exposa                         +0.000044       0.0949
+   6      prévenant                      +0.000038       0.0916
+   7      taquin                         +0.000036       0.1137
+   8      max                            +0.000034       0.0975
+   9      oublia                         +0.000032       0.0710
+   10     caressait                      +0.000028       0.0624
+   11     antoine                        +0.000024       0.0714
+   12     formulation                    +0.000024       0.1239
+   13     eiffel                         +0.000021       0.0967
+   14     ouvrit                         +0.000020       0.0901
+   15     voilée                         +0.000017       0.0785
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      éclipser                       -0.000088       0.0925
+   2      montra                         -0.000040       0.1030
+   3      acheter                        -0.000035       0.0784
+   4      scintillements                 -0.000032       0.1271
+   5      fraîchement                    -0.000031       0.0692
+   6      ouh                            -0.000030       0.1321
+   7      donnerez                       -0.000025       0.0989
+   8      hegel                          -0.000022       0.1514
+   9      songea                         -0.000021       0.0609
+   10     laver                          -0.000021       0.0468
+   11     sienne                         -0.000020       0.0386
+   12     délicieux                      -0.000019       0.0517
+   13     cliché                         -0.000019       0.0780
+   14     couverts                       -0.000019       0.0469
+   15     rappela                        -0.000018       0.0542
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      montra                         +0.001181       0.1030
+   2      allusion                       +0.001034       0.0535
+   3      exposa                         +0.000854       0.0949
+   4      berg                           +0.000738       0.1609
+   5      oublia                         +0.000691       0.0710
+   6      réellement                     +0.000684       0.0483
+   7      max                            +0.000658       0.0975
+   8      vaincre                        +0.000652       0.0628
+   9      rudement                       +0.000588       0.0700
+   10     inutiles                       +0.000560       0.0568
+   11     naturellement                  +0.000557       0.0435
+   12     rothschild                     +0.000527       0.1264
+   13     minute                         +0.000515       0.0387
+   14     descendirent                   +0.000504       0.0680
+   15     claquement                     +0.000440       0.0691
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      valentine                      -0.004156       0.6493
+   2      étole                          -0.002690       0.2421
+   3      mara                           -0.001691       0.1693
+   4      enveloppante                   -0.001459       0.1278
+   5      scintillements                 -0.001268       0.1271
+   6      détendu                        -0.000993       0.0776
+   7      formulation                    -0.000762       0.1239
+   8      coupa                          -0.000629       0.0564
+   9      dorés                          -0.000613       0.0609
+   10     éclipser                       -0.000605       0.0925
+   11     délicieux                      -0.000582       0.0517
+   12     fraîchement                    -0.000568       0.0692
+   13     ouh                            -0.000549       0.1321
+   14     eiffel                         -0.000534       0.0967
+   15     sienne                         -0.000494       0.0386
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      montra                         +0.060536       0.1030
+   2      allusion                       +0.047776       0.0535
+   3      berg                           +0.040340       0.1609
+   4      exposa                         +0.039059       0.0949
+   5      oublia                         +0.033269       0.0710
+   6      rudement                       +0.033030       0.0700
+   7      réellement                     +0.031675       0.0483
+   8      max                            +0.030534       0.0975
+   9      vaincre                        +0.030215       0.0628
+   10     inutiles                       +0.028277       0.0568
+   11     naturellement                  +0.025012       0.0435
+   12     rothschild                     +0.022680       0.1264
+   13     descendirent                   +0.021713       0.0680
+   14     minute                         +0.019697       0.0387
+   15     claquement                     +0.015846       0.0691
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      valentine                      -0.250092       0.6493
+   2      étole                          -0.104041       0.2421
+   3      mara                           -0.083078       0.1693
+   4      scintillements                 -0.062178       0.1271
+   5      enveloppante                   -0.060979       0.1278
+   6      formulation                    -0.043183       0.1239
+   7      détendu                        -0.040173       0.0776
+   8      craqué                         -0.031083       0.0992
+   9      souper                         -0.025421       0.0735
+   10     dorés                          -0.024328       0.0609
+   11     délicieux                      -0.023375       0.0517
+   12     eiffel                         -0.022432       0.0967
+   13     coupa                          -0.021883       0.0564
+   14     rejoins                        -0.021642       0.0746
+   15     marches                        -0.021345       0.0401
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+valentine                 +0.000000     +0.000375     +0.000375     0.6493
+rothschild                +0.000527     +0.000072     +0.000072     0.1264
+berg                      +0.000738     +0.000068     +0.000068     0.1609
+sommelier                 +0.000263     +0.000045     +0.000045     0.1362
+exposa                    +0.000854     +0.000044     +0.000044     0.0949
+prévenant                 +0.000202     +0.000038     +0.000038     0.0916
+taquin                    +0.000367     +0.000036     +0.000036     0.1137
+max                       +0.000658     +0.000034     +0.000034     0.0975
+oublia                    +0.000691     +0.000032     +0.000032     0.0710
+caressait                 +0.000000     +0.000028     +0.000028     0.0624
+antoine                   +0.000293     +0.000024     +0.000024     0.0714
+formulation               +0.000000     +0.000024     +0.000024     0.1239
+eiffel                    +0.000000     +0.000021     +0.000021     0.0967
+ouvrit                    +0.000047     +0.000020     +0.000020     0.0901
+voilée                    +0.000063     +0.000017     +0.000017     0.0785
+naturellement             +0.000557     +0.000015     +0.000015     0.0435
+rejoins                   +0.000000     +0.000014     +0.000014     0.0746
+sentit                    +0.000000     +0.000013     +0.000013     0.0506
+réellement                +0.000684     +0.000013     +0.000013     0.0483
+allusion                  +0.001034     +0.000013     +0.000013     0.0535
+logit final pour 'homme': -1.2328

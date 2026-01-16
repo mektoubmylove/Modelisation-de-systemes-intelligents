@@ -1,0 +1,5 @@
+filename: (GILBERT)(Marion)(le joug)(2)(1925)(1876)(1951)(fr)(z)(z)(V)(R)(T) (1).txt
+index: 234
+first_name: marion
+last_name: gilbert
+true_label: femme

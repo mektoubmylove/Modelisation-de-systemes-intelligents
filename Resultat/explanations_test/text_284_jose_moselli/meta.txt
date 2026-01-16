@@ -1,0 +1,5 @@
+filename: (MOSELLI)(José)(la fin d_illa)(1)(1925)(1882)(1941)(fr)(z)(z)(V)(R)(T) (1).txt
+index: 284
+first_name: jose
+last_name: moselli
+true_label: homme

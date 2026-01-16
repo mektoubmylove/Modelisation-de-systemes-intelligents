@@ -1,0 +1,5 @@
+filename: (BA)(Mariama)(une si longue lettre)(2)(1979)(1929)(1981)(fr)(z)(z)(V)(R)(T).txt
+index: 157
+first_name: mariama
+last_name: ba
+true_label: femme

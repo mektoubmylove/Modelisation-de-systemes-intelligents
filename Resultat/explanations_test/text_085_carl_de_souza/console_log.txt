@@ -1,0 +1,387 @@
+texte analysé: pas à sacrifier le restant de confiance en yap , même au prix de toutes les absurdités . puis , il y en a un qui s empare de la carte , la tourne dans tous les sens en tremblant un peu . il va la déch...
+prédiction: FEMME (confiance: 51.4%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.0092
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sing                           +0.000068       0.2622
+   2      afrique                        +0.000059       0.1045
+   3      cartes                         +0.000059       0.1024
+   4      boeuf                          +0.000056       0.0484
+   5      dires                          +0.000041       0.0651
+   6      vivres                         +0.000038       0.0631
+   7      vaincre                        +0.000038       0.0493
+   8      cavale                         +0.000038       0.0736
+   9      bateau                         +0.000037       0.0742
+   10     correct                        +0.000036       0.1094
+   11     mène                           +0.000025       0.0377
+   12     sen                            +0.000023       0.1250
+   13     déchirer                       +0.000021       0.0503
+   14     élaborer                       +0.000020       0.0812
+   15     auparavant                     +0.000017       0.0331
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hong                           -0.000184       0.7177
+   2      améliorée                      -0.000143       0.1020
+   3      fiel                           -0.000125       0.0772
+   4      ming                           -0.000087       0.2588
+   5      sombres                        -0.000059       0.0332
+   6      conséquences                   -0.000050       0.0418
+   7      avancent                       -0.000049       0.0644
+   8      adhère                         -0.000049       0.1083
+   9      préoccupée                     -0.000049       0.0680
+   10     empare                         -0.000045       0.0593
+   11     otage                          -0.000044       0.0732
+   12     conjurer                       -0.000042       0.0723
+   13     bouffe                         -0.000042       0.0689
+   14     observe                        -0.000041       0.0477
+   15     men                            -0.000041       0.1901
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sing                           +0.000068       0.2622
+   2      afrique                        +0.000059       0.1045
+   3      cartes                         +0.000059       0.1024
+   4      boeuf                          +0.000056       0.0484
+   5      dires                          +0.000041       0.0651
+   6      vivres                         +0.000038       0.0631
+   7      vaincre                        +0.000038       0.0493
+   8      cavale                         +0.000038       0.0736
+   9      bateau                         +0.000037       0.0742
+   10     correct                        +0.000036       0.1094
+   11     mène                           +0.000025       0.0377
+   12     sen                            +0.000023       0.1250
+   13     déchirer                       +0.000021       0.0503
+   14     élaborer                       +0.000020       0.0812
+   15     auparavant                     +0.000017       0.0331
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hong                           -0.000184       0.7177
+   2      améliorée                      -0.000143       0.1020
+   3      fiel                           -0.000125       0.0772
+   4      ming                           -0.000087       0.2588
+   5      sombres                        -0.000059       0.0332
+   6      conséquences                   -0.000050       0.0418
+   7      avancent                       -0.000049       0.0644
+   8      adhère                         -0.000049       0.1083
+   9      préoccupée                     -0.000049       0.0680
+   10     empare                         -0.000045       0.0593
+   11     otage                          -0.000044       0.0732
+   12     conjurer                       -0.000042       0.0723
+   13     bouffe                         -0.000042       0.0689
+   14     observe                        -0.000041       0.0477
+   15     men                            -0.000041       0.1901
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      men                            +0.002005       0.1901
+   2      préoccupée                     +0.001327       0.0680
+   3      sombres                        +0.000917       0.0332
+   4      élaborer                       +0.000913       0.0812
+   5      otage                          +0.000799       0.0732
+   6      améliorée                      +0.000659       0.1020
+   7      conjurer                       +0.000636       0.0723
+   8      fiel                           +0.000501       0.0772
+   9      essaient                       +0.000496       0.0753
+   10     passera                        +0.000461       0.0422
+   11     sauver                         +0.000419       0.0324
+   12     observe                        +0.000379       0.0477
+   13     adhère                         +0.000371       0.1083
+   14     avancent                       +0.000347       0.0644
+   15     conséquences                   +0.000328       0.0418
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sing                           -0.003996       0.2622
+   2      ming                           -0.002614       0.2588
+   3      yin                            -0.002160       0.2472
+   4      sen                            -0.001234       0.1250
+   5      vaincre                        -0.001004       0.0493
+   6      insensible                     -0.000943       0.0496
+   7      inimaginable                   -0.000903       0.0714
+   8      raisonne                       -0.000870       0.0805
+   9      rôdent                         -0.000831       0.0860
+   10     entraîné                       -0.000807       0.0461
+   11     correct                        -0.000775       0.1094
+   12     cartes                         -0.000739       0.1024
+   13     projeté                        -0.000720       0.0593
+   14     bateau                         -0.000713       0.0742
+   15     feuille                        -0.000594       0.0332
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      men                            +0.124457       0.1901
+   2      préoccupée                     +0.067956       0.0680
+   3      élaborer                       +0.044532       0.0812
+   4      sombres                        +0.042201       0.0332
+   5      otage                          +0.037731       0.0732
+   6      fiel                           +0.035323       0.0772
+   7      conjurer                       +0.031985       0.0723
+   8      essaient                       +0.026726       0.0753
+   9      avancent                       +0.026671       0.0644
+   10     sauver                         +0.022115       0.0324
+   11     passera                        +0.022105       0.0422
+   12     améliorée                      +0.020643       0.1020
+   13     adhère                         +0.017756       0.1083
+   14     logique                        +0.015143       0.0369
+   15     tourne                         +0.014603       0.0336
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sing                           -0.222294       0.2622
+   2      ming                           -0.181728       0.2588
+   3      yin                            -0.117459       0.2472
+   4      vaincre                        -0.054556       0.0493
+   5      sen                            -0.053318       0.1250
+   6      insensible                     -0.047161       0.0496
+   7      rôdent                         -0.045061       0.0860
+   8      entraîné                       -0.043301       0.0461
+   9      inimaginable                   -0.041615       0.0714
+   10     cartes                         -0.040436       0.1024
+   11     raisonne                       -0.039642       0.0805
+   12     bateau                         -0.038502       0.0742
+   13     projeté                        -0.035776       0.0593
+   14     feuille                        -0.033281       0.0332
+   15     boeuf                          -0.031890       0.0484
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+sing                      +0.000000     +0.000068     +0.000068     0.2622
+afrique                   +0.000000     +0.000059     +0.000059     0.1045
+cartes                    +0.000000     +0.000059     +0.000059     0.1024
+boeuf                     +0.000000     +0.000056     +0.000056     0.0484
+dires                     +0.000117     +0.000041     +0.000041     0.0651
+vivres                    +0.000000     +0.000038     +0.000038     0.0631
+vaincre                   +0.000000     +0.000038     +0.000038     0.0493
+cavale                    +0.000314     +0.000038     +0.000038     0.0736
+bateau                    +0.000000     +0.000037     +0.000037     0.0742
+correct                   +0.000000     +0.000036     +0.000036     0.1094
+mène                      +0.000000     +0.000025     +0.000025     0.0377
+sen                       +0.000000     +0.000023     +0.000023     0.1250
+déchirer                  +0.000000     +0.000021     +0.000021     0.0503
+élaborer                  +0.000913     +0.000020     +0.000020     0.0812
+auparavant                +0.000292     +0.000017     +0.000017     0.0331
+répéter                   +0.000000     +0.000015     +0.000015     0.0336
+fout                      +0.000034     +0.000015     +0.000015     0.0541
+hume                      +0.000000     +0.000014     +0.000014     0.0955
+restant                   +0.000000     +0.000009     +0.000009     0.0447
+raisonne                  +0.000000     +0.000008     +0.000008     0.0805
+logit final pour 'femme': 0.0092
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.0464
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hume                           +0.000077       0.0955
+   2      hong                           +0.000076       0.7177
+   3      yin                            +0.000076       0.2472
+   4      boeuf                          +0.000038       0.0484
+   5      men                            +0.000037       0.1901
+   6      déchirer                       +0.000033       0.0503
+   7      mène                           +0.000033       0.0377
+   8      afrique                        +0.000029       0.1045
+   9      élaborer                       +0.000028       0.0812
+   10     cavale                         +0.000026       0.0736
+   11     bateau                         +0.000019       0.0742
+   12     sing                           +0.000017       0.2622
+   13     vivres                         +0.000015       0.0631
+   14     restant                        +0.000014       0.0447
+   15     passera                        +0.000012       0.0422
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ming                           -0.000108       0.2588
+   2      fiel                           -0.000078       0.0772
+   3      améliorée                      -0.000061       0.1020
+   4      adhère                         -0.000048       0.1083
+   5      rôdent                         -0.000045       0.0860
+   6      empare                         -0.000040       0.0593
+   7      sourd                          -0.000037       0.0378
+   8      conjurer                       -0.000037       0.0723
+   9      effets                         -0.000037       0.0410
+   10     inimaginable                   -0.000031       0.0714
+   11     sombres                        -0.000031       0.0332
+   12     otage                          -0.000028       0.0732
+   13     conséquences                   -0.000027       0.0418
+   14     meubles                        -0.000027       0.0338
+   15     essaient                       -0.000026       0.0753
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hume                           +0.000077       0.0955
+   2      hong                           +0.000076       0.7177
+   3      yin                            +0.000076       0.2472
+   4      boeuf                          +0.000038       0.0484
+   5      men                            +0.000037       0.1901
+   6      déchirer                       +0.000033       0.0503
+   7      mène                           +0.000033       0.0377
+   8      afrique                        +0.000029       0.1045
+   9      élaborer                       +0.000028       0.0812
+   10     cavale                         +0.000026       0.0736
+   11     bateau                         +0.000019       0.0742
+   12     sing                           +0.000017       0.2622
+   13     vivres                         +0.000015       0.0631
+   14     restant                        +0.000014       0.0447
+   15     passera                        +0.000012       0.0422
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ming                           -0.000108       0.2588
+   2      fiel                           -0.000078       0.0772
+   3      améliorée                      -0.000061       0.1020
+   4      adhère                         -0.000048       0.1083
+   5      rôdent                         -0.000045       0.0860
+   6      empare                         -0.000040       0.0593
+   7      sourd                          -0.000037       0.0378
+   8      conjurer                       -0.000037       0.0723
+   9      effets                         -0.000037       0.0410
+   10     inimaginable                   -0.000031       0.0714
+   11     sombres                        -0.000031       0.0332
+   12     otage                          -0.000028       0.0732
+   13     conséquences                   -0.000027       0.0418
+   14     meubles                        -0.000027       0.0338
+   15     essaient                       -0.000026       0.0753
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sing                           +0.003871       0.2622
+   2      ming                           +0.002431       0.2588
+   3      yin                            +0.002226       0.2472
+   4      sen                            +0.001007       0.1250
+   5      raisonne                       +0.000899       0.0805
+   6      insensible                     +0.000893       0.0496
+   7      vaincre                        +0.000884       0.0493
+   8      afrique                        +0.000829       0.1045
+   9      inimaginable                   +0.000782       0.0714
+   10     entraîné                       +0.000781       0.0461
+   11     correct                        +0.000755       0.1094
+   12     rôdent                         +0.000755       0.0860
+   13     perspectives                   +0.000666       0.0677
+   14     projeté                        +0.000664       0.0593
+   15     bateau                         +0.000628       0.0742
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      men                            -0.001887       0.1901
+   2      préoccupée                     -0.001355       0.0680
+   3      élaborer                       -0.000961       0.0812
+   4      sombres                        -0.000895       0.0332
+   5      conjurer                       -0.000862       0.0723
+   6      otage                          -0.000759       0.0732
+   7      essaient                       -0.000606       0.0753
+   8      améliorée                      -0.000471       0.1020
+   9      passera                        -0.000460       0.0422
+   10     adhère                         -0.000454       0.1083
+   11     avancent                       -0.000431       0.0644
+   12     sauver                         -0.000378       0.0324
+   13     logique                        -0.000312       0.0369
+   14     tourne                         -0.000310       0.0336
+   15     observe                        -0.000298       0.0477
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sing                           +0.200466       0.2622
+   2      ming                           +0.170339       0.2588
+   3      yin                            +0.116837       0.2472
+   4      vaincre                        +0.050615       0.0493
+   5      afrique                        +0.045886       0.1045
+   6      insensible                     +0.043210       0.0496
+   7      raisonne                       +0.041568       0.0805
+   8      sen                            +0.041177       0.1250
+   9      entraîné                       +0.039076       0.0461
+   10     bateau                         +0.039042       0.0742
+   11     rôdent                         +0.038585       0.0860
+   12     inimaginable                   +0.036454       0.0714
+   13     boeuf                          +0.034070       0.0484
+   14     cartes                         +0.033976       0.1024
+   15     projeté                        +0.033579       0.0593
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      men                            -0.114884       0.1901
+   2      préoccupée                     -0.066786       0.0680
+   3      élaborer                       -0.046751       0.0812
+   4      conjurer                       -0.039745       0.0723
+   5      sombres                        -0.039416       0.0332
+   6      otage                          -0.035740       0.0732
+   7      essaient                       -0.034624       0.0753
+   8      adhère                         -0.028398       0.1083
+   9      avancent                       -0.025951       0.0644
+   10     fiel                           -0.022577       0.0772
+   11     sauver                         -0.020187       0.0324
+   12     passera                        -0.018384       0.0422
+   13     améliorée                      -0.017822       0.1020
+   14     logique                        -0.016338       0.0369
+   15     hume                           -0.016074       0.0955
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+hume                      +0.000000     +0.000077     +0.000077     0.0955
+hong                      +0.000567     +0.000076     +0.000076     0.7177
+yin                       +0.002226     +0.000076     +0.000076     0.2472
+boeuf                     +0.000568     +0.000038     +0.000038     0.0484
+men                       +0.000000     +0.000037     +0.000037     0.1901
+déchirer                  +0.000076     +0.000033     +0.000033     0.0503
+mène                      +0.000130     +0.000033     +0.000033     0.0377
+afrique                   +0.000829     +0.000029     +0.000029     0.1045
+élaborer                  +0.000000     +0.000028     +0.000028     0.0812
+cavale                    +0.000000     +0.000026     +0.000026     0.0736
+bateau                    +0.000628     +0.000019     +0.000019     0.0742
+sing                      +0.003871     +0.000017     +0.000017     0.2622
+vivres                    +0.000409     +0.000015     +0.000015     0.0631
+restant                   +0.000297     +0.000014     +0.000014     0.0447
+passera                   +0.000000     +0.000012     +0.000012     0.0422
+auparavant                +0.000000     +0.000012     +0.000012     0.0331
+vaincre                   +0.000884     +0.000011     +0.000011     0.0493
+dires                     +0.000000     +0.000011     +0.000011     0.0651
+veulent                   +0.000000     +0.000010     +0.000010     0.0323
+sacrifier                 +0.000000     +0.000007     +0.000007     0.0513
+logit final pour 'homme': -0.0464

@@ -1,0 +1,387 @@
+texte analysé: plus haut , ses beaux mamelons noirs clignotent , ses beaux yeux bleus inhumains clignotent , sa chevelure blonde aussi , comme un arbre illuminé par la foudre , chez elle , tout clignote , tout , sau...
+prédiction: FEMME (confiance: 54.0%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.0629
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      billie                         +0.000157       0.4580
+   2      cuirs                          +0.000074       0.1144
+   3      vestimentaire                  +0.000069       0.1012
+   4      km                             +0.000064       0.1150
+   5      transforme                     +0.000061       0.1255
+   6      visière                        +0.000059       0.0764
+   7      abdomen                        +0.000057       0.0889
+   8      tournante                      +0.000055       0.1064
+   9      érotique                       +0.000050       0.0907
+   10     omnibus                        +0.000049       0.0998
+   11     marne                          +0.000047       0.0882
+   12     casquette                      +0.000045       0.0549
+   13     cintres                        +0.000043       0.1060
+   14     thème                          +0.000041       0.0716
+   15     mamelons                       +0.000039       0.1144
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clignotent                     -0.000163       0.2475
+   2      libérale                       -0.000160       0.1201
+   3      masculin                       -0.000134       0.0726
+   4      phallus                        -0.000118       0.1297
+   5      aimeraient                     -0.000099       0.0984
+   6      tissus                         -0.000095       0.0622
+   7      conçue                         -0.000092       0.0833
+   8      clignote                       -0.000090       0.1150
+   9      néon                           -0.000077       0.0870
+   10     social                         -0.000076       0.0618
+   11     métiers                        -0.000072       0.0726
+   12     professionnelle                -0.000071       0.0599
+   13     robots                         -0.000071       0.1181
+   14     médecine                       -0.000066       0.0564
+   15     ingénieurs                     -0.000062       0.0899
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      billie                         +0.000157       0.4580
+   2      cuirs                          +0.000074       0.1144
+   3      vestimentaire                  +0.000069       0.1012
+   4      km                             +0.000064       0.1150
+   5      transforme                     +0.000061       0.1255
+   6      visière                        +0.000059       0.0764
+   7      abdomen                        +0.000057       0.0889
+   8      tournante                      +0.000055       0.1064
+   9      érotique                       +0.000050       0.0907
+   10     omnibus                        +0.000049       0.0998
+   11     marne                          +0.000047       0.0882
+   12     casquette                      +0.000045       0.0549
+   13     cintres                        +0.000043       0.1060
+   14     thème                          +0.000041       0.0716
+   15     mamelons                       +0.000039       0.1144
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clignotent                     -0.000163       0.2475
+   2      libérale                       -0.000160       0.1201
+   3      masculin                       -0.000134       0.0726
+   4      phallus                        -0.000118       0.1297
+   5      aimeraient                     -0.000099       0.0984
+   6      tissus                         -0.000095       0.0622
+   7      conçue                         -0.000092       0.0833
+   8      clignote                       -0.000090       0.1150
+   9      néon                           -0.000077       0.0870
+   10     social                         -0.000076       0.0618
+   11     métiers                        -0.000072       0.0726
+   12     professionnelle                -0.000071       0.0599
+   13     robots                         -0.000071       0.1181
+   14     médecine                       -0.000066       0.0564
+   15     ingénieurs                     -0.000062       0.0899
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clignotent                     +0.002906       0.2475
+   2      kit                            +0.002347       0.1162
+   3      masculin                       +0.001637       0.0726
+   4      tissus                         +0.001580       0.0622
+   5      aimeraient                     +0.001431       0.0984
+   6      désirée                        +0.001121       0.0835
+   7      accueil                        +0.000963       0.0468
+   8      cintres                        +0.000947       0.1060
+   9      compacte                       +0.000929       0.0793
+   10     capacités                      +0.000879       0.0695
+   11     ordinateur                     +0.000754       0.0695
+   12     clignote                       +0.000717       0.1150
+   13     phallus                        +0.000703       0.1297
+   14     week                           +0.000649       0.0628
+   15     reçoit                         +0.000578       0.0512
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      billie                         -0.002829       0.4580
+   2      marne                          -0.001694       0.0882
+   3      batte                          -0.001430       0.1043
+   4      cents                          -0.001422       0.0375
+   5      adaptée                        -0.001408       0.0961
+   6      phénomènes                     -0.001396       0.0829
+   7      mètres                         -0.001382       0.0362
+   8      jadis                          -0.001374       0.0478
+   9      visière                        -0.001279       0.0764
+   10     cuirs                          -0.001096       0.1144
+   11     jeton                          -0.001071       0.1047
+   12     vestiaire                      -0.001048       0.2254
+   13     national                       -0.001046       0.0625
+   14     casquette                      -0.001016       0.0549
+   15     mouvant                        -0.000952       0.0868
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clignotent                     +0.158083       0.2475
+   2      kit                            +0.104416       0.1162
+   3      tissus                         +0.081113       0.0622
+   4      masculin                       +0.080066       0.0726
+   5      aimeraient                     +0.072454       0.0984
+   6      désirée                        +0.055059       0.0835
+   7      cintres                        +0.050389       0.1060
+   8      compacte                       +0.045104       0.0793
+   9      accueil                        +0.044132       0.0468
+   10     phallus                        +0.040628       0.1297
+   11     capacités                      +0.038813       0.0695
+   12     clignote                       +0.034099       0.1150
+   13     transforme                     +0.033696       0.1255
+   14     week                           +0.033372       0.0628
+   15     ordinateur                     +0.032798       0.0695
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marne                          -0.088026       0.0882
+   2      vestiaire                      -0.087645       0.2254
+   3      phénomènes                     -0.073635       0.0829
+   4      batte                          -0.072845       0.1043
+   5      mètres                         -0.068691       0.0362
+   6      jadis                          -0.066812       0.0478
+   7      cents                          -0.065685       0.0375
+   8      visière                        -0.060970       0.0764
+   9      billie                         -0.056037       0.4580
+   10     adaptée                        -0.055595       0.0961
+   11     km                             -0.052966       0.1150
+   12     jeton                          -0.052648       0.1047
+   13     national                       -0.050063       0.0625
+   14     marin                          -0.048139       0.0558
+   15     cuirs                          -0.047429       0.1144
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+billie                    +0.000000     +0.000157     +0.000157     0.4580
+cuirs                     +0.000000     +0.000074     +0.000074     0.1144
+vestimentaire             +0.000093     +0.000069     +0.000069     0.1012
+km                        +0.000000     +0.000064     +0.000064     0.1150
+transforme                +0.000459     +0.000061     +0.000061     0.1255
+visière                   +0.000000     +0.000059     +0.000059     0.0764
+abdomen                   +0.000543     +0.000057     +0.000057     0.0889
+tournante                 +0.000000     +0.000055     +0.000055     0.1064
+érotique                  +0.000070     +0.000050     +0.000050     0.0907
+omnibus                   +0.000000     +0.000049     +0.000049     0.0998
+marne                     +0.000000     +0.000047     +0.000047     0.0882
+casquette                 +0.000000     +0.000045     +0.000045     0.0549
+cintres                   +0.000947     +0.000043     +0.000043     0.1060
+thème                     +0.000000     +0.000041     +0.000041     0.0716
+mamelons                  +0.000000     +0.000039     +0.000039     0.1144
+vestiaire                 +0.000000     +0.000037     +0.000037     0.2254
+bleus                     +0.000000     +0.000030     +0.000030     0.0388
+marin                     +0.000000     +0.000030     +0.000030     0.0558
+réel                      +0.000000     +0.000028     +0.000028     0.0462
+blonde                    +0.000414     +0.000028     +0.000028     0.0411
+logit final pour 'femme': 0.0629
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.0992
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vestiaire                      +0.000070       0.2254
+   2      blonde                         +0.000047       0.0411
+   3      consulte                       +0.000046       0.0817
+   4      abdomen                        +0.000045       0.0889
+   5      omnibus                        +0.000042       0.0998
+   6      collège                        +0.000038       0.0569
+   7      thème                          +0.000036       0.0716
+   8      marne                          +0.000032       0.0882
+   9      érotique                       +0.000031       0.0907
+   10     compacte                       +0.000028       0.0793
+   11     cintres                        +0.000027       0.1060
+   12     tournante                      +0.000027       0.1064
+   13     casquette                      +0.000027       0.0549
+   14     chevelure                      +0.000023       0.0466
+   15     fièvre                         +0.000022       0.0430
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clignotent                     -0.000109       0.2475
+   2      billie                         -0.000099       0.4580
+   3      libérale                       -0.000091       0.1201
+   4      masculin                       -0.000082       0.0726
+   5      adaptée                        -0.000077       0.0961
+   6      médecine                       -0.000066       0.0564
+   7      aimeraient                     -0.000065       0.0984
+   8      métiers                        -0.000065       0.0726
+   9      pirate                         -0.000059       0.0920
+   10     conçue                         -0.000059       0.0833
+   11     néon                           -0.000051       0.0870
+   12     jeton                          -0.000051       0.1047
+   13     phallus                        -0.000050       0.1297
+   14     social                         -0.000049       0.0618
+   15     clignote                       -0.000048       0.1150
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vestiaire                      +0.000070       0.2254
+   2      blonde                         +0.000047       0.0411
+   3      consulte                       +0.000046       0.0817
+   4      abdomen                        +0.000045       0.0889
+   5      omnibus                        +0.000042       0.0998
+   6      collège                        +0.000038       0.0569
+   7      thème                          +0.000036       0.0716
+   8      marne                          +0.000032       0.0882
+   9      érotique                       +0.000031       0.0907
+   10     compacte                       +0.000028       0.0793
+   11     cintres                        +0.000027       0.1060
+   12     tournante                      +0.000027       0.1064
+   13     casquette                      +0.000027       0.0549
+   14     chevelure                      +0.000023       0.0466
+   15     fièvre                         +0.000022       0.0430
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clignotent                     -0.000109       0.2475
+   2      billie                         -0.000099       0.4580
+   3      libérale                       -0.000091       0.1201
+   4      masculin                       -0.000082       0.0726
+   5      adaptée                        -0.000077       0.0961
+   6      médecine                       -0.000066       0.0564
+   7      aimeraient                     -0.000065       0.0984
+   8      métiers                        -0.000065       0.0726
+   9      pirate                         -0.000059       0.0920
+   10     conçue                         -0.000059       0.0833
+   11     néon                           -0.000051       0.0870
+   12     jeton                          -0.000051       0.1047
+   13     phallus                        -0.000050       0.1297
+   14     social                         -0.000049       0.0618
+   15     clignote                       -0.000048       0.1150
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marne                          +0.001517       0.0882
+   2      billie                         +0.001356       0.4580
+   3      adaptée                        +0.001288       0.0961
+   4      vestiaire                      +0.001246       0.2254
+   5      batte                          +0.001238       0.1043
+   6      jadis                          +0.001225       0.0478
+   7      phénomènes                     +0.001206       0.0829
+   8      cents                          +0.001190       0.0375
+   9      mètres                         +0.001017       0.0362
+   10     visière                        +0.000908       0.0764
+   11     national                       +0.000892       0.0625
+   12     jeton                          +0.000890       0.1047
+   13     libérale                       +0.000865       0.1201
+   14     cuirs                          +0.000860       0.1144
+   15     pirate                         +0.000842       0.0920
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clignotent                     -0.002427       0.2475
+   2      kit                            -0.002316       0.1162
+   3      masculin                       -0.001366       0.0726
+   4      tissus                         -0.001196       0.0622
+   5      aimeraient                     -0.001117       0.0984
+   6      désirée                        -0.000978       0.0835
+   7      compacte                       -0.000887       0.0793
+   8      clignote                       -0.000870       0.1150
+   9      accueil                        -0.000720       0.0468
+   10     ordinateur                     -0.000701       0.0695
+   11     cintres                        -0.000670       0.1060
+   12     week                           -0.000629       0.0628
+   13     capacités                      -0.000614       0.0695
+   14     architecture                   -0.000592       0.0670
+   15     phallus                        -0.000540       0.1297
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      vestiaire                      +0.100370       0.2254
+   2      marne                          +0.079707       0.0882
+   3      phénomènes                     +0.063640       0.0829
+   4      jadis                          +0.059131       0.0478
+   5      batte                          +0.056884       0.1043
+   6      cents                          +0.055770       0.0375
+   7      mètres                         +0.053655       0.0362
+   8      jeton                          +0.052459       0.1047
+   9      adaptée                        +0.052291       0.0961
+   10     marin                          +0.044670       0.0558
+   11     national                       +0.043714       0.0625
+   12     libérale                       +0.041998       0.1201
+   13     visière                        +0.041477       0.0764
+   14     km                             +0.040735       0.1150
+   15     pirate                         +0.040069       0.0920
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      clignotent                     -0.129898       0.2475
+   2      kit                            -0.097945       0.1162
+   3      masculin                       -0.067229       0.0726
+   4      aimeraient                     -0.061460       0.0984
+   5      tissus                         -0.055113       0.0622
+   6      désirée                        -0.049038       0.0835
+   7      clignote                       -0.046095       0.1150
+   8      compacte                       -0.042752       0.0793
+   9      ordinateur                     -0.033147       0.0695
+   10     cintres                        -0.031861       0.1060
+   11     accueil                        -0.030802       0.0468
+   12     week                           -0.030096       0.0628
+   13     capacités                      -0.029999       0.0695
+   14     blonde                         -0.029259       0.0411
+   15     phallus                        -0.027604       0.1297
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+vestiaire                 +0.001246     +0.000070     +0.000070     0.2254
+blonde                    +0.000000     +0.000047     +0.000047     0.0411
+consulte                  +0.000000     +0.000046     +0.000046     0.0817
+abdomen                   +0.000000     +0.000045     +0.000045     0.0889
+omnibus                   +0.000348     +0.000042     +0.000042     0.0998
+collège                   +0.000211     +0.000038     +0.000038     0.0569
+thème                     +0.000194     +0.000036     +0.000036     0.0716
+marne                     +0.001517     +0.000032     +0.000032     0.0882
+érotique                  +0.000000     +0.000031     +0.000031     0.0907
+compacte                  +0.000000     +0.000028     +0.000028     0.0793
+cintres                   +0.000000     +0.000027     +0.000027     0.1060
+tournante                 +0.000387     +0.000027     +0.000027     0.1064
+casquette                 +0.000814     +0.000027     +0.000027     0.0549
+chevelure                 +0.000000     +0.000023     +0.000023     0.0466
+fièvre                    +0.000154     +0.000022     +0.000022     0.0430
+km                        +0.000666     +0.000022     +0.000022     0.1150
+vestimentaire             +0.000000     +0.000021     +0.000021     0.1012
+réel                      +0.000135     +0.000021     +0.000021     0.0462
+congé                     +0.000179     +0.000021     +0.000021     0.0441
+bleus                     +0.000047     +0.000020     +0.000020     0.0388
+logit final pour 'homme': -0.0992

@@ -1,0 +1,5 @@
+filename: (DELERM)(Philippe)(et vous avez eu beau temps)(1)(2017)(1950)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 84
+first_name: philippe
+last_name: delerm
+true_label: homme

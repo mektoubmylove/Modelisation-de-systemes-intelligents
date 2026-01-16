@@ -1,0 +1,386 @@
+texte analysé: la momie d iker se chargea de la force essentielle pour franchir la prochaine étape . au coeur de la demeure de l or , isis et iker étaient seuls face à la porte de la contrée de lumière , celle là mê...
+prédiction: HOMME (confiance: 72.5%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.4597
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cèdre                          +0.000072       0.0747
+   2      apparaîtrait                   +0.000066       0.0795
+   3      création                       +0.000045       0.0432
+   4      jonction                       +0.000041       0.0699
+   5      mutations                      +0.000039       0.0941
+   6      oiseau                         +0.000039       0.0611
+   7      colossal                       +0.000036       0.0708
+   8      associer                       +0.000031       0.0572
+   9      passes                         +0.000028       0.0498
+   10     pharaon                        +0.000027       0.0861
+   11     éveil                          +0.000027       0.0482
+   12     sceptre                        +0.000025       0.0750
+   13     franchit                       +0.000023       0.0435
+   14     quotidienne                    +0.000023       0.0391
+   15     subit                          +0.000023       0.0478
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      résurrection                   -0.000102       0.1172
+   2      impératifs                     -0.000102       0.0839
+   3      momie                          -0.000096       0.2896
+   4      isis                           -0.000094       0.3844
+   5      osiris                         -0.000092       0.3738
+   6      ka                             -0.000089       0.3166
+   7      maât                           -0.000080       0.2855
+   8      thot                           -0.000066       0.1302
+   9      périssable                     -0.000059       0.0911
+   10     établie                        -0.000059       0.0539
+   11     impérissable                   -0.000056       0.0880
+   12     rayonnement                    -0.000055       0.0588
+   13     terrestre                      -0.000052       0.0491
+   14     râ                             -0.000051       0.1201
+   15     rituel                         -0.000051       0.0454
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cèdre                          +0.000072       0.0747
+   2      apparaîtrait                   +0.000066       0.0795
+   3      création                       +0.000045       0.0432
+   4      jonction                       +0.000041       0.0699
+   5      mutations                      +0.000039       0.0941
+   6      oiseau                         +0.000039       0.0611
+   7      colossal                       +0.000036       0.0708
+   8      associer                       +0.000031       0.0572
+   9      passes                         +0.000028       0.0498
+   10     pharaon                        +0.000027       0.0861
+   11     éveil                          +0.000027       0.0482
+   12     sceptre                        +0.000025       0.0750
+   13     franchit                       +0.000023       0.0435
+   14     quotidienne                    +0.000023       0.0391
+   15     subit                          +0.000023       0.0478
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      résurrection                   -0.000102       0.1172
+   2      impératifs                     -0.000102       0.0839
+   3      momie                          -0.000096       0.2896
+   4      isis                           -0.000094       0.3844
+   5      osiris                         -0.000092       0.3738
+   6      ka                             -0.000089       0.3166
+   7      maât                           -0.000080       0.2855
+   8      thot                           -0.000066       0.1302
+   9      périssable                     -0.000059       0.0911
+   10     établie                        -0.000059       0.0539
+   11     impérissable                   -0.000056       0.0880
+   12     rayonnement                    -0.000055       0.0588
+   13     terrestre                      -0.000052       0.0491
+   14     râ                             -0.000051       0.1201
+   15     rituel                         -0.000051       0.0454
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      isis                           +0.003147       0.3844
+   2      enveloppée                     +0.000947       0.0451
+   3      rituel                         +0.000762       0.0454
+   4      osiris                         +0.000678       0.3738
+   5      continuerait                   +0.000657       0.0653
+   6      unissait                       +0.000577       0.0613
+   7      associer                       +0.000490       0.0572
+   8      établie                        +0.000484       0.0539
+   9      sceau                          +0.000469       0.0610
+   10     stable                         +0.000437       0.0564
+   11     respirer                       +0.000436       0.0280
+   12     ka                             +0.000371       0.3166
+   13     cohérence                      +0.000365       0.0737
+   14     nourri                         +0.000364       0.0457
+   15     rayonnement                    +0.000355       0.0588
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      maât                           -0.004079       0.2855
+   2      momie                          -0.002708       0.2896
+   3      thot                           -0.001310       0.1302
+   4      suscita                        -0.001002       0.0782
+   5      périssable                     -0.000986       0.0911
+   6      râ                             -0.000911       0.1201
+   7      analogue                       -0.000862       0.0722
+   8      subit                          -0.000836       0.0478
+   9      pharaon                        -0.000828       0.0861
+   10     résurrection                   -0.000722       0.1172
+   11     mutations                      -0.000656       0.0941
+   12     colossal                       -0.000640       0.0708
+   13     harpon                         -0.000626       0.0935
+   14     éveil                          -0.000621       0.0482
+   15     contrée                        -0.000610       0.0607
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      isis                           +0.153515       0.3844
+   2      osiris                         +0.057771       0.3738
+   3      enveloppée                     +0.039977       0.0451
+   4      rituel                         +0.033979       0.0454
+   5      continuerait                   +0.027803       0.0653
+   6      unissait                       +0.025190       0.0613
+   7      sceau                          +0.025062       0.0610
+   8      établie                        +0.023077       0.0539
+   9      rayonnement                    +0.022537       0.0588
+   10     ba                             +0.022409       0.2506
+   11     stable                         +0.020987       0.0564
+   12     envol                          +0.020647       0.0552
+   13     associer                       +0.019129       0.0572
+   14     respirer                       +0.017596       0.0280
+   15     cohérence                      +0.017160       0.0737
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      maât                           -0.193988       0.2855
+   2      momie                          -0.130612       0.2896
+   3      thot                           -0.071764       0.1302
+   4      suscita                        -0.054820       0.0782
+   5      analogue                       -0.050439       0.0722
+   6      râ                             -0.040336       0.1201
+   7      subit                          -0.040166       0.0478
+   8      pharaon                        -0.039956       0.0861
+   9      périssable                     -0.039565       0.0911
+   10     colossal                       -0.035505       0.0708
+   11     harpon                         -0.034262       0.0935
+   12     éveil                          -0.029231       0.0482
+   13     oiseau                         -0.027780       0.0611
+   14     contrée                        -0.027387       0.0607
+   15     occident                       -0.026701       0.0606
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+cèdre                     +0.000000     +0.000072     +0.000072     0.0747
+apparaîtrait              +0.000000     +0.000066     +0.000066     0.0795
+création                  +0.000000     +0.000045     +0.000045     0.0432
+jonction                  +0.000000     +0.000041     +0.000041     0.0699
+mutations                 +0.000000     +0.000039     +0.000039     0.0941
+oiseau                    +0.000000     +0.000039     +0.000039     0.0611
+colossal                  +0.000000     +0.000036     +0.000036     0.0708
+associer                  +0.000490     +0.000031     +0.000031     0.0572
+passes                    +0.000246     +0.000028     +0.000028     0.0498
+pharaon                   +0.000000     +0.000027     +0.000027     0.0861
+éveil                     +0.000000     +0.000027     +0.000027     0.0482
+sceptre                   +0.000014     +0.000025     +0.000025     0.0750
+franchit                  +0.000081     +0.000023     +0.000023     0.0435
+quotidienne               +0.000000     +0.000023     +0.000023     0.0391
+subit                     +0.000000     +0.000023     +0.000023     0.0478
+métallique                +0.000000     +0.000019     +0.000019     0.0378
+analogue                  +0.000000     +0.000018     +0.000018     0.0722
+dieux                     +0.000000     +0.000017     +0.000017     0.0402
+suscita                   +0.000000     +0.000017     +0.000017     0.0782
+épanouissement            +0.000000     +0.000017     +0.000017     0.0666
+logit final pour 'femme': -0.4597
+# analyse pour la classe: HOMME  prédite
+# logit: 0.5074
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      isis                           +0.000044       0.3844
+   2      cèdre                          +0.000041       0.0747
+   3      apparaîtrait                   +0.000041       0.0795
+   4      jonction                       +0.000036       0.0699
+   5      ba                             +0.000033       0.2506
+   6      épanouissement                 +0.000032       0.0666
+   7      mutations                      +0.000029       0.0941
+   8      associer                       +0.000029       0.0572
+   9      oiseau                         +0.000027       0.0611
+   10     pharaon                        +0.000027       0.0861
+   11     suscita                        +0.000025       0.0782
+   12     franchit                       +0.000020       0.0435
+   13     colossal                       +0.000019       0.0708
+   14     éveil                          +0.000019       0.0482
+   15     sceptre                        +0.000019       0.0750
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      résurrection                   -0.000073       0.1172
+   2      impératifs                     -0.000059       0.0839
+   3      momie                          -0.000049       0.2896
+   4      établie                        -0.000048       0.0539
+   5      rayonnement                    -0.000044       0.0588
+   6      impérissable                   -0.000041       0.0880
+   7      orion                          -0.000041       0.1103
+   8      issu                           -0.000039       0.0589
+   9      rituel                         -0.000038       0.0454
+   10     ka                             -0.000036       0.3166
+   11     périssable                     -0.000033       0.0911
+   12     transformation                 -0.000030       0.0536
+   13     terrestre                      -0.000029       0.0491
+   14     thot                           -0.000024       0.1302
+   15     décoré                         -0.000024       0.0487
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      isis                           +0.000044       0.3844
+   2      cèdre                          +0.000041       0.0747
+   3      apparaîtrait                   +0.000041       0.0795
+   4      jonction                       +0.000036       0.0699
+   5      ba                             +0.000033       0.2506
+   6      épanouissement                 +0.000032       0.0666
+   7      mutations                      +0.000029       0.0941
+   8      associer                       +0.000029       0.0572
+   9      oiseau                         +0.000027       0.0611
+   10     pharaon                        +0.000027       0.0861
+   11     suscita                        +0.000025       0.0782
+   12     franchit                       +0.000020       0.0435
+   13     colossal                       +0.000019       0.0708
+   14     éveil                          +0.000019       0.0482
+   15     sceptre                        +0.000019       0.0750
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      résurrection                   -0.000073       0.1172
+   2      impératifs                     -0.000059       0.0839
+   3      momie                          -0.000049       0.2896
+   4      établie                        -0.000048       0.0539
+   5      rayonnement                    -0.000044       0.0588
+   6      impérissable                   -0.000041       0.0880
+   7      orion                          -0.000041       0.1103
+   8      issu                           -0.000039       0.0589
+   9      rituel                         -0.000038       0.0454
+   10     ka                             -0.000036       0.3166
+   11     périssable                     -0.000033       0.0911
+   12     transformation                 -0.000030       0.0536
+   13     terrestre                      -0.000029       0.0491
+   14     thot                           -0.000024       0.1302
+   15     décoré                         -0.000024       0.0487
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      maât                           +0.003476       0.2855
+   2      momie                          +0.002354       0.2896
+   3      thot                           +0.001248       0.1302
+   4      râ                             +0.001108       0.1201
+   5      suscita                        +0.000923       0.0782
+   6      pharaon                        +0.000901       0.0861
+   7      mutations                      +0.000878       0.0941
+   8      analogue                       +0.000855       0.0722
+   9      subit                          +0.000788       0.0478
+   10     périssable                     +0.000715       0.0911
+   11     occident                       +0.000570       0.0606
+   12     colossal                       +0.000562       0.0708
+   13     résurrection                   +0.000542       0.1172
+   14     contrée                        +0.000491       0.0607
+   15     éveil                          +0.000488       0.0482
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      isis                           -0.001694       0.3844
+   2      enveloppée                     -0.000906       0.0451
+   3      continuerait                   -0.000589       0.0653
+   4      rituel                         -0.000532       0.0454
+   5      unissait                       -0.000527       0.0613
+   6      envol                          -0.000426       0.0552
+   7      sceau                          -0.000404       0.0610
+   8      respirer                       -0.000400       0.0280
+   9      associer                       -0.000393       0.0572
+   10     osiris                         -0.000389       0.3738
+   11     rayonnement                    -0.000372       0.0588
+   12     chargea                        -0.000340       0.0523
+   13     impérissable                   -0.000329       0.0880
+   14     cohérence                      -0.000320       0.0737
+   15     éloigne                        -0.000294       0.0383
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      maât                           +0.186403       0.2855
+   2      momie                          +0.109271       0.2896
+   3      thot                           +0.072953       0.1302
+   4      râ                             +0.047634       0.1201
+   5      analogue                       +0.045688       0.0722
+   6      suscita                        +0.041804       0.0782
+   7      pharaon                        +0.038712       0.0861
+   8      subit                          +0.033714       0.0478
+   9      mutations                      +0.032370       0.0941
+   10     colossal                       +0.030452       0.0708
+   11     périssable                     +0.025382       0.0911
+   12     prononça                       +0.023240       0.0439
+   13     occident                       +0.023168       0.0606
+   14     formules                       +0.022249       0.0482
+   15     éveil                          +0.021184       0.0482
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      isis                           -0.095053       0.3844
+   2      enveloppée                     -0.035938       0.0451
+   3      ba                             -0.031773       0.2506
+   4      osiris                         -0.028947       0.3738
+   5      continuerait                   -0.025107       0.0653
+   6      rituel                         -0.023535       0.0454
+   7      envol                          -0.023284       0.0552
+   8      établie                        -0.021184       0.0539
+   9      rayonnement                    -0.019472       0.0588
+   10     unissait                       -0.019317       0.0613
+   11     associer                       -0.019147       0.0572
+   12     impérissable                   -0.018473       0.0880
+   13     sceau                          -0.017650       0.0610
+   14     stable                         -0.016829       0.0564
+   15     chargea                        -0.016637       0.0523
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+isis                      +0.000000     +0.000044     +0.000044     0.3844
+cèdre                     +0.000127     +0.000041     +0.000041     0.0747
+apparaîtrait              +0.000410     +0.000041     +0.000041     0.0795
+jonction                  +0.000169     +0.000036     +0.000036     0.0699
+ba                        +0.000065     +0.000033     +0.000033     0.2506
+épanouissement            +0.000000     +0.000032     +0.000032     0.0666
+mutations                 +0.000878     +0.000029     +0.000029     0.0941
+associer                  +0.000000     +0.000029     +0.000029     0.0572
+oiseau                    +0.000256     +0.000027     +0.000027     0.0611
+pharaon                   +0.000901     +0.000027     +0.000027     0.0861
+suscita                   +0.000923     +0.000025     +0.000025     0.0782
+franchit                  +0.000000     +0.000020     +0.000020     0.0435
+colossal                  +0.000562     +0.000019     +0.000019     0.0708
+éveil                     +0.000488     +0.000019     +0.000019     0.0482
+sceptre                   +0.000055     +0.000019     +0.000019     0.0750
+subit                     +0.000788     +0.000013     +0.000013     0.0478
+serpents                  +0.000168     +0.000012     +0.000012     0.0478
+dépendait                 +0.000000     +0.000011     +0.000011     0.0483
+unissait                  +0.000000     +0.000011     +0.000011     0.0613
+communier                 +0.000000     +0.000011     +0.000011     0.0799
+logit final pour 'homme': 0.5074

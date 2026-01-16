@@ -1,0 +1,5 @@
+filename: (VIAN)(Boris)(l_herbe rouge)(1)(1950)(1920)(1959)(fr)(z)(z)(V)(R)(T).txt
+index: 280
+first_name: boris
+last_name: vian
+true_label: homme

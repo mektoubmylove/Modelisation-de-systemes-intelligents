@@ -1,0 +1,386 @@
+texte analysé: au plus court à travers le marais en prenant des risques , sa jument ayant parfois de l eau jusqu au dessus des genoux et des jarrets , et il parvint ainsi à retrouver la piste à quelque deux cents ou...
+prédiction: HOMME (confiance: 85.6%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.9959
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jument                         +0.000082       0.1810
+   2      tenta                          +0.000075       0.1244
+   3      antoine                        +0.000057       0.1469
+   4      monture                        +0.000053       0.2246
+   5      buissons                       +0.000049       0.0715
+   6      fugitif                        +0.000045       0.0933
+   7      efforçait                      +0.000045       0.0666
+   8      aboutissait                    +0.000041       0.1072
+   9      moine                          +0.000036       0.2506
+   10     enfonçait                      +0.000036       0.0670
+   11     observèrent                    +0.000036       0.1165
+   12     construite                     +0.000035       0.0711
+   13     pria                           +0.000032       0.0705
+   14     fourrés                        +0.000032       0.0804
+   15     fuyard                         +0.000030       0.1198
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cents                          -0.000131       0.1267
+   2      magne                          -0.000082       0.2719
+   3      marécage                       -0.000065       0.1123
+   4      chevauchait                    -0.000054       0.1131
+   5      aperçurent                     -0.000052       0.0848
+   6      barque                         -0.000045       0.0689
+   7      présumé                        -0.000045       0.1079
+   8      rapidité                       -0.000042       0.0638
+   9      progression                    -0.000041       0.0785
+   10     changea                        -0.000039       0.0611
+   11     épuisé                         -0.000036       0.0526
+   12     impénétrables                  -0.000035       0.1148
+   13     cependant                      -0.000034       0.0398
+   14     impasse                        -0.000032       0.0755
+   15     méfiance                       -0.000031       0.0542
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jument                         +0.000082       0.1810
+   2      tenta                          +0.000075       0.1244
+   3      antoine                        +0.000057       0.1469
+   4      monture                        +0.000053       0.2246
+   5      buissons                       +0.000049       0.0715
+   6      fugitif                        +0.000045       0.0933
+   7      efforçait                      +0.000045       0.0666
+   8      aboutissait                    +0.000041       0.1072
+   9      moine                          +0.000036       0.2506
+   10     enfonçait                      +0.000036       0.0670
+   11     observèrent                    +0.000036       0.1165
+   12     construite                     +0.000035       0.0711
+   13     pria                           +0.000032       0.0705
+   14     fourrés                        +0.000032       0.0804
+   15     fuyard                         +0.000030       0.1198
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cents                          -0.000131       0.1267
+   2      magne                          -0.000082       0.2719
+   3      marécage                       -0.000065       0.1123
+   4      chevauchait                    -0.000054       0.1131
+   5      aperçurent                     -0.000052       0.0848
+   6      barque                         -0.000045       0.0689
+   7      présumé                        -0.000045       0.1079
+   8      rapidité                       -0.000042       0.0638
+   9      progression                    -0.000041       0.0785
+   10     changea                        -0.000039       0.0611
+   11     épuisé                         -0.000036       0.0526
+   12     impénétrables                  -0.000035       0.1148
+   13     cependant                      -0.000034       0.0398
+   14     impasse                        -0.000032       0.0755
+   15     méfiance                       -0.000031       0.0542
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      présumé                        +0.001281       0.1079
+   2      vociférer                      +0.000931       0.1295
+   3      souper                         +0.000776       0.0757
+   4      partager                       +0.000743       0.0455
+   5      accepta                        +0.000722       0.0619
+   6      vigoureusement                 +0.000641       0.0751
+   7      couteaux                       +0.000634       0.0731
+   8      moine                          +0.000489       0.2506
+   9      épais                          +0.000486       0.0428
+   10     échappa                        +0.000482       0.0688
+   11     embarcadère                    +0.000482       0.1203
+   12     changea                        +0.000467       0.0611
+   13     sentier                        +0.000421       0.0615
+   14     épuisement                     +0.000380       0.0704
+   15     construite                     +0.000313       0.0711
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cents                          -0.003010       0.1267
+   2      poursuite                      -0.002145       0.1209
+   3      poursuivant                    -0.002038       0.1547
+   4      marais                         -0.001502       0.2390
+   5      robustesse                     -0.001460       0.1393
+   6      fuyard                         -0.001443       0.1198
+   7      jarrets                        -0.001316       0.1170
+   8      errante                        -0.001263       0.1139
+   9      fugitif                        -0.001185       0.0933
+   10     antoine                        -0.000919       0.1469
+   11     magne                          -0.000877       0.2719
+   12     menaces                        -0.000861       0.0566
+   13     rassuré                        -0.000831       0.0586
+   14     efforçait                      -0.000719       0.0666
+   15     buissons                       -0.000708       0.0715
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      présumé                        +0.064417       0.1079
+   2      vociférer                      +0.044900       0.1295
+   3      partager                       +0.032877       0.0455
+   4      souper                         +0.031857       0.0757
+   5      accepta                        +0.031802       0.0619
+   6      couteaux                       +0.029440       0.0731
+   7      changea                        +0.028279       0.0611
+   8      vigoureusement                 +0.028229       0.0751
+   9      échappa                        +0.022174       0.0688
+   10     embarcadère                    +0.022054       0.1203
+   11     épais                          +0.021801       0.0428
+   12     sentier                        +0.020130       0.0615
+   13     jument                         +0.020105       0.1810
+   14     agilité                        +0.019539       0.0911
+   15     monture                        +0.017994       0.2246
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cents                          -0.115869       0.1267
+   2      poursuite                      -0.087134       0.1209
+   3      poursuivant                    -0.068995       0.1547
+   4      fuyard                         -0.067612       0.1198
+   5      marais                         -0.060868       0.2390
+   6      jarrets                        -0.059113       0.1170
+   7      fugitif                        -0.056738       0.0933
+   8      robustesse                     -0.055073       0.1393
+   9      errante                        -0.053586       0.1139
+   10     antoine                        -0.042691       0.1469
+   11     pria                           -0.040457       0.0705
+   12     buissons                       -0.037650       0.0715
+   13     menaces                        -0.035162       0.0566
+   14     efforçait                      -0.033993       0.0666
+   15     extrémité                      -0.033631       0.0554
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+jument                    +0.000162     +0.000082     +0.000082     0.1810
+tenta                     +0.000000     +0.000075     +0.000075     0.1244
+antoine                   +0.000000     +0.000057     +0.000057     0.1469
+monture                   +0.000000     +0.000053     +0.000053     0.2246
+buissons                  +0.000000     +0.000049     +0.000049     0.0715
+fugitif                   +0.000000     +0.000045     +0.000045     0.0933
+efforçait                 +0.000000     +0.000045     +0.000045     0.0666
+aboutissait               +0.000000     +0.000041     +0.000041     0.1072
+moine                     +0.000489     +0.000036     +0.000036     0.2506
+enfonçait                 +0.000159     +0.000036     +0.000036     0.0670
+observèrent               +0.000270     +0.000036     +0.000036     0.1165
+construite                +0.000313     +0.000035     +0.000035     0.0711
+pria                      +0.000000     +0.000032     +0.000032     0.0705
+fourrés                   +0.000109     +0.000032     +0.000032     0.0804
+fuyard                    +0.000000     +0.000030     +0.000030     0.1198
+errante                   +0.000000     +0.000030     +0.000030     0.1139
+course                    +0.000075     +0.000026     +0.000026     0.0415
+parvint                   +0.000000     +0.000026     +0.000026     0.1132
+écarter                   +0.000000     +0.000026     +0.000026     0.0564
+embarcadère               +0.000482     +0.000024     +0.000024     0.1203
+logit final pour 'femme': -0.9959
+# analyse pour la classe: HOMME  prédite
+# logit: 0.7868
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fuyard                         +0.000053       0.1198
+   2      jument                         +0.000051       0.1810
+   3      fugitif                        +0.000046       0.0933
+   4      efforçait                      +0.000038       0.0666
+   5      pria                           +0.000032       0.0705
+   6      tenta                          +0.000032       0.1244
+   7      bride                          +0.000029       0.0809
+   8      observèrent                    +0.000028       0.1165
+   9      embarcadère                    +0.000025       0.1203
+   10     antoine                        +0.000023       0.1469
+   11     robustesse                     +0.000023       0.1393
+   12     écarter                        +0.000020       0.0564
+   13     échappa                        +0.000018       0.0688
+   14     enfonçait                      +0.000017       0.0670
+   15     parvint                        +0.000017       0.1132
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      moine                          -0.000123       0.2506
+   2      cents                          -0.000095       0.1267
+   3      chevauchait                    -0.000077       0.1131
+   4      marécage                       -0.000073       0.1123
+   5      monture                        -0.000063       0.2246
+   6      poursuivant                    -0.000060       0.1547
+   7      marais                         -0.000051       0.2390
+   8      poursuite                      -0.000050       0.1209
+   9      progression                    -0.000044       0.0785
+   10     chaumière                      -0.000040       0.2246
+   11     gesticulant                    -0.000036       0.1068
+   12     rapidité                       -0.000035       0.0638
+   13     magne                          -0.000034       0.2719
+   14     aperçurent                     -0.000033       0.0848
+   15     barque                         -0.000032       0.0689
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fuyard                         +0.000053       0.1198
+   2      jument                         +0.000051       0.1810
+   3      fugitif                        +0.000046       0.0933
+   4      efforçait                      +0.000038       0.0666
+   5      pria                           +0.000032       0.0705
+   6      tenta                          +0.000032       0.1244
+   7      bride                          +0.000029       0.0809
+   8      observèrent                    +0.000028       0.1165
+   9      embarcadère                    +0.000025       0.1203
+   10     antoine                        +0.000023       0.1469
+   11     robustesse                     +0.000023       0.1393
+   12     écarter                        +0.000020       0.0564
+   13     échappa                        +0.000018       0.0688
+   14     enfonçait                      +0.000017       0.0670
+   15     parvint                        +0.000017       0.1132
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      moine                          -0.000123       0.2506
+   2      cents                          -0.000095       0.1267
+   3      chevauchait                    -0.000077       0.1131
+   4      marécage                       -0.000073       0.1123
+   5      monture                        -0.000063       0.2246
+   6      poursuivant                    -0.000060       0.1547
+   7      marais                         -0.000051       0.2390
+   8      poursuite                      -0.000050       0.1209
+   9      progression                    -0.000044       0.0785
+   10     chaumière                      -0.000040       0.2246
+   11     gesticulant                    -0.000036       0.1068
+   12     rapidité                       -0.000035       0.0638
+   13     magne                          -0.000034       0.2719
+   14     aperçurent                     -0.000033       0.0848
+   15     barque                         -0.000032       0.0689
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cents                          +0.002736       0.1267
+   2      poursuite                      +0.001775       0.1209
+   3      magne                          +0.001696       0.2719
+   4      poursuivant                    +0.001561       0.1547
+   5      marais                         +0.001499       0.2390
+   6      robustesse                     +0.001246       0.1393
+   7      fuyard                         +0.001148       0.1198
+   8      errante                        +0.001124       0.1139
+   9      jarrets                        +0.001086       0.1170
+   10     antoine                        +0.000978       0.1469
+   11     menaces                        +0.000828       0.0566
+   12     fugitif                        +0.000814       0.0933
+   13     reconnut                       +0.000761       0.0533
+   14     impénétrables                  +0.000648       0.1148
+   15     marécage                       +0.000623       0.1123
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      moine                          -0.001179       0.2506
+   2      présumé                        -0.000860       0.1079
+   3      vociférer                      -0.000707       0.1295
+   4      souper                         -0.000622       0.0757
+   5      partager                       -0.000606       0.0455
+   6      vigoureusement                 -0.000539       0.0751
+   7      accepta                        -0.000532       0.0619
+   8      épais                          -0.000493       0.0428
+   9      construite                     -0.000487       0.0711
+   10     couteaux                       -0.000449       0.0731
+   11     échappa                        -0.000368       0.0688
+   12     hurlant                        -0.000279       0.0603
+   13     sente                          -0.000262       0.1471
+   14     sentier                        -0.000258       0.0615
+   15     épuisement                     -0.000249       0.0704
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cents                          +0.092969       0.1267
+   2      poursuite                      +0.063018       0.1209
+   3      fuyard                         +0.058266       0.1198
+   4      robustesse                     +0.051228       0.1393
+   5      jarrets                        +0.048598       0.1170
+   6      errante                        +0.044400       0.1139
+   7      fugitif                        +0.042466       0.0933
+   8      poursuivant                    +0.040539       0.1547
+   9      marais                         +0.040403       0.2390
+   10     magne                          +0.036021       0.2719
+   11     menaces                        +0.031715       0.0566
+   12     antoine                        +0.031120       0.1469
+   13     pria                           +0.030622       0.0705
+   14     efforçait                      +0.027668       0.0666
+   15     extrémité                      +0.024741       0.0554
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      moine                          -0.066760       0.2506
+   2      présumé                        -0.039958       0.1079
+   3      vociférer                      -0.031858       0.1295
+   4      monture                        -0.026022       0.2246
+   5      partager                       -0.024922       0.0455
+   6      accepta                        -0.024486       0.0619
+   7      souper                         -0.024256       0.0757
+   8      couteaux                       -0.022681       0.0731
+   9      épais                          -0.021154       0.0428
+   10     changea                        -0.020133       0.0611
+   11     vigoureusement                 -0.019317       0.0751
+   12     agilité                        -0.019241       0.0911
+   13     sente                          -0.018733       0.1471
+   14     échappa                        -0.014664       0.0688
+   15     construite                     -0.014078       0.0711
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+fuyard                    +0.001148     +0.000053     +0.000053     0.1198
+jument                    +0.000000     +0.000051     +0.000051     0.1810
+fugitif                   +0.000814     +0.000046     +0.000046     0.0933
+efforçait                 +0.000566     +0.000038     +0.000038     0.0666
+pria                      +0.000559     +0.000032     +0.000032     0.0705
+tenta                     +0.000026     +0.000032     +0.000032     0.1244
+bride                     +0.000000     +0.000029     +0.000029     0.0809
+observèrent               +0.000000     +0.000028     +0.000028     0.1165
+embarcadère               +0.000000     +0.000025     +0.000025     0.1203
+antoine                   +0.000978     +0.000023     +0.000023     0.1469
+robustesse                +0.001246     +0.000023     +0.000023     0.1393
+écarter                   +0.000000     +0.000020     +0.000020     0.0564
+échappa                   +0.000000     +0.000018     +0.000018     0.0688
+enfonçait                 +0.000000     +0.000017     +0.000017     0.0670
+parvint                   +0.000544     +0.000017     +0.000017     0.1132
+construite                +0.000000     +0.000016     +0.000016     0.0711
+errante                   +0.001124     +0.000015     +0.000015     0.1139
+forêt                     +0.000000     +0.000014     +0.000014     0.0463
+fourrés                   +0.000000     +0.000012     +0.000012     0.0804
+telles                    +0.000007     +0.000010     +0.000010     0.0492
+logit final pour 'homme': 0.7868

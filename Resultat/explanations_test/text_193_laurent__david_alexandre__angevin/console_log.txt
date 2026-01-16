@@ -1,0 +1,387 @@
+texte analysé: arrivé , monsieur . milton earle se releva en grimaçant . son tee shirt de l équipe de football des dallas cowboys était gorgé de sueur . il se redressa et dévisagea hugo en soufflant . milton earle a...
+prédiction: FEMME (confiance: 71.0%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.5313
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hugo                           +0.000105       0.4704
+   2      gagna                          +0.000090       0.0476
+   3      déshabilla                     +0.000069       0.0709
+   4      masseur                        +0.000067       0.0997
+   5      déchéance                      +0.000062       0.0579
+   6      boeuf                          +0.000058       0.0446
+   7      froc                           +0.000052       0.0856
+   8      cicatrice                      +0.000045       0.0520
+   9      envoya                         +0.000043       0.0430
+   10     sueur                          +0.000042       0.0604
+   11     costaud                        +0.000039       0.0594
+   12     dallas                         +0.000039       0.1115
+   13     total                          +0.000035       0.0407
+   14     roues                          +0.000032       0.0385
+   15     permettez                      +0.000031       0.0424
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sénateur                       -0.000207       0.4141
+   2      paradis                        -0.000184       0.1439
+   3      texas                          -0.000137       0.0900
+   4      afficha                        -0.000107       0.0758
+   5      barbecue                       -0.000088       0.0860
+   6      emilio                         -0.000075       0.1241
+   7      pédés                          -0.000065       0.1041
+   8      crachent                       -0.000060       0.0860
+   9      baladait                       -0.000057       0.0896
+   10     prendrai                       -0.000053       0.0480
+   11     tee                            -0.000052       0.0620
+   12     connards                       -0.000049       0.0825
+   13     fonte                          -0.000049       0.0588
+   14     age                            -0.000047       0.0812
+   15     vieillards                     -0.000046       0.0497
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hugo                           +0.000105       0.4704
+   2      gagna                          +0.000090       0.0476
+   3      déshabilla                     +0.000069       0.0709
+   4      masseur                        +0.000067       0.0997
+   5      déchéance                      +0.000062       0.0579
+   6      boeuf                          +0.000058       0.0446
+   7      froc                           +0.000052       0.0856
+   8      cicatrice                      +0.000045       0.0520
+   9      envoya                         +0.000043       0.0430
+   10     sueur                          +0.000042       0.0604
+   11     costaud                        +0.000039       0.0594
+   12     dallas                         +0.000039       0.1115
+   13     total                          +0.000035       0.0407
+   14     roues                          +0.000032       0.0385
+   15     permettez                      +0.000031       0.0424
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sénateur                       -0.000207       0.4141
+   2      paradis                        -0.000184       0.1439
+   3      texas                          -0.000137       0.0900
+   4      afficha                        -0.000107       0.0758
+   5      barbecue                       -0.000088       0.0860
+   6      emilio                         -0.000075       0.1241
+   7      pédés                          -0.000065       0.1041
+   8      crachent                       -0.000060       0.0860
+   9      baladait                       -0.000057       0.0896
+   10     prendrai                       -0.000053       0.0480
+   11     tee                            -0.000052       0.0620
+   12     connards                       -0.000049       0.0825
+   13     fonte                          -0.000049       0.0588
+   14     age                            -0.000047       0.0812
+   15     vieillards                     -0.000046       0.0497
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hugo                           +0.003819       0.4704
+   2      enfila                         +0.002819       0.1063
+   3      hop                            +0.002712       0.1692
+   4      afficha                        +0.002371       0.0758
+   5      attrapa                        +0.001950       0.0549
+   6      texas                          +0.001694       0.0900
+   7      baladait                       +0.001524       0.0896
+   8      paradis                        +0.001377       0.1439
+   9      dévisagea                      +0.001335       0.0568
+   10     esclaffa                       +0.001251       0.0721
+   11     emilio                         +0.001249       0.1241
+   12     redressa                       +0.001238       0.0410
+   13     dégarni                        +0.001067       0.0724
+   14     tee                            +0.000993       0.0620
+   15     barbecue                       +0.000979       0.0860
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      milton                         -0.008979       0.4301
+   2      sénateur                       -0.008282       0.4141
+   3      football                       -0.002428       0.1373
+   4      dallas                         -0.001529       0.1115
+   5      types                          -0.001479       0.0860
+   6      masseur                        -0.001420       0.0997
+   7      gagna                          -0.001320       0.0476
+   8      déchéance                      -0.001294       0.0579
+   9      froc                           -0.001138       0.0856
+   10     costauds                       -0.001126       0.0809
+   11     slip                           -0.001007       0.0653
+   12     barrait                        -0.000972       0.0581
+   13     roues                          -0.000863       0.0385
+   14     sueur                          -0.000783       0.0604
+   15     balancé                        -0.000776       0.0572
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hugo                           +0.304167       0.4704
+   2      hop                            +0.160947       0.1692
+   3      enfila                         +0.149844       0.1063
+   4      afficha                        +0.136905       0.0758
+   5      attrapa                        +0.097349       0.0549
+   6      texas                          +0.096835       0.0900
+   7      paradis                        +0.081705       0.1439
+   8      baladait                       +0.071276       0.0896
+   9      barbecue                       +0.070106       0.0860
+   10     emilio                         +0.068313       0.1241
+   11     dévisagea                      +0.065796       0.0568
+   12     esclaffa                       +0.065738       0.0721
+   13     dégarni                        +0.063314       0.0724
+   14     redressa                       +0.062962       0.0410
+   15     tee                            +0.056115       0.0620
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      milton                         -0.487885       0.4301
+   2      sénateur                       -0.446771       0.4141
+   3      football                       -0.118441       0.1373
+   4      gagna                          -0.079876       0.0476
+   5      types                          -0.078362       0.0860
+   6      dallas                         -0.077562       0.1115
+   7      masseur                        -0.071178       0.0997
+   8      costauds                       -0.066876       0.0809
+   9      déchéance                      -0.065066       0.0579
+   10     froc                           -0.060080       0.0856
+   11     barrait                        -0.049968       0.0581
+   12     roues                          -0.048276       0.0385
+   13     slip                           -0.047020       0.0653
+   14     permettez                      -0.042104       0.0424
+   15     balancé                        -0.040158       0.0572
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+hugo                      +0.003819     +0.000105     +0.000105     0.4704
+gagna                     +0.000000     +0.000090     +0.000090     0.0476
+déshabilla                +0.000000     +0.000069     +0.000069     0.0709
+masseur                   +0.000000     +0.000067     +0.000067     0.0997
+déchéance                 +0.000000     +0.000062     +0.000062     0.0579
+boeuf                     +0.000000     +0.000058     +0.000058     0.0446
+froc                      +0.000000     +0.000052     +0.000052     0.0856
+cicatrice                 +0.000473     +0.000045     +0.000045     0.0520
+envoya                    +0.000000     +0.000043     +0.000043     0.0430
+sueur                     +0.000000     +0.000042     +0.000042     0.0604
+costaud                   +0.000000     +0.000039     +0.000039     0.0594
+dallas                    +0.000000     +0.000039     +0.000039     0.1115
+total                     +0.000000     +0.000035     +0.000035     0.0407
+roues                     +0.000000     +0.000032     +0.000032     0.0385
+permettez                 +0.000000     +0.000031     +0.000031     0.0424
+washington                +0.000086     +0.000030     +0.000030     0.0732
+poignée                   +0.000000     +0.000029     +0.000029     0.0317
+soufflant                 +0.000000     +0.000027     +0.000027     0.0504
+enfila                    +0.002819     +0.000025     +0.000025     0.1063
+fit                       +0.000000     +0.000024     +0.000024     0.0288
+logit final pour 'femme': 0.5313
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.3631
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      dallas                         +0.000050       0.1115
+   2      déshabilla                     +0.000049       0.0709
+   3      masseur                        +0.000042       0.0997
+   4      déchéance                      +0.000036       0.0579
+   5      costaud                        +0.000032       0.0594
+   6      steak                          +0.000031       0.0765
+   7      boeuf                          +0.000029       0.0446
+   8      washington                     +0.000028       0.0732
+   9      western                        +0.000027       0.0867
+   10     gagna                          +0.000027       0.0476
+   11     envoya                         +0.000021       0.0430
+   12     cicatrice                      +0.000021       0.0520
+   13     sueur                          +0.000020       0.0604
+   14     poignée                        +0.000017       0.0317
+   15     diligence                      +0.000015       0.0717
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sénateur                       -0.000124       0.4141
+   2      texas                          -0.000082       0.0900
+   3      hugo                           -0.000074       0.4704
+   4      afficha                        -0.000070       0.0758
+   5      pédés                          -0.000058       0.1041
+   6      crachent                       -0.000057       0.0860
+   7      connards                       -0.000056       0.0825
+   8      baladait                       -0.000053       0.0896
+   9      paradis                        -0.000041       0.1439
+   10     football                       -0.000036       0.1373
+   11     hop                            -0.000034       0.1692
+   12     opération                      -0.000033       0.0335
+   13     esclaffa                       -0.000033       0.0721
+   14     prendrai                       -0.000032       0.0480
+   15     dignement                      -0.000030       0.0615
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      dallas                         +0.000050       0.1115
+   2      déshabilla                     +0.000049       0.0709
+   3      masseur                        +0.000042       0.0997
+   4      déchéance                      +0.000036       0.0579
+   5      costaud                        +0.000032       0.0594
+   6      steak                          +0.000031       0.0765
+   7      boeuf                          +0.000029       0.0446
+   8      washington                     +0.000028       0.0732
+   9      western                        +0.000027       0.0867
+   10     gagna                          +0.000027       0.0476
+   11     envoya                         +0.000021       0.0430
+   12     cicatrice                      +0.000021       0.0520
+   13     sueur                          +0.000020       0.0604
+   14     poignée                        +0.000017       0.0317
+   15     diligence                      +0.000015       0.0717
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sénateur                       -0.000124       0.4141
+   2      texas                          -0.000082       0.0900
+   3      hugo                           -0.000074       0.4704
+   4      afficha                        -0.000070       0.0758
+   5      pédés                          -0.000058       0.1041
+   6      crachent                       -0.000057       0.0860
+   7      connards                       -0.000056       0.0825
+   8      baladait                       -0.000053       0.0896
+   9      paradis                        -0.000041       0.1439
+   10     football                       -0.000036       0.1373
+   11     hop                            -0.000034       0.1692
+   12     opération                      -0.000033       0.0335
+   13     esclaffa                       -0.000033       0.0721
+   14     prendrai                       -0.000032       0.0480
+   15     dignement                      -0.000030       0.0615
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      milton                         +0.006631       0.4301
+   2      sénateur                       +0.006386       0.4141
+   3      football                       +0.001914       0.1373
+   4      types                          +0.001124       0.0860
+   5      gagna                          +0.001084       0.0476
+   6      dallas                         +0.000981       0.1115
+   7      masseur                        +0.000962       0.0997
+   8      costauds                       +0.000861       0.0809
+   9      déchéance                      +0.000855       0.0579
+   10     froc                           +0.000849       0.0856
+   11     permettez                      +0.000676       0.0424
+   12     sueur                          +0.000615       0.0604
+   13     roues                          +0.000598       0.0385
+   14     barrait                        +0.000533       0.0581
+   15     balancé                        +0.000528       0.0572
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hugo                           -0.002443       0.4704
+   2      hop                            -0.002136       0.1692
+   3      enfila                         -0.002114       0.1063
+   4      afficha                        -0.001802       0.0758
+   5      attrapa                        -0.001383       0.0549
+   6      texas                          -0.001293       0.0900
+   7      baladait                       -0.001165       0.0896
+   8      esclaffa                       -0.001009       0.0721
+   9      dévisagea                      -0.000943       0.0568
+   10     steak                          -0.000905       0.0765
+   11     redressa                       -0.000866       0.0410
+   12     dégarni                        -0.000795       0.0724
+   13     tee                            -0.000758       0.0620
+   14     emilio                         -0.000686       0.1241
+   15     paradis                        -0.000664       0.1439
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      sénateur                       +0.343941       0.4141
+   2      milton                         +0.333355       0.4301
+   3      football                       +0.099378       0.1373
+   4      gagna                          +0.058286       0.0476
+   5      types                          +0.055835       0.0860
+   6      dallas                         +0.050667       0.1115
+   7      masseur                        +0.047569       0.0997
+   8      costauds                       +0.047526       0.0809
+   9      déchéance                      +0.042865       0.0579
+   10     froc                           +0.040652       0.0856
+   11     roues                          +0.033389       0.0385
+   12     permettez                      +0.032743       0.0424
+   13     sueur                          +0.028152       0.0604
+   14     barrait                        +0.028114       0.0581
+   15     suivez                         +0.026993       0.0476
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      hugo                           -0.205334       0.4704
+   2      hop                            -0.120317       0.1692
+   3      enfila                         -0.107780       0.1063
+   4      afficha                        -0.099641       0.0758
+   5      attrapa                        -0.066306       0.0549
+   6      texas                          -0.065493       0.0900
+   7      paradis                        -0.052945       0.1439
+   8      barbecue                       -0.051860       0.0860
+   9      esclaffa                       -0.051041       0.0721
+   10     baladait                       -0.050256       0.0896
+   11     dévisagea                      -0.044970       0.0568
+   12     steak                          -0.044947       0.0765
+   13     dégarni                        -0.043057       0.0724
+   14     redressa                       -0.042759       0.0410
+   15     tee                            -0.039274       0.0620
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+dallas                    +0.000981     +0.000050     +0.000050     0.1115
+déshabilla                +0.000129     +0.000049     +0.000049     0.0709
+masseur                   +0.000962     +0.000042     +0.000042     0.0997
+déchéance                 +0.000855     +0.000036     +0.000036     0.0579
+costaud                   +0.000055     +0.000032     +0.000032     0.0594
+steak                     +0.000000     +0.000031     +0.000031     0.0765
+boeuf                     +0.000490     +0.000029     +0.000029     0.0446
+washington                +0.000084     +0.000028     +0.000028     0.0732
+western                   +0.000345     +0.000027     +0.000027     0.0867
+gagna                     +0.001084     +0.000027     +0.000027     0.0476
+envoya                    +0.000116     +0.000021     +0.000021     0.0430
+cicatrice                 +0.000000     +0.000021     +0.000021     0.0520
+sueur                     +0.000615     +0.000020     +0.000020     0.0604
+poignée                   +0.000119     +0.000017     +0.000017     0.0317
+diligence                 +0.000000     +0.000015     +0.000015     0.0717
+total                     +0.000180     +0.000014     +0.000014     0.0407
+permettez                 +0.000676     +0.000013     +0.000013     0.0424
+roues                     +0.000598     +0.000011     +0.000011     0.0385
+excellent                 +0.000283     +0.000011     +0.000011     0.0361
+suivez                    +0.000485     +0.000010     +0.000010     0.0476
+logit final pour 'homme': -0.3631

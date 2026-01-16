@@ -1,0 +1,5 @@
+filename: (PANCOL)(Katherine)(muchachas)(2)(2014)(1954)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 31
+first_name: katherine
+last_name: pancol
+true_label: femme

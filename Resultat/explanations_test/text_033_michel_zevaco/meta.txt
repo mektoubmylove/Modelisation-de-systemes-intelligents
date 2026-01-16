@@ -1,0 +1,5 @@
+filename: (ZEVACO)(Michel)(fausta vaincue)(1)(1908)(1860)(1918)(fr)(z)(z)(V)(R)(T).txt
+index: 33
+first_name: michel
+last_name: zevaco
+true_label: homme

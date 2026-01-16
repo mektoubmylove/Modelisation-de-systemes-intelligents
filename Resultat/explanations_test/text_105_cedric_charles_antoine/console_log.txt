@@ -1,0 +1,387 @@
+texte analysé: photo ne devait les trahir . en heures , la vie du couple avait basculé , les forçant à retourner dans le giron paternel pour s affranchir de leurs péchés . dans la précipitation et la crainte d être ...
+prédiction: FEMME (confiance: 74.0%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.6128
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tierce                         +0.000113       0.1216
+   2      instaurer                      +0.000106       0.1364
+   3      endosser                       +0.000094       0.0961
+   4      accidentée                     +0.000093       0.1428
+   5      trahir                         +0.000080       0.1221
+   6      enquêteurs                     +0.000075       0.1027
+   7      indéfectible                   +0.000074       0.1189
+   8      basculé                        +0.000068       0.0921
+   9      unisson                        +0.000068       0.0943
+   10     déni                           +0.000067       0.1193
+   11     immatriculation                +0.000065       0.1257
+   12     produisit                      +0.000063       0.0789
+   13     tragédie                       +0.000057       0.0732
+   14     expliquant                     +0.000055       0.0778
+   15     robot                          +0.000054       0.1039
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bertrand                       -0.000198       0.2255
+   2      flancher                       -0.000145       0.1163
+   3      dévastateur                    -0.000110       0.1280
+   4      psychologiquement              -0.000094       0.1428
+   5      alice                          -0.000080       0.2126
+   6      biologique                     -0.000077       0.1147
+   7      repentance                     -0.000069       0.1566
+   8      paternel                       -0.000068       0.0808
+   9      éducation                      -0.000062       0.0519
+   10     intégrité                      -0.000061       0.0985
+   11     liés                           -0.000060       0.0673
+   12     plaque                         -0.000057       0.0562
+   13     futurs                         -0.000057       0.0762
+   14     abject                         -0.000054       0.1212
+   15     craquer                        -0.000054       0.0605
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tierce                         +0.000113       0.1216
+   2      instaurer                      +0.000106       0.1364
+   3      endosser                       +0.000094       0.0961
+   4      accidentée                     +0.000093       0.1428
+   5      trahir                         +0.000080       0.1221
+   6      enquêteurs                     +0.000075       0.1027
+   7      indéfectible                   +0.000074       0.1189
+   8      basculé                        +0.000068       0.0921
+   9      unisson                        +0.000068       0.0943
+   10     déni                           +0.000067       0.1193
+   11     immatriculation                +0.000065       0.1257
+   12     produisit                      +0.000063       0.0789
+   13     tragédie                       +0.000057       0.0732
+   14     expliquant                     +0.000055       0.0778
+   15     robot                          +0.000054       0.1039
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bertrand                       -0.000198       0.2255
+   2      flancher                       -0.000145       0.1163
+   3      dévastateur                    -0.000110       0.1280
+   4      psychologiquement              -0.000094       0.1428
+   5      alice                          -0.000080       0.2126
+   6      biologique                     -0.000077       0.1147
+   7      repentance                     -0.000069       0.1566
+   8      paternel                       -0.000068       0.0808
+   9      éducation                      -0.000062       0.0519
+   10     intégrité                      -0.000061       0.0985
+   11     liés                           -0.000060       0.0673
+   12     plaque                         -0.000057       0.0562
+   13     futurs                         -0.000057       0.0762
+   14     abject                         -0.000054       0.1212
+   15     craquer                        -0.000054       0.0605
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bertrand                       +0.004776       0.2255
+   2      repentance                     +0.002589       0.1566
+   3      flancher                       +0.001849       0.1163
+   4      déni                           +0.001765       0.1193
+   5      tierce                         +0.001602       0.1216
+   6      expliquant                     +0.001440       0.0778
+   7      intégralité                    +0.001430       0.1180
+   8      unisson                        +0.001093       0.0943
+   9      basculé                        +0.001013       0.0921
+   10     prénom                         +0.000982       0.0504
+   11     ressurgir                      +0.000959       0.1411
+   12     devrait                        +0.000949       0.0419
+   13     exemplaires                    +0.000943       0.0835
+   14     indéfectible                   +0.000903       0.1189
+   15     effacer                        +0.000885       0.0539
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      supercherie                    -0.002926       0.1189
+   2      épave                          -0.002105       0.0954
+   3      police                         -0.002054       0.0939
+   4      trahir                         -0.001977       0.1221
+   5      forçaient                      -0.001825       0.1303
+   6      immatriculation                -0.001679       0.1257
+   7      produisit                      -0.001598       0.0789
+   8      accidentée                     -0.001503       0.1428
+   9      réapparaître                   -0.001269       0.0982
+   10     alexandre                      -0.001214       0.0846
+   11     fournir                        -0.001121       0.0581
+   12     drame                          -0.001088       0.0497
+   13     soupçon                        -0.001040       0.0649
+   14     allèrent                       -0.001008       0.0730
+   15     attitudes                      -0.000905       0.0799
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bertrand                       +0.243518       0.2255
+   2      repentance                     +0.142310       0.1566
+   3      flancher                       +0.104438       0.1163
+   4      déni                           +0.092061       0.1193
+   5      intégralité                    +0.087787       0.1180
+   6      tierce                         +0.074021       0.1216
+   7      expliquant                     +0.069825       0.0778
+   8      ressurgir                      +0.059117       0.1411
+   9      basculé                        +0.058504       0.0921
+   10     exemplaires                    +0.056606       0.0835
+   11     unisson                        +0.055645       0.0943
+   12     balayée                        +0.051631       0.1102
+   13     prénom                         +0.046084       0.0504
+   14     devrait                        +0.045766       0.0419
+   15     indéfectible                   +0.044892       0.1189
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      supercherie                    -0.157061       0.1189
+   2      police                         -0.115933       0.0939
+   3      épave                          -0.107819       0.0954
+   4      immatriculation                -0.099054       0.1257
+   5      trahir                         -0.090267       0.1221
+   6      forçaient                      -0.088696       0.1303
+   7      produisit                      -0.076930       0.0789
+   8      alexandre                      -0.067041       0.0846
+   9      drame                          -0.059808       0.0497
+   10     fournir                        -0.058993       0.0581
+   11     accidentée                     -0.058242       0.1428
+   12     soupçon                        -0.057846       0.0649
+   13     réapparaître                   -0.057754       0.0982
+   14     attitudes                      -0.052912       0.0799
+   15     allèrent                       -0.048535       0.0730
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+tierce                    +0.001602     +0.000113     +0.000113     0.1216
+instaurer                 +0.000000     +0.000106     +0.000106     0.1364
+endosser                  +0.000573     +0.000094     +0.000094     0.0961
+accidentée                +0.000000     +0.000093     +0.000093     0.1428
+trahir                    +0.000000     +0.000080     +0.000080     0.1221
+enquêteurs                +0.000000     +0.000075     +0.000075     0.1027
+indéfectible              +0.000903     +0.000074     +0.000074     0.1189
+basculé                   +0.001013     +0.000068     +0.000068     0.0921
+unisson                   +0.001093     +0.000068     +0.000068     0.0943
+déni                      +0.001765     +0.000067     +0.000067     0.1193
+immatriculation           +0.000000     +0.000065     +0.000065     0.1257
+produisit                 +0.000000     +0.000063     +0.000063     0.0789
+tragédie                  +0.000000     +0.000057     +0.000057     0.0732
+expliquant                +0.001440     +0.000055     +0.000055     0.0778
+robot                     +0.000517     +0.000054     +0.000054     0.1039
+balayée                   +0.000822     +0.000052     +0.000052     0.1102
+allèrent                  +0.000000     +0.000052     +0.000052     0.0730
+giron                     +0.000124     +0.000050     +0.000050     0.1027
+manifester                +0.000000     +0.000046     +0.000046     0.0642
+réapparaître              +0.000000     +0.000045     +0.000045     0.0982
+logit final pour 'femme': 0.6128
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.4310
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      immatriculation                +0.000068       0.1257
+   2      trahir                         +0.000058       0.1221
+   3      tragédie                       +0.000042       0.0732
+   4      suivirent                      +0.000042       0.0616
+   5      robot                          +0.000040       0.1039
+   6      unisson                        +0.000037       0.0943
+   7      instaurer                      +0.000035       0.1364
+   8      indéfectible                   +0.000034       0.1189
+   9      tierce                         +0.000033       0.1216
+   10     anarchie                       +0.000031       0.1116
+   11     enquêteurs                     +0.000028       0.1027
+   12     adressaient                    +0.000027       0.1072
+   13     produisit                      +0.000026       0.0789
+   14     coupables                      +0.000026       0.0675
+   15     réapparaître                   +0.000025       0.0982
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bertrand                       -0.000151       0.2255
+   2      dévastateur                    -0.000084       0.1280
+   3      psychologiquement              -0.000069       0.1428
+   4      flancher                       -0.000065       0.1163
+   5      intégrité                      -0.000059       0.0985
+   6      repentance                     -0.000057       0.1566
+   7      paternel                       -0.000055       0.0808
+   8      éducation                      -0.000047       0.0519
+   9      viendraient                    -0.000042       0.0846
+   10     futurs                         -0.000040       0.0762
+   11     devraient                      -0.000040       0.0652
+   12     auquel                         -0.000039       0.0416
+   13     utopique                       -0.000038       0.1465
+   14     progéniture                    -0.000034       0.0917
+   15     témoin                         -0.000032       0.0484
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      immatriculation                +0.000068       0.1257
+   2      trahir                         +0.000058       0.1221
+   3      tragédie                       +0.000042       0.0732
+   4      suivirent                      +0.000042       0.0616
+   5      robot                          +0.000040       0.1039
+   6      unisson                        +0.000037       0.0943
+   7      instaurer                      +0.000035       0.1364
+   8      indéfectible                   +0.000034       0.1189
+   9      tierce                         +0.000033       0.1216
+   10     anarchie                       +0.000031       0.1116
+   11     enquêteurs                     +0.000028       0.1027
+   12     adressaient                    +0.000027       0.1072
+   13     produisit                      +0.000026       0.0789
+   14     coupables                      +0.000026       0.0675
+   15     réapparaître                   +0.000025       0.0982
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bertrand                       -0.000151       0.2255
+   2      dévastateur                    -0.000084       0.1280
+   3      psychologiquement              -0.000069       0.1428
+   4      flancher                       -0.000065       0.1163
+   5      intégrité                      -0.000059       0.0985
+   6      repentance                     -0.000057       0.1566
+   7      paternel                       -0.000055       0.0808
+   8      éducation                      -0.000047       0.0519
+   9      viendraient                    -0.000042       0.0846
+   10     futurs                         -0.000040       0.0762
+   11     devraient                      -0.000040       0.0652
+   12     auquel                         -0.000039       0.0416
+   13     utopique                       -0.000038       0.1465
+   14     progéniture                    -0.000034       0.0917
+   15     témoin                         -0.000032       0.0484
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      supercherie                    +0.002134       0.1189
+   2      trahir                         +0.001679       0.1221
+   3      épave                          +0.001459       0.0954
+   4      accidentée                     +0.001406       0.1428
+   5      police                         +0.001376       0.0939
+   6      forçaient                      +0.001281       0.1303
+   7      immatriculation                +0.001145       0.1257
+   8      produisit                      +0.001053       0.0789
+   9      réapparaître                   +0.001033       0.0982
+   10     alexandre                      +0.000936       0.0846
+   11     fournir                        +0.000877       0.0581
+   12     soupçon                        +0.000779       0.0649
+   13     allèrent                       +0.000754       0.0730
+   14     attitudes                      +0.000724       0.0799
+   15     drame                          +0.000721       0.0497
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bertrand                       -0.002708       0.2255
+   2      repentance                     -0.002049       0.1566
+   3      flancher                       -0.001226       0.1163
+   4      intégralité                    -0.001093       0.1180
+   5      expliquant                     -0.001072       0.0778
+   6      tierce                         -0.001034       0.1216
+   7      déni                           -0.001005       0.1193
+   8      exemplaires                    -0.000885       0.0835
+   9      prénom                         -0.000692       0.0504
+   10     devrait                        -0.000687       0.0419
+   11     unisson                        -0.000676       0.0943
+   12     effacer                        -0.000663       0.0539
+   13     basculé                        -0.000659       0.0921
+   14     baptiser                       -0.000574       0.1113
+   15     progéniture                    -0.000549       0.0917
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      supercherie                    +0.102803       0.1189
+   2      trahir                         +0.077198       0.1221
+   3      épave                          +0.073556       0.0954
+   4      police                         +0.072807       0.0939
+   5      immatriculation                +0.062244       0.1257
+   6      accidentée                     +0.055259       0.1428
+   7      forçaient                      +0.052571       0.1303
+   8      réapparaître                   +0.050150       0.0982
+   9      alexandre                      +0.047548       0.0846
+   10     produisit                      +0.047296       0.0789
+   11     fournir                        +0.042330       0.0581
+   12     attitudes                      +0.041867       0.0799
+   13     soupçon                        +0.040238       0.0649
+   14     drame                          +0.038185       0.0497
+   15     adressaient                    +0.036384       0.1072
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bertrand                       -0.138552       0.2255
+   2      repentance                     -0.112944       0.1566
+   3      intégralité                    -0.068284       0.1180
+   4      flancher                       -0.063063       0.1163
+   5      tierce                         -0.052802       0.1216
+   6      exemplaires                    -0.050437       0.0835
+   7      déni                           -0.048717       0.1193
+   8      expliquant                     -0.046621       0.0778
+   9      basculé                        -0.045819       0.0921
+   10     ressurgir                      -0.042107       0.1411
+   11     effacer                        -0.034117       0.0539
+   12     balayée                        -0.032496       0.1102
+   13     unisson                        -0.031746       0.0943
+   14     devrait                        -0.031678       0.0419
+   15     prénom                         -0.031430       0.0504
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+immatriculation           +0.001145     +0.000068     +0.000068     0.1257
+trahir                    +0.001679     +0.000058     +0.000058     0.1221
+tragédie                  +0.000200     +0.000042     +0.000042     0.0732
+suivirent                 +0.000201     +0.000042     +0.000042     0.0616
+robot                     +0.000000     +0.000040     +0.000040     0.1039
+unisson                   +0.000000     +0.000037     +0.000037     0.0943
+instaurer                 +0.000191     +0.000035     +0.000035     0.1364
+indéfectible              +0.000000     +0.000034     +0.000034     0.1189
+tierce                    +0.000000     +0.000033     +0.000033     0.1216
+anarchie                  +0.000137     +0.000031     +0.000031     0.1116
+enquêteurs                +0.000214     +0.000028     +0.000028     0.1027
+adressaient               +0.000480     +0.000027     +0.000027     0.1072
+produisit                 +0.001053     +0.000026     +0.000026     0.0789
+coupables                 +0.000224     +0.000026     +0.000026     0.0675
+réapparaître              +0.001033     +0.000025     +0.000025     0.0982
+expliquant                +0.000000     +0.000021     +0.000021     0.0778
+montrèrent                +0.000258     +0.000020     +0.000020     0.1120
+refusé                    +0.000000     +0.000020     +0.000020     0.0446
+manifester                +0.000146     +0.000019     +0.000019     0.0642
+endosser                  +0.000000     +0.000019     +0.000019     0.0961
+logit final pour 'homme': -0.4310

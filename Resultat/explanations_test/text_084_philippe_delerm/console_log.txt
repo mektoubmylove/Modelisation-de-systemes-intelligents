@@ -1,0 +1,387 @@
+texte analysé: et ne vaut pas que pour maintenant : avec le temps , on devient dur d oreille ! c est pas pour dire mais l homme est un animal singulier . il a reçu le don de la parole , mais l abrite souvent sous de...
+prédiction: FEMME (confiance: 72.0%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.4902
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      calomnie                       +0.000206       0.3816
+   2      dénonciation                   +0.000110       0.0944
+   3      nécessite                      +0.000072       0.0954
+   4      communale                      +0.000063       0.1053
+   5      singulier                      +0.000045       0.0601
+   6      émeuvent                       +0.000044       0.1136
+   7      suspecter                      +0.000043       0.1108
+   8      fondée                         +0.000041       0.1477
+   9      précèdent                      +0.000040       0.0960
+   10     alternativement                +0.000038       0.0807
+   11     présenté                       +0.000037       0.0449
+   12     engagement                     +0.000035       0.0588
+   13     interlocuteur                  +0.000034       0.0506
+   14     leçon                          +0.000032       0.0898
+   15     mental                         +0.000032       0.0687
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      morale                         -0.000110       0.1347
+   2      médire                         -0.000093       0.3187
+   3      apologie                       -0.000070       0.1155
+   4      médisance                      -0.000064       0.5623
+   5      mail                           -0.000061       0.0856
+   6      reviens                        -0.000059       0.0808
+   7      lenteur                        -0.000053       0.0505
+   8      saluer                         -0.000048       0.0454
+   9      tiers                          -0.000042       0.0557
+   10     négligence                     -0.000035       0.0708
+   11     déplacement                    -0.000033       0.0625
+   12     mourait                        -0.000032       0.0588
+   13     revient                        -0.000029       0.0723
+   14     instituteur                    -0.000029       0.0844
+   15     téléphone                      -0.000028       0.0403
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      calomnie                       +0.000206       0.3816
+   2      dénonciation                   +0.000110       0.0944
+   3      nécessite                      +0.000072       0.0954
+   4      communale                      +0.000063       0.1053
+   5      singulier                      +0.000045       0.0601
+   6      émeuvent                       +0.000044       0.1136
+   7      suspecter                      +0.000043       0.1108
+   8      fondée                         +0.000041       0.1477
+   9      précèdent                      +0.000040       0.0960
+   10     alternativement                +0.000038       0.0807
+   11     présenté                       +0.000037       0.0449
+   12     engagement                     +0.000035       0.0588
+   13     interlocuteur                  +0.000034       0.0506
+   14     leçon                          +0.000032       0.0898
+   15     mental                         +0.000032       0.0687
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      morale                         -0.000110       0.1347
+   2      médire                         -0.000093       0.3187
+   3      apologie                       -0.000070       0.1155
+   4      médisance                      -0.000064       0.5623
+   5      mail                           -0.000061       0.0856
+   6      reviens                        -0.000059       0.0808
+   7      lenteur                        -0.000053       0.0505
+   8      saluer                         -0.000048       0.0454
+   9      tiers                          -0.000042       0.0557
+   10     négligence                     -0.000035       0.0708
+   11     déplacement                    -0.000033       0.0625
+   12     mourait                        -0.000032       0.0588
+   13     revient                        -0.000029       0.0723
+   14     instituteur                    -0.000029       0.0844
+   15     téléphone                      -0.000028       0.0403
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      médire                         +0.002041       0.3187
+   2      reviens                        +0.000995       0.0808
+   3      mail                           +0.000887       0.0856
+   4      objectivité                    +0.000814       0.1136
+   5      sacrifice                      +0.000792       0.0541
+   6      revient                        +0.000792       0.0723
+   7      étourdit                       +0.000745       0.1031
+   8      matinale                       +0.000660       0.0643
+   9      leçons                         +0.000555       0.0495
+   10     généreux                       +0.000525       0.0482
+   11     reconnaissant                  +0.000460       0.0496
+   12     déplacement                    +0.000454       0.0625
+   13     attente                        +0.000444       0.0347
+   14     maupassant                     +0.000434       0.1189
+   15     école                          +0.000422       0.0358
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      calomnie                       -0.001816       0.3816
+   2      communale                      -0.001265       0.1053
+   3      ficelle                        -0.001146       0.0661
+   4      alternativement                -0.001043       0.0807
+   5      émeuvent                       -0.001007       0.1136
+   6      suspecter                      -0.000989       0.1108
+   7      eût                            -0.000984       0.0384
+   8      précautions                    -0.000863       0.0474
+   9      interlocuteur                  -0.000828       0.0506
+   10     immédiate                      -0.000780       0.0591
+   11     mérites                        -0.000453       0.0622
+   12     accusation                     -0.000425       0.0638
+   13     souffrait                      -0.000422       0.0463
+   14     présenté                       -0.000385       0.0449
+   15     louer                          -0.000372       0.0558
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      médire                         +0.074579       0.3187
+   2      mail                           +0.045200       0.0856
+   3      revient                        +0.044171       0.0723
+   4      reviens                        +0.043015       0.0808
+   5      étourdit                       +0.038858       0.1031
+   6      matinale                       +0.035386       0.0643
+   7      sacrifice                      +0.035030       0.0541
+   8      objectivité                    +0.034765       0.1136
+   9      maupassant                     +0.030751       0.1189
+   10     généreux                       +0.026223       0.0482
+   11     leçons                         +0.025729       0.0495
+   12     école                          +0.022226       0.0358
+   13     attente                        +0.020641       0.0347
+   14     déplacement                    +0.020317       0.0625
+   15     reconnaissant                  +0.020041       0.0496
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      calomnie                       -0.081015       0.3816
+   2      communale                      -0.063430       0.1053
+   3      ficelle                        -0.060208       0.0661
+   4      alternativement                -0.050680       0.0807
+   5      eût                            -0.049352       0.0384
+   6      suspecter                      -0.046204       0.1108
+   7      précautions                    -0.044034       0.0474
+   8      émeuvent                       -0.043052       0.1136
+   9      interlocuteur                  -0.041040       0.0506
+   10     immédiate                      -0.028636       0.0591
+   11     accusation                     -0.027842       0.0638
+   12     présenté                       -0.023908       0.0449
+   13     engagement                     -0.023825       0.0588
+   14     mérites                        -0.023021       0.0622
+   15     consistait                     -0.018743       0.0601
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+calomnie                  +0.000000     +0.000206     +0.000206     0.3816
+dénonciation              +0.000169     +0.000110     +0.000110     0.0944
+nécessite                 +0.000000     +0.000072     +0.000072     0.0954
+communale                 +0.000000     +0.000063     +0.000063     0.1053
+singulier                 +0.000000     +0.000045     +0.000045     0.0601
+émeuvent                  +0.000000     +0.000044     +0.000044     0.1136
+suspecter                 +0.000000     +0.000043     +0.000043     0.1108
+fondée                    +0.000096     +0.000041     +0.000041     0.1477
+précèdent                 +0.000003     +0.000040     +0.000040     0.0960
+alternativement           +0.000000     +0.000038     +0.000038     0.0807
+présenté                  +0.000000     +0.000037     +0.000037     0.0449
+engagement                +0.000000     +0.000035     +0.000035     0.0588
+interlocuteur             +0.000000     +0.000034     +0.000034     0.0506
+leçon                     +0.000406     +0.000032     +0.000032     0.0898
+mental                    +0.000000     +0.000032     +0.000032     0.0687
+ficelle                   +0.000000     +0.000027     +0.000027     0.0661
+distinction               +0.000166     +0.000027     +0.000027     0.0634
+oratoires                 +0.000000     +0.000025     +0.000025     0.1182
+généreux                  +0.000525     +0.000021     +0.000021     0.0482
+régaler                   +0.000000     +0.000019     +0.000019     0.0825
+logit final pour 'femme': 0.4902
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.4518
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      médisance                      +0.000078       0.5623
+   2      dénonciation                   +0.000051       0.0944
+   3      communale                      +0.000039       0.1053
+   4      fondée                         +0.000038       0.1477
+   5      émeuvent                       +0.000036       0.1136
+   6      alternativement                +0.000033       0.0807
+   7      mental                         +0.000032       0.0687
+   8      interlocuteur                  +0.000029       0.0506
+   9      eût                            +0.000028       0.0384
+   10     distinction                    +0.000024       0.0634
+   11     ficelle                        +0.000024       0.0661
+   12     régaler                        +0.000024       0.0825
+   13     engagement                     +0.000023       0.0588
+   14     présenté                       +0.000021       0.0449
+   15     singulier                      +0.000017       0.0601
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      morale                         -0.000058       0.1347
+   2      médire                         -0.000046       0.3187
+   3      reviens                        -0.000041       0.0808
+   4      mail                           -0.000035       0.0856
+   5      saluer                         -0.000028       0.0454
+   6      mission                        -0.000026       0.0403
+   7      apologie                       -0.000025       0.1155
+   8      héroïsme                       -0.000022       0.0768
+   9      mourait                        -0.000021       0.0588
+   10     lenteur                        -0.000020       0.0505
+   11     tiers                          -0.000020       0.0557
+   12     formule                        -0.000018       0.0497
+   13     traduit                        -0.000017       0.0689
+   14     téléphone                      -0.000017       0.0403
+   15     école                          -0.000017       0.0358
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      médisance                      +0.000078       0.5623
+   2      dénonciation                   +0.000051       0.0944
+   3      communale                      +0.000039       0.1053
+   4      fondée                         +0.000038       0.1477
+   5      émeuvent                       +0.000036       0.1136
+   6      alternativement                +0.000033       0.0807
+   7      mental                         +0.000032       0.0687
+   8      interlocuteur                  +0.000029       0.0506
+   9      eût                            +0.000028       0.0384
+   10     distinction                    +0.000024       0.0634
+   11     ficelle                        +0.000024       0.0661
+   12     régaler                        +0.000024       0.0825
+   13     engagement                     +0.000023       0.0588
+   14     présenté                       +0.000021       0.0449
+   15     singulier                      +0.000017       0.0601
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      morale                         -0.000058       0.1347
+   2      médire                         -0.000046       0.3187
+   3      reviens                        -0.000041       0.0808
+   4      mail                           -0.000035       0.0856
+   5      saluer                         -0.000028       0.0454
+   6      mission                        -0.000026       0.0403
+   7      apologie                       -0.000025       0.1155
+   8      héroïsme                       -0.000022       0.0768
+   9      mourait                        -0.000021       0.0588
+   10     lenteur                        -0.000020       0.0505
+   11     tiers                          -0.000020       0.0557
+   12     formule                        -0.000018       0.0497
+   13     traduit                        -0.000017       0.0689
+   14     téléphone                      -0.000017       0.0403
+   15     école                          -0.000017       0.0358
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      calomnie                       +0.001696       0.3816
+   2      ficelle                        +0.000796       0.0661
+   3      suspecter                      +0.000792       0.1108
+   4      eût                            +0.000712       0.0384
+   5      précautions                    +0.000592       0.0474
+   6      communale                      +0.000564       0.1053
+   7      émeuvent                       +0.000557       0.1136
+   8      immédiate                      +0.000556       0.0591
+   9      interlocuteur                  +0.000539       0.0506
+   10     alternativement                +0.000516       0.0807
+   11     louer                          +0.000379       0.0558
+   12     régaler                        +0.000375       0.0825
+   13     souffrait                      +0.000318       0.0463
+   14     mérites                        +0.000314       0.0622
+   15     tiers                          +0.000310       0.0557
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      médire                         -0.001064       0.3187
+   2      reviens                        -0.000732       0.0808
+   3      mail                           -0.000712       0.0856
+   4      médisance                      -0.000673       0.5623
+   5      revient                        -0.000671       0.0723
+   6      étourdit                       -0.000655       0.1031
+   7      objectivité                    -0.000634       0.1136
+   8      sacrifice                      -0.000545       0.0541
+   9      matinale                       -0.000385       0.0643
+   10     maupassant                     -0.000353       0.1189
+   11     fondée                         -0.000335       0.1477
+   12     mourait                        -0.000319       0.0588
+   13     attente                        -0.000310       0.0347
+   14     abrite                         -0.000309       0.0770
+   15     leçons                         -0.000308       0.0495
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      calomnie                       +0.060170       0.3816
+   2      suspecter                      +0.041742       0.1108
+   3      ficelle                        +0.038767       0.0661
+   4      précautions                    +0.033286       0.0474
+   5      eût                            +0.033229       0.0384
+   6      communale                      +0.031982       0.1053
+   7      émeuvent                       +0.030367       0.1136
+   8      interlocuteur                  +0.027720       0.0506
+   9      alternativement                +0.024345       0.0807
+   10     immédiate                      +0.022047       0.0591
+   11     louer                          +0.017462       0.0558
+   12     tiers                          +0.016932       0.0557
+   13     engagement                     +0.016753       0.0588
+   14     agir                           +0.015611       0.0383
+   15     mérites                        +0.015533       0.0622
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      médire                         -0.048369       0.3187
+   2      revient                        -0.037020       0.0723
+   3      objectivité                    -0.033559       0.1136
+   4      étourdit                       -0.032347       0.1031
+   5      reviens                        -0.031702       0.0808
+   6      mail                           -0.030310       0.0856
+   7      maupassant                     -0.026059       0.1189
+   8      médisance                      -0.024653       0.5623
+   9      sacrifice                      -0.024221       0.0541
+   10     oratoires                      -0.021869       0.1182
+   11     matinale                       -0.021245       0.0643
+   12     mourait                        -0.019427       0.0588
+   13     généreux                       -0.017393       0.0482
+   14     fondée                         -0.017237       0.1477
+   15     attente                        -0.016870       0.0347
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+médisance                 +0.000000     +0.000078     +0.000078     0.5623
+dénonciation              +0.000000     +0.000051     +0.000051     0.0944
+communale                 +0.000564     +0.000039     +0.000039     0.1053
+fondée                    +0.000000     +0.000038     +0.000038     0.1477
+émeuvent                  +0.000557     +0.000036     +0.000036     0.1136
+alternativement           +0.000516     +0.000033     +0.000033     0.0807
+mental                    +0.000048     +0.000032     +0.000032     0.0687
+interlocuteur             +0.000539     +0.000029     +0.000029     0.0506
+eût                       +0.000712     +0.000028     +0.000028     0.0384
+distinction               +0.000000     +0.000024     +0.000024     0.0634
+ficelle                   +0.000796     +0.000024     +0.000024     0.0661
+régaler                   +0.000375     +0.000024     +0.000024     0.0825
+engagement                +0.000268     +0.000023     +0.000023     0.0588
+présenté                  +0.000239     +0.000021     +0.000021     0.0449
+singulier                 +0.000105     +0.000017     +0.000017     0.0601
+suspecter                 +0.000792     +0.000014     +0.000014     0.1108
+nécessite                 +0.000122     +0.000013     +0.000013     0.0954
+animal                    +0.000051     +0.000013     +0.000013     0.0371
+oratoires                 +0.000000     +0.000012     +0.000012     0.1182
+leçon                     +0.000000     +0.000012     +0.000012     0.0898
+logit final pour 'homme': -0.4518

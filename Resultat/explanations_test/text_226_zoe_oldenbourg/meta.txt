@@ -1,0 +1,5 @@
+filename: (OLDENBOURG)(Zoé)(la pierre angulaire)(2)(1953)(1916)(2002)(fr)(z)(z)(V)(R)(T).txt
+index: 226
+first_name: zoe
+last_name: oldenbourg
+true_label: femme

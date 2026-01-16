@@ -1,0 +1,386 @@
+texte analysé: certains , comme margaret , portaient un bonnet en laine , d autres , comme nick , une veste grande ouverte sur un tee shirt léger . il y avait des jeunes , des vieux , des familles à poussette statio...
+prédiction: FEMME (confiance: 87.6%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.1151
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      nick                           +0.000371       0.7231
+   2      circulé                        +0.000060       0.0883
+   3      dura                           +0.000049       0.0453
+   4      all                            +0.000047       0.0775
+   5      guitare                        +0.000041       0.0640
+   6      respira                        +0.000041       0.0528
+   7      bonnet                         +0.000037       0.0433
+   8      fiction                        +0.000034       0.0582
+   9      brandissait                    +0.000029       0.0707
+   10     touchant                       +0.000027       0.0436
+   11     auxquelles                     +0.000026       0.0357
+   12     tenaient                       +0.000026       0.0330
+   13     remontait                      +0.000021       0.0408
+   14     veste                          +0.000021       0.0664
+   15     hurla                          +0.000020       0.0432
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      june                           -0.000189       0.2658
+   2      tee                            -0.000093       0.1240
+   3      piétinant                      -0.000093       0.0794
+   4      rouquine                       -0.000066       0.0914
+   5      rassurée                       -0.000056       0.0443
+   6      pelouse                        -0.000055       0.1007
+   7      moqueur                        -0.000052       0.0523
+   8      prudemment                     -0.000048       0.0445
+   9      shirt                          -0.000047       0.1115
+   10     retrait                        -0.000045       0.0465
+   11     juchée                         -0.000042       0.0736
+   12     banc                           -0.000041       0.0322
+   13     grondant                       -0.000041       0.0736
+   14     laine                          -0.000041       0.0352
+   15     allées                         -0.000041       0.0656
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      nick                           +0.000371       0.7231
+   2      circulé                        +0.000060       0.0883
+   3      dura                           +0.000049       0.0453
+   4      all                            +0.000047       0.0775
+   5      guitare                        +0.000041       0.0640
+   6      respira                        +0.000041       0.0528
+   7      bonnet                         +0.000037       0.0433
+   8      fiction                        +0.000034       0.0582
+   9      brandissait                    +0.000029       0.0707
+   10     touchant                       +0.000027       0.0436
+   11     auxquelles                     +0.000026       0.0357
+   12     tenaient                       +0.000026       0.0330
+   13     remontait                      +0.000021       0.0408
+   14     veste                          +0.000021       0.0664
+   15     hurla                          +0.000020       0.0432
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      june                           -0.000189       0.2658
+   2      tee                            -0.000093       0.1240
+   3      piétinant                      -0.000093       0.0794
+   4      rouquine                       -0.000066       0.0914
+   5      rassurée                       -0.000056       0.0443
+   6      pelouse                        -0.000055       0.1007
+   7      moqueur                        -0.000052       0.0523
+   8      prudemment                     -0.000048       0.0445
+   9      shirt                          -0.000047       0.1115
+   10     retrait                        -0.000045       0.0465
+   11     juchée                         -0.000042       0.0736
+   12     banc                           -0.000041       0.0322
+   13     grondant                       -0.000041       0.0736
+   14     laine                          -0.000041       0.0352
+   15     allées                         -0.000041       0.0656
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      margaret                       +0.004054       0.2992
+   2      submergée                      +0.001661       0.0690
+   3      tee                            +0.001500       0.1240
+   4      shirt                          +0.001219       0.1115
+   5      rassurée                       +0.001038       0.0443
+   6      moqueur                        +0.000951       0.0523
+   7      décliné                        +0.000889       0.0743
+   8      rouquine                       +0.000848       0.0914
+   9      piétinant                      +0.000823       0.0794
+   10     entoura                        +0.000772       0.0601
+   11     manhattan                      +0.000758       0.0863
+   12     attraper                       +0.000700       0.0384
+   13     pancarte                       +0.000675       0.0640
+   14     are                            +0.000638       0.0838
+   15     laine                          +0.000634       0.0352
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      nick                           -0.003785       0.7231
+   2      june                           -0.001652       0.2658
+   3      applaudissements               -0.000940       0.0522
+   4      centrale                       -0.000783       0.0431
+   5      touchant                       -0.000706       0.0436
+   6      distinguait                    -0.000559       0.0424
+   7      brandissait                    -0.000557       0.0707
+   8      dura                           -0.000535       0.0453
+   9      minute                         -0.000508       0.0280
+   10     all                            -0.000462       0.0775
+   11     sanguin                        -0.000447       0.0725
+   12     trou                           -0.000430       0.0293
+   13     grondant                       -0.000415       0.0736
+   14     adam                           -0.000404       0.1152
+   15     retrait                        -0.000403       0.0465
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      margaret                       +0.204992       0.2992
+   2      submergée                      +0.081771       0.0690
+   3      tee                            +0.071864       0.1240
+   4      shirt                          +0.067213       0.1115
+   5      rassurée                       +0.054822       0.0443
+   6      moqueur                        +0.045148       0.0523
+   7      décliné                        +0.042038       0.0743
+   8      are                            +0.038010       0.0838
+   9      piétinant                      +0.036997       0.0794
+   10     attraper                       +0.034497       0.0384
+   11     entoura                        +0.033859       0.0601
+   12     manhattan                      +0.033380       0.0863
+   13     rouquine                       +0.033148       0.0914
+   14     pancarte                       +0.032455       0.0640
+   15     laine                          +0.030144       0.0352
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      nick                           -0.210775       0.7231
+   2      june                           -0.114081       0.2658
+   3      applaudissements               -0.050503       0.0522
+   4      touchant                       -0.040065       0.0436
+   5      centrale                       -0.038456       0.0431
+   6      brandissait                    -0.036008       0.0707
+   7      grondant                       -0.033336       0.0736
+   8      adam                           -0.030616       0.1152
+   9      all                            -0.029078       0.0775
+   10     dura                           -0.026651       0.0453
+   11     minute                         -0.024761       0.0280
+   12     sanguin                        -0.024424       0.0725
+   13     distinguait                    -0.024121       0.0424
+   14     science                        -0.022605       0.0384
+   15     retrait                        -0.022409       0.0465
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+nick                      +0.000000     +0.000371     +0.000371     0.7231
+circulé                   +0.000451     +0.000060     +0.000060     0.0883
+dura                      +0.000000     +0.000049     +0.000049     0.0453
+all                       +0.000000     +0.000047     +0.000047     0.0775
+guitare                   +0.000260     +0.000041     +0.000041     0.0640
+respira                   +0.000392     +0.000041     +0.000041     0.0528
+bonnet                    +0.000130     +0.000037     +0.000037     0.0433
+fiction                   +0.000325     +0.000034     +0.000034     0.0582
+brandissait               +0.000000     +0.000029     +0.000029     0.0707
+touchant                  +0.000000     +0.000027     +0.000027     0.0436
+auxquelles                +0.000000     +0.000026     +0.000026     0.0357
+tenaient                  +0.000012     +0.000026     +0.000026     0.0330
+remontait                 +0.000213     +0.000021     +0.000021     0.0408
+veste                     +0.000051     +0.000021     +0.000021     0.0664
+hurla                     +0.000000     +0.000020     +0.000020     0.0432
+frôler                    +0.000420     +0.000020     +0.000020     0.0631
+we                        +0.000000     +0.000019     +0.000019     0.0891
+musiciens                 +0.000000     +0.000017     +0.000017     0.0529
+nacrées                   +0.000000     +0.000016     +0.000016     0.0960
+lancé                     +0.000000     +0.000011     +0.000011     0.0326
+logit final pour 'femme': 1.1151
+# analyse pour la classe: HOMME
+# logit: -0.8366
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      nick                           +0.000298       0.7231
+   2      margaret                       +0.000036       0.2992
+   3      circulé                        +0.000033       0.0883
+   4      veste                          +0.000027       0.0664
+   5      respira                        +0.000027       0.0528
+   6      touchant                       +0.000026       0.0436
+   7      frôler                         +0.000021       0.0631
+   8      guitare                        +0.000020       0.0640
+   9      we                             +0.000019       0.0891
+   10     articuler                      +0.000015       0.0509
+   11     animal                         +0.000012       0.0301
+   12     tenaient                       +0.000011       0.0330
+   13     dura                           +0.000010       0.0453
+   14     remontait                      +0.000010       0.0408
+   15     bonnet                         +0.000009       0.0433
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      june                           -0.000110       0.2658
+   2      piétinant                      -0.000054       0.0794
+   3      shirt                          -0.000037       0.1115
+   4      flux                           -0.000036       0.0540
+   5      prudemment                     -0.000035       0.0445
+   6      retrait                        -0.000034       0.0465
+   7      pancarte                       -0.000032       0.0640
+   8      rouquine                       -0.000031       0.0914
+   9      laine                          -0.000030       0.0352
+   10     moqueur                        -0.000029       0.0523
+   11     rassurée                       -0.000029       0.0443
+   12     grondant                       -0.000025       0.0736
+   13     pelouse                        -0.000025       0.1007
+   14     banc                           -0.000024       0.0322
+   15     tee                            -0.000023       0.1240
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      nick                           +0.000298       0.7231
+   2      margaret                       +0.000036       0.2992
+   3      circulé                        +0.000033       0.0883
+   4      veste                          +0.000027       0.0664
+   5      respira                        +0.000027       0.0528
+   6      touchant                       +0.000026       0.0436
+   7      frôler                         +0.000021       0.0631
+   8      guitare                        +0.000020       0.0640
+   9      we                             +0.000019       0.0891
+   10     articuler                      +0.000015       0.0509
+   11     animal                         +0.000012       0.0301
+   12     tenaient                       +0.000011       0.0330
+   13     dura                           +0.000010       0.0453
+   14     remontait                      +0.000010       0.0408
+   15     bonnet                         +0.000009       0.0433
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      june                           -0.000110       0.2658
+   2      piétinant                      -0.000054       0.0794
+   3      shirt                          -0.000037       0.1115
+   4      flux                           -0.000036       0.0540
+   5      prudemment                     -0.000035       0.0445
+   6      retrait                        -0.000034       0.0465
+   7      pancarte                       -0.000032       0.0640
+   8      rouquine                       -0.000031       0.0914
+   9      laine                          -0.000030       0.0352
+   10     moqueur                        -0.000029       0.0523
+   11     rassurée                       -0.000029       0.0443
+   12     grondant                       -0.000025       0.0736
+   13     pelouse                        -0.000025       0.1007
+   14     banc                           -0.000024       0.0322
+   15     tee                            -0.000023       0.1240
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      nick                           +0.003066       0.7231
+   2      june                           +0.001422       0.2658
+   3      applaudissements               +0.000748       0.0522
+   4      centrale                       +0.000588       0.0431
+   5      dura                           +0.000483       0.0453
+   6      touchant                       +0.000426       0.0436
+   7      minute                         +0.000405       0.0280
+   8      trou                           +0.000352       0.0293
+   9      ralenti                        +0.000327       0.0458
+   10     retrait                        +0.000307       0.0465
+   11     distinguait                    +0.000304       0.0424
+   12     brandissait                    +0.000299       0.0707
+   13     sanguin                        +0.000282       0.0725
+   14     type                           +0.000276       0.0302
+   15     chantaient                     +0.000273       0.0532
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      margaret                       -0.002779       0.2992
+   2      submergée                      -0.001263       0.0690
+   3      tee                            -0.001194       0.1240
+   4      shirt                          -0.000939       0.1115
+   5      rassurée                       -0.000812       0.0443
+   6      piétinant                      -0.000778       0.0794
+   7      décliné                        -0.000699       0.0743
+   8      éparpillait                    -0.000693       0.0949
+   9      manhattan                      -0.000650       0.0863
+   10     moqueur                        -0.000599       0.0523
+   11     entoura                        -0.000550       0.0601
+   12     attraper                       -0.000526       0.0384
+   13     laine                          -0.000512       0.0352
+   14     are                            -0.000493       0.0838
+   15     rouquine                       -0.000454       0.0914
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      nick                           +0.146218       0.7231
+   2      june                           +0.088557       0.2658
+   3      applaudissements               +0.042587       0.0522
+   4      centrale                       +0.025345       0.0431
+   5      touchant                       +0.023790       0.0436
+   6      dura                           +0.023171       0.0453
+   7      brandissait                    +0.020806       0.0707
+   8      grondant                       +0.019848       0.0736
+   9      minute                         +0.019690       0.0280
+   10     retrait                        +0.018833       0.0465
+   11     pelouse                        +0.018492       0.1007
+   12     all                            +0.017578       0.0775
+   13     ralenti                        +0.017358       0.0458
+   14     adam                           +0.017067       0.1152
+   15     trou                           +0.016626       0.0293
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      margaret                       -0.148395       0.2992
+   2      submergée                      -0.059437       0.0690
+   3      tee                            -0.052321       0.1240
+   4      shirt                          -0.049812       0.1115
+   5      rassurée                       -0.040902       0.0443
+   6      piétinant                      -0.035066       0.0794
+   7      décliné                        -0.032473       0.0743
+   8      éparpillait                    -0.030757       0.0949
+   9      manhattan                      -0.028320       0.0863
+   10     moqueur                        -0.027414       0.0523
+   11     are                            -0.024419       0.0838
+   12     entoura                        -0.024287       0.0601
+   13     attraper                       -0.024000       0.0384
+   14     frôler                         -0.022378       0.0631
+   15     laine                          -0.021468       0.0352
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+nick                      +0.003066     +0.000298     +0.000298     0.7231
+margaret                  +0.000000     +0.000036     +0.000036     0.2992
+circulé                   +0.000000     +0.000033     +0.000033     0.0883
+veste                     +0.000000     +0.000027     +0.000027     0.0664
+respira                   +0.000000     +0.000027     +0.000027     0.0528
+touchant                  +0.000426     +0.000026     +0.000026     0.0436
+frôler                    +0.000000     +0.000021     +0.000021     0.0631
+guitare                   +0.000000     +0.000020     +0.000020     0.0640
+we                        +0.000265     +0.000019     +0.000019     0.0891
+articuler                 +0.000000     +0.000015     +0.000015     0.0509
+animal                    +0.000052     +0.000012     +0.000012     0.0301
+tenaient                  +0.000006     +0.000011     +0.000011     0.0330
+dura                      +0.000483     +0.000010     +0.000010     0.0453
+remontait                 +0.000000     +0.000010     +0.000010     0.0408
+bonnet                    +0.000000     +0.000009     +0.000009     0.0433
+guitares                  +0.000000     +0.000009     +0.000009     0.0919
+nacrées                   +0.000243     +0.000009     +0.000009     0.0960
+distinguait               +0.000304     +0.000008     +0.000008     0.0424
+sanguin                   +0.000282     +0.000006     +0.000006     0.0725
+fiction                   +0.000000     +0.000005     +0.000005     0.0582
+logit final pour 'homme': -0.8366

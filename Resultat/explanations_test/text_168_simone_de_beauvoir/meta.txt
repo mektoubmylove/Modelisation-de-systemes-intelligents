@@ -1,0 +1,5 @@
+filename: (DE BEAUVOIR)(Simone)(tous les hommes sont mortels)(2)(1946)(1908)(1986)(fr)(z)(z)(V)(R)(T).txt
+index: 168
+first_name: simone
+last_name: de_beauvoir
+true_label: femme

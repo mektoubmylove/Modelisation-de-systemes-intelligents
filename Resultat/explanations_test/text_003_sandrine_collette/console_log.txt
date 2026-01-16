@@ -1,0 +1,384 @@
+texte analysé: la vieille porte en bois disjointe . mathilde avait un lit posé en bas , à côté de celui d augustine . toute la nuit , elle remettait du bois dans la cheminée . le froid , c était la mort des vieux , ...
+prédiction: FEMME (confiance: 88.3%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.1825
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      abattu                         +0.000076       0.0846
+   2      mathilde                       +0.000068       0.1618
+   3      passerait                      +0.000061       0.0821
+   4      espéré                         +0.000039       0.0839
+   5      raisonnement                   +0.000029       0.0947
+   6      conduit                        +0.000028       0.0596
+   7      parvenait                      +0.000028       0.0737
+   8      crever                         +0.000027       0.0809
+   9      bûches                         +0.000024       0.1217
+   10     sauverait                      +0.000013       0.1514
+   11     os                             +0.000005       0.0630
+   12     rapproché                      +0.000005       0.1162
+   13     forêts                         +0.000005       0.0884
+   14     ferma                          +0.000004       0.0749
+   15     posaient                       +0.000003       0.1119
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      augustine                      -0.000308       0.6708
+   2      survit                         -0.000096       0.1432
+   3      rampait                        -0.000090       0.1657
+   4      tiédeur                        -0.000086       0.1139
+   5      roulant                        -0.000085       0.0775
+   6      craquer                        -0.000066       0.0818
+   7      profiter                       -0.000064       0.0621
+   8      veines                         -0.000061       0.0772
+   9      recouvrait                     -0.000058       0.0972
+   10     entendait                      -0.000050       0.0576
+   11     cheminée                       -0.000049       0.1368
+   12     verra                          -0.000049       0.0691
+   13     catacombes                     -0.000045       0.1814
+   14     arriverait                     -0.000043       0.0875
+   15     riaient                        -0.000039       0.0946
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      abattu                         +0.000076       0.0846
+   2      mathilde                       +0.000068       0.1618
+   3      passerait                      +0.000061       0.0821
+   4      espéré                         +0.000039       0.0839
+   5      raisonnement                   +0.000029       0.0947
+   6      conduit                        +0.000028       0.0596
+   7      parvenait                      +0.000028       0.0737
+   8      crever                         +0.000027       0.0809
+   9      bûches                         +0.000024       0.1217
+   10     sauverait                      +0.000013       0.1514
+   11     os                             +0.000005       0.0630
+   12     rapproché                      +0.000005       0.1162
+   13     forêts                         +0.000005       0.0884
+   14     ferma                          +0.000004       0.0749
+   15     posaient                       +0.000003       0.1119
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      augustine                      -0.000308       0.6708
+   2      survit                         -0.000096       0.1432
+   3      rampait                        -0.000090       0.1657
+   4      tiédeur                        -0.000086       0.1139
+   5      roulant                        -0.000085       0.0775
+   6      craquer                        -0.000066       0.0818
+   7      profiter                       -0.000064       0.0621
+   8      veines                         -0.000061       0.0772
+   9      recouvrait                     -0.000058       0.0972
+   10     entendait                      -0.000050       0.0576
+   11     cheminée                       -0.000049       0.1368
+   12     verra                          -0.000049       0.0691
+   13     catacombes                     -0.000045       0.1814
+   14     arriverait                     -0.000043       0.0875
+   15     riaient                        -0.000039       0.0946
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      augustine                      +0.003290       0.6708
+   2      catacombes                     +0.002168       0.1814
+   3      corentin                       +0.001399       0.2429
+   4      chagrin                        +0.001171       0.0608
+   5      espéré                         +0.000956       0.0839
+   6      ferma                          +0.000932       0.0749
+   7      cheminée                       +0.000880       0.1368
+   8      réjouir                        +0.000855       0.0934
+   9      matelas                        +0.000739       0.0795
+   10     profiter                       +0.000678       0.0621
+   11     terme                          +0.000606       0.0648
+   12     ressemblait                    +0.000604       0.0593
+   13     mat                            +0.000601       0.1027
+   14     verra                          +0.000553       0.0691
+   15     sauverait                      +0.000552       0.1514
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rapproché                      -0.001917       0.1162
+   2      mathilde                       -0.001886       0.1618
+   3      abattu                         -0.001649       0.0846
+   4      conduit                        -0.000888       0.0596
+   5      raisonnement                   -0.000809       0.0947
+   6      posaient                       -0.000686       0.1119
+   7      parvenait                      -0.000424       0.0737
+   8      os                             -0.000410       0.0630
+   9      entendait                      -0.000288       0.0576
+   10     crever                         -0.000287       0.0809
+   11     réponses                       -0.000271       0.0720
+   12     rampait                        -0.000268       0.1657
+   13     désert                         -0.000251       0.0616
+   14     diffus                         -0.000180       0.1566
+   15     craquer                        -0.000179       0.0818
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      catacombes                     +0.092745       0.1814
+   2      espéré                         +0.062366       0.0839
+   3      chagrin                        +0.054914       0.0608
+   4      ferma                          +0.043252       0.0749
+   5      corentin                       +0.042526       0.2429
+   6      mat                            +0.037675       0.1027
+   7      matelas                        +0.037651       0.0795
+   8      terme                          +0.033809       0.0648
+   9      réjouir                        +0.029419       0.0934
+   10     ressemblait                    +0.028608       0.0593
+   11     lève                           +0.025930       0.0636
+   12     verra                          +0.024132       0.0691
+   13     arriverait                     +0.023548       0.0875
+   14     cheminée                       +0.023039       0.1368
+   15     sauverait                      +0.021125       0.1514
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mathilde                       -0.100239       0.1618
+   2      rapproché                      -0.088851       0.1162
+   3      abattu                         -0.076249       0.0846
+   4      conduit                        -0.044613       0.0596
+   5      posaient                       -0.041541       0.1119
+   6      raisonnement                   -0.036886       0.0947
+   7      rampait                        -0.032790       0.1657
+   8      parvenait                      -0.020207       0.0737
+   9      entendait                      -0.020148       0.0576
+   10     craquer                        -0.016921       0.0818
+   11     os                             -0.015688       0.0630
+   12     désert                         -0.011952       0.0616
+   13     riaient                        -0.010688       0.0946
+   14     crever                         -0.010666       0.0809
+   15     réponses                       -0.007124       0.0720
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+abattu                    +0.000000     +0.000076     +0.000076     0.0846
+mathilde                  +0.000000     +0.000068     +0.000068     0.1618
+passerait                 +0.000330     +0.000061     +0.000061     0.0821
+espéré                    +0.000956     +0.000039     +0.000039     0.0839
+raisonnement              +0.000000     +0.000029     +0.000029     0.0947
+conduit                   +0.000000     +0.000028     +0.000028     0.0596
+parvenait                 +0.000000     +0.000028     +0.000028     0.0737
+crever                    +0.000000     +0.000027     +0.000027     0.0809
+bûches                    +0.000104     +0.000024     +0.000024     0.1217
+sauverait                 +0.000552     +0.000013     +0.000013     0.1514
+os                        +0.000000     +0.000005     +0.000005     0.0630
+rapproché                 +0.000000     +0.000005     +0.000005     0.1162
+forêts                    +0.000068     +0.000005     +0.000005     0.0884
+ferma                     +0.000932     +0.000004     +0.000004     0.0749
+posaient                  +0.000000     +0.000003     +0.000003     0.1119
+dedans                    +0.000000     +0.000002     +0.000002     0.0582
+urgence                   +0.000292     +0.000000     +0.000000     0.0716
+brûlé                     +0.000000     +0.000000     +0.000000     0.0752
+logit final pour 'femme': 1.1825
+# analyse pour la classe: HOMME
+# logit: -0.8422
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      passerait                      +0.000030       0.0821
+   2      mathilde                       +0.000025       0.1618
+   3      abattu                         +0.000021       0.0846
+   4      parvenait                      +0.000020       0.0737
+   5      bûches                         +0.000018       0.1217
+   6      mat                            +0.000013       0.1027
+   7      forêts                         +0.000011       0.0884
+   8      os                             +0.000011       0.0630
+   9      conduit                        +0.000009       0.0596
+   10     raisonnement                   +0.000008       0.0947
+   11     voile                          +0.000007       0.0664
+   12     espéré                         +0.000007       0.0839
+   13     ferma                          +0.000006       0.0749
+   14     crever                         +0.000006       0.0809
+   15     tristesse                      +0.000005       0.0587
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      augustine                      -0.000163       0.6708
+   2      corentin                       -0.000088       0.2429
+   3      recouvrait                     -0.000055       0.0972
+   4      sauverait                      -0.000051       0.1514
+   5      survit                         -0.000050       0.1432
+   6      diffus                         -0.000044       0.1566
+   7      roulant                        -0.000036       0.0775
+   8      rampait                        -0.000035       0.1657
+   9      profiter                       -0.000035       0.0621
+   10     entendait                      -0.000032       0.0576
+   11     veines                         -0.000028       0.0772
+   12     réponses                       -0.000021       0.0720
+   13     tiédeur                        -0.000020       0.1139
+   14     ressemblait                    -0.000018       0.0593
+   15     verra                          -0.000018       0.0691
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      passerait                      +0.000030       0.0821
+   2      mathilde                       +0.000025       0.1618
+   3      abattu                         +0.000021       0.0846
+   4      parvenait                      +0.000020       0.0737
+   5      bûches                         +0.000018       0.1217
+   6      mat                            +0.000013       0.1027
+   7      forêts                         +0.000011       0.0884
+   8      os                             +0.000011       0.0630
+   9      conduit                        +0.000009       0.0596
+   10     raisonnement                   +0.000008       0.0947
+   11     voile                          +0.000007       0.0664
+   12     espéré                         +0.000007       0.0839
+   13     ferma                          +0.000006       0.0749
+   14     crever                         +0.000006       0.0809
+   15     tristesse                      +0.000005       0.0587
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      augustine                      -0.000163       0.6708
+   2      corentin                       -0.000088       0.2429
+   3      recouvrait                     -0.000055       0.0972
+   4      sauverait                      -0.000051       0.1514
+   5      survit                         -0.000050       0.1432
+   6      diffus                         -0.000044       0.1566
+   7      roulant                        -0.000036       0.0775
+   8      rampait                        -0.000035       0.1657
+   9      profiter                       -0.000035       0.0621
+   10     entendait                      -0.000032       0.0576
+   11     veines                         -0.000028       0.0772
+   12     réponses                       -0.000021       0.0720
+   13     tiédeur                        -0.000020       0.1139
+   14     ressemblait                    -0.000018       0.0593
+   15     verra                          -0.000018       0.0691
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rapproché                      +0.001306       0.1162
+   2      mathilde                       +0.001234       0.1618
+   3      abattu                         +0.001214       0.0846
+   4      raisonnement                   +0.000681       0.0947
+   5      posaient                       +0.000604       0.1119
+   6      conduit                        +0.000601       0.0596
+   7      diffus                         +0.000409       0.1566
+   8      réponses                       +0.000284       0.0720
+   9      entendait                      +0.000258       0.0576
+   10     désert                         +0.000224       0.0616
+   11     parvenait                      +0.000212       0.0737
+   12     os                             +0.000208       0.0630
+   13     rampait                        +0.000195       0.1657
+   14     crever                         +0.000188       0.0809
+   15     remettait                      +0.000066       0.0891
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      catacombes                     -0.001943       0.1814
+   2      augustine                      -0.001899       0.6708
+   3      chagrin                        -0.000831       0.0608
+   4      réjouir                        -0.000786       0.0934
+   5      cheminée                       -0.000749       0.1368
+   6      mat                            -0.000639       0.1027
+   7      ferma                          -0.000639       0.0749
+   8      tiédeur                        -0.000564       0.1139
+   9      matelas                        -0.000545       0.0795
+   10     espéré                         -0.000507       0.0839
+   11     verra                          -0.000487       0.0691
+   12     profiter                       -0.000483       0.0621
+   13     lève                           -0.000400       0.0636
+   14     ressemblait                    -0.000352       0.0593
+   15     recouvrait                     -0.000331       0.0972
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rapproché                      +0.067457       0.1162
+   2      mathilde                       +0.066879       0.1618
+   3      abattu                         +0.056025       0.0846
+   4      posaient                       +0.038737       0.1119
+   5      raisonnement                   +0.029485       0.0947
+   6      conduit                        +0.028334       0.0596
+   7      rampait                        +0.023980       0.1657
+   8      entendait                      +0.022003       0.0576
+   9      diffus                         +0.019659       0.1566
+   10     désert                         +0.011714       0.0616
+   11     parvenait                      +0.011443       0.0737
+   12     corentin                       +0.011035       0.2429
+   13     sauverait                      +0.010821       0.1514
+   14     réponses                       +0.009930       0.0720
+   15     riaient                        +0.008333       0.0946
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      catacombes                     -0.084824       0.1814
+   2      chagrin                        -0.038907       0.0608
+   3      mat                            -0.037830       0.1027
+   4      espéré                         -0.037339       0.0839
+   5      ferma                          -0.031233       0.0749
+   6      tiédeur                        -0.029450       0.1139
+   7      réjouir                        -0.029094       0.0934
+   8      matelas                        -0.027248       0.0795
+   9      lève                           -0.026994       0.0636
+   10     cheminée                       -0.026575       0.1368
+   11     verra                          -0.020523       0.0691
+   12     urgence                        -0.018945       0.0716
+   13     terme                          -0.017667       0.0648
+   14     ressemblait                    -0.016141       0.0593
+   15     profiter                       -0.015633       0.0621
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+passerait                 +0.000000     +0.000030     +0.000030     0.0821
+mathilde                  +0.001234     +0.000025     +0.000025     0.1618
+abattu                    +0.001214     +0.000021     +0.000021     0.0846
+parvenait                 +0.000212     +0.000020     +0.000020     0.0737
+bûches                    +0.000028     +0.000018     +0.000018     0.1217
+mat                       +0.000000     +0.000013     +0.000013     0.1027
+forêts                    +0.000028     +0.000011     +0.000011     0.0884
+os                        +0.000208     +0.000011     +0.000011     0.0630
+conduit                   +0.000601     +0.000009     +0.000009     0.0596
+raisonnement              +0.000681     +0.000008     +0.000008     0.0947
+voile                     +0.000000     +0.000007     +0.000007     0.0664
+espéré                    +0.000000     +0.000007     +0.000007     0.0839
+ferma                     +0.000000     +0.000006     +0.000006     0.0749
+crever                    +0.000188     +0.000006     +0.000006     0.0809
+tristesse                 +0.000000     +0.000005     +0.000005     0.0587
+finie                     +0.000000     +0.000005     +0.000005     0.0825
+réjouir                   +0.000000     +0.000005     +0.000005     0.0934
+brûlé                     +0.000025     +0.000004     +0.000004     0.0752
+catacombes                +0.000000     +0.000004     +0.000004     0.1814
+manquait                  +0.000000     +0.000001     +0.000001     0.0577
+logit final pour 'homme': -0.8422

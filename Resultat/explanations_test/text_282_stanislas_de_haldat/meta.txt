@@ -1,0 +1,5 @@
+filename: (DE HALDAT)(Stanislas)(le secret sauvage)(1)(1999)(1962)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 282
+first_name: stanislas
+last_name: de_haldat
+true_label: homme

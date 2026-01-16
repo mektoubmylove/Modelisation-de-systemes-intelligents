@@ -1,0 +1,386 @@
+texte analysé: un troquet porte de choisy le quartier n était pas encore rénové building ! les circonstances de cette rencontre m échappent ce que je faisais là ? dis donc , t étais pas à gravelotte , toi , avec le ...
+prédiction: HOMME (confiance: 84.1%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.8837
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pedro                          +0.000245       0.2999
+   2      blanquette                     +0.000159       0.2940
+   3      cloportes                      +0.000093       0.1490
+   4      merlin                         +0.000088       0.1394
+   5      vinasse                        +0.000050       0.1372
+   6      fusilla                        +0.000044       0.1313
+   7      interpella                     +0.000037       0.0991
+   8      échappent                      +0.000033       0.0784
+   9      roulent                        +0.000031       0.0880
+   10     renie                          +0.000030       0.1284
+   11     espagnol                       +0.000028       0.0794
+   12     gauloise                       +0.000024       0.1461
+   13     communiste                     +0.000023       0.2072
+   14     ii                             +0.000020       0.0563
+   15     brune                          +0.000020       0.0498
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      imbibée                        -0.000111       0.1307
+   2      troquet                        -0.000072       0.1222
+   3      choisy                         -0.000051       0.3212
+   4      dingue                         -0.000050       0.0842
+   5      sections                       -0.000047       0.1257
+   6      rigolade                       -0.000044       0.1121
+   7      douze                          -0.000042       0.0862
+   8      probable                       -0.000041       0.0578
+   9      piges                          -0.000040       0.1218
+   10     hippolyte                      -0.000038       0.1387
+   11     chantait                       -0.000037       0.0608
+   12     adjudant                       -0.000035       0.1267
+   13     vaincus                        -0.000033       0.0891
+   14     reconnu                        -0.000032       0.0450
+   15     creuse                         -0.000032       0.0672
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pedro                          +0.000245       0.2999
+   2      blanquette                     +0.000159       0.2940
+   3      cloportes                      +0.000093       0.1490
+   4      merlin                         +0.000088       0.1394
+   5      vinasse                        +0.000050       0.1372
+   6      fusilla                        +0.000044       0.1313
+   7      interpella                     +0.000037       0.0991
+   8      échappent                      +0.000033       0.0784
+   9      roulent                        +0.000031       0.0880
+   10     renie                          +0.000030       0.1284
+   11     espagnol                       +0.000028       0.0794
+   12     gauloise                       +0.000024       0.1461
+   13     communiste                     +0.000023       0.2072
+   14     ii                             +0.000020       0.0563
+   15     brune                          +0.000020       0.0498
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      imbibée                        -0.000111       0.1307
+   2      troquet                        -0.000072       0.1222
+   3      choisy                         -0.000051       0.3212
+   4      dingue                         -0.000050       0.0842
+   5      sections                       -0.000047       0.1257
+   6      rigolade                       -0.000044       0.1121
+   7      douze                          -0.000042       0.0862
+   8      probable                       -0.000041       0.0578
+   9      piges                          -0.000040       0.1218
+   10     hippolyte                      -0.000038       0.1387
+   11     chantait                       -0.000037       0.0608
+   12     adjudant                       -0.000035       0.1267
+   13     vaincus                        -0.000033       0.0891
+   14     reconnu                        -0.000032       0.0450
+   15     creuse                         -0.000032       0.0672
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fusilla                        +0.001323       0.1313
+   2      blanquette                     +0.001187       0.2940
+   3      rénové                         +0.000819       0.1410
+   4      relevés                        +0.000571       0.0764
+   5      untel                          +0.000567       0.1301
+   6      souvient                       +0.000512       0.0647
+   7      renie                          +0.000500       0.1284
+   8      préfère                        +0.000495       0.0443
+   9      cloportes                      +0.000391       0.1490
+   10     brune                          +0.000371       0.0498
+   11     revient                        +0.000353       0.0439
+   12     coton                          +0.000318       0.0594
+   13     imbibée                        +0.000313       0.1307
+   14     poisseux                       +0.000296       0.1033
+   15     images                         +0.000269       0.0439
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      choisy                         -0.003163       0.3212
+   2      pedro                          -0.002475       0.2999
+   3      balles                         -0.001268       0.1160
+   4      probable                       -0.001155       0.0578
+   5      adjudant                       -0.001110       0.1267
+   6      commisération                  -0.000959       0.1050
+   7      douze                          -0.000901       0.0862
+   8      gauloise                       -0.000895       0.1461
+   9      piges                          -0.000893       0.1218
+   10     communiste                     -0.000882       0.2072
+   11     rigolade                       -0.000863       0.1121
+   12     camarades                      -0.000851       0.1080
+   13     trompe                         -0.000803       0.0507
+   14     hippolyte                      -0.000736       0.1387
+   15     franco                         -0.000712       0.1006
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      blanquette                     +0.052769       0.2940
+   2      fusilla                        +0.049621       0.1313
+   3      rénové                         +0.041891       0.1410
+   4      imbibée                        +0.024606       0.1307
+   5      relevés                        +0.024318       0.0764
+   6      souvient                       +0.021515       0.0647
+   7      untel                          +0.017937       0.1301
+   8      comptoir                       +0.016742       0.0582
+   9      dingue                         +0.016721       0.0842
+   10     revient                        +0.016012       0.0439
+   11     préfère                        +0.015213       0.0443
+   12     images                         +0.014450       0.0439
+   13     annoncé                        +0.012701       0.0509
+   14     revu                           +0.012261       0.0557
+   15     brune                          +0.010876       0.0498
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pedro                          -0.152903       0.2999
+   2      choisy                         -0.124748       0.3212
+   3      balles                         -0.046791       0.1160
+   4      probable                       -0.046400       0.0578
+   5      adjudant                       -0.039718       0.1267
+   6      trompe                         -0.034997       0.0507
+   7      douze                          -0.033457       0.0862
+   8      communiste                     -0.031949       0.2072
+   9      rigolade                       -0.031374       0.1121
+   10     commisération                  -0.029888       0.1050
+   11     furent                         -0.029368       0.0453
+   12     hippolyte                      -0.029025       0.1387
+   13     vinasse                        -0.028855       0.1372
+   14     camarades                      -0.027972       0.1080
+   15     franco                         -0.027904       0.1006
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+pedro                     +0.000000     +0.000245     +0.000245     0.2999
+blanquette                +0.001187     +0.000159     +0.000159     0.2940
+cloportes                 +0.000391     +0.000093     +0.000093     0.1490
+merlin                    +0.000162     +0.000088     +0.000088     0.1394
+vinasse                   +0.000000     +0.000050     +0.000050     0.1372
+fusilla                   +0.001323     +0.000044     +0.000044     0.1313
+interpella                +0.000000     +0.000037     +0.000037     0.0991
+échappent                 +0.000000     +0.000033     +0.000033     0.0784
+roulent                   +0.000000     +0.000031     +0.000031     0.0880
+renie                     +0.000500     +0.000030     +0.000030     0.1284
+espagnol                  +0.000000     +0.000028     +0.000028     0.0794
+gauloise                  +0.000000     +0.000024     +0.000024     0.1461
+communiste                +0.000000     +0.000023     +0.000023     0.2072
+ii                        +0.000000     +0.000020     +0.000020     0.0563
+brune                     +0.000371     +0.000020     +0.000020     0.0498
+veau                      +0.000000     +0.000019     +0.000019     0.0784
+untel                     +0.000567     +0.000018     +0.000018     0.1301
+certes                    +0.000099     +0.000017     +0.000017     0.0453
+rebondit                  +0.000000     +0.000013     +0.000013     0.1050
+commandant                +0.000000     +0.000013     +0.000013     0.0745
+logit final pour 'femme': -0.8837
+# analyse pour la classe: HOMME  prédite
+# logit: 0.7830
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pedro                          +0.000056       0.2999
+   2      merlin                         +0.000053       0.1394
+   3      cloportes                      +0.000049       0.1490
+   4      espagnol                       +0.000037       0.0794
+   5      fusilla                        +0.000035       0.1313
+   6      interpella                     +0.000033       0.0991
+   7      vinasse                        +0.000031       0.1372
+   8      blanquette                     +0.000027       0.2940
+   9      brune                          +0.000026       0.0498
+   10     pierrot                        +0.000023       0.1103
+   11     renie                          +0.000023       0.1284
+   12     ii                             +0.000019       0.0563
+   13     coton                          +0.000017       0.0594
+   14     roulent                        +0.000016       0.0880
+   15     veau                           +0.000016       0.0784
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      troquet                        -0.000066       0.1222
+   2      imbibée                        -0.000051       0.1307
+   3      hippolyte                      -0.000040       0.1387
+   4      cafards                        -0.000036       0.1242
+   5      fumée                          -0.000030       0.0455
+   6      balles                         -0.000027       0.1160
+   7      circonstances                  -0.000025       0.0456
+   8      creuse                         -0.000025       0.0672
+   9      probable                       -0.000025       0.0578
+   10     bêtes                          -0.000023       0.0481
+   11     vaincus                        -0.000022       0.0891
+   12     commandos                      -0.000022       0.1379
+   13     reconnu                        -0.000019       0.0450
+   14     sentais                        -0.000018       0.0568
+   15     annoncé                        -0.000018       0.0509
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pedro                          +0.000056       0.2999
+   2      merlin                         +0.000053       0.1394
+   3      cloportes                      +0.000049       0.1490
+   4      espagnol                       +0.000037       0.0794
+   5      fusilla                        +0.000035       0.1313
+   6      interpella                     +0.000033       0.0991
+   7      vinasse                        +0.000031       0.1372
+   8      blanquette                     +0.000027       0.2940
+   9      brune                          +0.000026       0.0498
+   10     pierrot                        +0.000023       0.1103
+   11     renie                          +0.000023       0.1284
+   12     ii                             +0.000019       0.0563
+   13     coton                          +0.000017       0.0594
+   14     roulent                        +0.000016       0.0880
+   15     veau                           +0.000016       0.0784
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      troquet                        -0.000066       0.1222
+   2      imbibée                        -0.000051       0.1307
+   3      hippolyte                      -0.000040       0.1387
+   4      cafards                        -0.000036       0.1242
+   5      fumée                          -0.000030       0.0455
+   6      balles                         -0.000027       0.1160
+   7      circonstances                  -0.000025       0.0456
+   8      creuse                         -0.000025       0.0672
+   9      probable                       -0.000025       0.0578
+   10     bêtes                          -0.000023       0.0481
+   11     vaincus                        -0.000022       0.0891
+   12     commandos                      -0.000022       0.1379
+   13     reconnu                        -0.000019       0.0450
+   14     sentais                        -0.000018       0.0568
+   15     annoncé                        -0.000018       0.0509
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      choisy                         +0.002988       0.3212
+   2      pedro                          +0.002386       0.2999
+   3      adjudant                       +0.001335       0.1267
+   4      balles                         +0.001225       0.1160
+   5      rigolade                       +0.001106       0.1121
+   6      probable                       +0.001020       0.0578
+   7      camarades                      +0.000981       0.1080
+   8      commisération                  +0.000901       0.1050
+   9      piges                          +0.000881       0.1218
+   10     gauloise                       +0.000829       0.1461
+   11     douze                          +0.000768       0.0862
+   12     commandant                     +0.000701       0.0745
+   13     franco                         +0.000686       0.1006
+   14     fumée                          +0.000671       0.0455
+   15     furent                         +0.000637       0.0453
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      fusilla                        -0.001225       0.1313
+   2      blanquette                     -0.000863       0.2940
+   3      rénové                         -0.000787       0.1410
+   4      cloportes                      -0.000651       0.1490
+   5      relevés                        -0.000519       0.0764
+   6      untel                          -0.000515       0.1301
+   7      préfère                        -0.000506       0.0443
+   8      renie                          -0.000408       0.1284
+   9      souvient                       -0.000393       0.0647
+   10     revient                        -0.000378       0.0439
+   11     brune                          -0.000346       0.0498
+   12     truc                           -0.000303       0.0605
+   13     revu                           -0.000296       0.0557
+   14     dingue                         -0.000281       0.0842
+   15     cafards                        -0.000278       0.1242
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pedro                          +0.111676       0.2999
+   2      choisy                         +0.106323       0.3212
+   3      adjudant                       +0.052431       0.1267
+   4      balles                         +0.039389       0.1160
+   5      rigolade                       +0.038509       0.1121
+   6      probable                       +0.035237       0.0578
+   7      camarades                      +0.034732       0.1080
+   8      douze                          +0.033364       0.0862
+   9      piges                          +0.033263       0.1218
+   10     commandant                     +0.029347       0.0745
+   11     commisération                  +0.028234       0.1050
+   12     trompe                         +0.025949       0.0507
+   13     franco                         +0.025715       0.1006
+   14     vinasse                        +0.025558       0.1372
+   15     rade                           +0.024393       0.1020
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      blanquette                     -0.052374       0.2940
+   2      fusilla                        -0.041750       0.1313
+   3      rénové                         -0.040259       0.1410
+   4      untel                          -0.025317       0.1301
+   5      relevés                        -0.021111       0.0764
+   6      préfère                        -0.019652       0.0443
+   7      cafards                        -0.018365       0.1242
+   8      revient                        -0.016774       0.0439
+   9      dingue                         -0.016163       0.0842
+   10     revu                           -0.015741       0.0557
+   11     souvient                       -0.013298       0.0647
+   12     renie                          -0.012982       0.1284
+   13     truc                           -0.011847       0.0605
+   14     annoncé                        -0.010950       0.0509
+   15     imbibée                        -0.010168       0.1307
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+pedro                     +0.002386     +0.000056     +0.000056     0.2999
+merlin                    +0.000000     +0.000053     +0.000053     0.1394
+cloportes                 +0.000000     +0.000049     +0.000049     0.1490
+espagnol                  +0.000388     +0.000037     +0.000037     0.0794
+fusilla                   +0.000000     +0.000035     +0.000035     0.1313
+interpella                +0.000156     +0.000033     +0.000033     0.0991
+vinasse                   +0.000423     +0.000031     +0.000031     0.1372
+blanquette                +0.000000     +0.000027     +0.000027     0.2940
+brune                     +0.000000     +0.000026     +0.000026     0.0498
+pierrot                   +0.000300     +0.000023     +0.000023     0.1103
+renie                     +0.000000     +0.000023     +0.000023     0.1284
+ii                        +0.000226     +0.000019     +0.000019     0.0563
+coton                     +0.000000     +0.000017     +0.000017     0.0594
+roulent                   +0.000138     +0.000016     +0.000016     0.0880
+veau                      +0.000269     +0.000016     +0.000016     0.0784
+général                   +0.000161     +0.000016     +0.000016     0.0427
+rebondit                  +0.000539     +0.000016     +0.000016     0.1050
+untel                     +0.000000     +0.000016     +0.000016     0.1301
+commandant                +0.000701     +0.000013     +0.000013     0.0745
+église                    +0.000000     +0.000011     +0.000011     0.0473
+logit final pour 'homme': 0.7830

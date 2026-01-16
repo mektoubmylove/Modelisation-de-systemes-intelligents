@@ -1,0 +1,5 @@
+filename: (AUDOUX)(Marguerite)(douce lumière)(2)(1937)(1863)(1937)(fr)(z)(z)(V)(R)(T).txt
+index: 90
+first_name: marguerite
+last_name: audoux
+true_label: femme

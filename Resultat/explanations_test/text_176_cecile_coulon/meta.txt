@@ -1,0 +1,5 @@
+filename: (Coulon)(Cécile)(Une bête au paradis)(2)(2019)(1990)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 176
+first_name: cecile
+last_name: coulon
+true_label: femme

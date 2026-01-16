@@ -1,0 +1,5 @@
+filename: (REZNIKOV)(Patricia)(le songe du photographe)(2)(2017)(1962)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 146
+first_name: patricia
+last_name: reznikov
+true_label: femme

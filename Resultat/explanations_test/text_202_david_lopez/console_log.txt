@@ -1,0 +1,387 @@
+texte analysé: simplement le défoncer et puis terminé bonsoir . et à force de m imaginer un adversaire , il m en vient un à l esprit , tout trouvé . j ai kerbachi en face de moi . kerbachi , celui qui m a battu il y...
+prédiction: FEMME (confiance: 55.2%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.1381
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      crochets                       +0.000163       0.1148
+   2      suspect                        +0.000130       0.0846
+   3      arbitre                        +0.000115       0.1206
+   4      pipe                           +0.000094       0.0821
+   5      quinzaine                      +0.000079       0.0808
+   6      tortue                         +0.000075       0.1287
+   7      enjôleur                       +0.000072       0.1533
+   8      persuadé                       +0.000070       0.0724
+   9      échanger                       +0.000064       0.0752
+   10     apprête                        +0.000058       0.0960
+   11     carapace                       +0.000053       0.1156
+   12     dépasse                        +0.000049       0.0803
+   13     valu                           +0.000047       0.0915
+   14     substituer                     +0.000038       0.1448
+   15     masse                          +0.000034       0.0562
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      martèle                        -0.000231       0.1710
+   2      wanda                          -0.000197       0.4667
+   3      flashs                         -0.000180       0.1693
+   4      repense                        -0.000163       0.1166
+   5      enlaçant                       -0.000159       0.1616
+   6      perdition                      -0.000145       0.1352
+   7      estompe                        -0.000119       0.1539
+   8      impénétrable                   -0.000113       0.1081
+   9      crachant                       -0.000110       0.1248
+   10     sert                           -0.000096       0.1108
+   11     salue                          -0.000083       0.0892
+   12     lisse                          -0.000080       0.0729
+   13     répit                          -0.000080       0.0772
+   14     souviens                       -0.000078       0.0532
+   15     sombré                         -0.000072       0.1204
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      crochets                       +0.000163       0.1148
+   2      suspect                        +0.000130       0.0846
+   3      arbitre                        +0.000115       0.1206
+   4      pipe                           +0.000094       0.0821
+   5      quinzaine                      +0.000079       0.0808
+   6      tortue                         +0.000075       0.1287
+   7      enjôleur                       +0.000072       0.1533
+   8      persuadé                       +0.000070       0.0724
+   9      échanger                       +0.000064       0.0752
+   10     apprête                        +0.000058       0.0960
+   11     carapace                       +0.000053       0.1156
+   12     dépasse                        +0.000049       0.0803
+   13     valu                           +0.000047       0.0915
+   14     substituer                     +0.000038       0.1448
+   15     masse                          +0.000034       0.0562
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      martèle                        -0.000231       0.1710
+   2      wanda                          -0.000197       0.4667
+   3      flashs                         -0.000180       0.1693
+   4      repense                        -0.000163       0.1166
+   5      enlaçant                       -0.000159       0.1616
+   6      perdition                      -0.000145       0.1352
+   7      estompe                        -0.000119       0.1539
+   8      impénétrable                   -0.000113       0.1081
+   9      crachant                       -0.000110       0.1248
+   10     sert                           -0.000096       0.1108
+   11     salue                          -0.000083       0.0892
+   12     lisse                          -0.000080       0.0729
+   13     répit                          -0.000080       0.0772
+   14     souviens                       -0.000078       0.0532
+   15     sombré                         -0.000072       0.1204
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      wanda                          +0.005810       0.4667
+   2      flashs                         +0.002591       0.1693
+   3      enlaçant                       +0.001625       0.1616
+   4      repense                        +0.001617       0.1166
+   5      défoncer                       +0.001458       0.1356
+   6      enjôleur                       +0.001457       0.1533
+   7      protège                        +0.001399       0.0800
+   8      perdition                      +0.001357       0.1352
+   9      fins                           +0.001317       0.0594
+   10     rentrée                        +0.001129       0.0620
+   11     sert                           +0.001025       0.1108
+   12     repliée                        +0.000964       0.1274
+   13     silhouette                     +0.000901       0.0564
+   14     apprête                        +0.000881       0.0960
+   15     avertissement                  +0.000874       0.0880
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      uppercut                       -0.004790       0.1755
+   2      boxeurs                        -0.004127       0.1888
+   3      adversaire                     -0.003648       0.1553
+   4      pipe                           -0.003429       0.0821
+   5      round                          -0.003390       0.1806
+   6      persuadé                       -0.002395       0.0724
+   7      arbitre                        -0.002329       0.1206
+   8      combat                         -0.002257       0.1235
+   9      frapper                        -0.001727       0.0560
+   10     crochets                       -0.001676       0.1148
+   11     quinzaine                      -0.001666       0.0808
+   12     tortue                         -0.001514       0.1287
+   13     suspect                        -0.001413       0.0846
+   14     secondes                       -0.001399       0.0547
+   15     substituer                     -0.001370       0.1448
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      wanda                          +0.287574       0.4667
+   2      flashs                         +0.105455       0.1693
+   3      enlaçant                       +0.089984       0.1616
+   4      perdition                      +0.077973       0.1352
+   5      repense                        +0.074432       0.1166
+   6      enjôleur                       +0.072493       0.1533
+   7      sert                           +0.067538       0.1108
+   8      protège                        +0.058809       0.0800
+   9      fins                           +0.053135       0.0594
+   10     rentrée                        +0.050489       0.0620
+   11     repliée                        +0.044824       0.1274
+   12     apprête                        +0.043083       0.0960
+   13     crachant                       +0.042169       0.1248
+   14     silhouette                     +0.040165       0.0564
+   15     reviennent                     +0.039473       0.0788
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      uppercut                       -0.242914       0.1755
+   2      boxeurs                        -0.209541       0.1888
+   3      adversaire                     -0.162368       0.1553
+   4      pipe                           -0.161422       0.0821
+   5      round                          -0.149187       0.1806
+   6      persuadé                       -0.102041       0.0724
+   7      combat                         -0.101038       0.1235
+   8      arbitre                        -0.096331       0.1206
+   9      frapper                        -0.085741       0.0560
+   10     suspect                        -0.075317       0.0846
+   11     crochets                       -0.074309       0.1148
+   12     quinzaine                      -0.068023       0.0808
+   13     secondes                       -0.066751       0.0547
+   14     tortue                         -0.064607       0.1287
+   15     dominé                         -0.052357       0.1329
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+crochets                  +0.000000     +0.000163     +0.000163     0.1148
+suspect                   +0.000000     +0.000130     +0.000130     0.0846
+arbitre                   +0.000000     +0.000115     +0.000115     0.1206
+pipe                      +0.000000     +0.000094     +0.000094     0.0821
+quinzaine                 +0.000000     +0.000079     +0.000079     0.0808
+tortue                    +0.000000     +0.000075     +0.000075     0.1287
+enjôleur                  +0.001457     +0.000072     +0.000072     0.1533
+persuadé                  +0.000000     +0.000070     +0.000070     0.0724
+échanger                  +0.000460     +0.000064     +0.000064     0.0752
+apprête                   +0.000881     +0.000058     +0.000058     0.0960
+carapace                  +0.000000     +0.000053     +0.000053     0.1156
+dépasse                   +0.000249     +0.000049     +0.000049     0.0803
+valu                      +0.000377     +0.000047     +0.000047     0.0915
+substituer                +0.000000     +0.000038     +0.000038     0.1448
+masse                     +0.000000     +0.000034     +0.000034     0.0562
+entier                    +0.000000     +0.000033     +0.000033     0.0530
+secondes                  +0.000000     +0.000028     +0.000028     0.0547
+terminé                   +0.000000     +0.000027     +0.000027     0.0584
+bref                      +0.000000     +0.000020     +0.000020     0.0531
+défoncer                  +0.001458     +0.000020     +0.000020     0.1356
+logit final pour 'femme': 0.1381
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.0694
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      crochets                       +0.000073       0.1148
+   2      substituer                     +0.000063       0.1448
+   3      suspect                        +0.000061       0.0846
+   4      enjôleur                       +0.000053       0.1533
+   5      arbitre                        +0.000052       0.1206
+   6      quinzaine                      +0.000049       0.0808
+   7      tortue                         +0.000040       0.1287
+   8      apprête                        +0.000040       0.0960
+   9      carapace                       +0.000037       0.1156
+   10     valu                           +0.000035       0.0915
+   11     échanger                       +0.000033       0.0752
+   12     dépasse                        +0.000028       0.0803
+   13     uppercut                       +0.000027       0.1755
+   14     persuadé                       +0.000026       0.0724
+   15     pipe                           +0.000024       0.0821
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      wanda                          -0.000157       0.4667
+   2      martèle                        -0.000132       0.1710
+   3      estompe                        -0.000084       0.1539
+   4      repense                        -0.000081       0.1166
+   5      crachant                       -0.000077       0.1248
+   6      perdition                      -0.000070       0.1352
+   7      soulevée                       -0.000061       0.1050
+   8      enlaçant                       -0.000060       0.1616
+   9      impénétrable                   -0.000053       0.1081
+   10     dominé                         -0.000050       0.1329
+   11     sombré                         -0.000049       0.1204
+   12     combat                         -0.000041       0.1235
+   13     flashs                         -0.000039       0.1693
+   14     sert                           -0.000039       0.1108
+   15     round                          -0.000032       0.1806
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      crochets                       +0.000073       0.1148
+   2      substituer                     +0.000063       0.1448
+   3      suspect                        +0.000061       0.0846
+   4      enjôleur                       +0.000053       0.1533
+   5      arbitre                        +0.000052       0.1206
+   6      quinzaine                      +0.000049       0.0808
+   7      tortue                         +0.000040       0.1287
+   8      apprête                        +0.000040       0.0960
+   9      carapace                       +0.000037       0.1156
+   10     valu                           +0.000035       0.0915
+   11     échanger                       +0.000033       0.0752
+   12     dépasse                        +0.000028       0.0803
+   13     uppercut                       +0.000027       0.1755
+   14     persuadé                       +0.000026       0.0724
+   15     pipe                           +0.000024       0.0821
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      wanda                          -0.000157       0.4667
+   2      martèle                        -0.000132       0.1710
+   3      estompe                        -0.000084       0.1539
+   4      repense                        -0.000081       0.1166
+   5      crachant                       -0.000077       0.1248
+   6      perdition                      -0.000070       0.1352
+   7      soulevée                       -0.000061       0.1050
+   8      enlaçant                       -0.000060       0.1616
+   9      impénétrable                   -0.000053       0.1081
+   10     dominé                         -0.000050       0.1329
+   11     sombré                         -0.000049       0.1204
+   12     combat                         -0.000041       0.1235
+   13     flashs                         -0.000039       0.1693
+   14     sert                           -0.000039       0.1108
+   15     round                          -0.000032       0.1806
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      uppercut                       +0.003830       0.1755
+   2      boxeurs                        +0.003032       0.1888
+   3      round                          +0.002882       0.1806
+   4      pipe                           +0.002814       0.0821
+   5      adversaire                     +0.002801       0.1553
+   6      persuadé                       +0.001925       0.0724
+   7      combat                         +0.001831       0.1235
+   8      arbitre                        +0.001677       0.1206
+   9      quinzaine                      +0.001499       0.0808
+   10     crochets                       +0.001318       0.1148
+   11     frapper                        +0.001317       0.0560
+   12     substituer                     +0.001162       0.1448
+   13     secondes                       +0.001058       0.0547
+   14     carapace                       +0.000999       0.1156
+   15     trou                           +0.000965       0.0552
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      wanda                          -0.003838       0.4667
+   2      flashs                         -0.002467       0.1693
+   3      enlaçant                       -0.001317       0.1616
+   4      défoncer                       -0.001290       0.1356
+   5      perdition                      -0.001131       0.1352
+   6      protège                        -0.001071       0.0800
+   7      repense                        -0.001046       0.1166
+   8      enjôleur                       -0.000982       0.1533
+   9      fins                           -0.000971       0.0594
+   10     apprête                        -0.000962       0.0960
+   11     rentrée                        -0.000779       0.0620
+   12     repliée                        -0.000761       0.1274
+   13     rentre                         -0.000750       0.0580
+   14     sert                           -0.000718       0.1108
+   15     soulevée                       -0.000706       0.1050
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      uppercut                       +0.197070       0.1755
+   2      boxeurs                        +0.151500       0.1888
+   3      round                          +0.139622       0.1806
+   4      pipe                           +0.133344       0.0821
+   5      adversaire                     +0.129782       0.1553
+   6      combat                         +0.081159       0.1235
+   7      persuadé                       +0.080155       0.0724
+   8      frapper                        +0.068170       0.0560
+   9      arbitre                        +0.062117       0.1206
+   10     quinzaine                      +0.060274       0.0808
+   11     crochets                       +0.053244       0.1148
+   12     secondes                       +0.051249       0.0547
+   13     suspect                        +0.042058       0.0846
+   14     trou                           +0.038284       0.0552
+   15     carapace                       +0.038225       0.1156
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      wanda                          -0.160711       0.4667
+   2      flashs                         -0.106702       0.1693
+   3      enlaçant                       -0.075178       0.1616
+   4      perdition                      -0.063998       0.1352
+   5      enjôleur                       -0.049704       0.1533
+   6      protège                        -0.046941       0.0800
+   7      repense                        -0.045087       0.1166
+   8      apprête                        -0.043107       0.0960
+   9      sert                           -0.042580       0.1108
+   10     fins                           -0.039326       0.0594
+   11     crachant                       -0.035778       0.1248
+   12     plie                           -0.035765       0.1108
+   13     repliée                        -0.033046       0.1274
+   14     rentrée                        -0.032041       0.0620
+   15     silhouette                     -0.030350       0.0564
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+crochets                  +0.001318     +0.000073     +0.000073     0.1148
+substituer                +0.001162     +0.000063     +0.000063     0.1448
+suspect                   +0.000889     +0.000061     +0.000061     0.0846
+enjôleur                  +0.000000     +0.000053     +0.000053     0.1533
+arbitre                   +0.001677     +0.000052     +0.000052     0.1206
+quinzaine                 +0.001499     +0.000049     +0.000049     0.0808
+tortue                    +0.000875     +0.000040     +0.000040     0.1287
+apprête                   +0.000000     +0.000040     +0.000040     0.0960
+carapace                  +0.000999     +0.000037     +0.000037     0.1156
+valu                      +0.000000     +0.000035     +0.000035     0.0915
+échanger                  +0.000000     +0.000033     +0.000033     0.0752
+dépasse                   +0.000000     +0.000028     +0.000028     0.0803
+uppercut                  +0.003830     +0.000027     +0.000027     0.1755
+persuadé                  +0.001925     +0.000026     +0.000026     0.0724
+pipe                      +0.002814     +0.000024     +0.000024     0.0821
+bonsoir                   +0.000113     +0.000018     +0.000018     0.0764
+terminé                   +0.000172     +0.000017     +0.000017     0.0584
+protège                   +0.000000     +0.000017     +0.000017     0.0800
+cordes                    +0.000000     +0.000016     +0.000016     0.0778
+entier                    +0.000053     +0.000015     +0.000015     0.0530
+logit final pour 'homme': -0.0694

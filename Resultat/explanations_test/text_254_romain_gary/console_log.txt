@@ -1,0 +1,387 @@
+texte analysé: peu vexant , après toutes les preuves d amour que je lui avais données , dit lady l . le poète lauréat lui jeta un coup d oeil effrayé . les dames de pique continuaient à le fixer du paravent de leur ...
+prédiction: FEMME (confiance: 78.0%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.7226
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ironiques                      +0.000176       0.1425
+   2      monstrueux                     +0.000116       0.1616
+   3      paravent                       +0.000090       0.1196
+   4      tâchez                         +0.000077       0.1217
+   5      sir                            +0.000075       0.1292
+   6      percy                          +0.000074       0.2314
+   7      piquée                         +0.000066       0.1043
+   8      instruire                      +0.000062       0.1058
+   9      trompait                       +0.000062       0.0832
+   10     total                          +0.000054       0.0736
+   11     comprenez                      +0.000049       0.0622
+   12     poète                          +0.000044       0.0809
+   13     tapi                           +0.000043       0.1154
+   14     préférez                       +0.000025       0.0943
+   15     soie                           +0.000022       0.0583
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lady                           -0.000315       0.3779
+   2      lauréat                        -0.000141       0.1977
+   3      comprendrait                   -0.000110       0.0967
+   4      ferveur                        -0.000108       0.0857
+   5      arrêterait                     -0.000106       0.1151
+   6      passion                        -0.000095       0.1094
+   7      froideur                       -0.000070       0.0843
+   8      oriental                       -0.000066       0.1277
+   9      vexant                         -0.000063       0.1677
+   10     souverain                      -0.000062       0.0948
+   11     fiait                          -0.000061       0.1725
+   12     figée                          -0.000057       0.0872
+   13     effrayé                        -0.000056       0.0785
+   14     aimée                          -0.000056       0.0645
+   15     allais                         -0.000055       0.1037
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ironiques                      +0.000176       0.1425
+   2      monstrueux                     +0.000116       0.1616
+   3      paravent                       +0.000090       0.1196
+   4      tâchez                         +0.000077       0.1217
+   5      sir                            +0.000075       0.1292
+   6      percy                          +0.000074       0.2314
+   7      piquée                         +0.000066       0.1043
+   8      instruire                      +0.000062       0.1058
+   9      trompait                       +0.000062       0.0832
+   10     total                          +0.000054       0.0736
+   11     comprenez                      +0.000049       0.0622
+   12     poète                          +0.000044       0.0809
+   13     tapi                           +0.000043       0.1154
+   14     préférez                       +0.000025       0.0943
+   15     soie                           +0.000022       0.0583
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lady                           -0.000315       0.3779
+   2      lauréat                        -0.000141       0.1977
+   3      comprendrait                   -0.000110       0.0967
+   4      ferveur                        -0.000108       0.0857
+   5      arrêterait                     -0.000106       0.1151
+   6      passion                        -0.000095       0.1094
+   7      froideur                       -0.000070       0.0843
+   8      oriental                       -0.000066       0.1277
+   9      vexant                         -0.000063       0.1677
+   10     souverain                      -0.000062       0.0948
+   11     fiait                          -0.000061       0.1725
+   12     figée                          -0.000057       0.0872
+   13     effrayé                        -0.000056       0.0785
+   14     aimée                          -0.000056       0.0645
+   15     allais                         -0.000055       0.1037
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lady                           +0.003499       0.3779
+   2      fiait                          +0.003097       0.1725
+   3      lauréat                        +0.001855       0.1977
+   4      sanglotant                     +0.001552       0.1118
+   5      amusée                         +0.001513       0.0890
+   6      données                        +0.001474       0.0787
+   7      piquée                         +0.001288       0.1043
+   8      aimée                          +0.001097       0.0645
+   9      comprendrait                   +0.001011       0.0967
+   10     ferveur                        +0.000961       0.0857
+   11     figée                          +0.000943       0.0872
+   12     amoureuse                      +0.000883       0.0627
+   13     accentuait                     +0.000847       0.1208
+   14     jeta                           +0.000816       0.0613
+   15     rivale                         +0.000796       0.1120
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      monstrueux                     -0.002341       0.1616
+   2      sir                            -0.001888       0.1292
+   3      ironiques                      -0.001625       0.1425
+   4      ignoble                        -0.001466       0.0886
+   5      oriental                       -0.001182       0.1277
+   6      dominait                       -0.001024       0.0869
+   7      eut                            -0.000994       0.0510
+   8      pendule                        -0.000960       0.0910
+   9      demeuré                        -0.000956       0.0976
+   10     percy                          -0.000902       0.2314
+   11     souverain                      -0.000871       0.0948
+   12     arrêtai                        -0.000858       0.1415
+   13     comprenez                      -0.000831       0.0622
+   14     allais                         -0.000825       0.1037
+   15     flamme                         -0.000820       0.0623
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lady                           +0.201371       0.3779
+   2      fiait                          +0.151247       0.1725
+   3      lauréat                        +0.090334       0.1977
+   4      amusée                         +0.084467       0.0890
+   5      sanglotant                     +0.083166       0.1118
+   6      données                        +0.074164       0.0787
+   7      piquée                         +0.058952       0.1043
+   8      aimée                          +0.058598       0.0645
+   9      figée                          +0.057436       0.0872
+   10     accentuait                     +0.049280       0.1208
+   11     comprendrait                   +0.049133       0.0967
+   12     ferveur                        +0.046187       0.0857
+   13     rivale                         +0.044282       0.1120
+   14     jeta                           +0.037957       0.0613
+   15     froideur                       +0.035626       0.0843
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      monstrueux                     -0.111620       0.1616
+   2      sir                            -0.087590       0.1292
+   3      ironiques                      -0.084425       0.1425
+   4      ignoble                        -0.077613       0.0886
+   5      oriental                       -0.061872       0.1277
+   6      dominait                       -0.056743       0.0869
+   7      demeuré                        -0.054753       0.0976
+   8      eut                            -0.054369       0.0510
+   9      latent                         -0.050990       0.1725
+   10     souverain                      -0.047827       0.0948
+   11     comprenez                      -0.046035       0.0622
+   12     pendule                        -0.045052       0.0910
+   13     continuaient                   -0.044647       0.0819
+   14     arrêtai                        -0.042524       0.1415
+   15     flamme                         -0.041256       0.0623
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+ironiques                 +0.000000     +0.000176     +0.000176     0.1425
+monstrueux                +0.000000     +0.000116     +0.000116     0.1616
+paravent                  +0.000160     +0.000090     +0.000090     0.1196
+tâchez                    +0.000166     +0.000077     +0.000077     0.1217
+sir                       +0.000000     +0.000075     +0.000075     0.1292
+percy                     +0.000000     +0.000074     +0.000074     0.2314
+piquée                    +0.001288     +0.000066     +0.000066     0.1043
+instruire                 +0.000000     +0.000062     +0.000062     0.1058
+trompait                  +0.000295     +0.000062     +0.000062     0.0832
+total                     +0.000000     +0.000054     +0.000054     0.0736
+comprenez                 +0.000000     +0.000049     +0.000049     0.0622
+poète                     +0.000000     +0.000044     +0.000044     0.0809
+tapi                      +0.000000     +0.000043     +0.000043     0.1154
+préférez                  +0.000000     +0.000025     +0.000025     0.0943
+soie                      +0.000676     +0.000022     +0.000022     0.0583
+sentis                    +0.000000     +0.000021     +0.000021     0.0999
+épreuves                  +0.000000     +0.000020     +0.000020     0.0818
+dame                      +0.000132     +0.000018     +0.000018     0.0505
+voyez                     +0.000000     +0.000015     +0.000015     0.0503
+haine                     +0.000113     +0.000013     +0.000013     0.0568
+logit final pour 'femme': 0.7226
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.5436
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      monstrueux                     +0.000088       0.1616
+   2      piquée                         +0.000076       0.1043
+   3      ironiques                      +0.000047       0.1425
+   4      trompait                       +0.000044       0.0832
+   5      paravent                       +0.000039       0.1196
+   6      épreuves                       +0.000027       0.0818
+   7      observait                      +0.000027       0.0689
+   8      tâchez                         +0.000026       0.1217
+   9      soie                           +0.000025       0.0583
+   10     total                          +0.000024       0.0736
+   11     comprenez                      +0.000024       0.0622
+   12     tapi                           +0.000022       0.1154
+   13     voyez                          +0.000017       0.0503
+   14     percy                          +0.000017       0.2314
+   15     préférez                       +0.000016       0.0943
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lady                           -0.000084       0.3779
+   2      arrêterait                     -0.000082       0.1151
+   3      lauréat                        -0.000080       0.1977
+   4      ferveur                        -0.000067       0.0857
+   5      latent                         -0.000060       0.1725
+   6      froideur                       -0.000053       0.0843
+   7      oriental                       -0.000047       0.1277
+   8      continuaient                   -0.000044       0.0819
+   9      souverain                      -0.000040       0.0948
+   10     ressemblance                   -0.000036       0.0789
+   11     dominait                       -0.000035       0.0869
+   12     effrayé                        -0.000034       0.0785
+   13     demeuré                        -0.000033       0.0976
+   14     rivale                         -0.000032       0.1120
+   15     comprendrait                   -0.000032       0.0967
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      monstrueux                     +0.000088       0.1616
+   2      piquée                         +0.000076       0.1043
+   3      ironiques                      +0.000047       0.1425
+   4      trompait                       +0.000044       0.0832
+   5      paravent                       +0.000039       0.1196
+   6      épreuves                       +0.000027       0.0818
+   7      observait                      +0.000027       0.0689
+   8      tâchez                         +0.000026       0.1217
+   9      soie                           +0.000025       0.0583
+   10     total                          +0.000024       0.0736
+   11     comprenez                      +0.000024       0.0622
+   12     tapi                           +0.000022       0.1154
+   13     voyez                          +0.000017       0.0503
+   14     percy                          +0.000017       0.2314
+   15     préférez                       +0.000016       0.0943
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lady                           -0.000084       0.3779
+   2      arrêterait                     -0.000082       0.1151
+   3      lauréat                        -0.000080       0.1977
+   4      ferveur                        -0.000067       0.0857
+   5      latent                         -0.000060       0.1725
+   6      froideur                       -0.000053       0.0843
+   7      oriental                       -0.000047       0.1277
+   8      continuaient                   -0.000044       0.0819
+   9      souverain                      -0.000040       0.0948
+   10     ressemblance                   -0.000036       0.0789
+   11     dominait                       -0.000035       0.0869
+   12     effrayé                        -0.000034       0.0785
+   13     demeuré                        -0.000033       0.0976
+   14     rivale                         -0.000032       0.1120
+   15     comprendrait                   -0.000032       0.0967
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      monstrueux                     +0.001927       0.1616
+   2      ironiques                      +0.001636       0.1425
+   3      sir                            +0.001440       0.1292
+   4      ignoble                        +0.001143       0.0886
+   5      oriental                       +0.000976       0.1277
+   6      percy                          +0.000952       0.2314
+   7      eut                            +0.000922       0.0510
+   8      comprenez                      +0.000833       0.0622
+   9      dominait                       +0.000820       0.0869
+   10     épreuves                       +0.000728       0.0818
+   11     demeuré                        +0.000722       0.0976
+   12     souverain                      +0.000718       0.0948
+   13     instruire                      +0.000713       0.1058
+   14     arrêtai                        +0.000710       0.1415
+   15     continuaient                   +0.000680       0.0819
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lady                           -0.002527       0.3779
+   2      fiait                          -0.002475       0.1725
+   3      lauréat                        -0.001690       0.1977
+   4      sanglotant                     -0.001409       0.1118
+   5      amusée                         -0.001333       0.0890
+   6      données                        -0.001185       0.0787
+   7      piquée                         -0.001054       0.1043
+   8      comprendrait                   -0.000914       0.0967
+   9      aimée                          -0.000900       0.0645
+   10     amoureuse                      -0.000723       0.0627
+   11     ferveur                        -0.000722       0.0857
+   12     figée                          -0.000708       0.0872
+   13     jeta                           -0.000690       0.0613
+   14     rivale                         -0.000578       0.1120
+   15     soie                           -0.000562       0.0583
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      ironiques                      +0.086846       0.1425
+   2      monstrueux                     +0.078855       0.1616
+   3      sir                            +0.068053       0.1292
+   4      ignoble                        +0.059866       0.0886
+   5      latent                         +0.047656       0.1725
+   6      eut                            +0.047476       0.0510
+   7      dominait                       +0.045043       0.0869
+   8      comprenez                      +0.043132       0.0622
+   9      percy                          +0.043059       0.2314
+   10     oriental                       +0.042867       0.1277
+   11     souverain                      +0.042293       0.0948
+   12     continuaient                   +0.041562       0.0819
+   13     demeuré                        +0.040917       0.0976
+   14     instruire                      +0.037439       0.1058
+   15     arrêtai                        +0.035892       0.1415
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lady                           -0.153586       0.3779
+   2      fiait                          -0.122116       0.1725
+   3      sanglotant                     -0.074442       0.1118
+   4      lauréat                        -0.070362       0.1977
+   5      amusée                         -0.068653       0.0890
+   6      données                        -0.061800       0.0787
+   7      aimée                          -0.047366       0.0645
+   8      figée                          -0.046260       0.0872
+   9      comprendrait                   -0.045996       0.0967
+   10     piquée                         -0.043283       0.1043
+   11     accentuait                     -0.040264       0.1208
+   12     dévouement                     -0.038445       0.1772
+   13     immoler                        -0.035488       0.1715
+   14     ferveur                        -0.034442       0.0857
+   15     jeta                           -0.031989       0.0613
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+monstrueux                +0.001927     +0.000088     +0.000088     0.1616
+piquée                    +0.000000     +0.000076     +0.000076     0.1043
+ironiques                 +0.001636     +0.000047     +0.000047     0.1425
+trompait                  +0.000000     +0.000044     +0.000044     0.0832
+paravent                  +0.000000     +0.000039     +0.000039     0.1196
+épreuves                  +0.000728     +0.000027     +0.000027     0.0818
+observait                 +0.000000     +0.000027     +0.000027     0.0689
+tâchez                    +0.000000     +0.000026     +0.000026     0.1217
+soie                      +0.000000     +0.000025     +0.000025     0.0583
+total                     +0.000262     +0.000024     +0.000024     0.0736
+comprenez                 +0.000833     +0.000024     +0.000024     0.0622
+tapi                      +0.000234     +0.000022     +0.000022     0.1154
+voyez                     +0.000432     +0.000017     +0.000017     0.0503
+percy                     +0.000952     +0.000017     +0.000017     0.2314
+préférez                  +0.000267     +0.000016     +0.000016     0.0943
+fêlée                     +0.000032     +0.000015     +0.000015     0.1502
+instruire                 +0.000713     +0.000015     +0.000015     0.1058
+sentis                    +0.000359     +0.000014     +0.000014     0.0999
+amusée                    +0.000000     +0.000013     +0.000013     0.0890
+dévouement                +0.000000     +0.000013     +0.000013     0.1772
+logit final pour 'homme': -0.5436

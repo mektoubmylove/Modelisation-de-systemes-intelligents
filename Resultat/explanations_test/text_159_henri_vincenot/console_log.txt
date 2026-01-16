@@ -1,0 +1,387 @@
+texte analysé: l arcueil et grimper sur la planèze , pour ne pas manquer l hospice de saint flour , qui avait une excellente réputation . mais il arriva que dans les gorges de l alagnon passé brugeilles , à l endroi...
+prédiction: FEMME (confiance: 62.0%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.2163
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jehan                          +0.000454       0.4890
+   2      gorges                         +0.000135       0.1663
+   3      magot                          +0.000104       0.1040
+   4      appelèrent                     +0.000092       0.1181
+   5      acharnent                      +0.000087       0.1306
+   6      virent                         +0.000072       0.0638
+   7      brigands                       +0.000072       0.0987
+   8      orgues                         +0.000061       0.1057
+   9      bonhomme                       +0.000053       0.0523
+   10     courait                        +0.000048       0.0465
+   11     ceinture                       +0.000045       0.1288
+   12     hurlant                        +0.000041       0.1159
+   13     genêts                         +0.000039       0.1124
+   14     fièrement                      +0.000038       0.0658
+   15     franchir                       +0.000036       0.0475
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      prophète                       -0.000439       0.2772
+   2      sus                            -0.000102       0.3010
+   3      velus                          -0.000091       0.1225
+   4      mouillée                       -0.000088       0.0662
+   5      manquant                       -0.000079       0.0798
+   6      montent                        -0.000072       0.0672
+   7      fonte                          -0.000072       0.0804
+   8      soigner                        -0.000072       0.0477
+   9      sire                           -0.000064       0.1011
+   10     culotte                        -0.000063       0.0618
+   11     hospice                        -0.000063       0.1068
+   12     excellente                     -0.000053       0.0508
+   13     retombe                        -0.000053       0.0747
+   14     manquer                        -0.000053       0.0449
+   15     compostelle                    -0.000051       0.1497
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jehan                          +0.000454       0.4890
+   2      gorges                         +0.000135       0.1663
+   3      magot                          +0.000104       0.1040
+   4      appelèrent                     +0.000092       0.1181
+   5      acharnent                      +0.000087       0.1306
+   6      virent                         +0.000072       0.0638
+   7      brigands                       +0.000072       0.0987
+   8      orgues                         +0.000061       0.1057
+   9      bonhomme                       +0.000053       0.0523
+   10     courait                        +0.000048       0.0465
+   11     ceinture                       +0.000045       0.1288
+   12     hurlant                        +0.000041       0.1159
+   13     genêts                         +0.000039       0.1124
+   14     fièrement                      +0.000038       0.0658
+   15     franchir                       +0.000036       0.0475
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      prophète                       -0.000439       0.2772
+   2      sus                            -0.000102       0.3010
+   3      velus                          -0.000091       0.1225
+   4      mouillée                       -0.000088       0.0662
+   5      manquant                       -0.000079       0.0798
+   6      montent                        -0.000072       0.0672
+   7      fonte                          -0.000072       0.0804
+   8      soigner                        -0.000072       0.0477
+   9      sire                           -0.000064       0.1011
+   10     culotte                        -0.000063       0.0618
+   11     hospice                        -0.000063       0.1068
+   12     excellente                     -0.000053       0.0508
+   13     retombe                        -0.000053       0.0747
+   14     manquer                        -0.000053       0.0449
+   15     compostelle                    -0.000051       0.1497
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      prophète                       +0.001848       0.2772
+   2      manquant                       +0.001782       0.0798
+   3      fièrement                      +0.001353       0.0658
+   4      carême                         +0.001329       0.1023
+   5      initié                         +0.001287       0.0978
+   6      cadeau                         +0.001162       0.0442
+   7      courent                        +0.001131       0.1231
+   8      compostelle                    +0.001021       0.1497
+   9      mouillée                       +0.000888       0.0662
+   10     braies                         +0.000887       0.1373
+   11     rassemblées                    +0.000873       0.1017
+   12     sire                           +0.000864       0.1011
+   13     hospice                        +0.000843       0.1068
+   14     excellente                     +0.000837       0.0508
+   15     neige                          +0.000791       0.0450
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jehan                          -0.003110       0.4890
+   2      prît                           -0.002607       0.0897
+   3      bosses                         -0.001930       0.0866
+   4      perdirent                      -0.001908       0.0964
+   5      gorges                         -0.001801       0.1663
+   6      débraillé                      -0.001773       0.1156
+   7      velus                          -0.001576       0.1225
+   8      gaillards                      -0.001574       0.0931
+   9      torrent                        -0.001191       0.0706
+   10     eut                            -0.001132       0.0386
+   11     halte                          -0.001130       0.0667
+   12     bonhomme                       -0.001118       0.0523
+   13     brigands                       -0.001102       0.0987
+   14     abat                           -0.001094       0.0626
+   15     firent                         -0.000858       0.0482
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      manquant                       +0.102733       0.0798
+   2      initié                         +0.073420       0.0978
+   3      fièrement                      +0.072057       0.0658
+   4      sire                           +0.070427       0.1011
+   5      cadeau                         +0.067981       0.0442
+   6      prophète                       +0.062054       0.2772
+   7      carême                         +0.061610       0.1023
+   8      courent                        +0.060971       0.1231
+   9      compostelle                    +0.056631       0.1497
+   10     hospice                        +0.054858       0.1068
+   11     braies                         +0.052849       0.1373
+   12     excellente                     +0.048394       0.0508
+   13     rassemblées                    +0.046908       0.1017
+   14     mouillée                       +0.046555       0.0662
+   15     rattrape                       +0.044333       0.0835
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jehan                          -0.202834       0.4890
+   2      prît                           -0.148162       0.0897
+   3      perdirent                      -0.102651       0.0964
+   4      débraillé                      -0.101466       0.1156
+   5      gorges                         -0.098511       0.1663
+   6      bosses                         -0.096841       0.0866
+   7      gaillards                      -0.084584       0.0931
+   8      velus                          -0.075724       0.1225
+   9      brigands                       -0.074742       0.0987
+   10     abat                           -0.064137       0.0626
+   11     torrent                        -0.062927       0.0706
+   12     eut                            -0.062511       0.0386
+   13     bonhomme                       -0.057169       0.0523
+   14     halte                          -0.056030       0.0667
+   15     firent                         -0.049074       0.0482
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+jehan                     +0.000000     +0.000454     +0.000454     0.4890
+gorges                    +0.000000     +0.000135     +0.000135     0.1663
+magot                     +0.000000     +0.000104     +0.000104     0.1040
+appelèrent                +0.000444     +0.000092     +0.000092     0.1181
+acharnent                 +0.000000     +0.000087     +0.000087     0.1306
+virent                    +0.000000     +0.000072     +0.000072     0.0638
+brigands                  +0.000000     +0.000072     +0.000072     0.0987
+orgues                    +0.000008     +0.000061     +0.000061     0.1057
+bonhomme                  +0.000000     +0.000053     +0.000053     0.0523
+courait                   +0.000000     +0.000048     +0.000048     0.0465
+ceinture                  +0.000000     +0.000045     +0.000045     0.1288
+hurlant                   +0.000363     +0.000041     +0.000041     0.1159
+genêts                    +0.000064     +0.000039     +0.000039     0.1124
+fièrement                 +0.001353     +0.000038     +0.000038     0.0658
+franchir                  +0.000000     +0.000036     +0.000036     0.0475
+braies                    +0.000887     +0.000035     +0.000035     0.1373
+grondaient                +0.000446     +0.000034     +0.000034     0.1322
+déchirées                 +0.000498     +0.000031     +0.000031     0.1014
+débraillé                 +0.000000     +0.000030     +0.000030     0.1156
+noires                    +0.000000     +0.000030     +0.000030     0.0411
+logit final pour 'femme': 0.2163
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.2713
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gorges                         +0.000052       0.1663
+   2      magot                          +0.000043       0.1040
+   3      jehan                          +0.000036       0.4890
+   4      braies                         +0.000033       0.1373
+   5      déchirées                      +0.000031       0.1014
+   6      appelèrent                     +0.000031       0.1181
+   7      virent                         +0.000030       0.0638
+   8      ceinture                       +0.000028       0.1288
+   9      bonhomme                       +0.000026       0.0523
+   10     brigands                       +0.000024       0.0987
+   11     noires                         +0.000023       0.0411
+   12     ours                           +0.000019       0.0635
+   13     compostelle                    +0.000018       0.1497
+   14     abat                           +0.000017       0.0626
+   15     bosses                         +0.000016       0.0866
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      prophète                       -0.000216       0.2772
+   2      sus                            -0.000068       0.3010
+   3      hospice                        -0.000052       0.1068
+   4      velus                          -0.000048       0.1225
+   5      retombe                        -0.000046       0.0747
+   6      manquant                       -0.000041       0.0798
+   7      repartirent                    -0.000040       0.1036
+   8      entendent                      -0.000035       0.0681
+   9      mouillée                       -0.000034       0.0662
+   10     culotte                        -0.000034       0.0618
+   11     rattrape                       -0.000033       0.0835
+   12     soigner                        -0.000032       0.0477
+   13     remet                          -0.000031       0.0600
+   14     montent                        -0.000031       0.0672
+   15     mission                        -0.000030       0.0448
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gorges                         +0.000052       0.1663
+   2      magot                          +0.000043       0.1040
+   3      jehan                          +0.000036       0.4890
+   4      braies                         +0.000033       0.1373
+   5      déchirées                      +0.000031       0.1014
+   6      appelèrent                     +0.000031       0.1181
+   7      virent                         +0.000030       0.0638
+   8      ceinture                       +0.000028       0.1288
+   9      bonhomme                       +0.000026       0.0523
+   10     brigands                       +0.000024       0.0987
+   11     noires                         +0.000023       0.0411
+   12     ours                           +0.000019       0.0635
+   13     compostelle                    +0.000018       0.1497
+   14     abat                           +0.000017       0.0626
+   15     bosses                         +0.000016       0.0866
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      prophète                       -0.000216       0.2772
+   2      sus                            -0.000068       0.3010
+   3      hospice                        -0.000052       0.1068
+   4      velus                          -0.000048       0.1225
+   5      retombe                        -0.000046       0.0747
+   6      manquant                       -0.000041       0.0798
+   7      repartirent                    -0.000040       0.1036
+   8      entendent                      -0.000035       0.0681
+   9      mouillée                       -0.000034       0.0662
+   10     culotte                        -0.000034       0.0618
+   11     rattrape                       -0.000033       0.0835
+   12     soigner                        -0.000032       0.0477
+   13     remet                          -0.000031       0.0600
+   14     montent                        -0.000031       0.0672
+   15     mission                        -0.000030       0.0448
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      prît                           +0.001743       0.0897
+   2      bosses                         +0.001339       0.0866
+   3      jehan                          +0.001123       0.4890
+   4      velus                          +0.000999       0.1225
+   5      gaillards                      +0.000960       0.0931
+   6      perdirent                      +0.000925       0.0964
+   7      eut                            +0.000778       0.0386
+   8      brigands                       +0.000776       0.0987
+   9      gorges                         +0.000703       0.1663
+   10     débraillé                      +0.000674       0.1156
+   11     sus                            +0.000655       0.3010
+   12     torrent                        +0.000636       0.0706
+   13     firent                         +0.000632       0.0482
+   14     bonhomme                       +0.000621       0.0523
+   15     halte                          +0.000617       0.0667
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      courent                        -0.001069       0.1231
+   2      manquant                       -0.001063       0.0798
+   3      initié                         -0.000911       0.0978
+   4      hospice                        -0.000729       0.1068
+   5      prophète                       -0.000714       0.2772
+   6      cadeau                         -0.000685       0.0442
+   7      carême                         -0.000654       0.1023
+   8      grondaient                     -0.000654       0.1322
+   9      initier                        -0.000629       0.0970
+   10     fièrement                      -0.000613       0.0658
+   11     compostelle                    -0.000601       0.1497
+   12     neige                          -0.000570       0.0450
+   13     inquiets                       -0.000476       0.0639
+   14     sire                           -0.000467       0.1011
+   15     braies                         -0.000465       0.1373
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      prît                           +0.093564       0.0897
+   2      jehan                          +0.087126       0.4890
+   3      bosses                         +0.063877       0.0866
+   4      brigands                       +0.054941       0.0987
+   5      gaillards                      +0.054490       0.0931
+   6      velus                          +0.049387       0.1225
+   7      perdirent                      +0.048133       0.0964
+   8      débraillé                      +0.045600       0.1156
+   9      eut                            +0.041349       0.0386
+   10     gorges                         +0.038500       0.1663
+   11     firent                         +0.033515       0.0482
+   12     torrent                        +0.033439       0.0706
+   13     abat                           +0.032526       0.0626
+   14     bonhomme                       +0.029433       0.0523
+   15     halte                          +0.028385       0.0667
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      manquant                       -0.062388       0.0798
+   2      courent                        -0.054861       0.1231
+   3      initié                         -0.050049       0.0978
+   4      hospice                        -0.042538       0.1068
+   5      cadeau                         -0.038123       0.0442
+   6      braies                         -0.036107       0.1373
+   7      sire                           -0.035706       0.1011
+   8      grondaient                     -0.035452       0.1322
+   9      initier                        -0.031843       0.0970
+   10     fièrement                      -0.031240       0.0658
+   11     neige                          -0.030702       0.0450
+   12     compostelle                    -0.029114       0.1497
+   13     carême                         -0.027404       0.1023
+   14     rattrape                       -0.024083       0.0835
+   15     prophète                       -0.024066       0.2772
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+gorges                    +0.000703     +0.000052     +0.000052     0.1663
+magot                     +0.000326     +0.000043     +0.000043     0.1040
+jehan                     +0.001123     +0.000036     +0.000036     0.4890
+braies                    +0.000000     +0.000033     +0.000033     0.1373
+déchirées                 +0.000000     +0.000031     +0.000031     0.1014
+appelèrent                +0.000000     +0.000031     +0.000031     0.1181
+virent                    +0.000324     +0.000030     +0.000030     0.0638
+ceinture                  +0.000162     +0.000028     +0.000028     0.1288
+bonhomme                  +0.000621     +0.000026     +0.000026     0.0523
+brigands                  +0.000776     +0.000024     +0.000024     0.0987
+noires                    +0.000049     +0.000023     +0.000023     0.0411
+ours                      +0.000416     +0.000019     +0.000019     0.0635
+compostelle               +0.000000     +0.000018     +0.000018     0.1497
+abat                      +0.000563     +0.000017     +0.000017     0.0626
+bosses                    +0.001339     +0.000016     +0.000016     0.0866
+franchir                  +0.000000     +0.000015     +0.000015     0.0475
+courait                   +0.000172     +0.000013     +0.000013     0.0465
+revers                    +0.000476     +0.000013     +0.000013     0.0522
+arrivés                   +0.000000     +0.000011     +0.000011     0.0435
+grimper                   +0.000017     +0.000009     +0.000009     0.0587
+logit final pour 'homme': -0.2713

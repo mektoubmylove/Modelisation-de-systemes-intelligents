@@ -1,0 +1,386 @@
+texte analysé: proches se dessinaient au dessus de la ravine . sur un ciel verdissant , une étoile monta , puis deux; puis un vanneur nocturne cribla des astres au dessus de nos têtes . dans l âme des chercheurs d o...
+prédiction: HOMME (confiance: 81.3%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.8162
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      procéda                        +0.000098       0.1219
+   2      bûcherons                      +0.000076       0.1267
+   3      crampons                       +0.000059       0.1447
+   4      pablo                          +0.000056       0.1571
+   5      formée                         +0.000055       0.0816
+   6      soupesa                        +0.000046       0.1371
+   7      assistait                      +0.000041       0.0787
+   8      sève                           +0.000037       0.0843
+   9      mr                             +0.000035       0.1239
+   10     suant                          +0.000034       0.1072
+   11     ex                             +0.000032       0.0592
+   12     reconquis                      +0.000032       0.1214
+   13     incliné                        +0.000032       0.0779
+   14     aperçut                        +0.000031       0.0528
+   15     outils                         +0.000031       0.0632
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pioche                         -0.000078       0.0922
+   2      nourris                        -0.000075       0.0765
+   3      englué                         -0.000065       0.1321
+   4      barrage                        -0.000064       0.0798
+   5      tari                           -0.000060       0.1349
+   6      échappaient                    -0.000056       0.0773
+   7      singes                         -0.000049       0.0900
+   8      proches                        -0.000047       0.0495
+   9      ouaté                          -0.000045       0.1403
+   10     échappés                       -0.000038       0.1114
+   11     établir                        -0.000037       0.0540
+   12     ramassa                        -0.000034       0.0695
+   13     tombèrent                      -0.000032       0.0760
+   14     chercha                        -0.000030       0.0555
+   15     paroi                          -0.000030       0.0721
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      procéda                        +0.000098       0.1219
+   2      bûcherons                      +0.000076       0.1267
+   3      crampons                       +0.000059       0.1447
+   4      pablo                          +0.000056       0.1571
+   5      formée                         +0.000055       0.0816
+   6      soupesa                        +0.000046       0.1371
+   7      assistait                      +0.000041       0.0787
+   8      sève                           +0.000037       0.0843
+   9      mr                             +0.000035       0.1239
+   10     suant                          +0.000034       0.1072
+   11     ex                             +0.000032       0.0592
+   12     reconquis                      +0.000032       0.1214
+   13     incliné                        +0.000032       0.0779
+   14     aperçut                        +0.000031       0.0528
+   15     outils                         +0.000031       0.0632
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pioche                         -0.000078       0.0922
+   2      nourris                        -0.000075       0.0765
+   3      englué                         -0.000065       0.1321
+   4      barrage                        -0.000064       0.0798
+   5      tari                           -0.000060       0.1349
+   6      échappaient                    -0.000056       0.0773
+   7      singes                         -0.000049       0.0900
+   8      proches                        -0.000047       0.0495
+   9      ouaté                          -0.000045       0.1403
+   10     échappés                       -0.000038       0.1114
+   11     établir                        -0.000037       0.0540
+   12     ramassa                        -0.000034       0.0695
+   13     tombèrent                      -0.000032       0.0760
+   14     chercha                        -0.000030       0.0555
+   15     paroi                          -0.000030       0.0721
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cactus                         +0.002021       0.1195
+   2      tari                           +0.001700       0.1349
+   3      ouaté                          +0.001156       0.1403
+   4      ravine                         +0.001112       0.1487
+   5      échappaient                    +0.000915       0.0773
+   6      chercheurs                     +0.000841       0.1021
+   7      faille                         +0.000829       0.0662
+   8      argile                         +0.000732       0.0962
+   9      cachée                         +0.000659       0.0542
+   10     gardant                        +0.000648       0.0632
+   11     proches                        +0.000638       0.0495
+   12     chercha                        +0.000585       0.0555
+   13     plantes                        +0.000548       0.0518
+   14     larges                         +0.000537       0.0476
+   15     frêles                         +0.000529       0.1000
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      colosses                       -0.001735       0.1356
+   2      procéda                        -0.001451       0.1219
+   3      reconquis                      -0.001393       0.1214
+   4      puerto                         -0.001387       0.1983
+   5      crampons                       -0.001363       0.1447
+   6      pioche                         -0.001180       0.0922
+   7      mètres                         -0.000996       0.0418
+   8      marteau                        -0.000946       0.0703
+   9      paralysé                       -0.000917       0.0833
+   10     singes                         -0.000853       0.0900
+   11     xii                            -0.000853       0.0810
+   12     assistait                      -0.000819       0.0787
+   13     majesté                        -0.000782       0.0704
+   14     bûcherons                      -0.000743       0.1267
+   15     obscure                        -0.000707       0.0603
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      cactus                         +0.099461       0.1195
+   2      tari                           +0.095802       0.1349
+   3      ouaté                          +0.054031       0.1403
+   4      chercheurs                     +0.052183       0.1021
+   5      échappaient                    +0.044181       0.0773
+   6      ravine                         +0.044030       0.1487
+   7      gardant                        +0.036372       0.0632
+   8      faille                         +0.035241       0.0662
+   9      proches                        +0.034920       0.0495
+   10     argile                         +0.033808       0.0962
+   11     chercha                        +0.033081       0.0555
+   12     cachée                         +0.030443       0.0542
+   13     endormis                       +0.029602       0.0727
+   14     plantes                        +0.029350       0.0518
+   15     frêles                         +0.028619       0.1000
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      colosses                       -0.085012       0.1356
+   2      crampons                       -0.074822       0.1447
+   3      procéda                        -0.070161       0.1219
+   4      reconquis                      -0.064813       0.1214
+   5      puerto                         -0.063124       0.1983
+   6      mètres                         -0.049762       0.0418
+   7      paralysé                       -0.044330       0.0833
+   8      pioche                         -0.043494       0.0922
+   9      xii                            -0.042913       0.0810
+   10     bûcherons                      -0.038757       0.1267
+   11     approches                      -0.038315       0.1021
+   12     marteau                        -0.038176       0.0703
+   13     assistait                      -0.037560       0.0787
+   14     obscure                        -0.036326       0.0603
+   15     torrent                        -0.036241       0.0753
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+procéda                   +0.000000     +0.000098     +0.000098     0.1219
+bûcherons                 +0.000000     +0.000076     +0.000076     0.1267
+crampons                  +0.000000     +0.000059     +0.000059     0.1447
+pablo                     +0.000000     +0.000056     +0.000056     0.1571
+formée                    +0.000000     +0.000055     +0.000055     0.0816
+soupesa                   +0.000000     +0.000046     +0.000046     0.1371
+assistait                 +0.000000     +0.000041     +0.000041     0.0787
+sève                      +0.000000     +0.000037     +0.000037     0.0843
+mr                        +0.000221     +0.000035     +0.000035     0.1239
+suant                     +0.000000     +0.000034     +0.000034     0.1072
+ex                        +0.000000     +0.000032     +0.000032     0.0592
+reconquis                 +0.000000     +0.000032     +0.000032     0.1214
+incliné                   +0.000000     +0.000032     +0.000032     0.0779
+aperçut                   +0.000000     +0.000031     +0.000031     0.0528
+outils                    +0.000000     +0.000031     +0.000031     0.0632
+ravine                    +0.001112     +0.000030     +0.000030     0.1487
+oiseau                    +0.000000     +0.000030     +0.000030     0.0476
+trouvaille                +0.000295     +0.000029     +0.000029     0.0912
+monta                     +0.000000     +0.000028     +0.000028     0.0541
+surgis                    +0.000000     +0.000027     +0.000027     0.1296
+logit final pour 'femme': -0.8162
+# analyse pour la classe: HOMME  prédite
+# logit: 0.6524
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bûcherons                      +0.000051       0.1267
+   2      formée                         +0.000051       0.0816
+   3      sève                           +0.000050       0.0843
+   4      approches                      +0.000035       0.1021
+   5      procéda                        +0.000032       0.1219
+   6      forêt                          +0.000030       0.0949
+   7      grises                         +0.000026       0.0644
+   8      pablo                          +0.000026       0.1571
+   9      reconquis                      +0.000026       0.1214
+   10     plantes                        +0.000026       0.0518
+   11     monta                          +0.000026       0.0541
+   12     ravine                         +0.000025       0.1487
+   13     ex                             +0.000023       0.0592
+   14     mouches                        +0.000020       0.0626
+   15     astres                         +0.000019       0.0997
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pioche                         -0.000060       0.0922
+   2      tari                           -0.000059       0.1349
+   3      échappaient                    -0.000047       0.0773
+   4      nourris                        -0.000041       0.0765
+   5      colosses                       -0.000040       0.1356
+   6      barrage                        -0.000036       0.0798
+   7      rocheuse                       -0.000034       0.1086
+   8      singes                         -0.000033       0.0900
+   9      solitudes                      -0.000033       0.1106
+   10     établir                        -0.000033       0.0540
+   11     égarer                         -0.000033       0.0894
+   12     opération                      -0.000032       0.0489
+   13     catastrophe                    -0.000030       0.0531
+   14     englué                         -0.000030       0.1321
+   15     proches                        -0.000028       0.0495
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      bûcherons                      +0.000051       0.1267
+   2      formée                         +0.000051       0.0816
+   3      sève                           +0.000050       0.0843
+   4      approches                      +0.000035       0.1021
+   5      procéda                        +0.000032       0.1219
+   6      forêt                          +0.000030       0.0949
+   7      grises                         +0.000026       0.0644
+   8      pablo                          +0.000026       0.1571
+   9      reconquis                      +0.000026       0.1214
+   10     plantes                        +0.000026       0.0518
+   11     monta                          +0.000026       0.0541
+   12     ravine                         +0.000025       0.1487
+   13     ex                             +0.000023       0.0592
+   14     mouches                        +0.000020       0.0626
+   15     astres                         +0.000019       0.0997
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pioche                         -0.000060       0.0922
+   2      tari                           -0.000059       0.1349
+   3      échappaient                    -0.000047       0.0773
+   4      nourris                        -0.000041       0.0765
+   5      colosses                       -0.000040       0.1356
+   6      barrage                        -0.000036       0.0798
+   7      rocheuse                       -0.000034       0.1086
+   8      singes                         -0.000033       0.0900
+   9      solitudes                      -0.000033       0.1106
+   10     établir                        -0.000033       0.0540
+   11     égarer                         -0.000033       0.0894
+   12     opération                      -0.000032       0.0489
+   13     catastrophe                    -0.000030       0.0531
+   14     englué                         -0.000030       0.1321
+   15     proches                        -0.000028       0.0495
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      colosses                       +0.001659       0.1356
+   2      reconquis                      +0.001304       0.1214
+   3      procéda                        +0.001257       0.1219
+   4      crampons                       +0.001161       0.1447
+   5      pioche                         +0.000962       0.0922
+   6      paralysé                       +0.000915       0.0833
+   7      marteau                        +0.000866       0.0703
+   8      xii                            +0.000843       0.0810
+   9      baraques                       +0.000810       0.1024
+   10     mètres                         +0.000773       0.0418
+   11     puerto                         +0.000765       0.1983
+   12     singes                         +0.000720       0.0900
+   13     approches                      +0.000719       0.1021
+   14     parts                          +0.000683       0.0633
+   15     aperçut                        +0.000680       0.0528
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tari                           -0.001658       0.1349
+   2      cactus                         -0.001542       0.1195
+   3      ouaté                          -0.001108       0.1403
+   4      ravine                         -0.000851       0.1487
+   5      chercheurs                     -0.000805       0.1021
+   6      faille                         -0.000796       0.0662
+   7      gardant                        -0.000694       0.0632
+   8      échappaient                    -0.000677       0.0773
+   9      larges                         -0.000551       0.0476
+   10     argile                         -0.000549       0.0962
+   11     cachée                         -0.000533       0.0542
+   12     proches                        -0.000505       0.0495
+   13     formant                        -0.000502       0.0751
+   14     mr                             -0.000481       0.1239
+   15     matériaux                      -0.000472       0.0906
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      colosses                       +0.082748       0.1356
+   2      procéda                        +0.062848       0.1219
+   3      reconquis                      +0.060794       0.1214
+   4      crampons                       +0.058172       0.1447
+   5      pioche                         +0.046635       0.0922
+   6      approches                      +0.046143       0.1021
+   7      baraques                       +0.043190       0.1024
+   8      puerto                         +0.043133       0.1983
+   9      paralysé                       +0.042387       0.0833
+   10     marteau                        +0.041057       0.0703
+   11     mètres                         +0.039779       0.0418
+   12     xii                            +0.038502       0.0810
+   13     bûcherons                      +0.036711       0.1267
+   14     parts                          +0.034962       0.0633
+   15     trentaine                      +0.033028       0.0551
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      tari                           -0.100656       0.1349
+   2      cactus                         -0.090170       0.1195
+   3      ouaté                          -0.061627       0.1403
+   4      chercheurs                     -0.046896       0.1021
+   5      échappaient                    -0.039965       0.0773
+   6      ravine                         -0.039287       0.1487
+   7      faille                         -0.036205       0.0662
+   8      gardant                        -0.033164       0.0632
+   9      argile                         -0.030053       0.0962
+   10     larges                         -0.029192       0.0476
+   11     dessinaient                    -0.028610       0.0969
+   12     cachée                         -0.028472       0.0542
+   13     proches                        -0.026935       0.0495
+   14     chercha                        -0.026887       0.0555
+   15     plantes                        -0.024602       0.0518
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+bûcherons                 +0.000589     +0.000051     +0.000051     0.1267
+formée                    +0.000047     +0.000051     +0.000051     0.0816
+sève                      +0.000266     +0.000050     +0.000050     0.0843
+approches                 +0.000719     +0.000035     +0.000035     0.1021
+procéda                   +0.001257     +0.000032     +0.000032     0.1219
+forêt                     +0.000000     +0.000030     +0.000030     0.0949
+grises                    +0.000000     +0.000026     +0.000026     0.0644
+pablo                     +0.000000     +0.000026     +0.000026     0.1571
+reconquis                 +0.001304     +0.000026     +0.000026     0.1214
+plantes                   +0.000000     +0.000026     +0.000026     0.0518
+monta                     +0.000323     +0.000026     +0.000026     0.0541
+ravine                    +0.000000     +0.000025     +0.000025     0.1487
+ex                        +0.000028     +0.000023     +0.000023     0.0592
+mouches                   +0.000555     +0.000020     +0.000020     0.0626
+astres                    +0.000549     +0.000019     +0.000019     0.0997
+incliné                   +0.000030     +0.000019     +0.000019     0.0779
+découvrirent              +0.000021     +0.000018     +0.000018     0.0953
+serpents                  +0.000284     +0.000018     +0.000018     0.0744
+trouvaille                +0.000000     +0.000018     +0.000018     0.0912
+saluaient                 +0.000264     +0.000017     +0.000017     0.1002
+logit final pour 'homme': 0.6524

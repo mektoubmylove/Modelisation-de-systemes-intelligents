@@ -1,0 +1,5 @@
+filename: (JACQ)(Christian)(le grand secret)(1)(2003)(1947)(v)(fr)(z)(z)(V)(R)(T).txt
+index: 69
+first_name: christian
+last_name: jacq
+true_label: homme

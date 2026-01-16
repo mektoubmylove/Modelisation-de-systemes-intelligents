@@ -1,0 +1,387 @@
+texte analysé: ai crié peut être une fois ou deux contre jérôme , trop gros , moins vigoureux que jim . il ne pouvait plus rester dans la salle des machines . le teint vert , il s était couché sur le canapé avec le ...
+prédiction: HOMME (confiance: 79.1%)
+vérité terrain: FEMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  vraie classe
+# logit: -0.7191
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      max                            +0.000120       0.2781
+   2      paralysait                     +0.000069       0.0977
+   3      yacht                          +0.000067       0.3292
+   4      utilisant                      +0.000056       0.0821
+   5      bateau                         +0.000050       0.2245
+   6      américain                      +0.000046       0.1147
+   7      cuisinait                      +0.000029       0.1156
+   8      radio                          +0.000025       0.0530
+   9      enfilé                         +0.000024       0.0752
+   10     assurance                      +0.000023       0.0431
+   11     cuisinier                      +0.000015       0.0834
+   12     capitaine                      +0.000014       0.0556
+   13     élève                          +0.000014       0.0443
+   14     papiers                        +0.000014       0.0407
+   15     merde                          +0.000013       0.0580
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jim                            -0.000144       0.4644
+   2      côtière                        -0.000131       0.2697
+   3      jérôme                         -0.000067       0.2005
+   4      protégés                       -0.000055       0.0721
+   5      imite                          -0.000047       0.0902
+   6      cents                          -0.000041       0.0390
+   7      gâteaux                        -0.000041       0.0612
+   8      importants                     -0.000040       0.0593
+   9      sentaient                      -0.000035       0.0578
+   10     équipage                       -0.000030       0.0705
+   11     endommagé                      -0.000027       0.1097
+   12     canons                         -0.000026       0.0756
+   13     générateur                     -0.000026       0.1286
+   14     instructions                   -0.000025       0.0607
+   15     résignés                       -0.000024       0.1019
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      max                            +0.000120       0.2781
+   2      paralysait                     +0.000069       0.0977
+   3      yacht                          +0.000067       0.3292
+   4      utilisant                      +0.000056       0.0821
+   5      bateau                         +0.000050       0.2245
+   6      américain                      +0.000046       0.1147
+   7      cuisinait                      +0.000029       0.1156
+   8      radio                          +0.000025       0.0530
+   9      enfilé                         +0.000024       0.0752
+   10     assurance                      +0.000023       0.0431
+   11     cuisinier                      +0.000015       0.0834
+   12     capitaine                      +0.000014       0.0556
+   13     élève                          +0.000014       0.0443
+   14     papiers                        +0.000014       0.0407
+   15     merde                          +0.000013       0.0580
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jim                            -0.000144       0.4644
+   2      côtière                        -0.000131       0.2697
+   3      jérôme                         -0.000067       0.2005
+   4      protégés                       -0.000055       0.0721
+   5      imite                          -0.000047       0.0902
+   6      cents                          -0.000041       0.0390
+   7      gâteaux                        -0.000041       0.0612
+   8      importants                     -0.000040       0.0593
+   9      sentaient                      -0.000035       0.0578
+   10     équipage                       -0.000030       0.0705
+   11     endommagé                      -0.000027       0.1097
+   12     canons                         -0.000026       0.0756
+   13     générateur                     -0.000026       0.1286
+   14     instructions                   -0.000025       0.0607
+   15     résignés                       -0.000024       0.1019
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gâteaux                        +0.001123       0.0612
+   2      jérôme                         +0.001084       0.2005
+   3      nerveuse                       +0.000836       0.0532
+   4      cuisinait                      +0.000679       0.1156
+   5      teint                          +0.000632       0.0427
+   6      cachant                        +0.000600       0.0658
+   7      aspirer                        +0.000576       0.0866
+   8      canapé                         +0.000569       0.0522
+   9      west                           +0.000557       0.1080
+   10     normal                         +0.000547       0.0408
+   11     imite                          +0.000536       0.0902
+   12     hoche                          +0.000522       0.0798
+   13     crié                           +0.000479       0.0491
+   14     réaction                       +0.000445       0.0442
+   15     paralysait                     +0.000394       0.0977
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jim                            -0.002851       0.4644
+   2      max                            -0.001989       0.2781
+   3      yacht                          -0.001887       0.3292
+   4      côtière                        -0.001759       0.2697
+   5      bateau                         -0.001291       0.2245
+   6      projecteur                     -0.001201       0.0932
+   7      américain                      -0.000966       0.1147
+   8      cents                          -0.000933       0.0390
+   9      mètres                         -0.000902       0.0376
+   10     résignés                       -0.000767       0.1019
+   11     approuvait                     -0.000708       0.0832
+   12     barrait                        -0.000682       0.0764
+   13     matériel                       -0.000678       0.0480
+   14     capitaine                      -0.000677       0.0556
+   15     équipage                       -0.000677       0.0705
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jérôme                         +0.079600       0.2005
+   2      gâteaux                        +0.054345       0.0612
+   3      nerveuse                       +0.031826       0.0532
+   4      imite                          +0.030634       0.0902
+   5      hoche                          +0.030567       0.0798
+   6      cachant                        +0.027335       0.0658
+   7      canapé                         +0.027263       0.0522
+   8      teint                          +0.026706       0.0427
+   9      normal                         +0.025492       0.0408
+   10     aspirer                        +0.024095       0.0866
+   11     crié                           +0.019848       0.0491
+   12     soudainement                   +0.018263       0.0677
+   13     réaction                       +0.018064       0.0442
+   14     endommagé                      +0.016317       0.1097
+   15     west                           +0.016236       0.1080
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      max                            -0.120165       0.2781
+   2      jim                            -0.118731       0.4644
+   3      côtière                        -0.066539       0.2697
+   4      américain                      -0.052146       0.1147
+   5      bateau                         -0.051466       0.2245
+   6      projecteur                     -0.047617       0.0932
+   7      yacht                          -0.047221       0.3292
+   8      mètres                         -0.038128       0.0376
+   9      cents                          -0.033680       0.0390
+   10     barrait                        -0.030787       0.0764
+   11     capitaine                      -0.030071       0.0556
+   12     résignés                       -0.029516       0.1019
+   13     instructions                   -0.027378       0.0607
+   14     matériel                       -0.025387       0.0480
+   15     approuvait                     -0.025303       0.0832
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+max                       +0.000000     +0.000120     +0.000120     0.2781
+paralysait                +0.000394     +0.000069     +0.000069     0.0977
+yacht                     +0.000000     +0.000067     +0.000067     0.3292
+utilisant                 +0.000000     +0.000056     +0.000056     0.0821
+bateau                    +0.000000     +0.000050     +0.000050     0.2245
+américain                 +0.000000     +0.000046     +0.000046     0.1147
+cuisinait                 +0.000679     +0.000029     +0.000029     0.1156
+radio                     +0.000000     +0.000025     +0.000025     0.0530
+enfilé                    +0.000306     +0.000024     +0.000024     0.0752
+assurance                 +0.000000     +0.000023     +0.000023     0.0431
+cuisinier                 +0.000000     +0.000015     +0.000015     0.0834
+capitaine                 +0.000000     +0.000014     +0.000014     0.0556
+élève                     +0.000000     +0.000014     +0.000014     0.0443
+papiers                   +0.000000     +0.000014     +0.000014     0.0407
+merde                     +0.000000     +0.000013     +0.000013     0.0580
+reins                     +0.000000     +0.000013     +0.000013     0.0502
+essayé                    +0.000000     +0.000012     +0.000012     0.0377
+répétait                  +0.000000     +0.000012     +0.000012     0.0463
+éclat                     +0.000053     +0.000012     +0.000012     0.0383
+secours                   +0.000000     +0.000010     +0.000010     0.0384
+logit final pour 'femme': -0.7191
+# analyse pour la classe: HOMME  prédite
+# logit: 0.6121
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      max                            +0.000081       0.2781
+   2      américain                      +0.000041       0.1147
+   3      utilisant                      +0.000036       0.0821
+   4      jim                            +0.000034       0.4644
+   5      paralysait                     +0.000033       0.0977
+   6      sauvetage                      +0.000023       0.1585
+   7      bateau                         +0.000022       0.2245
+   8      approuvait                     +0.000018       0.0832
+   9      nerveuse                       +0.000017       0.0532
+   10     radio                          +0.000015       0.0530
+   11     matelot                        +0.000013       0.0996
+   12     secs                           +0.000012       0.0555
+   13     reins                          +0.000012       0.0502
+   14     répétait                       +0.000011       0.0463
+   15     nervosité                      +0.000010       0.0633
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      côtière                        -0.000056       0.2697
+   2      west                           -0.000039       0.1080
+   3      sentaient                      -0.000032       0.0578
+   4      barrait                        -0.000028       0.0764
+   5      cents                          -0.000027       0.0390
+   6      pompe                          -0.000026       0.0645
+   7      équipage                       -0.000026       0.0705
+   8      hoche                          -0.000025       0.0798
+   9      totale                         -0.000023       0.0484
+   10     protégés                       -0.000022       0.0721
+   11     coulé                          -0.000021       0.1281
+   12     canons                         -0.000020       0.0756
+   13     casser                         -0.000020       0.0477
+   14     soudainement                   -0.000019       0.0677
+   15     bouger                         -0.000017       0.0396
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      max                            +0.000081       0.2781
+   2      américain                      +0.000041       0.1147
+   3      utilisant                      +0.000036       0.0821
+   4      jim                            +0.000034       0.4644
+   5      paralysait                     +0.000033       0.0977
+   6      sauvetage                      +0.000023       0.1585
+   7      bateau                         +0.000022       0.2245
+   8      approuvait                     +0.000018       0.0832
+   9      nerveuse                       +0.000017       0.0532
+   10     radio                          +0.000015       0.0530
+   11     matelot                        +0.000013       0.0996
+   12     secs                           +0.000012       0.0555
+   13     reins                          +0.000012       0.0502
+   14     répétait                       +0.000011       0.0463
+   15     nervosité                      +0.000010       0.0633
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      côtière                        -0.000056       0.2697
+   2      west                           -0.000039       0.1080
+   3      sentaient                      -0.000032       0.0578
+   4      barrait                        -0.000028       0.0764
+   5      cents                          -0.000027       0.0390
+   6      pompe                          -0.000026       0.0645
+   7      équipage                       -0.000026       0.0705
+   8      hoche                          -0.000025       0.0798
+   9      totale                         -0.000023       0.0484
+   10     protégés                       -0.000022       0.0721
+   11     coulé                          -0.000021       0.1281
+   12     canons                         -0.000020       0.0756
+   13     casser                         -0.000020       0.0477
+   14     soudainement                   -0.000019       0.0677
+   15     bouger                         -0.000017       0.0396
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jim                            +0.002154       0.4644
+   2      max                            +0.001844       0.2781
+   3      côtière                        +0.001625       0.2697
+   4      projecteur                     +0.001133       0.0932
+   5      bateau                         +0.000942       0.2245
+   6      américain                      +0.000941       0.1147
+   7      cents                          +0.000865       0.0390
+   8      yacht                          +0.000840       0.3292
+   9      approuvait                     +0.000777       0.0832
+   10     résignés                       +0.000736       0.1019
+   11     mètres                         +0.000684       0.0376
+   12     instructions                   +0.000662       0.0607
+   13     générateur                     +0.000602       0.1286
+   14     matériel                       +0.000579       0.0480
+   15     blasphèmes                     +0.000545       0.1202
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      gâteaux                        -0.001064       0.0612
+   2      jérôme                         -0.000832       0.2005
+   3      nerveuse                       -0.000654       0.0532
+   4      cachant                        -0.000609       0.0658
+   5      crié                           -0.000548       0.0491
+   6      normal                         -0.000499       0.0408
+   7      teint                          -0.000492       0.0427
+   8      imite                          -0.000461       0.0902
+   9      canapé                         -0.000437       0.0522
+   10     réaction                       -0.000429       0.0442
+   11     hoche                          -0.000427       0.0798
+   12     paralysait                     -0.000374       0.0977
+   13     cuisinait                      -0.000373       0.1156
+   14     aspirer                        -0.000370       0.0866
+   15     west                           -0.000342       0.1080
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      max                            +0.116458       0.2781
+   2      jim                            +0.093206       0.4644
+   3      côtière                        +0.072361       0.2697
+   4      projecteur                     +0.049791       0.0932
+   5      américain                      +0.049664       0.1147
+   6      bateau                         +0.041297       0.2245
+   7      approuvait                     +0.035912       0.0832
+   8      cents                          +0.034160       0.0390
+   9      mètres                         +0.031518       0.0376
+   10     résignés                       +0.031127       0.1019
+   11     générateur                     +0.029987       0.1286
+   12     instructions                   +0.029904       0.0607
+   13     capitaine                      +0.025115       0.0556
+   14     matériel                       +0.023506       0.0480
+   15     utilisant                      +0.020013       0.0821
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      jérôme                         -0.064510       0.2005
+   2      gâteaux                        -0.051824       0.0612
+   3      cachant                        -0.027435       0.0658
+   4      hoche                          -0.025654       0.0798
+   5      imite                          -0.025071       0.0902
+   6      nerveuse                       -0.024563       0.0532
+   7      west                           -0.023606       0.1080
+   8      normal                         -0.023562       0.0408
+   9      crié                           -0.023502       0.0491
+   10     aspirer                        -0.022132       0.0866
+   11     teint                          -0.021905       0.0427
+   12     canapé                         -0.021543       0.0522
+   13     réaction                       -0.019140       0.0442
+   14     plastique                      -0.014962       0.0579
+   15     soudainement                   -0.014341       0.0677
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+max                       +0.001844     +0.000081     +0.000081     0.2781
+américain                 +0.000941     +0.000041     +0.000041     0.1147
+utilisant                 +0.000287     +0.000036     +0.000036     0.0821
+jim                       +0.002154     +0.000034     +0.000034     0.4644
+paralysait                +0.000000     +0.000033     +0.000033     0.0977
+sauvetage                 +0.000120     +0.000023     +0.000023     0.1585
+bateau                    +0.000942     +0.000022     +0.000022     0.2245
+approuvait                +0.000777     +0.000018     +0.000018     0.0832
+nerveuse                  +0.000000     +0.000017     +0.000017     0.0532
+radio                     +0.000265     +0.000015     +0.000015     0.0530
+matelot                   +0.000408     +0.000013     +0.000013     0.0996
+secs                      +0.000020     +0.000012     +0.000012     0.0555
+reins                     +0.000177     +0.000012     +0.000012     0.0502
+répétait                  +0.000097     +0.000011     +0.000011     0.0463
+nervosité                 +0.000173     +0.000010     +0.000010     0.0633
+obscurité                 +0.000000     +0.000009     +0.000009     0.0405
+projecteur                +0.001133     +0.000009     +0.000009     0.0932
+éclat                     +0.000000     +0.000008     +0.000008     0.0383
+endommagé                 +0.000000     +0.000008     +0.000008     0.1097
+cuisinait                 +0.000000     +0.000008     +0.000008     0.1156
+logit final pour 'homme': 0.6121

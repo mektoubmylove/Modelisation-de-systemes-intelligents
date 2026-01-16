@@ -1,0 +1,387 @@
+texte analysé: donner un bon prix . la petite fille retourna la feuille , une fois , deux fois . mais celle ci était complètement vierge . c est quoi ? demanda t elle intriguée . eh bien , tu ne vois pas ? c est la ...
+prédiction: FEMME (confiance: 91.3%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.3901
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pékin                          +0.000215       0.2656
+   2      affairés                       +0.000110       0.1380
+   3      tira                           +0.000097       0.0590
+   4      identifié                      +0.000097       0.1014
+   5      déléguer                       +0.000094       0.1607
+   6      rizières                       +0.000093       0.1638
+   7      salua                          +0.000082       0.0701
+   8      corne                          +0.000062       0.0938
+   9      aperçut                        +0.000057       0.0598
+   10     descendant                     +0.000051       0.0626
+   11     saluèrent                      +0.000045       0.1061
+   12     page                           +0.000042       0.1023
+   13     usine                          +0.000038       0.0802
+   14     retournèrent                   +0.000038       0.0988
+   15     voulant                        +0.000037       0.0683
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      yuan                           -0.000150       0.2244
+   2      matériau                       -0.000146       0.1358
+   3      observa                        -0.000127       0.0768
+   4      burin                          -0.000118       0.1628
+   5      parfaites                      -0.000092       0.1079
+   6      habileté                       -0.000083       0.0828
+   7      rétorqua                       -0.000082       0.0934
+   8      gps                            -0.000082       0.1511
+   9      choquer                        -0.000080       0.1126
+   10     gazelle                        -0.000071       0.1353
+   11     sembla                         -0.000067       0.0609
+   12     adossé                         -0.000063       0.0900
+   13     marocain                       -0.000053       0.1535
+   14     sculpter                       -0.000053       0.1421
+   15     chinois                        -0.000047       0.1497
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pékin                          +0.000215       0.2656
+   2      affairés                       +0.000110       0.1380
+   3      tira                           +0.000097       0.0590
+   4      identifié                      +0.000097       0.1014
+   5      déléguer                       +0.000094       0.1607
+   6      rizières                       +0.000093       0.1638
+   7      salua                          +0.000082       0.0701
+   8      corne                          +0.000062       0.0938
+   9      aperçut                        +0.000057       0.0598
+   10     descendant                     +0.000051       0.0626
+   11     saluèrent                      +0.000045       0.1061
+   12     page                           +0.000042       0.1023
+   13     usine                          +0.000038       0.0802
+   14     retournèrent                   +0.000038       0.0988
+   15     voulant                        +0.000037       0.0683
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      yuan                           -0.000150       0.2244
+   2      matériau                       -0.000146       0.1358
+   3      observa                        -0.000127       0.0768
+   4      burin                          -0.000118       0.1628
+   5      parfaites                      -0.000092       0.1079
+   6      habileté                       -0.000083       0.0828
+   7      rétorqua                       -0.000082       0.0934
+   8      gps                            -0.000082       0.1511
+   9      choquer                        -0.000080       0.1126
+   10     gazelle                        -0.000071       0.1353
+   11     sembla                         -0.000067       0.0609
+   12     adossé                         -0.000063       0.0900
+   13     marocain                       -0.000053       0.1535
+   14     sculpter                       -0.000053       0.1421
+   15     chinois                        -0.000047       0.1497
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rétorqua                       +0.003019       0.0934
+   2      yuan                           +0.002095       0.2244
+   3      gps                            +0.002090       0.1511
+   4      pressée                        +0.001847       0.0710
+   5      intriguée                      +0.001825       0.0922
+   6      empressa                       +0.001600       0.0895
+   7      matériau                       +0.001334       0.1358
+   8      engouffra                      +0.001225       0.0982
+   9      observa                        +0.001219       0.0768
+   10     échange                        +0.001193       0.0528
+   11     laissa                         +0.000939       0.1072
+   12     déléguer                       +0.000905       0.1607
+   13     arracha                        +0.000892       0.0704
+   14     internet                       +0.000861       0.1016
+   15     parcourut                      +0.000818       0.0826
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      marocain                       -0.001192       0.1535
+   2      tira                           -0.001186       0.0590
+   3      aperçut                        -0.001168       0.0598
+   4      reconnut                       -0.001054       0.0619
+   5      centaines                      -0.001024       0.0562
+   6      fabrique                       -0.000968       0.0793
+   7      anthracite                     -0.000916       0.1286
+   8      voulant                        -0.000899       0.0683
+   9      affairés                       -0.000868       0.1380
+   10     kilomètres                     -0.000835       0.0543
+   11     comptés                        -0.000782       0.1120
+   12     intrigué                       -0.000779       0.0778
+   13     feuille                        -0.000727       0.0505
+   14     étoiles                        -0.000683       0.1069
+   15     adossé                         -0.000678       0.0900
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rétorqua                       +0.142664       0.0934
+   2      gps                            +0.087096       0.1511
+   3      intriguée                      +0.084029       0.0922
+   4      pressée                        +0.083045       0.0710
+   5      empressa                       +0.077472       0.0895
+   6      déléguer                       +0.069599       0.1607
+   7      matériau                       +0.058488       0.1358
+   8      yuan                           +0.054937       0.2244
+   9      engouffra                      +0.054790       0.0982
+   10     échange                        +0.052394       0.0528
+   11     observa                        +0.044772       0.0768
+   12     laissa                         +0.041158       0.1072
+   13     senteurs                       +0.039330       0.1068
+   14     interprète                     +0.035749       0.0901
+   15     dédommagement                  +0.034844       0.1375
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      reconnut                       -0.056744       0.0619
+   2      marocain                       -0.055895       0.1535
+   3      tira                           -0.048097       0.0590
+   4      fabrique                       -0.048089       0.0793
+   5      aperçut                        -0.047417       0.0598
+   6      intrigué                       -0.047315       0.0778
+   7      kilomètres                     -0.043506       0.0543
+   8      anthracite                     -0.042145       0.1286
+   9      adossé                         -0.041942       0.0900
+   10     feuille                        -0.040883       0.0505
+   11     centaines                      -0.040105       0.0562
+   12     chinois                        -0.039440       0.1497
+   13     chine                          -0.036264       0.1679
+   14     comptés                        -0.036019       0.1120
+   15     identifié                      -0.035984       0.1014
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+pékin                     +0.000019     +0.000215     +0.000215     0.2656
+affairés                  +0.000000     +0.000110     +0.000110     0.1380
+tira                      +0.000000     +0.000097     +0.000097     0.0590
+identifié                 +0.000000     +0.000097     +0.000097     0.1014
+déléguer                  +0.000905     +0.000094     +0.000094     0.1607
+rizières                  +0.000000     +0.000093     +0.000093     0.1638
+salua                     +0.000106     +0.000082     +0.000082     0.0701
+corne                     +0.000000     +0.000062     +0.000062     0.0938
+aperçut                   +0.000000     +0.000057     +0.000057     0.0598
+descendant                +0.000000     +0.000051     +0.000051     0.0626
+saluèrent                 +0.000611     +0.000045     +0.000045     0.1061
+page                      +0.000000     +0.000042     +0.000042     0.1023
+usine                     +0.000424     +0.000038     +0.000038     0.0802
+retournèrent              +0.000000     +0.000038     +0.000038     0.0988
+voulant                   +0.000000     +0.000037     +0.000037     0.0683
+trafic                    +0.000020     +0.000035     +0.000035     0.0834
+choeur                    +0.000040     +0.000031     +0.000031     0.0687
+bateaux                   +0.000000     +0.000030     +0.000030     0.0729
+vertes                    +0.000267     +0.000030     +0.000030     0.0661
+fit                       +0.000000     +0.000030     +0.000030     0.0476
+logit final pour 'femme': 1.3901
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.9620
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pékin                          +0.000118       0.2656
+   2      salua                          +0.000047       0.0701
+   3      affairés                       +0.000045       0.1380
+   4      tira                           +0.000042       0.0590
+   5      rizières                       +0.000041       0.1638
+   6      corne                          +0.000036       0.0938
+   7      page                           +0.000036       0.1023
+   8      aperçut                        +0.000031       0.0598
+   9      trafic                         +0.000029       0.0834
+   10     descendant                     +0.000028       0.0626
+   11     verso                          +0.000023       0.1380
+   12     identifié                      +0.000022       0.1014
+   13     chère                          +0.000022       0.0520
+   14     centaines                      +0.000021       0.0562
+   15     demanda                        +0.000020       0.1016
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      yuan                           -0.000113       0.2244
+   2      matériau                       -0.000068       0.1358
+   3      observa                        -0.000058       0.0768
+   4      choquer                        -0.000052       0.1126
+   5      habileté                       -0.000051       0.0828
+   6      burin                          -0.000048       0.1628
+   7      sculpter                       -0.000044       0.1421
+   8      adossé                         -0.000042       0.0900
+   9      gps                            -0.000040       0.1511
+   10     parfaites                      -0.000035       0.1079
+   11     parcourut                      -0.000035       0.0826
+   12     étoiles                        -0.000031       0.1069
+   13     internet                       -0.000030       0.1016
+   14     chromé                         -0.000029       0.1597
+   15     chinois                        -0.000029       0.1497
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      pékin                          +0.000118       0.2656
+   2      salua                          +0.000047       0.0701
+   3      affairés                       +0.000045       0.1380
+   4      tira                           +0.000042       0.0590
+   5      rizières                       +0.000041       0.1638
+   6      corne                          +0.000036       0.0938
+   7      page                           +0.000036       0.1023
+   8      aperçut                        +0.000031       0.0598
+   9      trafic                         +0.000029       0.0834
+   10     descendant                     +0.000028       0.0626
+   11     verso                          +0.000023       0.1380
+   12     identifié                      +0.000022       0.1014
+   13     chère                          +0.000022       0.0520
+   14     centaines                      +0.000021       0.0562
+   15     demanda                        +0.000020       0.1016
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      yuan                           -0.000113       0.2244
+   2      matériau                       -0.000068       0.1358
+   3      observa                        -0.000058       0.0768
+   4      choquer                        -0.000052       0.1126
+   5      habileté                       -0.000051       0.0828
+   6      burin                          -0.000048       0.1628
+   7      sculpter                       -0.000044       0.1421
+   8      adossé                         -0.000042       0.0900
+   9      gps                            -0.000040       0.1511
+   10     parfaites                      -0.000035       0.1079
+   11     parcourut                      -0.000035       0.0826
+   12     étoiles                        -0.000031       0.1069
+   13     internet                       -0.000030       0.1016
+   14     chromé                         -0.000029       0.1597
+   15     chinois                        -0.000029       0.1497
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      reconnut                       +0.000880       0.0619
+   2      tira                           +0.000830       0.0590
+   3      anthracite                     +0.000797       0.1286
+   4      aperçut                        +0.000781       0.0598
+   5      affairés                       +0.000727       0.1380
+   6      marocain                       +0.000714       0.1535
+   7      fabrique                       +0.000695       0.0793
+   8      centaines                      +0.000671       0.0562
+   9      voulant                        +0.000651       0.0683
+   10     intrigué                       +0.000571       0.0778
+   11     chromé                         +0.000561       0.1597
+   12     adossé                         +0.000551       0.0900
+   13     feuille                        +0.000532       0.0505
+   14     identifié                      +0.000524       0.1014
+   15     comptés                        +0.000521       0.1120
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rétorqua                       -0.002147       0.0934
+   2      gps                            -0.001729       0.1511
+   3      yuan                           -0.001369       0.2244
+   4      pressée                        -0.001297       0.0710
+   5      intriguée                      -0.001204       0.0922
+   6      empressa                       -0.000988       0.0895
+   7      engouffra                      -0.000908       0.0982
+   8      échange                        -0.000855       0.0528
+   9      internet                       -0.000741       0.1016
+   10     matériau                       -0.000740       0.1358
+   11     observa                        -0.000706       0.0768
+   12     interprète                     -0.000629       0.0901
+   13     laissa                         -0.000580       0.1072
+   14     vues                           -0.000546       0.0647
+   15     parcourut                      -0.000539       0.0826
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      reconnut                       +0.043573       0.0619
+   2      intrigué                       +0.037881       0.0778
+   3      anthracite                     +0.036433       0.1286
+   4      fabrique                       +0.034351       0.0793
+   5      marocain                       +0.033718       0.1535
+   6      adossé                         +0.033227       0.0900
+   7      tira                           +0.031537       0.0590
+   8      chromé                         +0.031432       0.1597
+   9      aperçut                        +0.030392       0.0598
+   10     feuille                        +0.028499       0.0505
+   11     identifié                      +0.027601       0.1014
+   12     sculpter                       +0.026256       0.1421
+   13     voulant                        +0.026127       0.0683
+   14     kilomètres                     +0.025689       0.0543
+   15     comptés                        +0.024438       0.1120
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      rétorqua                       -0.097238       0.0934
+   2      gps                            -0.071500       0.1511
+   3      pressée                        -0.054221       0.0710
+   4      intriguée                      -0.053866       0.0922
+   5      empressa                       -0.047150       0.0895
+   6      échange                        -0.035771       0.0528
+   7      engouffra                      -0.034559       0.0982
+   8      interprète                     -0.034153       0.0901
+   9      matériau                       -0.031881       0.1358
+   10     yuan                           -0.027226       0.2244
+   11     neige                          -0.025981       0.0544
+   12     déléguer                       -0.024386       0.1607
+   13     internet                       -0.023725       0.1016
+   14     observa                        -0.022740       0.0768
+   15     grillage                       -0.022298       0.1044
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+pékin                     +0.000000     +0.000118     +0.000118     0.2656
+salua                     +0.000055     +0.000047     +0.000047     0.0701
+affairés                  +0.000727     +0.000045     +0.000045     0.1380
+tira                      +0.000830     +0.000042     +0.000042     0.0590
+rizières                  +0.000254     +0.000041     +0.000041     0.1638
+corne                     +0.000328     +0.000036     +0.000036     0.0938
+page                      +0.000298     +0.000036     +0.000036     0.1023
+aperçut                   +0.000781     +0.000031     +0.000031     0.0598
+trafic                    +0.000000     +0.000029     +0.000029     0.0834
+descendant                +0.000163     +0.000028     +0.000028     0.0626
+verso                     +0.000000     +0.000023     +0.000023     0.1380
+identifié                 +0.000524     +0.000022     +0.000022     0.1014
+chère                     +0.000000     +0.000022     +0.000022     0.0520
+centaines                 +0.000671     +0.000021     +0.000021     0.0562
+demanda                   +0.000000     +0.000020     +0.000020     0.1016
+congé                     +0.000179     +0.000020     +0.000020     0.0577
+usine                     +0.000000     +0.000019     +0.000019     0.0802
+voulant                   +0.000651     +0.000019     +0.000019     0.0683
+interprète                +0.000000     +0.000017     +0.000017     0.0901
+humides                   +0.000320     +0.000017     +0.000017     0.0694
+logit final pour 'homme': -0.9620

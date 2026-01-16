@@ -1,0 +1,387 @@
+texte analysé: mais jennie s accrochait : à moi , c est sûr , t as rien à dire , sinon des conneries . mais aux flics , t avais à dire qu est ce tu veux que j aille raconter aux flics ? tu nous as balancés ! et il n...
+prédiction: FEMME (confiance: 70.1%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.4751
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mikaël                         +0.000914       0.7949
+   2      balancés                       +0.000061       0.1046
+   3      kidnapping                     +0.000061       0.1160
+   4      pff                            +0.000047       0.1090
+   5      haussa                         +0.000045       0.0441
+   6      cabane                         +0.000043       0.0534
+   7      grogna                         +0.000037       0.0568
+   8      répéta                         +0.000033       0.0406
+   9      grommela                       +0.000019       0.0575
+   10     tarderait                      +0.000018       0.0734
+   11     trahi                          +0.000015       0.0518
+   12     comprenait                     +0.000015       0.0339
+   13     ravaler                        +0.000015       0.0858
+   14     haine                          +0.000014       0.1051
+   15     barre                          +0.000012       0.0423
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      dénoncés                       -0.000135       0.1884
+   2      énerva                         -0.000088       0.0809
+   3      foutre                         -0.000062       0.1551
+   4      ténue                          -0.000053       0.0886
+   5      louches                        -0.000053       0.0733
+   6      emmerdes                       -0.000044       0.1777
+   7      annonçant                      -0.000043       0.0506
+   8      embarqués                      -0.000038       0.0804
+   9      baise                          -0.000038       0.0663
+   10     timidement                     -0.000036       0.0503
+   11     dénoncer                       -0.000036       0.0585
+   12     dégage                         -0.000036       0.0559
+   13     accrochait                     -0.000036       0.0579
+   14     gosses                         -0.000036       0.0537
+   15     cul                            -0.000035       0.1344
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mikaël                         +0.000914       0.7949
+   2      balancés                       +0.000061       0.1046
+   3      kidnapping                     +0.000061       0.1160
+   4      pff                            +0.000047       0.1090
+   5      haussa                         +0.000045       0.0441
+   6      cabane                         +0.000043       0.0534
+   7      grogna                         +0.000037       0.0568
+   8      répéta                         +0.000033       0.0406
+   9      grommela                       +0.000019       0.0575
+   10     tarderait                      +0.000018       0.0734
+   11     trahi                          +0.000015       0.0518
+   12     comprenait                     +0.000015       0.0339
+   13     ravaler                        +0.000015       0.0858
+   14     haine                          +0.000014       0.1051
+   15     barre                          +0.000012       0.0423
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      dénoncés                       -0.000135       0.1884
+   2      énerva                         -0.000088       0.0809
+   3      foutre                         -0.000062       0.1551
+   4      ténue                          -0.000053       0.0886
+   5      louches                        -0.000053       0.0733
+   6      emmerdes                       -0.000044       0.1777
+   7      annonçant                      -0.000043       0.0506
+   8      embarqués                      -0.000038       0.0804
+   9      baise                          -0.000038       0.0663
+   10     timidement                     -0.000036       0.0503
+   11     dénoncer                       -0.000036       0.0585
+   12     dégage                         -0.000036       0.0559
+   13     accrochait                     -0.000036       0.0579
+   14     gosses                         -0.000036       0.0537
+   15     cul                            -0.000035       0.1344
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      énerva                         +0.002023       0.0809
+   2      dénoncés                       +0.001200       0.1884
+   3      pff                            +0.001198       0.1090
+   4      ravaler                        +0.000952       0.0858
+   5      efforça                        +0.000880       0.0637
+   6      kidnapping                     +0.000878       0.1160
+   7      souffla                        +0.000826       0.0476
+   8      dénoncer                       +0.000725       0.0585
+   9      accrochait                     +0.000723       0.0579
+   10     vérifiant                      +0.000708       0.0826
+   11     effrayer                       +0.000503       0.0541
+   12     répéta                         +0.000462       0.0406
+   13     haine                          +0.000437       0.1051
+   14     école                          +0.000430       0.0325
+   15     baise                          +0.000428       0.0663
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      emmerdes                       -0.001737       0.1777
+   2      cul                            -0.001321       0.1344
+   3      triompha                       -0.001217       0.0950
+   4      débitait                       -0.001142       0.0876
+   5      mikaël                         -0.001119       0.7949
+   6      flics                          -0.000922       0.1193
+   7      barre                          -0.000840       0.0423
+   8      balancé                        -0.000751       0.0637
+   9      foutre                         -0.000670       0.1551
+   10     conneries                      -0.000652       0.0632
+   11     tarderait                      -0.000607       0.0734
+   12     balancés                       -0.000590       0.1046
+   13     gosses                         -0.000503       0.0537
+   14     timidement                     -0.000501       0.0503
+   15     comprit                        -0.000495       0.0397
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      énerva                         +0.111782       0.0809
+   2      pff                            +0.072007       0.1090
+   3      dénoncés                       +0.064836       0.1884
+   4      ravaler                        +0.054071       0.0858
+   5      efforça                        +0.051003       0.0637
+   6      kidnapping                     +0.044425       0.1160
+   7      souffla                        +0.043712       0.0476
+   8      vérifiant                      +0.042498       0.0826
+   9      accrochait                     +0.042108       0.0579
+   10     dénoncer                       +0.039595       0.0585
+   11     effrayer                       +0.030546       0.0541
+   12     baise                          +0.027389       0.0663
+   13     répéta                         +0.026801       0.0406
+   14     école                          +0.024875       0.0325
+   15     chantier                       +0.023523       0.0561
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      emmerdes                       -0.113682       0.1777
+   2      cul                            -0.075786       0.1344
+   3      triompha                       -0.075271       0.0950
+   4      débitait                       -0.064835       0.0876
+   5      flics                          -0.064498       0.1193
+   6      mikaël                         -0.049632       0.7949
+   7      balancé                        -0.046753       0.0637
+   8      barre                          -0.045755       0.0423
+   9      foutre                         -0.041903       0.1551
+   10     tarderait                      -0.037087       0.0734
+   11     conneries                      -0.034650       0.0632
+   12     balancés                       -0.033653       0.1046
+   13     timidement                     -0.032694       0.0503
+   14     comprit                        -0.030503       0.0397
+   15     grogna                         -0.028351       0.0568
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+mikaël                    +0.000000     +0.000914     +0.000914     0.7949
+balancés                  +0.000000     +0.000061     +0.000061     0.1046
+kidnapping                +0.000878     +0.000061     +0.000061     0.1160
+pff                       +0.001198     +0.000047     +0.000047     0.1090
+haussa                    +0.000000     +0.000045     +0.000045     0.0441
+cabane                    +0.000000     +0.000043     +0.000043     0.0534
+grogna                    +0.000000     +0.000037     +0.000037     0.0568
+répéta                    +0.000462     +0.000033     +0.000033     0.0406
+grommela                  +0.000000     +0.000019     +0.000019     0.0575
+tarderait                 +0.000000     +0.000018     +0.000018     0.0734
+trahi                     +0.000118     +0.000015     +0.000015     0.0518
+comprenait                +0.000000     +0.000015     +0.000015     0.0339
+ravaler                   +0.000952     +0.000015     +0.000015     0.0858
+haine                     +0.000437     +0.000014     +0.000014     0.1051
+barre                     +0.000000     +0.000012     +0.000012     0.0423
+mourante                  +0.000000     +0.000010     +0.000010     0.0704
+ouvrit                    +0.000024     +0.000010     +0.000010     0.0363
+aimable                   +0.000000     +0.000008     +0.000008     0.0389
+observait                 +0.000201     +0.000008     +0.000008     0.0425
+noyé                      +0.000000     +0.000007     +0.000007     0.0519
+logit final pour 'femme': 0.4751
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.3754
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mikaël                         +0.000491       0.7949
+   2      barre                          +0.000023       0.0423
+   3      cabane                         +0.000023       0.0534
+   4      kidnapping                     +0.000020       0.1160
+   5      observait                      +0.000018       0.0425
+   6      grogna                         +0.000016       0.0568
+   7      haussa                         +0.000015       0.0441
+   8      pff                            +0.000015       0.1090
+   9      ravaler                        +0.000014       0.0858
+   10     bonsoir                        +0.000013       0.0453
+   11     lavabo                         +0.000013       0.0576
+   12     ouvrit                         +0.000013       0.0363
+   13     balancés                       +0.000012       0.1046
+   14     salive                         +0.000010       0.0472
+   15     répéta                         +0.000010       0.0406
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      dénoncés                       -0.000103       0.1884
+   2      emmerdes                       -0.000073       0.1777
+   3      foutre                         -0.000060       0.1551
+   4      énerva                         -0.000058       0.0809
+   5      embarqués                      -0.000045       0.0804
+   6      ténue                          -0.000042       0.0886
+   7      conneries                      -0.000033       0.0632
+   8      trouvés                        -0.000032       0.0519
+   9      dénoncer                       -0.000030       0.0585
+   10     louches                        -0.000028       0.0733
+   11     dégage                         -0.000024       0.0559
+   12     accrochait                     -0.000024       0.0579
+   13     rattraper                      -0.000023       0.0409
+   14     baise                          -0.000022       0.0663
+   15     annonçant                      -0.000020       0.0506
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mikaël                         +0.000491       0.7949
+   2      barre                          +0.000023       0.0423
+   3      cabane                         +0.000023       0.0534
+   4      kidnapping                     +0.000020       0.1160
+   5      observait                      +0.000018       0.0425
+   6      grogna                         +0.000016       0.0568
+   7      haussa                         +0.000015       0.0441
+   8      pff                            +0.000015       0.1090
+   9      ravaler                        +0.000014       0.0858
+   10     bonsoir                        +0.000013       0.0453
+   11     lavabo                         +0.000013       0.0576
+   12     ouvrit                         +0.000013       0.0363
+   13     balancés                       +0.000012       0.1046
+   14     salive                         +0.000010       0.0472
+   15     répéta                         +0.000010       0.0406
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      dénoncés                       -0.000103       0.1884
+   2      emmerdes                       -0.000073       0.1777
+   3      foutre                         -0.000060       0.1551
+   4      énerva                         -0.000058       0.0809
+   5      embarqués                      -0.000045       0.0804
+   6      ténue                          -0.000042       0.0886
+   7      conneries                      -0.000033       0.0632
+   8      trouvés                        -0.000032       0.0519
+   9      dénoncer                       -0.000030       0.0585
+   10     louches                        -0.000028       0.0733
+   11     dégage                         -0.000024       0.0559
+   12     accrochait                     -0.000024       0.0579
+   13     rattraper                      -0.000023       0.0409
+   14     baise                          -0.000022       0.0663
+   15     annonçant                      -0.000020       0.0506
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mikaël                         +0.002811       0.7949
+   2      emmerdes                       +0.001054       0.1777
+   3      cul                            +0.000994       0.1344
+   4      débitait                       +0.000848       0.0876
+   5      triompha                       +0.000797       0.0950
+   6      barre                          +0.000622       0.0423
+   7      balancé                        +0.000586       0.0637
+   8      flics                          +0.000557       0.1193
+   9      foutre                         +0.000512       0.1551
+   10     tarderait                      +0.000489       0.0734
+   11     balancés                       +0.000466       0.1046
+   12     grommela                       +0.000441       0.0575
+   13     conneries                      +0.000431       0.0632
+   14     ténue                          +0.000395       0.0886
+   15     noyé                           +0.000369       0.0519
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      énerva                         -0.001688       0.0809
+   2      dénoncés                       -0.001350       0.1884
+   3      pff                            -0.001245       0.1090
+   4      ravaler                        -0.000766       0.0858
+   5      accrochait                     -0.000689       0.0579
+   6      dénoncer                       -0.000671       0.0585
+   7      vérifiant                      -0.000649       0.0826
+   8      souffla                        -0.000524       0.0476
+   9      kidnapping                     -0.000487       0.1160
+   10     effrayer                       -0.000486       0.0541
+   11     efforça                        -0.000454       0.0637
+   12     pichenette                     -0.000363       0.0989
+   13     répéta                         -0.000339       0.0406
+   14     école                          -0.000307       0.0325
+   15     baise                          -0.000263       0.0663
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      mikaël                         +0.154610       0.7949
+   2      emmerdes                       +0.076122       0.1777
+   3      cul                            +0.057240       0.1344
+   4      triompha                       +0.055137       0.0950
+   5      débitait                       +0.043889       0.0876
+   6      flics                          +0.039726       0.1193
+   7      balancé                        +0.037896       0.0637
+   8      foutre                         +0.037817       0.1551
+   9      barre                          +0.033460       0.0423
+   10     balancés                       +0.029941       0.1046
+   11     tarderait                      +0.029531       0.0734
+   12     louches                        +0.024268       0.0733
+   13     noyé                           +0.022865       0.0519
+   14     grommela                       +0.022468       0.0575
+   15     haussa                         +0.022039       0.0441
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      énerva                         -0.091133       0.0809
+   2      pff                            -0.069427       0.1090
+   3      dénoncés                       -0.068885       0.1884
+   4      ravaler                        -0.044718       0.0858
+   5      accrochait                     -0.038483       0.0579
+   6      vérifiant                      -0.036014       0.0826
+   7      dénoncer                       -0.035811       0.0585
+   8      efforça                        -0.029304       0.0637
+   9      souffla                        -0.028382       0.0476
+   10     effrayer                       -0.027292       0.0541
+   11     kidnapping                     -0.020439       0.1160
+   12     chantier                       -0.019540       0.0561
+   13     répéta                         -0.019482       0.0406
+   14     excusa                         -0.018549       0.0584
+   15     pichenette                     -0.017996       0.0989
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+mikaël                    +0.002811     +0.000491     +0.000491     0.7949
+barre                     +0.000622     +0.000023     +0.000023     0.0423
+cabane                    +0.000067     +0.000023     +0.000023     0.0534
+kidnapping                +0.000000     +0.000020     +0.000020     0.1160
+observait                 +0.000000     +0.000018     +0.000018     0.0425
+grogna                    +0.000211     +0.000016     +0.000016     0.0568
+haussa                    +0.000338     +0.000015     +0.000015     0.0441
+pff                       +0.000000     +0.000015     +0.000015     0.1090
+ravaler                   +0.000000     +0.000014     +0.000014     0.0858
+bonsoir                   +0.000092     +0.000013     +0.000013     0.0453
+lavabo                    +0.000000     +0.000013     +0.000013     0.0576
+ouvrit                    +0.000020     +0.000013     +0.000013     0.0363
+balancés                  +0.000466     +0.000012     +0.000012     0.1046
+salive                    +0.000288     +0.000010     +0.000010     0.0472
+répéta                    +0.000000     +0.000010     +0.000010     0.0406
+emporta                   +0.000000     +0.000008     +0.000008     0.0504
+excusa                    +0.000000     +0.000007     +0.000007     0.0584
+trahi                     +0.000000     +0.000007     +0.000007     0.0518
+allais                    +0.000194     +0.000004     +0.000004     0.0320
+flics                     +0.000557     +0.000003     +0.000003     0.1193
+logit final pour 'homme': -0.3754

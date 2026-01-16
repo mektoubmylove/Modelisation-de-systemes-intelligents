@@ -1,0 +1,386 @@
+texte analysé: effluves nourriciers des machines à sang n arriveraient plus à moi qu en nombre insuffisant en nombre dosé par la loi , de façon à prolonger ma vie autant de jours que le déciderait le grand conseil c...
+prédiction: HOMME (confiance: 58.3%)
+vérité terrain: HOMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME
+# logit: -0.1980
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      continuât                      +0.000126       0.1706
+   2      tordus                         +0.000115       0.1067
+   3      insuffisant                    +0.000099       0.1278
+   4      écrouler                       +0.000094       0.0922
+   5      vît                            +0.000087       0.1175
+   6      levai                          +0.000084       0.1212
+   7      arriveraient                   +0.000073       0.1398
+   8      abattu                         +0.000058       0.0753
+   9      franchit                       +0.000050       0.0819
+   10     jarrets                        +0.000049       0.1451
+   11     essayez                        +0.000047       0.0818
+   12     immobile                       +0.000047       0.0508
+   13     cellule                        +0.000042       0.0778
+   14     claquement                     +0.000037       0.0882
+   15     baissa                         +0.000037       0.0684
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      imbibée                        -0.000178       0.1545
+   2      lentille                       -0.000142       0.1640
+   3      prolonger                      -0.000118       0.1619
+   4      refusèrent                     -0.000116       0.1408
+   5      raidis                         -0.000114       0.1355
+   6      rassasié                       -0.000096       0.1329
+   7      entrebâillement                -0.000084       0.1141
+   8      morales                        -0.000076       0.1095
+   9      rêver                          -0.000070       0.0579
+   10     comprenais                     -0.000070       0.0841
+   11     crampes                        -0.000068       0.1297
+   12     périr                          -0.000066       0.1026
+   13     passèrent                      -0.000066       0.0731
+   14     voulus                         -0.000064       0.2277
+   15     violents                       -0.000058       0.0818
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      continuât                      +0.000126       0.1706
+   2      tordus                         +0.000115       0.1067
+   3      insuffisant                    +0.000099       0.1278
+   4      écrouler                       +0.000094       0.0922
+   5      vît                            +0.000087       0.1175
+   6      levai                          +0.000084       0.1212
+   7      arriveraient                   +0.000073       0.1398
+   8      abattu                         +0.000058       0.0753
+   9      franchit                       +0.000050       0.0819
+   10     jarrets                        +0.000049       0.1451
+   11     essayez                        +0.000047       0.0818
+   12     immobile                       +0.000047       0.0508
+   13     cellule                        +0.000042       0.0778
+   14     claquement                     +0.000037       0.0882
+   15     baissa                         +0.000037       0.0684
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      imbibée                        -0.000178       0.1545
+   2      lentille                       -0.000142       0.1640
+   3      prolonger                      -0.000118       0.1619
+   4      refusèrent                     -0.000116       0.1408
+   5      raidis                         -0.000114       0.1355
+   6      rassasié                       -0.000096       0.1329
+   7      entrebâillement                -0.000084       0.1141
+   8      morales                        -0.000076       0.1095
+   9      rêver                          -0.000070       0.0579
+   10     comprenais                     -0.000070       0.0841
+   11     crampes                        -0.000068       0.1297
+   12     périr                          -0.000066       0.1026
+   13     passèrent                      -0.000066       0.0731
+   14     voulus                         -0.000064       0.2277
+   15     violents                       -0.000058       0.0818
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      crispa                         +0.001904       0.1098
+   2      crampes                        +0.001740       0.1297
+   3      blessée                        +0.001669       0.0734
+   4      raidis                         +0.001541       0.1355
+   5      souffla                        +0.001150       0.0754
+   6      calmèrent                      +0.001101       0.1640
+   7      couverte                       +0.001095       0.0650
+   8      périr                          +0.001066       0.1026
+   9      repliées                       +0.000973       0.1245
+   10     effluves                       +0.000966       0.1980
+   11     rassasié                       +0.000908       0.1329
+   12     restai                         +0.000887       0.1196
+   13     chambranle                     +0.000874       0.1067
+   14     tourments                      +0.000862       0.0935
+   15     suffisamment                   +0.000810       0.0584
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      continuât                      -0.004804       0.1706
+   2      jarrets                        -0.002432       0.1451
+   3      vît                            -0.002230       0.1175
+   4      frémissant                     -0.001933       0.1123
+   5      abattu                         -0.001736       0.0753
+   6      cachot                         -0.001569       0.2333
+   7      prolonger                      -0.001508       0.1619
+   8      tortures                       -0.001486       0.1100
+   9      lentille                       -0.001098       0.1640
+   10     fiévreux                       -0.001048       0.0963
+   11     murailles                      -0.001017       0.0950
+   12     cellule                        -0.000918       0.0778
+   13     ordinaire                      -0.000902       0.0538
+   14     machinalement                  -0.000899       0.0668
+   15     insuffisant                    -0.000869       0.1278
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      crispa                         +0.092335       0.1098
+   2      crampes                        +0.091759       0.1297
+   3      blessée                        +0.084952       0.0734
+   4      restai                         +0.062424       0.1196
+   5      rassasié                       +0.061157       0.1329
+   6      pensais                        +0.054557       0.1010
+   7      raidis                         +0.054396       0.1355
+   8      grièvement                     +0.053618       0.1351
+   9      souffla                        +0.052646       0.0754
+   10     couverte                       +0.050405       0.0650
+   11     périr                          +0.050285       0.1026
+   12     tourments                      +0.040639       0.0935
+   13     calmèrent                      +0.038288       0.1640
+   14     suffisamment                   +0.037766       0.0584
+   15     sursauter                      +0.034662       0.0830
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      continuât                      -0.215433       0.1706
+   2      vît                            -0.111667       0.1175
+   3      jarrets                        -0.105093       0.1451
+   4      frémissant                     -0.089886       0.1123
+   5      cachot                         -0.089393       0.2333
+   6      abattu                         -0.089375       0.0753
+   7      tortures                       -0.076995       0.1100
+   8      prolonger                      -0.065803       0.1619
+   9      murailles                      -0.051198       0.0950
+   10     cellule                        -0.047394       0.0778
+   11     lentille                       -0.044138       0.1640
+   12     fit                            -0.043395       0.0509
+   13     loi                            -0.036815       0.0559
+   14     fiévreux                       -0.036534       0.0963
+   15     conseil                        -0.036299       0.0551
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+continuât                 +0.000000     +0.000126     +0.000126     0.1706
+tordus                    +0.000000     +0.000115     +0.000115     0.1067
+insuffisant               +0.000000     +0.000099     +0.000099     0.1278
+écrouler                  +0.000272     +0.000094     +0.000094     0.0922
+vît                       +0.000000     +0.000087     +0.000087     0.1175
+levai                     +0.000000     +0.000084     +0.000084     0.1212
+arriveraient              +0.000533     +0.000073     +0.000073     0.1398
+abattu                    +0.000000     +0.000058     +0.000058     0.0753
+franchit                  +0.000337     +0.000050     +0.000050     0.0819
+jarrets                   +0.000000     +0.000049     +0.000049     0.1451
+essayez                   +0.000000     +0.000047     +0.000047     0.0818
+immobile                  +0.000000     +0.000047     +0.000047     0.0508
+cellule                   +0.000000     +0.000042     +0.000042     0.0778
+claquement                +0.000000     +0.000037     +0.000037     0.0882
+baissa                    +0.000000     +0.000037     +0.000037     0.0684
+murailles                 +0.000000     +0.000035     +0.000035     0.0950
+calmèrent                 +0.001101     +0.000033     +0.000033     0.1640
+parvenir                  +0.000180     +0.000032     +0.000032     0.0590
+rouvrir                   +0.000095     +0.000029     +0.000029     0.1034
+conseil                   +0.000000     +0.000027     +0.000027     0.0551
+logit final pour 'femme': -0.1980
+# analyse pour la classe: HOMME  prédite
+# logit: 0.1358
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      continuât                      +0.000101       0.1706
+   2      écrouler                       +0.000050       0.0922
+   3      tordus                         +0.000042       0.1067
+   4      arriveraient                   +0.000042       0.1398
+   5      levai                          +0.000041       0.1212
+   6      pensais                        +0.000041       0.1010
+   7      franchit                       +0.000037       0.0819
+   8      insuffisant                    +0.000036       0.1278
+   9      effluves                       +0.000035       0.1980
+   10     immobile                       +0.000032       0.0508
+   11     abattu                         +0.000031       0.0753
+   12     couverte                       +0.000030       0.0650
+   13     calmèrent                      +0.000030       0.1640
+   14     frémissant                     +0.000030       0.1123
+   15     baissa                         +0.000022       0.0684
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lentille                       -0.000094       0.1640
+   2      imbibée                        -0.000073       0.1545
+   3      raidis                         -0.000061       0.1355
+   4      prolonger                      -0.000061       0.1619
+   5      périr                          -0.000057       0.1026
+   6      morales                        -0.000057       0.1095
+   7      refusèrent                     -0.000051       0.1408
+   8      entrebâillement                -0.000049       0.1141
+   9      rassasié                       -0.000047       0.1329
+   10     comprenais                     -0.000045       0.0841
+   11     chambranle                     -0.000044       0.1067
+   12     repliées                       -0.000038       0.1245
+   13     briller                        -0.000036       0.0759
+   14     tortures                       -0.000036       0.1100
+   15     implacable                     -0.000036       0.0865
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      continuât                      +0.000101       0.1706
+   2      écrouler                       +0.000050       0.0922
+   3      tordus                         +0.000042       0.1067
+   4      arriveraient                   +0.000042       0.1398
+   5      levai                          +0.000041       0.1212
+   6      pensais                        +0.000041       0.1010
+   7      franchit                       +0.000037       0.0819
+   8      insuffisant                    +0.000036       0.1278
+   9      effluves                       +0.000035       0.1980
+   10     immobile                       +0.000032       0.0508
+   11     abattu                         +0.000031       0.0753
+   12     couverte                       +0.000030       0.0650
+   13     calmèrent                      +0.000030       0.1640
+   14     frémissant                     +0.000030       0.1123
+   15     baissa                         +0.000022       0.0684
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lentille                       -0.000094       0.1640
+   2      imbibée                        -0.000073       0.1545
+   3      raidis                         -0.000061       0.1355
+   4      prolonger                      -0.000061       0.1619
+   5      périr                          -0.000057       0.1026
+   6      morales                        -0.000057       0.1095
+   7      refusèrent                     -0.000051       0.1408
+   8      entrebâillement                -0.000049       0.1141
+   9      rassasié                       -0.000047       0.1329
+   10     comprenais                     -0.000045       0.0841
+   11     chambranle                     -0.000044       0.1067
+   12     repliées                       -0.000038       0.1245
+   13     briller                        -0.000036       0.0759
+   14     tortures                       -0.000036       0.1100
+   15     implacable                     -0.000036       0.0865
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      continuât                      +0.003766       0.1706
+   2      jarrets                        +0.001907       0.1451
+   3      vît                            +0.001754       0.1175
+   4      frémissant                     +0.001493       0.1123
+   5      cachot                         +0.001310       0.2333
+   6      tortures                       +0.001296       0.1100
+   7      prolonger                      +0.001121       0.1619
+   8      abattu                         +0.001085       0.0753
+   9      fiévreux                       +0.000893       0.0963
+   10     supplice                       +0.000882       0.0790
+   11     insuffisant                    +0.000858       0.1278
+   12     ordinaire                      +0.000791       0.0538
+   13     machinalement                  +0.000756       0.0668
+   14     gonds                          +0.000690       0.1022
+   15     cellule                        +0.000680       0.0778
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      crispa                         -0.001434       0.1098
+   2      crampes                        -0.001297       0.1297
+   3      raidis                         -0.001263       0.1355
+   4      blessée                        -0.001109       0.0734
+   5      calmèrent                      -0.000990       0.1640
+   6      périr                          -0.000923       0.1026
+   7      couverte                       -0.000917       0.0650
+   8      grièvement                     -0.000908       0.1351
+   9      souffla                        -0.000904       0.0754
+   10     tourments                      -0.000887       0.0935
+   11     repliées                       -0.000787       0.1245
+   12     chambranle                     -0.000636       0.1067
+   13     suffisamment                   -0.000631       0.0584
+   14     rassasié                       -0.000612       0.1329
+   15     sursauter                      -0.000589       0.0830
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      continuât                      +0.150892       0.1706
+   2      vît                            +0.074680       0.1175
+   3      jarrets                        +0.073678       0.1451
+   4      cachot                         +0.064126       0.2333
+   5      frémissant                     +0.063798       0.1123
+   6      tortures                       +0.062070       0.1100
+   7      prolonger                      +0.053957       0.1619
+   8      abattu                         +0.050997       0.0753
+   9      murailles                      +0.036245       0.0950
+   10     cellule                        +0.032671       0.0778
+   11     devinrent                      +0.030526       0.0988
+   12     fit                            +0.029242       0.0509
+   13     loi                            +0.028135       0.0559
+   14     machinalement                  +0.025703       0.0668
+   15     supplice                       +0.025569       0.0790
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      crispa                         -0.064857       0.1098
+   2      crampes                        -0.062374       0.1297
+   3      grièvement                     -0.055575       0.1351
+   4      blessée                        -0.051720       0.0734
+   5      raidis                         -0.043821       0.1355
+   6      restai                         -0.040091       0.1196
+   7      périr                          -0.039857       0.1026
+   8      souffla                        -0.038984       0.0754
+   9      couverte                       -0.037828       0.0650
+   10     tourments                      -0.036643       0.0935
+   11     rassasié                       -0.036191       0.1329
+   12     calmèrent                      -0.031515       0.1640
+   13     pensais                        -0.031419       0.1010
+   14     suffisamment                   -0.028380       0.0584
+   15     sursauter                      -0.025123       0.0830
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+continuât                 +0.003766     +0.000101     +0.000101     0.1706
+écrouler                  +0.000000     +0.000050     +0.000050     0.0922
+tordus                    +0.000159     +0.000042     +0.000042     0.1067
+arriveraient              +0.000000     +0.000042     +0.000042     0.1398
+levai                     +0.000361     +0.000041     +0.000041     0.1212
+pensais                   +0.000000     +0.000041     +0.000041     0.1010
+franchit                  +0.000000     +0.000037     +0.000037     0.0819
+insuffisant               +0.000858     +0.000036     +0.000036     0.1278
+effluves                  +0.000000     +0.000035     +0.000035     0.1980
+immobile                  +0.000556     +0.000032     +0.000032     0.0508
+abattu                    +0.001085     +0.000031     +0.000031     0.0753
+couverte                  +0.000000     +0.000030     +0.000030     0.0650
+calmèrent                 +0.000000     +0.000030     +0.000030     0.1640
+frémissant                +0.001493     +0.000030     +0.000030     0.1123
+baissa                    +0.000112     +0.000022     +0.000022     0.0684
+vît                       +0.001754     +0.000022     +0.000022     0.1175
+essayez                   +0.000137     +0.000020     +0.000020     0.0818
+fiévreux                  +0.000893     +0.000019     +0.000019     0.0963
+descendais                +0.000443     +0.000018     +0.000018     0.1325
+parvenir                  +0.000000     +0.000017     +0.000017     0.0590
+logit final pour 'homme': 0.1358

@@ -1,0 +1,386 @@
+texte analysé: de la berche . ah ! ah ! ah ! léa se leva , grande dans sa robe d automne d un vert sourd , belle sous son chapeau de satin bordé de loutre , jeune parmi ces décombres qu elle parcourut d un oeil doux...
+prédiction: FEMME (confiance: 76.8%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.6491
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      seuil                          +0.000054       0.0948
+   2      kilo                           +0.000052       0.0785
+   3      lili                           +0.000050       0.3372
+   4      béait                          +0.000039       0.1009
+   5      cueillit                       +0.000036       0.0783
+   6      embonpoint                     +0.000031       0.0735
+   7      chapeau                        +0.000028       0.0673
+   8      descendit                      +0.000027       0.0401
+   9      amant                          +0.000023       0.0375
+   10     aigus                          +0.000022       0.0562
+   11     adolescent                     +0.000019       0.0469
+   12     bengale                        +0.000018       0.0934
+   13     tint                           +0.000018       0.0435
+   14     renard                         +0.000017       0.0571
+   15     ménage                         +0.000017       0.0655
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      léa                            -0.000653       0.6589
+   2      épatante                       -0.000089       0.0943
+   3      bornes                         -0.000073       0.1003
+   4      gaieté                         -0.000070       0.0453
+   5      bouleau                        -0.000066       0.0926
+   6      frémit                         -0.000064       0.0551
+   7      décombres                      -0.000061       0.0648
+   8      dindon                         -0.000051       0.0967
+   9      satin                          -0.000051       0.0534
+   10     souhaitant                     -0.000051       0.0619
+   11     fardé                          -0.000047       0.0943
+   12     coriace                        -0.000047       0.0758
+   13     banc                           -0.000047       0.0342
+   14     heureuses                      -0.000046       0.0533
+   15     scandait                       -0.000039       0.0939
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      seuil                          +0.000054       0.0948
+   2      kilo                           +0.000052       0.0785
+   3      lili                           +0.000050       0.3372
+   4      béait                          +0.000039       0.1009
+   5      cueillit                       +0.000036       0.0783
+   6      embonpoint                     +0.000031       0.0735
+   7      chapeau                        +0.000028       0.0673
+   8      descendit                      +0.000027       0.0401
+   9      amant                          +0.000023       0.0375
+   10     aigus                          +0.000022       0.0562
+   11     adolescent                     +0.000019       0.0469
+   12     bengale                        +0.000018       0.0934
+   13     tint                           +0.000018       0.0435
+   14     renard                         +0.000017       0.0571
+   15     ménage                         +0.000017       0.0655
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      léa                            -0.000653       0.6589
+   2      épatante                       -0.000089       0.0943
+   3      bornes                         -0.000073       0.1003
+   4      gaieté                         -0.000070       0.0453
+   5      bouleau                        -0.000066       0.0926
+   6      frémit                         -0.000064       0.0551
+   7      décombres                      -0.000061       0.0648
+   8      dindon                         -0.000051       0.0967
+   9      satin                          -0.000051       0.0534
+   10     souhaitant                     -0.000051       0.0619
+   11     fardé                          -0.000047       0.0943
+   12     coriace                        -0.000047       0.0758
+   13     banc                           -0.000047       0.0342
+   14     heureuses                      -0.000046       0.0533
+   15     scandait                       -0.000039       0.0939
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      léa                            +0.011638       0.6589
+   2      épatante                       +0.001789       0.0943
+   3      satin                          +0.001167       0.0534
+   4      bouleau                        +0.001134       0.0926
+   5      madame                         +0.001122       0.0934
+   6      nerveuse                       +0.000931       0.0430
+   7      tremblante                     +0.000918       0.0435
+   8      gaieté                         +0.000836       0.0453
+   9      embonpoint                     +0.000830       0.0735
+   10     dindon                         +0.000806       0.0967
+   11     bouffée                        +0.000805       0.0443
+   12     accueil                        +0.000801       0.0394
+   13     jupe                           +0.000756       0.0395
+   14     coriace                        +0.000719       0.0758
+   15     parcourut                      +0.000662       0.0531
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lili                           -0.007066       0.3372
+   2      sifflet                        -0.001997       0.0585
+   3      béait                          -0.001375       0.1009
+   4      bengale                        -0.001126       0.0934
+   5      raies                          -0.001071       0.0848
+   6      aigus                          -0.001013       0.0562
+   7      seuil                          -0.000886       0.0948
+   8      fardé                          -0.000812       0.0943
+   9      fumée                          -0.000808       0.0324
+   10     bordé                          -0.000721       0.0571
+   11     tint                           -0.000710       0.0435
+   12     courut                         -0.000704       0.0428
+   13     baronne                        -0.000639       0.2580
+   14     mme                            -0.000589       0.0440
+   15     bornes                         -0.000574       0.1003
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      léa                            +0.549634       0.6589
+   2      épatante                       +0.080693       0.0943
+   3      bouleau                        +0.065551       0.0926
+   4      satin                          +0.050940       0.0534
+   5      madame                         +0.045329       0.0934
+   6      embonpoint                     +0.044217       0.0735
+   7      bouffée                        +0.044031       0.0443
+   8      nerveuse                       +0.041877       0.0430
+   9      dindon                         +0.039463       0.0967
+   10     parcourut                      +0.038326       0.0531
+   11     accueil                        +0.036083       0.0394
+   12     jupe                           +0.035659       0.0395
+   13     tremblante                     +0.035031       0.0435
+   14     fine                           +0.031109       0.0311
+   15     gaieté                         +0.030946       0.0453
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lili                           -0.376454       0.3372
+   2      baronne                        -0.099743       0.2580
+   3      sifflet                        -0.097766       0.0585
+   4      béait                          -0.063446       0.1009
+   5      bengale                        -0.053742       0.0934
+   6      aigus                          -0.050175       0.0562
+   7      seuil                          -0.044464       0.0948
+   8      bordé                          -0.041126       0.0571
+   9      mme                            -0.040374       0.0440
+   10     raies                          -0.039661       0.0848
+   11     bornes                         -0.038536       0.1003
+   12     courut                         -0.037990       0.0428
+   13     spencer                        -0.037678       0.1075
+   14     fardé                          -0.037251       0.0943
+   15     fumée                          -0.036948       0.0324
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+seuil                     +0.000000     +0.000054     +0.000054     0.0948
+kilo                      +0.000000     +0.000052     +0.000052     0.0785
+lili                      +0.000000     +0.000050     +0.000050     0.3372
+béait                     +0.000000     +0.000039     +0.000039     0.1009
+cueillit                  +0.000000     +0.000036     +0.000036     0.0783
+embonpoint                +0.000830     +0.000031     +0.000031     0.0735
+chapeau                   +0.000000     +0.000028     +0.000028     0.0673
+descendit                 +0.000000     +0.000027     +0.000027     0.0401
+amant                     +0.000000     +0.000023     +0.000023     0.0375
+aigus                     +0.000000     +0.000022     +0.000022     0.0562
+adolescent                +0.000109     +0.000019     +0.000019     0.0469
+bengale                   +0.000000     +0.000018     +0.000018     0.0934
+tint                      +0.000000     +0.000018     +0.000018     0.0435
+renard                    +0.000000     +0.000017     +0.000017     0.0571
+ménage                    +0.000108     +0.000017     +0.000017     0.0655
+courut                    +0.000000     +0.000017     +0.000017     0.0428
+écouta                    +0.000000     +0.000017     +0.000017     0.0499
+aspiré                    +0.000000     +0.000016     +0.000016     0.0709
+sifflet                   +0.000000     +0.000016     +0.000016     0.0585
+cartes                    +0.000000     +0.000016     +0.000016     0.0334
+logit final pour 'femme': 0.6491
+# analyse pour la classe: HOMME
+# logit: -0.5481
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      kilo                           +0.000023       0.0785
+   2      béait                          +0.000021       0.1009
+   3      amant                          +0.000021       0.0375
+   4      loutre                         +0.000018       0.1021
+   5      renard                         +0.000018       0.0571
+   6      lili                           +0.000018       0.3372
+   7      descendit                      +0.000013       0.0401
+   8      argenté                        +0.000013       0.0651
+   9      eunuque                        +0.000011       0.0992
+   10     cueillit                       +0.000011       0.0783
+   11     sifflet                        +0.000010       0.0585
+   12     perde                          +0.000009       0.0614
+   13     embonpoint                     +0.000009       0.0735
+   14     chapeau                        +0.000008       0.0673
+   15     certitude                      +0.000008       0.0328
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      léa                            -0.000265       0.6589
+   2      tit                            -0.000061       0.1487
+   3      souhaitant                     -0.000031       0.0619
+   4      charlotte                      -0.000030       0.0760
+   5      satin                          -0.000028       0.0534
+   6      banc                           -0.000026       0.0342
+   7      heureuses                      -0.000025       0.0533
+   8      parcourut                      -0.000024       0.0531
+   9      coriace                        -0.000023       0.0758
+   10     accueil                        -0.000021       0.0394
+   11     donnerez                       -0.000021       0.0760
+   12     cachait                        -0.000021       0.0364
+   13     dindon                         -0.000020       0.0967
+   14     rentrée                        -0.000019       0.0351
+   15     tremblante                     -0.000019       0.0435
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      kilo                           +0.000023       0.0785
+   2      béait                          +0.000021       0.1009
+   3      amant                          +0.000021       0.0375
+   4      loutre                         +0.000018       0.1021
+   5      renard                         +0.000018       0.0571
+   6      lili                           +0.000018       0.3372
+   7      descendit                      +0.000013       0.0401
+   8      argenté                        +0.000013       0.0651
+   9      eunuque                        +0.000011       0.0992
+   10     cueillit                       +0.000011       0.0783
+   11     sifflet                        +0.000010       0.0585
+   12     perde                          +0.000009       0.0614
+   13     embonpoint                     +0.000009       0.0735
+   14     chapeau                        +0.000008       0.0673
+   15     certitude                      +0.000008       0.0328
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      léa                            -0.000265       0.6589
+   2      tit                            -0.000061       0.1487
+   3      souhaitant                     -0.000031       0.0619
+   4      charlotte                      -0.000030       0.0760
+   5      satin                          -0.000028       0.0534
+   6      banc                           -0.000026       0.0342
+   7      heureuses                      -0.000025       0.0533
+   8      parcourut                      -0.000024       0.0531
+   9      coriace                        -0.000023       0.0758
+   10     accueil                        -0.000021       0.0394
+   11     donnerez                       -0.000021       0.0760
+   12     cachait                        -0.000021       0.0364
+   13     dindon                         -0.000020       0.0967
+   14     rentrée                        -0.000019       0.0351
+   15     tremblante                     -0.000019       0.0435
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lili                           +0.003923       0.3372
+   2      sifflet                        +0.001267       0.0585
+   3      béait                          +0.000940       0.1009
+   4      raies                          +0.000719       0.0848
+   5      bengale                        +0.000683       0.0934
+   6      aigus                          +0.000669       0.0562
+   7      seuil                          +0.000584       0.0948
+   8      tint                           +0.000534       0.0435
+   9      courut                         +0.000507       0.0428
+   10     eunuque                        +0.000491       0.0992
+   11     baronne                        +0.000469       0.2580
+   12     fumée                          +0.000459       0.0324
+   13     fardé                          +0.000400       0.0943
+   14     bordé                          +0.000378       0.0571
+   15     mme                            +0.000372       0.0440
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      léa                            -0.006645       0.6589
+   2      épatante                       -0.001199       0.0943
+   3      bouleau                        -0.000857       0.0926
+   4      satin                          -0.000796       0.0534
+   5      gaieté                         -0.000718       0.0453
+   6      madame                         -0.000670       0.0934
+   7      nerveuse                       -0.000639       0.0430
+   8      dindon                         -0.000600       0.0967
+   9      bouffée                        -0.000549       0.0443
+   10     coriace                        -0.000537       0.0758
+   11     tremblante                     -0.000528       0.0435
+   12     embonpoint                     -0.000527       0.0735
+   13     jupe                           -0.000503       0.0395
+   14     fine                           -0.000491       0.0311
+   15     accueil                        -0.000443       0.0394
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      lili                           +0.239887       0.3372
+   2      baronne                        +0.070566       0.2580
+   3      sifflet                        +0.061085       0.0585
+   4      béait                          +0.043930       0.1009
+   5      bengale                        +0.037013       0.0934
+   6      aigus                          +0.035116       0.0562
+   7      raies                          +0.032924       0.0848
+   8      seuil                          +0.030410       0.0948
+   9      courut                         +0.028364       0.0428
+   10     tint                           +0.027511       0.0435
+   11     mme                            +0.025911       0.0440
+   12     tit                            +0.024535       0.1487
+   13     spencer                        +0.022778       0.1075
+   14     bordé                          +0.021674       0.0571
+   15     fumée                          +0.021394       0.0324
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      léa                            -0.293867       0.6589
+   2      épatante                       -0.056476       0.0943
+   3      bouleau                        -0.049299       0.0926
+   4      satin                          -0.034868       0.0534
+   5      bouffée                        -0.030871       0.0443
+   6      madame                         -0.029889       0.0934
+   7      dindon                         -0.029688       0.0967
+   8      gaieté                         -0.029051       0.0453
+   9      nerveuse                       -0.028772       0.0430
+   10     jupe                           -0.026589       0.0395
+   11     embonpoint                     -0.025334       0.0735
+   12     fine                           -0.024503       0.0311
+   13     coriace                        -0.023314       0.0758
+   14     parcourut                      -0.022451       0.0531
+   15     jeta                           -0.019514       0.0361
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+kilo                      +0.000359     +0.000023     +0.000023     0.0785
+béait                     +0.000940     +0.000021     +0.000021     0.1009
+amant                     +0.000128     +0.000021     +0.000021     0.0375
+loutre                    +0.000007     +0.000018     +0.000018     0.1021
+renard                    +0.000006     +0.000018     +0.000018     0.0571
+lili                      +0.003923     +0.000018     +0.000018     0.3372
+descendit                 +0.000343     +0.000013     +0.000013     0.0401
+argenté                   +0.000000     +0.000013     +0.000013     0.0651
+eunuque                   +0.000491     +0.000011     +0.000011     0.0992
+cueillit                  +0.000000     +0.000011     +0.000011     0.0783
+sifflet                   +0.001267     +0.000010     +0.000010     0.0585
+perde                     +0.000000     +0.000009     +0.000009     0.0614
+embonpoint                +0.000000     +0.000009     +0.000009     0.0735
+chapeau                   +0.000055     +0.000008     +0.000008     0.0673
+certitude                 +0.000144     +0.000008     +0.000008     0.0328
+aurez                     +0.000026     +0.000008     +0.000008     0.0353
+écouta                    +0.000228     +0.000007     +0.000007     0.0499
+automne                   +0.000000     +0.000007     +0.000007     0.0380
+demanda                   +0.000000     +0.000006     +0.000006     0.0326
+ceinture                  +0.000021     +0.000006     +0.000006     0.0334
+logit final pour 'homme': -0.5481

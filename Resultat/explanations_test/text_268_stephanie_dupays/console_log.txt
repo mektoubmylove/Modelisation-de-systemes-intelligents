@@ -1,0 +1,386 @@
+texte analysé: ce sera une classe préparatoire aux écoles de commerce , c est bien connu , ça mène à tout . claire appartient à cette génération bercée par la douce mélopée de la crise et de l austérité chantée ad l...
+prédiction: FEMME (confiance: 92.6%)
+vérité terrain: FEMME
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 1.4842
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      raisonnables                   +0.000088       0.0876
+   2      façonné                        +0.000079       0.1128
+   3      parisiennes                    +0.000061       0.0999
+   4      athlète                        +0.000060       0.1007
+   5      exemplaire                     +0.000056       0.0638
+   6      divertissements                +0.000048       0.1198
+   7      chômeurs                       +0.000047       0.1244
+   8      mental                         +0.000045       0.0805
+   9      smith                          +0.000039       0.1207
+   10     bordeaux                       +0.000028       0.0746
+   11     préparatoire                   +0.000028       0.1384
+   12     loisirs                        +0.000027       0.0895
+   13     télévisé                       +0.000027       0.1207
+   14     mène                           +0.000025       0.0500
+   15     écoles                         +0.000022       0.1397
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      idéaux                         -0.000167       0.1244
+   2      insouciants                    -0.000121       0.1179
+   3      matérielles                    -0.000111       0.0989
+   4      claire                         -0.000110       0.2533
+   5      internat                       -0.000099       0.1202
+   6      mélopée                        -0.000085       0.1106
+   7      affranchie                     -0.000084       0.1198
+   8      études                         -0.000080       0.0916
+   9      siens                          -0.000078       0.0477
+   10     bercée                         -0.000075       0.0999
+   11     aînés                          -0.000074       0.0856
+   12     enseignants                    -0.000072       0.1272
+   13     professionnelle                -0.000069       0.0682
+   14     chômage                        -0.000068       0.0884
+   15     austérité                      -0.000065       0.1016
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      raisonnables                   +0.000088       0.0876
+   2      façonné                        +0.000079       0.1128
+   3      parisiennes                    +0.000061       0.0999
+   4      athlète                        +0.000060       0.1007
+   5      exemplaire                     +0.000056       0.0638
+   6      divertissements                +0.000048       0.1198
+   7      chômeurs                       +0.000047       0.1244
+   8      mental                         +0.000045       0.0805
+   9      smith                          +0.000039       0.1207
+   10     bordeaux                       +0.000028       0.0746
+   11     préparatoire                   +0.000028       0.1384
+   12     loisirs                        +0.000027       0.0895
+   13     télévisé                       +0.000027       0.1207
+   14     mène                           +0.000025       0.0500
+   15     écoles                         +0.000022       0.1397
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      idéaux                         -0.000167       0.1244
+   2      insouciants                    -0.000121       0.1179
+   3      matérielles                    -0.000111       0.0989
+   4      claire                         -0.000110       0.2533
+   5      internat                       -0.000099       0.1202
+   6      mélopée                        -0.000085       0.1106
+   7      affranchie                     -0.000084       0.1198
+   8      études                         -0.000080       0.0916
+   9      siens                          -0.000078       0.0477
+   10     bercée                         -0.000075       0.0999
+   11     aînés                          -0.000074       0.0856
+   12     enseignants                    -0.000072       0.1272
+   13     professionnelle                -0.000069       0.0682
+   14     chômage                        -0.000068       0.0884
+   15     austérité                      -0.000065       0.1016
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      graal                          +0.002110       0.1284
+   2      bercée                         +0.001836       0.0999
+   3      études                         +0.001610       0.0916
+   4      claire                         +0.001504       0.2533
+   5      aînés                          +0.001495       0.0856
+   6      contraintes                    +0.001441       0.0882
+   7      répétitions                    +0.001405       0.1091
+   8      opté                           +0.001323       0.1036
+   9      shopping                       +0.001250       0.1278
+   10     bienvenue                      +0.001203       0.0630
+   11     chantée                        +0.001148       0.1244
+   12     austérité                      +0.001108       0.1016
+   13     vestimentaires                 +0.001094       0.1310
+   14     école                          +0.001008       0.0839
+   15     aspirations                    +0.000981       0.0954
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      loisirs                        -0.001624       0.0895
+   2      commerce                       -0.001446       0.1590
+   3      smith                          -0.001318       0.1207
+   4      façonné                        -0.001266       0.1128
+   5      chômeurs                       -0.001184       0.1244
+   6      acier                          -0.001183       0.0541
+   7      rigoureux                      -0.001160       0.0956
+   8      candidats                      -0.000966       0.0997
+   9      moule                          -0.000910       0.0933
+   10     athlète                        -0.000849       0.1007
+   11     hantise                        -0.000805       0.0963
+   12     divertissements                -0.000800       0.1198
+   13     fiches                         -0.000701       0.0812
+   14     coloré                         -0.000687       0.0858
+   15     conseillé                      -0.000613       0.0633
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      graal                          +0.069228       0.1284
+   2      bercée                         +0.050108       0.0999
+   3      contraintes                    +0.046240       0.0882
+   4      études                         +0.043388       0.0916
+   5      répétitions                    +0.042795       0.1091
+   6      opté                           +0.042706       0.1036
+   7      claire                         +0.042292       0.2533
+   8      chantée                        +0.037663       0.1244
+   9      écoles                         +0.034971       0.1397
+   10     diagnostic                     +0.034018       0.0876
+   11     aînés                          +0.033156       0.0856
+   12     vestimentaires                 +0.031155       0.1310
+   13     austérité                      +0.028853       0.1016
+   14     shopping                       +0.027183       0.1278
+   15     bienvenue                      +0.026843       0.0630
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      commerce                       -0.060616       0.1590
+   2      loisirs                        -0.056197       0.0895
+   3      smith                          -0.055602       0.1207
+   4      acier                          -0.047604       0.0541
+   5      chômeurs                       -0.047055       0.1244
+   6      hantise                        -0.039074       0.0963
+   7      rigoureux                      -0.035767       0.0956
+   8      moule                          -0.034475       0.0933
+   9      candidats                      -0.033797       0.0997
+   10     matérielles                    -0.028454       0.0989
+   11     coloré                         -0.027089       0.0858
+   12     façonné                        -0.026764       0.1128
+   13     idéaux                         -0.025570       0.1244
+   14     conseillé                      -0.023490       0.0633
+   15     chômage                        -0.020700       0.0884
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+raisonnables              +0.000000     +0.000088     +0.000088     0.0876
+façonné                   +0.000000     +0.000079     +0.000079     0.1128
+parisiennes               +0.000186     +0.000061     +0.000061     0.0999
+athlète                   +0.000000     +0.000060     +0.000060     0.1007
+exemplaire                +0.000033     +0.000056     +0.000056     0.0638
+divertissements           +0.000000     +0.000048     +0.000048     0.1198
+chômeurs                  +0.000000     +0.000047     +0.000047     0.1244
+mental                    +0.000000     +0.000045     +0.000045     0.0805
+smith                     +0.000000     +0.000039     +0.000039     0.1207
+bordeaux                  +0.000004     +0.000028     +0.000028     0.0746
+préparatoire              +0.000494     +0.000028     +0.000028     0.1384
+loisirs                   +0.000000     +0.000027     +0.000027     0.0895
+télévisé                  +0.000426     +0.000027     +0.000027     0.1207
+mène                      +0.000000     +0.000025     +0.000025     0.0500
+écoles                    +0.000951     +0.000022     +0.000022     0.1397
+produisent                +0.000000     +0.000022     +0.000022     0.0951
+enferme                   +0.000182     +0.000020     +0.000020     0.0772
+moule                     +0.000000     +0.000019     +0.000019     0.0933
+professeur                +0.000000     +0.000018     +0.000018     0.0516
+lycée                     +0.000129     +0.000018     +0.000018     0.0671
+logit final pour 'femme': 1.4842
+# analyse pour la classe: HOMME
+# logit: -1.0441
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      façonné                        +0.000048       0.1128
+   2      parisiennes                    +0.000040       0.0999
+   3      mental                         +0.000040       0.0805
+   4      raisonnables                   +0.000039       0.0876
+   5      loisirs                        +0.000033       0.0895
+   6      smith                          +0.000027       0.1207
+   7      divertissements                +0.000027       0.1198
+   8      candidats                      +0.000026       0.0997
+   9      exemplaire                     +0.000024       0.0638
+   10     mène                           +0.000023       0.0500
+   11     pa                             +0.000022       0.1179
+   12     enferme                        +0.000022       0.0772
+   13     athlète                        +0.000020       0.1007
+   14     virées                         +0.000016       0.1345
+   15     professeur                     +0.000016       0.0516
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      idéaux                         -0.000086       0.1244
+   2      affranchie                     -0.000077       0.1198
+   3      mélopée                        -0.000060       0.1106
+   4      matérielles                    -0.000060       0.0989
+   5      insouciants                    -0.000060       0.1179
+   6      internat                       -0.000060       0.1202
+   7      principe                       -0.000053       0.1053
+   8      négligé                        -0.000044       0.0770
+   9      austérité                      -0.000044       0.1016
+   10     corneille                      -0.000042       0.1132
+   11     études                         -0.000040       0.0916
+   12     répétitions                    -0.000038       0.1091
+   13     sobres                         -0.000038       0.1125
+   14     école                          -0.000038       0.0839
+   15     hantise                        -0.000034       0.0963
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      façonné                        +0.000048       0.1128
+   2      parisiennes                    +0.000040       0.0999
+   3      mental                         +0.000040       0.0805
+   4      raisonnables                   +0.000039       0.0876
+   5      loisirs                        +0.000033       0.0895
+   6      smith                          +0.000027       0.1207
+   7      divertissements                +0.000027       0.1198
+   8      candidats                      +0.000026       0.0997
+   9      exemplaire                     +0.000024       0.0638
+   10     mène                           +0.000023       0.0500
+   11     pa                             +0.000022       0.1179
+   12     enferme                        +0.000022       0.0772
+   13     athlète                        +0.000020       0.1007
+   14     virées                         +0.000016       0.1345
+   15     professeur                     +0.000016       0.0516
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      idéaux                         -0.000086       0.1244
+   2      affranchie                     -0.000077       0.1198
+   3      mélopée                        -0.000060       0.1106
+   4      matérielles                    -0.000060       0.0989
+   5      insouciants                    -0.000060       0.1179
+   6      internat                       -0.000060       0.1202
+   7      principe                       -0.000053       0.1053
+   8      négligé                        -0.000044       0.0770
+   9      austérité                      -0.000044       0.1016
+   10     corneille                      -0.000042       0.1132
+   11     études                         -0.000040       0.0916
+   12     répétitions                    -0.000038       0.1091
+   13     sobres                         -0.000038       0.1125
+   14     école                          -0.000038       0.0839
+   15     hantise                        -0.000034       0.0963
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      smith                          +0.001151       0.1207
+   2      commerce                       +0.001017       0.1590
+   3      loisirs                        +0.000980       0.0895
+   4      façonné                        +0.000912       0.1128
+   5      rigoureux                      +0.000805       0.0956
+   6      chômeurs                       +0.000776       0.1244
+   7      acier                          +0.000760       0.0541
+   8      divertissements                +0.000742       0.1198
+   9      candidats                      +0.000711       0.0997
+   10     moule                          +0.000670       0.0933
+   11     athlète                        +0.000579       0.1007
+   12     fiches                         +0.000563       0.0812
+   13     hantise                        +0.000532       0.0963
+   14     coloré                         +0.000457       0.0858
+   15     conseillé                      +0.000449       0.0633
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      graal                          -0.001464       0.1284
+   2      bercée                         -0.001372       0.0999
+   3      études                         -0.001171       0.0916
+   4      aînés                          -0.001074       0.0856
+   5      opté                           -0.000890       0.1036
+   6      répétitions                    -0.000823       0.1091
+   7      austérité                      -0.000818       0.1016
+   8      contraintes                    -0.000818       0.0882
+   9      chantée                        -0.000817       0.1244
+   10     bienvenue                      -0.000790       0.0630
+   11     vestimentaires                 -0.000740       0.1310
+   12     écoles                         -0.000738       0.1397
+   13     shopping                       -0.000673       0.1278
+   14     élégance                       -0.000654       0.0552
+   15     aspirations                    -0.000633       0.0954
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      commerce                       +0.047724       0.1590
+   2      smith                          +0.041146       0.1207
+   3      chômeurs                       +0.034661       0.1244
+   4      loisirs                        +0.034090       0.0895
+   5      acier                          +0.031162       0.0541
+   6      hantise                        +0.030159       0.0963
+   7      rigoureux                      +0.029276       0.0956
+   8      moule                          +0.026064       0.0933
+   9      façonné                        +0.025866       0.1128
+   10     divertissements                +0.022482       0.1198
+   11     candidats                      +0.021068       0.0997
+   12     ad                             +0.019401       0.1027
+   13     matérielles                    +0.019050       0.0989
+   14     coloré                         +0.018377       0.0858
+   15     conseillé                      +0.017390       0.0633
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      graal                          -0.055071       0.1284
+   2      bercée                         -0.042088       0.0999
+   3      opté                           -0.035839       0.1036
+   4      études                         -0.034924       0.0916
+   5      aînés                          -0.026519       0.0856
+   6      contraintes                    -0.026299       0.0882
+   7      chantée                        -0.025906       0.1244
+   8      diagnostic                     -0.024249       0.0876
+   9      répétitions                    -0.023815       0.1091
+   10     vestimentaires                 -0.023727       0.1310
+   11     austérité                      -0.023383       0.1016
+   12     préparatoire                   -0.022467       0.1384
+   13     élégance                       -0.021453       0.0552
+   14     obstacles                      -0.021391       0.0740
+   15     écoles                         -0.020137       0.1397
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+façonné                   +0.000912     +0.000048     +0.000048     0.1128
+parisiennes               +0.000000     +0.000040     +0.000040     0.0999
+mental                    +0.000039     +0.000040     +0.000040     0.0805
+raisonnables              +0.000320     +0.000039     +0.000039     0.0876
+loisirs                   +0.000980     +0.000033     +0.000033     0.0895
+smith                     +0.001151     +0.000027     +0.000027     0.1207
+divertissements           +0.000742     +0.000027     +0.000027     0.1198
+candidats                 +0.000711     +0.000026     +0.000026     0.0997
+exemplaire                +0.000143     +0.000024     +0.000024     0.0638
+mène                      +0.000033     +0.000023     +0.000023     0.0500
+pa                        +0.000000     +0.000022     +0.000022     0.1179
+enferme                   +0.000000     +0.000022     +0.000022     0.0772
+athlète                   +0.000579     +0.000020     +0.000020     0.1007
+virées                    +0.000000     +0.000016     +0.000016     0.1345
+professeur                +0.000220     +0.000016     +0.000016     0.0516
+opté                      +0.000000     +0.000015     +0.000015     0.1036
+rigueur                   +0.000350     +0.000014     +0.000014     0.0559
+discrète                  +0.000000     +0.000013     +0.000013     0.0569
+tenues                    +0.000000     +0.000013     +0.000013     0.0747
+économie                  +0.000063     +0.000013     +0.000013     0.0696
+logit final pour 'homme': -1.0441

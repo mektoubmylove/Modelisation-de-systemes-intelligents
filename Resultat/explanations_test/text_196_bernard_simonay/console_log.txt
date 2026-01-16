@@ -1,0 +1,387 @@
+texte analysé: de même , elle démontra à jehn qu elle savait se servir d un arc presque aussi bien que lui , en abattant sans coup férir deux faisans et un lièvre . nous pratiquons aussi la chasse sur mon île , expl...
+prédiction: FEMME (confiance: 73.3%)
+vérité terrain: HOMME
+  erreur de classification
+Visualisation des contrib par mot 
+# analyse pour la classe: FEMME  prédite
+# logit: 0.5495
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      férir                          +0.000118       0.2103
+   2      goélands                       +0.000098       0.1908
+   3      lièvre                         +0.000080       0.1296
+   4      communicative                  +0.000063       0.1958
+   5      maintenait                     +0.000055       0.1078
+   6      éprouvait                      +0.000050       0.1642
+   7      enveloppait                    +0.000048       0.1060
+   8      surprenait                     +0.000039       0.1145
+   9      mystérieux                     +0.000038       0.0712
+   10     appels                         +0.000037       0.0827
+   11     dons                           +0.000036       0.1127
+   12     ouvraient                      +0.000032       0.0995
+   13     existait                       +0.000032       0.0669
+   14     sueur                          +0.000031       0.0637
+   15     marquait                       +0.000030       0.0972
+
+ termes éloignant de 'FEMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      environnante                   -0.000198       0.1629
+   2      envoûtante                     -0.000157       0.2025
+   3      abysses                        -0.000134       0.1969
+   4      villageois                     -0.000116       0.1425
+   5      rapprocher                     -0.000108       0.0865
+   6      emprisonnée                    -0.000105       0.1675
+   7      séduire                        -0.000086       0.0921
+   8      sembla                         -0.000082       0.0777
+   9      réunissait                     -0.000078       0.1373
+   10     attachait                      -0.000071       0.1135
+   11     effacée                        -0.000069       0.1182
+   12     aimer                          -0.000066       0.0591
+   13     devenaient                     -0.000062       0.0879
+   14     jalouse                        -0.000059       0.0945
+   15     expliqua                       -0.000051       0.0770
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      férir                          +0.000118       0.2103
+   2      goélands                       +0.000098       0.1908
+   3      lièvre                         +0.000080       0.1296
+   4      communicative                  +0.000063       0.1958
+   5      maintenait                     +0.000055       0.1078
+   6      éprouvait                      +0.000050       0.1642
+   7      enveloppait                    +0.000048       0.1060
+   8      surprenait                     +0.000039       0.1145
+   9      mystérieux                     +0.000038       0.0712
+   10     appels                         +0.000037       0.0827
+   11     dons                           +0.000036       0.1127
+   12     ouvraient                      +0.000032       0.0995
+   13     existait                       +0.000032       0.0669
+   14     sueur                          +0.000031       0.0637
+   15     marquait                       +0.000030       0.0972
+
+ termes éloignant de 'FEMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      environnante                   -0.000198       0.1629
+   2      envoûtante                     -0.000157       0.2025
+   3      abysses                        -0.000134       0.1969
+   4      villageois                     -0.000116       0.1425
+   5      rapprocher                     -0.000108       0.0865
+   6      emprisonnée                    -0.000105       0.1675
+   7      séduire                        -0.000086       0.0921
+   8      sembla                         -0.000082       0.0777
+   9      réunissait                     -0.000078       0.1373
+   10     attachait                      -0.000071       0.1135
+   11     effacée                        -0.000069       0.1182
+   12     aimer                          -0.000066       0.0591
+   13     devenaient                     -0.000062       0.0879
+   14     jalouse                        -0.000059       0.0945
+   15     expliqua                       -0.000051       0.0770
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      envoûtante                     +0.001624       0.2025
+   2      réunissait                     +0.001335       0.1373
+   3      emprisonnée                    +0.001334       0.1675
+   4      dons                           +0.001296       0.1127
+   5      effacée                        +0.001287       0.1182
+   6      séduire                        +0.001147       0.0921
+   7      fine                           +0.001066       0.0616
+   8      couverture                     +0.001033       0.0678
+   9      insondables                    +0.001031       0.2025
+   10     abysses                        +0.000994       0.1969
+   11     gentillesse                    +0.000904       0.0931
+   12     environnante                   +0.000863       0.1629
+   13     tentait                        +0.000838       0.0821
+   14     sembla                         +0.000834       0.0777
+   15     revenue                        +0.000786       0.0680
+
+ termes éloignant de 'FEMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      faisans                        -0.002885       0.1991
+   2      férir                          -0.001681       0.2103
+   3      marquait                       -0.001134       0.0972
+   4      île                            -0.001104       0.0827
+   5      dut                            -0.001097       0.0719
+   6      éveillait                      -0.001000       0.1185
+   7      chasse                         -0.000967       0.0620
+   8      abattant                       -0.000952       0.1568
+   9      appels                         -0.000948       0.0827
+   10     matière                        -0.000881       0.0670
+   11     comprit                        -0.000792       0.0752
+   12     enveloppait                    -0.000787       0.1060
+   13     univers                        -0.000703       0.0676
+   14     maintenait                     -0.000690       0.1078
+   15     sueur                          -0.000675       0.0637
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      envoûtante                     +0.066378       0.2025
+   2      effacée                        +0.058892       0.1182
+   3      communicative                  +0.057209       0.1958
+   4      réunissait                     +0.055578       0.1373
+   5      dons                           +0.053099       0.1127
+   6      emprisonnée                    +0.051385       0.1675
+   7      fine                           +0.051254       0.0616
+   8      couverture                     +0.045560       0.0678
+   9      hospitalité                    +0.044805       0.1121
+   10     séduire                        +0.044257       0.0921
+   11     gentillesse                    +0.043255       0.0931
+   12     céder                          +0.042227       0.0751
+   13     tentait                        +0.036887       0.0821
+   14     insondables                    +0.035734       0.2025
+   15     abysses                        +0.033592       0.1969
+
+ termes éloignant de 'FEMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      faisans                        -0.127542       0.1991
+   2      férir                          -0.065052       0.2103
+   3      marquait                       -0.047371       0.0972
+   4      île                            -0.045371       0.0827
+   5      chasse                         -0.044980       0.0620
+   6      dut                            -0.044667       0.0719
+   7      appels                         -0.042428       0.0827
+   8      enveloppait                    -0.041402       0.1060
+   9      éveillait                      -0.039944       0.1185
+   10     comprit                        -0.039822       0.0752
+   11     matière                        -0.039203       0.0670
+   12     éprouvait                      -0.031934       0.1642
+   13     abattant                       -0.031565       0.1568
+   14     apparaissait                   -0.031439       0.0804
+   15     univers                        -0.030332       0.0676
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+férir                     +0.000000     +0.000118     +0.000118     0.2103
+goélands                  +0.000235     +0.000098     +0.000098     0.1908
+lièvre                    +0.000000     +0.000080     +0.000080     0.1296
+communicative             +0.000613     +0.000063     +0.000063     0.1958
+maintenait                +0.000000     +0.000055     +0.000055     0.1078
+éprouvait                 +0.000000     +0.000050     +0.000050     0.1642
+enveloppait               +0.000000     +0.000048     +0.000048     0.1060
+surprenait                +0.000000     +0.000039     +0.000039     0.1145
+mystérieux                +0.000000     +0.000038     +0.000038     0.0712
+appels                    +0.000000     +0.000037     +0.000037     0.0827
+dons                      +0.001296     +0.000036     +0.000036     0.1127
+ouvraient                 +0.000076     +0.000032     +0.000032     0.0995
+existait                  +0.000000     +0.000032     +0.000032     0.0669
+sueur                     +0.000000     +0.000031     +0.000031     0.0637
+marquait                  +0.000000     +0.000030     +0.000030     0.0972
+violente                  +0.000000     +0.000029     +0.000029     0.0749
+île                       +0.000000     +0.000027     +0.000027     0.0827
+apparaissait              +0.000000     +0.000026     +0.000026     0.0804
+rencontrée                +0.000000     +0.000025     +0.000025     0.0921
+dut                       +0.000000     +0.000025     +0.000025     0.0719
+logit final pour 'femme': 0.5495
+# analyse pour la classe: HOMME  vraie classe
+# logit: -0.4603
+chain rule : ∂sortie/∂terme = Σ ∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme
+ordre de la rétropropagation : sortie → L2 → L1 → terme
+ couche de sortie → termes via tout le réseau
+calcul : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      férir                          +0.000081       0.2103
+   2      communicative                  +0.000077       0.1958
+   3      éprouvait                      +0.000057       0.1642
+   4      lièvre                         +0.000045       0.1296
+   5      maintenait                     +0.000040       0.1078
+   6      appels                         +0.000038       0.0827
+   7      goélands                       +0.000037       0.1908
+   8      surveillait                    +0.000032       0.0977
+   9      mystérieux                     +0.000030       0.0712
+   10     enveloppait                    +0.000028       0.1060
+   11     surprenait                     +0.000026       0.1145
+   12     débordait                      +0.000025       0.1227
+   13     gentillesse                    +0.000023       0.0931
+   14     dons                           +0.000021       0.1127
+   15     vain                           +0.000020       0.0639
+
+ termes éloignant de 'HOMME' (contribution finale):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      environnante                   -0.000130       0.1629
+   2      villageois                     -0.000107       0.1425
+   3      abysses                        -0.000105       0.1969
+   4      envoûtante                     -0.000098       0.2025
+   5      réunissait                     -0.000077       0.1373
+   6      rapprocher                     -0.000071       0.0865
+   7      séduire                        -0.000051       0.0921
+   8      auditoire                      -0.000043       0.1308
+   9      faisans                        -0.000043       0.1991
+   10     artisans                       -0.000040       0.1293
+   11     sembla                         -0.000038       0.0777
+   12     serrer                         -0.000038       0.0689
+   13     effacée                        -0.000037       0.1182
+   14     insondables                    -0.000037       0.2025
+   15     abattant                       -0.000036       0.1568
+couche 2 (32 neurones) → influence via L1 → L2
+calcul : ∂sortie/∂terme via L2 = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      férir                          +0.000081       0.2103
+   2      communicative                  +0.000077       0.1958
+   3      éprouvait                      +0.000057       0.1642
+   4      lièvre                         +0.000045       0.1296
+   5      maintenait                     +0.000040       0.1078
+   6      appels                         +0.000038       0.0827
+   7      goélands                       +0.000037       0.1908
+   8      surveillait                    +0.000032       0.0977
+   9      mystérieux                     +0.000030       0.0712
+   10     enveloppait                    +0.000028       0.1060
+   11     surprenait                     +0.000026       0.1145
+   12     débordait                      +0.000025       0.1227
+   13     gentillesse                    +0.000023       0.0931
+   14     dons                           +0.000021       0.1127
+   15     vain                           +0.000020       0.0639
+
+ termes éloignant de 'HOMME' (via L1 → L2):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      environnante                   -0.000130       0.1629
+   2      villageois                     -0.000107       0.1425
+   3      abysses                        -0.000105       0.1969
+   4      envoûtante                     -0.000098       0.2025
+   5      réunissait                     -0.000077       0.1373
+   6      rapprocher                     -0.000071       0.0865
+   7      séduire                        -0.000051       0.0921
+   8      auditoire                      -0.000043       0.1308
+   9      faisans                        -0.000043       0.1991
+   10     artisans                       -0.000040       0.1293
+   11     sembla                         -0.000038       0.0777
+   12     serrer                         -0.000038       0.0689
+   13     effacée                        -0.000037       0.1182
+   14     insondables                    -0.000037       0.2025
+   15     abattant                       -0.000036       0.1568
+couche 1 (64 neurones) → influence via L1 seulement
+calcul : ∂sortie/∂terme via L1 = Σ [∂sortie/∂L1 × ∂L1/∂terme]
+
+ termes poussant vers 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      faisans                        +0.002526       0.1991
+   2      férir                          +0.002103       0.2103
+   3      marquait                       +0.001034       0.0972
+   4      dut                            +0.001013       0.0719
+   5      île                            +0.000919       0.0827
+   6      enveloppait                    +0.000855       0.1060
+   7      matière                        +0.000841       0.0670
+   8      appels                         +0.000802       0.0827
+   9      éveillait                      +0.000791       0.1185
+   10     abattant                       +0.000717       0.1568
+   11     avouer                         +0.000648       0.0619
+   12     chasse                         +0.000636       0.0620
+   13     violente                       +0.000615       0.0749
+   14     artisans                       +0.000613       0.1293
+   15     sueur                          +0.000596       0.0637
+
+ termes éloignant de 'HOMME' (via L1):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      emprisonnée                    -0.001370       0.1675
+   2      insondables                    -0.001305       0.2025
+   3      effacée                        -0.001290       0.1182
+   4      envoûtante                     -0.001106       0.2025
+   5      fine                           -0.001070       0.0616
+   6      séduire                        -0.001049       0.0921
+   7      dons                           -0.000951       0.1127
+   8      réunissait                     -0.000918       0.1373
+   9      couverture                     -0.000850       0.0678
+   10     hospitalité                    -0.000760       0.1121
+   11     communicative                  -0.000750       0.1958
+   12     sembla                         -0.000739       0.0777
+   13     villageois                     -0.000731       0.1425
+   14     gentillesse                    -0.000681       0.0931
+   15     tentait                        -0.000664       0.0821
+ couche d'entrée (tf-idf) → gradient direct
+calcul : ∂sortie/∂terme = gradient_input × valeur_tf-idf
+
+ termes poussant vers 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      faisans                        +0.110201       0.1991
+   2      férir                          +0.077858       0.2103
+   3      dut                            +0.044521       0.0719
+   4      enveloppait                    +0.043210       0.1060
+   5      marquait                       +0.040163       0.0972
+   6      île                            +0.037832       0.0827
+   7      matière                        +0.037321       0.0670
+   8      appels                         +0.037201       0.0827
+   9      chasse                         +0.035386       0.0620
+   10     éveillait                      +0.034305       0.1185
+   11     comprit                        +0.030361       0.0752
+   12     surveillait                    +0.030073       0.0977
+   13     quelquefois                    +0.030002       0.0808
+   14     vieilles                       +0.029483       0.0629
+   15     avouer                         +0.027084       0.0619
+
+ termes éloignant de 'HOMME' (gradient direct):
+   rang   terme                          contribution    tf-idf    
+   -----------------------------------------------------------------
+   1      effacée                        -0.065525       0.1182
+   2      envoûtante                     -0.058610       0.2025
+   3      fine                           -0.054350       0.0616
+   4      insondables                    -0.053488       0.2025
+   5      emprisonnée                    -0.053106       0.1675
+   6      communicative                  -0.052498       0.1958
+   7      dons                           -0.045941       0.1127
+   8      hospitalité                    -0.043553       0.1121
+   9      séduire                        -0.043026       0.0921
+   10     céder                          -0.037153       0.0751
+   11     réunissait                     -0.035185       0.1373
+   12     tentait                        -0.032785       0.0821
+   13     couverture                     -0.032021       0.0678
+   14     villageois                     -0.031312       0.1425
+   15     abysses                        -0.027072       0.1969
+synthèse : chemin complet de la rétropropagation
+pour chaque terme : ∂sortie/∂terme = Σ [∂sortie/∂L2 × ∂L2/∂L1 × ∂L1/∂terme]
+
+exemples d'évolution de contribution (top 5 termes):
+terme                     via L1          via L1→L2       final           tf-idf    
+--------------------------------------------------------------------------------
+férir                     +0.002103     +0.000081     +0.000081     0.2103
+communicative             +0.000000     +0.000077     +0.000077     0.1958
+éprouvait                 +0.000000     +0.000057     +0.000057     0.1642
+lièvre                    +0.000000     +0.000045     +0.000045     0.1296
+maintenait                +0.000504     +0.000040     +0.000040     0.1078
+appels                    +0.000802     +0.000038     +0.000038     0.0827
+goélands                  +0.000000     +0.000037     +0.000037     0.1908
+surveillait               +0.000425     +0.000032     +0.000032     0.0977
+mystérieux                +0.000466     +0.000030     +0.000030     0.0712
+enveloppait               +0.000855     +0.000028     +0.000028     0.1060
+surprenait                +0.000504     +0.000026     +0.000026     0.1145
+débordait                 +0.000000     +0.000025     +0.000025     0.1227
+gentillesse               +0.000000     +0.000023     +0.000023     0.0931
+dons                      +0.000000     +0.000021     +0.000021     0.1127
+vain                      +0.000359     +0.000020     +0.000020     0.0639
+réservée                  +0.000000     +0.000019     +0.000019     0.0889
+aveu                      +0.000375     +0.000018     +0.000018     0.0911
+possédait                 +0.000345     +0.000016     +0.000016     0.0720
+sueur                     +0.000596     +0.000016     +0.000016     0.0637
+inquiétude                +0.000363     +0.000015     +0.000015     0.0616
+logit final pour 'homme': -0.4603
